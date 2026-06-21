@@ -30,7 +30,10 @@ LANG = {
     # Japanese legal = agnostic legal core + Japanese-language verification
     "ja": {"scanners": (kana_usage, fillers, context_homophones,
                         no_exclamation, terminal_punctuation), "fixers": (), "core": True},
-    # Spanish legal = agnostic core for now; ES-specific scanners (stress/diacritics) pending
+    # Spanish legal = agnostic core only. es_homophone_traps exists + is tested (100% recall)
+    # but is a blanket surfacer (98% fire on CORRECT lines) -> kept OPT-IN, not in the graded
+    # set, exactly as JP's semantic.py blanket was excluded. A profile-grade ES check needs
+    # context/collocation data (the JP context_homophones path), acquired deliberately.
     "es": {"scanners": (), "fixers": (), "core": True},
 }
 
