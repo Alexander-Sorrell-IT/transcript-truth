@@ -17,3 +17,4 @@ data/jmdict-eng-common-3.6.2.json
 data/jp_name_surfaces.json
 data/jp_pitch_accent.json
 data/jp_collocations.json
+*.thoth.txt

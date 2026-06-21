@@ -2,6 +2,7 @@ from __future__ import annotations
 from .types import Transcript, Line, Receipt
 from .scanners import run_scanners
 from .grade import grade_and_verdict
+from .profiles import get as get_profile
 
 
 def parse_transcript(text: str, mode: str = "clean_verbatim") -> Transcript:
@@ -9,15 +10,21 @@ def parse_transcript(text: str, mode: str = "clean_verbatim") -> Transcript:
     return Transcript(lines=lines, mode=mode)
 
 
-def audit_transcript(text: str, mode: str = "clean_verbatim", coherence: bool = False) -> Receipt:
+def audit_transcript(text: str, mode: str = "clean_verbatim", coherence: bool = False,
+                     profile: str = "default") -> Receipt:
     """Ingest -> deterministic scanners -> pure-function grade. Mirrors RoboTruth.audit_diff.
+
+    profile selects the language/style-guide rule set (see transcript_truth.profiles):
+    "default" = Japanese + GoTranscript English (original engine); "legal" =
+    TranscribeMe Clean Verbatim for Legal. Each profile is a drop-in plug-in.
 
     coherence=True adds the opt-in thin-context homophone witness (Qwen blank-fill,
     gated deterministically). It is OFF by default so the default path stays fast and
     model-free; its flags are 'review' tier (surfaced for a human, cap the grade at B,
     never enter the deterministic error score)."""
+    prof = get_profile(profile)
     t = parse_transcript(text, mode)
-    flags = run_scanners(t)
+    flags = run_scanners(t, prof.scanners)
     if coherence:
         from .coherence import coherence_homophones
         from .en_rules import en_homophone_errors

@@ -227,9 +227,24 @@ ALL_SCANNERS = [
 ]
 
 
-def run_scanners(t: Transcript) -> list[Flag]:
+# --- Thoth fixers for the default profile (Japanese + GoTranscript English) ---
+# Only the language-safe mechanical removals. Hesitations (um/uh/erm) are removed
+# but NOT the crutch phrases (you know / I mean / kind of / sort of / uh-huh) —
+# those are context-dependent (a real "kind of" exists), so they stay flags for a
+# human. Exclamation->period is NOT auto-applied here because the right period
+# differs by language (. vs 。). NO model — same patterns the scanners detect with.
+_CV_FILLERS_FIX = re.compile(r"\b(?:um+|uh+|erm+)\b(?!-)[ ,]*", re.I)
+DEFAULT_FIXERS = [
+    (_CV_FILLERS_FIX, ""),        # English hesitations
+    (_JP_FILLERS_CLEAR, ""),      # Japanese つなぎ言葉 (confident set only)
+]
+
+
+def run_scanners(t: Transcript, scanners=None) -> list[Flag]:
+    """Run a scanner set over the transcript. `scanners` defaults to ALL_SCANNERS
+    (the original behavior); a profile passes its own tuple of scanner functions."""
     flags: list[Flag] = []
-    for s in ALL_SCANNERS:
+    for s in (ALL_SCANNERS if scanners is None else scanners):
         flags.extend(s(t))
     flags.sort(key=lambda f: (f.line, f.rule))
     return flags

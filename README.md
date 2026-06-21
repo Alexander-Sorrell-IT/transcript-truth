@@ -40,31 +40,97 @@ that needs a human who can read the language.
 - **A language you can't read** → the mechanical half still works, but the semantic half
   is the wall. Don't let any tool pretend otherwise.
 
-## Run
+## Run (point it at a file)
 
 ```bash
-python3 -m transcript_truth.cli samples/sample_clean_verbatim.txt          # clean-verbatim audit
+# default profile (Japanese + GoTranscript English)
+python3 -m transcript_truth.cli samples/sample_clean_verbatim.txt
 python3 -m transcript_truth.cli path/to/file.txt --full                    # full-verbatim (keeps fillers)
-python3 tests/test_transcript_truth.py                                     # 9 tests
+
+# TranscribeMe Clean Verbatim for Legal (CVL)
+python3 -m transcript_truth.cli samples/sample_legal_cvl.txt --legal       # or --profile=legal
+python3 -m transcript_truth.cli --list-profiles                            # see all profiles
+
+# Thoth — deterministic auto-fix (writes <file>.thoth.txt, no model)
+python3 -m transcript_truth.cli samples/sample_legal_cvl.txt --legal --thoth
+
+python3 tests/test_transcript_truth.py     # default engine tests
+python3 tests/test_legal.py                # CVL legal tests
+python3 tests/test_personal.py             # personal-profile tests
+python3 tests/test_thoth.py                # auto-fix tests
 ```
 
 ```python
 from transcript_truth import audit_transcript
-receipt = audit_transcript(open("file.txt").read(), mode="clean_verbatim")
+receipt = audit_transcript(open("file.txt").read(), profile="legal")       # or "default"
 print(receipt.grade, [(f.line, f.label) for f in receipt.flags])
 ```
+
+## Profiles — one plug-in per language / style guide
+
+Each guideline is a drop-in **profile** in `transcript_truth/profiles/`. A profile bundles
+the deterministic scanners that apply to it and self-registers at import time. To add a new
+language or style guide, drop one file in that folder — nothing else changes:
+
+```python
+# transcript_truth/profiles/my_guide.py
+from ._base import Profile, register
+from ..my_rules import MY_SCANNERS
+register(Profile(name="myguide", description="...", scanners=(*MY_SCANNERS,)))
+```
+
+| Profile | Covers |
+|---|---|
+| `default` (`jp`, `gotranscript`) | Japanese + GoTranscript English — the original engine |
+| `legal` (`cvl`) | TranscribeMe **Clean Verbatim for Legal** (English) |
+| `me` (`alex`, `personal`) | the `legal` profile **plus** one transcriber's own recurring slips |
+
+The legal profile is a **separate** profile, not extra default scanners, because CVL
+*contradicts* the GoTranscript rules: CVL writes `okay` (lowercase), keeps `yeah` and the
+crutch words `you know`/`I mean`, omits only `uh/ah/um/er`, and writes `[inaudible]` with no
+timestamp. Every legal flag cites its style-guide page (e.g. `[p.9]`).
+
+> **Legal-exam boundary:** the TranscribeMe Legal Prequalification Exam is **no-AI, taken solo** —
+> using AI to produce or check exam answers is a permanent block. These profiles are a **study /
+> self-check aid** for the guide and your *own* practice transcripts (the SG, research, and
+> spell-checkers are the explicitly *permitted* tools), not an exam autopilot.
+
+## Thoth — deterministic auto-fix
+
+The scanners *report*; **Thoth** *applies* the fix. It's the same spine — **no model** —
+just the **same compiled patterns the scanners detect with, applied via `re.sub`**, so
+detection and correction can never drift. It is **profile-agnostic**: it applies whatever
+fixer set the chosen profile carries (`default` = language-safe filler removal, `legal` =
+the full CVL "Redline" set, `me` = that plus personal apostrophe fixes).
+
+```bash
+python3 -m transcript_truth.cli file.txt --legal --thoth     # writes file.thoth.txt
+```
+```python
+from transcript_truth.thoth import thoth
+fixed, changes = thoth(open("file.txt").read(), profile="legal")
+```
+
+Only **deterministic, ~always-correct** fixes are applied. The semantic judgment calls
+(`review`-tier: which homophone a sentence *means*, `cant`/`wont`, つなぎ言葉 that might be
+real words) are **never auto-applied** — they stay flags for the human, the same boundary the
+whole engine keeps. On the legal sample, Thoth takes the receipt **D → A**.
 
 ## Layout
 
 ```
 transcript_truth/
-  types.py        Flag / Line / Transcript / Receipt
-  scanners.py     deterministic guideline scanners  (the rules)
-  grade.py        pure-function grade (A–F)          (the verdict)
-  engine.py       ingest → scan → grade
-  cli.py          paste-a-file CLI receipt
-tests/            9 passing tests
-samples/          a transcript with planted violations
+  types.py          Flag / Line / Transcript / Receipt
+  scanners.py       deterministic guideline scanners  (the rules)
+  legal_rules.py    CVL legal scanners + Redline fixers
+  personal_rules.py one transcriber's recurring slips + fixers
+  grade.py          pure-function grade (A–F)          (the verdict)
+  engine.py         ingest → scan → grade
+  thoth.py          deterministic auto-fix             (apply the fix)
+  cli.py            paste-a-file CLI receipt
+  profiles/         one plug-in per language / style guide
+tests/              55 passing tests
+samples/            transcripts with planted violations
 ```
 
 ## Next surfaces (free, like RoboTruth)
