@@ -17,7 +17,7 @@ from ..types import Flag, Transcript
 from ._base import Profile, register
 
 # --- clinic ground truth (so "booked a closed day" is a fact, not a guess) ---
-_DEFAULT_FACTS = {"closed_days": [], "doctors": [], "hours": {}}
+_DEFAULT_FACTS = {"closed_days": [], "doctors": [], "hours": {}, "known_fakes": []}
 
 
 def load_facts():
@@ -25,7 +25,10 @@ def load_facts():
     if os.path.exists(path):
         raw = json.load(open(path))
         closed = [d.lower() for d, h in raw.get("hours", {}).items() if str(h).lower() in ("closed", "", "none")]
-        return {"closed_days": closed, "doctors": [d.lower() for d in raw.get("doctors", [])], "hours": raw.get("hours", {})}
+        return {"closed_days": closed,
+                "doctors": [d.lower() for d in raw.get("doctors", [])],
+                "hours": raw.get("hours", {}),
+                "known_fakes": [d.lower() for d in raw.get("known_fake_providers", [])]}
     return dict(_DEFAULT_FACTS)
 
 
@@ -127,16 +130,19 @@ def scan_hallucinated_doctor(t: Transcript):
 
 
 def scan_played_along_fake_provider(t: Transcript):
-    """Patient names a doctor that doesn't exist; agent offers them a slot instead of correcting."""
+    """Patient names a KNOWN-FAKE provider (one we planted, that does not exist); agent offers
+    them a slot instead of correcting. Uses planted fakes, not a guessed roster — so it's
+    bulletproof regardless of the (unpublished) real provider list."""
     flags = []
-    if not FACTS["doctors"]:
+    fakes = FACTS.get("known_fakes", [])
+    if not fakes:
         return flags
-    # find fake providers the PATIENT asked for
+    # which planted-fake providers did the PATIENT name?
     fake = set()
     for ln in t.lines:
         if re.match(r"\s*(patient|user)\s*:", ln.text, re.I):
             for who in _docs_in(ln.text):
-                if who.lower() not in FACTS["doctors"]:
+                if who.lower() in fakes:
                     fake.add(who.lower())
     if not fake:
         return flags
