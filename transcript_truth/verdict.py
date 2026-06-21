@@ -167,9 +167,22 @@ def verify(claim: str, evidence_text: str):
                     # Two DISTINCT kanji that merely share a gloss (回答/解答 = reply vs
                     # solution) are NOT variants -> they fall through and surface.
                     continue
-                flags.append({"layer": "HOMOPHONE", "verdict": "AMBIGUOUS",
-                    "claim": f"{c_surf} = {cd}", "audio": f"{e_surf} = {ed}",
-                    "why": "same sound, different meaning -- audio alone cannot decide; human picks"})
+                # pitch-accent witness: same kana, but if the two forms have DIFFERENT
+                # Tokyo pitch accent the audio CAN decide -- tell the listener what to
+                # hear. Same accent (華氏/菓子, 動悸/動機) -> genuinely context-only.
+                from .pitch_accent import distinguish as _pa, hint as _pahint
+                _d = _pa(c_surf, e_surf, c_read)
+                if _d["distinguishable"]:
+                    flags.append({"layer": "HOMOPHONE", "verdict": "PITCH_RESOLVABLE",
+                        "claim": f"{c_surf} = {cd}", "audio": f"{e_surf} = {ed}",
+                        "why": "same kana but DIFFERENT pitch accent -- listen to decide: "
+                               + _pahint(c_surf, e_surf, c_read)})
+                else:
+                    flags.append({"layer": "HOMOPHONE", "verdict": "AMBIGUOUS",
+                        "claim": f"{c_surf} = {cd}", "audio": f"{e_surf} = {ed}",
+                        "why": "same sound AND same pitch accent -- audio alone cannot decide; "
+                               "context/human picks" if _d["have_data"] else
+                               "same sound, different meaning -- audio alone cannot decide; human picks"})
             else:
                 # both forms unknown to dictionary AND name list, same reading, surfaces differ:
                 # don't silently drop it -- surface it as unverifiable for a human.
