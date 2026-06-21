@@ -1,0 +1,38 @@
+[
+ {
+  "key": "精算/生産/清算 (second せいさん entry)",
+  "issue": "Duplicate of the 成算/精算/清算 せいさん entry — re-lists 精算 and 清算 with identical glosses. It only adds 生産 (production/manufacturing), which is a real and useful homophone, but per the task's 'duplicated→flag' rule this entry as a whole is a redundant re-listing. If kept, it should be merged into a single せいさん set: 成算/精算/清算/生産."
+ },
+ {
+  "key": "保障/補償/保証 (再掲注意)",
+  "issue": "Explicit self-acknowledged re-list ('再掲', 'Same set as 保証/保障/補償') of entry #2. Pure duplicate added only as a collocation drill; content is correct but it is not a distinct entry. Flag per 'duplicated→flag'."
+ },
+ {
+  "key": "せいか → 成句",
+  "issue": "WRONG READING-SET. 成句 ('set phrase/idiom') reads せいく, not せいか — the kanji 句 is on-yomi く (cf. 俳句 はいく, 慣用句 かんようく, 故事成句 こじせいく), never か. The gloss itself is correct, but the entry mis-assigns it to the せいか homophone set. This is the confident-but-wrong reading error class. Removed from the confirmed せいか set."
+ },
+ {
+  "key": "けっかん → 欠かん",
+  "issue": "FABRICATED/NON-STANDARD ENTRY. '欠かん' is not standard orthography for any けっかん noun. Its own gloss cross-references 欠員 ('vacancy of a post'), but 欠員 reads けつ-いん (員=いん), so it is not a けっかん homophone at all — the cross-reference is broken. The entry self-flags ('rare','avoid','drop the rare third'). Real additional けっかん homophones would be 欠刊 (suspension of publication) or 欠巻 (missing volume), not this. Removed from the confirmed けっかん set."
+ },
+ {
+  "key": "かいほう (解放 set) → option 解剖",
+  "issue": "WRONG READING: 解剖 (dissection/autopsy) reads かいぼう, not かいほう (verified via Nihongo Master / Jisho / JapanDict). It is a near-homophone trap, not a true member of the かいほう homophone set. The entry's own note even admits 'reads かいぼう.' Removed from the option list; the parent entry is confirmed with the remaining four kanji (解放/開放/介抱/快方)."
+ },
+ {
+  "key": "しじ → option 支持（医）",
+  "issue": "DUPLICATE / FABRICATED: option 3 is the identical kanji 支持 already present as option 1, re-listed with an invented '(医)' clinical-'support' gloss. It is not a distinct word or a distinct kanji — a manufactured homophone entry. Removed; parent entry confirmed with 支持/指示/師事."
+ },
+ {
+  "key": "かいほう（病気） → key/label",
+  "issue": "MISMATCHED LABEL: the key's 「病気」(illness) tag is wrong — 会報/回報 are a newsletter and a circular memo, unrelated to illness (illness sense = 快方, which lives in the other かいほう entry). The kanji and glosses are otherwise correct, so the entry is kept with a corrected key. Secondary note: 回報 is real but borderline-rare/dated (verify against Collins JE dict) — acceptable but the weakest member here."
+ },
+ {
+  "key": "かえる (帰す/返す entry — reading field says かえる)",
+  "issue": "WRONG READING + DUPLICATE KEY. The two options 帰す and 返す read かえす (okurigana す), NOT かえる. The reading field is internally inconsistent (key=かえる but glosses transitive かえす verbs), and the key かえる duplicates the legitimate かえる entry above (変/替/換/代/帰/返). The entry's own note says 'flag separately,' confirming it does not belong under かえる. If a transitive かえす entry is wanted, it must be re-keyed to reading かえす and its own dedicated entry — do not ship it labeled かえる."
+ },
+ {
+  "key": "ついか / おいか (追加 / 付加)",
+  "issue": "Fails its own ASR-homophone premise: 追加 is read ついか, but 付加 is read ふか — they are NOT homophones, so this is not a transcription-confusion pair at all. The key's 'おいか' is not a valid reading of any word here (likely fabricated). The note text is also garbled ('追加 (tsuika) ... similarly-shaped 追加 vs 付加'). Reject — the entry's central claim (acoustic confusion of these two readings) is false."
+ }
+]

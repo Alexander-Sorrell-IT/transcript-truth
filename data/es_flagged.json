@@ -1,0 +1,14 @@
+[
+ {
+  "key": "ha de / hada",
+  "issue": "NOT a homophone pair: 'hada' = [ˈa.ða] but 'ha de' = [ˈa.ðe] — different final vowel (a vs e). The entry's stated reading 'ˈa.ða' is correct only for 'hada'. The pair does not hold phonetically; do not ship as a homophone."
+ },
+ {
+  "key": "haya/aya/halla — vs allá (near-homophone)",
+  "issue": "REDUNDANT DUPLICATE. The information (allá is oxytone /aˈʝa/ stressed on the final syllable, vs haya/halla/aya paroxytone /ˈa.ʝa/) is already fully stated inside the note of the 'halla/haya/aya' entry, which is the complete three-way entry. This stub adds nothing, only re-states the stress contrast, and its key is malformed. The content is not false — allá IS oxytone and the near-homophone observation is accurate — but shipping it duplicates the canonical entry. Drop it; keep the fuller halla/haya/aya entry."
+ },
+ {
+  "key": "halla/haya/aya/allá → see cayó/calló",
+  "issue": "CORRUPTED/DUPLICATED KEY. The key string duplicates entry 2's word set (haya/halla/aya/allá) and appends a stray cross-reference, while the actual options are cayó/calló. The options themselves are correct (cayó=fell, calló=fell silent, true yeísmo homophones at [kaˈʝo]). Do NOT ship the key as written — it is the duplication defect the task asked to catch. Corrected and re-confirmed under key 'cayó/calló'."
+ }
+]

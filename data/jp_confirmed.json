@@ -1,0 +1,5676 @@
+[
+ {
+  "key": "対象/対照/対称",
+  "reading": "たいしょう",
+  "note": "対象=the target/object you act on; 対照=contrast/comparison; 対称=symmetry. Test: 'who/what is affected'→対象, 'A vs B difference'→対照, 'mirror balance'→対称.",
+  "options": [
+   {
+    "kanji": "対象",
+    "gloss": "object/target (of an action, study, survey)"
+   },
+   {
+    "kanji": "対照",
+    "gloss": "contrast / comparison (set against each other)"
+   },
+   {
+    "kanji": "対称",
+    "gloss": "symmetry (geometric/structural balance)"
+   }
+  ]
+ },
+ {
+  "key": "保証/保障/補償",
+  "reading": "ほしょう",
+  "note": "保証=guarantee something is so / warranty; 保障=safeguard a state or right (security); 補償=compensate for a loss. Test: warranty→保証, 安全/社会→保障, money for damage→補償.",
+  "options": [
+   {
+    "kanji": "保証",
+    "gloss": "guarantee / warranty / vouch for"
+   },
+   {
+    "kanji": "保障",
+    "gloss": "security / safeguarding (rights, safety, e.g. 社会保障, 安全保障)"
+   },
+   {
+    "kanji": "補償",
+    "gloss": "compensation / indemnification (for damage or loss)"
+   }
+  ]
+ },
+ {
+  "key": "偏在/遍在",
+  "reading": "へんざい",
+  "note": "偏在=unevenly concentrated in one place (偏 'bias'); 遍在=present everywhere (遍 'all over'). Opposite meanings—context of maldistribution vs ubiquity decides.",
+  "options": [
+   {
+    "kanji": "偏在",
+    "gloss": "uneven distribution / concentration in particular places"
+   },
+   {
+    "kanji": "遍在",
+    "gloss": "ubiquity / being present everywhere"
+   }
+  ]
+ },
+ {
+  "key": "意思/意志/遺志",
+  "reading": "いし",
+  "note": "意思=intention/will in general & legal contexts (意思表示); 意志=strong volition/willpower (意志が強い); 遺志=the will/wishes of someone deceased.",
+  "options": [
+   {
+    "kanji": "意思",
+    "gloss": "intention / mind / will (general, legal: 意思表示)"
+   },
+   {
+    "kanji": "意志",
+    "gloss": "will / volition / determination (意志が強い)"
+   },
+   {
+    "kanji": "遺志",
+    "gloss": "the will/wishes of a deceased person"
+   }
+  ]
+ },
+ {
+  "key": "関心/感心/歓心",
+  "reading": "かんしん",
+  "note": "関心=interest/concern; 感心=admiration ('impressed'); 歓心=someone's favor/goodwill (歓心を買う). 甘心 is rare—omitted.",
+  "options": [
+   {
+    "kanji": "関心",
+    "gloss": "interest / concern (関心がある)"
+   },
+   {
+    "kanji": "感心",
+    "gloss": "admiration / being impressed (感心する)"
+   },
+   {
+    "kanji": "歓心",
+    "gloss": "favor / goodwill of another (歓心を買う = curry favor)"
+   }
+  ]
+ },
+ {
+  "key": "回答/解答",
+  "reading": "かいとう",
+  "note": "回答=reply/response to a question or survey; 解答=answer/solution to a problem (with a correct answer).",
+  "options": [
+   {
+    "kanji": "回答",
+    "gloss": "reply / response (to inquiry, survey)"
+   },
+   {
+    "kanji": "解答",
+    "gloss": "answer / solution (to a problem/quiz)"
+   }
+  ]
+ },
+ {
+  "key": "異動/移動/異同",
+  "reading": "いどう",
+  "note": "異動=personnel reassignment (人事異動); 移動=physical/positional movement; 異同=differences (points of difference). HR-speech default = 異動.",
+  "options": [
+   {
+    "kanji": "異動",
+    "gloss": "personnel change / reassignment (人事異動)"
+   },
+   {
+    "kanji": "移動",
+    "gloss": "movement / relocation (physical, positional)"
+   },
+   {
+    "kanji": "異同",
+    "gloss": "differences / points of difference"
+   }
+  ]
+ },
+ {
+  "key": "追求/追究/追及",
+  "reading": "ついきゅう",
+  "note": "追求=pursue/seek (profit, happiness); 追究=investigate to the bottom (truth, cause); 追及=press/grill someone (responsibility). 利益→追求, 真理→追究, 責任→追及.",
+  "options": [
+   {
+    "kanji": "追求",
+    "gloss": "pursuit / seeking (profit, ideal, happiness)"
+   },
+   {
+    "kanji": "追究",
+    "gloss": "investigation / getting to the bottom (truth, cause)"
+   },
+   {
+    "kanji": "追及",
+    "gloss": "pressing/grilling (responsibility, accountability)"
+   }
+  ]
+ },
+ {
+  "key": "保健/保険",
+  "reading": "ほけん",
+  "note": "保健=health maintenance (保健所 health center, 保健体育); 保険=insurance (生命保険). Health upkeep vs financial policy.",
+  "options": [
+   {
+    "kanji": "保健",
+    "gloss": "health maintenance / hygiene (保健所, 保健師)"
+   },
+   {
+    "kanji": "保険",
+    "gloss": "insurance (生命保険, 健康保険)"
+   }
+  ]
+ },
+ {
+  "key": "機械/機会",
+  "reading": "きかい",
+  "note": "機械=machine/machinery; 機会=opportunity/occasion. Physical device vs chance.",
+  "options": [
+   {
+    "kanji": "機械",
+    "gloss": "machine / machinery"
+   },
+   {
+    "kanji": "機会",
+    "gloss": "opportunity / occasion / chance"
+   }
+  ]
+ },
+ {
+  "key": "用意/容易",
+  "reading": "ようい",
+  "note": "用意=preparation (用意する); 容易=easy/simple (容易ではない). Verb 'prepare' vs adjective 'easy'.",
+  "options": [
+   {
+    "kanji": "用意",
+    "gloss": "preparation / arrangement (provide, ready up)"
+   },
+   {
+    "kanji": "容易",
+    "gloss": "easy / simple / facile"
+   }
+  ]
+ },
+ {
+  "key": "規定/規程",
+  "reading": "きてい",
+  "note": "規定=an individual rule/provision (a specific stipulation); 規程=a body of regulations/code (an entire set, e.g. 服務規程). Single clause vs whole ruleset. (Original key listed 規程 twice; corrected.)",
+  "options": [
+   {
+    "kanji": "規定",
+    "gloss": "provision / stipulation (a specific rule or clause)"
+   },
+   {
+    "kanji": "規程",
+    "gloss": "regulations / code (a complete set of rules)"
+   }
+  ]
+ },
+ {
+  "key": "成算/精算/清算",
+  "reading": "せいさん",
+  "note": "成算=prospect of success (成算がある); 精算=settling exact accounts (fare/expense adjustment); 清算=liquidation/winding up (debts, a company, a relationship).",
+  "options": [
+   {
+    "kanji": "精算",
+    "gloss": "settling accounts exactly (fare/expense reconciliation)"
+   },
+   {
+    "kanji": "清算",
+    "gloss": "liquidation / winding up (debts, company, past)"
+   },
+   {
+    "kanji": "成算",
+    "gloss": "prospect / chance of success"
+   }
+  ]
+ },
+ {
+  "key": "解放/開放",
+  "reading": "かいほう",
+  "note": "解放=liberation/release from constraint (人質, 奴隷); 開放=opening up to access (市場開放, 校庭開放). Free FROM vs open UP.",
+  "options": [
+   {
+    "kanji": "解放",
+    "gloss": "liberation / release / emancipation (from bondage)"
+   },
+   {
+    "kanji": "開放",
+    "gloss": "opening up / making open (market, facility)"
+   }
+  ]
+ },
+ {
+  "key": "施行/試行/志向/思考",
+  "reading": "しこう",
+  "note": "施行=putting a law into force (法律の施行); 試行=trial run (試行錯誤); 志向=orientation toward (健康志向); 思考=thinking/thought. Law→施行, trial→試行, aim/trend→志向, mental→思考. (Original key had 移行 dup'd — 移行 is read いこう, not しこう; removed.)",
+  "options": [
+   {
+    "kanji": "施行",
+    "gloss": "enforcement / putting into effect (a law)"
+   },
+   {
+    "kanji": "試行",
+    "gloss": "trial / experimental run (試行錯誤)"
+   },
+   {
+    "kanji": "志向",
+    "gloss": "orientation / inclination toward (健康志向)"
+   },
+   {
+    "kanji": "思考",
+    "gloss": "thinking / thought (思考力)"
+   }
+  ]
+ },
+ {
+  "key": "課程/過程/仮定/家庭",
+  "reading": "かてい",
+  "note": "課程=a course/curriculum (教育課程, 博士課程); 過程=process/stage along the way (制作過程); 仮定=assumption; 家庭=household—same reading. Course vs process vs assumption vs home.",
+  "options": [
+   {
+    "kanji": "課程",
+    "gloss": "course / curriculum (education program)"
+   },
+   {
+    "kanji": "過程",
+    "gloss": "process / course / stages"
+   },
+   {
+    "kanji": "仮定",
+    "gloss": "assumption / hypothesis (suppose that…)"
+   },
+   {
+    "kanji": "家庭",
+    "gloss": "home / household / family"
+   }
+  ]
+ },
+ {
+  "key": "適正/適性",
+  "reading": "てきせい",
+  "note": "適正=proper/appropriate (適正価格 fair price); 適性=aptitude/suitability of a person (適性検査). 'Right amount/level' vs 'fitness for a role'.",
+  "options": [
+   {
+    "kanji": "適正",
+    "gloss": "proper / appropriate / fair (price, level)"
+   },
+   {
+    "kanji": "適性",
+    "gloss": "aptitude / suitability (for a job, study)"
+   }
+  ]
+ },
+ {
+  "key": "観賞/鑑賞/干渉/感傷",
+  "reading": "かんしょう",
+  "note": "観賞=enjoy looking at (nature, fish, flowers); 鑑賞=appreciate art/works (映画鑑賞, 音楽鑑賞); 干渉=interference; 感傷=sentimentality. Look-at-nature vs appreciate-art vs meddle vs pathos.",
+  "options": [
+   {
+    "kanji": "観賞",
+    "gloss": "viewing for pleasure (flowers, fish, scenery)"
+   },
+   {
+    "kanji": "鑑賞",
+    "gloss": "appreciation of art (film, music, literature)"
+   },
+   {
+    "kanji": "干渉",
+    "gloss": "interference / meddling"
+   },
+   {
+    "kanji": "感傷",
+    "gloss": "sentimentality / pathos"
+   }
+  ]
+ },
+ {
+  "key": "効果/降下/硬化/高価/硬貨",
+  "reading": "こうか",
+  "note": "効果=effect/efficacy; 降下=descent/fall; 硬化=hardening/stiffening (態度硬化, 動脈硬化); 高価=expensive; 硬貨=coin. Result vs descent vs hardening vs costly vs coin.",
+  "options": [
+   {
+    "kanji": "効果",
+    "gloss": "effect / efficacy"
+   },
+   {
+    "kanji": "降下",
+    "gloss": "descent / falling / coming down"
+   },
+   {
+    "kanji": "硬化",
+    "gloss": "hardening / stiffening (attitude, artery)"
+   },
+   {
+    "kanji": "高価",
+    "gloss": "expensive / high-priced"
+   },
+   {
+    "kanji": "硬貨",
+    "gloss": "coin / hard currency"
+   }
+  ]
+ },
+ {
+  "key": "保有",
+  "reading": "ほゆう",
+  "note": "保有=holding/possession (保有株式, 核保有). Single common word; main confusion is with 所有. Use 保有 for 'holding/retention' of assets/rights. (Original key listed 保有 dup'd plus 補遺 — but 補遺 is read ほい, not ほゆう; removed.)",
+  "options": [
+   {
+    "kanji": "保有",
+    "gloss": "holding / possession / retention (assets, shares, arms)"
+   }
+  ]
+ },
+ {
+  "key": "侵入/進入/浸入/新入",
+  "reading": "しんにゅう",
+  "note": "侵入=intrusion/illegal entry (不法侵入); 進入=advancing into (滑走路進入); 浸入=water seeping in; 新入=newly entering (新入社員). Trespass vs advance vs seepage vs newcomer.",
+  "options": [
+   {
+    "kanji": "侵入",
+    "gloss": "intrusion / break-in / invasion (unlawful)"
+   },
+   {
+    "kanji": "進入",
+    "gloss": "entering / advancing into (a runway, area)"
+   },
+   {
+    "kanji": "浸入",
+    "gloss": "water/liquid seeping in"
+   },
+   {
+    "kanji": "新入",
+    "gloss": "newly joining (新入社員 = new employee)"
+   }
+  ]
+ },
+ {
+  "key": "回復/快復",
+  "reading": "かいふく",
+  "note": "回復=recovery in general (景気回復, 信頼回復, also health); 快復=full recovery of health specifically. Use 回復 by default; 快復 only for getting well.",
+  "options": [
+   {
+    "kanji": "回復",
+    "gloss": "recovery / restoration (economy, trust, health)"
+   },
+   {
+    "kanji": "快復",
+    "gloss": "full recovery from illness (health only)"
+   }
+  ]
+ },
+ {
+  "key": "鑑定/官邸",
+  "reading": "かんてい",
+  "note": "鑑定=appraisal/expert judgment; 官邸=official residence (首相官邸). Both かんてい — a clean homophone pair. NOTE: original entry mixed in 勘定 (かんじょう) and 感電 (かんでん, NOT かんてい) — those are different readings; removed.",
+  "options": [
+   {
+    "kanji": "鑑定",
+    "gloss": "appraisal / expert assessment"
+   },
+   {
+    "kanji": "官邸",
+    "gloss": "official residence (首相官邸)"
+   }
+  ]
+ },
+ {
+  "key": "支持/指示/師事",
+  "reading": "しじ",
+  "note": "支持=support/backing (支持率, 支持政党); 指示=instruction/directive (指示を出す); 師事=studying under a master (〜に師事する). Backing vs orders vs apprenticeship. (Original key listed 支持 twice; corrected.)",
+  "options": [
+   {
+    "kanji": "支持",
+    "gloss": "support / backing (approval, endorsement)"
+   },
+   {
+    "kanji": "指示",
+    "gloss": "instruction / directive / order"
+   },
+   {
+    "kanji": "師事",
+    "gloss": "studying under (a master/teacher)"
+   }
+  ]
+ },
+ {
+  "key": "体制/態勢/体勢/大勢",
+  "reading": "たいせい",
+  "note": "体制=system/regime/structure (政治体制, 受け入れ体制); 態勢=readiness/posture for a situation (警戒態勢); 体勢=bodily posture (体勢を崩す); 大勢=general trend (大勢が決まる). Regime vs preparedness vs body-stance vs overall-trend.",
+  "options": [
+   {
+    "kanji": "体制",
+    "gloss": "system / regime / structure (political, organizational)"
+   },
+   {
+    "kanji": "態勢",
+    "gloss": "stance / readiness / preparedness for a situation"
+   },
+   {
+    "kanji": "体勢",
+    "gloss": "bodily posture / physical stance"
+   },
+   {
+    "kanji": "大勢",
+    "gloss": "general trend / overall situation (たいせい reading)"
+   }
+  ]
+ },
+ {
+  "key": "意義/異議/異義",
+  "reading": "いぎ",
+  "note": "意義=significance/meaning (意義がある); 異議=objection/dissent (異議を唱える); 異義=different meaning (同音異義). Worth/import vs objection vs different-sense.",
+  "options": [
+   {
+    "kanji": "意義",
+    "gloss": "significance / meaning / worth"
+   },
+   {
+    "kanji": "異議",
+    "gloss": "objection / dissent (異議を唱える)"
+   },
+   {
+    "kanji": "異義",
+    "gloss": "different meaning (同音異義語)"
+   }
+  ]
+ },
+ {
+  "key": "適格/的確",
+  "reading": "てきかく",
+  "note": "適格=qualified/eligible (適格者, 適格性); 的確=precise/accurate/to the point (的確な判断). Note: 的確 also read てっかく. Eligibility vs accuracy.",
+  "options": [
+   {
+    "kanji": "適格",
+    "gloss": "qualified / eligible (meeting requirements)"
+   },
+   {
+    "kanji": "的確",
+    "gloss": "precise / accurate / on point (judgment, instruction)"
+   }
+  ]
+ },
+ {
+  "key": "競争/競走",
+  "reading": "きょうそう",
+  "note": "競争=competition/rivalry (価格競争, 競争社会); 競走=a foot/vehicle race (徒競走, 100m競走). Abstract rivalry vs a literal race.",
+  "options": [
+   {
+    "kanji": "競争",
+    "gloss": "competition / rivalry (economic, general)"
+   },
+   {
+    "kanji": "競走",
+    "gloss": "race (running/track race)"
+   }
+  ]
+ },
+ {
+  "key": "創造/想像",
+  "reading": "そうぞう",
+  "note": "創造=creation/creating something new (創造性, 価値の創造); 想像=imagination/imagining (想像力, 想像を超える). Make-new vs picture-in-mind.",
+  "options": [
+   {
+    "kanji": "創造",
+    "gloss": "creation / creating (something new)"
+   },
+   {
+    "kanji": "想像",
+    "gloss": "imagination / imagining / supposing"
+   }
+  ]
+ },
+ {
+  "key": "公正/構成/更生/厚生/校正/後世",
+  "reading": "こうせい",
+  "note": "公正=fairness/impartiality (公正取引); 構成=composition/structure (構成員); 更生=rehabilitation/rebuilding (会社更生); 厚生=welfare (厚生労働省, 福利厚生); 校正=proofreading; 後世=posterity. Six-way news/business set. (Original key '保身/補申' was wrong: 保身=ほしん, 補申 not a word; corrected to actual こうせい members.)",
+  "options": [
+   {
+    "kanji": "公正",
+    "gloss": "fairness / impartiality / justice (公正取引)"
+   },
+   {
+    "kanji": "構成",
+    "gloss": "composition / structure / makeup"
+   },
+   {
+    "kanji": "更生",
+    "gloss": "rehabilitation / rebuilding (会社更生, ex-offender)"
+   },
+   {
+    "kanji": "厚生",
+    "gloss": "welfare / well-being (厚生労働省, 福利厚生)"
+   },
+   {
+    "kanji": "校正",
+    "gloss": "proofreading / correction of proofs"
+   },
+   {
+    "kanji": "後世",
+    "gloss": "posterity / later generations"
+   }
+  ]
+ },
+ {
+  "key": "還元/換言",
+  "reading": "かんげん",
+  "note": "還元=returning/giving back (利益還元 returning profits; also chemical reduction); 換言=putting in other words (換言すれば). Give-back vs paraphrase. (Original key '勧告/還元/環元' was wrong: 勧告=かんこく, 環元 not a standard word; corrected.)",
+  "options": [
+   {
+    "kanji": "還元",
+    "gloss": "returning / giving back (利益還元); also reduction (chem.)"
+   },
+   {
+    "kanji": "換言",
+    "gloss": "rewording / in other words (換言すれば)"
+   }
+  ]
+ },
+ {
+  "key": "改心/会心/改新/回診",
+  "reading": "かいしん",
+  "note": "改心=reforming one's heart (改心する); 会心=deep satisfaction (会心の出来); 改新=reform/renewal (大化の改新); 回診=doctor's rounds (病室回診). Repent vs satisfaction vs reform vs ward-rounds. (Original key '保留/補流' was wrong: 保留=ほりゅう, 補流 not a word; corrected.)",
+  "options": [
+   {
+    "kanji": "改心",
+    "gloss": "reforming one's ways / repentance"
+   },
+   {
+    "kanji": "会心",
+    "gloss": "deep satisfaction (会心の作 = one's best work)"
+   },
+   {
+    "kanji": "改新",
+    "gloss": "reform / renewal (大化の改新)"
+   },
+   {
+    "kanji": "回診",
+    "gloss": "doctor's rounds / ward visit"
+   }
+  ]
+ },
+ {
+  "key": "移植/委嘱/異色/衣食",
+  "reading": "いしょく",
+  "note": "移植=transplant (臓器移植); 委嘱=commissioning/entrusting (委員を委嘱する); 異色=unique/unusual (異色の経歴); 衣食=food and clothing (衣食住). Transplant vs commission vs distinctive vs livelihood.",
+  "options": [
+   {
+    "kanji": "移植",
+    "gloss": "transplant (organ); transplantation"
+   },
+   {
+    "kanji": "委嘱",
+    "gloss": "commissioning / entrusting (a role to someone)"
+   },
+   {
+    "kanji": "異色",
+    "gloss": "unique / distinctive / out of the ordinary"
+   },
+   {
+    "kanji": "衣食",
+    "gloss": "food and clothing / livelihood (衣食住)"
+   }
+  ]
+ },
+ {
+  "key": "収集/収拾",
+  "reading": "しゅうしゅう",
+  "note": "収集=collecting/gathering items (情報収集, ゴミ収集, 切手収集); 収拾=bringing under control / settling chaos (事態を収拾する). Gather-things vs get-situation-under-control. (Original key prefixed '週' (=しゅう, single mora) and 拾集 (rare); removed.)",
+  "options": [
+   {
+    "kanji": "収集",
+    "gloss": "collecting / gathering (information, garbage, stamps)"
+   },
+   {
+    "kanji": "収拾",
+    "gloss": "bringing under control / settling (収拾がつかない)"
+   }
+  ]
+ },
+ {
+  "key": "並行/平行/平衡/閉口",
+  "reading": "へいこう",
+  "note": "並行=running in parallel side-by-side (並行して進める); 平行=parallel (geometry; 平行線); 平衡=equilibrium/balance (平衡感覚); 閉口=being at a loss / fed up (暑さに閉口). Concurrent vs geometric-parallel vs balance vs exasperation. (Original key '保護/補講' was wrong: 保護=ほご, 補講=ほこう; corrected.)",
+  "options": [
+   {
+    "kanji": "並行",
+    "gloss": "running in parallel / concurrently (並行作業)"
+   },
+   {
+    "kanji": "平行",
+    "gloss": "parallel (geometric; 平行線)"
+   },
+   {
+    "kanji": "平衡",
+    "gloss": "equilibrium / balance (平衡感覚)"
+   },
+   {
+    "kanji": "閉口",
+    "gloss": "being at a loss / fed up / exasperated"
+   }
+  ]
+ },
+ {
+  "key": "確立/確率",
+  "reading": "かくりつ",
+  "note": "確立=establishment (制度の確立, 地位を確立); 確率=probability (確率が高い). Same reading, totally different—Establish vs likelihood. A top transcription trap. (Original key had 格率, a rare Kantian 'maxim'; corrected to the intended 確率.)",
+  "options": [
+   {
+    "kanji": "確立",
+    "gloss": "establishment / establishing (a system, position)"
+   },
+   {
+    "kanji": "確率",
+    "gloss": "probability / likelihood / odds"
+   }
+  ]
+ },
+ {
+  "key": "規制/既成/既製/帰省",
+  "reading": "きせい",
+  "note": "規制=regulation/control (規制緩和); 既成=already established (既成事実, 既成概念); 既製=ready-made/off-the-shelf (既製品, 既製服); 帰省=going home to one's hometown (帰省ラッシュ). Regulate vs already-fixed vs ready-made vs homecoming.",
+  "options": [
+   {
+    "kanji": "規制",
+    "gloss": "regulation / control / restriction (規制緩和)"
+   },
+   {
+    "kanji": "既成",
+    "gloss": "already established / existing (既成事実)"
+   },
+   {
+    "kanji": "既製",
+    "gloss": "ready-made / off-the-shelf (既製品, 既製服)"
+   },
+   {
+    "kanji": "帰省",
+    "gloss": "returning to one's hometown (帰省ラッシュ)"
+   }
+  ]
+ },
+ {
+  "key": "趣旨/主旨",
+  "reading": "しゅし",
+  "note": "趣旨=purpose/aim/intent of an action or plan (設立の趣旨); 主旨=the main point of a text/speech (論文の主旨). Largely overlapping; 趣旨 covers both in modern usage. Aim/intent vs main-point. (種子=seed is also しゅし but a different semantic field; original key listed it as a member — kept out of the news/economy set.)",
+  "options": [
+   {
+    "kanji": "趣旨",
+    "gloss": "purpose / intent / gist (of a plan, proposal)"
+   },
+   {
+    "kanji": "主旨",
+    "gloss": "main point / central thrust (of a text/argument)"
+   }
+  ]
+ },
+ {
+  "key": "選考/専攻/先行/専行",
+  "reading": "せんこう",
+  "note": "選考=selection/screening (書類選考); 専攻=academic major/specialization (経済学を専攻); 先行=preceding/going ahead (先行投資, 先行販売); 専行=acting on one's own (独断専行). Screening vs major vs ahead vs acting-alone. (Original note contained stray Korean text '선향…'; removed.)",
+  "options": [
+   {
+    "kanji": "選考",
+    "gloss": "selection / screening (of candidates)"
+   },
+   {
+    "kanji": "専攻",
+    "gloss": "academic major / specialization"
+   },
+   {
+    "kanji": "先行",
+    "gloss": "preceding / going ahead (先行投資)"
+   },
+   {
+    "kanji": "専行",
+    "gloss": "acting on one's own authority (独断専行)"
+   }
+  ]
+ },
+ {
+  "key": "交渉/高尚/考証/公証",
+  "reading": "こうしょう",
+  "note": "交渉=negotiation (労使交渉, 外交交渉); 高尚=refined/lofty (高尚な趣味); 考証=historical verification (時代考証); 公証=notarization (公証人). Talks vs refined vs historical-research vs notary. (Original key '保有/有効/有功' did not match the reading; corrected to actual こうしょう members.)",
+  "options": [
+   {
+    "kanji": "交渉",
+    "gloss": "negotiation / talks / dealings"
+   },
+   {
+    "kanji": "高尚",
+    "gloss": "refined / lofty / highbrow"
+   },
+   {
+    "kanji": "考証",
+    "gloss": "(historical) verification / authentication (時代考証)"
+   },
+   {
+    "kanji": "公証",
+    "gloss": "notarization / official attestation (公証人)"
+   }
+  ]
+ },
+ {
+  "key": "改定/改訂/海底",
+  "reading": "かいてい",
+  "note": "改定=revising/resetting (a rate, fee, schedule: 運賃改定, 価格改定); 改訂=revising a text/edition (改訂版, 教科書改訂); 海底=seabed (海底ケーブル). Rate-revision vs text-revision vs seabed. (Original key '解散/改算' was wrong: 解散=かいさん, 改算 not a standard word; corrected.)",
+  "options": [
+   {
+    "kanji": "改定",
+    "gloss": "revision / resetting (rates, fees, rules)"
+   },
+   {
+    "kanji": "改訂",
+    "gloss": "revision of a text / new edition (改訂版)"
+   },
+   {
+    "kanji": "海底",
+    "gloss": "seabed / ocean floor (海底ケーブル)"
+   }
+  ]
+ },
+ {
+  "key": "適用/摘要",
+  "reading": "てきよう",
+  "note": "適用=applying a rule/law (法の適用); 摘要=summary/abstract, ledger 'description' column. NOTE: 適応=てきおう (adaptation, 環境適応) is a DIFFERENT reading and must not be merged into this てきよう set. Apply-rule vs summary.",
+  "options": [
+   {
+    "kanji": "適用",
+    "gloss": "application of a rule/law (てきよう)"
+   },
+   {
+    "kanji": "摘要",
+    "gloss": "summary / abstract / description column (てきよう)"
+   }
+  ]
+ },
+ {
+  "key": "せいさん",
+  "reading": "せいさん",
+  "options": [
+   {
+    "kanji": "清算",
+    "gloss": "winding up / settling debts / liquidation of a company or relationship"
+   },
+   {
+    "kanji": "精算",
+    "gloss": "calculating an exact final amount (fare/expense adjustment)"
+   },
+   {
+    "kanji": "成算",
+    "gloss": "prospect/confidence of success"
+   },
+   {
+    "kanji": "凄惨",
+    "gloss": "ghastly, gruesome (scene)"
+   }
+  ],
+  "note": "Money: 精算 = settle the exact figure (運賃を精算); 清算 = wind up/clear debts or a company (負債を清算). 成算/凄惨 differ by context entirely."
+ },
+ {
+  "key": "こうせい",
+  "reading": "こうせい",
+  "options": [
+   {
+    "kanji": "更生",
+    "gloss": "rehabilitation; rebirth (esp. legal: 会社更生法 corporate reorganization, offender rehabilitation)"
+   },
+   {
+    "kanji": "更正",
+    "gloss": "official correction of an error (esp. tax: 更正処分 reassessment)"
+   },
+   {
+    "kanji": "厚生",
+    "gloss": "public welfare (厚生労働省 Ministry of Health, Labour and Welfare; 福利厚生 employee benefits)"
+   },
+   {
+    "kanji": "校正",
+    "gloss": "proofreading; calibration"
+   },
+   {
+    "kanji": "構成",
+    "gloss": "composition; structure; makeup"
+   },
+   {
+    "kanji": "公正",
+    "gloss": "fairness; impartiality (公正取引 fair trade)"
+   }
+  ],
+  "note": "Legal-heavy family. 更生 = a person/company gets a fresh start; 更正 = an authority corrects a figure; 厚生 = welfare. Don't confuse 更生/更正."
+ },
+ {
+  "key": "いじょう",
+  "reading": "いじょう",
+  "options": [
+   {
+    "kanji": "異常",
+    "gloss": "abnormality; not normal (medical/technical: 異常値 abnormal value)"
+   },
+   {
+    "kanji": "異状",
+    "gloss": "something visibly wrong / abnormal condition (異状なし all clear; 死体の異状)"
+   },
+   {
+    "kanji": "委譲",
+    "gloss": "delegation / transfer of authority to a subordinate body"
+   },
+   {
+    "kanji": "移譲",
+    "gloss": "transfer / cession of rights or power to another party"
+   }
+  ],
+  "note": "Medical/forensic: 異常 = abnormal as a property; 異状 = a concrete abnormal state, classic in 異状なし / 異状死. 委譲 (down a hierarchy) vs 移譲 (across to another) for authority."
+ },
+ {
+  "key": "さいけつ",
+  "reading": "さいけつ",
+  "options": [
+   {
+    "kanji": "採決",
+    "gloss": "taking a vote; putting a motion to a vote (parliamentary)"
+   },
+   {
+    "kanji": "裁決",
+    "gloss": "adjudication; administrative ruling/decision (legal)"
+   },
+   {
+    "kanji": "採血",
+    "gloss": "drawing blood (medical)"
+   }
+  ],
+  "note": "Legislature 採決 (vote) vs authority's 裁決 (ruling) vs clinic 採血 (blood draw). Spans legal + medical."
+ },
+ {
+  "key": "しょうかい",
+  "reading": "しょうかい",
+  "options": [
+   {
+    "kanji": "照会",
+    "gloss": "inquiry; verification request (残高照会 balance inquiry; 信用照会)"
+   },
+   {
+    "kanji": "紹介",
+    "gloss": "introduction; referral (medical: 紹介状 referral letter)"
+   },
+   {
+    "kanji": "商会",
+    "gloss": "trading firm / company (in firm names)"
+   },
+   {
+    "kanji": "哨戒",
+    "gloss": "patrol (military)"
+   }
+  ],
+  "note": "Banking/legal 照会 = formally inquire to confirm; medical/business 紹介 = introduce/refer. Easily swapped in dictation."
+ },
+ {
+  "key": "ほしょう",
+  "reading": "ほしょう",
+  "options": [
+   {
+    "kanji": "保証",
+    "gloss": "guarantee; warranty; vouching (品質保証; 保証人 guarantor)"
+   },
+   {
+    "kanji": "保障",
+    "gloss": "securing/safeguarding (rights, security: 社会保障 social security; 安全保障)"
+   },
+   {
+    "kanji": "補償",
+    "gloss": "compensation; indemnity for loss/damage (損害補償; 災害補償)"
+   }
+  ],
+  "note": "保証 = I guarantee it's good; 保障 = protect a state/right; 補償 = pay back a loss. Core legal/insurance triad."
+ },
+ {
+  "key": "かんしん",
+  "reading": "かんしん",
+  "options": [
+   {
+    "kanji": "関心",
+    "gloss": "interest; concern (having interest in a topic)"
+   },
+   {
+    "kanji": "感心",
+    "gloss": "admiration; being impressed"
+   },
+   {
+    "kanji": "歓心",
+    "gloss": "(someone's) favor/goodwill (歓心を買う curry favor)"
+   },
+   {
+    "kanji": "寒心",
+    "gloss": "shuddering with fear/alarm (寒心に堪えない)"
+   }
+  ],
+  "note": "関心 = interest in; 感心 = impressed by; 歓心 = winning favor; 寒心 = dread. Academic prose uses 関心 most."
+ },
+ {
+  "key": "たいしょう",
+  "reading": "たいしょう",
+  "options": [
+   {
+    "kanji": "対象",
+    "gloss": "target; object of study/application (調査対象 subject of survey)"
+   },
+   {
+    "kanji": "対照",
+    "gloss": "contrast; comparison (対照群 control group; 対照表)"
+   },
+   {
+    "kanji": "対称",
+    "gloss": "symmetry (左右対称 bilateral symmetry)"
+   },
+   {
+    "kanji": "大将",
+    "gloss": "general; commander; boss"
+   }
+  ],
+  "note": "Research triad: 対象 = what you study; 対照 = contrasting/control; 対称 = symmetry. Very high dictation-error rate."
+ },
+ {
+  "key": "きかん",
+  "reading": "きかん",
+  "options": [
+   {
+    "kanji": "機関",
+    "gloss": "institution; organization; engine (研究機関; 行政機関)"
+   },
+   {
+    "kanji": "期間",
+    "gloss": "period; term; duration (有効期間 valid period)"
+   },
+   {
+    "kanji": "器官",
+    "gloss": "organ (anatomical: 消化器官 digestive organ)"
+   },
+   {
+    "kanji": "気管",
+    "gloss": "trachea; windpipe (medical: 気管支 bronchi)"
+   },
+   {
+    "kanji": "基幹",
+    "gloss": "core; backbone; key (基幹産業 key industry)"
+   }
+  ],
+  "note": "Medical splits 器官 (organ) vs 気管 (windpipe); academic uses 機関 (institution) and 期間 (timeframe). Note 器官≠気管."
+ },
+ {
+  "key": "けっかん",
+  "reading": "けっかん",
+  "options": [
+   {
+    "kanji": "血管",
+    "gloss": "blood vessel (medical)"
+   },
+   {
+    "kanji": "欠陥",
+    "gloss": "defect; flaw (欠陥商品 defective product)"
+   }
+  ],
+  "note": "Medical 血管 (vessel) vs product-liability 欠陥 (defect). High-frequency pair. (The original third option 欠かん was removed — see flagged.)"
+ },
+ {
+  "key": "こうえん",
+  "reading": "こうえん",
+  "options": [
+   {
+    "kanji": "講演",
+    "gloss": "lecture; formal talk (academic/keynote)"
+   },
+   {
+    "kanji": "公演",
+    "gloss": "public performance (stage/concert)"
+   },
+   {
+    "kanji": "公園",
+    "gloss": "park (public ground)"
+   },
+   {
+    "kanji": "後援",
+    "gloss": "sponsorship; backing (後援会 support association)"
+   },
+   {
+    "kanji": "好演",
+    "gloss": "fine performance (acting/playing well)"
+   }
+  ],
+  "note": "Academic 講演 (lecture) vs theatrical 公演 (performance) vs 後援 (sponsoring). 講演≠公演 is the usual slip."
+ },
+ {
+  "key": "かいとう",
+  "reading": "かいとう",
+  "options": [
+   {
+    "kanji": "回答",
+    "gloss": "reply/response to an inquiry or survey"
+   },
+   {
+    "kanji": "解答",
+    "gloss": "answer/solution to a problem (exam, math)"
+   },
+   {
+    "kanji": "解凍",
+    "gloss": "thawing; decompressing (a file)"
+   },
+   {
+    "kanji": "怪盗",
+    "gloss": "phantom thief"
+   }
+  ],
+  "note": "回答 = answering a question put to you; 解答 = the correct solution. Academic/test contexts use 解答."
+ },
+ {
+  "key": "いどう",
+  "reading": "いどう",
+  "options": [
+   {
+    "kanji": "移動",
+    "gloss": "movement; relocation (physically moving)"
+   },
+   {
+    "kanji": "異動",
+    "gloss": "personnel change; reassignment (人事異動)"
+   },
+   {
+    "kanji": "異同",
+    "gloss": "differences (and similarities); discrepancies (異同を調べる)"
+   }
+  ],
+  "note": "HR/legal 異動 = staff transfer; 移動 = physical move; 異同 = textual/data discrepancies (academic collation)."
+ },
+ {
+  "key": "かいしん",
+  "reading": "かいしん",
+  "options": [
+   {
+    "kanji": "改心",
+    "gloss": "reforming one's heart; repentance (becoming a better person)"
+   },
+   {
+    "kanji": "回心",
+    "gloss": "religious conversion (theological term)"
+   },
+   {
+    "kanji": "会心",
+    "gloss": "satisfaction; being delighted with one's own work (会心の作)"
+   },
+   {
+    "kanji": "改新",
+    "gloss": "reform; renovation (大化の改新 Taika Reform)"
+   }
+  ],
+  "note": "改心 = moral turnaround; 会心 = self-satisfaction; 回心 = (Christian) conversion; 改新 = institutional reform. Distinct senses."
+ },
+ {
+  "key": "しゅうしゅう",
+  "reading": "しゅうしゅう",
+  "options": [
+   {
+    "kanji": "収集",
+    "gloss": "collecting/gathering items (data/specimens: 情報収集)"
+   },
+   {
+    "kanji": "収拾",
+    "gloss": "bringing under control; settling a chaotic situation (事態を収拾)"
+   },
+   {
+    "kanji": "蒐集",
+    "gloss": "(older/formal variant of 収集) connoisseur collecting"
+   }
+  ],
+  "note": "収集 = gather things; 収拾 = control a mess (収拾がつかない). Never write 収集 for 収拾."
+ },
+ {
+  "key": "かいほう",
+  "reading": "かいほう",
+  "options": [
+   {
+    "kanji": "解放",
+    "gloss": "liberation; release from confinement/restriction (人質解放)"
+   },
+   {
+    "kanji": "開放",
+    "gloss": "opening up; making open to the public (市場開放; 開放骨折)"
+   },
+   {
+    "kanji": "介抱",
+    "gloss": "nursing; caring for a sick/drunk person"
+   },
+   {
+    "kanji": "快方",
+    "gloss": "recovery; getting better (快方に向かう)"
+   },
+   {
+    "kanji": "会報",
+    "gloss": "bulletin; society newsletter"
+   }
+  ],
+  "note": "解放 = set free; 開放 = throw open. Medical: 介抱 = tend to; 快方 = convalescing; 開放骨折 = open fracture."
+ },
+ {
+  "key": "しんこう",
+  "reading": "しんこう",
+  "options": [
+   {
+    "kanji": "進行",
+    "gloss": "progression; advancing (病気の進行 disease progression)"
+   },
+   {
+    "kanji": "侵攻",
+    "gloss": "invasion; military incursion"
+   },
+   {
+    "kanji": "振興",
+    "gloss": "promotion; fostering (産業振興)"
+   },
+   {
+    "kanji": "信仰",
+    "gloss": "religious faith; belief"
+   },
+   {
+    "kanji": "親交",
+    "gloss": "close friendship; intimacy"
+   },
+   {
+    "kanji": "新興",
+    "gloss": "newly rising; emerging (新興国 emerging nation)"
+   }
+  ],
+  "note": "Medical 進行 (disease advancing) vs 侵攻 (invasion) vs 振興 (promote) vs 信仰 (faith). Tightly gloss to disambiguate."
+ },
+ {
+  "key": "へいこう",
+  "reading": "へいこう",
+  "options": [
+   {
+    "kanji": "平行",
+    "gloss": "parallel (geometry: lines that never meet; 平行線)"
+   },
+   {
+    "kanji": "並行",
+    "gloss": "running side by side; concurrent (並行処理 parallel processing; 並行輸入)"
+   },
+   {
+    "kanji": "平衡",
+    "gloss": "equilibrium; balance (平衡感覚 sense of balance)"
+   },
+   {
+    "kanji": "閉口",
+    "gloss": "being stumped/fed up (口語: 閉口する)"
+   }
+  ],
+  "note": "Math 平行 = geometrically parallel; 並行 = two processes happening together; 平衡 = balance/equilibrium (physics/physiology)."
+ },
+ {
+  "key": "きてい",
+  "reading": "きてい",
+  "options": [
+   {
+    "kanji": "規定",
+    "gloss": "a specific stipulation/provision (内部規定; defined value)"
+   },
+   {
+    "kanji": "規程",
+    "gloss": "a body of regulations as a coherent set (服務規程 service regulations)"
+   },
+   {
+    "kanji": "既定",
+    "gloss": "already decided; predetermined (既定路線; 既定事実)"
+   },
+   {
+    "kanji": "基底",
+    "gloss": "base; basis; ground state (math/physics: 基底状態)"
+   }
+  ],
+  "note": "Legal/admin: 規定 = an individual rule/clause; 規程 = the whole regulation document. 既定 = a settled fact, not a rule."
+ },
+ {
+  "key": "しんろ",
+  "reading": "しんろ",
+  "options": [
+   {
+    "kanji": "進路",
+    "gloss": "course/path ahead (career path; typhoon's course 台風の進路)"
+   },
+   {
+    "kanji": "針路",
+    "gloss": "compass heading; a ship's/aircraft's bearing (航空機の針路)"
+   }
+  ],
+  "note": "進路 = direction of advance in general (and school/career guidance 進路指導); 針路 = navigational compass bearing specifically."
+ },
+ {
+  "key": "ついきゅう",
+  "reading": "ついきゅう",
+  "options": [
+   {
+    "kanji": "追求",
+    "gloss": "pursuing/seeking after something desired (利益を追求 pursue profit)"
+   },
+   {
+    "kanji": "追及",
+    "gloss": "pressing/pursuing to corner someone (責任を追及 press for accountability)"
+   },
+   {
+    "kanji": "追究",
+    "gloss": "investigating deeply; inquiring into (academic: 真理を追究 inquire into truth)"
+   }
+  ],
+  "note": "求=seek a gain, 及=catch/corner a person, 究=inquire into truth. Academic prose uses 追究; legal questioning uses 追及."
+ },
+ {
+  "key": "かてい",
+  "reading": "かてい",
+  "options": [
+   {
+    "kanji": "過程",
+    "gloss": "process; the course something goes through (反応過程)"
+   },
+   {
+    "kanji": "課程",
+    "gloss": "curriculum; course of study (博士課程 doctoral program)"
+   },
+   {
+    "kanji": "仮定",
+    "gloss": "assumption; hypothesis (仮定法 subjunctive)"
+   },
+   {
+    "kanji": "家庭",
+    "gloss": "household; home"
+   }
+  ],
+  "note": "Academic: 過程 = the unfolding process; 課程 = a formal program/curriculum; 仮定 = a supposition. 過程≠課程 is the classic slip."
+ },
+ {
+  "key": "へんせい",
+  "reading": "へんせい",
+  "options": [
+   {
+    "kanji": "編成",
+    "gloss": "organizing/forming into a structured unit (予算編成; 番組編成; train consist)"
+   },
+   {
+    "kanji": "編制",
+    "gloss": "organizing by statutory/regulatory structure (軍の編制 military establishment)"
+   },
+   {
+    "kanji": "変成",
+    "gloss": "metamorphism; transformation (変成岩 metamorphic rock)"
+   },
+   {
+    "kanji": "変性",
+    "gloss": "denaturation; degeneration (タンパク質の変性 protein denaturation)"
+   }
+  ],
+  "note": "編成 = assemble (budget/lineup); 編制 = legally fixed org structure; 変性 = (bio/chem) denature; 変成 = (geology) metamorphose."
+ },
+ {
+  "key": "とうき",
+  "reading": "とうき",
+  "options": [
+   {
+    "kanji": "登記",
+    "gloss": "official registration (property/company: 不動産登記; 商業登記)"
+   },
+   {
+    "kanji": "投機",
+    "gloss": "speculation (high-risk investment: 投機的取引)"
+   },
+   {
+    "kanji": "投棄",
+    "gloss": "dumping; throwing away (不法投棄 illegal dumping)"
+   },
+   {
+    "kanji": "陶器",
+    "gloss": "pottery; ceramics"
+   },
+   {
+    "kanji": "騰貴",
+    "gloss": "price surge; sharp rise (物価騰貴)"
+   }
+  ],
+  "note": "Legal 登記 = register a title; finance 投機 = speculate; 投棄 = dump. Three high-frequency, easily-confused legal/financial terms."
+ },
+ {
+  "key": "せいさく",
+  "reading": "せいさく",
+  "options": [
+   {
+    "kanji": "政策",
+    "gloss": "policy (government measures: 経済政策)"
+   },
+   {
+    "kanji": "制作",
+    "gloss": "production of artistic/creative works (映画制作; artwork)"
+   },
+   {
+    "kanji": "製作",
+    "gloss": "manufacture/production of physical goods or industrial film production"
+   }
+  ],
+  "note": "政策 = government policy; 制作 = creating art/content; 製作 = making physical products. 制作 (art) vs 製作 (goods) is the fine split."
+ },
+ {
+  "key": "しょうがい",
+  "reading": "しょうがい",
+  "options": [
+   {
+    "kanji": "障害",
+    "gloss": "obstacle; impairment; disability/disorder (medical: 機能障害; 発達障害)"
+   },
+   {
+    "kanji": "傷害",
+    "gloss": "bodily injury; assault causing injury (legal: 傷害罪 crime of inflicting injury)"
+   },
+   {
+    "kanji": "生涯",
+    "gloss": "lifetime; one's whole life (生涯学習 lifelong learning)"
+   },
+   {
+    "kanji": "渉外",
+    "gloss": "external/public relations; liaison (渉外担当)"
+   }
+  ],
+  "note": "Medical 障害 = impairment/disorder; legal 傷害 = the offense of injuring a person (傷害事件). Never swap these two."
+ },
+ {
+  "key": "こうとう",
+  "reading": "こうとう",
+  "options": [
+   {
+    "kanji": "口頭",
+    "gloss": "oral; verbal (口頭弁論 oral argument; 口頭試問 oral exam)"
+   },
+   {
+    "kanji": "喉頭",
+    "gloss": "larynx (medical: 喉頭がん laryngeal cancer)"
+   },
+   {
+    "kanji": "高騰",
+    "gloss": "steep price rise; soaring (価格高騰)"
+   },
+   {
+    "kanji": "高等",
+    "gloss": "higher-grade; advanced (高等教育 higher education)"
+   }
+  ],
+  "note": "Legal/academic 口頭 = spoken (oral argument/exam); medical 喉頭 = larynx. Identical reading, totally different domain."
+ },
+ {
+  "key": "せいか",
+  "reading": "せいか",
+  "options": [
+   {
+    "kanji": "成果",
+    "gloss": "results; outcomes; achievement (研究成果 research results)"
+   },
+   {
+    "kanji": "正課",
+    "gloss": "regular curriculum; required coursework"
+   },
+   {
+    "kanji": "青果",
+    "gloss": "fruits and vegetables (produce: 青果市場)"
+   },
+   {
+    "kanji": "聖火",
+    "gloss": "sacred flame (Olympic torch)"
+   }
+  ],
+  "note": "Academic 成果 = research output is by far the high-frequency one; gloss tightly against 正課 (formal coursework). (The original option 成句 was removed — its reading is せいく, not せいか; see flagged.)"
+ },
+ {
+  "key": "きょうこう",
+  "reading": "きょうこう",
+  "options": [
+   {
+    "kanji": "強行",
+    "gloss": "forcing through; carrying out forcibly (強行採決 ramming a vote through)"
+   },
+   {
+    "kanji": "強硬",
+    "gloss": "hardline; uncompromising (強硬姿勢 hardline stance)"
+   },
+   {
+    "kanji": "恐慌",
+    "gloss": "panic; economic depression (世界恐慌 the Great Depression)"
+   },
+   {
+    "kanji": "教皇",
+    "gloss": "the Pope"
+   }
+  ],
+  "note": "強行 = act of forcing through (verb-like); 強硬 = an attitude of being hardline (adjectival). 強行採決≠強硬採決."
+ },
+ {
+  "key": "かんち",
+  "reading": "かんち",
+  "options": [
+   {
+    "kanji": "感知",
+    "gloss": "sensing; detecting (感知器 sensor; 火災感知)"
+   },
+   {
+    "kanji": "関知",
+    "gloss": "having concern with / knowledge of a matter (legal: 私の関知しない I have nothing to do with it)"
+   },
+   {
+    "kanji": "完治",
+    "gloss": "complete cure; full recovery (medical)"
+   }
+  ],
+  "note": "感知 = detect via senses/device; 関知 = be involved in/aware of (used in disclaimers); 完治 = fully healed. Three domains."
+ },
+ {
+  "key": "かいご",
+  "reading": "かいご",
+  "options": [
+   {
+    "kanji": "介護",
+    "gloss": "nursing care; long-term care (介護保険 long-term care insurance)"
+   },
+   {
+    "kanji": "悔悟",
+    "gloss": "remorse; repentance (悔悟の念)"
+   },
+   {
+    "kanji": "回護",
+    "gloss": "shielding/protecting someone (formal, rare)"
+   }
+  ],
+  "note": "Medical/welfare 介護 = caregiving is the high-frequency one; 悔悟 = remorse. Drop the rare 回護 if unsure of context."
+ },
+ {
+  "key": "へんかん",
+  "reading": "へんかん",
+  "options": [
+   {
+    "kanji": "返還",
+    "gloss": "return; restitution (returning what was held: 領土返還; 過払い金返還)"
+   },
+   {
+    "kanji": "変換",
+    "gloss": "conversion; transformation (data/format: 文字変換; エネルギー変換)"
+   }
+  ],
+  "note": "返還 = give back something owed/held (legal restitution); 変換 = convert from one form to another (technical). Don't swap."
+ },
+ {
+  "key": "せい / 制 vs 製",
+  "rule": "制 = system/control/institution (regulatory or organizational); 製 = manufactured / made-of (a physical product or its material). Choose by whether the noun names a system or a manufactured thing.",
+  "example_wrong": "日本製度 (for 'the Japanese system') / 鉄制 (for 'made of iron')",
+  "example_right": "日本の制度 (the Japanese system); 鉄製の橋 (an iron-made bridge); 規制 (regulation) vs 製品 (product)",
+  "note": "If you can say 'made of/made by' → 製 (鉄製・日本製). If it names a regime/scheme → 制 (制度・規制・税制)."
+ },
+ {
+  "key": "か / 科 vs 課",
+  "rule": "科 = a branch/department of study or medicine, or a penal class (academic discipline / clinical specialty); 課 = an administrative section of an organization, or a lesson unit. Choose by whether it's a field of knowledge vs an office section.",
+  "example_wrong": "外課 (for the surgery department) / 総務科 (for the General Affairs Section)",
+  "example_right": "外科 (surgery dept.); 内科 (internal medicine); 総務課 (General Affairs Section); 第3課 (Lesson 3)",
+  "note": "Hospital/university specialty → 科 (外科・眼科・物理学科). Company/government office → 課 (人事課・経理課)."
+ },
+ {
+  "key": "いし",
+  "reading": "いし",
+  "options": [
+   {
+    "kanji": "意志",
+    "gloss": "will, volition (determination to act)"
+   },
+   {
+    "kanji": "意思",
+    "gloss": "intention, what one thinks/means (legal/communicative intent)"
+   },
+   {
+    "kanji": "遺志",
+    "gloss": "the will/wishes of a deceased person"
+   }
+  ],
+  "note": "意志=willpower/resolve (意志が強い); 意思=intent in communication/law (意思表示, 意思確認); 遺志=a dead person's unfulfilled wish (故人の遺志).",
+  "example_right": "彼の意志は固い (his will is firm)",
+  "example_wrong": "彼の意思は固い (wrong here; 意思 doesn't take 固い for resolve)"
+ },
+ {
+  "key": "かんしん",
+  "reading": "かんしん",
+  "options": [
+   {
+    "kanji": "関心",
+    "gloss": "interest, concern (attention toward something)"
+   },
+   {
+    "kanji": "感心",
+    "gloss": "admiration, being impressed"
+   },
+   {
+    "kanji": "歓心",
+    "gloss": "favor, goodwill (someone's pleased feelings)"
+   },
+   {
+    "kanji": "寒心",
+    "gloss": "shuddering with fear/alarm (formal, negative)"
+   }
+  ],
+  "note": "関心=have interest (関心がある); 感心=impressed (感心する); 歓心 only in 歓心を買う (curry favor); 寒心 only in 寒心に堪えない.",
+  "example_right": "政治に関心がある (interested in politics)",
+  "example_wrong": "政治に感心がある (wrong; 感心 is not 'interest')"
+ },
+ {
+  "key": "かてい",
+  "reading": "かてい",
+  "options": [
+   {
+    "kanji": "過程",
+    "gloss": "process, course (how something proceeds)"
+   },
+   {
+    "kanji": "課程",
+    "gloss": "curriculum, course of study"
+   },
+   {
+    "kanji": "仮定",
+    "gloss": "assumption, hypothesis"
+   },
+   {
+    "kanji": "家庭",
+    "gloss": "home, household, family"
+   }
+  ],
+  "note": "過程=process of change (成長の過程); 課程=school program (博士課程); 仮定=supposing (仮定の話); 家庭=domestic home.",
+  "example_right": "学習の過程で気づいた (noticed during the learning process)",
+  "example_wrong": "学習の課程で気づいた (wrong; 課程 is the curriculum, not the unfolding process)"
+ },
+ {
+  "key": "かいほう",
+  "reading": "かいほう",
+  "options": [
+   {
+    "kanji": "解放",
+    "gloss": "liberation, release (from bondage/restriction)"
+   },
+   {
+    "kanji": "開放",
+    "gloss": "opening up, throwing open (doors/market)"
+   },
+   {
+    "kanji": "介抱",
+    "gloss": "nursing, caring for the sick/drunk"
+   },
+   {
+    "kanji": "快方",
+    "gloss": "convalescence, recovery (toward health)"
+   }
+  ],
+  "note": "解放=free from constraint (奴隷解放); 開放=keep open (市場開放, 門戸開放); 介抱=tend to the sick/drunk (酔客を介抱); 快方 only in 快方に向かう. NOTE: 解剖 (dissection) was REMOVED from this set — it reads かいぼう, not かいほう, so it is not a true homophone.",
+  "example_right": "ストレスから解放された (was released from stress)",
+  "example_wrong": "ストレスから開放された (wrong; 開放 = open a door, not free from)"
+ },
+ {
+  "key": "たいしょう",
+  "reading": "たいしょう",
+  "options": [
+   {
+    "kanji": "対象",
+    "gloss": "target, object (of an action/study)"
+   },
+   {
+    "kanji": "対称",
+    "gloss": "symmetry"
+   },
+   {
+    "kanji": "対照",
+    "gloss": "contrast, comparison"
+   },
+   {
+    "kanji": "大将",
+    "gloss": "general, boss, leader"
+   }
+  ],
+  "note": "対象=who/what is targeted (調査対象); 対称=left-right symmetry (左右対称); 対照=set side by side (対照的); 大将=commander/ringleader.",
+  "example_right": "調査の対象になる (becomes the object of investigation)",
+  "example_wrong": "調査の対照になる (wrong; 対照 = contrast, not the thing studied)"
+ },
+ {
+  "key": "かんしょう",
+  "reading": "かんしょう",
+  "options": [
+   {
+    "kanji": "鑑賞",
+    "gloss": "appreciation of art (viewing/listening)"
+   },
+   {
+    "kanji": "観賞",
+    "gloss": "viewing for pleasure (nature/plants/fish)"
+   },
+   {
+    "kanji": "干渉",
+    "gloss": "interference, meddling"
+   },
+   {
+    "kanji": "感傷",
+    "gloss": "sentimentality, pathos"
+   },
+   {
+    "kanji": "緩衝",
+    "gloss": "buffer, cushioning"
+   }
+  ],
+  "note": "鑑賞=art/music (音楽鑑賞); 観賞=plants/fish/scenery (観賞用); 干渉=meddle (内政干渉); 感傷=being sentimental (感傷的); 緩衝=buffer zone (緩衝材).",
+  "example_right": "映画を鑑賞する (appreciate a film)",
+  "example_wrong": "映画を観賞する (wrong; 観賞 is for nature/fish, not film art)"
+ },
+ {
+  "key": "きょうどう",
+  "reading": "きょうどう",
+  "options": [
+   {
+    "kanji": "共同",
+    "gloss": "joint, shared (two+ parties together)"
+   },
+   {
+    "kanji": "協同",
+    "gloss": "cooperation toward a common goal (co-op)"
+   },
+   {
+    "kanji": "協働",
+    "gloss": "collaboration (working together, esp. orgs/sectors)"
+   }
+  ],
+  "note": "共同=shared use/ownership (共同生活, 共同体); 協同=cooperative effort (協同組合); 協働=newer term for cross-sector collaboration.",
+  "example_right": "共同で部屋を借りる (rent a room jointly)",
+  "example_wrong": "協同で部屋を借りる (wrong; 協同 is goal-oriented cooperation, not shared use)"
+ },
+ {
+  "key": "かんき",
+  "reading": "かんき",
+  "options": [
+   {
+    "kanji": "喚起",
+    "gloss": "arousing, calling forth (attention/awareness)"
+   },
+   {
+    "kanji": "換気",
+    "gloss": "ventilation, airing out"
+   },
+   {
+    "kanji": "歓喜",
+    "gloss": "great joy, delight"
+   },
+   {
+    "kanji": "乾期",
+    "gloss": "dry season"
+   }
+  ],
+  "note": "喚起=evoke (注意喚起); 換気=air the room (換気扇); 歓喜=emotional joy (歓喜の声); 乾期 also written 乾季.",
+  "example_right": "注意を喚起する (call attention to)",
+  "example_wrong": "注意を換気する (wrong; 換気 = ventilate air, not arouse attention)"
+ },
+ {
+  "key": "せいさん",
+  "reading": "せいさん",
+  "options": [
+   {
+    "kanji": "生産",
+    "gloss": "production, manufacturing"
+   },
+   {
+    "kanji": "清算",
+    "gloss": "settlement of accounts/debts; liquidation"
+   },
+   {
+    "kanji": "精算",
+    "gloss": "exact calculation/adjustment of a sum (fare/expenses)"
+   },
+   {
+    "kanji": "成算",
+    "gloss": "prospect of success, confidence of winning"
+   }
+  ],
+  "note": "生産=make goods; 清算=settle debts/end a relationship (借金を清算); 精算=true-up a fare/expense (運賃精算); 成算 only in 成算がある.",
+  "example_right": "運賃を精算する (settle/adjust the exact fare)",
+  "example_wrong": "運賃を清算する (wrong; 清算 = liquidate debts, not fare true-up)"
+ },
+ {
+  "key": "ついきゅう",
+  "reading": "ついきゅう",
+  "options": [
+   {
+    "kanji": "追求",
+    "gloss": "pursuit of something desired (profit/happiness)"
+   },
+   {
+    "kanji": "追究",
+    "gloss": "investigation, getting to the bottom (truth/cause)"
+   },
+   {
+    "kanji": "追及",
+    "gloss": "pressing/pursuing (responsibility, a culprit)"
+   }
+  ],
+  "note": "追求=seek to obtain (利益の追求, 幸福の追求); 追究=probe academically (真理の追究); 追及=hound/grill (責任を追及).",
+  "example_right": "幸福を追求する (pursue happiness)",
+  "example_wrong": "幸福を追及する (wrong; 追及 = hound someone, not seek happiness)"
+ },
+ {
+  "key": "ほしょう",
+  "reading": "ほしょう",
+  "options": [
+   {
+    "kanji": "保証",
+    "gloss": "guarantee, warranty (assure quality/payment)"
+   },
+   {
+    "kanji": "保障",
+    "gloss": "security, safeguard (protect rights/safety)"
+   },
+   {
+    "kanji": "補償",
+    "gloss": "compensation, indemnity (make up for loss)"
+   }
+  ],
+  "note": "保証=I guarantee it (品質保証, 保証人); 保障=protect ongoing (社会保障, 安全保障); 補償=pay for damage (損害補償).",
+  "example_right": "品質を保証する (guarantee the quality)",
+  "example_wrong": "品質を保障する (wrong; 保障 is safeguarding security, not warranting quality)"
+ },
+ {
+  "key": "へいこう",
+  "reading": "へいこう",
+  "options": [
+   {
+    "kanji": "平行",
+    "gloss": "parallel (lines never meeting); talks at an impasse"
+   },
+   {
+    "kanji": "並行",
+    "gloss": "running side by side / concurrently"
+   },
+   {
+    "kanji": "平衡",
+    "gloss": "equilibrium, balance"
+   },
+   {
+    "kanji": "閉口",
+    "gloss": "being at a loss, fed up, stumped"
+   }
+  ],
+  "note": "平行=geometric parallel / 議論が平行線; 並行=in parallel/simultaneously (並行して進める); 平衡=balance (平衡感覚); 閉口=give up in exasperation.",
+  "example_right": "二つの作業を並行して進める (advance two tasks concurrently)",
+  "example_wrong": "二つの作業を平行して進める (wrong; 平行 is geometric parallel, not 'concurrently')"
+ },
+ {
+  "key": "いどう",
+  "reading": "いどう",
+  "options": [
+   {
+    "kanji": "移動",
+    "gloss": "movement, moving from place to place"
+   },
+   {
+    "kanji": "異動",
+    "gloss": "personnel change, transfer (job/post)"
+   },
+   {
+    "kanji": "異同",
+    "gloss": "differences and similarities, discrepancy"
+   }
+  ],
+  "note": "移動=physical move (移動時間); 異動=staff reassignment (人事異動); 異同=points of difference (両者の異同).",
+  "example_right": "人事異動で部署が変わる (department changes via personnel reshuffle)",
+  "example_wrong": "人事移動で部署が変わる (wrong; physical 移動 ≠ HR 異動)"
+ },
+ {
+  "key": "かいとう",
+  "reading": "かいとう",
+  "options": [
+   {
+    "kanji": "回答",
+    "gloss": "reply, response (to a question/survey)"
+   },
+   {
+    "kanji": "解答",
+    "gloss": "answer to a problem (with a correct solution)"
+   },
+   {
+    "kanji": "解凍",
+    "gloss": "thawing; decompressing a file"
+   }
+  ],
+  "note": "回答=answer an inquiry/survey (アンケート回答); 解答=solve a test problem (模範解答); 解凍=defrost / unzip.",
+  "example_right": "試験問題の解答 (the answer to an exam problem)",
+  "example_wrong": "試験問題の回答 (less apt; 回答 is a reply to a query, not a problem's solution)"
+ },
+ {
+  "key": "はかる",
+  "reading": "はかる",
+  "options": [
+   {
+    "kanji": "測る",
+    "gloss": "measure length/depth/dimensions"
+   },
+   {
+    "kanji": "量る",
+    "gloss": "measure weight/volume/capacity"
+   },
+   {
+    "kanji": "計る",
+    "gloss": "measure time/number; gauge"
+   },
+   {
+    "kanji": "図る",
+    "gloss": "plan, aim for, attempt (合理化を図る)"
+   },
+   {
+    "kanji": "謀る",
+    "gloss": "plot, scheme (deceitfully)"
+   },
+   {
+    "kanji": "諮る",
+    "gloss": "consult, refer to (a committee)"
+   }
+  ],
+  "note": "測=distance/depth; 量=weight; 計=time/count; 図=intend/strive; 謀=conspire; 諮=put to a council (会議に諮る).",
+  "example_right": "時間を計る (measure/time it)",
+  "example_wrong": "時間を測る (wrong; 測る is for length, not time)"
+ },
+ {
+  "key": "おさめる",
+  "reading": "おさめる",
+  "options": [
+   {
+    "kanji": "収める",
+    "gloss": "obtain, put away, achieve (成功を収める)"
+   },
+   {
+    "kanji": "納める",
+    "gloss": "pay, deliver, accept (税を納める)"
+   },
+   {
+    "kanji": "治める",
+    "gloss": "govern, quell, calm (国を治める)"
+   },
+   {
+    "kanji": "修める",
+    "gloss": "master, cultivate (学問を修める)"
+   }
+  ],
+  "note": "収=gain/store (成果を収める); 納=remit/hand over (税金を納める); 治=rule/pacify (痛みを治める); 修=acquire learning/virtue.",
+  "example_right": "税金を納める (pay taxes)",
+  "example_wrong": "税金を収める (wrong; 収める ≠ remit payment to authority)"
+ },
+ {
+  "key": "つとめる",
+  "reading": "つとめる",
+  "options": [
+   {
+    "kanji": "勤める",
+    "gloss": "work for, be employed at (a company)"
+   },
+   {
+    "kanji": "務める",
+    "gloss": "serve in a role/duty (司会を務める)"
+   },
+   {
+    "kanji": "努める",
+    "gloss": "make an effort, strive"
+   }
+  ],
+  "note": "勤=employed at (会社に勤める); 務=fulfill a role/post (議長を務める); 努=endeavor (解決に努める).",
+  "example_right": "銀行に勤める (work at a bank)",
+  "example_wrong": "銀行に務める (wrong; 務める is for a role, not employment)"
+ },
+ {
+  "key": "やわらかい",
+  "reading": "やわらかい",
+  "options": [
+   {
+    "kanji": "柔らかい",
+    "gloss": "soft and pliable/flexible (body, mind, fabric)"
+   },
+   {
+    "kanji": "軟らかい",
+    "gloss": "soft as opposed to hard (food, ground, substance)"
+   }
+  ],
+  "note": "柔=supple/gentle (柔らかい物腰, 頭が柔らかい); 軟=physically not hard (軟らかい肉, 地盤が軟らかい). Often interchangeable; 柔 is the safe default.",
+  "example_right": "頭が柔らかい (flexible-minded)",
+  "example_wrong": "頭が軟らかい (wrong; mental flexibility takes 柔, not 軟)"
+ },
+ {
+  "key": "あつい",
+  "reading": "あつい",
+  "options": [
+   {
+    "kanji": "暑い",
+    "gloss": "hot (weather/air temperature)"
+   },
+   {
+    "kanji": "熱い",
+    "gloss": "hot (object/liquid); passionate"
+   },
+   {
+    "kanji": "厚い",
+    "gloss": "thick (in dimension); deep (sentiment)"
+   },
+   {
+    "kanji": "篤い",
+    "gloss": "earnest, devout; gravely ill (formal)"
+   }
+  ],
+  "note": "暑=ambient heat (今日は暑い); 熱=touchable heat/fervor (熱いお茶, 熱い思い); 厚=thickness (厚い本, 手厚い); 篤=sincere/critically ill (篤い信仰).",
+  "example_right": "今日は暑い (it's hot today)",
+  "example_wrong": "今日は熱い (wrong; weather takes 暑, not 熱)"
+ },
+ {
+  "key": "かわく",
+  "reading": "かわく",
+  "options": [
+   {
+    "kanji": "乾く",
+    "gloss": "dry out (moisture evaporates: laundry, air)"
+   },
+   {
+    "kanji": "渇く",
+    "gloss": "be thirsty; crave (喉が渇く)"
+   }
+  ],
+  "note": "乾=loses moisture (洗濯物が乾く); 渇=thirst/longing (喉が渇く, 愛に渇く).",
+  "example_right": "喉が渇いた (I'm thirsty)",
+  "example_wrong": "喉が乾いた (wrong; thirst is 渇く, not 乾く)"
+ },
+ {
+  "key": "なおす",
+  "reading": "なおす",
+  "options": [
+   {
+    "kanji": "直す",
+    "gloss": "fix, correct, repair (errors, objects)"
+   },
+   {
+    "kanji": "治す",
+    "gloss": "cure, heal (illness/injury)"
+   }
+  ],
+  "note": "直=mend/amend (誤りを直す, 機械を直す); 治=medical cure (風邪を治す, 病気を治す).",
+  "example_right": "風邪を治す (cure a cold)",
+  "example_wrong": "風邪を直す (wrong; illness is 治す, not 直す)"
+ },
+ {
+  "key": "のぞむ",
+  "reading": "のぞむ",
+  "options": [
+   {
+    "kanji": "望む",
+    "gloss": "wish for, desire, hope"
+   },
+   {
+    "kanji": "臨む",
+    "gloss": "face, attend, confront (an event/situation)"
+   }
+  ],
+  "note": "望=want/long for (成功を望む); 臨=be present at / face (試合に臨む, 海に臨む).",
+  "example_right": "試験に臨む (face/take the exam)",
+  "example_wrong": "試験に望む (wrong; confronting an event is 臨む, not 望む)"
+ },
+ {
+  "key": "やさしい",
+  "reading": "やさしい",
+  "options": [
+   {
+    "kanji": "優しい",
+    "gloss": "kind, gentle, tender (toward people)"
+   },
+   {
+    "kanji": "易しい",
+    "gloss": "easy, simple (to do/understand)"
+   }
+  ],
+  "note": "優=kindhearted (優しい人); 易=not difficult (易しい問題). Pure emotional vs difficulty split.",
+  "example_right": "優しい言葉をかける (offer kind words)",
+  "example_wrong": "易しい言葉をかける (different meaning: 'use simple words', not 'kind words')"
+ },
+ {
+  "key": "かえる",
+  "reading": "かえる",
+  "options": [
+   {
+    "kanji": "変える",
+    "gloss": "change, alter (something's state)"
+   },
+   {
+    "kanji": "替える",
+    "gloss": "replace, swap one for another of same kind"
+   },
+   {
+    "kanji": "換える",
+    "gloss": "exchange, convert (one thing for a different thing)"
+   },
+   {
+    "kanji": "代える",
+    "gloss": "substitute, do in place of"
+   }
+  ],
+  "note": "変=transform (色を変える); 替=swap same kind (両替, 入れ替える); 換=convert (乗り換える, 言い換える); 代=stand in for (挨拶に代える).",
+  "example_right": "予定を変える (change the plan)",
+  "example_wrong": "予定を替える (wrong; altering a plan is 変える, not swap 替える)"
+ },
+ {
+  "key": "きく",
+  "reading": "きく",
+  "options": [
+   {
+    "kanji": "聞く",
+    "gloss": "hear, listen (passively perceive sound); also ask"
+   },
+   {
+    "kanji": "聴く",
+    "gloss": "listen attentively (music, intently)"
+   },
+   {
+    "kanji": "効く",
+    "gloss": "be effective (medicine, measures)"
+   },
+   {
+    "kanji": "利く",
+    "gloss": "work/function; be sharp (気が利く, 機転が利く)"
+   }
+  ],
+  "note": "聞=hear/ask (話を聞く); 聴=listen closely (音楽を聴く); 効=takes effect (薬が効く); 利=functions well (鼻が利く, 融通が利く).",
+  "example_right": "薬が効く (the medicine works)",
+  "example_wrong": "薬が利く (wrong; medicinal effect is 効く, not 利く)"
+ },
+ {
+  "key": "しんちょう",
+  "reading": "しんちょう",
+  "options": [
+   {
+    "kanji": "慎重",
+    "gloss": "careful, cautious, prudent"
+   },
+   {
+    "kanji": "身長",
+    "gloss": "height, stature (of a person)"
+   },
+   {
+    "kanji": "伸長",
+    "gloss": "extension, growth/elongation"
+   },
+   {
+    "kanji": "新調",
+    "gloss": "buying/making something new (clothes, etc.)"
+   }
+  ],
+  "note": "慎重=cautious (慎重に判断); 身長=body height (身長を測る); 伸長=lengthening (学力の伸長); 新調=newly acquire (背広を新調).",
+  "example_right": "慎重に進める (proceed cautiously)",
+  "example_wrong": "新調に進める (nonsense; 新調 isn't an adverb of caution)"
+ },
+ {
+  "key": "こうせい",
+  "reading": "こうせい",
+  "options": [
+   {
+    "kanji": "構成",
+    "gloss": "composition, structure (make-up of parts)"
+   },
+   {
+    "kanji": "公正",
+    "gloss": "fairness, impartiality"
+   },
+   {
+    "kanji": "厚生",
+    "gloss": "welfare, public health (厚生労働省)"
+   },
+   {
+    "kanji": "更生",
+    "gloss": "rehabilitation, rebirth (of an offender/company)"
+   },
+   {
+    "kanji": "校正",
+    "gloss": "proofreading"
+   },
+   {
+    "kanji": "後世",
+    "gloss": "later generations, posterity"
+   }
+  ],
+  "note": "構成=structure (文章の構成); 公正=fair (公正な裁判); 厚生=welfare (福利厚生); 更生=turn life around (更生施設); 校正=proofread; 後世=future ages.",
+  "example_right": "文章の構成を考える (think about the essay's structure)",
+  "example_wrong": "文章の公正を考える (wrong; 公正 = fairness, not structure)"
+ },
+ {
+  "key": "いがい",
+  "reading": "いがい",
+  "options": [
+   {
+    "kanji": "意外",
+    "gloss": "unexpected, surprising"
+   },
+   {
+    "kanji": "以外",
+    "gloss": "other than, except, besides"
+   }
+  ],
+  "note": "意外=surprising (意外な結果); 以外=excluding (それ以外). Adjectival surprise vs 'apart from'. High-frequency speech trap.",
+  "example_right": "意外な展開 (an unexpected turn)",
+  "example_wrong": "以外な展開 (wrong; 以外 means 'except', not 'unexpected')"
+ },
+ {
+  "key": "かいほう（会報・回報）",
+  "reading": "かいほう",
+  "options": [
+   {
+    "kanji": "会報",
+    "gloss": "club/society bulletin, newsletter"
+   },
+   {
+    "kanji": "回報",
+    "gloss": "circular notice; a reply/memo circulated internally"
+   }
+  ],
+  "note": "CORRECTED KEY: the original key tag 「病気」(illness) was WRONG — these words have nothing to do with illness (illness=快方, which belongs to the 解放 set). 会報=members' newsletter (同窓会の会報); 回報=circulated memo (less common but real). Keep distinct from 快方/介抱.",
+  "example_right": "同窓会の会報が届く (the alumni newsletter arrives)",
+  "example_wrong": "同窓会の快方が届く (nonsense; 快方 = recovery, not a bulletin)"
+ },
+ {
+  "key": "へんかん",
+  "reading": "へんかん",
+  "options": [
+   {
+    "kanji": "変換",
+    "gloss": "conversion, transformation (kana→kanji, data)"
+   },
+   {
+    "kanji": "返還",
+    "gloss": "return, restitution (giving back what was taken)"
+   }
+  ],
+  "note": "変換=convert form (漢字変換); 返還=give back (領土の返還, 敷金の返還).",
+  "example_right": "土地を返還する (return the land)",
+  "example_wrong": "土地を変換する (wrong; 変換 = convert/transform, not give back)"
+ },
+ {
+  "key": "しじ",
+  "reading": "しじ",
+  "options": [
+   {
+    "kanji": "支持",
+    "gloss": "support, backing (a person/policy)"
+   },
+   {
+    "kanji": "指示",
+    "gloss": "instruction, directive (telling what to do)"
+   },
+   {
+    "kanji": "師事",
+    "gloss": "studying under a master/teacher"
+   }
+  ],
+  "note": "REMOVED duplicate: original had 支持（医）as a 4th option — same kanji 支持 re-listed with a fabricated '(医)' clinical gloss; dropped as a duplicate. 支持=endorse (内閣を支持); 指示=give orders (指示に従う); 師事=become a pupil of (名匠に師事).",
+  "example_right": "上司の指示に従う (follow the boss's instructions)",
+  "example_wrong": "上司の支持に従う (wrong; following orders is 指示, not endorsement 支持)"
+ },
+ {
+  "key": "かんけつ",
+  "reading": "かんけつ",
+  "options": [
+   {
+    "kanji": "完結",
+    "gloss": "completion, conclusion (a story/series ends)"
+   },
+   {
+    "kanji": "簡潔",
+    "gloss": "concise, brief and clear"
+   },
+   {
+    "kanji": "間欠",
+    "gloss": "intermittent (occurring at intervals)"
+   }
+  ],
+  "note": "完結=brought to an end (物語が完結); 簡潔=succinct (簡潔に述べる); 間欠=on-and-off (間欠泉=geyser).",
+  "example_right": "簡潔に説明する (explain concisely)",
+  "example_wrong": "完結に説明する (wrong; 完結 = conclusion, not 'concisely')"
+ },
+ {
+  "key": "せいかく",
+  "reading": "せいかく",
+  "options": [
+   {
+    "kanji": "性格",
+    "gloss": "personality, character (of a person)"
+   },
+   {
+    "kanji": "正確",
+    "gloss": "accurate, precise, correct"
+   }
+  ],
+  "note": "性格=disposition (明るい性格); 正確=exact (正確な時刻). Very common speech homophone.",
+  "example_right": "正確な情報 (accurate information)",
+  "example_wrong": "性格な情報 (nonsense; 性格 = personality, not 'accurate')"
+ },
+ {
+  "key": "きかん",
+  "reading": "きかん",
+  "options": [
+   {
+    "kanji": "期間",
+    "gloss": "period, term (span of time)"
+   },
+   {
+    "kanji": "機関",
+    "gloss": "institution, organ, engine"
+   },
+   {
+    "kanji": "器官",
+    "gloss": "organ (of the body)"
+   },
+   {
+    "kanji": "気管",
+    "gloss": "windpipe, trachea"
+   },
+   {
+    "kanji": "帰還",
+    "gloss": "return, repatriation (coming back)"
+   }
+  ],
+  "note": "期間=duration (有効期間); 機関=body/engine (政府機関, 機関車); 器官=biological organ (消化器官); 気管=trachea; 帰還=safe return.",
+  "example_right": "有効期間が切れる (the valid period expires)",
+  "example_wrong": "有効機関が切れる (wrong; 機関 = institution, not a time span)"
+ },
+ {
+  "key": "しんろ",
+  "reading": "しんろ",
+  "options": [
+   {
+    "kanji": "進路",
+    "gloss": "course/path ahead (career path, a storm's track)"
+   },
+   {
+    "kanji": "針路",
+    "gloss": "compass heading, course (of a ship/aircraft)"
+   }
+  ],
+  "note": "進路=future direction/career (進路相談) or a typhoon's path; 針路=navigational bearing by compass. Everyday speech almost always 進路.",
+  "example_right": "進路に悩む (agonize over one's career path)",
+  "example_wrong": "針路に悩む (wrong; personal future is 進路, not nautical 針路)"
+ },
+ {
+  "key": "はやい",
+  "reading": "はやい",
+  "options": [
+   {
+    "kanji": "早い",
+    "gloss": "early (in time); soon"
+   },
+   {
+    "kanji": "速い",
+    "gloss": "fast (high speed)"
+   }
+  ],
+  "note": "早=timing/earliness (朝早い, 気が早い); 速=velocity (足が速い, 流れが速い).",
+  "example_right": "足が速い (fast runner)",
+  "example_wrong": "足が早い (different meaning: '足が早い' means food spoils quickly / sells fast, not 'runs fast')"
+ },
+ {
+  "key": "そなえる",
+  "reading": "そなえる",
+  "options": [
+   {
+    "kanji": "備える",
+    "gloss": "prepare for, equip, be furnished with"
+   },
+   {
+    "kanji": "供える",
+    "gloss": "offer (to a deity/altar/the dead)"
+   }
+  ],
+  "note": "備=ready oneself/possess (地震に備える, 才能を備える); 供=make an offering (仏壇に供える).",
+  "example_right": "災害に備える (prepare for disaster)",
+  "example_wrong": "災害に供える (wrong; preparing is 備える, not religious offering 供える)"
+ },
+ {
+  "key": "かいだん",
+  "reading": "かいだん",
+  "options": [
+   {
+    "kanji": "会談",
+    "gloss": "talks, conference (formal meeting/discussion)"
+   },
+   {
+    "kanji": "階段",
+    "gloss": "stairs, staircase"
+   },
+   {
+    "kanji": "怪談",
+    "gloss": "ghost story"
+   }
+  ],
+  "note": "会談=high-level talks (首脳会談); 階段=stairway; 怪談=scary tale (夏の怪談). All everyday-speech frequent.",
+  "example_right": "首脳会談を開く (hold a summit meeting)",
+  "example_wrong": "首脳階段を開く (nonsense; 階段 = stairs, not talks)"
+ },
+ {
+  "key": "あう",
+  "reading": "あう",
+  "options": [
+   {
+    "kanji": "会う",
+    "gloss": "meet (a person)"
+   },
+   {
+    "kanji": "合う",
+    "gloss": "fit, match, agree, be correct"
+   },
+   {
+    "kanji": "遭う",
+    "gloss": "encounter (usually something unpleasant)"
+   }
+  ],
+  "note": "会=meet people (友達に会う); 合=match/suit (意見が合う, 答えが合う); 遭=befall (事故に遭う, 雨に遭う).",
+  "example_right": "事故に遭う (meet with an accident)",
+  "example_wrong": "事故に会う (wrong; misfortune is 遭う, not social 会う)"
+ },
+ {
+  "key": "はかる",
+  "reading": "はかる",
+  "note": "Pick by WHAT is measured: 計=time/numbers/plan, 測=length/depth, 量=weight/volume; 図=attempt to bring about; 諮=consult a body; 謀=plot.",
+  "options": [
+   {
+    "kanji": "計る",
+    "gloss": "measure time or count; plan (時間を計る、計画)"
+   },
+   {
+    "kanji": "測る",
+    "gloss": "measure length/depth/distance/area (距離・身長を測る)"
+   },
+   {
+    "kanji": "量る",
+    "gloss": "measure weight/volume/capacity (重さ・体積を量る)"
+   },
+   {
+    "kanji": "図る",
+    "gloss": "attempt, contrive, work toward (解決を図る)"
+   },
+   {
+    "kanji": "諮る",
+    "gloss": "consult/refer to a deliberative body (審議会に諮る)"
+   },
+   {
+    "kanji": "謀る",
+    "gloss": "plot, scheme, conspire (暗殺を謀る)"
+   }
+  ]
+ },
+ {
+  "key": "とる",
+  "reading": "とる",
+  "note": "取=default 'take'; 採=adopt/collect/hire; 捕=capture a creature/criminal; 撮=photograph; 摂=ingest(表外); 録=record audio(表外); 獲=catch game(表外).",
+  "options": [
+   {
+    "kanji": "取る",
+    "gloss": "take, get, hold (general default)"
+   },
+   {
+    "kanji": "採る",
+    "gloss": "adopt (a method), collect, hire (案を採る、人を採る)"
+   },
+   {
+    "kanji": "捕る",
+    "gloss": "catch/capture a creature or criminal (魚を捕る)"
+   },
+   {
+    "kanji": "撮る",
+    "gloss": "take a photo, film (写真を撮る)"
+   },
+   {
+    "kanji": "摂る",
+    "gloss": "ingest, take in (nutrition) — 表外 (栄養を摂る)"
+   },
+   {
+    "kanji": "録る",
+    "gloss": "record (audio/video) — 表外 (音を録る)"
+   },
+   {
+    "kanji": "獲る",
+    "gloss": "catch/bag game by hunting/fishing — 表外 (獲物を獲る)"
+   }
+  ]
+ },
+ {
+  "key": "つとめる",
+  "reading": "つとめる",
+  "note": "努=make effort; 務=serve in a role/duty; 勤=be employed at a workplace.",
+  "options": [
+   {
+    "kanji": "努める",
+    "gloss": "exert oneself, strive (改善に努める)"
+   },
+   {
+    "kanji": "務める",
+    "gloss": "serve as / fulfill a role or duty (司会を務める)"
+   },
+   {
+    "kanji": "勤める",
+    "gloss": "be employed, work at a company (会社に勤める)"
+   }
+  ]
+ },
+ {
+  "key": "おかす",
+  "reading": "おかす",
+  "note": "犯=commit a crime/violation; 冒=brave/risk danger; 侵=encroach on territory/rights.",
+  "options": [
+   {
+    "kanji": "犯す",
+    "gloss": "commit (a crime), violate a rule (罪を犯す)"
+   },
+   {
+    "kanji": "冒す",
+    "gloss": "brave, risk, defy (danger) (危険を冒す)"
+   },
+   {
+    "kanji": "侵す",
+    "gloss": "invade, infringe on territory/rights (領土を侵す)"
+   }
+  ]
+ },
+ {
+  "key": "おさめる",
+  "reading": "おさめる",
+  "note": "収=take in / obtain a result; 納=pay/deliver/put away; 治=govern, quell; 修=study, master, mend conduct.",
+  "options": [
+   {
+    "kanji": "収める",
+    "gloss": "take in, obtain, achieve (成功を収める)"
+   },
+   {
+    "kanji": "納める",
+    "gloss": "pay, deliver, store away (税金を納める)"
+   },
+   {
+    "kanji": "治める",
+    "gloss": "govern, rule, quell (国を治める)"
+   },
+   {
+    "kanji": "修める",
+    "gloss": "study/master; cultivate (oneself) (学問を修める)"
+   }
+  ]
+ },
+ {
+  "key": "すすめる",
+  "reading": "すすめる",
+  "note": "進=advance/move forward; 勧=urge someone to do an action; 薦=recommend/nominate a person or thing.",
+  "options": [
+   {
+    "kanji": "進める",
+    "gloss": "advance, move forward, proceed with (計画を進める)"
+   },
+   {
+    "kanji": "勧める",
+    "gloss": "urge/encourage to do, advise an action (入会を勧める)"
+   },
+   {
+    "kanji": "薦める",
+    "gloss": "recommend, nominate (a person/thing) (候補に薦める)"
+   }
+  ]
+ },
+ {
+  "key": "あらわす",
+  "reading": "あらわす",
+  "note": "表=express in words/form; 現=cause to appear, reveal; 著=write/author (a book).",
+  "options": [
+   {
+    "kanji": "表す",
+    "gloss": "express, represent, show (in words/symbols) (喜びを表す)"
+   },
+   {
+    "kanji": "現す",
+    "gloss": "make appear, reveal (姿を現す)"
+   },
+   {
+    "kanji": "著す",
+    "gloss": "write, author (a book) (書物を著す)"
+   }
+  ]
+ },
+ {
+  "key": "のぼる",
+  "reading": "のぼる",
+  "note": "上=general go up / amount to; 登=actively climb (a mountain/stairs); 昇=rise high, be promoted (sun, status).",
+  "options": [
+   {
+    "kanji": "上る",
+    "gloss": "go up; amount to (a figure) (坂を上る、被害が〜に上る)"
+   },
+   {
+    "kanji": "登る",
+    "gloss": "climb (with effort) (山に登る)"
+   },
+   {
+    "kanji": "昇る",
+    "gloss": "rise (sun/smoke), be promoted (日が昇る)"
+   }
+  ]
+ },
+ {
+  "key": "うつす",
+  "reading": "うつす",
+  "note": "写=copy/photograph; 映=project an image/reflect; 移=move/transfer/transmit (disease).",
+  "options": [
+   {
+    "kanji": "写す",
+    "gloss": "copy, transcribe, photograph (写真を写す)"
+   },
+   {
+    "kanji": "映す",
+    "gloss": "project, reflect, show on a screen (鏡に映す)"
+   },
+   {
+    "kanji": "移す",
+    "gloss": "move, transfer, infect (場所を移す、風邪を移す)"
+   }
+  ]
+ },
+ {
+  "key": "なおす",
+  "reading": "なおす",
+  "note": "直=fix/correct an object or error; 治=cure an illness/heal the body.",
+  "options": [
+   {
+    "kanji": "直す",
+    "gloss": "fix, repair, correct (機械を直す、誤りを直す)"
+   },
+   {
+    "kanji": "治す",
+    "gloss": "cure, heal (a disease/wound) (病気を治す)"
+   }
+  ]
+ },
+ {
+  "key": "なおる",
+  "reading": "なおる",
+  "note": "Intransitive twin of なおす: 直=gets fixed/corrected; 治=recovers from illness.",
+  "options": [
+   {
+    "kanji": "直る",
+    "gloss": "be fixed, return to normal (故障が直る)"
+   },
+   {
+    "kanji": "治る",
+    "gloss": "recover, be cured (風邪が治る)"
+   }
+  ]
+ },
+ {
+  "key": "きく",
+  "reading": "きく",
+  "note": "聞=hear/ask (passive/general); 聴=listen attentively; 効=be effective (medicine); 利=ability/function works well (利き手、機転).",
+  "options": [
+   {
+    "kanji": "聞く",
+    "gloss": "hear; ask (general) (話を聞く)"
+   },
+   {
+    "kanji": "聴く",
+    "gloss": "listen attentively (音楽を聴く)"
+   },
+   {
+    "kanji": "効く",
+    "gloss": "be effective, take effect (薬が効く)"
+   },
+   {
+    "kanji": "利く",
+    "gloss": "(a faculty/function) works well, is usable (機転が利く、左手が利く)"
+   }
+  ]
+ },
+ {
+  "key": "みる",
+  "reading": "みる",
+  "note": "見=see (default); 観=observe/watch (a spectacle); 診=examine medically; 看=look after/nurse.",
+  "options": [
+   {
+    "kanji": "見る",
+    "gloss": "see, look at (general)"
+   },
+   {
+    "kanji": "観る",
+    "gloss": "watch (a performance/sport/spectacle) (映画を観る)"
+   },
+   {
+    "kanji": "診る",
+    "gloss": "examine a patient medically (患者を診る)"
+   },
+   {
+    "kanji": "看る",
+    "gloss": "look after, nurse (a sick person) (病人を看る)"
+   }
+  ]
+ },
+ {
+  "key": "さす",
+  "reading": "さす",
+  "note": "差=hold up/insert/pour in; 指=point at/indicate; 刺=pierce/stab/sting; 挿=insert into.",
+  "options": [
+   {
+    "kanji": "差す",
+    "gloss": "hold up (umbrella), pour in, shine in (傘を差す)"
+   },
+   {
+    "kanji": "指す",
+    "gloss": "point at, indicate, designate (方角を指す)"
+   },
+   {
+    "kanji": "刺す",
+    "gloss": "pierce, stab, sting (針で刺す)"
+   },
+   {
+    "kanji": "挿す",
+    "gloss": "insert, stick into (花を挿す)"
+   }
+  ]
+ },
+ {
+  "key": "つく",
+  "reading": "つく",
+  "note": "付=attach/adhere; 着=arrive/come into contact; 就=take up (a post/job); 突=thrust/poke; 点=light up(表外読み).",
+  "options": [
+   {
+    "kanji": "付く",
+    "gloss": "be attached, stick to (汚れが付く)"
+   },
+   {
+    "kanji": "着く",
+    "gloss": "arrive; reach/touch (駅に着く)"
+   },
+   {
+    "kanji": "就く",
+    "gloss": "take up (a position/job) (職に就く)"
+   },
+   {
+    "kanji": "突く",
+    "gloss": "thrust, poke, prod (杖で突く)"
+   },
+   {
+    "kanji": "点く",
+    "gloss": "(light/fire) come on (電気が点く)"
+   }
+  ]
+ },
+ {
+  "key": "つける",
+  "reading": "つける",
+  "note": "Transitive twin: 付=attach; 着=put on/wear; 就=install in a post; 点=light/turn on.",
+  "options": [
+   {
+    "kanji": "付ける",
+    "gloss": "attach, add, apply (名前を付ける)"
+   },
+   {
+    "kanji": "着ける",
+    "gloss": "put on (clothing/accessory), bring alongside (身に着ける)"
+   },
+   {
+    "kanji": "就ける",
+    "gloss": "install in / appoint to (a post) (要職に就ける)"
+   },
+   {
+    "kanji": "点ける",
+    "gloss": "turn on, light (火を点ける)"
+   }
+  ]
+ },
+ {
+  "key": "たつ",
+  "reading": "たつ",
+  "note": "立=stand; 建=a building goes up; 経=(time) elapses; 断=cut off/abstain; 発=depart; 裁=cut cloth.",
+  "options": [
+   {
+    "kanji": "立つ",
+    "gloss": "stand, rise (席を立つ)"
+   },
+   {
+    "kanji": "建つ",
+    "gloss": "(a building) is built/stands (家が建つ)"
+   },
+   {
+    "kanji": "経つ",
+    "gloss": "(time) passes, elapses (時間が経つ)"
+   },
+   {
+    "kanji": "断つ",
+    "gloss": "cut off, sever, give up (酒を断つ)"
+   },
+   {
+    "kanji": "発つ",
+    "gloss": "depart, set off (東京を発つ)"
+   },
+   {
+    "kanji": "裁つ",
+    "gloss": "cut (cloth/paper) to pattern (布を裁つ)"
+   }
+  ]
+ },
+ {
+  "key": "かえる",
+  "reading": "かえる",
+  "note": "変=change in state/nature; 替=swap for the same kind; 換=exchange/convert; 代=substitute one for another; 帰=return home; 返=give back/revert.",
+  "options": [
+   {
+    "kanji": "変える",
+    "gloss": "change, alter (a state) (色を変える)"
+   },
+   {
+    "kanji": "替える",
+    "gloss": "replace with another of the same kind (水を替える)"
+   },
+   {
+    "kanji": "換える",
+    "gloss": "exchange, convert (現金に換える)"
+   },
+   {
+    "kanji": "代える",
+    "gloss": "substitute, stand in for (投手を代える)"
+   },
+   {
+    "kanji": "帰る",
+    "gloss": "return, go/come home (家に帰る)"
+   },
+   {
+    "kanji": "返る",
+    "gloss": "be returned, revert (我に返る)"
+   }
+  ]
+ },
+ {
+  "key": "あう",
+  "reading": "あう",
+  "note": "会=meet a person; 合=match/come together/fit; 遭=encounter (something bad).",
+  "options": [
+   {
+    "kanji": "会う",
+    "gloss": "meet, see (a person) (友達に会う)"
+   },
+   {
+    "kanji": "合う",
+    "gloss": "match, fit, agree, come together (意見が合う)"
+   },
+   {
+    "kanji": "遭う",
+    "gloss": "encounter, meet with (a misfortune) (事故に遭う)"
+   }
+  ]
+ },
+ {
+  "key": "あける",
+  "reading": "あける",
+  "note": "開=open (door/closed thing); 空=empty out / make vacant; 明=dawn breaks / period ends.",
+  "options": [
+   {
+    "kanji": "開ける",
+    "gloss": "open (a door, lid, eyes) (窓を開ける)"
+   },
+   {
+    "kanji": "空ける",
+    "gloss": "empty, vacate, make room (席を空ける)"
+   },
+   {
+    "kanji": "明ける",
+    "gloss": "(day/year/season) dawns, ends (夜が明ける)"
+   }
+  ]
+ },
+ {
+  "key": "すむ",
+  "reading": "すむ",
+  "note": "住=reside; 済=finish/be settled/suffice; 澄=become clear/transparent.",
+  "options": [
+   {
+    "kanji": "住む",
+    "gloss": "live, reside (東京に住む)"
+   },
+   {
+    "kanji": "済む",
+    "gloss": "be finished, be settled, get by (用事が済む)"
+   },
+   {
+    "kanji": "澄む",
+    "gloss": "become clear/limpid (水が澄む)"
+   }
+  ]
+ },
+ {
+  "key": "とまる",
+  "reading": "とまる",
+  "note": "止=stop moving; 泊=stay overnight; 留=stay fixed/remain in place.",
+  "options": [
+   {
+    "kanji": "止まる",
+    "gloss": "stop, halt, cease (車が止まる)"
+   },
+   {
+    "kanji": "泊まる",
+    "gloss": "stay overnight, lodge (ホテルに泊まる)"
+   },
+   {
+    "kanji": "留まる",
+    "gloss": "stay fixed, remain, perch (目に留まる)"
+   }
+  ]
+ },
+ {
+  "key": "とめる",
+  "reading": "とめる",
+  "note": "Transitive twin: 止=bring to a stop; 泊=lodge a guest overnight; 留=fasten/fix in place.",
+  "options": [
+   {
+    "kanji": "止める",
+    "gloss": "stop, bring to a halt (車を止める)"
+   },
+   {
+    "kanji": "泊める",
+    "gloss": "put up (a guest) for the night (友人を泊める)"
+   },
+   {
+    "kanji": "留める",
+    "gloss": "fasten, fix, pin down (ボタンで留める)"
+   }
+  ]
+ },
+ {
+  "key": "おさえる",
+  "reading": "おさえる",
+  "note": "押=press/hold down physically; 抑=restrain/suppress/keep down (emotion, costs, inflation).",
+  "options": [
+   {
+    "kanji": "押さえる",
+    "gloss": "press, hold down, secure (傷口を押さえる)"
+   },
+   {
+    "kanji": "抑える",
+    "gloss": "restrain, suppress, keep within limits (怒りを抑える)"
+   }
+  ]
+ },
+ {
+  "key": "うつ",
+  "reading": "うつ",
+  "note": "打=strike/hit (default); 撃=shoot/fire a weapon; 討=attack/subjugate an enemy.",
+  "options": [
+   {
+    "kanji": "打つ",
+    "gloss": "hit, strike, type (くぎを打つ)"
+   },
+   {
+    "kanji": "撃つ",
+    "gloss": "shoot, fire (a gun) (敵を撃つ)"
+   },
+   {
+    "kanji": "討つ",
+    "gloss": "attack, subjugate, avenge (仇を討つ)"
+   }
+  ]
+ },
+ {
+  "key": "いたむ",
+  "reading": "いたむ",
+  "note": "痛=feel pain (body/heart); 傷=get damaged/spoil; 悼=mourn/grieve for the dead.",
+  "options": [
+   {
+    "kanji": "痛む",
+    "gloss": "ache, hurt, feel pain (傷が痛む)"
+   },
+   {
+    "kanji": "傷む",
+    "gloss": "be damaged, spoil, go bad (果物が傷む)"
+   },
+   {
+    "kanji": "悼む",
+    "gloss": "mourn, grieve for (the dead) (死を悼む)"
+   }
+  ]
+ },
+ {
+  "key": "やぶる",
+  "reading": "やぶる",
+  "note": "破=tear/break/violate/defeat (transitive). Intransitive side splits 破れる(torn)/敗れる(lose) — see やぶれる.",
+  "options": [
+   {
+    "kanji": "破る",
+    "gloss": "tear, break, violate, defeat (約束を破る、敵を破る)"
+   }
+  ]
+ },
+ {
+  "key": "やぶれる",
+  "reading": "やぶれる",
+  "note": "破=get torn/broken; 敗=be defeated, lose. Same reading, different nuance.",
+  "options": [
+   {
+    "kanji": "破れる",
+    "gloss": "be torn, ripped, broken (服が破れる)"
+   },
+   {
+    "kanji": "敗れる",
+    "gloss": "be defeated, lose (試合に敗れる)"
+   }
+  ]
+ },
+ {
+  "key": "そなえる",
+  "reading": "そなえる",
+  "note": "備=prepare for / be equipped with; 供=offer (to a deity/the dead), serve up.",
+  "options": [
+   {
+    "kanji": "備える",
+    "gloss": "prepare for, equip, provide against (地震に備える)"
+   },
+   {
+    "kanji": "供える",
+    "gloss": "offer (to an altar/grave) (花を供える)"
+   }
+  ]
+ },
+ {
+  "key": "あたる",
+  "reading": "あたる",
+  "note": "当=hit/be correct/correspond (default). 中たる largely 表外, so 当 is the standard spelling.",
+  "options": [
+   {
+    "kanji": "当たる",
+    "gloss": "hit, be on target, be correct, correspond to (予想が当たる)"
+   }
+  ]
+ },
+ {
+  "key": "かわく",
+  "reading": "かわく",
+  "note": "乾=dry out (moisture leaves); 渇=become thirsty/parched (throat). 乾く≠渇く.",
+  "options": [
+   {
+    "kanji": "乾く",
+    "gloss": "dry, become dry (洗濯物が乾く)"
+   },
+   {
+    "kanji": "渇く",
+    "gloss": "get thirsty, parched (のどが渇く)"
+   }
+  ]
+ },
+ {
+  "key": "ふく",
+  "reading": "ふく",
+  "note": "吹=blow (wind/breath/instrument); 噴=gush/spout out forcefully; 拭=wipe.",
+  "options": [
+   {
+    "kanji": "吹く",
+    "gloss": "blow (wind), play (a wind instrument) (風が吹く)"
+   },
+   {
+    "kanji": "噴く",
+    "gloss": "gush out, spout, erupt (火を噴く)"
+   },
+   {
+    "kanji": "拭く",
+    "gloss": "wipe, mop (汗を拭く)"
+   }
+  ]
+ },
+ {
+  "key": "わかれる",
+  "reading": "わかれる",
+  "note": "分=split into branches/groups; 別=part from a person, separate ways.",
+  "options": [
+   {
+    "kanji": "分かれる",
+    "gloss": "split, branch, be divided (道が分かれる)"
+   },
+   {
+    "kanji": "別れる",
+    "gloss": "part from (a person), break up (恋人と別れる)"
+   }
+  ]
+ },
+ {
+  "key": "やめる",
+  "reading": "やめる",
+  "note": "辞=resign/quit (a job/position); 止=cease/give up (an activity/habit). 会社を辞める vs たばこを止める.",
+  "options": [
+   {
+    "kanji": "辞める",
+    "gloss": "resign, quit (a position/job) (会社を辞める)"
+   },
+   {
+    "kanji": "止める",
+    "gloss": "stop doing, give up (an activity) (たばこを止める)"
+   }
+  ]
+ },
+ {
+  "key": "RULE: はかる measurement split",
+  "rule": "For はかる, choose the kanji by the QUANTITY measured, not by the verb: 時間/数 → 計る; 長さ・深さ・距離 → 測る; 重さ・体積 → 量る. Non-measurement senses use 図る(contrive)/諮る(consult)/謀る(plot).",
+  "example_wrong": "体重を計る (using 計 for weight)",
+  "example_right": "体重を量る / 身長を測る / タイムを計る",
+  "note": "The okurigana is identical (はかる→る) for all senses, so speech-to-text and IME cannot disambiguate — decide by the noun being measured."
+ },
+ {
+  "key": "RULE: 直す(fix) vs 治す(cure)",
+  "rule": "なおす/なおる splits on the object: an inanimate object, error, or habit → 直 (repair/correct); an illness, injury, or the body → 治 (cure/heal).",
+  "example_wrong": "風邪を直す (using 直 for a cold)",
+  "example_right": "風邪を治す / パソコンを直す",
+  "note": "Common ASR/IME trap because both share なお-す/-る; medical context forces 治."
+ },
+ {
+  "key": "RULE: つとめる three-way",
+  "rule": "努める=make effort (努力); 務める=serve in a role/duty (役目); 勤める=be employed at a workplace (勤務). Identical okurigana -める.",
+  "example_wrong": "司会を努める (using 努 for acting as MC)",
+  "example_right": "サービス向上に努める / 司会を務める / 銀行に勤める",
+  "note": "Map by collocation: 努力→努, 役目→務, 勤務先→勤."
+ },
+ {
+  "key": "〜てみる (auxiliary 'try to')",
+  "rule": "When みる follows the て-form as an auxiliary verb meaning 'try doing / do and see', write it in hiragana. Reserve 見る (kanji) for the literal verb 'to look/watch'.",
+  "example_wrong": "食べて見る / 考えて見る",
+  "example_right": "食べてみる / 考えてみる (but 空を見る = literally look at the sky)",
+  "note": "Test: if you could replace it with 'and see how it goes', it is the kana auxiliary."
+ },
+ {
+  "key": "〜ていく / 〜てくる (auxiliary directional/aspect)",
+  "rule": "いく and くる as aspectual/directional auxiliaries after the て-form are written in hiragana. Use 行く/来る only for literal physical going/coming.",
+  "example_wrong": "増えて行く / 変わって来た",
+  "example_right": "増えていく / 変わってきた (but 学校へ行く / 友達が来る = literal)",
+  "note": "Continuation away from now (〜ていく) or up to now (〜てくる) = kana; actual locomotion = kanji."
+ },
+ {
+  "key": "〜ておく (auxiliary 'do in advance')",
+  "rule": "おく as the auxiliary 'do something in advance / leave in a state' after the て-form is written in hiragana, not 置く. Reserve 置く for physically placing an object.",
+  "example_wrong": "準備して置く",
+  "example_right": "準備しておく (but 本を机に置く = physically place the book)",
+  "note": "Includes the contraction 〜とく (e.g. 言っとく)."
+ },
+ {
+  "key": "〜てしまう (auxiliary completion/regret)",
+  "rule": "しまう as the auxiliary marking completion or regret is written in hiragana, not 仕舞う. Includes contractions 〜ちゃう / 〜じゃう.",
+  "example_wrong": "忘れて仕舞った",
+  "example_right": "忘れてしまった / 忘れちゃった",
+  "note": "仕舞う for 'put away / finish up' is itself archaic in writing; the auxiliary is always kana."
+ },
+ {
+  "key": "〜てあげる / 〜てくれる / 〜てもらう (giving-receiving auxiliaries)",
+  "rule": "As benefactive auxiliaries after the て-form, あげる/くれる/もらう are written in hiragana. Use 上げる/呉れる/貰う(rare) only for the literal main verbs.",
+  "example_wrong": "教えて上げる / 買って貰う",
+  "example_right": "教えてあげる / 買ってもらう (but 荷物を上げる = lift the luggage)",
+  "note": "呉れる is virtually never written in kanji in modern text regardless."
+ },
+ {
+  "key": "〜ている / 〜てある (progressive/resultative auxiliaries)",
+  "rule": "The auxiliaries いる (progressive/state) and ある (resultative) after the て-form are written in hiragana, never 居る/在る.",
+  "example_wrong": "走って居る / 書いて在る",
+  "example_right": "走っている / 書いてある",
+  "note": "Includes the contraction 〜てる (走ってる)."
+ },
+ {
+  "key": "ある (existence verb, kana)",
+  "rule": "The verb ある ('to exist / there is', for inanimate things) is conventionally written in hiragana. 在る/有る are rarely used and discouraged in standard prose.",
+  "example_wrong": "問題が有る / 机の上に在る",
+  "example_right": "問題がある / 机の上にある",
+  "note": "Also kana in 〜である, 〜にある, 〜がある; only set lexical compounds keep kanji (e.g. 在庫, 有無)."
+ },
+ {
+  "key": "いる (existence verb, animate, kana)",
+  "rule": "The verb いる ('to be / exist', for animate beings) is written in hiragana, not 居る.",
+  "example_wrong": "猫が居る / そこに居ます",
+  "example_right": "猫がいる / そこにいます",
+  "note": "居 keeps kanji only in compounds like 居間, 同居; the bare verb is kana."
+ },
+ {
+  "key": "できる (potential/'be able', kana)",
+  "rule": "できる meaning 'to be able / be possible / be completed' is written in hiragana, not 出来る.",
+  "example_wrong": "運転が出来る / 準備が出来た",
+  "example_right": "運転ができる / 準備ができた",
+  "note": "出来 survives only in fixed nouns like 出来事, 出来高; the verb itself is kana per 公用文 rules."
+ },
+ {
+  "key": "こと (formal/nominalizing noun, kana)",
+  "rule": "As a formal noun (nominalizer or grammatical 'matter/fact'), こと is written in hiragana. Use 事 only when it concretely means a tangible 'matter/incident/affair'.",
+  "example_wrong": "行く事ができる / 決めた事だ (grammatical use)",
+  "example_right": "行くことができる / 〜したことがある",
+  "note": "Rule of thumb: after a verb forming a clause → kana; standalone concrete noun (大事, 事件 contexts) may take 事."
+ },
+ {
+  "key": "もの (formal noun 'thing/should', kana)",
+  "rule": "もの as a formal noun (〜ものだ, 〜というもの, abstract 'thing') is written in hiragana. Use 物 only for a concrete physical object.",
+  "example_wrong": "若い時は無理をする物だ",
+  "example_right": "若い時は無理をするものだ (but 重い物を運ぶ = a heavy object)",
+  "note": "もの = abstract/grammatical; 物 = a thing you can touch."
+ },
+ {
+  "key": "ところ (formal noun 'point/just about to', kana)",
+  "rule": "As a formal/aspectual noun (〜たところ, 〜るところ, 'the point where / just about to'), ところ is hiragana. 所 is reserved for a literal place/location.",
+  "example_wrong": "今、出かける所だ / 食べた所だ",
+  "example_right": "今、出かけるところだ / 食べたところだ (but 静かな所 = a quiet place)",
+  "note": "Aspect/abstract 'juncture' → kana; physical 'place' → 所."
+ },
+ {
+  "key": "わけ (formal noun 'reason/it means', kana)",
+  "rule": "わけ as a formal noun (〜わけだ, 〜わけではない, 'reason / it follows that') is written in hiragana, not 訳.",
+  "example_wrong": "そういう訳だ / 行かない訳ではない",
+  "example_right": "そういうわけだ / 行かないわけではない",
+  "note": "訳 keeps kanji only for 'translation' (翻訳, 訳す) or the concrete noun 'meaning/reason' standing alone; the grammatical pattern is kana."
+ },
+ {
+  "key": "ため (formal noun 'for the sake of / because', kana)",
+  "rule": "ため as a formal noun expressing purpose or cause (〜のため, 〜るため) is conventionally written in hiragana; 為 is regarded as old-fashioned.",
+  "example_wrong": "健康の為に / 雨の為中止",
+  "example_right": "健康のために / 雨のため中止",
+  "note": "為 (ため) is on the discouraged/常用外-feel list for grammatical use; keep kana."
+ },
+ {
+  "key": "とき (formal noun 'when/case', kana vs 時)",
+  "rule": "When とき is a grammatical 'when / in the case that' (conditional/temporal clause head), write kana; use 時 for a concrete point in time or 'o'clock'.",
+  "example_wrong": "困った時は相談する (general 'when' clause)",
+  "example_right": "困ったときは相談する (but その時、3時に = that moment / 3 o'clock)",
+  "note": "Hypothetical/general circumstance → とき; specific clock time/historical moment → 時."
+ },
+ {
+  "key": "ほう (formal noun 'side/comparison', kana vs 方)",
+  "rule": "ほう in the comparative/preference pattern (〜ほうがいい, 'the ... one/side') is written in hiragana; 方 (かた/ほう) keeps kanji for 'direction', 'person (polite)', or 'method'.",
+  "example_wrong": "早い方がいい / こっちの方",
+  "example_right": "早いほうがいい / こっちのほう (but あの方 = that person; 東の方角)",
+  "note": "Comparison/grammatical 'one' → kana; honorific person or compass direction → 方."
+ },
+ {
+  "key": "うち (formal noun 'while/within', kana vs 内/家)",
+  "rule": "うち meaning 'while / within (a period)' (〜うちに) is written in hiragana. Use 内 for 'inside/among' as a concrete noun and 家 for 'home/household'.",
+  "example_wrong": "若い内に / 知らない内に",
+  "example_right": "若いうちに / 知らないうちに (but 三人の内 = among three; うち=家庭 often kana too)",
+  "note": "Temporal 'while' → kana; physical/quantitative 'inside, among' → 内."
+ },
+ {
+  "key": "よう (formal noun '〜ようだ/〜ように', kana)",
+  "rule": "よう in 〜ようだ ('seems/like') and 〜ように ('so that / in such a way') is written in hiragana, not 様.",
+  "example_wrong": "雨が降る様だ / 見える様に",
+  "example_right": "雨が降るようだ / 見えるように",
+  "note": "様 keeps kanji only as the honorific suffix 〜様 (さま) and in 様子/模様."
+ },
+ {
+  "key": "とおり / どおり (formal noun 'as / according to', kana vs 通り)",
+  "rule": "As a formal noun meaning 'just as / according to' (〜とおり, 〜どおり), it is usually written in hiragana; 通り keeps kanji for 'street' or counting 'ways/kinds'.",
+  "example_wrong": "言った通りにする (grammatical 'as')",
+  "example_right": "言ったとおりにする / 予定どおり (but 広い通り = a wide street; 二通りの方法)",
+  "note": "Note the rendaku spelling どおり (NOT どうり) in compounds like 予定どおり."
+ },
+ {
+  "key": "くらい / ぐらい (approximation particle, kana)",
+  "rule": "The approximation/degree particle くらい・ぐらい is written in hiragana, not 位.",
+  "example_wrong": "三十分位 / どれ位",
+  "example_right": "三十分くらい / どれぐらい",
+  "note": "位 keeps kanji for 'rank/place value' (一位, 単位); the 'about/degree' particle is kana."
+ },
+ {
+  "key": "ぐらい vs くらい (the choice, not kanji)",
+  "rule": "Both ぐらい and くらい are acceptable kana; many style guides prefer くらい after vowel-final words and allow ぐらい elsewhere, but consistency within a transcript matters more than the choice.",
+  "example_wrong": "Mixing くらい and ぐらい randomly in the same document",
+  "example_right": "Pick one register and apply it consistently (e.g. これくらい / 十分ぐらい)",
+  "note": "Transcription QA point: enforce internal consistency, not a single 'correct' form."
+ },
+ {
+  "key": "ない (negative auxiliary vs adjective 無い)",
+  "rule": "The negative-ending auxiliary 〜ない attached to verbs is always hiragana. The independent adjective ない ('there is none') is conventionally kana too; 無い is allowed but often avoided in standard prose.",
+  "example_wrong": "行か無い (verb negative)",
+  "example_right": "行かない / お金がない (kana preferred over 無い)",
+  "note": "Verb negative ending → never kanji; existential adjective → kana preferred, 無い only for emphasis."
+ },
+ {
+  "key": "〜やすい / 〜にくい / 〜づらい (auxiliary adjectives, kana)",
+  "rule": "The suffix adjectives meaning 'easy to / hard to' do (〜やすい, 〜にくい, 〜づらい) are written in hiragana when attached to a verb stem; reserve 易い/難い for rare standalone use.",
+  "example_wrong": "壊れ易い / 読み難い",
+  "example_right": "壊れやすい / 読みにくい / 言いづらい",
+  "note": "づらい uses づ (rendaku from 辛い・つらい), not ず; づ-spelling and kana preference both verified."
+ },
+ {
+  "key": "〜すぎる (excess auxiliary, kana)",
+  "rule": "The auxiliary 〜すぎる ('too much / excessively') attached to a stem is written in hiragana; 過ぎる keeps kanji only as the standalone verb 'to pass/exceed'.",
+  "example_wrong": "食べ過ぎる as a stylistic default for the auxiliary",
+  "example_right": "食べすぎる / 高すぎる (but 三時を過ぎる = the time passes 3:00)",
+  "note": "Both 食べ過ぎる and 食べすぎる appear; kana is the conservative QA choice, kanji acceptable for the verb sense."
+ },
+ {
+  "key": "ください (auxiliary request) vs 下さい",
+  "rule": "After the て-form as a polite request auxiliary, ください is written in hiragana. 下さい (kanji) is reserved for the literal 'please give me (a thing)'.",
+  "example_wrong": "待って下さい",
+  "example_right": "待ってください (but お水を下さい = please give me water, kanji acceptable)",
+  "note": "Auxiliary on a verb → kana; literal 'give me an object' → 下さい permitted."
+ },
+ {
+  "key": "okurigana: 一段 verbs keep the stem-final kana",
+  "rule": "For ichidan verbs, okurigana starts at the syllable that changes in conjugation; do not bury the stem-final mora in kanji.",
+  "example_wrong": "食る / 答る / 集る (for あつめる)",
+  "example_right": "食べる / 答える / 集める",
+  "note": "If a kana would change across forms (食べ-/食べた), it must be written out as okurigana."
+ },
+ {
+  "key": "okurigana: 〜しい adjectives keep し",
+  "rule": "Adjectives ending in 〜しい retain the し in okurigana; do not write only the final い.",
+  "example_wrong": "楽い / 新い / 美い",
+  "example_right": "楽しい / 新しい / 美しい",
+  "note": "Standard rule: the conjugating part starts at し, so 〜しい is always written out."
+ },
+ {
+  "key": "okurigana: derived noun keeps the verb's okurigana",
+  "rule": "Nouns derived from verbs generally keep the same okurigana as the verb (the 連用形 nominalization).",
+  "example_wrong": "話 (for はなし, the act of talking) / 動 (for うごき)",
+  "example_right": "話し (the talking) vs 話 (a story); 動き / 当たり / 終わり",
+  "note": "Some lexicalized nouns drop it (話=story, 答え vs 答); check the intended sense before deciding."
+ },
+ {
+  "key": "okurigana: 〜か/〜やか/〜らか na-adjectives",
+  "rule": "Adjectival nouns ending in 〜か, 〜やか, 〜らか write that suffix as okurigana.",
+  "example_wrong": "静 / 賑か / 明か (for あきらか)",
+  "example_right": "静か / 賑やか / 明らか",
+  "note": "The 〜か/〜やか/〜らか ending is always spelled out in kana."
+ },
+ {
+  "key": "okurigana: transitive/intransitive pairs distinguished by okurigana",
+  "rule": "Many verb pairs are disambiguated by okurigana; mis-placing it changes or breaks the reading.",
+  "example_wrong": "Writing 変る for both かわる and かえる",
+  "example_right": "変わる (intransitive, kawaru) vs 変える (transitive, kaeru); 始まる vs 始める; 集まる vs 集める",
+  "note": "Transcription QA: confirm transitivity from context, then choose the matching okurigana."
+ },
+ {
+  "key": "okurigana: 行う vs 行なう",
+  "rule": "おこなう is standardly written 行う; 行なう (extra な) is an older/permitted variant but 行う is the current standard. Note 行う vs 行く share the kanji but differ by okurigana and reading.",
+  "example_wrong": "行なう as the default modern form",
+  "example_right": "試験を行う (okonau) — distinct from 学校へ行く (iku)",
+  "note": "Disambiguate おこなう/いく by surrounding context; prefer 行う for おこなう."
+ },
+ {
+  "key": "あいさつ etc.: 常用外 kanji → kana in standard prose",
+  "rule": "Words whose kanji are outside the 常用漢字 list (or have non-listed readings) are conventionally written in hiragana in news/public-document style.",
+  "example_wrong": "挨拶, 綺麗, 沢山, 是非 forced in formal transcription",
+  "example_right": "あいさつ / きれい / たくさん / ぜひ",
+  "note": "挨拶 is now itself in the 常用漢字 list (2010), but is still routinely written かな in news/broadcast style; 綺麗/沢山/是非 remain 常用外. QA rule: if a reading isn't a 常用 reading, default to kana unless the client style sheet says otherwise."
+ },
+ {
+  "key": "なる (auxiliary 〜になる / お〜になる) vs 成る",
+  "rule": "なる in 〜になる ('become') and the honorific お〜になる is written in hiragana, not 成る.",
+  "example_wrong": "大きく成る / お読みに成る",
+  "example_right": "大きくなる / お読みになる",
+  "note": "成 keeps kanji in compounds (成立, 完成); the bare grammatical verb is kana."
+ },
+ {
+  "key": "homophone かえる",
+  "reading": "かえる",
+  "options": [
+   {
+    "kanji": "帰る",
+    "gloss": "to return home / go back (to one's base)"
+   },
+   {
+    "kanji": "返る",
+    "gloss": "to be returned / revert (an object/state comes back)"
+   },
+   {
+    "kanji": "変える",
+    "gloss": "to change (transitive) — note okurigana える"
+   },
+   {
+    "kanji": "代える",
+    "gloss": "to substitute / replace one for another"
+   },
+   {
+    "kanji": "換える",
+    "gloss": "to exchange / swap (e.g. money, parts)"
+   },
+   {
+    "kanji": "替える",
+    "gloss": "to replace with a fresh one (renew, e.g. 入れ替える)"
+   }
+  ],
+  "note": "帰/返 are intransitive 'go/come back'; 変/代/換/替 are transitive 'change' (okurigana える)."
+ },
+ {
+  "key": "homophone あう",
+  "reading": "あう",
+  "options": [
+   {
+    "kanji": "会う",
+    "gloss": "to meet (a person)"
+   },
+   {
+    "kanji": "合う",
+    "gloss": "to match / fit / be correct"
+   },
+   {
+    "kanji": "遭う",
+    "gloss": "to encounter (usually something bad, e.g. an accident)"
+   }
+  ],
+  "note": "Person → 会う; things matching → 合う; misfortune → 遭う."
+ },
+ {
+  "key": "homophone はかる",
+  "reading": "はかる",
+  "options": [
+   {
+    "kanji": "計る",
+    "gloss": "to measure time/quantity; to estimate"
+   },
+   {
+    "kanji": "測る",
+    "gloss": "to measure length/area/depth/size"
+   },
+   {
+    "kanji": "量る",
+    "gloss": "to measure weight/volume/capacity"
+   },
+   {
+    "kanji": "図る",
+    "gloss": "to plan / attempt / aim for (e.g. 解決を図る)"
+   },
+   {
+    "kanji": "謀る",
+    "gloss": "to plot / scheme (deceitfully)"
+   },
+   {
+    "kanji": "諮る",
+    "gloss": "to consult / refer to a council"
+   }
+  ],
+  "note": "計=time/number, 測=dimension, 量=weight, 図=plan, 謀=plot, 諮=consult a body."
+ },
+ {
+  "key": "homophone きく",
+  "reading": "きく",
+  "options": [
+   {
+    "kanji": "聞く",
+    "gloss": "to hear / to ask (general)"
+   },
+   {
+    "kanji": "聴く",
+    "gloss": "to listen attentively (music, carefully)"
+   },
+   {
+    "kanji": "効く",
+    "gloss": "to be effective (medicine, an effect takes hold)"
+   },
+   {
+    "kanji": "利く",
+    "gloss": "to work/function (目が利く, 気が利く, 無理が利く)"
+   }
+  ],
+  "note": "Sound in by chance → 聞く; focused listening → 聴く; medicine works → 効く; faculty functions → 利く. FIXED: original example 一目利く is not a real collocation (corrected to 目が利く; the idiom with 一目 is 一目置く, with 置く)."
+ },
+ {
+  "key": "homophone つく",
+  "reading": "つく",
+  "options": [
+   {
+    "kanji": "付く",
+    "gloss": "to attach / become attached (stick to)"
+   },
+   {
+    "kanji": "着く",
+    "gloss": "to arrive (reach a place)"
+   },
+   {
+    "kanji": "就く",
+    "gloss": "to take up (a post/job); to follow (a teacher)"
+   },
+   {
+    "kanji": "点く",
+    "gloss": "to be lit / turn on (light, fire)"
+   }
+  ],
+  "note": "Stick → 付く; arrive → 着く; assume a position → 就く; light comes on → 点く."
+ },
+ {
+  "key": "homophone つとめる",
+  "reading": "つとめる",
+  "options": [
+   {
+    "kanji": "勤める",
+    "gloss": "to work for / be employed at (a company)"
+   },
+   {
+    "kanji": "務める",
+    "gloss": "to serve in a role/duty (e.g. chair, host)"
+   },
+   {
+    "kanji": "努める",
+    "gloss": "to make an effort / strive"
+   }
+  ],
+  "note": "Employment → 勤; role/duty → 務; endeavor → 努."
+ },
+ {
+  "key": "homophone なおす / なおる",
+  "reading": "なおす / なおる",
+  "options": [
+   {
+    "kanji": "直す / 直る",
+    "gloss": "to fix/correct/repair (objects, errors, mood)"
+   },
+   {
+    "kanji": "治す / 治る",
+    "gloss": "to cure/heal (illness, injury)"
+   }
+  ],
+  "note": "Illness/injury → 治; everything else (machines, mistakes) → 直."
+ },
+ {
+  "key": "homophone あらわす / あらわれる",
+  "reading": "あらわす / あらわれる",
+  "options": [
+   {
+    "kanji": "表す / 表れる",
+    "gloss": "to express / show (feelings, meaning surfaces)"
+   },
+   {
+    "kanji": "現す / 現れる",
+    "gloss": "to appear / make visible (a figure shows up)"
+   },
+   {
+    "kanji": "著す",
+    "gloss": "to write/author (a book)"
+   }
+  ],
+  "note": "Express abstractly → 表; physically appear → 現; author a work → 著."
+ },
+ {
+  "key": "homophone とる",
+  "reading": "とる",
+  "options": [
+   {
+    "kanji": "取る",
+    "gloss": "to take / grasp (general default)"
+   },
+   {
+    "kanji": "撮る",
+    "gloss": "to take a photo / film"
+   },
+   {
+    "kanji": "採る",
+    "gloss": "to adopt/collect/hire (採用, 採血)"
+   },
+   {
+    "kanji": "捕る",
+    "gloss": "to catch / capture (animals, fish)"
+   },
+   {
+    "kanji": "執る",
+    "gloss": "to take in hand / conduct (事務を執る, 筆を執る)"
+   }
+  ],
+  "note": "Default 取る; photo 撮; adopt/collect 採; capture prey 捕; conduct affairs 執."
+ },
+ {
+  "key": "homophone のぼる",
+  "reading": "のぼる",
+  "options": [
+   {
+    "kanji": "登る",
+    "gloss": "to climb (deliberately, e.g. a mountain)"
+   },
+   {
+    "kanji": "上る",
+    "gloss": "to go up / ascend (slope, stairs); to reach (a sum)"
+   },
+   {
+    "kanji": "昇る",
+    "gloss": "to rise (sun, smoke; to be promoted)"
+   }
+  ],
+  "note": "Effortful climb → 登; general upward → 上; sun/celestial rise → 昇."
+ },
+ {
+  "key": "homophone あつい",
+  "reading": "あつい",
+  "options": [
+   {
+    "kanji": "暑い",
+    "gloss": "hot (weather/air temperature)"
+   },
+   {
+    "kanji": "熱い",
+    "gloss": "hot (an object's temperature; passionate)"
+   },
+   {
+    "kanji": "厚い",
+    "gloss": "thick (material); warm/deep (厚い信頼)"
+   }
+  ],
+  "note": "Weather → 暑; touchable heat → 熱; thickness → 厚."
+ },
+ {
+  "key": "homophone かたい",
+  "reading": "かたい",
+  "options": [
+   {
+    "kanji": "固い",
+    "gloss": "firm / solid (general; 固い決意)"
+   },
+   {
+    "kanji": "硬い",
+    "gloss": "hard / stiff (material; opposite of soft; 硬い表情)"
+   },
+   {
+    "kanji": "堅い",
+    "gloss": "sturdy / reliable / steady (堅い商売, 堅実)"
+   }
+  ],
+  "note": "General firmness → 固; physical hardness → 硬; dependable/solid → 堅."
+ },
+ {
+  "key": "homophone はやい",
+  "reading": "はやい",
+  "options": [
+   {
+    "kanji": "早い",
+    "gloss": "early (in time); soon"
+   },
+   {
+    "kanji": "速い",
+    "gloss": "fast (in speed)"
+   }
+  ],
+  "note": "Timing/earliness → 早; velocity → 速 (e.g. 足が速い)."
+ },
+ {
+  "key": "homophone かわく",
+  "reading": "かわく",
+  "options": [
+   {
+    "kanji": "乾く",
+    "gloss": "to dry (moisture evaporates; laundry, air)"
+   },
+   {
+    "kanji": "渇く",
+    "gloss": "to be thirsty / parched (throat); to crave"
+   }
+  ],
+  "note": "Things drying out → 乾; throat/thirst → 渇 (のどが渇く)."
+ },
+ {
+  "key": "homophone おさめる",
+  "reading": "おさめる",
+  "options": [
+   {
+    "kanji": "収める",
+    "gloss": "to obtain / put away / fit in (収益, 成功を収める)"
+   },
+   {
+    "kanji": "納める",
+    "gloss": "to pay/deliver (taxes, goods); to conclude"
+   },
+   {
+    "kanji": "治める",
+    "gloss": "to govern / quell (a country, unrest)"
+   },
+   {
+    "kanji": "修める",
+    "gloss": "to master / cultivate (studies, conduct)"
+   }
+  ],
+  "note": "Gain/store → 収; pay/deliver → 納; rule → 治; study/discipline → 修."
+ },
+ {
+  "key": "homophone わかれる",
+  "reading": "わかれる",
+  "options": [
+   {
+    "kanji": "分かれる",
+    "gloss": "to split / diverge (a road, opinions divide)"
+   },
+   {
+    "kanji": "別れる",
+    "gloss": "to part from a person (say goodbye, break up)"
+   }
+  ],
+  "note": "Things branching → 分かれる; people parting → 別れる."
+ },
+ {
+  "key": "homophone すすめる",
+  "reading": "すすめる",
+  "options": [
+   {
+    "kanji": "進める",
+    "gloss": "to advance / move forward (a project, a clock)"
+   },
+   {
+    "kanji": "勧める",
+    "gloss": "to recommend / encourage (someone to do)"
+   },
+   {
+    "kanji": "薦める",
+    "gloss": "to recommend / nominate (a person/thing for a role)"
+   }
+  ],
+  "note": "Move ahead → 進; urge an action → 勧; endorse a candidate → 薦."
+ },
+ {
+  "key": "homophone やわらかい",
+  "reading": "やわらかい / やわらか",
+  "options": [
+   {
+    "kanji": "柔らかい",
+    "gloss": "soft / supple / flexible (柔軟; 柔らかい心)"
+   },
+   {
+    "kanji": "軟らかい",
+    "gloss": "soft / tender (physically; opp. of 硬い; 軟らかい肉)"
+   }
+  ],
+  "note": "Flexible/gentle quality → 柔; physically tender/not-hard → 軟."
+ },
+ {
+  "key": "「」 — primary quotation",
+  "rule": "Use 「」(kagi-kakko) as the FIRST/outermost level for direct speech and quoted utterances. This is the default dialogue marker in transcription.",
+  "example_wrong": "『おはよう』と彼は言った。",
+  "example_right": "「おはよう」と彼は言った。",
+  "note": "Default dialogue. 『』 is NOT the primary quote — reserve it for nesting and titles. Verified: kagi-kakko 鉤括弧 is correct."
+ },
+ {
+  "key": "『』 — nested quote (quote within a quote)",
+  "rule": "When a quotation already inside 「」 contains a further quoted utterance, wrap the inner one in 『』. Levels alternate 「『「』」 going deeper.",
+  "example_wrong": "「彼は「行くな」と言ったんだ」",
+  "example_right": "「彼は『行くな』と言ったんだ」",
+  "note": "「」 outer, 『』 inner. Switch brackets at each nesting level so the boundaries stay readable. Standard convention."
+ },
+ {
+  "key": "『』 — titles of works",
+  "rule": "Use 『』 to mark titles of complete works (books, films, albums, newspapers, programs, games). 「」 marks parts of works (chapters, songs, episodes, articles).",
+  "example_wrong": "夏目漱石の「こころ」を読んだ。",
+  "example_right": "夏目漱石の『こころ』を読んだ。",
+  "note": "Whole work → 『』; part of a work → 「」 (e.g. 『アルバム名』の「曲名」). Distinct from the nesting use. Correct."
+ },
+ {
+  "key": "。 — kuten (sentence-final period)",
+  "rule": "Place 。(kuten, full-width maru) at the end of every declarative/imperative sentence. It is the only sentence terminator for plain statements; do not use a Latin period '.'.",
+  "example_wrong": "今日は晴れです.",
+  "example_right": "今日は晴れです。",
+  "note": "Full-width 。 only. A half-width '.' is for numbers/abbreviations, never to end a Japanese sentence. Verified: kuten 句点 correct."
+ },
+ {
+  "key": "、 — touten (comma)",
+  "rule": "Use 、(touten, full-width) to mark internal clause/phrase breaks and breath pauses. It is the standard Japanese comma for vertical and modern horizontal text.",
+  "example_wrong": "雨が降ったので,試合は中止になった。",
+  "example_right": "雨が降ったので、試合は中止になった。",
+  "note": "Full-width 、 is standard. The full-width ，is an older government/scientific horizontal-text variant. Verified: touten 読点 correct."
+ },
+ {
+  "key": "、 — placement after conjunctive clause / topic",
+  "rule": "Insert 、after a subordinate clause ending in て/ので/が/けど etc., and optionally after a fronted topic (は) when it aids readability. Do not scatter 、 inside tight noun phrases.",
+  "example_wrong": "私は、赤い、車を、買った。",
+  "example_right": "私は、赤い車を買った。",
+  "note": "Mark grammatical breaks (clause, topic), not every word. Over-commaing inside a noun phrase is the most common transcription error. Correct."
+ },
+ {
+  "key": "。 omitted before 」 (broadcast/transcription convention)",
+  "rule": "In broadcast/subtitle/publishing transcription style, OMIT the kuten before a closing 」: write 「おはよう」 not 「おはよう。」.",
+  "example_wrong": "「もう行きます。」と言った。",
+  "example_right": "「もう行きます」と言った。",
+  "note": "STYLE-SCOPED: broadcast/publishing convention. School/official (文部省/公用文) style instead KEEPS the 。 inside 「」. Follow the project's house style. Correctly scoped."
+ },
+ {
+  "key": "。 retained outside the closing 」 when the sentence ends there",
+  "rule": "Never place 。 both inside and after the bracket. Either one 。 governs the outer sentence, or (quote-final, broadcast style) none — never 。」。 together.",
+  "example_wrong": "彼は「ありがとう。」。",
+  "example_right": "彼は「ありがとう」と頭を下げた。",
+  "note": "Anti-double-period rule is sound. The '。 outside the bracket in some styles' claim is defensible (the 「〜」。 pattern exists), but the load-bearing rule is: avoid 。」。"
+ },
+ {
+  "key": "・ — nakaten for katakana foreign personal names",
+  "rule": "Separate the given name and surname (and other components) of a transliterated foreign name with ・(nakaten/中黒), not a space or comma.",
+  "example_wrong": "ジョン スミス / ジョン、スミス",
+  "example_right": "ジョン・スミス",
+  "note": "Foreign full names in katakana: join parts with ・. Japanese names in kanji do NOT take ・ (山田太郎, not 山田・太郎). Verified: nakaten 中黒 correct."
+ },
+ {
+  "key": "・ — nakaten as list separator for short items",
+  "rule": "Use ・to separate short coordinate items (often katakana loanwords or single words) inline, equivalent to 'and/or' in a tight enumeration.",
+  "example_wrong": "コーヒー、紅茶、ジュースのいずれか…（when a compact A・B・C is wanted）",
+  "example_right": "コーヒー・紅茶・ジュースから選べます。",
+  "note": "・ for compact word-level lists; 、 for clause-level or longer lists. Don't mix ・ and 、 within the same series. Correct."
+ },
+ {
+  "key": "・ — nakaten for foreign multi-word terms",
+  "rule": "Use ・to bind components of a foreign compound term or an abbreviated reading. In vertical text ・ can also serve as the decimal point (三・一四 = 3.14).",
+  "example_wrong": "アメリカ合衆国を「アメリカ-合衆国」と区切る",
+  "example_right": "ニューヨーク・タイムズ",
+  "note": "INLINE-TRIMMED: kept the verified decimal-point use (三・一四 in vertical text is real) and dropped the looser 'ratios' framing. Binds parts of a single katakana compound; don't substitute a hyphen '-' or middle space."
+ },
+ {
+  "key": "…… — ellipsis (santen-leader, doubled)",
+  "rule": "Render a trailing-off, silence, or omission with the three-dot leader … (santen-leader), used in PAIRS (……). The pair spans TWO em-squares / 二字分 (六点リーダー). Use the dedicated U+2026 glyph, not three periods.",
+  "example_wrong": "そう...だね / そう。。。だね",
+  "example_right": "そう……だね。",
+  "note": "INLINE-FIXED: original said '……fills one full em' — WRONG. Verified against JP publishing sources: a single … is one em, so the doubled …… is 二字分 (two em / 2マスで6点). The '六点リーダー' gloss and U+2026 are correct. Three ASCII dots '...' or three 。 are both wrong."
+ },
+ {
+  "key": "—— — dash (em-dash, doubled)",
+  "rule": "Use the em-dash — in PAIRS (——) for an interruption, abrupt break, or aside (spans two em / 2字分, the 2倍ダッシュ). It is distinct from the ellipsis (a fade, not a cut).",
+  "example_wrong": "待って-そうじゃない！ / 待って〜そうじゃない！",
+  "example_right": "待って——そうじゃない！",
+  "note": "Doubled —— = hard cut/interruption; …… = trailing off. Don't use a hyphen '-', minus, or wave-dash 〜. Correct (like ……, it is doubled to span two em)."
+ },
+ {
+  "key": "… vs — distinction",
+  "rule": "Choose by acoustics: a fade/pause/unfinished thought → ……; a sharp interruption or cut-in (often by another speaker) → ——.",
+  "example_wrong": "「もしかして——」（speaker simply trails off softly）",
+  "example_right": "「もしかして……」（trailing off, no cut）",
+  "note": "Pick the mark by what the audio does: soften/linger = ……, abrupt stop = ——. Correct."
+ },
+ {
+  "key": "？ — question mark (allowed contexts)",
+  "rule": "The full-width ？ is permitted in dialogue, casual, and transcription text to mark rising/interrogative intonation, ESPECIALLY where no か particle makes the question explicit. Formal/official prose traditionally avoids it.",
+  "example_wrong": "本当?（half-width）/ 本当。（when audio clearly rises）",
+  "example_right": "本当？",
+  "note": "Use full-width ？ for spoken/particle-less questions (本当？, 行くの？). Avoid in strictly formal documents; fine for speech transcripts. Correct (fixed stray 〜 in the か mention)."
+ },
+ {
+  "key": "！ — exclamation mark (allowed contexts)",
+  "rule": "The full-width ！ is permitted in dialogue/transcription to convey emphatic, loud, or emotional delivery. In formal/official writing it is, in principle, not used.",
+  "example_wrong": "やめろ! / やめろ。（shouted line flattened to a period）",
+  "example_right": "やめろ！",
+  "note": "Full-width ！ for shouted/emphatic speech in transcripts. Reserve from formal prose. One mark — avoid ！！！ stacks unless reproducing literal text. Correct."
+ },
+ {
+  "key": "？/！ replace 。 (no co-occurrence with kuten)",
+  "rule": "？ and ！ already terminate the sentence, so do NOT add a 。 after them.",
+  "example_wrong": "どこに行くの？。",
+  "example_right": "どこに行くの？",
+  "note": "？/！ ARE the terminator. Never write ？。 or ！。 Correct."
+ },
+ {
+  "key": "Full-width space AFTER ？/！ mid-sentence",
+  "rule": "When ？ or ！ ends one sentence and ANOTHER sentence follows on the same line, insert ONE full-width space (　) after the mark.",
+  "example_wrong": "本当？すごいね！",
+  "example_right": "本当？　すごいね！",
+  "note": "BOUNDARY CONDITIONS: add 　only mid-line between two sentences. NO space if the mark ends the line/paragraph, or if a closing bracket immediately follows (本当？」 — no space). Correct; matches publishing 全角アキ practice."
+ },
+ {
+  "key": "No space after 、 and 。",
+  "rule": "Japanese is set without spaces; 、and 。 already carry their own trailing whitespace in the glyph. Never add a half- or full-width space after them.",
+  "example_wrong": "はい、 そうです。 ",
+  "example_right": "はい、そうです。",
+  "note": "The punctuation glyph supplies the gap. Adding a manual space after 、/。 is a classic ASCII-habit error (exception: the ？/！ mid-sentence rule above). Correct."
+ },
+ {
+  "key": "No spaces between Japanese words",
+  "rule": "Do not insert spaces to separate Japanese words/morphemes; word boundaries are read from the script mix (kanji/kana). Spacing is not used for segmentation.",
+  "example_wrong": "私 は 日本語 を 勉強 します",
+  "example_right": "私は日本語を勉強します",
+  "note": "No inter-word spaces for native Japanese. (Spacing children's all-kana text is a special pedagogical case, not transcription.) Correct."
+ },
+ {
+  "key": "No space inside/around brackets 「」『』（）",
+  "rule": "Do not pad the inside or outside of full-width brackets with spaces; the full-width bracket glyphs include their own side-bearing.",
+  "example_wrong": "彼は 「 はい 」 と答えた。",
+  "example_right": "彼は「はい」と答えた。",
+  "note": "Brackets hug their contents and neighbors directly — no spaces inside or outside. Correct."
+ },
+ {
+  "key": "Spacing around half-width Latin/numbers in Japanese text",
+  "rule": "When a run of half-width Latin letters or Arabic numerals sits inside Japanese text, many house styles insert a thin/quarter or single space on each side for legibility; do NOT space between the digits/letters of the run itself.",
+  "example_wrong": "彼はi Phoneを2 0台買った。",
+  "example_right": "彼はiPhoneを20台買った。",
+  "note": "Keep the alphanumeric token intact (iPhone, 20). Inter-token padding (Japanese↔Latin) is a style choice; intra-token spaces are always wrong. Correct."
+ },
+ {
+  "key": "Full-width vs half-width punctuation consistency",
+  "rule": "Use FULL-WIDTH Japanese punctuation (、。「」『』（）？！・…—) within Japanese text. Do not mix in half-width ASCII equivalents (,.\"'()?!).",
+  "example_wrong": "そうですか? (はい)",
+  "example_right": "そうですか？（はい）",
+  "note": "Match width to context: Japanese run → full-width marks and （）; half-width ()?! belong only inside pure-Latin/code runs. Correct."
+ },
+ {
+  "key": "（）— full-width parentheses for asides / readings",
+  "rule": "Use full-width （） for parenthetical asides, furigana-style readings, or non-verbal annotations within Japanese text. Half-width () is reserved for Latin/code.",
+  "example_wrong": "東京(とうきょう)に住む。",
+  "example_right": "東京（とうきょう）に住む。",
+  "note": "Full-width （） in Japanese. A 。 goes OUTSIDE a closing 」/） when it ends the sentence (…という。), not inside. Correct."
+ },
+ {
+  "key": "Non-verbal / inaudible markers — （笑）（拍手）（聞き取れず）",
+  "rule": "Mark non-speech events (laughter, applause, inaudible) with a bracketed annotation per the project spec, commonly （笑）, （拍手）, （聞き取れず）, kept OUTSIDE the spoken text.",
+  "example_wrong": "面白いね笑笑。",
+  "example_right": "面白いね（笑）。",
+  "note": "STYLE-SCOPED to the transcription spec; universal rule: annotations are bracketed and separated from verbatim speech, never blended in. (Original key showed 〔（）〕 — the actual examples correctly use 全角（）.)"
+ },
+ {
+  "key": "Long vowel chōonpu ー (katakana) vs dash",
+  "rule": "Lengthen a katakana vowel with the chōonpu ー (U+30FC), not an em-dash —, hyphen -, or full-width minus −.",
+  "example_wrong": "コ−ヒ-（using minus/hyphen）",
+  "example_right": "コーヒー",
+  "note": "ー is a kana-length mark, not punctuation. Don't confuse it with the interruption dash —— or the nakaten ・. Verified: chōonpu 長音符 U+30FC correct."
+ },
+ {
+  "key": "Repetition / no 々 across word boundary in transcription",
+  "rule": "Use the iteration mark 々 only for a genuinely repeated kanji within ONE word/morpheme (人々, 様々); do not use 々 when the same kanji merely abuts across a compound boundary.",
+  "example_wrong": "民主主義 written as 民主々義",
+  "example_right": "民主主義",
+  "note": "Verified correct: 民主＋主義 is a compound boundary, so both 主 are written out — only an intra-element repeat (人人→人々) takes 々. Good catch of a real error class."
+ },
+ {
+  "key": "Quotation mark choice — straight/curly ASCII quotes are wrong in JP",
+  "rule": "Do not use ASCII \"...\" or '...' for Japanese speech; use 「」. Curly “ ” are acceptable only inside embedded English.",
+  "example_wrong": "\"行こう\"と彼は言った。",
+  "example_right": "「行こう」と彼は言った。",
+  "note": "Japanese speech → 「」 always. ASCII/curly quotes belong only to quoted English inside the text. Correct."
+ },
+ {
+  "key": "Line-initial punctuation (kinsoku) — closing marks don't start a line",
+  "rule": "Under kinsoku shori (禁則処理), closing brackets and 、。？！ may not begin a line, and opening brackets may not end a line. In wrapping transcripts, keep these marks with their adjacent character.",
+  "example_wrong": "…と言った\n。次に…",
+  "example_right": "…と言った。\n次に…",
+  "note": "Never let 。、」）？！ fall to the start of a new line, nor 「（ to the end of one. Wrap so the mark stays glued to its character. Verified: kinsoku 禁則 correct."
+ },
+ {
+  "key": "えー / えーと / えーっと",
+  "note": "Hesitation filler (floor-holding while thinking). Kana-only — no kanji, no homophone confusion. Clean: REMOVE · Full: keep. Distinguish from sentence-final ねー (agreement-seeking) which is kept.",
+  "example_wrong": "Clean: 「えー、明日は晴れです」kept as-is (filler left in)",
+  "example_right": "Clean: 「明日は晴れです」(えー dropped) · Full: 「えー、明日は晴れです」"
+ },
+ {
+  "key": "ええと / えっと",
+  "note": "Hesitation filler, interchangeable with えーと. Kana-only. Clean: REMOVE · Full: keep. Do NOT confuse with ええ (=yes, 相槌) — ええと has the と.",
+  "example_wrong": "Clean: 「ええと、3つあります」(filler left in)",
+  "example_right": "Clean: 「3つあります」 · Full: 「ええと、3つあります」"
+ },
+ {
+  "key": "あのー / あの",
+  "note": "Floor-holding / attention-getting filler. Clean: REMOVE when filler · Full: keep. CAUTION: あの can be the demonstrative adnominal 'that' (あの人=that person) — then it is CONTENT and is KEPT even in Clean.",
+  "example_wrong": "Clean: removing あの from 「あの人です」→「人です」(meaning destroyed)",
+  "example_right": "Clean filler: 「あのー、質問です」→「質問です」 · Clean content: 「あの人です」kept unchanged"
+ },
+ {
+  "key": "そのー / その",
+  "note": "Floor-holding filler, often paired with あの. Clean: REMOVE when filler · Full: keep. CAUTION: その is also the demonstrative 'that' (その本=that book) → CONTENT, KEPT in Clean.",
+  "example_wrong": "Clean: removing その from 「その本を」→「本を」(loses the referent)",
+  "example_right": "Clean filler: 「そのー、つまり」→「つまり」 · Clean content: 「その本を取って」kept"
+ },
+ {
+  "key": "なんか",
+  "reading": "なんか",
+  "note": "DUAL-FUNCTION homophone. Filler/hedge 'like, sort of' (colloquial) → Clean: REMOVE. Referential 何か 'something' → CONTENT, KEEP. Disambiguate by function: if it can be deleted without losing meaning, it is the filler. Reading note: 何か's citation reading is なにか; なんか is its colloquial reduction, which coincides with the filler — so they are homophones only in casual speech.",
+  "options": [
+   {
+    "kanji": "なんか",
+    "gloss": "discourse filler/hedge 'like, somehow, sort of' (written in kana)"
+   },
+   {
+    "kanji": "何か",
+    "gloss": "indefinite pronoun 'something' (referential content); citation reading なにか, colloquially reduced to なんか"
+   }
+  ],
+  "example_wrong": "Clean: removing なんか from 「何か食べたい」→「食べたい」(deletes 'something')",
+  "example_right": "Clean filler: 「なんか疲れた」→「疲れた」 · Clean content: 「何か食べたい」kept"
+ },
+ {
+  "key": "まあ / まぁ",
+  "note": "Hedging/softening filler 'well, sort of'. Clean: REMOVE when sentence-initial filler · Full: keep. CAUTION: reduplicated まあまあ = 'so-so / moderate' (content/adverb) → KEPT. Also まあ as a mild interjection of surprise (esp. fem.) is borderline; remove as filler unless it carries clear affect the client wants.",
+  "example_wrong": "Clean: collapsing まあまあ to nothing in 「味はまあまあです」→「味はです」(broken)",
+  "example_right": "Clean filler: 「まあ、いいか」→「いいか」 · Clean content: 「まあまあです」kept"
+ },
+ {
+  "key": "うん",
+  "reading": "うん",
+  "note": "HIGHEST-VALUE TRIPLE. Near-minimal pair set. うん = casual 'yes/yeah' backchannel → Clean: REMOVE when passive 相槌; KEEP when it is the actual answer to a yes/no question. Mishearing うん↔ううん inverts the answer. Length distinguishes the three: うん (short) vs ううん (longer) vs うーん (long deliberation vowel).",
+  "options": [
+   {
+    "kanji": "うん",
+    "gloss": "affirmative 'yeah / yes / mm-hm' (short, falling)"
+   },
+   {
+    "kanji": "ううん",
+    "gloss": "negative 'no / nuh-uh' (longer, with a pitch dip) — OPPOSITE meaning"
+   },
+   {
+    "kanji": "うーん",
+    "gloss": "thinking/hesitation filler 'hmm, let me see' (long vowel ー) — NOT an answer"
+   }
+  ],
+  "example_wrong": "Clean: transcribing the answer 「うん（=はい）」as backchannel and deleting it",
+  "example_right": "Clean backchannel: A「で…」B「うん」→ delete うん · Clean answer: Q「行く？」A「うん」→ keep うん"
+ },
+ {
+  "key": "ううん",
+  "reading": "ううん",
+  "note": "Negative reply 'no'. CONTENT (answers a question) → Clean: KEEP · Full: keep. Critically distinct from うん (yes); the extra length flips polarity. Never reduce ううん to うん in Clean.",
+  "options": [
+   {
+    "kanji": "ううん",
+    "gloss": "'no' (negative reply) — longer than うん"
+   },
+   {
+    "kanji": "うん",
+    "gloss": "'yes' (affirmative) — shorter, opposite meaning"
+   }
+  ],
+  "example_wrong": "Clean: hearing 「ううん」and writing 「うん」(answer reversed)",
+  "example_right": "Clean: Q「これでいい？」A「ううん、違う」→ keep 「ううん、違う」"
+ },
+ {
+  "key": "うーん",
+  "reading": "うーん",
+  "note": "Thinking/hesitation filler (long vowel) 'hmm, let me think'. Clean: REMOVE · Full: keep. NOT an answer — distinct from うん(yes)/ううん(no). Often precedes a real answer; drop the うーん, keep what follows.",
+  "options": [
+   {
+    "kanji": "うーん",
+    "gloss": "deliberation filler 'hmm' (long ー)"
+   },
+   {
+    "kanji": "うん",
+    "gloss": "'yes' (short) — content if it answers a question"
+   }
+  ],
+  "example_wrong": "Clean: keeping 「うーん」or treating it as the affirmative 「うん」",
+  "example_right": "Clean: 「うーん、たぶん大丈夫」→「たぶん大丈夫」 · Full: 「うーん、たぶん大丈夫」"
+ },
+ {
+  "key": "はい",
+  "reading": "はい",
+  "note": "DUAL-FUNCTION. As passive backchannel ('mm-hm, go on') → Clean: REMOVE. As a direct answer/affirmation to a question, or attention-getter → CONTENT, KEEP. Same kana はい. Decide by whether a question was just asked.",
+  "options": [
+   {
+    "kanji": "はい",
+    "gloss": "'yes' answer / acknowledgement (content when answering)"
+   },
+   {
+    "kanji": "はい",
+    "gloss": "passive backchannel 'uh-huh' (remove in Clean)"
+   }
+  ],
+  "example_wrong": "Clean: deleting the answer in Q「来ますか？」A「はい」→ A「」(answer lost)",
+  "example_right": "Clean backchannel: A「それで…」B「はい」→ delete · Clean answer: Q「来ますか？」A「はい」→ keep"
+ },
+ {
+  "key": "ええ",
+  "reading": "ええ",
+  "note": "Polite affirmative 'yes / yeah'. As an ANSWER → KEEP in Clean; as a passive backchannel → REMOVE in Clean. Do not confuse with filler ええと (has と). Long-vowel surprise 「ええ！？」(=what?!) is an interjection, treated as filler unless affect is requested.",
+  "options": [
+   {
+    "kanji": "ええ",
+    "gloss": "affirmative 'yes' (answer = content; backchannel = remove)"
+   },
+   {
+    "kanji": "いいえ",
+    "gloss": "'no' (polite negative) — opposite; always KEEP"
+   }
+  ],
+  "example_wrong": "Clean: collapsing 「ええ」(yes) and 「いいえ」(no) as both droppable backchannels",
+  "example_right": "Clean answer: Q「よろしいですか？」A「ええ」→ keep · Clean backchannel: A「…で」B「ええ」→ delete"
+ },
+ {
+  "key": "いいえ / いえ",
+  "note": "Polite negative reply 'no'. CONTENT → Clean: KEEP · Full: keep. Always kept regardless of style because it answers/negates. Distinct from filler-ish いえいえ (a humble 'no no' deflection), which is also kept when it is a real response.",
+  "example_wrong": "Clean: deleting 「いいえ」as if a backchannel → answer polarity lost",
+  "example_right": "Clean: Q「お疲れですか？」A「いいえ、大丈夫です」→ keep in full"
+ },
+ {
+  "key": "なるほど",
+  "note": "Acknowledgement 相槌 'I see / that makes sense'. BORDERLINE — carries more content than えー. Convention: Clean: REMOVE when a passive listening token; KEEP when it is a substantive standalone response/turn. Full: always keep. Flag to client which house style applies.",
+  "example_wrong": "Clean: blanket-keeping every なるほど the listener mutters during the speaker's turn",
+  "example_right": "Clean: speaker talking, listener 「なるほど」mid-turn → remove; standalone reply 「なるほど、わかりました」→ keep"
+ },
+ {
+  "key": "そうそう / そう",
+  "reading": "そう",
+  "note": "Agreement backchannel 'right, yeah that's it'. Clean: REMOVE when passive agreement token · Full: keep. CAUTION: そう as content — 「そうです」(that's so), 「そう思う」(I think so), or answer 「そう」(=yes, it is) → KEEP. Don't strip そう when it carries propositional content.",
+  "example_wrong": "Clean: removing そう from 「そうです」→「です」(predicate destroyed)",
+  "example_right": "Clean backchannel: 「そうそう」(mid-listen) → remove · Clean content: 「そうです」「そう思います」kept"
+ },
+ {
+  "key": "ね / ねー / ですね",
+  "note": "Sentence-final interactional particle seeking agreement. Generally KEPT in both styles — it is grammatical content, not a filler. Only the bare standalone 相槌 「ねー」(pure agreement token) may be removed in Clean. Don't strip ね from 「いいですね」.",
+  "example_wrong": "Clean: deleting ね from 「そうですね」→「そうです」(changes nuance/grammar)",
+  "example_right": "Clean: 「いいですね」kept; standalone listener 「ねー」(agreement) may be dropped"
+ },
+ {
+  "key": "あと / あとは",
+  "note": "DUAL-FUNCTION. Sentence-initial discourse filler 'and, also, um then' → Clean: REMOVE/reduce. Content あと '(time) remaining / after / the rest' (後) → KEEP. Disambiguate: if it adds a real item/clause it is connective-content; if pure floor-holding, drop.",
+  "example_wrong": "Clean: removing あと from 「あと5分です」→「5分です」(loses 'remaining')",
+  "example_right": "Clean content: 「あと5分」kept · Clean filler: 「あと、えー、それから」→「それから」"
+ },
+ {
+  "key": "で / それで",
+  "note": "TUNAGI (connective) 'and so, then'. それで as a genuine connective → KEEP in Clean. But bare sentence-initial filler-で used purely to restart/hold the floor → REMOVE in Clean. Full: keep both.",
+  "example_wrong": "Clean: blanket-deleting それで in 「それで決めました」→「決めました」(loses causal link)",
+  "example_right": "Clean connective: 「それで決めました」kept · Clean filler: 「で、えー、で、次は」→「次は」"
+ },
+ {
+  "key": "だから / なので / ですから",
+  "note": "TUNAGI causal connective 'so, therefore'. Genuine connectives → Clean: KEEP · Full: keep. Do NOT blanket-remove. Only reduce true repetition (だからだから) to a single token in Clean.",
+  "example_wrong": "Clean: removing だから from 「雨だから中止」→「雨中止」(causal logic broken)",
+  "example_right": "Clean: 「だから中止です」kept · stutter 「だ、だから」→「だから」"
+ },
+ {
+  "key": "でも / だけど / けど",
+  "note": "TUNAGI adversative connective 'but, however'. CONTENT → Clean: KEEP · Full: keep. Don't confuse でも-connective with でも as 'even/or something' (content too) — both kept. Never delete; it carries the contrast.",
+  "example_wrong": "Clean: dropping でも from 「でも違う」→「違う」(loses the contrast)",
+  "example_right": "Clean: 「でも、それは違います」kept · false start 「でも、で、でも」→「でも」"
+ },
+ {
+  "key": "そして / それから",
+  "note": "TUNAGI additive connective 'and then, after that'. CONTENT → Clean: KEEP · Full: keep. These sequence events and are not fillers. Only collapse genuine repetition in Clean.",
+  "example_wrong": "Clean: deleting そして as a 'filler' → loses sequencing between clauses",
+  "example_right": "Clean: 「会議をして、そして昼食です」kept in full"
+ },
+ {
+  "key": "つまり /要するに",
+  "note": "TUNAGI reformulation connective 'in other words, in short'. 要するに = 'to sum up / in short' (verified). CONTENT → Clean: KEEP · Full: keep. Signals a summary/restatement; not a hesitation filler. Keep unless purely repeated.",
+  "example_wrong": "Clean: treating つまり as floor-holding and deleting it → loses the 'i.e.' signal",
+  "example_right": "Clean: 「つまり、中止ということです」kept"
+ },
+ {
+  "key": "ていうか / っていうか / というか",
+  "note": "DUAL-FUNCTION. As a self-correction/topic-shift connective 'or rather, I mean' → KEEP in Clean (it carries the correction). As a pure colloquial filler opener → REMOVE in Clean. Full: keep. Judge by whether it introduces a real reformulation.",
+  "example_wrong": "Clean: keeping every っていうか including empty filler openers",
+  "example_right": "Clean correction: 「安い、っていうか無料です」kept · Clean filler: 「ていうか、あのー」→ trimmed"
+ },
+ {
+  "key": "やっぱり / やっぱ / やはり",
+  "reading": "やっぱり",
+  "note": "DUAL-FUNCTION. As content adverb 'as expected / after all / still' → KEEP in Clean. As a reflexive filler tic peppered through speech → REMOVE in Clean. やっぱ is the casual contraction. Full: keep all. Decide by whether it modifies the proposition.",
+  "options": [
+   {
+    "kanji": "やっぱり / やはり",
+    "gloss": "adverb 'as expected, after all, still' (content)"
+   },
+   {
+    "kanji": "やっぱ",
+    "gloss": "casual contraction of the same; same content vs filler split"
+   }
+  ],
+  "example_wrong": "Clean: removing やっぱり from 「やっぱり高い」→「高い」(loses 'as expected')",
+  "example_right": "Clean content: 「やっぱり無理です」kept · Clean filler: 「やっぱ、なんか、やっぱ」→ trimmed"
+ },
+ {
+  "key": "ちょっと",
+  "note": "DUAL-FUNCTION. Softener/hedge filler 'just, kinda, um' → Clean: REMOVE. Degree adverb 'a little / a bit' (content) → KEEP. Also a polite refusal 「ちょっと…」(=no/inconvenient) → KEEP as content. Decide by whether it quantifies or softens-only.",
+  "example_wrong": "Clean: removing ちょっと from 「ちょっと高い」→「高い」(loses degree)",
+  "example_right": "Clean degree: 「ちょっと高いです」kept · Clean filler: 「ちょっと、その、見せて」→「見せて」"
+ },
+ {
+  "key": "こう / こういう / こんな感じ",
+  "note": "DUAL-FUNCTION. Gesture-accompanying filler こう 'like, this way' used as floor-holder → Clean: REMOVE. Demonstrative content こう 'in this way / like this' that specifies manner → KEEP. Judge by whether it carries demonstrative meaning.",
+  "example_wrong": "Clean: deleting こう from 「こうやって」→「やって」(loses 'this way')",
+  "example_right": "Clean content: 「こうやってください」kept · Clean filler: 「こう、なんか、こう」→ trimmed"
+ },
+ {
+  "key": "ほら / さ / さあ",
+  "note": "Interactional fillers: ほら 'look/see', さ(あ) 'well/y'know' as inserted floor particles. Clean: REMOVE when pure filler · Full: keep. CAUTION: さあ as 'I don't know / let's' is content → KEEP; ほら drawing real attention to something may be kept per house style.",
+  "example_wrong": "Clean: deleting さあ from 「さあ、行こう」when it means 'come on, let's go' (content)",
+  "example_right": "Clean filler: 「で、さ、それで」→「それで」 · Clean content: 「さあ、わかりません」kept"
+ },
+ {
+  "key": "なんていうか / なんというか",
+  "note": "Hesitation/word-search filler 'how should I put it'. Clean: REMOVE · Full: keep. It signals the speaker groping for words and rarely adds content; drop in Clean unless it frames a deliberate qualification the client wants.",
+  "example_wrong": "Clean: keeping 「なんていうか」verbatim in a Clean transcript",
+  "example_right": "Clean: 「なんていうか、複雑です」→「複雑です」 · Full: keep the filler"
+ },
+ {
+  "key": "Filler vowel-lengthening (えーー / あのーー / そのー)",
+  "rule": "RULE-CATEGORY: Elongated filler vowels are normalized, not transcribed mora-by-mora. Clean: REMOVE the whole filler. Full: keep ONE standardized spelling (e.g. えー), do NOT reproduce every extra ー.",
+  "example_wrong": "Full: 「えーーーーっと」transcribed with all elongation marks",
+  "example_right": "Full: 「えーっと」(normalized) · Clean: dropped entirely"
+ },
+ {
+  "key": "Stutter / false start (言い淀み・言い直し)",
+  "rule": "RULE-CATEGORY: Faltering/word-search starts (言い淀み) and self-corrections/rephrasings (言い直し) — abandoned word-starts that are restarted or corrected. (Note: 言い淀み is 'faltering/groping', not a true phonological stutter どもり/吃音.) Clean: REMOVE the false start, keep only the completed form. Full: keep the false start as spoken.",
+  "example_wrong": "Clean: 「わ、わ、私が」left as-is with the abandoned starts",
+  "example_right": "Clean: 「私が行きます」 · Full: 「わ、わ、私が行きます」"
+ },
+ {
+  "key": "Exact repetition (繰り返し)",
+  "rule": "RULE-CATEGORY: Unintentional duplicated words/phrases. Clean: REMOVE duplicates, keep one instance. Full: keep all repetitions. Do NOT collapse intentional emphatic repetition (とても、とても = deliberate) in either style.",
+  "example_wrong": "Clean: 「これは、これは、これは問題です」kept with all three",
+  "example_right": "Clean: 「これは問題です」 · Full: 「これは、これは、これは問題です」"
+ },
+ {
+  "key": "Passive 相槌 during speaker's turn (ええ/はい/うん/なるほど)",
+  "rule": "RULE-CATEGORY: Listener backchannels overlapping the speaker's continuous turn. Clean: REMOVE them. Full: keep them (often bracketed/attributed). KEEP even in Clean if the token is actually answering a question, not passive listening. (Umbrella editing-rule; complements the individual うん/はい/ええ/なるほど lexical entries, not a duplicate of them.)",
+  "example_wrong": "Clean: interleaving B's 「はい…ええ…うん」into A's monologue",
+  "example_right": "Clean: A's sentence printed clean; B's passive 相槌 dropped · Full: 相槌 retained"
+ },
+ {
+  "key": "Discourse-だ / 文頭のだ・んー connectors vs real connectives",
+  "rule": "RULE-CATEGORY: Distinguish empty floor-restarts from meaningful つなぎ言葉. Clean: REMOVE empty restart tokens (bare で、んーと、あの) but KEEP real connectives (だから・でも・それで・つまり). Full: keep both. (Umbrella decision-rule; complements the per-connective lexical entries, not a duplicate.)",
+  "example_wrong": "Clean: deleting だから/でも along with the fillers → logical links lost",
+  "example_right": "Clean: drop 「で、んー、で」but keep 「だから中止です」 · Full: keep everything"
+ },
+ {
+  "key": "ま (clipped まあ) / んー / うーんと",
+  "note": "Minimal/clipped hesitation fillers. Clean: REMOVE · Full: keep (normalized spelling). ま is the clipped form of まあ; んー/うーんと are deliberation sounds. None carry content; safe to drop in Clean unless quoting verbatim affect.",
+  "example_wrong": "Clean: keeping 「ま、んー、うーんと」strung before the answer",
+  "example_right": "Clean: 「ま、んー、たぶん」→「たぶん」 · Full: 「ま、んー、たぶん」"
+ },
+ {
+  "key": "よ / わ / な (sentence-final emphatic particles)",
+  "note": "Sentence-final particles (よ assertive, わ soft assertion, な reflective/seeking). KEPT in both styles — grammatical content conveying stance, not fillers. Do not strip in Clean. Distinct from filler な-lengthening used to hold the floor.",
+  "example_wrong": "Clean: deleting よ from 「行きますよ」→「行きます」(loses assertion)",
+  "example_right": "Clean: 「行きますよ」「いいわ」「そうだな」kept · Full: kept"
+ },
+ {
+  "key": "んと / えっとね / あのね (filler + ね compounds)",
+  "note": "Compound openers = hesitation filler + interactional ね. Clean: REMOVE the whole opener · Full: keep. The ね here rides on the filler and is not the agreement-seeking sentence-final ね, so it goes with the filler in Clean.",
+  "example_wrong": "Clean: keeping 「えっとね、あのね」at the start of a sentence",
+  "example_right": "Clean: 「えっとね、あのね、明日です」→「明日です」 · Full: keep openers"
+ },
+ {
+  "key": "RULE: Arabic vs 漢数字 — base convention",
+  "rule": "In horizontal-writing (横書き) mainstream transcription, use Arabic digits for replaceable quantities/order (counts, measures, dates, money) and 漢数字 for numbers lexicalized into words, idioms, and fixed expressions where the digit cannot be swapped. (共同通信『記者ハンドブック』: 数量・順序は洋数字、慣用句などは漢数字。)",
+  "example_wrong": "三個のリンゴ / 一石2鳥",
+  "example_right": "3個のリンゴ / 一石二鳥",
+  "note": "Test: if you can substitute another number and the meaning still works, use Arabic (3個→5個 OK). If swapping breaks a word/idiom (一般, 一人前, 四捨五入, 一石二鳥), keep kanji."
+ },
+ {
+  "key": "RULE: 縦書き (vertical) overrides to 漢数字",
+  "rule": "In vertical writing (novels, formal letters, many subtitles), use 漢数字 throughout even for ordinary counts; Arabic digits are reserved for horizontal text. House style (NHK broadcast vs 共同通信 press vs general 文字起こし) shifts the margins, so confirm the project's style sheet before normalizing.",
+  "example_wrong": "縦書き本文に『3個』",
+  "example_right": "縦書き本文に『三個』",
+  "note": "These entries assume horizontal mainstream transcription. State the assumed direction/style up front; the Arabic-vs-kanji boundary is house-dependent, not universal."
+ },
+ {
+  "key": "RULE: lexicalized numbers stay 漢数字",
+  "rule": "Numbers fused into vocabulary, proverbs, or set phrases are written in 漢数字 regardless of writing direction.",
+  "example_wrong": "1般 / 4捨5入 / 1人前",
+  "example_right": "一般 / 四捨五入 / 一人前",
+  "note": "Includes 一目, 二度と, 三角形, 七五三, 十分(=sufficient), 百科事典. Not a count — it is a word."
+ },
+ {
+  "key": "RULE: 〜つ counting uses 漢数字",
+  "rule": "The native 一つ・二つ・三つ… (〜つ) series is conventionally written in 漢数字 in transcription QA, not Arabic + つ.",
+  "example_wrong": "3つの方法 (in formal copy) — many style guides proscribe digit+つ",
+  "example_right": "三つの方法",
+  "note": "共同通信 keeps 〜つ in kanji. 一つ二つ, 三つ巴, 四つ角. (Casual web copy often writes 3つ, but transcription QA defaults to 三つ.)"
+ },
+ {
+  "key": "Counter 音便: 本",
+  "reading": "ほん／ぼん／ぽん",
+  "rule": "本 (long thin objects): sound-changes after 1/3/6/8/10/何.",
+  "options": [
+   {
+    "kanji": "一本 いっぽん",
+    "gloss": "1 (long object) — geminate っ + ぽん"
+   },
+   {
+    "kanji": "三本 さんぼん",
+    "gloss": "3 — ん + voiced ぼん"
+   },
+   {
+    "kanji": "六本 ろっぽん",
+    "gloss": "6 — っ + ぽん"
+   },
+   {
+    "kanji": "八本 はっぽん",
+    "gloss": "8 — っ + ぽん"
+   },
+   {
+    "kanji": "十本 じっぽん／じゅっぽん",
+    "gloss": "10 — both readings standard"
+   },
+   {
+    "kanji": "何本 なんぼん",
+    "gloss": "how many — ん + ぼん"
+   }
+  ],
+  "example_wrong": "三本 さんほん",
+  "example_right": "三本 さんぼん",
+  "note": "Regular: 二本にほん, 四本よんほん, 五本ごほん, 七本ななほん, 九本きゅうほん. じゅっぽん is accepted alongside じっぽん — do not mark either wrong."
+ },
+ {
+  "key": "Counter 音便: 杯",
+  "reading": "はい／ばい／ぱい",
+  "rule": "杯 (cupfuls/glasses): same ぱ-row pattern as 本.",
+  "options": [
+   {
+    "kanji": "一杯 いっぱい",
+    "gloss": "1 cup — っ + ぱい"
+   },
+   {
+    "kanji": "三杯 さんばい",
+    "gloss": "3 — voiced ばい"
+   },
+   {
+    "kanji": "六杯 ろっぱい",
+    "gloss": "6 — っ + ぱい"
+   },
+   {
+    "kanji": "八杯 はっぱい",
+    "gloss": "8 — っ + ぱい"
+   },
+   {
+    "kanji": "十杯 じっぱい／じゅっぱい",
+    "gloss": "10 — both standard"
+   },
+   {
+    "kanji": "何杯 なんばい",
+    "gloss": "how many — ん + ばい"
+   }
+  ],
+  "example_wrong": "一杯 いちはい",
+  "example_right": "一杯 いっぱい",
+  "note": "Regular: 二杯にはい, 四杯よんはい, 五杯ごはい, 七杯ななはい. Note 一杯 also = 'full/lots' as an adverb."
+ },
+ {
+  "key": "Counter 音便: 匹",
+  "reading": "ひき／びき／ぴき",
+  "rule": "匹 (small animals): は→ぱ/び changes at 1/3/6/8/10.",
+  "options": [
+   {
+    "kanji": "一匹 いっぴき",
+    "gloss": "1 animal — っ + ぴき"
+   },
+   {
+    "kanji": "三匹 さんびき",
+    "gloss": "3 — voiced びき"
+   },
+   {
+    "kanji": "六匹 ろっぴき",
+    "gloss": "6 — っ + ぴき"
+   },
+   {
+    "kanji": "八匹 はっぴき",
+    "gloss": "8 — っ + ぴき"
+   },
+   {
+    "kanji": "十匹 じっぴき／じゅっぴき",
+    "gloss": "10 — both standard"
+   },
+   {
+    "kanji": "何匹 なんびき",
+    "gloss": "how many — ん + びき"
+   }
+  ],
+  "example_wrong": "三匹 さんひき",
+  "example_right": "三匹 さんびき",
+  "note": "Regular: 二匹にひき, 四匹よんひき, 五匹ごひき, 七匹ななひき, 九匹きゅうひき."
+ },
+ {
+  "key": "Counter 音便: 分 (minutes)",
+  "reading": "ふん／ぷん",
+  "rule": "分 (minutes): ふ→ぷ changes; one of the most-mis-transcribed counters.",
+  "options": [
+   {
+    "kanji": "一分 いっぷん",
+    "gloss": "1 minute — っ + ぷん"
+   },
+   {
+    "kanji": "三分 さんぷん",
+    "gloss": "3 minutes — ん + ぷん"
+   },
+   {
+    "kanji": "四分 よんぷん",
+    "gloss": "4 minutes — よん + ぷん"
+   },
+   {
+    "kanji": "六分 ろっぷん",
+    "gloss": "6 minutes — っ + ぷん"
+   },
+   {
+    "kanji": "八分 はっぷん／はちふん",
+    "gloss": "8 minutes — はっぷん standard"
+   },
+   {
+    "kanji": "十分 じっぷん／じゅっぷん",
+    "gloss": "10 minutes — both standard"
+   }
+  ],
+  "example_wrong": "三分 さんふん (as time)",
+  "example_right": "三分 さんぷん",
+  "note": "Regular ふん: 二分にふん, 五分ごふん, 七分ななふん, 九分きゅうふん. Beware 十分 = じゅうぶん 'enough' (different word) vs じっぷん '10 min'."
+ },
+ {
+  "key": "分 heteronym: 五分五分 etc.",
+  "reading": "ぶ／ぶん",
+  "rule": "分 (fractions/parts/ratio): read ぶ/ぶん, NOT ぷん.",
+  "options": [
+   {
+    "kanji": "五分五分 ごぶごぶ",
+    "gloss": "fifty-fifty, even odds"
+   },
+   {
+    "kanji": "三分 さんぶ",
+    "gloss": "3 bu = 3% in the 歩合 system (割10%/分1%/厘0.1%; e.g. interest, batting avg)"
+   },
+   {
+    "kanji": "半分 はんぶん",
+    "gloss": "half"
+   },
+   {
+    "kanji": "三分 さんぷん",
+    "gloss": "3 minutes (time) — contrast"
+   }
+  ],
+  "example_wrong": "五分五分 ごふんごふん / 三分(=batting/interest rate) glossed as 30%",
+  "example_right": "五分五分 ごぶごぶ / 三分 さんぶ = 3% (歩合)",
+  "note": "CORRECTED: in 歩合, 分=1% so 三分=3% (not 30%). The '50%' of 五分五分 comes from the separate fraction-of-ten sense where 分=10%; don't conflate the two systems. Same 分: time=ふん/ぷん, 歩合 rate=ぶ, fraction/amount=ぶん. Choose reading by sense."
+ },
+ {
+  "key": "Counter 音便: 階",
+  "reading": "かい／がい",
+  "rule": "階 (floors): か→が voicing at 3 and 何.",
+  "options": [
+   {
+    "kanji": "一階 いっかい",
+    "gloss": "1st floor — っ + かい"
+   },
+   {
+    "kanji": "三階 さんがい／さんかい",
+    "gloss": "3rd floor — がい traditional, かい now widely accepted"
+   },
+   {
+    "kanji": "六階 ろっかい",
+    "gloss": "6th floor — っ + かい"
+   },
+   {
+    "kanji": "十階 じっかい／じゅっかい",
+    "gloss": "10th floor"
+   },
+   {
+    "kanji": "何階 なんがい／なんかい",
+    "gloss": "what floor"
+   }
+  ],
+  "example_wrong": "一階 いちかい",
+  "example_right": "一階 いっかい",
+  "note": "三階 has two accepted readings — do NOT mark さんかい wrong. Homophone trap: 一回いっかい '1 time' (回) sounds identical to 一階 '1st floor' (階)."
+ },
+ {
+  "key": "Counter 音便: 軒",
+  "reading": "けん／げん",
+  "rule": "軒 (houses/shops): け→げ voicing at 3 and 何.",
+  "options": [
+   {
+    "kanji": "一軒 いっけん",
+    "gloss": "1 house/shop — っ + けん"
+   },
+   {
+    "kanji": "三軒 さんげん",
+    "gloss": "3 houses — voiced げん"
+   },
+   {
+    "kanji": "六軒 ろっけん",
+    "gloss": "6 houses — っ + けん"
+   },
+   {
+    "kanji": "十軒 じっけん／じゅっけん",
+    "gloss": "10 houses"
+   },
+   {
+    "kanji": "何軒 なんげん",
+    "gloss": "how many houses"
+   }
+  ],
+  "example_wrong": "三軒 さんけん",
+  "example_right": "三軒 さんげん",
+  "note": "一軒家いっけんや 'detached house'. 三軒 is fixed さんげん (cf. place name 三軒茶屋 さんげんぢゃや)."
+ },
+ {
+  "key": "Counter 音便: 羽",
+  "reading": "わ／ば／ぱ",
+  "rule": "羽 (birds/rabbits): わ→ば/ぱ changes; irregular and easily mis-heard.",
+  "options": [
+   {
+    "kanji": "一羽 いちわ",
+    "gloss": "1 bird — usually no っ"
+   },
+   {
+    "kanji": "三羽 さんば／さんわ",
+    "gloss": "3 birds — さんば common, さんわ also heard"
+   },
+   {
+    "kanji": "六羽 ろっぱ",
+    "gloss": "6 birds — っ + ぱ"
+   },
+   {
+    "kanji": "十羽 じっぱ／じゅっぱ",
+    "gloss": "10 birds"
+   },
+   {
+    "kanji": "何羽 なんば／なんわ",
+    "gloss": "how many birds"
+   }
+  ],
+  "example_wrong": "六羽 ろくわ",
+  "example_right": "六羽 ろっぱ",
+  "note": "Rabbits are counted with 羽 by tradition. Readings vary regionally; transcribe what is actually said."
+ },
+ {
+  "key": "Counter 音便: 足 (pairs)",
+  "reading": "そく／ぞく",
+  "rule": "足 (pairs of footwear): voicing to ぞく at 3, geminate at 1/8/10.",
+  "options": [
+   {
+    "kanji": "一足 いっそく",
+    "gloss": "1 pair (shoes/socks) — っ + そく"
+   },
+   {
+    "kanji": "三足 さんぞく／さんそく",
+    "gloss": "3 pairs — さんぞく common, さんそく also occurs"
+   },
+   {
+    "kanji": "八足 はっそく",
+    "gloss": "8 pairs — っ + そく"
+   },
+   {
+    "kanji": "十足 じっそく／じゅっそく",
+    "gloss": "10 pairs"
+   },
+   {
+    "kanji": "何足 なんぞく",
+    "gloss": "how many pairs"
+   }
+  ],
+  "example_wrong": "一足 いちそく (as pair count)",
+  "example_right": "一足 いっそく",
+  "note": "Note 一足 ひとあし = 'a step/briefly' is a different word (native reading)."
+ },
+ {
+  "key": "Counter 音便: 個",
+  "reading": "こ",
+  "rule": "個 (small objects): geminate at 1/6/8/10; otherwise regular こ.",
+  "options": [
+   {
+    "kanji": "一個 いっこ",
+    "gloss": "1 piece — っ + こ"
+   },
+   {
+    "kanji": "六個 ろっこ",
+    "gloss": "6 pieces — っ + こ"
+   },
+   {
+    "kanji": "八個 はっこ",
+    "gloss": "8 pieces — っ + こ"
+   },
+   {
+    "kanji": "十個 じっこ／じゅっこ",
+    "gloss": "10 pieces"
+   },
+   {
+    "kanji": "何個 なんこ",
+    "gloss": "how many"
+   }
+  ],
+  "example_wrong": "六個 ろくこ",
+  "example_right": "六個 ろっこ",
+  "note": "Regular: 二個にこ, 三個さんこ, 四個よんこ, 五個ごこ, 七個ななこ, 九個きゅうこ. 個 is the all-purpose object counter."
+ },
+ {
+  "key": "Counter 音便: ka-row geminate set (回/課/件/校…)",
+  "reading": "—",
+  "rule": "か行 counters (回・課・件・校 etc.) take geminate っ at 1/6/8/10.",
+  "options": [
+   {
+    "kanji": "一回 いっかい",
+    "gloss": "1 time/round (回)"
+   },
+   {
+    "kanji": "六回 ろっかい",
+    "gloss": "6 times"
+   },
+   {
+    "kanji": "八回 はっかい",
+    "gloss": "8 times"
+   },
+   {
+    "kanji": "十回 じっかい／じゅっかい",
+    "gloss": "10 times"
+   },
+   {
+    "kanji": "一件 いっけん",
+    "gloss": "1 case/matter (件)"
+   }
+  ],
+  "example_wrong": "六回 ろくかい",
+  "example_right": "六回 ろっかい",
+  "note": "Pattern carries across か行 counters. 回(times) ≠ 階(floors): 三回さんかい vs 三階さんがい/さんかい — context disambiguates."
+ },
+ {
+  "key": "Counter 人: irregular readings",
+  "reading": "にん／り",
+  "rule": "人 (people): 1 and 2 use native readings; 4 has fixed irregular reading.",
+  "options": [
+   {
+    "kanji": "一人 ひとり",
+    "gloss": "1 person — native, NOT いちにん"
+   },
+   {
+    "kanji": "二人 ふたり",
+    "gloss": "2 people — native, NOT ににん"
+   },
+   {
+    "kanji": "四人 よにん",
+    "gloss": "4 people — よ, NOT よんにん/しにん"
+   },
+   {
+    "kanji": "七人 しちにん／ななにん",
+    "gloss": "7 people — both used"
+   },
+   {
+    "kanji": "何人 なんにん",
+    "gloss": "how many people"
+   }
+  ],
+  "example_wrong": "四人 よんにん / 二人 ににん",
+  "example_right": "四人 よにん / 二人 ふたり",
+  "note": "CORRECTED 二人 note: the wrong on'yomi to avoid is ににん (not 'になん', which isn't a reading). 四人 is fixed よにん (cf. 四時よじ). 三人さんにん, 五人ごにん, 六人ろくにん, 八人はちにん, 九人きゅうにん, 十人じゅうにん regular. 一人/二人 keep kanji even in Arabic copy."
+ },
+ {
+  "key": "Counter 枚: regular (no 音便)",
+  "reading": "まい",
+  "rule": "枚 (flat thin objects): fully regular — no sound change.",
+  "options": [
+   {
+    "kanji": "一枚 いちまい",
+    "gloss": "1 sheet — NO geminate"
+   },
+   {
+    "kanji": "六枚 ろくまい",
+    "gloss": "6 sheets — NO geminate"
+   },
+   {
+    "kanji": "八枚 はちまい",
+    "gloss": "8 sheets — NO geminate"
+   },
+   {
+    "kanji": "十枚 じゅうまい",
+    "gloss": "10 sheets"
+   },
+   {
+    "kanji": "何枚 なんまい",
+    "gloss": "how many sheets"
+   }
+  ],
+  "example_wrong": "一枚 いちまい → *いっまい",
+  "example_right": "一枚 いちまい",
+  "note": "Common QA over-correction: do NOT geminate 枚. Paper, plates, shirts, tickets, photos."
+ },
+ {
+  "key": "Time 時: irregular hours",
+  "reading": "じ",
+  "rule": "時 (o'clock): 4, 7, 9 are irregular; fixed, and mis-transcription here is a hard error.",
+  "options": [
+   {
+    "kanji": "四時 よじ",
+    "gloss": "4 o'clock — よ, NEVER よんじ/しじ"
+   },
+   {
+    "kanji": "七時 しちじ",
+    "gloss": "7 o'clock — しち (ななじ avoided in standard, tolerated to prevent 一時 confusion)"
+   },
+   {
+    "kanji": "九時 くじ",
+    "gloss": "9 o'clock — く, NEVER きゅうじ"
+   },
+   {
+    "kanji": "何時 なんじ",
+    "gloss": "what time"
+   }
+  ],
+  "example_wrong": "四時 よんじ / 九時 きゅうじ",
+  "example_right": "四時 よじ / 九時 くじ",
+  "note": "Regular: 一時いちじ, 二時にじ, 三時さんじ, 五時ごじ, 六時ろくじ, 八時はちじ, 十時じゅうじ, 十一時じゅういちじ, 十二時じゅうにじ. 4/7/9 are the classic exam trap."
+ },
+ {
+  "key": "Months 〜月: irregular readings",
+  "reading": "がつ",
+  "rule": "月 (month-of-year, 〜がつ): 4, 7, 9 are irregular and fixed.",
+  "options": [
+   {
+    "kanji": "四月 しがつ",
+    "gloss": "April — し, NEVER よんがつ"
+   },
+   {
+    "kanji": "七月 しちがつ",
+    "gloss": "July — しち, NEVER なながつ"
+   },
+   {
+    "kanji": "九月 くがつ",
+    "gloss": "September — く, NEVER きゅうがつ"
+   },
+   {
+    "kanji": "何月 なんがつ",
+    "gloss": "what month"
+   }
+  ],
+  "example_wrong": "九月 きゅうがつ / 四月 よんがつ",
+  "example_right": "九月 くがつ / 四月 しがつ",
+  "note": "Regular: 一月いちがつ etc., but 四/七/九 are fixed. Contrast duration: 4 months = 四か月よんかげつ (here 四=よん is correct)."
+ },
+ {
+  "key": "Dates 〜日: irregular day-of-month",
+  "reading": "にち／か",
+  "rule": "日 (day-of-month): 1st–10th, 14th, 20th, 24th use special native readings.",
+  "options": [
+   {
+    "kanji": "一日 ついたち",
+    "gloss": "1st of month — special native reading"
+   },
+   {
+    "kanji": "二日 ふつか",
+    "gloss": "2nd"
+   },
+   {
+    "kanji": "三日 みっか",
+    "gloss": "3rd"
+   },
+   {
+    "kanji": "四日 よっか",
+    "gloss": "4th"
+   },
+   {
+    "kanji": "八日 ようか",
+    "gloss": "8th — vs 四日よっか, easily confused"
+   },
+   {
+    "kanji": "二十日 はつか",
+    "gloss": "20th — special, NOT にじゅうにち"
+   }
+  ],
+  "example_wrong": "二十日 にじゅうにち",
+  "example_right": "二十日 はつか",
+  "note": "Also 五日いつか, 六日むいか, 七日なのか, 九日ここのか, 十日とおか, 十四日じゅうよっか, 二十四日にじゅうよっか. From 11th on (except 14/20/24) it's 〜にち: 十一日じゅういちにち."
+ },
+ {
+  "key": "一日: ついたち vs いちにち",
+  "reading": "ついたち／いちにち",
+  "rule": "一日 heteronym: same kanji, two readings by meaning.",
+  "options": [
+   {
+    "kanji": "一日 ついたち",
+    "gloss": "the 1st (calendar date)"
+   },
+   {
+    "kanji": "一日 いちにち",
+    "gloss": "one day / all day (duration)"
+   }
+  ],
+  "example_wrong": "「一日中ついたちじゅう」",
+  "example_right": "「一日中いちにちじゅう」=all day / 「五月一日ついたち」=May 1st",
+  "note": "Date slot → ついたち; quantity/duration → いちにち. 一日に三回いちにちにさんかい = 3 times a day."
+ },
+ {
+  "key": "Age: 二十歳 + 歳/才",
+  "reading": "はたち／さい",
+  "rule": "二十歳 special reading; 才 vs 歳 for age.",
+  "options": [
+   {
+    "kanji": "二十歳 はたち",
+    "gloss": "20 years old — special reading, NOT にじゅっさい"
+   },
+   {
+    "kanji": "歳 さい",
+    "gloss": "years of age — formal/standard kanji"
+   },
+   {
+    "kanji": "才 さい",
+    "gloss": "years of age — simplified/casual substitute for 歳"
+   },
+   {
+    "kanji": "二十歳 にじゅっさい",
+    "gloss": "nonstandard but heard in plain enumeration/counting contexts"
+   }
+  ],
+  "example_wrong": "二十歳 にじゅうさい (when reading the set word)",
+  "example_right": "二十歳 はたち",
+  "note": "歳 is the correct kanji for age; 才 is a common informal shorthand. はたち is the lexicalized reading; にじゅっさい appears in enumerations."
+ },
+ {
+  "key": "RULE: month-duration spelling か月/ヶ月/カ月/箇月",
+  "rule": "ヶ月 spelling: choose ONE form per project; broadcast standard is か月. か月(NHK・読売・日テレ・テレ東) / カ月(日経・朝日・毎日・産経・フジ・テレ朝) / 箇月(formal/legal) — pick the house form and enforce consistency.",
+  "example_wrong": "1ヶ月 and 3か月 mixed in the same document",
+  "example_right": "consistent 3か月 throughout (NHK/broadcast); or consistent 3カ月 (日経・朝日・毎日)",
+  "note": "NHK・読売・日テレ・テレ東=か月; 日経・朝日・毎日・産経・フジ・テレ朝=カ月. 箇月 is formal/legal; ヶ is a small 个 glyph, not katakana ケ. か所/箇所 follows the same rule."
+ },
+ {
+  "key": "Years 〜年: 4/7/9 + counting",
+  "reading": "ねん",
+  "rule": "Year readings: 四年 is irregular (よねん).",
+  "options": [
+   {
+    "kanji": "四年 よねん",
+    "gloss": "4 years / 4th year — よ"
+   },
+   {
+    "kanji": "七年 しちねん／ななねん",
+    "gloss": "7 years — both used"
+   },
+   {
+    "kanji": "九年 くねん／きゅうねん",
+    "gloss": "9 years — both used"
+   },
+   {
+    "kanji": "何年 なんねん",
+    "gloss": "how many years / what year"
+   }
+  ],
+  "example_wrong": "四年 よんねん (standard reading is よねん)",
+  "example_right": "四年 よねん",
+  "note": "Calendar year 2024年 = にせんにじゅうよねん. Era years: 令和六年 れいわろくねん."
+ },
+ {
+  "key": "RULE: money formatting (円 + 万/億/兆)",
+  "rule": "Money: yen grouping follows Japanese 4-digit units (万/億/兆); keep the unit kanji even in Arabic transcripts. Japanese groups digits by ten-thousands, not thousands.",
+  "example_wrong": "120000000円 (raw 8-digit run)",
+  "example_right": "1億2,000万円  (or written-out 一億二千万円 in 縦書き)",
+  "note": "Standard transcription keeps 万/億/兆 as kanji units while leading figures stay Arabic. Western 3-digit commas may still appear inside a unit (2,000万)."
+ },
+ {
+  "key": "Money: 三千円 vs 3,000円",
+  "reading": "せん／ひゃく",
+  "rule": "千/百 as place-words carry rendaku/gemination in readings even when written with Arabic digits.",
+  "options": [
+   {
+    "kanji": "三千円 さんぜんえん",
+    "gloss": "3,000 yen — rendaku ぜん"
+   },
+   {
+    "kanji": "八千円 はっせんえん",
+    "gloss": "8,000 yen — geminate っ"
+   },
+   {
+    "kanji": "三百円 さんびゃくえん",
+    "gloss": "300 yen — ひゃく→びゃく"
+   },
+   {
+    "kanji": "六百円 ろっぴゃくえん",
+    "gloss": "600 yen — っ + ぴゃく"
+   },
+   {
+    "kanji": "八百円 はっぴゃくえん",
+    "gloss": "800 yen — っ + ぴゃく"
+   }
+  ],
+  "example_wrong": "三千円 さんせんえん / 六百円 ろくひゃくえん",
+  "example_right": "三千円 さんぜんえん / 六百円 ろっぴゃくえん",
+  "note": "千: 3000=さんぜん, 8000=はっせん (rest regular). 百: 300=さんびゃく, 600=ろっぴゃく, 800=はっぴゃく. Rendaku/gemination apply to readings even when written 3,000円."
+ },
+ {
+  "key": "Times: 午前/午後 and half-hours",
+  "reading": "ごぜん／ごご",
+  "rule": "Time-of-day: 午前/午後 vs 24-hour; transcribe as spoken.",
+  "options": [
+   {
+    "kanji": "午前 ごぜん",
+    "gloss": "a.m."
+   },
+   {
+    "kanji": "午後 ごご",
+    "gloss": "p.m."
+   },
+   {
+    "kanji": "半 はん",
+    "gloss": "half past (三時半=3:30)"
+   },
+   {
+    "kanji": "正午 しょうご",
+    "gloss": "noon, 12:00"
+   }
+  ],
+  "example_wrong": "午後3時半 read as ごご3じはん but written '15時30分' when speaker said 三時半",
+  "example_right": "transcribe 午後3時半 / 15:30 per house style, matching what was actually said",
+  "note": "半=:30. 〜時〜分 for exact minutes (apply 分 sound-changes). Do not silently convert 12h↔24h unless the style sheet requires it."
+ },
+ {
+  "key": "十分: 10 minutes vs 'enough'",
+  "reading": "じっぷん／じゅっぷん／じゅうぶん",
+  "rule": "十分 heteronym: count vs adverb.",
+  "options": [
+   {
+    "kanji": "十分 じっぷん／じゅっぷん",
+    "gloss": "10 minutes (counter)"
+   },
+   {
+    "kanji": "十分 じゅうぶん",
+    "gloss": "sufficient / fully (adverb)"
+   },
+   {
+    "kanji": "充分 じゅうぶん",
+    "gloss": "sufficient — alt kanji, same reading/sense"
+   }
+  ],
+  "example_wrong": "「十分に注意」read as じっぷんにちゅうい",
+  "example_right": "「十分に注意」=じゅうぶんにちゅうい (adequately) / 「あと十分」=あとじっぷん (10 more min)",
+  "note": "Pick reading by sense, not by glyph. Time context → じっぷん/じゅっぷん; degree/adequacy → じゅうぶん (often written 充分)."
+ },
+ {
+  "key": "Ordinal vs duration across date units",
+  "reading": "—",
+  "rule": "一日/一月/一年 'first vs whole' ordinal-duration trap across date units.",
+  "options": [
+   {
+    "kanji": "一日 ついたち / いちにち",
+    "gloss": "1st of month / one day"
+   },
+   {
+    "kanji": "一月 いちがつ / ひとつき",
+    "gloss": "January / one month (duration, native)"
+   },
+   {
+    "kanji": "一年 いちねん",
+    "gloss": "first year / one year (context decides)"
+   }
+  ],
+  "example_wrong": "「ひと月」written 一ヶ月 when speaker meant 'January' (一月いちがつ)",
+  "example_right": "January=一月いちがつ; one-month span=ひと月／1か月",
+  "note": "Calendar slot vs elapsed span changes both reading and often spelling. Listen for the meaning before normalizing the digit/kanji."
+ },
+ {
+  "key": "RULE: native-reading counters resist Arabic digits",
+  "rule": "つ・人・日 native series stay kanji even in Arabic-digit documents.",
+  "example_wrong": "1人で行く written as digit when set phrase 一人 (alone) is meant; 1つ目",
+  "example_right": "一人で (alone) / 一つ目 / 二人とも — kanji preserved",
+  "note": "Even in horizontal Arabic-leaning copy, 一人/二人, 〜つ, and special date readings (ついたち) are conventionally kanji because they are read natively, not as on'yomi digits."
+ },
+ {
+  "key": "病院 / 美容院",
+  "reading": "びょういん / びよういん",
+  "note": "Long-vowel vs. extra-mora pair. びょう = 2 morae (びょ+う), びよう = 3 morae (び+よ+う). The extra mora in びよう flips medical to beauty. [CORRECTED: original note miscounted morae as 3 vs 4.]",
+  "options": [
+   {
+    "kanji": "病院",
+    "gloss": "hospital"
+   },
+   {
+    "kanji": "美容院",
+    "gloss": "beauty salon / hairdresser"
+   }
+  ],
+  "example_right": "髪を切りに美容院へ行った (went to the salon to get a haircut)",
+  "example_wrong": "髪を切りに病院へ行った (implies 'went to the hospital for a haircut')"
+ },
+ {
+  "key": "おばさん / おばあさん",
+  "reading": "おばさん / おばあさん",
+  "note": "Single mora length difference (short ば vs long ばあ) flips meaning. Also おじさん/おじいさん is the parallel pair.",
+  "options": [
+   {
+    "kanji": "おばさん (叔母さん/伯母さん)",
+    "gloss": "aunt / middle-aged woman"
+   },
+   {
+    "kanji": "おばあさん (お婆さん)",
+    "gloss": "grandmother / elderly woman"
+   }
+  ],
+  "example_right": "近所のおばあさんは80歳だ (the elderly neighbor woman is 80)",
+  "example_wrong": "近所のおばさんは80歳だ (a 'middle-aged woman' who is 80 — age clashes)"
+ },
+ {
+  "key": "おじさん / おじいさん",
+  "reading": "おじさん / おじいさん",
+  "note": "Short じ vs long じい. Uncle/middle-aged man vs grandfather/elderly man. Same length trap as the おば pair.",
+  "options": [
+   {
+    "kanji": "おじさん (叔父さん/伯父さん)",
+    "gloss": "uncle / middle-aged man"
+   },
+   {
+    "kanji": "おじいさん (お祖父さん)",
+    "gloss": "grandfather / elderly man"
+   }
+  ],
+  "example_right": "おじいさんは杖をついて歩く (the old man walks with a cane)",
+  "example_wrong": "おじさんは杖をついて歩く (a middle-aged man — mismatched with frailty)"
+ },
+ {
+  "key": "きて (来て / 着て)",
+  "reading": "きて",
+  "note": "Te-form homophones: 来て (come) and 着て (wear). Disambiguate by object/particle: 着る takes clothing (~を着て), 来る is motion (ここに来て). [CORRECTED: removed bogus third option 切って, which is read きって (geminate っ) and is NOT a homophone of きて.]",
+  "options": [
+   {
+    "kanji": "来て",
+    "gloss": "come (te-form of 来る)"
+   },
+   {
+    "kanji": "着て",
+    "gloss": "wear/put on (te-form of 着る)"
+   }
+  ],
+  "example_right": "コートを着て出かけた (put on a coat and went out)",
+  "example_wrong": "コートを来て出かけた (nonsensical: 'come a coat')"
+ },
+ {
+  "key": "はし (橋 / 箸 / 端)",
+  "reading": "はし",
+  "note": "Pitch-accent minimal triplet. 箸 is head-high (HL), 橋 is tail-high (LH, accent drops after), 端 is flat/accentless. Text ASR relies on context: 食べる→箸, 渡る→橋, ~の端→edge.",
+  "options": [
+   {
+    "kanji": "橋",
+    "gloss": "bridge"
+   },
+   {
+    "kanji": "箸",
+    "gloss": "chopsticks"
+   },
+   {
+    "kanji": "端",
+    "gloss": "edge / end / tip"
+   }
+  ],
+  "example_right": "箸でご飯を食べる (eat rice with chopsticks)",
+  "example_wrong": "橋でご飯を食べる (eat rice with a bridge)"
+ },
+ {
+  "key": "あめ (雨 / 飴)",
+  "reading": "あめ",
+  "note": "Pitch-accent pair: 雨 is head-high (HL), 飴 is tail-high/flat (LH). Disambiguate by verb: 降る→雨, なめる/食べる→飴.",
+  "options": [
+   {
+    "kanji": "雨",
+    "gloss": "rain"
+   },
+   {
+    "kanji": "飴",
+    "gloss": "candy"
+   }
+  ],
+  "example_right": "雨が降ってきた (it started to rain)",
+  "example_wrong": "飴が降ってきた (candy started to fall — only valid as a joke)"
+ },
+ {
+  "key": "かみ (神 / 紙 / 髪)",
+  "reading": "かみ",
+  "note": "Three common nouns, identical kana. Context fully decides: 拝む/信じる→神, 書く/破る→紙, 切る/洗う→髪. Accent rarely helps; lexical context required.",
+  "options": [
+   {
+    "kanji": "神",
+    "gloss": "god / deity"
+   },
+   {
+    "kanji": "紙",
+    "gloss": "paper"
+   },
+   {
+    "kanji": "髪",
+    "gloss": "hair (on the head)"
+   }
+  ],
+  "example_right": "髪を短く切った (cut my hair short)",
+  "example_wrong": "紙を短く切った is valid too — so the verb alone is ambiguous; need 'hair/paper' object cue from wider context"
+ },
+ {
+  "key": "せいかく (性格 / 正確)",
+  "reading": "せいかく",
+  "note": "Perfect homophone, both common; 性格 is a noun (personality), 正確 is a na-adj (accurate). Particle/predicate decides: ~な/~に→正確, ~が良い/悪い→性格.",
+  "options": [
+   {
+    "kanji": "性格",
+    "gloss": "personality / character"
+   },
+   {
+    "kanji": "正確",
+    "gloss": "accurate / precise"
+   }
+  ],
+  "example_right": "正確な時間を教えて (tell me the exact time)",
+  "example_wrong": "性格な時間 (ungrammatical — 性格 isn't a na-adjective here)"
+ },
+ {
+  "key": "かがく (科学 / 化学)",
+  "reading": "かがく",
+  "note": "True homophone, both academic. To avoid confusion 化学 is often spoken as ばけがく (bakegaku). Disambiguate by domain: 物理/生物 context→科学; 反応/元素→化学.",
+  "options": [
+   {
+    "kanji": "科学",
+    "gloss": "science (in general)"
+   },
+   {
+    "kanji": "化学",
+    "gloss": "chemistry"
+   }
+  ],
+  "example_right": "化学反応が起きた (a chemical reaction occurred)",
+  "example_wrong": "科学反応 (not the standard collocation for a chemical reaction)"
+ },
+ {
+  "key": "いし (意志 / 意思 / 医師 / 石)",
+  "reading": "いし",
+  "note": "Several frequent homophones. 意志=will/volition (strength), 意思=intention (legal/communicative), 医師=doctor (formal), 石=stone. Collocations: ~が固い→意志, ~表示→意思, ~免許/国家試験→医師.",
+  "options": [
+   {
+    "kanji": "意志",
+    "gloss": "will / volition / determination"
+   },
+   {
+    "kanji": "意思",
+    "gloss": "intention / mind (one's wishes)"
+   },
+   {
+    "kanji": "医師",
+    "gloss": "physician / doctor (formal)"
+   },
+   {
+    "kanji": "石",
+    "gloss": "stone"
+   }
+  ],
+  "example_right": "本人の意思を確認する (confirm the person's intention)",
+  "example_wrong": "本人の医師を確認する (means 'confirm the person's doctor' — different meaning)"
+ },
+ {
+  "key": "こうえん (公園 / 講演 / 公演 / 後援)",
+  "reading": "こうえん",
+  "note": "High-frequency four-way homophone. 公園=park (place), 講演=lecture (speak), 公演=performance (stage), 後援=sponsorship/support. Verb cue: 行く/散歩→公園, 聞く/する→講演, 観る→公演.",
+  "options": [
+   {
+    "kanji": "公園",
+    "gloss": "park (public green space)"
+   },
+   {
+    "kanji": "講演",
+    "gloss": "lecture / talk"
+   },
+   {
+    "kanji": "公演",
+    "gloss": "(theatrical/musical) performance"
+   },
+   {
+    "kanji": "後援",
+    "gloss": "sponsorship / backing / support"
+   }
+  ],
+  "example_right": "教授の講演を聞いた (listened to the professor's lecture)",
+  "example_wrong": "教授の公園を聞いた (listened to the professor's park — nonsensical)"
+ },
+ {
+  "key": "きかい (機会 / 機械 / 器械)",
+  "reading": "きかい",
+  "note": "機会=opportunity (abstract), 機械=machine (powered, large), 器械=instrument/apparatus (small, e.g. 器械体操). Verb cue: ~を逃す/与える→機会; 動かす/壊れる→機械.",
+  "options": [
+   {
+    "kanji": "機会",
+    "gloss": "opportunity / chance"
+   },
+   {
+    "kanji": "機械",
+    "gloss": "machine / machinery"
+   },
+   {
+    "kanji": "器械",
+    "gloss": "instrument / apparatus (small, non-powered)"
+   }
+  ],
+  "example_right": "良い機会を逃した (missed a good opportunity)",
+  "example_wrong": "良い機械を逃した (missed a good machine — wrong sense)"
+ },
+ {
+  "key": "かえる (帰る / 返る / 変える / 換える / 替える / 蛙)",
+  "reading": "かえる",
+  "note": "Intransitive vs transitive split is key. 帰る=go home (intr.), 返る=return/revert (intr.), 変える=change something (trans.), 換える/替える=swap/exchange. 蛙=frog (noun). Particle を→transitive 変/換/替.",
+  "options": [
+   {
+    "kanji": "帰る",
+    "gloss": "go home / return (a person)"
+   },
+   {
+    "kanji": "返る",
+    "gloss": "be returned / revert (intransitive)"
+   },
+   {
+    "kanji": "変える",
+    "gloss": "change / alter (transitive)"
+   },
+   {
+    "kanji": "換える",
+    "gloss": "exchange / convert (e.g. money)"
+   },
+   {
+    "kanji": "替える",
+    "gloss": "replace / substitute"
+   }
+  ],
+  "example_right": "予定を変える (change the plan)",
+  "example_wrong": "予定を帰る (ungrammatical — 帰る doesn't take を-object here)"
+ },
+ {
+  "key": "あつい (暑い / 熱い / 厚い)",
+  "reading": "あつい",
+  "note": "暑い=hot weather/air, 熱い=hot to the touch / passionate, 厚い=thick/cordial. Subject cue: 天気/夏→暑い, お茶/鉄→熱い, 本/壁→厚い.",
+  "options": [
+   {
+    "kanji": "暑い",
+    "gloss": "hot (weather / climate)"
+   },
+   {
+    "kanji": "熱い",
+    "gloss": "hot (to the touch) / passionate"
+   },
+   {
+    "kanji": "厚い",
+    "gloss": "thick / cordial"
+   }
+  ],
+  "example_right": "今日はとても暑い (today is very hot [weather])",
+  "example_wrong": "今日はとても熱い (today is very hot-to-touch — wrong for weather)"
+ },
+ {
+  "key": "はかる (測る / 量る / 計る / 図る / 諮る / 謀る)",
+  "reading": "はかる",
+  "note": "測る=measure length/dimension, 量る=weigh/measure volume, 計る=measure time/count, 図る=plan/attempt, 諮る=consult (a committee), 謀る=plot/deceive. Object cue: 長さ→測, 重さ→量, 時間→計.",
+  "options": [
+   {
+    "kanji": "測る",
+    "gloss": "measure (length, depth, distance)"
+   },
+   {
+    "kanji": "量る",
+    "gloss": "measure (weight, volume, capacity)"
+   },
+   {
+    "kanji": "計る",
+    "gloss": "measure (time); count; gauge"
+   },
+   {
+    "kanji": "図る",
+    "gloss": "plan / attempt / strive for"
+   },
+   {
+    "kanji": "諮る",
+    "gloss": "consult / refer to (a body)"
+   }
+  ],
+  "example_right": "体重を量る (weigh oneself)",
+  "example_wrong": "体重を測る (commonly written but strictly 量る is the weight kanji)"
+ },
+ {
+  "key": "つくる (作る / 造る / 創る)",
+  "reading": "つくる",
+  "note": "作る=make (small/everyday: meals, documents), 造る=build/brew (large/industrial: ships, sake, buildings), 創る=create (original, from nothing). Object scale decides.",
+  "options": [
+   {
+    "kanji": "作る",
+    "gloss": "make / prepare (everyday objects)"
+   },
+   {
+    "kanji": "造る",
+    "gloss": "build / manufacture / brew (large-scale)"
+   },
+   {
+    "kanji": "創る",
+    "gloss": "create (something original)"
+   }
+  ],
+  "example_right": "酒を造る (brew sake)",
+  "example_wrong": "酒を作る (acceptable casually, but 造る is correct for brewing)"
+ },
+ {
+  "key": "おさめる (収める / 納める / 治める / 修める)",
+  "reading": "おさめる",
+  "note": "収める=put away/obtain (成果を収める), 納める=pay/deliver (税金を納める), 治める=govern/quell (国を治める), 修める=master/study (学問を修める). Object collocation is decisive.",
+  "options": [
+   {
+    "kanji": "収める",
+    "gloss": "obtain / store / achieve (a result)"
+   },
+   {
+    "kanji": "納める",
+    "gloss": "pay (tax/fee) / deliver / accept"
+   },
+   {
+    "kanji": "治める",
+    "gloss": "govern / rule / quell"
+   },
+   {
+    "kanji": "修める",
+    "gloss": "master / cultivate (learning, virtue)"
+   }
+  ],
+  "example_right": "税金を納める (pay taxes)",
+  "example_wrong": "税金を治める (means 'govern the tax' — wrong kanji)"
+ },
+ {
+  "key": "かう (買う / 飼う)",
+  "reading": "かう",
+  "note": "買う=buy, 飼う=keep/raise (an animal). Object cue: 動物/ペット→飼う; goods/物→買う. Both very common, identical sound.",
+  "options": [
+   {
+    "kanji": "買う",
+    "gloss": "buy / purchase"
+   },
+   {
+    "kanji": "飼う",
+    "gloss": "keep / raise (a pet or animal)"
+   }
+  ],
+  "example_right": "犬を飼っている (I keep a dog)",
+  "example_wrong": "犬を買っている (means 'I am buying a dog' — habitual sense wrong)"
+ },
+ {
+  "key": "きる (切る / 着る)",
+  "reading": "きる",
+  "note": "切る=cut (godan, te-form 切って with っ), 着る=wear (ichidan, te-form 着て). Conjugation class separates them: 切ります/切って vs 着ます/着て. Object: 服→着る, 紙/糸→切る.",
+  "options": [
+   {
+    "kanji": "切る",
+    "gloss": "cut (godan verb)"
+   },
+   {
+    "kanji": "着る",
+    "gloss": "wear / put on (ichidan verb)"
+   }
+  ],
+  "example_right": "シャツを着る (put on a shirt)",
+  "example_wrong": "シャツを切る (means 'cut the shirt' — possible but usually not intended)"
+ },
+ {
+  "key": "いく / ゆく (行く)",
+  "reading": "いく / ゆく",
+  "note": "Same kanji 行く read two ways; ゆく is literary/older, common in 〜てゆく and songs. ASR may transcribe one for the other; both correct. Note te-form is 行って (itte), an irregular godan.",
+  "options": [
+   {
+    "kanji": "行く (いく)",
+    "gloss": "go (standard reading)"
+   },
+   {
+    "kanji": "行く (ゆく)",
+    "gloss": "go (literary/poetic reading)"
+   }
+  ],
+  "example_right": "時が流れてゆく (time flows on — literary 〜てゆく)",
+  "example_wrong": "時が流れていく is also fine; mis-tagging the reading is the QA issue, not meaning"
+ },
+ {
+  "key": "じしん (地震 / 自信 / 自身 / 磁針)",
+  "reading": "じしん",
+  "note": "地震=earthquake, 自信=self-confidence, 自身=oneself, 磁針=compass needle (rare). Cue: 揺れる/起きる→地震; ~がある/つく→自信; 私~/~自身→自身.",
+  "options": [
+   {
+    "kanji": "地震",
+    "gloss": "earthquake"
+   },
+   {
+    "kanji": "自信",
+    "gloss": "self-confidence"
+   },
+   {
+    "kanji": "自身",
+    "gloss": "oneself (emphatic)"
+   }
+  ],
+  "example_right": "自信を持って話す (speak with confidence)",
+  "example_wrong": "自身を持って話す (wrong kanji; 自身 isn't used with 持つ this way)"
+ },
+ {
+  "key": "こうしょう (交渉 / 高尚 / 考証 …多数)",
+  "reading": "こうしょう",
+  "note": "One of the highest-count homophone readings in Japanese (many words). Most frequent: 交渉=negotiation. Cue strongly on collocation: ~する/決裂→交渉; ~な趣味→高尚 (refined).",
+  "options": [
+   {
+    "kanji": "交渉",
+    "gloss": "negotiation"
+   },
+   {
+    "kanji": "高尚",
+    "gloss": "refined / lofty / high-minded"
+   },
+   {
+    "kanji": "考証",
+    "gloss": "historical verification / documentary research"
+   }
+  ],
+  "example_right": "賃上げを交渉する (negotiate a pay raise)",
+  "example_wrong": "賃上げを高尚する (ungrammatical — 高尚 is a na-adjective, not a する-verb here)"
+ },
+ {
+  "key": "かんしん (関心 / 感心 / 歓心 / 寒心)",
+  "reading": "かんしん",
+  "note": "関心=interest (~がある), 感心=admiration (~する, be impressed), 歓心 / 寒心 rare. Cue: ~を持つ/がある→関心; 偉い/えらいと~する→感心.",
+  "options": [
+   {
+    "kanji": "関心",
+    "gloss": "interest / concern"
+   },
+   {
+    "kanji": "感心",
+    "gloss": "admiration / being impressed"
+   },
+   {
+    "kanji": "歓心",
+    "gloss": "favor / goodwill (as in 歓心を買う, curry favor)"
+   }
+  ],
+  "example_right": "政治に関心がある (have an interest in politics)",
+  "example_wrong": "政治に感心がある (wrong — 感心 doesn't pair with ~がある)"
+ },
+ {
+  "key": "はやい (早い / 速い)",
+  "reading": "はやい",
+  "note": "早い=early (time), 速い=fast (speed). Cue: 時間/時刻/朝→早い; 動き/スピード/車→速い. Frequent transcription error even among natives.",
+  "options": [
+   {
+    "kanji": "早い",
+    "gloss": "early (in time)"
+   },
+   {
+    "kanji": "速い",
+    "gloss": "fast (in speed)"
+   }
+  ],
+  "example_right": "彼は足が速い (he is fast on his feet)",
+  "example_wrong": "彼は足が早い (a different idiom: 足が早い means food spoils quickly — not running speed)"
+ },
+ {
+  "key": "なおす (直す / 治す)",
+  "reading": "なおす",
+  "note": "直す=fix/repair/correct (objects, mistakes), 治す=cure/heal (illness, body). Object cue: 機械/誤り→直す; 病気/風邪/傷→治す. Same for intransitive 直る/治る.",
+  "options": [
+   {
+    "kanji": "直す",
+    "gloss": "fix / repair / correct"
+   },
+   {
+    "kanji": "治す",
+    "gloss": "cure / heal (a sickness or injury)"
+   }
+  ],
+  "example_right": "風邪を治す (cure a cold)",
+  "example_wrong": "風邪を直す (means 'repair a cold' — wrong kanji for illness)"
+ },
+ {
+  "key": "あう (会う / 合う / 遭う)",
+  "reading": "あう",
+  "note": "会う=meet (a person, ~に会う), 合う=match/fit/suit (~に合う), 遭う=encounter (bad event, 事故に遭う). Object/particle context decides the kanji.",
+  "options": [
+   {
+    "kanji": "会う",
+    "gloss": "meet (a person)"
+   },
+   {
+    "kanji": "合う",
+    "gloss": "match / fit / agree / suit"
+   },
+   {
+    "kanji": "遭う",
+    "gloss": "encounter / suffer (an accident, misfortune)"
+   }
+  ],
+  "example_right": "事故に遭う (be in an accident)",
+  "example_wrong": "事故に会う (literally 'meet an accident' — 遭う is correct for mishaps)"
+ },
+ {
+  "key": "とる (取る / 撮る / 採る / 捕る / 録る)",
+  "reading": "とる",
+  "note": "取る=take (general), 撮る=photograph/film, 採る=adopt/collect/hire, 捕る=catch (animals), 録る=record (audio). Object cue: 写真→撮る, 魚/虫→捕る, 血/人材→採る.",
+  "options": [
+   {
+    "kanji": "取る",
+    "gloss": "take / grab / get (general)"
+   },
+   {
+    "kanji": "撮る",
+    "gloss": "take (a photo) / film"
+   },
+   {
+    "kanji": "採る",
+    "gloss": "adopt / collect / hire / extract"
+   },
+   {
+    "kanji": "捕る",
+    "gloss": "catch / capture (animals, fish)"
+   }
+  ],
+  "example_right": "写真を撮る (take a photo)",
+  "example_wrong": "写真を取る (sometimes seen casually, but 撮る is correct for photography)"
+ },
+ {
+  "key": "きく (聞く / 聴く / 効く / 利く / 訊く)",
+  "reading": "きく",
+  "note": "聞く=hear/ask (general), 聴く=listen attentively (music), 効く=be effective (medicine), 利く=work/function (気が利く), 訊く=ask a question (formal). Object cue: 音楽→聴く, 薬→効く.",
+  "options": [
+   {
+    "kanji": "聞く",
+    "gloss": "hear / ask / listen (general)"
+   },
+   {
+    "kanji": "聴く",
+    "gloss": "listen (attentively, to music)"
+   },
+   {
+    "kanji": "効く",
+    "gloss": "be effective / take effect (medicine, etc.)"
+   },
+   {
+    "kanji": "利く",
+    "gloss": "function / work (気が利く = be considerate)"
+   }
+  ],
+  "example_right": "この薬はよく効く (this medicine works well)",
+  "example_wrong": "この薬はよく聞く (means 'I often hear about this medicine' — wrong sense)"
+ },
+ {
+  "key": "つとめる (勤める / 務める / 努める)",
+  "reading": "つとめる",
+  "note": "勤める=work for/be employed (会社に勤める), 務める=serve as/take a role (司会を務める), 努める=make an effort (改善に努める). Object/particle decides.",
+  "options": [
+   {
+    "kanji": "勤める",
+    "gloss": "be employed / work at (a company)"
+   },
+   {
+    "kanji": "務める",
+    "gloss": "serve as / fulfill (a duty or role)"
+   },
+   {
+    "kanji": "努める",
+    "gloss": "strive / make an effort"
+   }
+  ],
+  "example_right": "司会を務める (serve as the MC)",
+  "example_wrong": "司会を勤める (common error; 務める is correct for serving a role)"
+ },
+ {
+  "key": "しょうかい (紹介 / 照会)",
+  "reading": "しょうかい",
+  "note": "紹介=introduction (people, things), 照会=inquiry/reference check (formal, banking). Cue: 友人/自己~→紹介; 残高/在庫を~→照会.",
+  "options": [
+   {
+    "kanji": "紹介",
+    "gloss": "introduction / referral"
+   },
+   {
+    "kanji": "照会",
+    "gloss": "inquiry / verification (formal)"
+   }
+  ],
+  "example_right": "残高を照会する (inquire about the account balance)",
+  "example_wrong": "残高を紹介する (means 'introduce the balance' — wrong kanji)"
+ },
+ {
+  "key": "ようい (用意 / 容易)",
+  "reading": "ようい",
+  "note": "用意=preparation (noun, ~する), 容易=easy (na-adjective, ~な/~に). Predicate frame decides: ~を用意する vs ~は容易だ.",
+  "options": [
+   {
+    "kanji": "用意",
+    "gloss": "preparation / readiness"
+   },
+   {
+    "kanji": "容易",
+    "gloss": "easy / simple"
+   }
+  ],
+  "example_right": "解決は容易ではない (the solution is not easy)",
+  "example_wrong": "解決は用意ではない (ungrammatical — 用意 isn't a na-adjective)"
+ },
+ {
+  "key": "せいさく (政策 / 製作 / 制作)",
+  "reading": "せいさく",
+  "note": "政策=policy (government), 製作=manufacture (industrial products, machines), 制作=production (creative works: art, film). Domain cue: 政府→政策; 工業製品→製作; 映画/作品→制作.",
+  "options": [
+   {
+    "kanji": "政策",
+    "gloss": "policy (political)"
+   },
+   {
+    "kanji": "製作",
+    "gloss": "manufacture / production (goods, machinery)"
+   },
+   {
+    "kanji": "制作",
+    "gloss": "production / creation (artistic works)"
+   }
+  ],
+  "example_right": "映画を制作する (produce a film)",
+  "example_wrong": "映画を製作する is also used for the business/funding side; 制作 is the creative/making side — easily confused"
+ },
+ {
+  "key": "Rendaku trap: て + は → では / じゃ",
+  "reading": "では / じゃ",
+  "note": "RULE — contraction. では (de wa) contracts to じゃ (ja) in casual speech, and 〜てしまう→〜ちゃう, 〜ではない→じゃない. ASR must expand casual contractions to the correct full form.",
+  "rule": "Casual contractions: では→じゃ, 〜てしまう→〜ちゃう/〜じゃう, 〜なければ→〜なきゃ, 〜ている→〜てる, 〜という→〜って. Transcribe to the register the client requires.",
+  "example_right": "食べてしまった → casual: 食べちゃった (correctly mapped)",
+  "example_wrong": "食べちゃった transcribed as 食べじゃった (wrong: voicing depends on the verb stem — る/つ/う stems → ちゃう, ぬ/ぶ/む/ぐ stems → じゃう)"
+ },
+ {
+  "key": "Long vowel vs. short vowel (chōon) rule",
+  "reading": "—",
+  "note": "RULE — vowel length is phonemic. A single mora of length changes meaning entirely. ASR/transcribers must hear the extra mora. [CORRECTED: dropped the 主人(しゅじん)/受信(じゅしん) example, which differs in しゅ/じゅ and しん/じん — it is NOT a vowel-length minimal pair.]",
+  "rule": "Long vs short vowels distinguish words: おばさん(aunt)/おばあさん(grandma), ビル(building)/ビール(beer)… preserve every long vowel (ー / う / あ).",
+  "example_right": "ビールを一杯ください (one beer, please)",
+  "example_wrong": "ビルを一杯ください (a building, please — dropped the long vowel)"
+ },
+ {
+  "key": "Geminate (sokuon っ) vs. no geminate rule",
+  "reading": "—",
+  "note": "RULE — the small っ is a full mora; presence/absence changes the word. Frequent ASR error in fast speech.",
+  "rule": "Sokuon (っ) is phonemic: おと(音, sound)/おっと(夫, husband), かこ(過去, past)/かっこ(括弧, brackets). Listen for the held consonant.",
+  "example_right": "私の夫は (おっと) ... (my husband ...)",
+  "example_wrong": "私の音は (おと) ... (my sound ... — dropped the geminate)"
+ },
+ {
+  "key": "Moraic ん vs. な/ない boundary",
+  "reading": "—",
+  "note": "RULE — the moraic nasal ん at word/clause boundaries causes parsing errors, esp. 〜ん (casual の/ない) vs noun-final ん.",
+  "rule": "Casual ん contracts both の (explanatory: 〜なんだ←〜なのだ) and ない (negative: 分からん←分からない, dialectal/masc.). Disambiguate by mood: question/explanation→の-source; flat statement→ない-source.",
+  "example_right": "知らん (= 知らない, 'I don't know', casual/masc.)",
+  "example_wrong": "知らん misread as a positive 'I know' — ん here is a negative contraction"
+ },
+ {
+  "key": "はな (鼻 / 花 / 端)",
+  "reading": "はな",
+  "note": "鼻=nose, 花=flower, 端=edge/beginning (はな, archaic 'はなから'). 鼻 and 花 differ by pitch in many dialects; rely on context: 咲く/きれい→花; 高い/かむ→鼻.",
+  "options": [
+   {
+    "kanji": "鼻",
+    "gloss": "nose"
+   },
+   {
+    "kanji": "花",
+    "gloss": "flower"
+   },
+   {
+    "kanji": "端",
+    "gloss": "edge / very beginning (as in はなから, 'from the start')"
+   }
+  ],
+  "example_right": "花が咲いた (the flower bloomed)",
+  "example_wrong": "鼻が咲いた (the nose bloomed — nonsensical)"
+ },
+ {
+  "key": "せいき (世紀 / 正規 / 性器 / 精気)",
+  "reading": "せいき",
+  "note": "世紀=century (~の/21~), 正規=regular/formal (~雇用), 性器=genitals, 精気=vital energy. Cue: 数字+~→世紀; ~社員/~軍→正規. Watch context to avoid an embarrassing 性器 mis-transcription.",
+  "options": [
+   {
+    "kanji": "世紀",
+    "gloss": "century"
+   },
+   {
+    "kanji": "正規",
+    "gloss": "regular / formal / official"
+   },
+   {
+    "kanji": "精気",
+    "gloss": "vital energy / spirit"
+   }
+  ],
+  "example_right": "正規雇用を増やす (increase regular/permanent employment)",
+  "example_wrong": "世紀雇用を増やす (means 'century employment' — wrong kanji)"
+ },
+ {
+  "key": "こうい (行為 / 好意 / 厚意 / 行衣)",
+  "reading": "こうい",
+  "note": "行為=act/deed (~に及ぶ), 好意=goodwill/affection (~を抱く), 厚意=kindness (other's, ご~に甘える). 好意 vs 厚意: 好意=your own liking; 厚意=another's kindness toward you.",
+  "options": [
+   {
+    "kanji": "行為",
+    "gloss": "act / deed / conduct"
+   },
+   {
+    "kanji": "好意",
+    "gloss": "goodwill / favorable feeling / affection"
+   },
+   {
+    "kanji": "厚意",
+    "gloss": "kindness / courtesy (of another toward you)"
+   }
+  ],
+  "example_right": "ご厚意に感謝します (thank you for your kindness)",
+  "example_wrong": "ご好意に感謝します (acceptable but 厚意 is preferred for another's kindness in formal writing)"
+ },
+ {
+  "key": "しんちょう (身長 / 慎重 / 伸長 / 新調)",
+  "reading": "しんちょう",
+  "note": "身長=height (of a person), 慎重=cautious (na-adj), 伸長=extension/growth, 新調=newly made/bought. Cue: cm/高い→身長; ~に/~な→慎重.",
+  "options": [
+   {
+    "kanji": "身長",
+    "gloss": "height (of a person)"
+   },
+   {
+    "kanji": "慎重",
+    "gloss": "cautious / careful / prudent"
+   },
+   {
+    "kanji": "伸長",
+    "gloss": "extension / elongation / growth"
+   }
+  ],
+  "example_right": "慎重に判断する (judge carefully)",
+  "example_wrong": "身長に判断する (means 'judge to one's height' — ungrammatical)"
+ },
+ {
+  "key": "じてん (時点 / 辞典 / 事典 / 自転)",
+  "reading": "じてん",
+  "note": "時点=point in time (~で/その~), 辞典=dictionary (words), 事典=encyclopedia (things, 百科~), 自転=rotation (地球の~). 辞典 vs 事典 differ by content type.",
+  "options": [
+   {
+    "kanji": "時点",
+    "gloss": "point in time / moment"
+   },
+   {
+    "kanji": "辞典",
+    "gloss": "dictionary (of words/language)"
+   },
+   {
+    "kanji": "事典",
+    "gloss": "encyclopedia (of facts/topics)"
+   },
+   {
+    "kanji": "自転",
+    "gloss": "rotation (on an axis)"
+   }
+  ],
+  "example_right": "現時点では分からない (at present we don't know)",
+  "example_wrong": "現辞典では分からない (means 'in the current dictionary' — wrong kanji)"
+ },
+ {
+  "key": "Vowel devoicing rule (無声化)",
+  "reading": "—",
+  "note": "RULE — phonetics. /i/ and /u/ between voiceless consonants (or word-finally) devoice, making moras nearly inaudible; ASR may drop them.",
+  "rule": "Devoiced vowels still count as full moras: 〜です→[des(u)], 〜ました→[mashita] with silent i, 靴(くつ)→[k(u)tsu]. Transcribe the underlying mora even when the vowel is whispered/silent.",
+  "example_right": "そうです (transcribe full です even though the う is devoiced)",
+  "example_wrong": "そうで (dropping the devoiced す — incomplete transcription)"
+ },
+ {
+  "key": "に / へ particle confusion (motion goal)",
+  "reading": "に / え",
+  "note": "RULE — particle へ is read 'e', not 'he', so it sounds like the vowel after a word and is easily confused with に as a goal marker, or dropped entirely in fast speech.",
+  "rule": "Direction/goal particle へ is pronounced [e]; transcribe as へ not え. に marks a more specific destination/target. In quick speech the particle may elide — restore from context.",
+  "example_right": "東京へ行く (go toward Tokyo) — write へ, pronounced 'e'",
+  "example_wrong": "東京え行く (writing え for the particle — orthographically wrong)"
+ }
+]

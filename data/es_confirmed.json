@@ -1,0 +1,4219 @@
+[
+ {
+  "key": "haya/halla/aya",
+  "reading": "ˈa.ʝa (yeísmo)",
+  "options": [
+   {
+    "word": "haya",
+    "gloss": "(I/he/she) may have — present subjunctive of 'haber'; also 'beech tree' (la haya)"
+   },
+   {
+    "word": "halla",
+    "gloss": "(he/she) finds / is located — from 'hallar'"
+   },
+   {
+    "word": "aya",
+    "gloss": "governess, nanny (live-in caregiver)"
+   }
+  ],
+  "note": "'haya' takes a past participle ('haya hecho') or names the tree; 'halla' = encuentra; 'aya' is a noun for a caretaker. ('allá' removed: it is oxytone [aˈʝa], so its stress differs and it is NOT a true homophone of this paroxytone triple.)"
+ },
+ {
+  "key": "vaya/valla/baya",
+  "reading": "ˈba.ʝa (b/v merge + yeísmo)",
+  "options": [
+   {
+    "word": "vaya",
+    "gloss": "(that he/she) go — present subjunctive of 'ir'; also interjection '¡vaya!' = well!/wow!"
+   },
+   {
+    "word": "valla",
+    "gloss": "fence, barrier; hurdle; billboard ('valla publicitaria')"
+   },
+   {
+    "word": "baya",
+    "gloss": "berry (small fleshy fruit)"
+   }
+  ],
+  "note": "'vaya' = verb 'ir'/exclamation; 'valla' = a physical or advertising barrier; 'baya' = a fruit. ('balla' removed: no Spanish verb 'ballar' exists — it is Catalan 'to dance'; the 'shoots/fires' gloss is fabricated.)"
+ },
+ {
+  "key": "hecho/echo",
+  "reading": "ˈe.tʃo",
+  "options": [
+   {
+    "word": "hecho",
+    "gloss": "done/made — participle of 'hacer'; also noun 'fact, event'"
+   },
+   {
+    "word": "echo",
+    "gloss": "(I) throw/put/pour — from 'echar' ('echo de menos' = I miss)"
+   }
+  ],
+  "note": "Past participle and the noun 'fact' = 'hecho' (silent h); 'echo' is 1st-person of 'echar'. 'He hecho' (have done) vs 'echo' (I throw)."
+ },
+ {
+  "key": "hecha/echa",
+  "reading": "ˈe.tʃa",
+  "options": [
+   {
+    "word": "hecha",
+    "gloss": "done/made — feminine participle of 'hacer'"
+   },
+   {
+    "word": "echa",
+    "gloss": "(he/she) throws / (tú-imperative) throw — from 'echar'"
+   }
+  ],
+  "note": "Feminine of the hecho/echo pair: 'hecha' = made; 'echa' = throws/pours."
+ },
+ {
+  "key": "tubo/tuvo",
+  "reading": "ˈtu.βo",
+  "options": [
+   {
+    "word": "tubo",
+    "gloss": "tube, pipe, duct"
+   },
+   {
+    "word": "tuvo",
+    "gloss": "(he/she) had — preterite of 'tener'"
+   }
+  ],
+  "note": "Noun for a pipe = 'tubo'; the verb (he had) = 'tuvo'. True b/v homophones in all dialects."
+ },
+ {
+  "key": "hola/ola",
+  "reading": "ˈo.la",
+  "options": [
+   {
+    "word": "hola",
+    "gloss": "hello, hi (greeting)"
+   },
+   {
+    "word": "ola",
+    "gloss": "wave (of water); surge ('ola de calor' = heat wave)"
+   }
+  ],
+  "note": "Greeting = 'hola' (silent h); a sea wave or surge = 'ola'."
+ },
+ {
+  "key": "basto/vasto",
+  "reading": "ˈbas.to",
+  "options": [
+   {
+    "word": "basto",
+    "gloss": "coarse, rough, crude, unrefined; also the 'clubs' suit in Spanish cards ('bastos')"
+   },
+   {
+    "word": "vasto",
+    "gloss": "vast, huge, extensive"
+   }
+  ],
+  "note": "Crude/coarse = 'basto'; immense in extent = 'vasto'. True b/v homophones everywhere."
+ },
+ {
+  "key": "sabia/savia",
+  "reading": "ˈsa.βja",
+  "options": [
+   {
+    "word": "sabia",
+    "gloss": "wise (feminine adjective); also 'wise woman'"
+   },
+   {
+    "word": "savia",
+    "gloss": "sap (plant fluid); figuratively 'lifeblood, vitality'"
+   }
+  ],
+  "note": "Wise woman/adjective = 'sabia'; plant sap = 'savia'. Note 'sabía' (accented) = 'I/he knew' is a separate, non-homophonous word."
+ },
+ {
+  "key": "cien/sien",
+  "reading": "ˈsjen (seseo only)",
+  "options": [
+   {
+    "word": "cien",
+    "gloss": "(one) hundred"
+   },
+   {
+    "word": "sien",
+    "gloss": "temple (the side of the forehead)"
+   }
+  ],
+  "note": "Number 100 = 'cien'; the temple of the head = 'sien'. Homophones only in seseo; distinct in Peninsular distinción [θjen] vs [sjen]."
+ },
+ {
+  "key": "vez/ves",
+  "reading": "ˈbes (seseo only)",
+  "options": [
+   {
+    "word": "vez",
+    "gloss": "time, occasion, instance ('una vez' = once)"
+   },
+   {
+    "word": "ves",
+    "gloss": "(you) see — from 'ver'"
+   }
+  ],
+  "note": "Occasion/instance = 'vez'; '(you) see' = 'ves'. Homophones only under seseo. ('vé/ves' third option removed: the imperative 've' is [be] with no final -s, so it is not homophonous; 'vés' is also non-standard orthography.)"
+ },
+ {
+  "key": "haber/a ver",
+  "reading": "aˈβer",
+  "options": [
+   {
+    "word": "haber",
+    "gloss": "to have (auxiliary verb); also noun 'asset/credit' (el haber)"
+   },
+   {
+    "word": "a ver",
+    "gloss": "'let's see' / 'to see' (preposition 'a' + infinitive 'ver')"
+   }
+  ],
+  "note": "One-word infinitive 'haber' is the auxiliary; the two-word 'a ver' means 'let's see' or 'to see'."
+ },
+ {
+  "key": "ha/a/ah",
+  "reading": "a",
+  "options": [
+   {
+    "word": "ha",
+    "gloss": "(he/she/it) has — auxiliary of 'haber' (+ participle)"
+   },
+   {
+    "word": "a",
+    "gloss": "to, at (preposition)"
+   },
+   {
+    "word": "ah",
+    "gloss": "ah, oh (interjection)"
+   }
+  ],
+  "note": "'ha' precedes a participle ('ha comido'); 'a' is the preposition before a noun/infinitive; 'ah' is an exclamation."
+ },
+ {
+  "key": "e/eh/he",
+  "reading": "e",
+  "options": [
+   {
+    "word": "e",
+    "gloss": "and (conjunction used before words starting i-/hi-)"
+   },
+   {
+    "word": "eh",
+    "gloss": "eh, hey (interjection)"
+   },
+   {
+    "word": "he",
+    "gloss": "(I) have — auxiliary 'haber' ('he visto'); also 'he aquí' = here is"
+   }
+  ],
+  "note": "Conjunction before i-/hi- = 'e'; '(I) have done' = 'he' + participle; 'eh' is an interjection."
+ },
+ {
+  "key": "ay/hay",
+  "reading": "ˈai",
+  "options": [
+   {
+    "word": "ay",
+    "gloss": "ouch!, oh! (interjection of pain/emotion)"
+   },
+   {
+    "word": "hay",
+    "gloss": "there is / there are — impersonal 'haber'"
+   }
+  ],
+  "note": "Interjection = 'ay'; 'there is/are' = 'hay'. ('ahí' removed: it is [aˈi], a two-syllable hiatus with final stress, NOT homophonous with the monosyllabic diphthong [ˈai] — same stress rule applied as for 'allá'.)"
+ },
+ {
+  "key": "hacia/Asia",
+  "reading": "ˈa.sja (seseo)",
+  "options": [
+   {
+    "word": "hacia",
+    "gloss": "toward, towards (preposition)"
+   },
+   {
+    "word": "Asia",
+    "gloss": "Asia (the continent, proper noun)"
+   }
+  ],
+  "note": "Direction 'toward' = 'hacia' (silent h); the continent = 'Asia'. Homophones under seseo. 'hacía' (accented) = 'used to do' is a different word. Key normalized (dropped redundant lowercase 'asia')."
+ },
+ {
+  "key": "casa/caza",
+  "reading": "ˈka.sa (seseo only)",
+  "options": [
+   {
+    "word": "casa",
+    "gloss": "house, home; also '(he/she) marries' — from 'casar'"
+   },
+   {
+    "word": "caza",
+    "gloss": "hunt(ing); game (animals); also '(he/she) hunts' — from 'cazar'"
+   }
+  ],
+  "note": "Dwelling = 'casa'; hunting = 'caza'. Homophones ONLY in seseo; distinct in Peninsular distinción [ˈkaθa]."
+ },
+ {
+  "key": "cocer/coser",
+  "reading": "koˈser (seseo only)",
+  "options": [
+   {
+    "word": "cocer",
+    "gloss": "to cook, boil, bake"
+   },
+   {
+    "word": "coser",
+    "gloss": "to sew, stitch"
+   }
+  ],
+  "note": "Cooking/boiling = 'cocer'; sewing = 'coser'. Homophones only under seseo."
+ },
+ {
+  "key": "abrazar/abrasar",
+  "reading": "a.βraˈsar (seseo only)",
+  "options": [
+   {
+    "word": "abrazar",
+    "gloss": "to hug, embrace"
+   },
+   {
+    "word": "abrasar",
+    "gloss": "to burn, scorch, sear"
+   }
+  ],
+  "note": "Embrace = 'abrazar' (z); burn/scorch = 'abrasar' (s). Homophones only under seseo."
+ },
+ {
+  "key": "ciento/siento",
+  "reading": "ˈsjen.to (seseo only)",
+  "options": [
+   {
+    "word": "ciento",
+    "gloss": "(a) hundred (in 'por ciento', 'cientos')"
+   },
+   {
+    "word": "siento",
+    "gloss": "(I) feel — from 'sentir'; OR (I) sit down — from 'sentar'"
+   }
+  ],
+  "note": "Number/hundred = 'ciento'; '(I) feel/sit' = 'siento'. Homophones only under seseo."
+ },
+ {
+  "key": "rebelar/revelar",
+  "reading": "re.βeˈlar",
+  "options": [
+   {
+    "word": "rebelar(se)",
+    "gloss": "to rebel, revolt, rise up"
+   },
+   {
+    "word": "revelar",
+    "gloss": "to reveal, disclose; also to develop (photographic film)"
+   }
+  ],
+  "note": "Rise up against = 'rebelar' (b); disclose / develop film = 'revelar' (v). True b/v homophones in all dialects."
+ },
+ {
+  "key": "grabar/gravar",
+  "reading": "ɡraˈβar",
+  "options": [
+   {
+    "word": "grabar",
+    "gloss": "to record (audio/video); to engrave"
+   },
+   {
+    "word": "gravar",
+    "gloss": "to tax; to levy a charge/burden on"
+   }
+  ],
+  "note": "Record/engrave = 'grabar'; impose a tax = 'gravar'. b/v homophones everywhere."
+ },
+ {
+  "key": "bello/vello",
+  "reading": "ˈbe.ʝo (b/v + yeísmo)",
+  "options": [
+   {
+    "word": "bello",
+    "gloss": "beautiful, lovely"
+   },
+   {
+    "word": "vello",
+    "gloss": "body hair; down, fuzz"
+   }
+  ],
+  "note": "Beautiful = 'bello'; body hair = 'vello'."
+ },
+ {
+  "key": "botar/votar",
+  "reading": "boˈtar",
+  "options": [
+   {
+    "word": "botar",
+    "gloss": "to bounce; to throw out/away; to launch (a boat)"
+   },
+   {
+    "word": "votar",
+    "gloss": "to vote"
+   }
+  ],
+  "note": "Bounce/throw away/launch = 'botar'; cast a vote = 'votar'."
+ },
+ {
+  "key": "bota/vota",
+  "reading": "ˈbo.ta",
+  "options": [
+   {
+    "word": "bota",
+    "gloss": "boot (footwear); wineskin; also '(he/she) bounces/throws out' — from 'botar'"
+   },
+   {
+    "word": "vota",
+    "gloss": "(he/she) votes — from 'votar'"
+   }
+  ],
+  "note": "Footwear/bounces = 'bota'; '(he/she) votes' = 'vota'."
+ },
+ {
+  "key": "bienes/vienes",
+  "reading": "ˈbje.nes",
+  "options": [
+   {
+    "word": "bienes",
+    "gloss": "goods, property, assets (plural noun)"
+   },
+   {
+    "word": "vienes",
+    "gloss": "(you) come — from 'venir'"
+   }
+  ],
+  "note": "Possessions/assets = 'bienes'; '(you) come' = 'vienes'. Key normalized (dropped cross-ref cruft)."
+ },
+ {
+  "key": "barón/varón",
+  "reading": "baˈron",
+  "options": [
+   {
+    "word": "barón",
+    "gloss": "baron (noble title)"
+   },
+   {
+    "word": "varón",
+    "gloss": "male, man (as opposed to female)"
+   }
+  ],
+  "note": "Noble title = 'barón'; a male person = 'varón'."
+ },
+ {
+  "key": "as/has/haz",
+  "reading": "as (seseo for 'haz')",
+  "options": [
+   {
+    "word": "as",
+    "gloss": "ace (cards/dice); an expert, a star"
+   },
+   {
+    "word": "has",
+    "gloss": "(you) have — auxiliary 'haber' ('has visto')"
+   },
+   {
+    "word": "haz",
+    "gloss": "do/make — tú imperative of 'hacer'; also 'beam/bundle' ('haz de luz')"
+   }
+  ],
+  "note": "Ace/expert = 'as'; '(you) have' = 'has' + participle; imperative 'do!' or a beam = 'haz'. 'haz' joins this set only under seseo (distinción: [aθ])."
+ },
+ {
+  "key": "ciervo/siervo",
+  "reading": "ˈsjer.βo (seseo only)",
+  "options": [
+   {
+    "word": "ciervo",
+    "gloss": "deer, stag"
+   },
+   {
+    "word": "siervo",
+    "gloss": "serf, servant, bondsman"
+   }
+  ],
+  "note": "The animal = 'ciervo'; a servant/serf = 'siervo'. Homophones only under seseo. Key normalized (dropped cross-ref cruft)."
+ },
+ {
+  "key": "errar/herrar",
+  "reading": "eˈrar",
+  "options": [
+   {
+    "word": "errar",
+    "gloss": "to err, make a mistake; to wander"
+   },
+   {
+    "word": "herrar",
+    "gloss": "to shoe (a horse); to brand (cattle) with iron"
+   }
+  ],
+  "note": "Make an error = 'errar'; put horseshoes on / brand = 'herrar' (silent h)."
+ },
+ {
+  "key": "ojear/hojear",
+  "reading": "o.xeˈar",
+  "options": [
+   {
+    "word": "ojear",
+    "gloss": "to eye, glance at, look over (from 'ojo' = eye)"
+   },
+   {
+    "word": "hojear",
+    "gloss": "to leaf/flip through (pages), skim (from 'hoja' = leaf/page)"
+   }
+  ],
+  "note": "Glance/eye = 'ojear'; flip through pages = 'hojear'. Both real RAE verbs; context (a scene vs a book) decides."
+ },
+ {
+  "key": "cayó/calló",
+  "reading": "kaˈʝo (yeísmo)",
+  "options": [
+   {
+    "word": "cayó",
+    "gloss": "(he/she/it) fell — preterite of 'caer'"
+   },
+   {
+    "word": "calló",
+    "gloss": "(he/she) went quiet / fell silent — preterite of 'callar'"
+   }
+  ],
+  "note": "Fell (a fall) = 'cayó'; fell silent = 'calló'. Homophones under yeísmo; both oxytone (final stress). Key normalized."
+ },
+ {
+  "key": "rallar/rayar",
+  "reading": "raˈʝar (yeísmo)",
+  "options": [
+   {
+    "word": "rallar",
+    "gloss": "to grate (cheese, etc.)"
+   },
+   {
+    "word": "rayar",
+    "gloss": "to scratch, scrape, mark with lines; to border on"
+   }
+  ],
+  "note": "Grate food = 'rallar' (ll); scratch/draw lines = 'rayar' (y). Homophones under yeísmo. Key normalized."
+ },
+ {
+  "key": "pollo/poyo",
+  "reading": "ˈpo.ʝo (yeísmo)",
+  "options": [
+   {
+    "word": "pollo",
+    "gloss": "chicken (the bird/meat)"
+   },
+   {
+    "word": "poyo",
+    "gloss": "stone bench / built-in masonry seat or ledge"
+   }
+  ],
+  "note": "Chicken = 'pollo'; a stone bench = 'poyo'. Homophones under yeísmo."
+ },
+ {
+  "key": "olla/hoya",
+  "reading": "ˈo.ʝa (yeísmo)",
+  "options": [
+   {
+    "word": "olla",
+    "gloss": "pot, cooking pot, stewpot"
+   },
+   {
+    "word": "hoya",
+    "gloss": "pit, hollow, dell; grave"
+   }
+  ],
+  "note": "Cooking pot = 'olla'; a hollow/pit in the ground = 'hoya' (silent h). Homophones under yeísmo. Key normalized."
+ },
+ {
+  "key": "gira/jira",
+  "reading": "ˈxi.ra",
+  "options": [
+   {
+    "word": "gira",
+    "gloss": "tour (concert/trip); also '(he/she) turns/rotates' — from 'girar'"
+   },
+   {
+    "word": "jira",
+    "gloss": "outing, picnic, country excursion (archaic/rare, but in RAE)"
+   }
+  ],
+  "note": "A tour or 'turns' = 'gira'; a country outing = 'jira'. Phonetically valid pair; 'jira' is documented in RAE but genuinely archaic — use 'gira' in nearly all modern text. Key normalized (dropped 'geta/jeta' cruft)."
+ },
+ {
+  "key": "hablando/ablando",
+  "reading": "aˈβlan.do",
+  "options": [
+   {
+    "word": "hablando",
+    "gloss": "speaking, talking — gerund of 'hablar'"
+   },
+   {
+    "word": "ablando",
+    "gloss": "(I) soften / make tender — from 'ablandar'"
+   }
+  ],
+  "note": "Talking = 'hablando' (silent h, with b); softening = 'ablando' (no h). Context: speech vs softening something. Key normalized (dropped 'vino' cruft)."
+ },
+ {
+  "key": "tú/tu",
+  "reading": "[tu]",
+  "note": "tú = stressed subject pronoun (tú vienes); tu = unstressed possessive before a noun (tu casa). If a noun follows, it's tu.",
+  "options": [
+   {
+    "word": "tú",
+    "gloss": "you (subject/stressed personal pronoun, 2sg)"
+   },
+   {
+    "word": "tu",
+    "gloss": "your (unstressed possessive adjective, 2sg)"
+   }
+  ]
+ },
+ {
+  "key": "él/el",
+  "reading": "[el]",
+  "note": "él = personal pronoun 'he/him/it' (él llegó); el = masculine singular definite article before a noun (el coche). Noun follows -> article.",
+  "options": [
+   {
+    "word": "él",
+    "gloss": "he / him / it (personal pronoun)"
+   },
+   {
+    "word": "el",
+    "gloss": "the (masculine singular definite article)"
+   }
+  ]
+ },
+ {
+  "key": "mí/mi",
+  "reading": "[mi]",
+  "note": "mí = stressed prepositional object pronoun 'me' (para mí); mi = possessive 'my' (mi libro) or the musical note E. Possessive/note precedes a noun or is unstressed.",
+  "options": [
+   {
+    "word": "mí",
+    "gloss": "me (stressed object of preposition)"
+   },
+   {
+    "word": "mi",
+    "gloss": "my (possessive adjective); also the musical note E (verified)"
+   }
+  ]
+ },
+ {
+  "key": "sí/si",
+  "reading": "[si]",
+  "note": "sí = 'yes' or reflexive prepositional pronoun (volvió en sí, lo guardó para sí); si = 'if/whether' or musical note B. Conditional clause or note -> no accent.",
+  "options": [
+   {
+    "word": "sí",
+    "gloss": "yes (affirmation); also reflexive 3rd-person pronoun after preposition (himself/herself/itself/themselves)"
+   },
+   {
+    "word": "si",
+    "gloss": "if / whether (conjunction); also the musical note B (verified)"
+   }
+  ]
+ },
+ {
+  "key": "sé/se",
+  "reading": "[se]",
+  "note": "sé = 'I know' (1sg of saber) or affirmative imperative of ser (sé bueno); se = clitic pronoun (reflexive/impersonal/passive/indirect-object: se vende). Verb form -> accent; pronoun -> none.",
+  "options": [
+   {
+    "word": "sé",
+    "gloss": "I know (1sg of saber); also be! (affirmative imperative of ser)"
+   },
+   {
+    "word": "se",
+    "gloss": "reflexive / impersonal / passive / indirect-object clitic pronoun (oneself; one; to him/her/them)"
+   }
+  ]
+ },
+ {
+  "key": "dé/de",
+  "reading": "[de]",
+  "note": "dé = present subjunctive or formal imperative of dar 'give' (que me lo dé); de = preposition 'of/from' or the name of the letter D. Verb -> accent.",
+  "options": [
+   {
+    "word": "dé",
+    "gloss": "give / may (he/she/you) give (pres. subjunctive or formal imperative of dar)"
+   },
+   {
+    "word": "de",
+    "gloss": "of / from (preposition); also the name of the letter D"
+   }
+  ]
+ },
+ {
+  "key": "té/te",
+  "reading": "[te]",
+  "note": "té = the beverage 'tea' (noun, plural tés); te = clitic pronoun 'you/to you/yourself' or the name of the letter T. Drink -> accent.",
+  "options": [
+   {
+    "word": "té",
+    "gloss": "tea (the beverage; noun)"
+   },
+   {
+    "word": "te",
+    "gloss": "you / to you / yourself (2sg object/reflexive clitic); also the name of the letter T"
+   }
+  ]
+ },
+ {
+  "key": "más/mas",
+  "reading": "[mas]",
+  "note": "más = quantity adverb 'more/most' or the plus sign (quiero más); mas = literary/archaic conjunction 'but' (= pero; lo intentó, mas falló). The 'but' sense is unaccented and rare/literary.",
+  "options": [
+   {
+    "word": "más",
+    "gloss": "more / most / plus (quantity adverb / addition)"
+   },
+   {
+    "word": "mas",
+    "gloss": "but (literary conjunction, equivalent to 'pero'; archaic/formal register)"
+   }
+  ]
+ },
+ {
+  "key": "qué/que",
+  "reading": "[ke]",
+  "note": "qué = interrogative/exclamative 'what/how/which', including indirect questions (No sé qué hacer); que = relative pronoun or conjunction 'that/which/who/than' (el libro que leí).",
+  "options": [
+   {
+    "word": "qué",
+    "gloss": "what / which / how (interrogative or exclamative)"
+   },
+   {
+    "word": "que",
+    "gloss": "that / which / who / than (relative pronoun or conjunction)"
+   }
+  ]
+ },
+ {
+  "key": "cómo/como",
+  "reading": "[ˈko.mo]",
+  "note": "cómo = interrogative/exclamative 'how' incl. indirect (¿Cómo estás?; No sé cómo); como = 'as/like/since' or 'I eat' (1sg comer). Question/exclamation -> accent. (Shared segmental pronunciation; tilde marks the interrogative tonicity, not a sound change.)",
+  "options": [
+   {
+    "word": "cómo",
+    "gloss": "how / in what way (interrogative or exclamative)"
+   },
+   {
+    "word": "como",
+    "gloss": "as / like / since (conjunction/preposition); also 'I eat' (1sg of comer)"
+   }
+  ]
+ },
+ {
+  "key": "cuándo/cuando",
+  "reading": "[ˈkwan.do]",
+  "note": "cuándo = interrogative/exclamative 'when' incl. indirect (¿Cuándo llega?; Dime cuándo); cuando = temporal conjunction 'when/whenever' (cuando llegues, avísame).",
+  "options": [
+   {
+    "word": "cuándo",
+    "gloss": "when (interrogative or exclamative)"
+   },
+   {
+    "word": "cuando",
+    "gloss": "when / whenever (temporal conjunction)"
+   }
+  ]
+ },
+ {
+  "key": "dónde/donde",
+  "reading": "[ˈdon.de]",
+  "note": "dónde = interrogative/exclamative 'where' incl. indirect (¿Dónde está?; No sé dónde); donde = relative adverb of place 'where' (la casa donde vivo).",
+  "options": [
+   {
+    "word": "dónde",
+    "gloss": "where (interrogative or exclamative)"
+   },
+   {
+    "word": "donde",
+    "gloss": "where (relative adverb of place)"
+   }
+  ]
+ },
+ {
+  "key": "adónde/adonde",
+  "reading": "[a.ˈdon.de]",
+  "note": "adónde = interrogative 'to where/whither' incl. indirect (¿Adónde vas?; Pregunta adónde van); adonde = relative form used with an antecedent (el pueblo adonde voy).",
+  "options": [
+   {
+    "word": "adónde",
+    "gloss": "to where / whither (interrogative or exclamative of destination)"
+   },
+   {
+    "word": "adonde",
+    "gloss": "to where (relative adverb of destination, used with antecedent)"
+   }
+  ]
+ },
+ {
+  "key": "cuánto/cuanto",
+  "reading": "[ˈkwan.to]",
+  "note": "cuánto (-a/-os/-as) = interrogative/exclamative 'how much/many' (¿Cuánto cuesta?; ¡Cuántos libros!); cuanto = relative quantifier 'as much as / all that' (gasta cuanto gana).",
+  "options": [
+   {
+    "word": "cuánto",
+    "gloss": "how much / how many (interrogative or exclamative; inflects -a/-os/-as)"
+   },
+   {
+    "word": "cuanto",
+    "gloss": "as much as / all that / whatever amount (relative quantifier; inflects -a/-os/-as)"
+   }
+  ]
+ },
+ {
+  "key": "quién/quien",
+  "reading": "[kjen]",
+  "note": "quién(es) = interrogative/exclamative 'who/whom' (¿Quién es?; No sé quién); quien(es) = relative pronoun 'who/whom' referring to persons (el hombre con quien hablé).",
+  "options": [
+   {
+    "word": "quién",
+    "gloss": "who / whom (interrogative or exclamative; plural quiénes)"
+   },
+   {
+    "word": "quien",
+    "gloss": "who / whom (relative pronoun referring to persons; plural quienes)"
+   }
+  ]
+ },
+ {
+  "key": "cuál/cual",
+  "reading": "[kwal]",
+  "note": "cuál(es) = interrogative 'which (one)' (¿Cuál prefieres?; Dime cuál); cual(es) = relative pronoun (usually el cual / la cual) or literary 'cual' = 'like/as'.",
+  "options": [
+   {
+    "word": "cuál",
+    "gloss": "which / which one (interrogative or exclamative; plural cuáles)"
+   },
+   {
+    "word": "cual",
+    "gloss": "which (relative, as in 'el cual'); or 'like/as' (literary); plural cuales"
+   }
+  ]
+ },
+ {
+  "key": "cuán/cuan",
+  "reading": "[kwan]",
+  "note": "cuán = exclamative/interrogative intensifier 'how' before an adjective/adverb (¡Cuán hermoso!); cuan = literary correlative 'as ... as / all the ... that' (cayó cuan largo era). Both elevated/literary register. Verified against RAE DPD.",
+  "options": [
+   {
+    "word": "cuán",
+    "gloss": "how (exclamative/interrogative intensifier before adjective or adverb; literary)"
+   },
+   {
+    "word": "cuan",
+    "gloss": "as (... as) / all the (... that) (literary correlative of comparison; apocope of cuanto)"
+   }
+  ]
+ },
+ {
+  "key": "aún/aun",
+  "reading": "[a.ˈun] vs [awn]",
+  "note": "GENUINE pronunciation difference (verified against RAE). aún (disyllabic, tonic, hiatus) = 'still/yet' (= todavía: aún no llega); aun (monosyllabic, atonic, diphthong) = 'even/including' (= incluso/hasta/ni siquiera: aun los niños lo saben). NB: RAE classes this as a regular hiatus-vs-diphthong stress rule, not strictly a tilde diacrítica.",
+  "options": [
+   {
+    "word": "aún",
+    "gloss": "still / yet (= todavía); disyllabic, tonic [a.ˈun]"
+   },
+   {
+    "word": "aun",
+    "gloss": "even / including (= incluso/hasta/también/ni siquiera); also 'aun cuando' = even though; monosyllabic, atonic [awn]"
+   }
+  ]
+ },
+ {
+  "key": "por qué / porque / porqué / por que",
+  "reading": "[poɾ ˈke] / [ˈpoɾ.ke]",
+  "note": "All four verified against RAE. por qué = interrogative/exclamative 'why' (¿Por qué?; No sé por qué); porque = causal conjunction 'because' (... porque quiero); porqué = noun 'the reason' (el porqué, pl. porqués); por que = preposition por + relative que (often el/la between them) or por + subordinating que.",
+  "options": [
+   {
+    "word": "por qué",
+    "gloss": "why (interrogative/exclamative; two words, accented qué)"
+   },
+   {
+    "word": "porque",
+    "gloss": "because (causal conjunction; one word, no accent)"
+   },
+   {
+    "word": "porqué",
+    "gloss": "the reason / the why (masculine noun; plural porqués)"
+   },
+   {
+    "word": "por que",
+    "gloss": "for which / that (preposition por + relative que, or por + subordinating que; an article can usually be intercalated)"
+   }
+  ]
+ },
+ {
+  "key": "con qué / con que / conque",
+  "reading": "[kon ˈke] / [ˈkon.ke]",
+  "note": "con qué = interrogative 'with what' (¿Con qué lo abro?); con que = preposition con + relative que 'with which' (el martillo con que lo rompí) or con + conjunction que; conque = consecutive conjunction 'so / and so / therefore' (Ya terminaste, conque vámonos).",
+  "options": [
+   {
+    "word": "con qué",
+    "gloss": "with what (interrogative; with what means/instrument)"
+   },
+   {
+    "word": "con que",
+    "gloss": "with which (preposition con + relative que); or con + subordinating que"
+   },
+   {
+    "word": "conque",
+    "gloss": "so / and so / therefore (consecutive conjunction; one word)"
+   }
+  ]
+ },
+ {
+  "key": "sólo/solo",
+  "reading": "[ˈso.lo]",
+  "note": "Verified against RAE. Since the 2010 Ortografía the tilde is NOT mandatory: sólo = adverb 'only/just' (= solamente); solo = adjective 'alone/single' or noun 'a solo (music)'. RAE recommends writing solo without tilde in all senses; the tilde is optional only to resolve genuine ambiguity (the 2023 update reaffirmed this).",
+  "options": [
+   {
+    "word": "sólo",
+    "gloss": "only / just (adverb = solamente); tilde optional, only for disambiguation"
+   },
+   {
+    "word": "solo",
+    "gloss": "alone / single (adjective); or 'a solo' (music); RAE-recommended spelling for all senses"
+   }
+  ]
+ },
+ {
+  "key": "éste/este (and ése/ese, aquél/aquel + feminines)",
+  "reading": "[ˈes.te] / [ˈe.se] / [a.ˈkel]",
+  "note": "Verified against RAE. Demonstrative PRONOUNS formerly took a tilde (éste, ése, aquél; fem. ésta/ésa/aquélla; plurals) vs the adjectives (este libro). Since 2010 RAE makes the accent unnecessary; write este/ese/aquel for both adjective and pronoun, the tilde optional only for genuine ambiguity. Neuter esto/eso/aquello NEVER take a tilde (they have no homograph adjective).",
+  "options": [
+   {
+    "word": "éste / ése / aquél",
+    "gloss": "this one / that one / that one (yonder) — demonstrative PRONOUNS; tilde now deprecated/optional"
+   },
+   {
+    "word": "este / ese / aquel",
+    "gloss": "this / that / that (yonder) — demonstrative ADJECTIVES, and now also the standard spelling of the pronouns (since 2010)"
+   }
+  ]
+ },
+ {
+  "key": "bello/vello",
+  "reading": "/ˈbeʎo/ (yeísmo /ˈbeʝo/)",
+  "options": [
+   {
+    "word": "bello",
+    "gloss": "beautiful (adjective)"
+   },
+   {
+    "word": "vello",
+    "gloss": "body hair, down, fuzz"
+   }
+  ],
+  "note": "Adjective qualifying a noun = 'bello'; hair on skin/fruit = 'vello'. Both have 'll', so the yeísmo note is correct."
+ },
+ {
+  "key": "bota/vota",
+  "reading": "/ˈbota/",
+  "options": [
+   {
+    "word": "bota",
+    "gloss": "boot; wineskin; (he/she) throws away / bounces (botar)"
+   },
+   {
+    "word": "vota",
+    "gloss": "(he/she) votes (votar)"
+   }
+  ],
+  "note": "Footwear/'botar' verb = 'bota'; casting a ballot = 'vota'."
+ },
+ {
+  "key": "botar/votar",
+  "reading": "/boˈtaɾ/",
+  "options": [
+   {
+    "word": "botar",
+    "gloss": "to throw away/discard; to bounce; to launch (a ship)"
+   },
+   {
+    "word": "votar",
+    "gloss": "to vote"
+   }
+  ],
+  "note": "Discarding/bouncing/launching = 'botar'; elections = 'votar'. Distinct pair from bota/vota (infinitive vs 3rd-sg)."
+ },
+ {
+  "key": "baca/vaca",
+  "reading": "/ˈbaka/",
+  "options": [
+   {
+    "word": "baca",
+    "gloss": "roof rack (on a car)"
+   },
+   {
+    "word": "vaca",
+    "gloss": "cow"
+   }
+  ],
+  "note": "Luggage rack atop a vehicle = 'baca'; the animal = 'vaca'."
+ },
+ {
+  "key": "bienes/vienes",
+  "reading": "/ˈbjenes/",
+  "options": [
+   {
+    "word": "bienes",
+    "gloss": "goods, assets, property (noun, plural)"
+   },
+   {
+    "word": "vienes",
+    "gloss": "you come / are coming (venir, tú)"
+   }
+  ],
+  "note": "Possessions/wealth = 'bienes'; 2nd-person of 'venir' = 'vienes'."
+ },
+ {
+  "key": "grabar/gravar",
+  "reading": "/ɡɾaˈβaɾ/",
+  "options": [
+   {
+    "word": "grabar",
+    "gloss": "to record (audio/video); to engrave"
+   },
+   {
+    "word": "gravar",
+    "gloss": "to tax; to burden, levy a charge on"
+   }
+  ],
+  "note": "Capturing sound/image or engraving = 'grabar'; imposing a tax/burden = 'gravar'."
+ },
+ {
+  "key": "graba/grava",
+  "reading": "/ˈɡɾaβa/",
+  "options": [
+   {
+    "word": "graba",
+    "gloss": "(he/she) records / engraves (grabar)"
+   },
+   {
+    "word": "grava",
+    "gloss": "gravel (noun); (he/she) taxes/burdens (gravar)"
+   }
+  ],
+  "note": "Recording = 'graba'; gravel or 'to tax' = 'grava'. Distinct pair from grabar/gravar (3rd-sg vs infinitive)."
+ },
+ {
+  "key": "rebelar(se)/revelar",
+  "reading": "/reβeˈlaɾ/",
+  "options": [
+   {
+    "word": "rebelar(se)",
+    "gloss": "to rebel, rise up against"
+   },
+   {
+    "word": "revelar",
+    "gloss": "to reveal, disclose; to develop (photographic film)"
+   }
+  ],
+  "note": "Rising up/insubordination = 'rebelar'; disclosing or film-developing = 'revelar'."
+ },
+ {
+  "key": "rebelo/revelo",
+  "reading": "/reˈβelo/",
+  "options": [
+   {
+    "word": "rebelo",
+    "gloss": "(I) rebel / rise up (rebelarse)"
+   },
+   {
+    "word": "revelo",
+    "gloss": "(I) reveal / develop film (revelar)"
+   }
+  ],
+  "note": "1st-person of 'rebelarse' = 'rebelo'; of 'revelar' = 'revelo'. Distinct pair from the infinitives."
+ },
+ {
+  "key": "sabia/savia",
+  "reading": "/ˈsaβja/",
+  "options": [
+   {
+    "word": "sabia",
+    "gloss": "wise (feminine adjective); a wise woman"
+   },
+   {
+    "word": "savia",
+    "gloss": "sap (of a plant)"
+   }
+  ],
+  "note": "Knowledge/wisdom = 'sabia'; plant fluid = 'savia'. Distinct from accented 'sabía' = (I/he/she) knew."
+ },
+ {
+  "key": "basto/vasto",
+  "reading": "/ˈbasto/",
+  "options": [
+   {
+    "word": "basto",
+    "gloss": "coarse, rough, crude; a club (Spanish card suit)"
+   },
+   {
+    "word": "vasto",
+    "gloss": "vast, immense, extensive"
+   }
+  ],
+  "note": "Rough/coarse = 'basto'; huge in extent = 'vasto'."
+ },
+ {
+  "key": "basta/vasta",
+  "reading": "/ˈbasta/",
+  "options": [
+   {
+    "word": "basta",
+    "gloss": "enough! (bastar); coarse (fem.); a basting stitch/hem"
+   },
+   {
+    "word": "vasta",
+    "gloss": "vast, immense (feminine)"
+   }
+  ],
+  "note": "'Enough'/coarse/basting = 'basta'; feminine of 'vast' = 'vasta'."
+ },
+ {
+  "key": "bacilo/vacilo",
+  "reading": "/baˈθilo/ (seseo /baˈsilo/)",
+  "options": [
+   {
+    "word": "bacilo",
+    "gloss": "bacillus (rod-shaped bacterium)"
+   },
+   {
+    "word": "vacilo",
+    "gloss": "(I) hesitate, waver, sway; (I) tease (vacilar)"
+   }
+  ],
+  "note": "Microbiology term = 'bacilo'; 1st-person of 'vacilar' = 'vacilo'."
+ },
+ {
+  "key": "tubo/tuvo",
+  "reading": "/ˈtuβo/",
+  "options": [
+   {
+    "word": "tubo",
+    "gloss": "tube, pipe (noun)"
+   },
+   {
+    "word": "tuvo",
+    "gloss": "(he/she) had / got (tener, preterite)"
+   }
+  ],
+  "note": "A pipe/cylinder = 'tubo'; preterite of 'tener' = 'tuvo'."
+ },
+ {
+  "key": "acerbo/acervo",
+  "reading": "/aˈθeɾβo/ (seseo /aˈseɾβo/)",
+  "options": [
+   {
+    "word": "acerbo",
+    "gloss": "harsh, bitter, acrid (adjective)"
+   },
+   {
+    "word": "acervo",
+    "gloss": "heritage; collective body/store (cultural, or jointly-held assets)"
+   }
+  ],
+  "note": "Bitter/cutting = 'acerbo'; shared cultural/heritage stock = 'acervo'. RAE-confirmed."
+ },
+ {
+  "key": "cabe/cave",
+  "reading": "/ˈkaβe/",
+  "options": [
+   {
+    "word": "cabe",
+    "gloss": "(it) fits / is possible (caber)"
+   },
+   {
+    "word": "cave",
+    "gloss": "(that he/she) dig (cavar, subjunctive); dig! (imperative usted)"
+   }
+  ],
+  "note": "Fitting/being possible = 'cabe'; subjunctive/command of 'cavar' = 'cave'."
+ },
+ {
+  "key": "combino/convino",
+  "reading": "/komˈbino/",
+  "options": [
+   {
+    "word": "combino",
+    "gloss": "(I) combine, mix, match (combinar)"
+   },
+   {
+    "word": "convino",
+    "gloss": "(he/she) agreed / was suitable (convenir, preterite)"
+   }
+  ],
+  "note": "1st-person 'combinar' = 'combino'; preterite of 'convenir' = 'convino'. n+v assimilates to /mb/, so identical reading holds."
+ },
+ {
+  "key": "bobina/bovina",
+  "reading": "/boˈβina/",
+  "options": [
+   {
+    "word": "bobina",
+    "gloss": "coil, bobbin, reel, spool"
+   },
+   {
+    "word": "bovina",
+    "gloss": "bovine, of/relating to cattle (feminine adjective)"
+   }
+  ],
+  "note": "Wound thread/wire = 'bobina'; cattle-related = 'bovina'."
+ },
+ {
+  "key": "barón/varón",
+  "reading": "/baˈɾon/",
+  "options": [
+   {
+    "word": "barón",
+    "gloss": "baron (noble title)"
+   },
+   {
+    "word": "varón",
+    "gloss": "male, man, boy (vs. female)"
+   }
+  ],
+  "note": "Aristocratic rank = 'barón'; biological/social male = 'varón'."
+ },
+ {
+  "key": "ribera/rivera",
+  "reading": "/riˈβeɾa/",
+  "options": [
+   {
+    "word": "ribera",
+    "gloss": "riverbank, shore, riverside land"
+   },
+   {
+    "word": "rivera",
+    "gloss": "brook, small stream, rivulet (also a surname)"
+   }
+  ],
+  "note": "Bank/margin of water = 'ribera'; a small watercourse = 'rivera'. RAE-confirmed homophone pair."
+ },
+ {
+  "key": "hierba/hierva",
+  "reading": "/ˈjeɾβa/",
+  "options": [
+   {
+    "word": "hierba",
+    "gloss": "grass, herb, weed (noun)"
+   },
+   {
+    "word": "hierva",
+    "gloss": "(that it) boil (hervir, subjunctive)"
+   }
+  ],
+  "note": "Plant/grass = 'hierba'; subjunctive of 'hervir' = 'hierva'. Both have silent h."
+ },
+ {
+  "key": "baya/vaya/valla",
+  "reading": "/ˈbaʝa/ (yeísmo merges all three)",
+  "options": [
+   {
+    "word": "baya",
+    "gloss": "berry (small fleshy fruit)"
+   },
+   {
+    "word": "vaya",
+    "gloss": "(that he/she) go (ir); 'what a...!' interjection"
+   },
+   {
+    "word": "valla",
+    "gloss": "fence, hurdle, barrier, billboard"
+   }
+  ],
+  "note": "Fruit = 'baya'; verb 'ir'/exclamation = 'vaya'; barrier = 'valla'. 'valla' has 'll' vs 'y' but merges only under yeísmo, exactly as noted."
+ },
+ {
+  "key": "silba/silva",
+  "reading": "/ˈsilβa/",
+  "options": [
+   {
+    "word": "silba",
+    "gloss": "(he/she) whistles; a whistling/jeering, booing (silbar / la silba)"
+   },
+   {
+    "word": "silva",
+    "gloss": "silva (verse form mixing 7- and 11-syllable lines); also a surname"
+   }
+  ],
+  "note": "Whistling/jeering = 'silba'; the poetic form = 'silva'. Both RAE-confirmed."
+ },
+ {
+  "key": "vario/bario",
+  "reading": "/ˈbaɾjo/",
+  "options": [
+   {
+    "word": "vario",
+    "gloss": "varied, diverse, several (adjective)"
+   },
+   {
+    "word": "bario",
+    "gloss": "barium (chemical element, Ba)"
+   }
+  ],
+  "note": "Diverse/assorted = 'vario'; the element = 'bario'. Distinct from 'barrio' (neighborhood), which has trill /r/."
+ },
+ {
+  "key": "valido/balido",
+  "reading": "/baˈliðo/",
+  "options": [
+   {
+    "word": "valido",
+    "gloss": "royal favorite, king's confidant/minister (noun); also (I) validate (validar)"
+   },
+   {
+    "word": "balido",
+    "gloss": "bleat (cry of a sheep/goat)"
+   }
+  ],
+  "note": "Court favorite or 'validar' = 'valido'; sheep's cry = 'balido'. Distinct from accented 'válido' = valid. RAE-confirmed."
+ },
+ {
+  "key": "había/avía",
+  "reading": "/aˈβia/",
+  "options": [
+   {
+    "word": "había",
+    "gloss": "there was/were; (he/she/I) had (haber, imperfect)"
+   },
+   {
+    "word": "avía",
+    "gloss": "(he/she) prepares, gets ready, arranges (aviar)"
+   }
+  ],
+  "note": "Existence/auxiliary 'haber' = 'había'; readying/arranging = 'avía'. Both silent h; RAE-confirmed 'aviar'."
+ },
+ {
+  "key": "vidente/bidente",
+  "reading": "/biˈðente/",
+  "options": [
+   {
+    "word": "vidente",
+    "gloss": "seer, clairvoyant; sighted person"
+   },
+   {
+    "word": "bidente",
+    "gloss": "two-pronged/two-toothed (adj.); a two-pronged implement (noun)"
+   }
+  ],
+  "note": "One who sees/foresees = 'vidente'; having two prongs/teeth = 'bidente'. RAE-confirmed (poetic adj. + noun)."
+ },
+ {
+  "key": "bote/vote",
+  "reading": "/ˈbote/",
+  "options": [
+   {
+    "word": "bote",
+    "gloss": "small boat; can/jar/tin; bounce, jump; jackpot/kitty"
+   },
+   {
+    "word": "vote",
+    "gloss": "(that he/she) vote; vote! (votar, subjunctive/usted command)"
+   }
+  ],
+  "note": "Container/boat/bounce = 'bote'; subjunctive/command of 'votar' = 'vote'."
+ },
+ {
+  "key": "vaga/baga",
+  "reading": "/ˈbaɣa/",
+  "options": [
+   {
+    "word": "vaga",
+    "gloss": "vague, hazy (fem.); lazy/idle (fem.); (he/she) wanders/loafs (vagar)"
+   },
+   {
+    "word": "baga",
+    "gloss": "seed pod/capsule of flax; a rope for lashing loads onto pack animals"
+   }
+  ],
+  "note": "Vague/lazy/wandering = 'vaga'; flax pod or lashing rope = 'baga'. Both RAE-confirmed homophones."
+ },
+ {
+  "key": "corbeta/corveta",
+  "reading": "/koɾˈβeta/",
+  "options": [
+   {
+    "word": "corbeta",
+    "gloss": "corvette (a small warship)"
+   },
+   {
+    "word": "corveta",
+    "gloss": "corveta — a horse's leap/rear with forelegs raised (dressage)"
+   }
+  ],
+  "note": "Naval vessel = 'corbeta'; the equestrian leap = 'corveta'. RAE form is 'corveta' with v; both confirmed."
+ },
+ {
+  "key": "cabo/cavo",
+  "reading": "/ˈkaβo/",
+  "options": [
+   {
+    "word": "cabo",
+    "gloss": "end/tip; cape (headland); corporal (military rank); rope/cable (naut.)"
+   },
+   {
+    "word": "cavo",
+    "gloss": "(I) dig (cavar)"
+   }
+  ],
+  "note": "End/cape/rank = 'cabo'; 1st-person of 'cavar' = 'cavo'."
+ },
+ {
+  "key": "casa/caza",
+  "reading": "/ˈkasa/",
+  "options": [
+   {
+    "word": "casa",
+    "gloss": "house; home (also 3sg of casar, to marry)"
+   },
+   {
+    "word": "caza",
+    "gloss": "hunt, hunting; game (prey); fighter aircraft (also 3sg of cazar, to hunt)"
+   }
+  ],
+  "note": "Domestic/dwelling = casa; pursuit of animals or fighter-jet = caza."
+ },
+ {
+  "key": "cazar/casar",
+  "reading": "/kaˈsar/",
+  "options": [
+   {
+    "word": "cazar",
+    "gloss": "to hunt"
+   },
+   {
+    "word": "casar",
+    "gloss": "to marry (someone to someone); to match/fit together"
+   }
+  ],
+  "note": "Object is prey/animals = cazar; object is a couple or things that match = casar."
+ },
+ {
+  "key": "cazo/caso",
+  "reading": "/ˈkaso/",
+  "options": [
+   {
+    "word": "cazo",
+    "gloss": "ladle; small saucepan (also 1sg of cazar, I hunt)"
+   },
+   {
+    "word": "caso",
+    "gloss": "case, instance, matter (also 1sg of casar, I marry)"
+   }
+  ],
+  "note": "Kitchen utensil/'I hunt' = cazo; situation/legal case/'I marry' = caso; 'hacer caso' always with s."
+ },
+ {
+  "key": "cocer/coser",
+  "reading": "/koˈser/",
+  "options": [
+   {
+    "word": "cocer",
+    "gloss": "to cook by boiling; to bake (pottery)"
+   },
+   {
+    "word": "coser",
+    "gloss": "to sew, to stitch"
+   }
+  ],
+  "note": "Heat/boiling in the kitchen = cocer; needle and thread = coser."
+ },
+ {
+  "key": "cocido/cosido",
+  "reading": "/koˈsido/",
+  "options": [
+   {
+    "word": "cocido",
+    "gloss": "boiled, cooked; (noun) a stew/boiled dish"
+   },
+   {
+    "word": "cosido",
+    "gloss": "sewn, stitched; (noun) stitching/sewing job"
+   }
+  ],
+  "note": "Result of boiling/cooking = cocido; result of sewing = cosido."
+ },
+ {
+  "key": "abrazar/abrasar",
+  "reading": "/aβraˈsar/",
+  "options": [
+   {
+    "word": "abrazar",
+    "gloss": "to hug, to embrace"
+   },
+   {
+    "word": "abrasar",
+    "gloss": "to burn, to scorch/sear"
+   }
+  ],
+  "note": "Arms around someone = abrazar; fire/heat destroying = abrasar."
+ },
+ {
+  "key": "rebozar/rebosar",
+  "reading": "/reβoˈsar/",
+  "options": [
+   {
+    "word": "rebozar",
+    "gloss": "to coat in batter/breadcrumbs (cooking)"
+   },
+   {
+    "word": "rebosar",
+    "gloss": "to overflow, to brim over"
+   }
+  ],
+  "note": "Batter on food before frying = rebozar; liquid spilling over the edge = rebosar."
+ },
+ {
+  "key": "cima/sima",
+  "reading": "/ˈsima/",
+  "options": [
+   {
+    "word": "cima",
+    "gloss": "summit, peak, top"
+   },
+   {
+    "word": "sima",
+    "gloss": "chasm, abyss, deep pit/sinkhole"
+   }
+  ],
+  "note": "Highest point (up) = cima; deepest hollow (down) = sima."
+ },
+ {
+  "key": "encima/enzima",
+  "reading": "/enˈsima/",
+  "options": [
+   {
+    "word": "encima",
+    "gloss": "on top, above, over"
+   },
+   {
+    "word": "enzima",
+    "gloss": "enzyme (biochemistry)"
+   }
+  ],
+  "note": "Spatial 'on top of' = encima; biological catalyst protein = enzima."
+ },
+ {
+  "key": "ciento/siento",
+  "reading": "/ˈsjento/",
+  "options": [
+   {
+    "word": "ciento",
+    "gloss": "(one) hundred; a hundred (of)"
+   },
+   {
+    "word": "siento",
+    "gloss": "I feel; I am sorry (1sg of sentir) / I sit down (1sg of sentar)"
+   }
+  ],
+  "note": "Number/'por ciento' = ciento; 'lo siento'/feeling = siento."
+ },
+ {
+  "key": "cien/sien",
+  "reading": "/ˈsjen/",
+  "options": [
+   {
+    "word": "cien",
+    "gloss": "(one) hundred (apocopated form before nouns)"
+   },
+   {
+    "word": "sien",
+    "gloss": "temple (side of the forehead)"
+   }
+  ],
+  "note": "Number before a noun = cien; part of the head = sien."
+ },
+ {
+  "key": "cierra/sierra",
+  "reading": "/ˈsjera/",
+  "options": [
+   {
+    "word": "cierra",
+    "gloss": "closes; shut! (3sg/imperative of cerrar)"
+   },
+   {
+    "word": "sierra",
+    "gloss": "saw (tool); mountain range"
+   }
+  ],
+  "note": "Verb 'to close' = cierra; tool or mountains = sierra."
+ },
+ {
+  "key": "ciervo/siervo",
+  "reading": "/ˈsjerβo/",
+  "options": [
+   {
+    "word": "ciervo",
+    "gloss": "deer, stag"
+   },
+   {
+    "word": "siervo",
+    "gloss": "serf, servant, bondsman"
+   }
+  ],
+  "note": "The animal = ciervo; subordinate person/'siervo de Dios' = siervo."
+ },
+ {
+  "key": "ciega/siega",
+  "reading": "/ˈsjeɣa/",
+  "options": [
+   {
+    "word": "ciega",
+    "gloss": "blind (fem.); blinds/goes blind (3sg of cegar)"
+   },
+   {
+    "word": "siega",
+    "gloss": "harvest/reaping; reaps (3sg of segar)"
+   }
+  ],
+  "note": "Loss of sight = ciega; cutting/mowing crops = siega."
+ },
+ {
+  "key": "cebo/sebo",
+  "reading": "/ˈseβo/",
+  "options": [
+   {
+    "word": "cebo",
+    "gloss": "bait, lure; (firearm) priming/explosive charge"
+   },
+   {
+    "word": "sebo",
+    "gloss": "tallow, animal fat, sebum/grease"
+   }
+  ],
+  "note": "What attracts fish/animals = cebo; greasy fat substance = sebo."
+ },
+ {
+  "key": "ceda/seda",
+  "reading": "/ˈseda/",
+  "options": [
+   {
+    "word": "ceda",
+    "gloss": "yield/give way (3sg subj. of ceder)"
+   },
+   {
+    "word": "seda",
+    "gloss": "silk"
+   }
+  ],
+  "note": "Verb 'to yield' (e.g. 'ceda el paso') = ceda; the fabric = seda."
+ },
+ {
+  "key": "cede/sede",
+  "reading": "/ˈsede/",
+  "options": [
+   {
+    "word": "cede",
+    "gloss": "yields, gives way, hands over (3sg of ceder)"
+   },
+   {
+    "word": "sede",
+    "gloss": "headquarters, seat, venue (also Holy See)"
+   }
+  ],
+  "note": "Action of giving way = cede; location/HQ of an organization = sede."
+ },
+ {
+  "key": "cesión/sesión",
+  "reading": "/seˈsjon/",
+  "options": [
+   {
+    "word": "cesión",
+    "gloss": "cession, transfer/assignment (of rights/property)"
+   },
+   {
+    "word": "sesión",
+    "gloss": "session, sitting, meeting; screening/showing"
+   }
+  ],
+  "note": "Legal handing-over of rights = cesión; a meeting or scheduled period = sesión."
+ },
+ {
+  "key": "concejo/consejo",
+  "reading": "/konˈsexo/",
+  "options": [
+   {
+    "word": "concejo",
+    "gloss": "town council; municipality"
+   },
+   {
+    "word": "consejo",
+    "gloss": "advice, piece of advice; council/board"
+   }
+  ],
+  "note": "Local-government body (concejal sits here) = concejo; advice or a governing board = consejo."
+ },
+ {
+  "key": "as/has/haz",
+  "reading": "/as/",
+  "options": [
+   {
+    "word": "as",
+    "gloss": "ace (card; expert/champion)"
+   },
+   {
+    "word": "has",
+    "gloss": "you have (2sg of haber, auxiliary: 'has hecho')"
+   },
+   {
+    "word": "haz",
+    "gloss": "do/make! (imperative of hacer); beam/bundle (of light/sticks)"
+   }
+  ],
+  "note": "Card/expert = as; auxiliary before a participle = has; command 'do it' or beam/sheaf = haz."
+ },
+ {
+  "key": "ves/vez",
+  "reading": "/bes/",
+  "options": [
+   {
+    "word": "ves",
+    "gloss": "you see (2sg of ver)"
+   },
+   {
+    "word": "vez",
+    "gloss": "time, occasion, turn ('una vez', 'a veces')"
+   }
+  ],
+  "note": "Verb 'to see' = ves; counting occasions/'tal vez' = vez."
+ },
+ {
+  "key": "taza/tasa",
+  "reading": "/ˈtasa/",
+  "options": [
+   {
+    "word": "taza",
+    "gloss": "cup, mug; (toilet) bowl"
+   },
+   {
+    "word": "tasa",
+    "gloss": "rate; fee/levy; appraisal (also 3sg of tasar, to appraise)"
+   }
+  ],
+  "note": "Drinking vessel = taza; percentage/rate or fee = tasa."
+ },
+ {
+  "key": "maza/masa",
+  "reading": "/ˈmasa/",
+  "options": [
+   {
+    "word": "maza",
+    "gloss": "mace, mallet, sledgehammer; club (weapon)"
+   },
+   {
+    "word": "masa",
+    "gloss": "dough; mass (physics); the masses/crowd"
+   }
+  ],
+  "note": "Heavy striking tool/weapon = maza; dough or physical mass = masa."
+ },
+ {
+  "key": "loza/losa",
+  "reading": "/ˈlosa/",
+  "options": [
+   {
+    "word": "loza",
+    "gloss": "crockery, earthenware, china; glazed pottery"
+   },
+   {
+    "word": "losa",
+    "gloss": "slab, flagstone, paving stone; gravestone"
+   }
+  ],
+  "note": "Dishware/ceramics = loza; flat stone slab = losa."
+ },
+ {
+  "key": "poso/pozo",
+  "reading": "/ˈposo/",
+  "options": [
+   {
+    "word": "poso",
+    "gloss": "sediment, dregs, grounds (also 1sg of posar, I pose/perch)"
+   },
+   {
+    "word": "pozo",
+    "gloss": "well, pit, shaft (water/oil well)"
+   }
+  ],
+  "note": "Settled residue at the bottom = poso; a dug hole/water source = pozo."
+ },
+ {
+  "key": "asar/azar",
+  "reading": "/aˈsar/",
+  "options": [
+   {
+    "word": "asar",
+    "gloss": "to roast, to grill"
+   },
+   {
+    "word": "azar",
+    "gloss": "chance, randomness, fate ('al azar')"
+   }
+  ],
+  "note": "Cooking over heat = asar; luck/randomness = azar. (Homophone in seseo with azahar, orange blossom, h silent.)"
+ },
+ {
+  "key": "sumo/zumo",
+  "reading": "/ˈsumo/",
+  "options": [
+   {
+    "word": "sumo",
+    "gloss": "highest, supreme ('sumo pontífice'); (also 1sg of sumar, I add)"
+   },
+   {
+    "word": "zumo",
+    "gloss": "juice (fruit juice, esp. in Spain)"
+   }
+  ],
+  "note": "Supreme/topmost or 'I add up' = sumo; fruit juice = zumo."
+ },
+ {
+  "key": "sueco/zueco",
+  "reading": "/ˈsweko/",
+  "options": [
+   {
+    "word": "sueco",
+    "gloss": "Swedish; a Swede ('hacerse el sueco' = play dumb)"
+   },
+   {
+    "word": "zueco",
+    "gloss": "clog (wooden-soled shoe)"
+   }
+  ],
+  "note": "Nationality from Sweden = sueco; the footwear = zueco."
+ },
+ {
+  "key": "seta/zeta",
+  "reading": "/ˈseta/",
+  "options": [
+   {
+    "word": "seta",
+    "gloss": "mushroom, wild fungus"
+   },
+   {
+    "word": "zeta",
+    "gloss": "the letter Z (name of the letter)"
+   }
+  ],
+  "note": "Edible fungus = seta; name of the letter Z = zeta."
+ },
+ {
+  "key": "rasa/raza",
+  "reading": "/ˈrasa/",
+  "options": [
+   {
+    "word": "rasa",
+    "gloss": "flat, level, smooth (fem.); skims/grazes (3sg of rasar)"
+   },
+   {
+    "word": "raza",
+    "gloss": "race, breed, lineage"
+   }
+  ],
+  "note": "Flat/level surface = rasa; breed or ethnic group = raza."
+ },
+ {
+  "key": "risa/riza",
+  "reading": "/ˈrisa/",
+  "options": [
+   {
+    "word": "risa",
+    "gloss": "laughter, laugh"
+   },
+   {
+    "word": "riza",
+    "gloss": "curls/ripples (3sg of rizar, to curl); also a separate noun meaning havoc/destruction ('hacer riza')"
+   }
+  ],
+  "note": "Laughing = risa; the verb 'to curl' (hair/water) OR the noun riza (havoc) = riza."
+ },
+ {
+  "key": "pace/pase",
+  "reading": "/ˈpase/",
+  "options": [
+   {
+    "word": "pace",
+    "gloss": "grazes (3sg of pacer, to graze)"
+   },
+   {
+    "word": "pase",
+    "gloss": "pass, permit, ticket; come in! (3sg subj. of pasar)"
+   }
+  ],
+  "note": "Livestock feeding on grass = pace; a pass/permit or 'let them pass' = pase."
+ },
+ {
+  "key": "reciente/resiente",
+  "reading": "/reˈsjente/",
+  "options": [
+   {
+    "word": "reciente",
+    "gloss": "recent, fresh, new"
+   },
+   {
+    "word": "resiente",
+    "gloss": "is weakened/suffers; resents (3sg of resentirse)"
+   }
+  ],
+  "note": "Adjective 'recent' = reciente; verb of weakening/resenting = resiente."
+ },
+ {
+  "key": "bracero/brasero",
+  "reading": "/braˈsero/",
+  "options": [
+   {
+    "word": "bracero",
+    "gloss": "day laborer, manual/farm worker"
+   },
+   {
+    "word": "brasero",
+    "gloss": "brazier, heating pan (for embers)"
+   }
+  ],
+  "note": "A person who does manual labor = bracero; the ember-heater appliance = brasero."
+ },
+ {
+  "key": "vasar/basar/bazar",
+  "reading": "/baˈsar/",
+  "options": [
+   {
+    "word": "basar",
+    "gloss": "to base, to found (an argument) on"
+   },
+   {
+    "word": "bazar",
+    "gloss": "bazaar, variety/general store"
+   },
+   {
+    "word": "vasar",
+    "gloss": "kitchen shelf/rack (for dishes)"
+   }
+  ],
+  "note": "'Base it on' = basar; a market/shop = bazar; the kitchen dish-shelf = vasar (rarer)."
+ },
+ {
+  "key": "gira/jira",
+  "reading": "/ˈxi.ɾa/",
+  "options": [
+   {
+    "word": "gira",
+    "gloss": "a tour (concert/sports tour); also 'turns/rotates' (girar, 3sg present)"
+   },
+   {
+    "word": "jira",
+    "gloss": "an outing/picnic, a merry excursion in the countryside (literary/dated)"
+   }
+  ],
+  "note": "Concert/travel context = gira; a country picnic/feast outing = jira. The verb 'to turn/rotate' is always gira. Both real (RAE-attested), correct."
+ },
+ {
+  "key": "ingerir/injerir",
+  "reading": "/in.xeˈɾiɾ/",
+  "options": [
+   {
+    "word": "ingerir",
+    "gloss": "to ingest/swallow (food, drink, a substance) into the stomach"
+   },
+   {
+    "word": "injerir",
+    "gloss": "to insert one thing into another; pronominal injerirse = to meddle/interfere"
+   }
+  ],
+  "note": "Food/medicine into the body = ingerir (g); meddling/inserting = injerir (j). The noun is injerencia (j) — RAE preferred form, though 'ingerencia' appears historically, so 'never' is slightly strong but the steer is right."
+ },
+ {
+  "key": "agito/ajito",
+  "reading": "/aˈxi.to/",
+  "options": [
+   {
+    "word": "agito",
+    "gloss": "'I shake/stir/agitate' (agitar, 1sg present)"
+   },
+   {
+    "word": "ajito",
+    "gloss": "'little garlic clove' (diminutive of ajo)"
+   }
+  ],
+  "note": "Verb of shaking/stirring = agito (g); small garlic = ajito (j). Cooking + noun favors ajito. Correct."
+ },
+ {
+  "key": "ojear/hojear",
+  "reading": "/o.xeˈaɾ/",
+  "options": [
+   {
+    "word": "ojear",
+    "gloss": "to eye/glance at, look over quickly (from ojo, eye)"
+   },
+   {
+    "word": "hojear",
+    "gloss": "to leaf/flip through pages (from hoja, leaf/page)"
+   }
+  ],
+  "note": "Combines x-sound with silent h. Glancing = ojear; turning pages = hojear; a book/magazine object points to hojear. Correct."
+ },
+ {
+  "key": "calló/cayó",
+  "reading": "/kaˈʝo/",
+  "options": [
+   {
+    "word": "calló",
+    "gloss": "'fell silent / shut up' (callar, 3sg preterite)"
+   },
+   {
+    "word": "cayó",
+    "gloss": "'fell / fell down' (caer, 3sg preterite)"
+   }
+  ],
+  "note": "Yeísmo homophone. Stopped talking = calló; dropped/fell = cayó. Correct."
+ },
+ {
+  "key": "callado/cayado",
+  "reading": "/kaˈʝa.ðo/",
+  "options": [
+   {
+    "word": "callado",
+    "gloss": "'silent/quiet' (adjective/participle of callar)"
+   },
+   {
+    "word": "cayado",
+    "gloss": "a shepherd's crook or walking staff (noun); also a bishop's crosier"
+   }
+  ],
+  "note": "Yeísmo homophone. Quiet person = callado; the staff/crook = cayado. Correct."
+ },
+ {
+  "key": "valla/vaya/baya",
+  "reading": "/ˈba.ʝa/",
+  "options": [
+   {
+    "word": "valla",
+    "gloss": "a fence/barrier; a billboard or hurdle"
+   },
+   {
+    "word": "vaya",
+    "gloss": "'go / may (he/she/it) go' (ir, present subjunctive 3sg); also interjection 'well!/wow!'"
+   },
+   {
+    "word": "baya",
+    "gloss": "a berry (small fleshy fruit)"
+   }
+  ],
+  "note": "Yeísmo + b/v homophone. Fence/billboard = valla; verb 'go' / exclamation = vaya; fruit = baya. All three real, correct."
+ },
+ {
+  "key": "rallar/rayar",
+  "reading": "/raˈʝaɾ/",
+  "options": [
+   {
+    "word": "rallar",
+    "gloss": "to grate (cheese, etc.) with a grater"
+   },
+   {
+    "word": "rayar",
+    "gloss": "to scratch/scrape a line; to draw lines; to border on (rayar en)"
+   }
+  ],
+  "note": "Yeísmo homophone. Grating food = rallar; scratching/lining = rayar. Correct."
+ },
+ {
+  "key": "rallado/rayado",
+  "reading": "/raˈʝa.ðo/",
+  "options": [
+   {
+    "word": "rallado",
+    "gloss": "'grated' (participle of rallar); queso rallado = grated cheese"
+   },
+   {
+    "word": "rayado",
+    "gloss": "'scratched / lined / striped' (participle of rayar); papel rayado = lined paper"
+   }
+  ],
+  "note": "Yeísmo homophone. Grated food = rallado; scratched/striped/lined = rayado. Correct."
+ },
+ {
+  "key": "arrollo/arroyo",
+  "reading": "/aˈro.ʝo/",
+  "options": [
+   {
+    "word": "arrollo",
+    "gloss": "'I run over / roll up / sweep away' (arrollar, 1sg present)"
+   },
+   {
+    "word": "arroyo",
+    "gloss": "a stream/brook; also a gutter (small watercourse)"
+   }
+  ],
+  "note": "Yeísmo homophone. Verb run-over/roll-up = arrollo; small stream = arroyo. Correct."
+ },
+ {
+  "key": "halla/haya/aya",
+  "reading": "/ˈa.ʝa/",
+  "options": [
+   {
+    "word": "halla",
+    "gloss": "'finds / is located' (hallar, 3sg present)"
+   },
+   {
+    "word": "haya",
+    "gloss": "present subjunctive of haber (e.g. 'haya llegado'); also the beech tree"
+   },
+   {
+    "word": "aya",
+    "gloss": "a governess/nanny (female caregiver of children)"
+   }
+  ],
+  "note": "Yeísmo + silent-h, all paroxytone /ˈa.ʝa/. Finding = halla; auxiliary/'may there be' = haya; nanny = aya. Correctly notes allá is oxytone /aˈʝa/ and NOT in this set. All three real, correct — this is the canonical entry for the trio."
+ },
+ {
+  "key": "olla/hoya",
+  "reading": "/ˈo.ʝa/",
+  "options": [
+   {
+    "word": "olla",
+    "gloss": "a cooking pot; also a stew dish"
+   },
+   {
+    "word": "hoya",
+    "gloss": "a pit/hole/hollow in the ground; a grave; a river basin/valley"
+   }
+  ],
+  "note": "Yeísmo + silent-h homophone. Cooking vessel = olla; hole/pit/basin = hoya. Both real, correct."
+ },
+ {
+  "key": "pollo/poyo",
+  "reading": "/ˈpo.ʝo/",
+  "options": [
+   {
+    "word": "pollo",
+    "gloss": "a chicken (bird/meat); colloquially a young man"
+   },
+   {
+    "word": "poyo",
+    "gloss": "a stone bench/ledge built against a wall"
+   }
+  ],
+  "note": "Yeísmo homophone. Bird/food = pollo; stone bench = poyo. Correctly distinguished from apoyo = support. Both real, correct."
+ },
+ {
+  "key": "malla/maya",
+  "reading": "/ˈma.ʝa/",
+  "options": [
+   {
+    "word": "malla",
+    "gloss": "mesh/net/netting; a leotard or tights"
+   },
+   {
+    "word": "maya",
+    "gloss": "Mayan (of the Maya people/civilization); the Maya person/language"
+   }
+  ],
+  "note": "Yeísmo homophone. Net/mesh/sportswear = malla; Maya civilization = maya. Correct (and mayo = May is correctly noted as distinct)."
+ },
+ {
+  "key": "callo/cayo",
+  "reading": "/ˈka.ʝo/",
+  "options": [
+   {
+    "word": "callo",
+    "gloss": "a callus/corn on the skin; 'I fall silent' (callar, 1sg present); pl. callos = tripe dish"
+   },
+   {
+    "word": "cayo",
+    "gloss": "a cay/key (small low island/islet, e.g. Cayo Hueso = Key West)"
+   }
+  ],
+  "note": "Yeísmo homophone. Callus / tripe / 'I go quiet' = callo; small tropical island = cayo. All glosses correct."
+ },
+ {
+  "key": "echo/hecho",
+  "reading": "/ˈe.tʃo/",
+  "options": [
+   {
+    "word": "echo",
+    "gloss": "'I throw / put / pour / add' (echar, 1sg present); also 'echo de menos' = I miss"
+   },
+   {
+    "word": "hecho",
+    "gloss": "'done/made' (participle of hacer); a fact/event (noun)"
+   }
+  ],
+  "note": "Silent-h homophone. Throwing/adding = echo (no h); done/made or fact = hecho (with h). Correctly warns 'hechar' does not exist. Correct."
+ },
+ {
+  "key": "echa/hecha",
+  "reading": "/ˈe.tʃa/",
+  "options": [
+   {
+    "word": "echa",
+    "gloss": "'throws / puts / pours' (echar, 3sg present) or imperative 'throw!'"
+   },
+   {
+    "word": "hecha",
+    "gloss": "'made/done' (feminine participle of hacer)"
+   }
+  ],
+  "note": "Silent-h homophone. Throwing/putting = echa (no h); feminine done/made = hecha. Correct."
+ },
+ {
+  "key": "errar/herrar",
+  "reading": "/eˈraɾ/",
+  "options": [
+   {
+    "word": "errar",
+    "gloss": "to err / make a mistake; to miss (a target); to wander/roam"
+   },
+   {
+    "word": "herrar",
+    "gloss": "to shoe a horse; to brand cattle with a hot iron"
+   }
+  ],
+  "note": "Silent-h homophone. Erring/missing = errar (no h); shoeing/branding = herrar (with h, from hierro). Correct."
+ },
+ {
+  "key": "ola/hola",
+  "reading": "/ˈo.la/",
+  "options": [
+   {
+    "word": "ola",
+    "gloss": "a wave (of water; or a surge of heat, people, etc.)"
+   },
+   {
+    "word": "hola",
+    "gloss": "'hello/hi' (greeting interjection)"
+   }
+  ],
+  "note": "Silent-h homophone. Wave/surge = ola (no h); greeting = hola (with h). Correct."
+ },
+ {
+  "key": "onda/honda",
+  "reading": "/ˈon.da/",
+  "options": [
+   {
+    "word": "onda",
+    "gloss": "a wave (physics: sound/radio/water ripple); colloquially a 'vibe'"
+   },
+   {
+    "word": "honda",
+    "gloss": "a sling (weapon for hurling stones); also feminine of 'hondo' = deep"
+   }
+  ],
+  "note": "Silent-h homophone. Physical/radio wave or 'vibe' = onda (no h); sling or 'deep' (fem.) = honda (with h). Correct."
+ },
+ {
+  "key": "asta/hasta",
+  "reading": "/ˈas.ta/",
+  "options": [
+   {
+    "word": "asta",
+    "gloss": "a flagpole/staff; a horn or antler; the shaft of a lance"
+   },
+   {
+    "word": "hasta",
+    "gloss": "'until / up to / as far as' (preposition); also 'even' (adverb)"
+   }
+  ],
+  "note": "Silent-h homophone. Flagpole/horn = asta (no h); preposition until/up-to = hasta (with h). 'A media asta' vs 'hasta luego'. Correct."
+ },
+ {
+  "key": "hora/ora",
+  "reading": "/ˈo.ɾa/",
+  "options": [
+   {
+    "word": "hora",
+    "gloss": "an hour; the time (of day)"
+   },
+   {
+    "word": "ora",
+    "gloss": "'prays' (orar, 3sg); also conjunction 'ora... ora...' = now... now..."
+   }
+  ],
+  "note": "Silent-h homophone. Time = hora (with h); prays / 'now...now...' = ora (no h). Correctly distinguished from ahora. Correct."
+ },
+ {
+  "key": "huso/uso",
+  "reading": "/ˈu.so/",
+  "options": [
+   {
+    "word": "huso",
+    "gloss": "a spindle (for spinning thread); huso horario = time zone"
+   },
+   {
+    "word": "uso",
+    "gloss": "use/usage (noun); 'I use' (usar, 1sg present)"
+   }
+  ],
+  "note": "Silent-h homophone. Spindle / time zone = huso (with h); use/usage or 'I use' = uso (no h). Correct."
+ },
+ {
+  "key": "hizo/izo",
+  "reading": "/ˈi.so/ (seseo) ~ /ˈi.θo/",
+  "options": [
+   {
+    "word": "hizo",
+    "gloss": "'did/made' (hacer, 3sg preterite)"
+   },
+   {
+    "word": "izo",
+    "gloss": "'I hoist/raise' (izar, 1sg present) — e.g. raising a flag/sail"
+   }
+  ],
+  "note": "Silent-h pair, full homophones ONLY under seseo. The /s/~/θ/ split is legitimate here: BOTH words are spelled with z, so distinción dialects pronounce both /θ/ and they remain homophones; seseo merges to /s/. Reading correct as written."
+ },
+ {
+  "key": "ha/a/ah",
+  "reading": "/a/",
+  "options": [
+   {
+    "word": "ha",
+    "gloss": "'has' (auxiliary haber, 3sg) before a participle ('ha llegado'); or 'ha de' = must"
+   },
+   {
+    "word": "a",
+    "gloss": "'to / at' (preposition)"
+   },
+   {
+    "word": "ah",
+    "gloss": "'ah/oh' (interjection of surprise/realization)"
+   }
+  ],
+  "note": "Silent-h trio. + participle / 'de' = ha (auxiliary); directional/object preposition = a; exclamation = ah. Correct."
+ },
+ {
+  "key": "he/e/eh",
+  "reading": "/e/",
+  "options": [
+   {
+    "word": "he",
+    "gloss": "'I have' (auxiliary haber, 1sg) before a participle ('he visto'); also 'he aquí' = behold"
+   },
+   {
+    "word": "e",
+    "gloss": "'and' (conjunction, used before words starting i-/hi-, e.g. 'padre e hijo')"
+   },
+   {
+    "word": "eh",
+    "gloss": "'eh/hey' (interjection to get attention or seek agreement)"
+   }
+  ],
+  "note": "Silent-h trio. + participle = he (auxiliary); 'and' before i-/hi- sound = e; attention exclamation = eh. Correct."
+ },
+ {
+  "key": "ay/hay/ahí",
+  "reading": "/ai/ vs /aˈi/",
+  "options": [
+   {
+    "word": "ay",
+    "gloss": "'ouch/oh!' (interjection of pain/emotion); also a noun 'a lament'"
+   },
+   {
+    "word": "hay",
+    "gloss": "'there is / there are' (impersonal haber); 'hay que' = one must"
+   },
+   {
+    "word": "ahí",
+    "gloss": "'there' (adverb of place) — oxytone, stressed on final í, /aˈi/ (two syllables)"
+   }
+  ],
+  "note": "ay and hay are true homophones /ai/ (monosyllabic); ahí is a near member only, /aˈi/ two-syllable end-stressed. Emotion = ay; existence = hay; place = ahí. Reading and disambiguation correct."
+ },
+ {
+  "key": "abría/habría",
+  "reading": "/aˈβɾi.a/",
+  "options": [
+   {
+    "word": "abría",
+    "gloss": "'I/he/she opened / was opening' (abrir, imperfect indicative)"
+   },
+   {
+    "word": "habría",
+    "gloss": "'I/he/she would have' (conditional of haber, auxiliary), e.g. 'habría ido'"
+   }
+  ],
+  "note": "KEY CORRECTED — original key was the garbled 'haya/aya — vs aún/halla edge', which did not match its own options. The actual pair (abría/habría) is a valid silent-h homophone: opening = abría (no h); conditional 'would have' before a participle = habría (with h). Reading /aˈβɾi.a/ correct."
+ },
+ {
+  "key": "olla/hoya",
+  "reading": "/ˈo.ʝa/",
+  "options": [
+   {
+    "word": "olla",
+    "gloss": "a cooking pot; also a stew dish"
+   },
+   {
+    "word": "hoya",
+    "gloss": "a pit/hole/hollow in the ground; a grave; a river basin/valley"
+   }
+  ],
+  "note": "DUPLICATE-SAFE: this is the single olla/hoya entry; listed once. Yeísmo + silent-h homophone, correct."
+ },
+ {
+  "key": "deshecho/desecho",
+  "reading": "/deˈse.tʃo/",
+  "options": [
+   {
+    "word": "deshecho",
+    "gloss": "'undone / destroyed / broken / shattered' (participle of deshacer)"
+   },
+   {
+    "word": "desecho",
+    "gloss": "waste/scrap/discard (noun); also 'I discard/reject' (desechar, 1sg present)"
+   }
+  ],
+  "note": "READING CORRECTED — original falsely claimed a '/deˈθe.tʃo/' seseo variant. Both words are spelled with plain s (deshacer / desechar), no z or c+e/i, so a /θ/ pronunciation is impossible; they are homophones in ALL dialects. Stripped the seseo split. The pair itself is valid: undone/destroyed = deshecho (h, from deshacer); waste / 'I discard' = desecho (no h, from desechar)."
+ },
+ {
+  "key": "rehusar/reusar",
+  "reading": "/reuˈsaɾ/",
+  "options": [
+   {
+    "word": "rehusar",
+    "gloss": "to refuse / decline / turn down"
+   },
+   {
+    "word": "reusar",
+    "gloss": "to reuse (use again)"
+   }
+  ],
+  "note": "Silent-h homophone, both plain s. Refusing = rehusar (with h); using again = reusar (no h, re-+usar). Correct."
+ },
+ {
+  "key": "aremos/haremos",
+  "reading": "/aˈɾe.mos/",
+  "options": [
+   {
+    "word": "aremos",
+    "gloss": "'let us plow / we plow' (arar, 1pl present subjunctive)"
+   },
+   {
+    "word": "haremos",
+    "gloss": "'we will do / we will make' (hacer, 1pl future)"
+   }
+  ],
+  "note": "Silent-h homophone. Plowing = aremos (no h, rare/agricultural); common future 'we will do/make' = haremos (with h). Correct."
+ },
+ {
+  "key": "hablando/ablando",
+  "reading": "/aˈβlan.do/",
+  "options": [
+   {
+    "word": "hablando",
+    "gloss": "'speaking / talking' (gerund of hablar)"
+   },
+   {
+    "word": "ablando",
+    "gloss": "'I soften / I make tender' (ablandar, 1sg present)"
+   }
+  ],
+  "note": "Silent-h homophone. Talking = hablando (with h); softening = ablando (no h). Correct."
+ },
+ {
+  "key": "tubo/tuvo",
+  "reading": "/ˈtu.βo/",
+  "options": [
+   {
+    "word": "tubo",
+    "gloss": "a tube/pipe (noun)"
+   },
+   {
+    "word": "tuvo",
+    "gloss": "'had' (tener, 3sg preterite)"
+   }
+  ],
+  "note": "b/v homophone — OFF the stated g/j·ll/y·h-muda theme (entry self-acknowledges this). Content correct: pipe/tube = tubo (b); 'had' = tuvo (v). Kept with off-category caveat."
+ },
+ {
+  "key": "grabar/gravar",
+  "reading": "/ɡɾaˈβaɾ/",
+  "options": [
+   {
+    "word": "grabar",
+    "gloss": "to record (audio/video); to engrave/carve"
+   },
+   {
+    "word": "gravar",
+    "gloss": "to tax / impose a charge or burden on"
+   }
+  ],
+  "note": "b/v homophone — OFF the stated theme (entry self-acknowledges). Content correct: record/engrave = grabar (b); levy tax/burden = gravar (v). Kept with off-category caveat."
+ },
+ {
+  "key": "actual / actualmente",
+  "reading": "ak-too-AL / ak-too-al-MEN-te",
+  "options": [
+   {
+    "word": "actual",
+    "gloss": "current, present-day (Spanish adjective)"
+   },
+   {
+    "word": "actualmente",
+    "gloss": "currently, at present (Spanish adverb)"
+   },
+   {
+    "word": "actual (English reading)",
+    "gloss": "the English word 'actual' = real/genuine, which Spanish 'actual' does NOT mean"
+   }
+  ],
+  "note": "Verified. Spanish 'actual' is temporal ('current'), never 'real'. 'El problema actual' = the current problem. English 'actual' (real) = Sp. 'real/verdadero'."
+ },
+ {
+  "key": "embarazada / avergonzada",
+  "reading": "em-ba-ra-THA-da / a-ver-gon-THA-da",
+  "options": [
+   {
+    "word": "embarazada",
+    "gloss": "pregnant (female)"
+   },
+   {
+    "word": "avergonzada",
+    "gloss": "embarrassed, ashamed (female)"
+   },
+   {
+    "word": "embarazoso",
+    "gloss": "awkward, embarrassing (of a situation)"
+   }
+  ],
+  "note": "Verified. The classic false friend: 'embarazada' = pregnant, never 'embarrassed' (= avergonzada). Castilian TH reading correct."
+ },
+ {
+  "key": "sensible / sensato",
+  "reading": "sen-SEE-ble / sen-SA-to",
+  "options": [
+   {
+    "word": "sensible",
+    "gloss": "sensitive, easily affected, touchy"
+   },
+   {
+    "word": "sensato",
+    "gloss": "sensible, level-headed, prudent"
+   }
+  ],
+  "note": "Verified. English 'sensible' = Sp. 'sensato'; Sp. 'sensible' = English 'sensitive'. Stress on penult is correct."
+ },
+ {
+  "key": "carpeta / alfombra",
+  "reading": "kar-PE-ta / al-FOM-bra",
+  "options": [
+   {
+    "word": "carpeta",
+    "gloss": "folder, binder, file folder (paper or computer)"
+   },
+   {
+    "word": "alfombra",
+    "gloss": "carpet, rug"
+   }
+  ],
+  "note": "Verified. 'Carpeta' = folder, not 'carpet'; floor carpet = 'alfombra'. (Note: in some regions 'carpeta' can mean a tablecloth/desk cover, but folder is the standard false-friend sense.)"
+ },
+ {
+  "key": "éxito / salida",
+  "reading": "EK-see-to / sa-LEE-da",
+  "options": [
+   {
+    "word": "éxito",
+    "gloss": "success"
+   },
+   {
+    "word": "salida",
+    "gloss": "exit, way out"
+   }
+  ],
+  "note": "Verified. 'Éxito' = success, never an exit; the EXIT sign reads 'SALIDA'."
+ },
+ {
+  "key": "librería / biblioteca",
+  "reading": "lee-bre-REE-a / bee-blee-o-TE-ka",
+  "options": [
+   {
+    "word": "librería",
+    "gloss": "bookstore, bookshop"
+   },
+   {
+    "word": "biblioteca",
+    "gloss": "library (lending/reading institution)"
+   }
+  ],
+  "note": "Verified. 'Librería' sells books (commercial); a lending 'library' = 'biblioteca'."
+ },
+ {
+  "key": "recordar / grabar",
+  "reading": "re-kor-DAR / gra-BAR",
+  "options": [
+   {
+    "word": "recordar",
+    "gloss": "to remember, recall; also to remind"
+   },
+   {
+    "word": "grabar",
+    "gloss": "to record (audio/video); to engrave"
+   }
+  ],
+  "note": "Verified. 'Recordar' = remember/remind, never 'to record (media)' (= grabar). The 'remind' sense (recordarle algo a alguien) is correct."
+ },
+ {
+  "key": "asistir / atender / ayudar",
+  "reading": "a-sees-TEER / a-ten-DER / a-yoo-DAR",
+  "options": [
+   {
+    "word": "asistir",
+    "gloss": "to attend, to be present at (asistir a)"
+   },
+   {
+    "word": "atender",
+    "gloss": "to attend to, serve, wait on (a customer/patient)"
+   },
+   {
+    "word": "ayudar",
+    "gloss": "to assist, to help"
+   }
+  ],
+  "note": "Verified. 'Asistir a' = attend an event; English 'to assist' (help) = 'ayudar'; 'atender' = serve/take care of someone. ('Asistir' can also mean to assist/aid in formal register, which is why this set is worth keeping.)"
+ },
+ {
+  "key": "realizar / darse cuenta",
+  "reading": "re-a-lee-THAR / DAR-se KWEN-ta",
+  "options": [
+   {
+    "word": "realizar",
+    "gloss": "to carry out, perform, accomplish, make"
+   },
+   {
+    "word": "darse cuenta",
+    "gloss": "to realize, to become aware (darse cuenta de)"
+   }
+  ],
+  "note": "Verified. 'Realizar' = carry out/execute; English 'to realize' (notice) = 'darse cuenta de'."
+ },
+ {
+  "key": "constipado / estreñido / resfriado",
+  "reading": "kons-tee-PA-do / es-tre-NYEE-do / res-free-A-do",
+  "options": [
+   {
+    "word": "constipado",
+    "gloss": "having a head cold; congested, stuffed-up"
+   },
+   {
+    "word": "resfriado",
+    "gloss": "a cold; chilled, having caught a cold"
+   },
+   {
+    "word": "estreñido",
+    "gloss": "constipated (bowels)"
+   }
+  ],
+  "note": "Verified. 'Constipado' = a cold/nasal congestion, NOT constipated; bowel constipation = 'estreñido'. Reading order in the array differs from the key order but each gloss is correct."
+ },
+ {
+  "key": "molestar / abusar",
+  "reading": "mo-les-TAR / a-boo-SAR",
+  "options": [
+   {
+    "word": "molestar",
+    "gloss": "to bother, annoy, disturb"
+   },
+   {
+    "word": "abusar (de)",
+    "gloss": "to abuse, take advantage of; (de alguien) to sexually assault"
+   }
+  ],
+  "note": "Verified. 'Molestar' = annoy/bother, NOT 'to molest'. Serious/sexual abuse = 'abusar (de)' or 'acosar'."
+ },
+ {
+  "key": "introducir / presentar",
+  "reading": "een-tro-doo-THEER / pre-sen-TAR",
+  "options": [
+   {
+    "word": "introducir",
+    "gloss": "to insert, put in; to introduce/bring in (a topic or a product to a market)"
+   },
+   {
+    "word": "presentar",
+    "gloss": "to introduce (a person); to present"
+   }
+  ],
+  "note": "Verified against RAE sense. Introduce a PERSON = 'presentar'; 'introducir' = insert/put in, or bring in a topic/product (introducir un producto en el mercado). Both glosses legitimate."
+ },
+ {
+  "key": "fábrica / tela / fabricar",
+  "reading": "FA-bree-ka / TE-la / fa-bree-KAR",
+  "options": [
+   {
+    "word": "fábrica",
+    "gloss": "factory, plant"
+   },
+   {
+    "word": "tela",
+    "gloss": "fabric, cloth"
+   },
+   {
+    "word": "fabricar",
+    "gloss": "to manufacture, to make"
+   }
+  ],
+  "note": "Verified. 'Fábrica' = factory, not 'fabric' (= tela). Verb 'fabricar' = manufacture."
+ },
+ {
+  "key": "ropa / cuerda / soga",
+  "reading": "RRO-pa / KWER-da / SO-ga",
+  "options": [
+   {
+    "word": "ropa",
+    "gloss": "clothes, clothing"
+   },
+   {
+    "word": "cuerda",
+    "gloss": "rope, cord, string"
+   },
+   {
+    "word": "soga",
+    "gloss": "rope (thick); noose"
+   }
+  ],
+  "note": "Verified. 'Ropa' = clothing, not 'rope' (= cuerda/soga). Initial 'r' is a trill, correctly shown as RR."
+ },
+ {
+  "key": "pretender / fingir",
+  "reading": "pre-ten-DER / feen-HEER",
+  "options": [
+   {
+    "word": "pretender",
+    "gloss": "to aim/intend to, to seek; to court/woo"
+   },
+   {
+    "word": "fingir",
+    "gloss": "to pretend, to feign"
+   }
+  ],
+  "note": "Verified. 'Pretender' = intend/aspire/court; English 'to pretend' (fake) = 'fingir'. 'feen-HEER' correctly renders the velar 'g' (j-sound)."
+ },
+ {
+  "key": "asistencia / audiencia / público",
+  "reading": "a-sees-TEN-thya / au-DYEN-thya / POO-blee-ko",
+  "options": [
+   {
+    "word": "asistencia",
+    "gloss": "attendance (turnout); assistance/aid"
+   },
+   {
+    "word": "audiencia",
+    "gloss": "audience (viewers/listeners, ratings); a court hearing"
+   },
+   {
+    "word": "público",
+    "gloss": "audience (crowd present); the public"
+   }
+  ],
+  "note": "Verified. Live crowd = 'público'; broadcast/ratings audience = 'audiencia'; 'asistencia' = attendance count or help. All three senses accurate."
+ },
+ {
+  "key": "carácter / personaje",
+  "reading": "ka-RAK-ter / per-so-NA-he",
+  "options": [
+   {
+    "word": "carácter",
+    "gloss": "character (personality, temperament); a typographic character/symbol"
+   },
+   {
+    "word": "personaje",
+    "gloss": "character (in a story, film, or play)"
+   }
+  ],
+  "note": "Verified. Fictional character = 'personaje'; 'carácter' = personality or a text symbol. Note 'carácter' has an irregular plural (caracteres), not relevant to the gloss."
+ },
+ {
+  "key": "argumento / discusión / pelea",
+  "reading": "ar-goo-MEN-to / dees-koo-SYON / pe-LE-a",
+  "options": [
+   {
+    "word": "argumento",
+    "gloss": "plot (of a story); a reasoned argument/case"
+   },
+   {
+    "word": "discusión",
+    "gloss": "argument, quarrel; discussion, debate"
+   },
+   {
+    "word": "pelea",
+    "gloss": "fight, quarrel"
+   }
+  ],
+  "note": "Verified. A heated 'argument' (quarrel) = 'discusión'/'pelea'; 'argumento' = plot or logical argument. All glosses correct."
+ },
+ {
+  "key": "soportar / apoyar / mantener",
+  "reading": "so-por-TAR / a-po-YAR / man-te-NER",
+  "options": [
+   {
+    "word": "soportar",
+    "gloss": "to endure, tolerate, bear; to physically bear a weight"
+   },
+   {
+    "word": "apoyar",
+    "gloss": "to support (back, endorse); to lean on"
+   },
+   {
+    "word": "mantener",
+    "gloss": "to maintain; to support financially"
+   }
+  ],
+  "note": "Verified. Emotional/financial support = 'apoyar'/'mantener'; 'soportar' = put up with or bear weight (a structural false friend of 'support')."
+ },
+ {
+  "key": "éxito / suceso / salida",
+  "reading": "EK-see-to / soo-THE-so / sa-LEE-da",
+  "options": [
+   {
+    "word": "éxito",
+    "gloss": "success"
+   },
+   {
+    "word": "suceso",
+    "gloss": "event, incident, happening"
+   },
+   {
+    "word": "salida",
+    "gloss": "exit"
+   }
+  ],
+  "note": "Verified triple trap. 'éxito' = success (not exit); 'suceso' = event (false friend of 'success'); 'salida' = exit. All three confirmed."
+ },
+ {
+  "key": "ganga / banda / pandilla",
+  "reading": "GAN-ga / BAN-da / pan-DEE-ya",
+  "options": [
+   {
+    "word": "ganga",
+    "gloss": "bargain, good deal"
+   },
+   {
+    "word": "banda",
+    "gloss": "band (music); gang/band of people"
+   },
+   {
+    "word": "pandilla",
+    "gloss": "gang; group of friends; street gang"
+   }
+  ],
+  "note": "Verified. 'Ganga' = a bargain, never a criminal 'gang'; gang = 'banda'/'pandilla'."
+ },
+ {
+  "key": "compromiso / acuerdo",
+  "reading": "kom-pro-MEE-so / a-KWER-do",
+  "options": [
+   {
+    "word": "compromiso",
+    "gloss": "commitment, obligation; engagement (to marry)"
+   },
+   {
+    "word": "acuerdo",
+    "gloss": "agreement, accord"
+   }
+  ],
+  "note": "Verified. 'Compromiso' = commitment/engagement, NOT a give-and-take 'compromise' (best rendered 'acuerdo'/'arreglo')."
+ },
+ {
+  "key": "casualidad / víctima / herido",
+  "reading": "ka-swa-lee-DAD / VEEK-tee-ma / e-REE-do",
+  "options": [
+   {
+    "word": "casualidad",
+    "gloss": "coincidence, chance"
+   },
+   {
+    "word": "víctima",
+    "gloss": "victim; (war/accident) casualty"
+   },
+   {
+    "word": "herido",
+    "gloss": "injured person; casualty (wounded)"
+   }
+  ],
+  "note": "Verified (WordReference/Collins/Babbel). 'Casualidad' = coincidence, NOT 'casualty'; casualties = 'víctimas'/'heridos'/'muertos'. Both share Latin 'casus' but diverged."
+ },
+ {
+  "key": "delito / crimen / delincuente",
+  "reading": "de-LEE-to / KREE-men / de-leen-KWEN-te",
+  "options": [
+   {
+    "word": "delito",
+    "gloss": "crime, offense (legal, any)"
+   },
+   {
+    "word": "crimen",
+    "gloss": "serious crime, esp. murder/homicide"
+   },
+   {
+    "word": "delincuente",
+    "gloss": "criminal, offender"
+   }
+  ],
+  "note": "Verified. General 'crime' = 'delito'; 'crimen' typically implies a grave/violent crime. 'Delincuente' = offender (not 'delinquent' in the petty/juvenile English sense only)."
+ },
+ {
+  "key": "educado / culto / cortés",
+  "reading": "e-doo-KA-do / KOOL-to / kor-TES",
+  "options": [
+   {
+    "word": "educado",
+    "gloss": "polite, well-mannered"
+   },
+   {
+    "word": "culto",
+    "gloss": "educated, learned, cultured"
+   },
+   {
+    "word": "cortés",
+    "gloss": "courteous, polite"
+   }
+  ],
+  "note": "Verified. 'Educado' = well-mannered, not academically 'educated' (= culto / con estudios)."
+ },
+ {
+  "key": "envío / sobre / portada",
+  "reading": "en-VEE-o / SO-bre / por-TA-da",
+  "options": [
+   {
+    "word": "envío",
+    "gloss": "shipment, dispatch, a sending"
+   },
+   {
+    "word": "sobre",
+    "gloss": "envelope; also the preposition 'about/on'"
+   },
+   {
+    "word": "portada",
+    "gloss": "cover (of a magazine/book), front page"
+   }
+  ],
+  "note": "Verified. Mail 'envelope' = 'sobre' (not 'envío' = shipment); magazine 'cover' = 'portada'. 'Sobre' as preposition adds a genuine secondary-sense trap."
+ },
+ {
+  "key": "decepción / engaño / desilusión",
+  "reading": "de-thep-THYON / en-GA-nyo / de-see-loo-SYON",
+  "options": [
+   {
+    "word": "decepción",
+    "gloss": "disappointment, letdown"
+   },
+   {
+    "word": "desilusión",
+    "gloss": "disappointment, disillusionment"
+   },
+   {
+    "word": "engaño",
+    "gloss": "deception, deceit, trick"
+   }
+  ],
+  "note": "Verified. 'Decepción' = disappointment, NOT 'deception' (= engaño). Strong false friend."
+ },
+ {
+  "key": "envidia / codicia / celos",
+  "reading": "en-VEE-dya / ko-DEE-thya / THE-los",
+  "options": [
+   {
+    "word": "envidia",
+    "gloss": "envy"
+   },
+   {
+    "word": "codicia",
+    "gloss": "greed, covetousness"
+   },
+   {
+    "word": "celos",
+    "gloss": "jealousy (romantic), used in plural"
+   }
+  ],
+  "note": "Verified. 'envidia' = envy of what others have; 'celos' = romantic jealousy (plural); 'codicia' = greed. Not a classic EN/ES false friend but a valid Spanish-internal confusion set (English conflates envy/jealousy)."
+ },
+ {
+  "key": "actualizar / poner al día",
+  "reading": "ak-twa-lee-THAR / po-NER al DEE-a",
+  "options": [
+   {
+    "word": "actualizar",
+    "gloss": "to update, to bring up to date"
+   },
+   {
+    "word": "poner al día",
+    "gloss": "to bring up to date, to catch (someone) up"
+   }
+  ],
+  "note": "Verified. 'Actualizar' = update; it does NOT mean 'to actualize/make real' (= hacer realidad). Both options are synonyms here, which is fine as a pairing."
+ },
+ {
+  "key": "haya / halla / aya / allá",
+  "reading": "A-ya / A-lla / A-ya (homophones in seseo+yeísmo) vs. a-LLÁ (oxytone — stressed on final syllable, so a PARONYM not a true homophone)",
+  "options": [
+   {
+    "word": "haya",
+    "gloss": "subjunctive of 'haber' (that there be/has); also a beech tree"
+   },
+   {
+    "word": "halla",
+    "gloss": "finds, is located — 3rd person of 'hallar'"
+   },
+   {
+    "word": "aya",
+    "gloss": "governess, nanny"
+   },
+   {
+    "word": "allá",
+    "gloss": "(over) there — adverb of place"
+   }
+  ],
+  "note": "Verified (LanguageTool/RAE). CORRECTION to original reading: 'haya/halla/aya' are mutually homophonous only under yeísmo+seseo, but 'allá' carries final stress (a-LLÁ) and is a PARONYM, not a homophone — the original 'all four near-homophones' overstated the overlap. Glosses are accurate; 'haya' is also 1st/3rd person, not only 3rd."
+ },
+ {
+  "key": "hecho / echo",
+  "reading": "E-cho (silent h, identical pronunciation)",
+  "options": [
+   {
+    "word": "hecho",
+    "gloss": "done/made (past participle of 'hacer'); also 'a fact' (noun)"
+   },
+   {
+    "word": "echo",
+    "gloss": "I throw / I pour / I add — 1st person of 'echar'"
+   }
+  ],
+  "note": "Verified. 'Hecho' (h) = done/made or 'a fact'; 'echo' (no h) = I throw/add. 'Echo de menos' = I miss (note: 'echar', no h)."
+ },
+ {
+  "key": "haber / a ver",
+  "reading": "a-BER (identical pronunciation)",
+  "options": [
+   {
+    "word": "haber",
+    "gloss": "to have (auxiliary); existential 'there to be' (infinitive)"
+   },
+   {
+    "word": "a ver",
+    "gloss": "let's see / to see (preposition 'a' + infinitive 'ver')"
+   }
+  ],
+  "note": "Verified. 'Haber' = one verb (va a haber problemas); 'a ver' = two words, 'let's see' (a ver qué pasa)."
+ },
+ {
+  "key": "tubo / tuvo",
+  "reading": "TOO-bo (b/v merge to /b/, identical)",
+  "options": [
+   {
+    "word": "tubo",
+    "gloss": "tube, pipe (noun)"
+   },
+   {
+    "word": "tuvo",
+    "gloss": "had — 3rd person singular preterite of 'tener'"
+   }
+  ],
+  "note": "Verified. 'Tubo' = pipe; 'tuvo' = he/she/it had. Distinguished by noun-vs-verb context only."
+ },
+ {
+  "key": "vaya / valla / baya",
+  "reading": "BA-ya (identical under yeísmo + b/v merger)",
+  "options": [
+   {
+    "word": "vaya",
+    "gloss": "go/goes — subjunctive of 'ir'; also interjection 'wow/well'"
+   },
+   {
+    "word": "valla",
+    "gloss": "fence, hurdle, billboard"
+   },
+   {
+    "word": "baya",
+    "gloss": "berry (fruit)"
+   }
+  ],
+  "note": "Verified. Verb/interjection = 'vaya'; fence/billboard = 'valla'; berry = 'baya'. True three-way homophone under yeísmo."
+ },
+ {
+  "key": "ha / a / ah",
+  "reading": "a (all identical)",
+  "options": [
+   {
+    "word": "ha",
+    "gloss": "has — auxiliary 'haber' before a participle (ha llegado)"
+   },
+   {
+    "word": "a",
+    "gloss": "to/at — preposition"
+   },
+   {
+    "word": "ah",
+    "gloss": "ah/oh — interjection"
+   }
+  ],
+  "note": "Verified. 'Ha' + participle (ha comido); 'a' = preposition (voy a casa); 'ah' = exclamation."
+ },
+ {
+  "key": "sino / si no",
+  "reading": "SEE-no (one word) vs. see-NO / SEE no (two words; can shift stress to 'no')",
+  "options": [
+   {
+    "word": "sino",
+    "gloss": "but rather (conjunction); also 'fate/destiny' (noun)"
+   },
+   {
+    "word": "si no",
+    "gloss": "if not / otherwise ('si' + 'no')"
+   }
+  ],
+  "note": "Verified. One word 'sino' = 'but rather' (no es esto sino aquello) or fate; two words 'si no' = 'if not' (si no vienes...). Minor: in 'si no' the 'no' can carry its own stress, so they are near- not perfect homophones."
+ },
+ {
+  "key": "tubo/tuvo",
+  "reading": "[ˈtu.βo]",
+  "options": [
+   {
+    "word": "tubo",
+    "gloss": "tube, pipe (noun)"
+   },
+   {
+    "word": "tuvo",
+    "gloss": "he/she/it had (3sg preterite of 'tener')"
+   }
+  ],
+  "note": "b/v are homophones (Spanish has no /v/); intervocalic b/v here = [β]. 'tuvo' = verb (+ object or 'que'); 'tubo' = concrete object, takes articles."
+ },
+ {
+  "key": "vaca/baca",
+  "reading": "[ˈba.ka]",
+  "options": [
+   {
+    "word": "vaca",
+    "gloss": "cow"
+   },
+   {
+    "word": "baca",
+    "gloss": "roof rack (of a car)"
+   }
+  ],
+  "note": "Word-initial v/b = [b]. Animal vs car-luggage rack; 'baca' appears in vehicle/luggage context."
+ },
+ {
+  "key": "bello/vello",
+  "reading": "[ˈbe.ʎo] (or [ˈbe.ʝo] under yeísmo)",
+  "options": [
+   {
+    "word": "bello",
+    "gloss": "beautiful (adjective)"
+   },
+   {
+    "word": "vello",
+    "gloss": "body hair, down, fuzz (noun)"
+   }
+  ],
+  "note": "Adjective 'beautiful' vs noun for fine body hair; aesthetics vs anatomy decides. (Reading is phonemic /ʎ/; most speakers merge to [ʝ].)"
+ },
+ {
+  "key": "votar/botar",
+  "reading": "[boˈtar]",
+  "options": [
+   {
+    "word": "votar",
+    "gloss": "to vote (cast a ballot)"
+   },
+   {
+    "word": "botar",
+    "gloss": "to bounce/throw out; in Latin America also to throw away/discard"
+   }
+  ],
+  "note": "Elections take 'votar'; bouncing a ball or discarding takes 'botar'."
+ },
+ {
+  "key": "grabar/gravar",
+  "reading": "[ɡɾaˈβar]",
+  "options": [
+   {
+    "word": "grabar",
+    "gloss": "to record (audio/video); to engrave"
+   },
+   {
+    "word": "gravar",
+    "gloss": "to tax, to burden (impose a charge)"
+   }
+  ],
+  "note": "Recording/engraving vs taxation; 'gravar' co-occurs with impuestos/tributos."
+ },
+ {
+  "key": "rebelar/revelar",
+  "reading": "[reβeˈlar]",
+  "options": [
+   {
+    "word": "rebelar(se)",
+    "gloss": "to rebel, to revolt (against authority)"
+   },
+   {
+    "word": "revelar",
+    "gloss": "to reveal/disclose; to develop (photographic film)"
+   }
+  ],
+  "note": "'Rebelar' usually reflexive (rebelarse contra); 'revelar' takes a secret/truth/photo as object."
+ },
+ {
+  "key": "basto/vasto",
+  "reading": "[ˈbas.to]",
+  "options": [
+   {
+    "word": "basto",
+    "gloss": "coarse, crude, rough (adjective); also the club suit in Spanish cards"
+   },
+   {
+    "word": "vasto",
+    "gloss": "vast, immense (adjective)"
+   }
+  ],
+  "note": "'Vasto' = huge extent (vasto territorio); 'basto' = rough/coarse quality or the card suit."
+ },
+ {
+  "key": "bienes/vienes",
+  "reading": "[ˈbje.nes]",
+  "options": [
+   {
+    "word": "bienes",
+    "gloss": "goods, assets, property (noun, plural)"
+   },
+   {
+    "word": "vienes",
+    "gloss": "you come (2sg present of 'venir')"
+   }
+  ],
+  "note": "Noun for possessions/estate vs verb 'to come'; 'bienes' pairs with raíces/inmuebles."
+ },
+ {
+  "key": "barón/varón",
+  "reading": "[baˈɾon]",
+  "options": [
+   {
+    "word": "barón",
+    "gloss": "baron (noble title)"
+   },
+   {
+    "word": "varón",
+    "gloss": "male, man (as opposed to female)"
+   }
+  ],
+  "note": "Nobility title vs biological-sex sense 'male'; birth/sex context selects 'varón'."
+ },
+ {
+  "key": "hierba/hierva",
+  "reading": "[ˈjeɾ.βa]",
+  "options": [
+   {
+    "word": "hierba",
+    "gloss": "grass, herb (noun)"
+   },
+   {
+    "word": "hierva",
+    "gloss": "let it boil / that it boil (pres. subjunctive of 'hervir')"
+   }
+  ],
+  "note": "Silent h. Plant noun vs subjunctive of 'to boil'; 'hierva' appears after 'que' or as a command."
+ },
+ {
+  "key": "sabia/savia",
+  "reading": "[ˈsa.βja]",
+  "options": [
+   {
+    "word": "sabia",
+    "gloss": "wise (fem. adjective); a wise woman"
+   },
+   {
+    "word": "savia",
+    "gloss": "sap (of a plant)"
+   }
+  ],
+  "note": "Wisdom (fem.) vs plant fluid. 'sabía' (knew) is NOT a homophone — it stresses the í, [saˈβi.a]."
+ },
+ {
+  "key": "hola/ola",
+  "reading": "[ˈo.la]",
+  "options": [
+   {
+    "word": "hola",
+    "gloss": "hello (greeting interjection)"
+   },
+   {
+    "word": "ola",
+    "gloss": "wave (of water; or a wave of heat/crime)"
+   }
+  ],
+  "note": "Silent h: greeting vs sea/heat wave; ¡Hola! and sea context disambiguate."
+ },
+ {
+  "key": "echo/hecho",
+  "reading": "[ˈe.tʃo]",
+  "options": [
+   {
+    "word": "echo",
+    "gloss": "I throw/pour/put in (1sg present of 'echar')"
+   },
+   {
+    "word": "hecho",
+    "gloss": "done/made (past participle of 'hacer'); a fact (noun)"
+   }
+  ],
+  "note": "Verb 'echar' (echo de menos = I miss) vs participle/noun; idiom 'de hecho' = in fact always has h."
+ },
+ {
+  "key": "hay/ahí/ay",
+  "reading": "[ˈai] (hay, ay) vs [aˈi] (ahí)",
+  "options": [
+   {
+    "word": "hay",
+    "gloss": "there is / there are (impersonal of 'haber')"
+   },
+   {
+    "word": "ahí",
+    "gloss": "there (in that place) — stressed on í, [aˈi]"
+   },
+   {
+    "word": "ay",
+    "gloss": "oh!, ouch! (interjection of pain/surprise)"
+   }
+  ],
+  "note": "Existence 'hay' vs location 'ahí' (tilde, hiatus) vs exclamation '¡Ay!'; only hay/ay are truly identical in sound — ahí differs in stress/syllabification."
+ },
+ {
+  "key": "asta/hasta",
+  "reading": "[ˈas.ta]",
+  "options": [
+   {
+    "word": "asta",
+    "gloss": "flagpole, mast; horn/antler (noun)"
+   },
+   {
+    "word": "hasta",
+    "gloss": "until, up to, even (preposition)"
+   }
+  ],
+  "note": "Silent h: noun for pole/horn vs the preposition 'until'; 'a media asta' = at half-mast."
+ },
+ {
+  "key": "onda/honda",
+  "reading": "[ˈon.da]",
+  "options": [
+   {
+    "word": "onda",
+    "gloss": "wave (physics: sound/radio), ripple; vibe (colloquial)"
+   },
+   {
+    "word": "honda",
+    "gloss": "deep (fem. adjective); also a sling/slingshot"
+   }
+  ],
+  "note": "Silent h. Wave/ripple noun vs adjective 'deep' (agua honda) or weapon; physics context takes 'onda'."
+ },
+ {
+  "key": "hojear/ojear",
+  "reading": "[oxeˈar]",
+  "options": [
+   {
+    "word": "hojear",
+    "gloss": "to leaf/flip through (pages of a book) — from 'hoja' (leaf/page)"
+   },
+   {
+    "word": "ojear",
+    "gloss": "to glance at, eye over quickly — from 'ojo' (eye)"
+   }
+  ],
+  "note": "Both 'skim', but 'hojear' literally turns pages (h, hoja); 'ojear' just casts an eye over something."
+ },
+ {
+  "key": "a/ha/¡ah!",
+  "reading": "[a]",
+  "options": [
+   {
+    "word": "a",
+    "gloss": "to, at (preposition)"
+   },
+   {
+    "word": "ha",
+    "gloss": "has (3sg of auxiliary 'haber', + participle)"
+   },
+   {
+    "word": "ah",
+    "gloss": "ah! (interjection)"
+   }
+  ],
+  "note": "'Ha' + past participle (ha llegado); 'a' is a preposition; '¡Ah!' is exclamatory. (Silent h throughout.)"
+ },
+ {
+  "key": "haya/halla/aya/allá",
+  "reading": "[ˈa.ʝa] (yeísmo)",
+  "options": [
+   {
+    "word": "haya",
+    "gloss": "(that) there be / (that) I/he/she have (pres. subj. of 'haber'); also beech tree"
+   },
+   {
+    "word": "halla",
+    "gloss": "finds (3sg present of 'hallar')"
+   },
+   {
+    "word": "aya",
+    "gloss": "governess, nanny (noun)"
+   }
+  ],
+  "note": "Under yeísmo all three sound alike: subjunctive aux 'haya' (often + participle) vs 'finds' vs nanny. 'allá' = over there is stressed on á, [aˈʝa], so it is NOT a true homophone. (RAE-confirmed.)"
+ },
+ {
+  "key": "valla/vaya/baya",
+  "reading": "[ˈba.ʝa] (yeísmo)",
+  "options": [
+   {
+    "word": "valla",
+    "gloss": "fence, barrier; billboard/hurdle (noun)"
+   },
+   {
+    "word": "vaya",
+    "gloss": "(that) he/she/it go (pres. subj. of 'ir'); also '¡vaya!' = wow/well!"
+   },
+   {
+    "word": "baya",
+    "gloss": "berry (small fruit, noun)"
+   }
+  ],
+  "note": "Yeísmo trio: fence/billboard vs subjunctive of 'ir' / interjection vs the fruit; subjunctive 'vaya' follows 'que' or stands as exclamation."
+ },
+ {
+  "key": "pollo/poyo",
+  "reading": "[ˈpo.ʝo] (yeísmo)",
+  "options": [
+   {
+    "word": "pollo",
+    "gloss": "chicken (the bird/meat)"
+   },
+   {
+    "word": "poyo",
+    "gloss": "stone bench, ledge (built against a wall, from Latin podium)"
+   }
+  ],
+  "note": "Food/animal vs masonry bench; 'poyo' is rare and architectural. (RAE-confirmed.)"
+ },
+ {
+  "key": "rallar/rayar",
+  "reading": "[raˈʝar] (yeísmo)",
+  "options": [
+   {
+    "word": "rallar",
+    "gloss": "to grate (cheese, etc.) — from 'ralladura'"
+   },
+   {
+    "word": "rayar",
+    "gloss": "to scratch, to draw lines on, to cross out — from 'raya' (line)"
+   }
+  ],
+  "note": "Grating food (ll) vs scratching/lining a surface (y); kitchen vs marks/lines context decides."
+ },
+ {
+  "key": "arroyo/arrollo",
+  "reading": "[aˈro.ʝo] (yeísmo)",
+  "options": [
+   {
+    "word": "arroyo",
+    "gloss": "stream, brook (noun)"
+   },
+   {
+    "word": "arrollo",
+    "gloss": "I run over / sweep away / roll up (1sg present of 'arrollar')"
+   }
+  ],
+  "note": "Small watercourse (noun) vs verb 'to run over/roll up'; verb takes a direct object."
+ },
+ {
+  "key": "el/él",
+  "reading": "[el]",
+  "options": [
+   {
+    "word": "el",
+    "gloss": "the (masc. sing. definite article)"
+   },
+   {
+    "word": "él",
+    "gloss": "he, him (subject/prepositional pronoun)"
+   }
+  ],
+  "note": "Diacritical tilde: article 'el' precedes a noun; pronoun 'él' replaces/stands for a person."
+ },
+ {
+  "key": "tu/tú",
+  "reading": "[tu]",
+  "options": [
+   {
+    "word": "tu",
+    "gloss": "your (possessive determiner)"
+   },
+   {
+    "word": "tú",
+    "gloss": "you (subject pronoun)"
+   }
+  ],
+  "note": "'Tu' precedes a noun (tu casa); 'tú' is the subject (tú tienes)."
+ },
+ {
+  "key": "mi/mí",
+  "reading": "[mi]",
+  "options": [
+   {
+    "word": "mi",
+    "gloss": "my (possessive determiner); also the musical note E"
+   },
+   {
+    "word": "mí",
+    "gloss": "me (prepositional pronoun: para mí, a mí)"
+   }
+  ],
+  "note": "'Mi' precedes a noun; 'mí' follows a preposition (para mí)."
+ },
+ {
+  "key": "se/sé",
+  "reading": "[se]",
+  "options": [
+   {
+    "word": "se",
+    "gloss": "reflexive/impersonal/passive pronoun; indirect-object 'se'"
+   },
+   {
+    "word": "sé",
+    "gloss": "I know (of 'saber'); or be! (imperative of 'ser')"
+   }
+  ],
+  "note": "Pronoun 'se' is a clitic on a verb; 'sé' is a finite verb form ('Yo sé', '¡Sé bueno!')."
+ },
+ {
+  "key": "si/sí",
+  "reading": "[si]",
+  "options": [
+   {
+    "word": "si",
+    "gloss": "if (conjunction); also the musical note B"
+   },
+   {
+    "word": "sí",
+    "gloss": "yes (affirmation); himself/herself/itself (reflexive: para sí)"
+   }
+  ],
+  "note": "Conditional 'si' opens a clause; affirmation/reflexive 'sí' carries the tilde."
+ },
+ {
+  "key": "de/dé",
+  "reading": "[de]",
+  "options": [
+   {
+    "word": "de",
+    "gloss": "of, from (preposition)"
+   },
+   {
+    "word": "dé",
+    "gloss": "(that) he/she give / give! (pres. subj. or formal imperative of 'dar')"
+   }
+  ],
+  "note": "Preposition 'de' links nouns; verb 'dé' appears after 'que' or as a command ('Que le dé...')."
+ },
+ {
+  "key": "te/té",
+  "reading": "[te]",
+  "options": [
+   {
+    "word": "te",
+    "gloss": "you (object/reflexive pronoun: te veo)"
+   },
+   {
+    "word": "té",
+    "gloss": "tea (the drink, noun)"
+   }
+  ],
+  "note": "Clitic pronoun 'te' attaches to a verb; 'té' is the countable beverage noun."
+ },
+ {
+  "key": "mas/más",
+  "reading": "[mas]",
+  "options": [
+   {
+    "word": "mas",
+    "gloss": "but (literary conjunction = 'pero')"
+   },
+   {
+    "word": "más",
+    "gloss": "more, most; plus (quantity/comparison adverb)"
+   }
+  ],
+  "note": "Unstressed 'mas' = 'but' (formal/literary, = pero); 'más' = quantity/comparison."
+ },
+ {
+  "key": "sino/si no",
+  "reading": "[ˈsi.no]",
+  "options": [
+   {
+    "word": "sino",
+    "gloss": "but rather (adversative conjunction); also fate/destiny (noun)"
+   },
+   {
+    "word": "si no",
+    "gloss": "if not / otherwise (conditional 'si' + negation 'no')"
+   }
+  ],
+  "note": "One word 'sino' contrasts after a negation (no X sino Y); two words 'si no' = 'if ... not'."
+ },
+ {
+  "key": "haber/a ver",
+  "reading": "[aˈβer]",
+  "options": [
+   {
+    "word": "haber",
+    "gloss": "to have (auxiliary infinitive); to exist (existential: 'va a haber')"
+   },
+   {
+    "word": "a ver",
+    "gloss": "let's see / to see ('a' + infinitive 'ver')"
+   }
+  ],
+  "note": "Single verb 'haber' = auxiliary/existential; 'a ver' = the expression 'let's see' or 'a' + 'ver'."
+ },
+ {
+  "key": "también/tan bien",
+  "reading": "[tamˈbjen]",
+  "options": [
+   {
+    "word": "también",
+    "gloss": "also, too (adverb of addition)"
+   },
+   {
+    "word": "tan bien",
+    "gloss": "so well ('tan' + adverb 'bien')"
+   }
+  ],
+  "note": "One word = 'also'; two words = degree 'so well' (lo hace tan bien)."
+ },
+ {
+  "key": "porque/por que/porqué/por qué",
+  "reading": "[poɾˈke]",
+  "options": [
+   {
+    "word": "porque",
+    "gloss": "because (causal conjunction)"
+   },
+   {
+    "word": "por qué",
+    "gloss": "why (interrogative/exclamative: ¿Por qué?)"
+   },
+   {
+    "word": "porqué",
+    "gloss": "the reason, the why (noun, takes an article: el porqué)"
+   },
+   {
+    "word": "por que",
+    "gloss": "for which / so that (preposition 'por' + relative/conjunction 'que')"
+   }
+  ],
+  "note": "'qué' is tonic in interrogative 'por qué' and in the noun 'porqué' (stressed on final syllable, por-QUÉ); causal 'porque' is one unstressed word. Article before it → noun 'porqué'; question marks → 'por qué'."
+ },
+ {
+  "key": "a ver/haber",
+  "reading": "[aˈβeɾ]",
+  "options": [
+   {
+    "word": "a ver",
+    "gloss": "\"let's see\" / \"let me see\" (prep a + infinitive ver)"
+   },
+   {
+    "word": "haber",
+    "gloss": "\"to have\" (auxiliary infinitive); also \"there to be\"; also the noun el haber \"asset, credit\" (pl. los haberes)"
+   }
+  ],
+  "note": "\"a ver\" precedes a question or an act of looking/checking (a ver qué pasa); \"haber\" is the verb, esp. in compound tenses (debe haber salido) and impersonal va a haber. Both surface as [aˈβeɾ]."
+ },
+ {
+  "key": "haya/halla/aya/allá",
+  "reading": "[ˈaʝa] (allá is oxytone [aˈʝa])",
+  "options": [
+   {
+    "word": "haya",
+    "gloss": "pres. subjunctive of haber (\"there is/has\"); also \"beech tree\""
+   },
+   {
+    "word": "halla",
+    "gloss": "3rd-sg of hallar, \"finds\" / \"is located\""
+   },
+   {
+    "word": "aya",
+    "gloss": "\"governess, nanny\" (noun)"
+   },
+   {
+    "word": "allá",
+    "gloss": "\"(over) there\" (adverb of place)"
+   }
+  ],
+  "note": "haya/halla/aya are true yeísmo homophones; allá is NOT — it carries final (oxytone) stress and is set apart acoustically, not segmentally. haya = verb/tree, halla = finds, aya = nanny."
+ },
+ {
+  "key": "porque/porqué/por que/por qué",
+  "reading": "[poɾˈke] (porque can reduce to [ˈpoɾke])",
+  "options": [
+   {
+    "word": "porque",
+    "gloss": "\"because\" (causal conjunction)"
+   },
+   {
+    "word": "por qué",
+    "gloss": "\"why\" (interrogative/exclamative)"
+   },
+   {
+    "word": "porqué",
+    "gloss": "\"the reason, the cause\" (masc. noun, takes an article: el porqué)"
+   },
+   {
+    "word": "por que",
+    "gloss": "\"for which / por el que\" (preposition por + relative que), e.g. la razón por que luchó"
+   }
+  ],
+  "note": "Stress falls on qué in the two-word stressed forms; joined porque is causal. por qué asks why; porqué is a noun (el porqué); por que = por el que/cual (rare, but valid)."
+ },
+ {
+  "key": "sino/si no",
+  "reading": "[ˈsi.no]",
+  "options": [
+   {
+    "word": "sino",
+    "gloss": "\"but (rather)\" (adversative conjunction); also \"fate, destiny\" (masc. noun)"
+   },
+   {
+    "word": "si no",
+    "gloss": "\"if not / otherwise\" (conjunction si + adverb no)"
+   }
+  ],
+  "note": "\"sino\" corrects a prior negation (no fue X sino Y) or means destiny; \"si no\" introduces a condition (si no vienes, me voy) and can take an inserted word (si tú no). The two-word form also tends to stress 'no'."
+ },
+ {
+  "key": "también/tan bien",
+  "reading": "[tamˈbjen]",
+  "options": [
+   {
+    "word": "también",
+    "gloss": "\"also, too\" (adverb of addition)"
+   },
+   {
+    "word": "tan bien",
+    "gloss": "\"so well\" (adverb tan + adverb bien)"
+   }
+  ],
+  "note": "\"también\" adds (yo también voy); \"tan bien\" expresses degree of how well (lo hizo tan bien que...). tan bien is often followed by que or a comparison."
+ },
+ {
+  "key": "tampoco/tan poco",
+  "reading": "[tamˈpoko]",
+  "options": [
+   {
+    "word": "tampoco",
+    "gloss": "\"neither, not either\" (negative additive adverb)"
+   },
+   {
+    "word": "tan poco",
+    "gloss": "\"so little\" (adverb tan + quantifier poco)"
+   }
+  ],
+  "note": "\"tampoco\" is the negative counterpart of también (yo tampoco); \"tan poco\" quantifies smallness (comes tan poco que...)."
+ },
+ {
+  "key": "demás/de más",
+  "reading": "[deˈmas]",
+  "options": [
+   {
+    "word": "demás",
+    "gloss": "\"the rest, the others\" (indefinite, usu. lo/los/las demás)"
+   },
+   {
+    "word": "de más",
+    "gloss": "\"too much / extra / in excess\" (prep de + más)"
+   }
+  ],
+  "note": "\"demás\" = the remaining people/things (los demás, por lo demás); \"de más\" = surplus (cobró de más, estás de más)."
+ },
+ {
+  "key": "conque/con que/con qué",
+  "reading": "[koŋˈke] (conque often [ˈkoŋke])",
+  "options": [
+   {
+    "word": "conque",
+    "gloss": "\"so, therefore\" (consecutive conjunction)"
+   },
+   {
+    "word": "con que",
+    "gloss": "\"with which\" (prep con + relative que) or \"that\" after verbs taking con"
+   },
+   {
+    "word": "con qué",
+    "gloss": "\"with what\" (prep con + interrogative qué)"
+   }
+  ],
+  "note": "\"conque\" draws a conclusion (conque eras tú); \"con que\" = con el que/cual (la pluma con que escribo); \"con qué\" asks instrument (¿con qué lo abriste?)."
+ },
+ {
+  "key": "adónde/adonde/a dónde/a donde",
+  "reading": "[aˈðonde]",
+  "options": [
+   {
+    "word": "adónde",
+    "gloss": "\"(to) where\" (interrogative/exclamative of direction)"
+   },
+   {
+    "word": "adonde",
+    "gloss": "\"to where\" (relative adverb, with expressed antecedent)"
+   },
+   {
+    "word": "a dónde",
+    "gloss": "\"to where\" (split interrogative variant)"
+   },
+   {
+    "word": "a donde",
+    "gloss": "\"to where\" (split relative variant)"
+   }
+  ],
+  "note": "The accented forms (adónde / a dónde) are questions/exclamations; the unaccented (adonde / a donde) are relatives implying movement (el lugar adonde vamos). All four are RAE-valid."
+ },
+ {
+  "key": "hay/ahí/ay",
+  "reading": "[ai] (ahí is [aˈi], oxytone)",
+  "options": [
+   {
+    "word": "hay",
+    "gloss": "\"there is / there are\" (impersonal of haber)"
+   },
+   {
+    "word": "ahí",
+    "gloss": "\"there\" (adverb of place)"
+   },
+   {
+    "word": "ay",
+    "gloss": "\"oh!, ouch!\" (interjection of pain/emotion)"
+   }
+  ],
+  "note": "\"hay\" is the verb (hay gente); \"ahí\" locates (está ahí, final stress); \"ay\" is an exclamation (¡ay, qué dolor!). hay/ay are monosyllabic diphthongs; ahí is bisyllabic with hiatus and final stress."
+ },
+ {
+  "key": "asimismo/así mismo/a sí mismo",
+  "reading": "[asiˈmizmo]",
+  "options": [
+   {
+    "word": "asimismo",
+    "gloss": "\"likewise, also\" (adverb; variant así mismo)"
+   },
+   {
+    "word": "así mismo",
+    "gloss": "\"in that very way / likewise\" (manner; así + mismo)"
+   },
+   {
+    "word": "a sí mismo",
+    "gloss": "\"to himself/oneself\" (prep a + reflexive sí + mismo)"
+   }
+  ],
+  "note": "\"asimismo/así mismo\" = also/in that exact way (both RAE-accepted for 'likewise'); \"a sí mismo\" is reflexive and refers a person back to himself (se engaña a sí mismo)."
+ },
+ {
+  "key": "quehacer/qué hacer",
+  "reading": "[keaˈseɾ]",
+  "options": [
+   {
+    "word": "quehacer",
+    "gloss": "\"task, chore, occupation\" (masc. noun, usu. plural quehaceres)"
+   },
+   {
+    "word": "qué hacer",
+    "gloss": "\"what to do\" (interrogative qué + infinitive hacer)"
+   }
+  ],
+  "note": "\"quehacer\" is a noun you can pluralize (los quehaceres domésticos); \"qué hacer\" is an indirect question (no sé qué hacer). Reading shown under seseo."
+ },
+ {
+  "key": "valla/vaya/baya",
+  "reading": "[ˈbaʝa]",
+  "options": [
+   {
+    "word": "valla",
+    "gloss": "\"fence, barrier, billboard\" (noun)"
+   },
+   {
+    "word": "vaya",
+    "gloss": "pres. subjunctive of ir, \"go\"; also interjection \"well!, wow!\""
+   },
+   {
+    "word": "baya",
+    "gloss": "\"berry\" (noun)"
+   }
+  ],
+  "note": "Triple homophone under yeísmo (and b/v merger). valla = barrier (valla publicitaria); vaya = verb/interjection (que vaya bien; ¡vaya!); baya = small fruit."
+ },
+ {
+  "key": "cayó/calló",
+  "reading": "[kaˈʝo]",
+  "options": [
+   {
+    "word": "cayó",
+    "gloss": "3rd-sg preterite of caer, \"fell\""
+   },
+   {
+    "word": "calló",
+    "gloss": "3rd-sg preterite of callar, \"became silent / hushed\""
+   }
+  ],
+  "note": "CORRECTED KEY (original was a corrupted duplicate of the haya/halla set). Homophones under yeísmo. cayó = fell (se cayó al suelo); calló = went quiet (se calló de repente). Context: motion/dropping vs. silence/speech."
+ },
+ {
+  "key": "rallar/rayar",
+  "reading": "[raˈʝaɾ]",
+  "options": [
+   {
+    "word": "rallar",
+    "gloss": "\"to grate\" (e.g. cheese)"
+   },
+   {
+    "word": "rayar",
+    "gloss": "\"to scratch / draw lines on / cross a line\""
+   }
+  ],
+  "note": "Homophones under yeísmo. rallar = grate food (rallar queso); rayar = scratch a surface or rule lines (rayar el coche)."
+ },
+ {
+  "key": "olla/hoya",
+  "reading": "[ˈoʝa]",
+  "options": [
+   {
+    "word": "olla",
+    "gloss": "\"pot, cooking pot, stew\" (noun)"
+   },
+   {
+    "word": "hoya",
+    "gloss": "\"pit, hollow, valley basin\" (noun)"
+   }
+  ],
+  "note": "Homophones under yeísmo (hoya has silent h). olla = cookware (olla a presión); hoya = a hollow/depression in the ground."
+ },
+ {
+  "key": "casa/caza",
+  "reading": "[ˈkasa]",
+  "options": [
+   {
+    "word": "casa",
+    "gloss": "\"house, home\" (noun); also \"marries\" (casar)"
+   },
+   {
+    "word": "caza",
+    "gloss": "\"hunt, hunting\" (noun); also \"hunts\" (cazar)"
+   }
+  ],
+  "note": "Homophones under seseo (distinct under distinción). casa = dwelling; caza = hunting (ir de caza). Verb senses: se casa vs. caza animales."
+ },
+ {
+  "key": "cocer/coser",
+  "reading": "[koˈseɾ]",
+  "options": [
+   {
+    "word": "cocer",
+    "gloss": "\"to cook/boil (in liquid)\""
+   },
+   {
+    "word": "coser",
+    "gloss": "\"to sew\""
+   }
+  ],
+  "note": "Homophones under seseo. cocer = boil/cook food (cocer pasta); coser = stitch with needle and thread (coser un botón)."
+ },
+ {
+  "key": "ciento/siento",
+  "reading": "[ˈsjento]",
+  "options": [
+   {
+    "word": "ciento",
+    "gloss": "\"(one) hundred\" (numeral); also \"percent\" in por ciento"
+   },
+   {
+    "word": "siento",
+    "gloss": "1st-sg of sentir \"I feel\" / of sentar \"I seat (myself)\""
+   }
+  ],
+  "note": "Homophones under seseo. ciento = number (cien/ciento, por ciento); siento = I feel/regret (lo siento) or I sit (me siento)."
+ },
+ {
+  "key": "abrazar/abrasar",
+  "reading": "[aβɾaˈsaɾ]",
+  "options": [
+   {
+    "word": "abrazar",
+    "gloss": "\"to hug, embrace\""
+   },
+   {
+    "word": "abrasar",
+    "gloss": "\"to burn, scorch\""
+   }
+  ],
+  "note": "Homophones under seseo. abrazar = embrace (abrazar a un amigo); abrasar = burn/scald (el sol abrasa)."
+ },
+ {
+  "key": "ves/vez",
+  "reading": "[bes]",
+  "options": [
+   {
+    "word": "ves",
+    "gloss": "2nd-sg of ver, \"you see\""
+   },
+   {
+    "word": "vez",
+    "gloss": "\"time, occasion\" (noun)"
+   }
+  ],
+  "note": "Homophones under seseo. ves = verb (¿ves la tele?); vez = occurrence (una vez, a veces, tal vez)."
+ },
+ {
+  "key": "hola/ola",
+  "reading": "[ˈola]",
+  "options": [
+   {
+    "word": "hola",
+    "gloss": "\"hello, hi\" (greeting)"
+   },
+   {
+    "word": "ola",
+    "gloss": "\"wave\" (of water; also a wave of heat/people)"
+   }
+  ],
+  "note": "Silent-h pair. hola = greeting; ola = a wave (ola de calor). Context: salutation vs. sea/surge. (Cleaned a stray quote in the original ola gloss.)"
+ },
+ {
+  "key": "hasta/asta",
+  "reading": "[ˈasta]",
+  "options": [
+   {
+    "word": "hasta",
+    "gloss": "\"until, up to, as far as; even\" (preposition)"
+   },
+   {
+    "word": "asta",
+    "gloss": "\"flagpole; horn/antler\" (noun)"
+   }
+  ],
+  "note": "Silent-h pair. hasta = limit/preposition (hasta mañana); asta = pole or animal horn (la bandera a media asta)."
+ },
+ {
+  "key": "echo/hecho",
+  "reading": "[ˈetʃo]",
+  "options": [
+   {
+    "word": "echo",
+    "gloss": "1st-sg of echar, \"I throw/put/pour\""
+   },
+   {
+    "word": "hecho",
+    "gloss": "past participle of hacer \"done/made\"; also \"fact\" (noun)"
+   }
+  ],
+  "note": "Silent-h pair. echo = I throw/add (te echo de menos); hecho = done/made or a fact (he hecho; de hecho). Test: 'echar' = no h, 'hacer' = with h."
+ },
+ {
+  "key": "tubo/tuvo",
+  "reading": "[ˈtuβo]",
+  "options": [
+   {
+    "word": "tubo",
+    "gloss": "\"tube, pipe\" (noun)"
+   },
+   {
+    "word": "tuvo",
+    "gloss": "3rd-sg preterite of tener, \"had\""
+   }
+  ],
+  "note": "b/v homophones. tubo = pipe/tube (tubo de escape); tuvo = had (tuvo suerte). Context: object vs. possession in past."
+ },
+ {
+  "key": "botar/votar",
+  "reading": "[boˈtaɾ]",
+  "options": [
+   {
+    "word": "botar",
+    "gloss": "\"to bounce; to throw out; to launch (a boat)\""
+   },
+   {
+    "word": "votar",
+    "gloss": "\"to vote\""
+   }
+  ],
+  "note": "b/v homophones. botar = bounce/discard (botar la pelota); votar = cast a vote (votar en las elecciones)."
+ },
+ {
+  "key": "bello/vello",
+  "reading": "[ˈbeʝo]",
+  "options": [
+   {
+    "word": "bello",
+    "gloss": "\"beautiful\" (adjective)"
+   },
+   {
+    "word": "vello",
+    "gloss": "\"body hair, fuzz, down\" (noun)"
+   }
+  ],
+  "note": "b/v homophones (and yeísmo for the ll). bello = beautiful (un bello paisaje); vello = fine body hair (vello facial)."
+ },
+ {
+  "key": "grabar/gravar",
+  "reading": "[ɡɾaˈβaɾ]",
+  "options": [
+   {
+    "word": "grabar",
+    "gloss": "\"to record (audio/video); to engrave\""
+   },
+   {
+    "word": "gravar",
+    "gloss": "\"to tax; to burden/encumber\""
+   }
+  ],
+  "note": "b/v homophones. grabar = record/engrave (grabar un vídeo); gravar = impose a tax (gravar con impuestos)."
+ },
+ {
+  "key": "rebelar/revelar",
+  "reading": "[reβeˈlaɾ]",
+  "options": [
+   {
+    "word": "rebelar(se)",
+    "gloss": "\"to rebel, rise up\""
+   },
+   {
+    "word": "revelar",
+    "gloss": "\"to reveal, disclose; to develop (photos)\""
+   }
+  ],
+  "note": "b/v homophones. rebelarse = revolt (rebelarse contra el poder); revelar = disclose or develop film (revelar un secreto)."
+ },
+ {
+  "key": "sabia/savia",
+  "reading": "[ˈsaβja]",
+  "options": [
+   {
+    "word": "sabia",
+    "gloss": "\"wise\" (fem. adjective) / \"wise woman\" (noun)"
+   },
+   {
+    "word": "savia",
+    "gloss": "\"sap\" (of a plant); figuratively \"vitality\""
+   }
+  ],
+  "note": "b/v homophones, both stressed on the first syllable [ˈsaβja]. Distinct from sabía [saˈβi.a] \"knew/used to know\", which is a llana (paroxytone): the tilde marks a hiatus that breaks the ia diphthong, it does NOT shift stress to the final syllable. sabia = wise; savia = plant sap (savia nueva)."
+ },
+ {
+  "key": "barón/varón",
+  "reading": "[baˈɾon]",
+  "options": [
+   {
+    "word": "barón",
+    "gloss": "\"baron\" (noble title)"
+   },
+   {
+    "word": "varón",
+    "gloss": "\"male, man, boy\" (noun)"
+   }
+  ],
+  "note": "b/v homophones. barón = nobleman; varón = male human (hijo varón). Context: aristocracy vs. sex/gender."
+ },
+ {
+  "key": "más/mas",
+  "reading": "[mas]",
+  "options": [
+   {
+    "word": "más",
+    "gloss": "\"more; plus\" (quantifier/adverb, stressed)"
+   },
+   {
+    "word": "mas",
+    "gloss": "\"but\" (literary conjunction = pero, unstressed)"
+   }
+  ],
+  "note": "más (with tilde) is quantity/comparison (quiero más); mas (no tilde) is a formal/literary 'but' (quiso hablar, mas no pudo). Acoustically near-identical; mas is rare and prosodically weaker."
+ },
+ {
+  "key": "sé/se",
+  "reading": "[se]",
+  "options": [
+   {
+    "word": "sé",
+    "gloss": "1st-sg of saber \"I know\"; imperative of ser \"be\""
+   },
+   {
+    "word": "se",
+    "gloss": "reflexive/impersonal/3rd-person pronoun \"oneself / to him/her/them\""
+   }
+  ],
+  "note": "sé (tilde diacrítica) is a verb (yo sé; sé bueno); se (no tilde) is the clitic pronoun (se lava, se dice). The pronoun is unstressed; the verb bears stress."
+ },
+ {
+  "key": "tú/tu",
+  "reading": "[tu]",
+  "options": [
+   {
+    "word": "tú",
+    "gloss": "\"you\" (subject pronoun, stressed)"
+   },
+   {
+    "word": "tu",
+    "gloss": "\"your\" (possessive determiner, unstressed)"
+   }
+  ],
+  "note": "tú (tilde) is the pronoun (tú decides); tu (no tilde) modifies a noun (tu casa). Tilde diacrítica by syntactic role; both share the same segments."
+ },
+ {
+  "key": "él/el",
+  "reading": "[el]",
+  "options": [
+   {
+    "word": "él",
+    "gloss": "\"he, him, it\" (stressed pronoun)"
+   },
+   {
+    "word": "el",
+    "gloss": "\"the\" (masc. definite article, unstressed)"
+   }
+  ],
+  "note": "él (tilde) is the pronoun (él llegó; para él); el (no tilde) is the article (el coche). Pronoun is stressed; article is a proclitic."
+ },
+ {
+  "key": "mí/mi",
+  "reading": "[mi]",
+  "options": [
+   {
+    "word": "mí",
+    "gloss": "\"me\" (stressed object pronoun after preposition)"
+   },
+   {
+    "word": "mi",
+    "gloss": "\"my\" (possessive determiner); also musical note \"E/mi\""
+   }
+  ],
+  "note": "mí (tilde) follows prepositions (para mí, a mí); mi (no tilde) precedes a noun (mi libro). Tilde diacrítica, identical sound."
+ },
+ {
+  "key": "sí/si",
+  "reading": "[si]",
+  "options": [
+   {
+    "word": "sí",
+    "gloss": "\"yes\" (affirmation); also reflexive pronoun \"oneself\" (de por sí, volver en sí)"
+   },
+   {
+    "word": "si",
+    "gloss": "\"if, whether\" (conjunction); musical note \"B/si\""
+   }
+  ],
+  "note": "sí (tilde) affirms or is the prepositional reflexive (¡sí!; volvió en sí); si (no tilde) is conditional (si llueve). Affirmation/pronoun is stressed; conjunction is unstressed."
+ }
+]

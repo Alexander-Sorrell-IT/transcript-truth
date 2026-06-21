@@ -1,0 +1,627 @@
+{
+ "summary": {
+  "n_clips": 20,
+  "n_whisper_error_spans": 34,
+  "caught_by_qwen": 5,
+  "caught_by_auditor": 0,
+  "missed_by_all_TRUE_RESIDUAL": 29,
+  "missed_examples": [
+   {
+    "clip": "clip_002.wav",
+    "tag": "replace",
+    "gold": "瓶",
+    "whisper": "ビン",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_004.wav",
+    "tag": "replace",
+    "gold": "胎児",
+    "whisper": "退治",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_004.wav",
+    "tag": "replace",
+    "gold": "肺",
+    "whisper": "範囲",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_004.wav",
+    "tag": "replace",
+    "gold": "成",
+    "whisper": "生",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_004.wav",
+    "tag": "replace",
+    "gold": "わ",
+    "whisper": "分",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_005.wav",
+    "tag": "replace",
+    "gold": "棺",
+    "whisper": "火継ぎ",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_005.wav",
+    "tag": "replace",
+    "gold": "負",
+    "whisper": "追",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_006.wav",
+    "tag": "replace",
+    "gold": "au",
+    "whisper": "AU",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_007.wav",
+    "tag": "replace",
+    "gold": "異",
+    "whisper": "意",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_009.wav",
+    "tag": "replace",
+    "gold": "墜",
+    "whisper": "追",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_009.wav",
+    "tag": "replace",
+    "gold": "は",
+    "whisper": "を",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_011.wav",
+    "tag": "replace",
+    "gold": "とも",
+    "whisper": "共",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_011.wav",
+    "tag": "replace",
+    "gold": "acta",
+    "whisper": "ACTA",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_012.wav",
+    "tag": "replace",
+    "gold": "u",
+    "whisper": "U",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_013.wav",
+    "tag": "replace",
+    "gold": "1",
+    "whisper": "一",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_014.wav",
+    "tag": "replace",
+    "gold": "華氏",
+    "whisper": "菓子",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_014.wav",
+    "tag": "replace",
+    "gold": "暑",
+    "whisper": "厚",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_015.wav",
+    "tag": "replace",
+    "gold": "星",
+    "whisper": "製",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_015.wav",
+    "tag": "replace",
+    "gold": "e環",
+    "whisper": "イカン",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_015.wav",
+    "tag": "replace",
+    "gold": "放",
+    "whisper": "方",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_015.wav",
+    "tag": "replace",
+    "gold": "源",
+    "whisper": "現",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_016.wav",
+    "tag": "replace",
+    "gold": "スタダスト",
+    "whisper": "STARDUST",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_016.wav",
+    "tag": "replace",
+    "gold": "x",
+    "whisper": "X",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_017.wav",
+    "tag": "replace",
+    "gold": "付",
+    "whisper": "つ",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_017.wav",
+    "tag": "replace",
+    "gold": "踵",
+    "whisper": "かかと",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_017.wav",
+    "tag": "replace",
+    "gold": "踵",
+    "whisper": "かかと",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_018.wav",
+    "tag": "replace",
+    "gold": "器系",
+    "whisper": "機械",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_018.wav",
+    "tag": "replace",
+    "gold": "長",
+    "whisper": "蝶",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   },
+   {
+    "clip": "clip_019.wav",
+    "tag": "replace",
+    "gold": "x",
+    "whisper": "X",
+    "caught_qwen": false,
+    "caught_auditor": false,
+    "auditor_flag": null
+   }
+  ]
+ },
+ "rows": [
+  {
+   "clip": "clip_000.wav",
+   "tag": "replace",
+   "gold": "基づ",
+   "whisper": "お届",
+   "caught_qwen": true,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_002.wav",
+   "tag": "replace",
+   "gold": "瓶",
+   "whisper": "ビン",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_004.wav",
+   "tag": "replace",
+   "gold": "胎児",
+   "whisper": "退治",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_004.wav",
+   "tag": "replace",
+   "gold": "肺",
+   "whisper": "範囲",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_004.wav",
+   "tag": "replace",
+   "gold": "成",
+   "whisper": "生",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_004.wav",
+   "tag": "replace",
+   "gold": "わ",
+   "whisper": "分",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_005.wav",
+   "tag": "replace",
+   "gold": "棺",
+   "whisper": "火継ぎ",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_005.wav",
+   "tag": "replace",
+   "gold": "負",
+   "whisper": "追",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_006.wav",
+   "tag": "replace",
+   "gold": "au",
+   "whisper": "AU",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_007.wav",
+   "tag": "replace",
+   "gold": "異",
+   "whisper": "意",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_009.wav",
+   "tag": "replace",
+   "gold": "墜",
+   "whisper": "追",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_009.wav",
+   "tag": "replace",
+   "gold": "は",
+   "whisper": "を",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_009.wav",
+   "tag": "delete",
+   "gold": "る",
+   "whisper": "",
+   "caught_qwen": true,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_011.wav",
+   "tag": "replace",
+   "gold": "とも",
+   "whisper": "共",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_011.wav",
+   "tag": "replace",
+   "gold": "acta",
+   "whisper": "ACTA",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_012.wav",
+   "tag": "replace",
+   "gold": "u",
+   "whisper": "U",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_013.wav",
+   "tag": "replace",
+   "gold": "1",
+   "whisper": "一",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_014.wav",
+   "tag": "replace",
+   "gold": "華氏",
+   "whisper": "菓子",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_014.wav",
+   "tag": "replace",
+   "gold": "暑",
+   "whisper": "厚",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_015.wav",
+   "tag": "replace",
+   "gold": "ドゥ",
+   "whisper": "ジュ",
+   "caught_qwen": true,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_015.wav",
+   "tag": "replace",
+   "gold": "星",
+   "whisper": "製",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_015.wav",
+   "tag": "replace",
+   "gold": "e環",
+   "whisper": "イカン",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_015.wav",
+   "tag": "replace",
+   "gold": "放",
+   "whisper": "方",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_015.wav",
+   "tag": "replace",
+   "gold": "源",
+   "whisper": "現",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_016.wav",
+   "tag": "replace",
+   "gold": "スタダスト",
+   "whisper": "STARDUST",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_016.wav",
+   "tag": "replace",
+   "gold": "x",
+   "whisper": "X",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_017.wav",
+   "tag": "replace",
+   "gold": "付",
+   "whisper": "つ",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_017.wav",
+   "tag": "replace",
+   "gold": "ほか",
+   "whisper": "他",
+   "caught_qwen": true,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_017.wav",
+   "tag": "replace",
+   "gold": "踵",
+   "whisper": "かかと",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_017.wav",
+   "tag": "replace",
+   "gold": "踵",
+   "whisper": "かかと",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_018.wav",
+   "tag": "replace",
+   "gold": "器系",
+   "whisper": "機械",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_018.wav",
+   "tag": "replace",
+   "gold": "長",
+   "whisper": "蝶",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_018.wav",
+   "tag": "replace",
+   "gold": "ナ",
+   "whisper": "ダ",
+   "caught_qwen": true,
+   "caught_auditor": false,
+   "auditor_flag": null
+  },
+  {
+   "clip": "clip_019.wav",
+   "tag": "replace",
+   "gold": "x",
+   "whisper": "X",
+   "caught_qwen": false,
+   "caught_auditor": false,
+   "auditor_flag": null
+  }
+ ],
+ "whisper_cache_keys": [
+  "clip_000.wav",
+  "clip_001.wav",
+  "clip_002.wav",
+  "clip_003.wav",
+  "clip_004.wav",
+  "clip_005.wav",
+  "clip_006.wav",
+  "clip_007.wav",
+  "clip_008.wav",
+  "clip_009.wav",
+  "clip_010.wav",
+  "clip_011.wav",
+  "clip_012.wav",
+  "clip_013.wav",
+  "clip_014.wav",
+  "clip_015.wav",
+  "clip_016.wav",
+  "clip_017.wav",
+  "clip_018.wav",
+  "clip_019.wav"
+ ],
+ "classification": {
+  "total_whisper_error_spans": 34,
+  "caught_by_qwen": 5,
+  "caught_by_auditor": 0,
+  "missed_by_all": 29,
+  "missed_orthography_artifacts": 12,
+  "missed_genuine_meaning_errors": 17,
+  "auditor_total_flags_over_20": 1,
+  "auditor_single_flag": "context_homophone on 食料 in clip_001 -- FALSE POSITIVE (食料 is correct/matches gold; clip_001 had a perfect transcription)",
+  "note": "The 12 artifacts are script/case/kana-kanji renderings of the SAME word (au/AU, 1/一, 踵/かかと); not mishearings. The 17 genuine residual errors are real meaning-changing correlated mishearings the audio anchor is blind to and no other witness caught."
+ },
+ "classification_final": {
+  "method": "3-way split of the 29 missed-by-all spans using SudachiPy reading+lemma; Qwen catches verified by eyeballing actual correct_transcript() output (not just the alignment proxy)",
+  "raw_missed_by_all": 29,
+  "orthography_or_script_artifacts": "~11 (case-only au/AU,x/X,u/U,acta/ACTA + same-word kana/kanji 瓶/ビン,1/一,踵/かかと,とも/共,スタダスト/STARDUST) — NOT errors",
+  "genuine_meaning_changing_residual": "~15-18 real correlated errors no witness caught",
+  "headline_homophone_examples": [
+   "華氏->菓子 (Fahrenheit->candy)",
+   "胎児->退治 (fetus->extermination)",
+   "棺->火継ぎ/火縄 (coffin->matchlock)",
+   "異->意 (different->intention)"
+  ],
+  "qwen_catches_verified": "eyeballed clip_004/005/014/015/018 correct_transcript output: Qwen left 退治/菓子/機械 uncorrected; on clip_005 it changed 火継ぎ->火縄 (still wrong, not gold 棺). Proxy did NOT overcount.",
+  "auditor": "0 of 34 caught; its ONE context_homophone flag (食料 on clip_001) is a FALSE POSITIVE on correct text"
+ }
+}

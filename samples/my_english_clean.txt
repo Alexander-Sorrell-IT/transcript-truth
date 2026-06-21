@@ -1,0 +1,7 @@
+Speaker 1: Thanks for making the time. Can you walk me through how your team approaches model evaluation?
+Speaker 2: Of course. We define the rubric before we ever look at outputs, so the criteria are fixed in advance and nobody is grading to a moving target.
+Speaker 1: And when two reviewers disagree, how do you resolve it?
+Speaker 2: We log every divergence and settle it against the rubric, not by majority vote. The escalation path is written down at [00:04:12] in our process doc.
+Speaker 1: What is the hardest part to get right?
+Speaker 2: Honestly, keeping reviewers calibrated over time. People drift, so we re-anchor them on a shared gold set every couple of weeks.
+Speaker 1: That is a clean way to put it. Let us pick up there next session.

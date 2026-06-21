@@ -1,0 +1,1250 @@
+[
+ {
+  "target": "保証/保障/補償",
+  "text": "政府は国民の安全保障を最優先課題に掲げた。",
+  "has_error": false,
+  "note": "安全保障 (national security) fixes 保障 = safeguarding a state/right. Correct form."
+ },
+ {
+  "target": "保証/保障/補償",
+  "text": "政府は国民の安全補償を最優先課題に掲げた。",
+  "has_error": true,
+  "note": "安全保障 is the only correct compound; 補償 (compensation for loss) is a misconversion here — there is no 'security' meaning, so the swap is unambiguously wrong."
+ },
+ {
+  "target": "追求/追究/追及",
+  "text": "野党は閣僚の責任を厳しく追及した。",
+  "has_error": false,
+  "note": "責任を追及 = pressing/grilling someone over accountability; locks to 追及. Correct."
+ },
+ {
+  "target": "追求/追究/追及",
+  "text": "野党は閣僚の責任を厳しく追求した。",
+  "has_error": true,
+  "note": "責任を追及 is the fixed collocation; 追求 (seeking profit/ideals) cannot take 責任 as object of accountability-pressing — misconversion."
+ },
+ {
+  "target": "解放/開放",
+  "text": "両国は協議の末、市場の開放に合意した。",
+  "has_error": false,
+  "note": "市場開放 (opening a market to access) locks to 開放. Correct."
+ },
+ {
+  "target": "解放/開放",
+  "text": "両国は協議の末、市場の解放に合意した。",
+  "has_error": true,
+  "note": "Opening a market = 開放 (open up). 解放 (liberation from bondage) is wrong for a market; misconversion."
+ },
+ {
+  "target": "異動/移動/異同",
+  "text": "今春の人事異動で、彼は本社の経営企画部に配属された。",
+  "has_error": false,
+  "note": "人事異動 (personnel reassignment) locks to 異動. Correct."
+ },
+ {
+  "target": "異動/移動/異同",
+  "text": "今春の人事移動で、彼は本社の経営企画部に配属された。",
+  "has_error": true,
+  "note": "HR reassignment = 人事異動 only; 移動 (physical movement) is the classic misconversion in HR contexts."
+ },
+ {
+  "target": "成算/精算/清算",
+  "text": "経営破綻した子会社の清算手続きが正式に始まった。",
+  "has_error": false,
+  "note": "会社の清算 (liquidation/winding up) locks to 清算. Correct."
+ },
+ {
+  "target": "成算/精算/清算",
+  "text": "経営破綻した子会社の精算手続きが正式に始まった。",
+  "has_error": true,
+  "note": "Winding up a company = 清算; 精算 (settling exact accounts, e.g. fares/expenses) cannot mean corporate liquidation — misconversion."
+ },
+ {
+  "target": "保健/保険",
+  "text": "高齢化に伴い、生命保険の見直しを検討する世帯が増えている。",
+  "has_error": false,
+  "note": "生命保険 (life insurance) locks to 保険. Correct."
+ },
+ {
+  "target": "保健/保険",
+  "text": "高齢化に伴い、生命保健の見直しを検討する世帯が増えている。",
+  "has_error": true,
+  "note": "Insurance = 保険; 保健 (health maintenance) has no 'insurance' sense, so 生命保健 is a misconversion."
+ },
+ {
+  "target": "回答/解答",
+  "text": "市が実施したアンケートへの回答が、千件を超えて寄せられた。",
+  "has_error": false,
+  "note": "アンケートの回答 (reply to a survey) locks to 回答. Correct."
+ },
+ {
+  "target": "回答/解答",
+  "text": "市が実施したアンケートへの解答が、千件を超えて寄せられた。",
+  "has_error": true,
+  "note": "A survey gets a 回答 (reply); 解答 (solution to a problem with a correct answer) is wrong for an opinion survey — misconversion."
+ },
+ {
+  "target": "対象/対照/対称",
+  "text": "今回の給付金は、住民税が非課税の世帯を対象としている。",
+  "has_error": false,
+  "note": "給付の対象 (the recipient/target of a measure) locks to 対象. Correct."
+ },
+ {
+  "target": "対象/対照/対称",
+  "text": "今回の給付金は、住民税が非課税の世帯を対照としている。",
+  "has_error": true,
+  "note": "Who is affected by the benefit = 対象 (target/object); 対照 (contrast/comparison) is wrong — a benefit does not take a 'contrast' as its recipient. Misconversion."
+ },
+ {
+  "target": "意思/意志/遺志",
+  "text": "契約の成立には、双方の明確な意思表示が必要である。",
+  "has_error": false,
+  "note": "意思表示 (declaration of intention, legal) locks to 意思. Correct."
+ },
+ {
+  "target": "意思/意志/遺志",
+  "text": "契約の成立には、双方の明確な意志表示が必要である。",
+  "has_error": true,
+  "note": "Legal declaration of intention = 意思表示 only; 意志 (willpower/determination) is the standard misconversion here."
+ },
+ {
+  "target": "規定/規程",
+  "text": "この罰則は、関連法の第三条に規定されている。",
+  "has_error": false,
+  "note": "法律に規定する (a specific provision/clause) locks to 規定. Correct."
+ },
+ {
+  "target": "規定/規程",
+  "text": "この罰則は、関連法の第三条に規程されている。",
+  "has_error": true,
+  "note": "A specific clause stipulating something = 規定; 規程 is a whole body of rules and is not used as 〜に規程する — misconversion."
+ },
+ {
+  "target": "偏在/遍在",
+  "text": "医師の都市部への偏在が、地方の医療不足を深刻化させている。",
+  "has_error": false,
+  "note": "都市部への偏在 (uneven concentration in one area) locks to 偏在. Correct."
+ },
+ {
+  "target": "偏在/遍在",
+  "text": "医師の都市部への遍在が、地方の医療不足を深刻化させている。",
+  "has_error": true,
+  "note": "Concentration in cities causing shortage elsewhere requires 偏在 (maldistribution); 遍在 (present everywhere) is the opposite meaning and contradicts the sentence — misconversion."
+ },
+ {
+  "target": "けっかん",
+  "text": "動脈は心臓から血液を送り出す太い血管である。",
+  "has_error": false,
+  "note": "correct=血管 (blood vessel); anatomy context, 太い___ describing an artery"
+ },
+ {
+  "target": "けっかん",
+  "text": "動脈は心臓から血液を送り出す太い欠陥である。",
+  "has_error": true,
+  "note": "error swaps 血管→欠陥 (defect); 'an artery is a thick defect' is meaning-wrong, same-POS noun"
+ },
+ {
+  "target": "かいとう",
+  "text": "この問題の解答は巻末にまとめて載せてある。",
+  "has_error": false,
+  "note": "correct=解答 (worked solution to a problem); exam/textbook frame"
+ },
+ {
+  "target": "かいとう",
+  "text": "この問題の回答は巻末にまとめて載せてある。",
+  "has_error": true,
+  "note": "error swaps 解答→回答 (reply to inquiry); a math problem's solution is 解答, not 回答"
+ },
+ {
+  "target": "いどう",
+  "text": "春の人事異動で営業部長に昇進した。",
+  "has_error": false,
+  "note": "correct=異動 (personnel reassignment); fixed term 人事異動"
+ },
+ {
+  "target": "いどう",
+  "text": "春の人事移動で営業部長に昇進した。",
+  "has_error": true,
+  "note": "error swaps 異動→移動 (physical move); 人事移動 is wrong, fixed compound is 人事異動"
+ },
+ {
+  "target": "たいしょう",
+  "text": "この図形は中心線を軸として左右対称になっている。",
+  "has_error": false,
+  "note": "correct=対称 (symmetry); fixed compound 左右対称"
+ },
+ {
+  "target": "たいしょう",
+  "text": "この図形は中心線を軸として左右対象になっている。",
+  "has_error": true,
+  "note": "error swaps 対称→対象 (target/object); 左右対象 is the textbook dictation error, wrong"
+ },
+ {
+  "target": "きかん",
+  "text": "肝臓は代謝を担う人体で最大の器官である。",
+  "has_error": false,
+  "note": "correct=器官 (anatomical organ); standalone real word in correct context"
+ },
+ {
+  "target": "きかん",
+  "text": "肝臓は代謝を担う人体で最大の気管である。",
+  "has_error": true,
+  "note": "error swaps 器官→気管 (trachea/windpipe); the liver is not a windpipe, meaning-wrong, both real words"
+ },
+ {
+  "target": "こうえん",
+  "text": "教授が学会で最新の研究について講演を行った。",
+  "has_error": false,
+  "note": "correct=講演 (academic lecture/talk); learned-society keynote frame"
+ },
+ {
+  "target": "こうえん",
+  "text": "教授が学会で最新の研究について公演を行った。",
+  "has_error": true,
+  "note": "error swaps 講演→公演 (stage performance); an academic talk is a 講演, not a 公演"
+ },
+ {
+  "target": "かんしん",
+  "text": "私は以前から環境問題に強い関心を持っている。",
+  "has_error": false,
+  "note": "correct=関心 (interest in); idiomatic frame 関心を持つ"
+ },
+ {
+  "target": "かんしん",
+  "text": "私は以前から環境問題に強い感心を持っている。",
+  "has_error": true,
+  "note": "error swaps 関心→感心 (being impressed); 感心を持つ is wrong, 感心 takes する not this frame"
+ },
+ {
+  "target": "こうせい",
+  "text": "経営難に陥った同社は会社更生法の適用を申請した。",
+  "has_error": false,
+  "note": "correct=更生 (rehabilitation/reorganization); legal fixed term 会社更生法"
+ },
+ {
+  "target": "こうせい",
+  "text": "経営難に陥った同社は会社更正法の適用を申請した。",
+  "has_error": true,
+  "note": "error swaps 更生→更正 (official correction of a figure); the statute is 会社更生法, 更正 is the legal-heavy confusable"
+ },
+ {
+  "target": "さいけつ",
+  "text": "提出された法案は本会議で採決された。",
+  "has_error": false,
+  "note": "correct=採決 (putting a motion to a vote); parliamentary frame"
+ },
+ {
+  "target": "さいけつ",
+  "text": "提出された法案は本会議で裁決された。",
+  "has_error": true,
+  "note": "error swaps 採決→裁決 (administrative adjudication); a bill in plenary is voted on (採決), not adjudicated (裁決)"
+ },
+ {
+  "target": "しょうかい",
+  "text": "銀行のATMで口座の残高照会をした。",
+  "has_error": false,
+  "note": "correct=照会 (formal inquiry/verification); banking fixed term 残高照会"
+ },
+ {
+  "target": "しょうかい",
+  "text": "銀行のATMで口座の残高紹介をした。",
+  "has_error": true,
+  "note": "error swaps 照会→紹介 (introduction/referral); 残高紹介 is wrong, the banking term is 残高照会"
+ },
+ {
+  "target": "ほしょう",
+  "text": "老後の生活は年金などの社会保障によって支えられている。",
+  "has_error": false,
+  "note": "correct=保障 (securing/safeguarding a right/state); fixed compound 社会保障"
+ },
+ {
+  "target": "ほしょう",
+  "text": "老後の生活は年金などの社会保証によって支えられている。",
+  "has_error": true,
+  "note": "error swaps 保障→保証 (guarantee/warranty); the fixed term is 社会保障, 社会保証 is wrong"
+ },
+ {
+  "target": "いし",
+  "text": "困難に立ち向かう彼の意志は固い。",
+  "has_error": false,
+  "note": "意志=willpower/resolve; 意志が固い is the fixed collocation for firm determination."
+ },
+ {
+  "target": "いし",
+  "text": "困難に立ち向かう彼の意思は固い。",
+  "has_error": true,
+  "note": "Wrong: 意思=communicative/legal intent, does not take 固い for resolve; should be 意志."
+ },
+ {
+  "target": "かんしん",
+  "text": "彼は若い頃から政治に関心がある。",
+  "has_error": false,
+  "note": "関心=interest/concern; 関心がある is the correct collocation for having interest."
+ },
+ {
+  "target": "かんしん",
+  "text": "彼は若い頃から政治に感心がある。",
+  "has_error": true,
+  "note": "Wrong: 感心 means being impressed (感心する), not 'interest'; 感心がある is ungrammatical here. Should be 関心."
+ },
+ {
+  "target": "たいしょう",
+  "text": "今回の調査の対象は二十代の女性だ。",
+  "has_error": false,
+  "note": "対象=target/object of an action or study; 調査対象 is the fixed term."
+ },
+ {
+  "target": "たいしょう",
+  "text": "今回の調査の対照は二十代の女性だ。",
+  "has_error": true,
+  "note": "Wrong: 対照=contrast/comparison, not the thing being studied; should be 対象."
+ },
+ {
+  "target": "かんしょう",
+  "text": "休日は家で映画を鑑賞するのが好きだ。",
+  "has_error": false,
+  "note": "鑑賞=appreciation of art/film/music; 映画鑑賞 is the standard usage."
+ },
+ {
+  "target": "かんしょう",
+  "text": "休日は家で映画を観賞するのが好きだ。",
+  "has_error": true,
+  "note": "Wrong: 観賞 is for nature/plants/fish/scenery (観賞用), not film art; should be 鑑賞."
+ },
+ {
+  "target": "かんき",
+  "text": "看板を立てて運転手に注意を喚起する。",
+  "has_error": false,
+  "note": "喚起=arouse/call forth (注意喚起); evokes attention/awareness."
+ },
+ {
+  "target": "かんき",
+  "text": "看板を立てて運転手に注意を換気する。",
+  "has_error": true,
+  "note": "Wrong: 換気=ventilate air (換気扇), cannot mean 'arouse attention'; should be 喚起."
+ },
+ {
+  "target": "ついきゅう",
+  "text": "誰もが自分なりの幸福を追求している。",
+  "has_error": false,
+  "note": "追求=pursuit of something desired (幸福の追求, 利益の追求)."
+ },
+ {
+  "target": "ついきゅう",
+  "text": "誰もが自分なりの幸福を追及している。",
+  "has_error": true,
+  "note": "Wrong: 追及=hound/press someone (責任を追及), not seek happiness; should be 追求."
+ },
+ {
+  "target": "いどう",
+  "text": "四月の人事異動で営業部に配属された。",
+  "has_error": false,
+  "note": "異動=personnel change/transfer; 人事異動 is the fixed term for staff reassignment."
+ },
+ {
+  "target": "いどう",
+  "text": "四月の人事移動で営業部に配属された。",
+  "has_error": true,
+  "note": "Wrong: 移動=physical movement place-to-place, not an HR reassignment; should be 異動."
+ },
+ {
+  "target": "かいほう",
+  "text": "長年のプレッシャーからようやく解放された。",
+  "has_error": false,
+  "note": "解放=liberation/release from constraint or restriction (ストレスから解放)."
+ },
+ {
+  "target": "かいほう",
+  "text": "長年のプレッシャーからようやく開放された。",
+  "has_error": true,
+  "note": "Wrong: 開放=throw open a door/market (市場開放), not freeing from constraint; should be 解放."
+ },
+ {
+  "target": "かいとう",
+  "text": "届いたアンケートに回答する。",
+  "has_error": false,
+  "note": "回答=reply/response to an inquiry or survey (アンケート回答)."
+ },
+ {
+  "target": "かいとう",
+  "text": "届いたアンケートに解答する。",
+  "has_error": true,
+  "note": "Wrong: 解答=answer to a problem with a correct solution; a survey has no 'solution' to solve. Should be 回答."
+ },
+ {
+  "target": "せいさん",
+  "text": "超過した分の運賃を駅の窓口で精算する。",
+  "has_error": false,
+  "note": "精算=exact calculation/true-up of a fare or expense (運賃精算)."
+ },
+ {
+  "target": "せいさん",
+  "text": "超過した分の運賃を駅の窓口で清算する。",
+  "has_error": true,
+  "note": "Wrong: 清算=settle/liquidate debts or end a relationship (借金を清算), not a fare true-up; should be 精算."
+ },
+ {
+  "target": "はかる",
+  "text": "看護師が患者の身長を正確に測った。",
+  "has_error": false,
+  "note": "測る is correct for measuring length/height (身長)."
+ },
+ {
+  "target": "はかる",
+  "text": "看護師が患者の身長を正確に量った。",
+  "has_error": true,
+  "note": "量る is for weight/volume; for 身長 (length/height) it must be 測る."
+ },
+ {
+  "target": "とる",
+  "text": "旅行先で美しい景色の写真を撮った。",
+  "has_error": false,
+  "note": "撮る is correct for taking a photograph (写真)."
+ },
+ {
+  "target": "とる",
+  "text": "旅行先で美しい景色の写真を取った。",
+  "has_error": true,
+  "note": "Photographing requires 撮る; 取る (general 'take') is the wrong homophone here."
+ },
+ {
+  "target": "つとめる",
+  "text": "父は長年大きな商社に勤めている。",
+  "has_error": false,
+  "note": "勤める is correct for being employed at a workplace (商社に)."
+ },
+ {
+  "target": "つとめる",
+  "text": "父は長年大きな商社に努めている。",
+  "has_error": true,
+  "note": "Being employed at a company needs 勤める; 努める (make effort) is the wrong homophone."
+ },
+ {
+  "target": "おかす",
+  "text": "彼は出来心で重い罪を犯してしまった。",
+  "has_error": false,
+  "note": "犯す is correct for committing a crime (罪を)."
+ },
+ {
+  "target": "おかす",
+  "text": "彼は出来心で重い罪を冒してしまった。",
+  "has_error": true,
+  "note": "Committing a crime needs 犯す; 冒す (brave/risk danger) is the wrong homophone."
+ },
+ {
+  "target": "おさめる",
+  "text": "期限までにきちんと税金を納めた。",
+  "has_error": false,
+  "note": "納める is correct for paying taxes (税金を)."
+ },
+ {
+  "target": "おさめる",
+  "text": "期限までにきちんと税金を治めた。",
+  "has_error": true,
+  "note": "Paying taxes needs 納める; 治める (govern/quell) is the wrong homophone."
+ },
+ {
+  "target": "すすめる",
+  "text": "先生はこの参考書を私に薦めてくれた。",
+  "has_error": false,
+  "note": "薦める is correct for recommending a thing (参考書を)."
+ },
+ {
+  "target": "すすめる",
+  "text": "先生はこの参考書を私に進めてくれた。",
+  "has_error": true,
+  "note": "Recommending a book needs 薦める (or 勧める); 進める (advance) is the wrong homophone."
+ },
+ {
+  "target": "のぼる",
+  "text": "週末に友人たちと近くの山に登った。",
+  "has_error": false,
+  "note": "登る is correct for actively climbing a mountain (山に)."
+ },
+ {
+  "target": "のぼる",
+  "text": "週末に友人たちと近くの山に昇った。",
+  "has_error": true,
+  "note": "Climbing a mountain needs 登る; 昇る (rise high, sun/promotion) is the wrong homophone."
+ },
+ {
+  "target": "うつす",
+  "text": "咳をしている人から風邪を移されてしまった。",
+  "has_error": false,
+  "note": "移す is correct for transmitting an illness (風邪を)."
+ },
+ {
+  "target": "うつす",
+  "text": "咳をしている人から風邪を写されてしまった。",
+  "has_error": true,
+  "note": "Transmitting a cold needs 移す; 写す (copy/photograph) is the wrong homophone."
+ },
+ {
+  "target": "なおす",
+  "text": "医者にかかって長引く病気をようやく治した。",
+  "has_error": false,
+  "note": "治す is correct for curing an illness (病気を)."
+ },
+ {
+  "target": "なおす",
+  "text": "医者にかかって長引く病気をようやく直した。",
+  "has_error": true,
+  "note": "Curing an illness needs 治す; 直す (fix an object/error) is the wrong homophone."
+ },
+ {
+  "target": "きく",
+  "text": "頭痛がひどかったが、この薬がよく効いた。",
+  "has_error": false,
+  "note": "効く is correct for medicine taking effect (薬が)."
+ },
+ {
+  "target": "きく",
+  "text": "頭痛がひどかったが、この薬がよく聞いた。",
+  "has_error": true,
+  "note": "Medicine being effective needs 効く; 聞く (hear/ask) is the wrong homophone."
+ },
+ {
+  "target": "みる",
+  "text": "その医師は毎日たくさんの患者を診ている。",
+  "has_error": false,
+  "note": "診る is correct for examining patients medically (患者を)."
+ },
+ {
+  "target": "みる",
+  "text": "その医師は毎日たくさんの患者を見ている。",
+  "has_error": true,
+  "note": "Medically examining a patient needs 診る; plain 見る (see) is the wrong homophone here."
+ },
+ {
+  "target": "さす",
+  "text": "急に雨が降ってきたので傘を差した。",
+  "has_error": false,
+  "note": "差す is correct for holding up an umbrella (傘を)."
+ },
+ {
+  "target": "さす",
+  "text": "急に雨が降ってきたので傘を指した。",
+  "has_error": true,
+  "note": "Holding up an umbrella needs 差す; 指す (point at) is the wrong homophone."
+ },
+ {
+  "target": "〜てみる (auxiliary 'try to')",
+  "text": "まず自分で考えてみる。",
+  "has_error": false,
+  "note": "考えてみる = auxiliary 'try thinking it over'; correctly in hiragana. 考えて見る is impossible as a literal 'look', so kana is forced."
+ },
+ {
+  "target": "〜てみる (auxiliary 'try to')",
+  "text": "まず自分で考えて見る。",
+  "has_error": true,
+  "note": "Minimal pair: みる auxiliary wrongly written 見る. Here 'look' makes no sense after 考えて, so this is a clear okurigana error."
+ },
+ {
+  "target": "〜ていく / 〜てくる (auxiliary directional/aspect)",
+  "text": "これから人口が増えていく。",
+  "has_error": false,
+  "note": "増えていく = aspectual 'will keep increasing'; an abstract subject (人口) cannot physically move, so kana いく is required and correct."
+ },
+ {
+  "target": "〜ていく / 〜てくる (auxiliary directional/aspect)",
+  "text": "これから人口が増えて行く。",
+  "has_error": true,
+  "note": "Minimal pair: aspectual いく wrongly written 行く. Population cannot literally 'go', so the kanji is an error."
+ },
+ {
+  "target": "〜ておく (auxiliary 'do in advance')",
+  "text": "明日の会議の資料を準備しておく。",
+  "has_error": false,
+  "note": "準備しておく = auxiliary 'do in advance'; correctly hiragana. One cannot physically 置く 'preparation', so kana is forced."
+ },
+ {
+  "target": "〜ておく (auxiliary 'do in advance')",
+  "text": "明日の会議の資料を準備して置く。",
+  "has_error": true,
+  "note": "Minimal pair: auxiliary おく wrongly written 置く. No physical object is being placed, so this breaks the rule."
+ },
+ {
+  "target": "〜てしまう (auxiliary completion/regret)",
+  "text": "大事な約束をすっかり忘れてしまった。",
+  "has_error": false,
+  "note": "忘れてしまった = auxiliary marking regret/completion; correctly hiragana."
+ },
+ {
+  "target": "〜てしまう (auxiliary completion/regret)",
+  "text": "大事な約束をすっかり忘れて仕舞った。",
+  "has_error": true,
+  "note": "Minimal pair: auxiliary しまう wrongly written 仕舞った. The completion/regret auxiliary is always kana."
+ },
+ {
+  "target": "〜てあげる / 〜てくれる / 〜てもらう (giving-receiving auxiliaries)",
+  "text": "妹の宿題を手伝ってあげる。",
+  "has_error": false,
+  "note": "手伝ってあげる = benefactive auxiliary 'do for someone'; correctly hiragana. Nothing is being lifted, so 上げる is impossible here."
+ },
+ {
+  "target": "〜てあげる / 〜てくれる / 〜てもらう (giving-receiving auxiliaries)",
+  "text": "妹の宿題を手伝って上げる。",
+  "has_error": true,
+  "note": "Minimal pair: benefactive あげる wrongly written 上げる. No literal 'lift' reading is available, so the kanji is an error."
+ },
+ {
+  "target": "〜ている / 〜てある (progressive/resultative auxiliaries)",
+  "text": "弟は公園を走っている。",
+  "has_error": false,
+  "note": "走っている = progressive auxiliary; correctly hiragana, never 居る."
+ },
+ {
+  "target": "〜ている / 〜てある (progressive/resultative auxiliaries)",
+  "text": "弟は公園を走って居る。",
+  "has_error": true,
+  "note": "Minimal pair: progressive いる wrongly written 居る. The te-form auxiliary いる is always kana."
+ },
+ {
+  "target": "ある (existence verb, kana)",
+  "text": "その計算には問題がある。",
+  "has_error": false,
+  "note": "ある (inanimate existence) conventionally hiragana; correct."
+ },
+ {
+  "target": "ある (existence verb, kana)",
+  "text": "その計算には問題が有る。",
+  "has_error": true,
+  "note": "Minimal pair: existence ある wrongly written 有る, which is discouraged in standard prose."
+ },
+ {
+  "target": "いる (existence verb, animate, kana)",
+  "text": "庭に黒い猫がいる。",
+  "has_error": false,
+  "note": "いる (animate existence) correctly hiragana, not 居る."
+ },
+ {
+  "target": "いる (existence verb, animate, kana)",
+  "text": "庭に黒い猫が居る。",
+  "has_error": true,
+  "note": "Minimal pair: bare existence verb いる wrongly written 居る."
+ },
+ {
+  "target": "できる (potential/'be able', kana)",
+  "text": "姉は上手に運転ができる。",
+  "has_error": false,
+  "note": "できる ('be able') correctly hiragana, not 出来る."
+ },
+ {
+  "target": "できる (potential/'be able', kana)",
+  "text": "姉は上手に運転が出来る。",
+  "has_error": true,
+  "note": "Minimal pair: the verb できる wrongly written 出来る; the verb form is kana per 公用文 rules."
+ },
+ {
+  "target": "こと (formal/nominalizing noun, kana)",
+  "text": "私は京都に行ったことがある。",
+  "has_error": false,
+  "note": "〜たことがある: nominalizing formal noun こと, correctly hiragana."
+ },
+ {
+  "target": "こと (formal/nominalizing noun, kana)",
+  "text": "私は京都に行った事がある。",
+  "has_error": true,
+  "note": "Minimal pair: grammatical nominalizer こと wrongly written 事. After a verb clause it should be kana."
+ },
+ {
+  "target": "ところ (formal noun 'point/just about to', kana)",
+  "text": "ちょうど家を出るところだった。",
+  "has_error": false,
+  "note": "〜るところだ = aspectual 'just about to'; ちょうど + だった forces the juncture reading, so kana ところ is correct (not the place noun 所)."
+ },
+ {
+  "target": "ところ (formal noun 'point/just about to', kana)",
+  "text": "ちょうど家を出る所だった。",
+  "has_error": true,
+  "note": "Minimal pair: aspectual ところ wrongly written 所. The 'just about to leave' juncture reading is grammatical, so kanji 所 is an error here."
+ },
+ {
+  "target": "「」 — primary quotation",
+  "text": "「おはよう」と彼は明るく言った。",
+  "has_error": false,
+  "note": "Correct: 「」 is the primary/outermost dialogue marker. Minimal pair partner uses 『』 instead."
+ },
+ {
+  "target": "「」 — primary quotation",
+  "text": "『おはよう』と彼は明るく言った。",
+  "has_error": true,
+  "note": "Wrong: uses 『』 for primary direct speech. The default outermost dialogue marker must be 「」; 『』 is reserved for nesting/titles."
+ },
+ {
+  "target": "『』 — nested quote (quote within a quote)",
+  "text": "「彼は『行くな』と言ったんだ」と彼女は説明した。",
+  "has_error": false,
+  "note": "Correct: a quote inside the outer 「」 is wrapped in 『』. Levels alternate 「『…』」."
+ },
+ {
+  "target": "『』 — nested quote (quote within a quote)",
+  "text": "「彼は「行くな」と言ったんだ」と彼女は説明した。",
+  "has_error": true,
+  "note": "Wrong: the inner quote reuses 「」 instead of switching to 『』, so the nesting boundaries become unreadable."
+ },
+ {
+  "target": "『』 — titles of works",
+  "text": "夏目漱石の『こころ』を読んだ。",
+  "has_error": false,
+  "note": "Correct: a complete work (book) takes 『』."
+ },
+ {
+  "target": "『』 — titles of works",
+  "text": "夏目漱石の「こころ」を読んだ。",
+  "has_error": true,
+  "note": "Wrong: a whole book is marked with 「」, which is for parts of works (chapters/songs); complete works require 『』."
+ },
+ {
+  "target": "。 — kuten (sentence-final period)",
+  "text": "今日は朝からよく晴れています。",
+  "has_error": false,
+  "note": "Correct: declarative sentence ends with full-width 。."
+ },
+ {
+  "target": "。 — kuten (sentence-final period)",
+  "text": "今日は朝からよく晴れています.",
+  "has_error": true,
+  "note": "Wrong: sentence ends with a half-width Latin period '.' instead of the kuten 。. (Half-width is unambiguously wrong, unlike the full-width ，variant.)"
+ },
+ {
+  "target": "、 — touten (comma)",
+  "text": "雨が降ったので、試合は中止になった。",
+  "has_error": false,
+  "note": "Correct: internal clause break uses full-width 、."
+ },
+ {
+  "target": "、 — touten (comma)",
+  "text": "雨が降ったので,試合は中止になった。",
+  "has_error": true,
+  "note": "Wrong: uses a half-width Latin comma ',' for the clause break instead of the touten 、. (Half-width is unambiguously wrong.)"
+ },
+ {
+  "target": "、 — placement after conjunctive clause / topic",
+  "text": "私は、赤い車を買った。",
+  "has_error": false,
+  "note": "Correct: 、 marks the topic/grammatical break only; no commas scattered inside the noun phrase."
+ },
+ {
+  "target": "、 — placement after conjunctive clause / topic",
+  "text": "私は、赤い、車を、買った。",
+  "has_error": true,
+  "note": "Wrong: 、 is scattered inside a tight noun phrase (over-commaing) rather than marking grammatical breaks."
+ },
+ {
+  "target": "。 omitted before 」 (broadcast/transcription convention)",
+  "text": "「もう行きます」と彼は言った。",
+  "has_error": false,
+  "note": "Correct under assumed BROADCAST/publishing house style: the kuten before the closing 」 is omitted. (Same style applied consistently to all quote-ending sentences in this set.)"
+ },
+ {
+  "target": "。 omitted before 」 (broadcast/transcription convention)",
+  "text": "「もう行きます。」と彼は言った。",
+  "has_error": true,
+  "note": "Wrong under broadcast/transcription style: keeps the 。 before the closing 」. Broadcast/subtitle convention omits it."
+ },
+ {
+  "target": "。 retained outside the closing 」 when the sentence ends there",
+  "text": "彼は「ありがとう」と頭を下げた。",
+  "has_error": false,
+  "note": "Correct: a single 。 governs the outer sentence and there is no double period. (Load-bearing rule: avoid 。」。.)"
+ },
+ {
+  "target": "。 retained outside the closing 」 when the sentence ends there",
+  "text": "彼は「ありがとう。」。",
+  "has_error": true,
+  "note": "Wrong: a 。 appears both inside the bracket and after it (。」。), the forbidden double-period pattern."
+ },
+ {
+  "target": "・ — nakaten for katakana foreign personal names",
+  "text": "会議にはジョン・スミスが出席する。",
+  "has_error": false,
+  "note": "Correct: components of a transliterated foreign name are joined with the nakaten ・."
+ },
+ {
+  "target": "・ — nakaten for katakana foreign personal names",
+  "text": "会議にはジョン、スミスが出席する。",
+  "has_error": true,
+  "note": "Wrong: the foreign given name and surname are separated by 、 instead of ・, which reads as a list of two people."
+ },
+ {
+  "target": "・ — nakaten as list separator for short items",
+  "text": "コーヒー・紅茶・ジュースから選べます。",
+  "has_error": false,
+  "note": "Correct: short coordinate word-level items are separated inline with ・."
+ },
+ {
+  "target": "・ — nakaten as list separator for short items",
+  "text": "コーヒー/紅茶/ジュースから選べます。",
+  "has_error": true,
+  "note": "Wrong: short coordinate items are joined with slashes instead of the nakaten ・ for a compact inline list."
+ },
+ {
+  "target": "・ — nakaten for foreign multi-word terms",
+  "text": "その記事はニューヨーク・タイムズに載った。",
+  "has_error": false,
+  "note": "Correct: components of a foreign katakana compound term are bound with ・."
+ },
+ {
+  "target": "・ — nakaten for foreign multi-word terms",
+  "text": "その記事はニューヨーク-タイムズに載った。",
+  "has_error": true,
+  "note": "Wrong: the foreign compound is bound with a hyphen '-' instead of the nakaten ・."
+ },
+ {
+  "target": "…… — ellipsis (santen-leader, doubled)",
+  "text": "そう……だね。",
+  "has_error": false,
+  "note": "Correct: trailing-off rendered with the doubled three-dot leader …… (U+2026 ×2)."
+ },
+ {
+  "target": "…… — ellipsis (santen-leader, doubled)",
+  "text": "そう。。。だね。",
+  "has_error": true,
+  "note": "Wrong: trailing-off rendered with three kuten 。。。 instead of the santen-leader ……."
+ },
+ {
+  "target": "—— — dash (em-dash, doubled)",
+  "text": "待って——そうじゃない！",
+  "has_error": false,
+  "note": "Correct: an abrupt interruption is rendered with the doubled em-dash —— (2字分)."
+ },
+ {
+  "target": "—— — dash (em-dash, doubled)",
+  "text": "待って〜そうじゃない！",
+  "has_error": true,
+  "note": "Wrong: the hard cut/interruption is rendered with a wave-dash 〜 instead of the doubled em-dash ——."
+ },
+ {
+  "target": "えー / えーと / えーっと",
+  "text": "明日の天気は晴れの予報です。",
+  "has_error": false,
+  "note": "Clean-verbatim: hesitation filler えー correctly removed; sentence is clean with no floor-holding token left."
+ },
+ {
+  "target": "えー / えーと / えーっと",
+  "text": "えー、明日の天気は晴れの予報です。",
+  "has_error": true,
+  "note": "ERROR: sentence-initial hesitation filler えー left in the clean transcript; it should have been removed."
+ },
+ {
+  "target": "ええと / えっと",
+  "text": "ポイントは全部で三つあります。",
+  "has_error": false,
+  "note": "Clean-verbatim: hesitation filler ええと correctly removed; the remaining sentence carries all content."
+ },
+ {
+  "target": "ええと / えっと",
+  "text": "ええと、ポイントは全部で三つあります。",
+  "has_error": true,
+  "note": "ERROR: thinking filler ええと (note the と, not the affirmative ええ) left in; should be removed in clean."
+ },
+ {
+  "target": "あのー / あの",
+  "text": "受付にいたのは、あの人です。",
+  "has_error": false,
+  "note": "Clean-verbatim: あの here is the demonstrative adnominal 'that' modifying 人 (content), correctly KEPT."
+ },
+ {
+  "target": "あのー / あの",
+  "text": "あのー、ちょっと質問があります。",
+  "has_error": true,
+  "note": "ERROR: floor-holding filler あのー (elongated, attention-getting, not modifying a noun) left in; should be removed."
+ },
+ {
+  "target": "そのー / その",
+  "text": "会議で配ったその資料を見てください。",
+  "has_error": false,
+  "note": "Clean-verbatim: その is the demonstrative 'that' modifying 資料 (content, has a referent), correctly KEPT."
+ },
+ {
+  "target": "そのー / その",
+  "text": "そのー、つまり結論はこうです。",
+  "has_error": true,
+  "note": "ERROR: floor-holding filler そのー (elongated, paired with つまり, no noun referent) left in; should be removed."
+ },
+ {
+  "target": "なんか",
+  "text": "冷蔵庫から何か飲み物を持ってきて。",
+  "has_error": false,
+  "note": "Clean-verbatim: 何か is the indefinite pronoun 'something' filling the object slot (content), correctly KEPT."
+ },
+ {
+  "target": "なんか",
+  "text": "なんか今日はすごく疲れた。",
+  "has_error": true,
+  "note": "ERROR: discourse hedge なんか ('like, somehow', deletable without losing meaning) left in; should be removed."
+ },
+ {
+  "target": "まあ / まぁ",
+  "text": "このお店の味はまあまあです。",
+  "has_error": false,
+  "note": "Clean-verbatim: reduplicated まあまあ = 'so-so' (adverbial content predicate), correctly KEPT — not a deletable filler."
+ },
+ {
+  "target": "まあ / まぁ",
+  "text": "まあ、それでいいか。",
+  "has_error": true,
+  "note": "ERROR: sentence-initial hedging filler まあ ('well, sort of') left in; should be removed in clean."
+ },
+ {
+  "target": "うん",
+  "text": "質問:このまま進めていい? 回答:うん、お願いします。",
+  "has_error": false,
+  "note": "Clean-verbatim: うん is the actual affirmative ANSWER to a yes/no question (content), correctly KEPT."
+ },
+ {
+  "target": "うん",
+  "text": "では資料を共有しますね。うん、まず一ページ目を見てください。",
+  "has_error": true,
+  "note": "ERROR: speaker's own passive backchannel うん inside their continuous turn (no question asked) left in; should be removed."
+ },
+ {
+  "target": "ううん",
+  "text": "質問:これで合ってる? 回答:ううん、間違ってるよ。",
+  "has_error": false,
+  "note": "Clean-verbatim: ううん = 'no' negative reply (content), correctly KEPT with full polarity; pairs with 間違ってる."
+ },
+ {
+  "target": "ううん",
+  "text": "質問:これで合ってる? 回答:うん、間違ってるよ。",
+  "has_error": true,
+  "note": "ERROR: the negative reply was mis-transcribed as うん (yes), flipping polarity; 'yes, it's wrong' is an incoherent clean answer — must be ううん."
+ },
+ {
+  "target": "うーん",
+  "text": "たぶん大丈夫だと思います。",
+  "has_error": false,
+  "note": "Clean-verbatim: deliberation filler うーん correctly removed; the real answer that followed is kept intact."
+ },
+ {
+  "target": "うーん",
+  "text": "うーん、たぶん大丈夫だと思います。",
+  "has_error": true,
+  "note": "ERROR: long-vowel thinking filler うーん ('hmm', not an answer) left in; should be removed in clean."
+ },
+ {
+  "target": "はい",
+  "text": "質問:明日の会議に来ますか? 回答:はい、参加します。",
+  "has_error": false,
+  "note": "Clean-verbatim: はい is a direct affirmative ANSWER to a question (content), correctly KEPT."
+ },
+ {
+  "target": "はい",
+  "text": "では次の項目に移ります。はい、こちらが売上の表です。",
+  "has_error": true,
+  "note": "ERROR: passive backchannel/turn-filler はい inside the speaker's own continuous turn (no question) left in; should be removed."
+ },
+ {
+  "target": "ええ",
+  "text": "質問:この内容でよろしいですか? 回答:ええ、結構です。",
+  "has_error": false,
+  "note": "Clean-verbatim: ええ is a polite affirmative ANSWER (content), correctly KEPT."
+ },
+ {
+  "target": "ええ",
+  "text": "それで先方に連絡したところ、ええ、すぐに返事が来ました。",
+  "has_error": true,
+  "note": "ERROR: passive backchannel ええ embedded mid-narration (not answering a question) left in; should be removed in clean."
+ },
+ {
+  "target": "いいえ / いえ",
+  "text": "質問:もう昼食は済ませましたか? 回答:いいえ、まだです。",
+  "has_error": false,
+  "note": "Clean-verbatim: いいえ = polite 'no' negating the question (content), correctly KEPT."
+ },
+ {
+  "target": "いいえ / いえ",
+  "text": "質問:もう昼食は済ませましたか? 回答:はい、まだです。",
+  "has_error": true,
+  "note": "ERROR: the negative reply was rendered as はい (yes), flipping polarity; 'yes, not yet' is an incoherent clean answer — must be いいえ."
+ },
+ {
+  "target": "そうそう / そう",
+  "text": "はい、こちらの仕様で間違いありません。そうです。",
+  "has_error": false,
+  "note": "Clean-verbatim: そうです = 'that's so' carries propositional content (affirms the spec), correctly KEPT."
+ },
+ {
+  "target": "そうそう / そう",
+  "text": "説明を続けますね。そうそう、それで先ほどの件ですが。",
+  "has_error": true,
+  "note": "ERROR: passive agreement backchannel そうそう inside the speaker's own turn (no propositional content) left in; should be removed in clean."
+ },
+ {
+  "target": "RULE: Arabic vs 漢数字 — base convention",
+  "text": "テーブルの上に3個のリンゴが置いてある。",
+  "has_error": false,
+  "note": "Replaceable count (3個→5個 OK) → Arabic digit is correct in horizontal mainstream transcription."
+ },
+ {
+  "target": "RULE: Arabic vs 漢数字 — base convention",
+  "text": "テーブルの上に三個のリンゴが置いてある。",
+  "has_error": true,
+  "note": "Ordinary swappable count written in 漢数字; base convention requires Arabic 3個 here. (縦書き override not in effect — horizontal assumed.)"
+ },
+ {
+  "target": "RULE: lexicalized numbers stay 漢数字",
+  "text": "その費用は一般の家庭でも十分まかなえる金額だ。",
+  "has_error": false,
+  "note": "一般 and 十分(=sufficient) are lexicalized words, not counts → 漢数字 correct regardless of direction."
+ },
+ {
+  "target": "RULE: lexicalized numbers stay 漢数字",
+  "text": "その費用は1般の家庭でも十分まかなえる金額だ。",
+  "has_error": true,
+  "note": "一般 is a fused word, not a swappable count; writing 1般 breaks the vocabulary item — must stay 漢数字."
+ },
+ {
+  "target": "RULE: 〜つ counting uses 漢数字",
+  "text": "この問題を解決するには三つの方法がある。",
+  "has_error": false,
+  "note": "Native 〜つ series (三つ) is kept in 漢数字 in transcription QA (共同通信)."
+ },
+ {
+  "target": "RULE: 〜つ counting uses 漢数字",
+  "text": "この問題を解決するには3つの方法がある。",
+  "has_error": true,
+  "note": "Digit+つ (3つ) is proscribed in formal transcription QA; default is 三つ."
+ },
+ {
+  "target": "Counter 音便: 本",
+  "text": "鉛筆をいっぽん貸してください。",
+  "has_error": false,
+  "note": "一本 = いっぽん (geminate っ + ぽん). Reading surfaced inline so the error is visible; no digit avoids base-rule conflict."
+ },
+ {
+  "target": "Counter 音便: 本",
+  "text": "鉛筆をいっほん貸してください。",
+  "has_error": true,
+  "note": "一本 must be いっぽん, not いっほん — missing the ぱ-row sound change after 1."
+ },
+ {
+  "target": "Counter 音便: 杯",
+  "text": "コップに水をさんばい注いだ。",
+  "has_error": false,
+  "note": "三杯 = さんばい (ん + voiced ばい)."
+ },
+ {
+  "target": "Counter 音便: 杯",
+  "text": "コップに水をさんはい注いだ。",
+  "has_error": true,
+  "note": "三杯 must be さんばい, not unvoiced さんはい."
+ },
+ {
+  "target": "Counter 音便: 匹",
+  "text": "庭で猫をさんびき見かけた。",
+  "has_error": false,
+  "note": "三匹 = さんびき (voiced びき)."
+ },
+ {
+  "target": "Counter 音便: 匹",
+  "text": "庭で猫をさんひき見かけた。",
+  "has_error": true,
+  "note": "三匹 must be さんびき, not unvoiced さんひき."
+ },
+ {
+  "target": "Counter 音便: 分 (minutes)",
+  "text": "あと、さんぷんで電車が来る。",
+  "has_error": false,
+  "note": "三分(time) = さんぷん (ん + ぷん)."
+ },
+ {
+  "target": "Counter 音便: 分 (minutes)",
+  "text": "あと、さんふんで電車が来る。",
+  "has_error": true,
+  "note": "三分 as minutes must be さんぷん, not さんふん — failed ふ→ぷ change."
+ },
+ {
+  "target": "分 heteronym: 五分五分 etc.",
+  "text": "両チームの実力はごぶごぶで、勝敗は読めない。",
+  "has_error": false,
+  "note": "五分五分 = ごぶごぶ (fraction/ratio sense 分=ぶ), NOT the time reading ぷん."
+ },
+ {
+  "target": "分 heteronym: 五分五分 etc.",
+  "text": "両チームの実力はごふんごふんで、勝敗は読めない。",
+  "has_error": true,
+  "note": "五分五分 must be ごぶごぶ; applying the minutes reading ごふんごふん is wrong — choose reading by sense."
+ },
+ {
+  "target": "Counter 音便: 軒",
+  "text": "この通りには古い飲食店がさんげん並んでいる。",
+  "has_error": false,
+  "note": "三軒 = さんげん (け→げ voicing); fixed reading (cf. 三軒茶屋)."
+ },
+ {
+  "target": "Counter 音便: 軒",
+  "text": "この通りには古い飲食店がさんけん並んでいる。",
+  "has_error": true,
+  "note": "三軒 must be さんげん, not unvoiced さんけん."
+ },
+ {
+  "target": "Counter 音便: 個",
+  "text": "卵をろっこ使ってオムレツを作った。",
+  "has_error": false,
+  "note": "六個 = ろっこ (geminate っ + こ). Avoids the variable さん-/10-forms per entry note."
+ },
+ {
+  "target": "Counter 音便: 個",
+  "text": "卵をろくこ使ってオムレツを作った。",
+  "has_error": true,
+  "note": "六個 must be ろっこ, not ろくこ — missing gemination after 6."
+ },
+ {
+  "target": "病院 / 美容院",
+  "text": "髪を切りに美容院へ行った。",
+  "has_error": false,
+  "note": "Correct: 美容院 (beauty salon) is where you go for a haircut. びよう = 3 morae."
+ },
+ {
+  "target": "病院 / 美容院",
+  "text": "髪を切りに病院へ行った。",
+  "has_error": true,
+  "note": "Wrong: 病院 (hospital, びょう = 2 morae) substituted for 美容院 — implies going to a hospital for a haircut. Mora-count mishearing."
+ },
+ {
+  "target": "おばさん / おばあさん",
+  "text": "近所のおばあさんはもう80歳だ。",
+  "has_error": false,
+  "note": "Correct: 80 years old fits おばあさん (elderly woman, long ばあ)."
+ },
+ {
+  "target": "おばさん / おばあさん",
+  "text": "近所のおばさんはもう80歳だ。",
+  "has_error": true,
+  "note": "Wrong: おばさん (middle-aged woman, short ば) clashes with age 80. Vowel-length mishearing."
+ },
+ {
+  "target": "おじさん / おじいさん",
+  "text": "おじいさんは杖をついてゆっくり歩く。",
+  "has_error": false,
+  "note": "Correct: cane + frailty fits おじいさん (elderly man, long じい)."
+ },
+ {
+  "target": "おじさん / おじいさん",
+  "text": "おじさんは杖をついてゆっくり歩く。",
+  "has_error": true,
+  "note": "Wrong: おじさん (middle-aged man, short じ) mismatched with cane/frailty. Vowel-length mishearing."
+ },
+ {
+  "target": "きて (来て / 着て)",
+  "text": "寒いのでコートを着て出かけた。",
+  "has_error": false,
+  "note": "Correct: 着て (wear) takes the clothing object コートを."
+ },
+ {
+  "target": "きて (来て / 着て)",
+  "text": "寒いのでコートを来て出かけた。",
+  "has_error": true,
+  "note": "Wrong: 来て (come) used with clothing object コートを — nonsensical 'come a coat'."
+ },
+ {
+  "target": "はし (橋 / 箸 / 端)",
+  "text": "箸でご飯をきれいに食べる。",
+  "has_error": false,
+  "note": "Correct: 箸 (chopsticks) collocates with 食べる (eat)."
+ },
+ {
+  "target": "はし (橋 / 箸 / 端)",
+  "text": "橋でご飯をきれいに食べる。",
+  "has_error": true,
+  "note": "Wrong: 橋 (bridge) substituted for 箸 — 'eat rice with a bridge' is nonsensical."
+ },
+ {
+  "target": "あめ (雨 / 飴)",
+  "text": "急に雨が降ってきたので傘をさした。",
+  "has_error": false,
+  "note": "Correct: 雨 (rain) collocates with 降る (fall)."
+ },
+ {
+  "target": "あめ (雨 / 飴)",
+  "text": "急に飴が降ってきたので傘をさした。",
+  "has_error": true,
+  "note": "Wrong: 飴 (candy) substituted for 雨 — 'candy fell so I opened my umbrella' is nonsensical."
+ },
+ {
+  "target": "かみ (神 / 紙 / 髪)",
+  "text": "美容師に頼んで髪を短く切った。",
+  "has_error": false,
+  "note": "Correct: 髪 (hair) fits the haircut context with 美容師 and 切る."
+ },
+ {
+  "target": "かみ (神 / 紙 / 髪)",
+  "text": "美容師に頼んで神を短く切った。",
+  "has_error": true,
+  "note": "Wrong: 神 (god) substituted for 髪 — 'had the hairdresser cut a god short' is nonsensical."
+ },
+ {
+  "target": "せいかく (性格 / 正確)",
+  "text": "正確な時間を教えてください。",
+  "has_error": false,
+  "note": "Correct: 正確 is a na-adjective; 正確な時間 = 'exact time'."
+ },
+ {
+  "target": "せいかく (性格 / 正確)",
+  "text": "性格な時間を教えてください。",
+  "has_error": true,
+  "note": "Wrong: 性格 (personality, a noun) cannot take な; 性格な時間 is ungrammatical."
+ },
+ {
+  "target": "かがく (科学 / 化学)",
+  "text": "試験管の中で化学反応が起きた。",
+  "has_error": false,
+  "note": "Correct: 化学反応 (chemical reaction) is the standard collocation, fits 試験管."
+ },
+ {
+  "target": "かがく (科学 / 化学)",
+  "text": "試験管の中で科学反応が起きた。",
+  "has_error": true,
+  "note": "Wrong: 科学 (science in general) substituted; 科学反応 is not the standard term for a chemical reaction."
+ },
+ {
+  "target": "いし (意志 / 意思 / 医師 / 石)",
+  "text": "契約の前に本人の意思を確認する。",
+  "has_error": false,
+  "note": "Correct: 意思 (intention/wishes) fits the legal context of confirming someone's intent."
+ },
+ {
+  "target": "いし (意志 / 意思 / 医師 / 石)",
+  "text": "契約の前に本人の医師を確認する。",
+  "has_error": true,
+  "note": "Wrong: 医師 (doctor) substituted for 意思 — 'confirm the person's doctor' is a different meaning in a contract context."
+ },
+ {
+  "target": "こうえん (公園 / 講演 / 公演 / 後援)",
+  "text": "会場で教授の講演を聞いた。",
+  "has_error": false,
+  "note": "Correct: 講演 (lecture) collocates with 聞く and a 教授 speaker."
+ },
+ {
+  "target": "こうえん (公園 / 講演 / 公演 / 後援)",
+  "text": "会場で教授の公園を聞いた。",
+  "has_error": true,
+  "note": "Wrong: 公園 (park) substituted for 講演 — 'listened to the professor's park' is nonsensical."
+ },
+ {
+  "target": "きかい (機会 / 機械 / 器械)",
+  "text": "せっかくの良い機会を逃してしまった。",
+  "has_error": false,
+  "note": "Correct: 機会 (opportunity) collocates with 逃す."
+ },
+ {
+  "target": "きかい (機会 / 機械 / 器械)",
+  "text": "せっかくの良い機械を逃してしまった。",
+  "has_error": true,
+  "note": "Wrong: 機械 (machine) substituted for 機会 — wrong sense for 'missed a good opportunity'."
+ },
+ {
+  "target": "あつい (暑い / 熱い / 厚い)",
+  "text": "今日は朝からとても暑い。",
+  "has_error": false,
+  "note": "Correct: 暑い (hot weather) fits 今日 (today/climate)."
+ },
+ {
+  "target": "あつい (暑い / 熱い / 厚い)",
+  "text": "今日は朝からとても熱い。",
+  "has_error": true,
+  "note": "Wrong: 熱い (hot to the touch) substituted for 暑い — wrong adjective for describing the weather of a day."
+ }
+]

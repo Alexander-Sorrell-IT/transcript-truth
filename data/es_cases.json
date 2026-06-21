@@ -1,0 +1,1322 @@
+[
+ {
+  "target": "haya/halla/aya",
+  "text": "Espero que mi hermana ya haya llegado a casa.",
+  "has_error": false,
+  "note": "'haya' (present subjunctive of 'haber') is correct before the participle 'llegado'."
+ },
+ {
+  "target": "haya/halla/aya",
+  "text": "Espero que mi hermana ya halla llegado a casa.",
+  "has_error": true,
+  "note": "'halla' (from 'hallar' = finds) cannot take a participle; the auxiliary 'haya' is required."
+ },
+ {
+  "target": "vaya/valla/baya",
+  "text": "Espero que todo te vaya muy bien en el examen.",
+  "has_error": false,
+  "note": "'vaya' (subjunctive of 'ir') is the correct verb form here."
+ },
+ {
+  "target": "vaya/valla/baya",
+  "text": "Espero que todo te valla muy bien en el examen.",
+  "has_error": true,
+  "note": "'valla' (a fence) is a noun and cannot function as the verb 'ir' in this slot."
+ },
+ {
+  "target": "hecho/echo",
+  "text": "Ya he hecho toda la tarea de matemáticas.",
+  "has_error": false,
+  "note": "'hecho' (participle of 'hacer') is correct after the auxiliary 'he'."
+ },
+ {
+  "target": "hecho/echo",
+  "text": "Ya he echo toda la tarea de matemáticas.",
+  "has_error": true,
+  "note": "'echo' (1st person of 'echar') cannot follow 'he'; a participle ('hecho') is required."
+ },
+ {
+  "target": "hecha/echa",
+  "text": "La cama ya está hecha desde temprano.",
+  "has_error": false,
+  "note": "'hecha' (feminine participle of 'hacer') is correct with 'está'."
+ },
+ {
+  "target": "hecha/echa",
+  "text": "La cama ya está echa desde temprano.",
+  "has_error": true,
+  "note": "'echa' (from 'echar') is not a participle and cannot follow 'está' here; 'hecha' is required."
+ },
+ {
+  "target": "tubo/tuvo",
+  "text": "El fontanero cambió el tubo del lavabo.",
+  "has_error": false,
+  "note": "'tubo' (pipe) is the correct noun as direct object."
+ },
+ {
+  "target": "tubo/tuvo",
+  "text": "El fontanero cambió el tuvo del lavabo.",
+  "has_error": true,
+  "note": "'tuvo' is a verb form ('he had') and cannot be the noun object after 'el'."
+ },
+ {
+  "target": "hola/ola",
+  "text": "Le dije hola a mi vecino al salir.",
+  "has_error": false,
+  "note": "'hola' (greeting) is the correct interjection here."
+ },
+ {
+  "target": "hola/ola",
+  "text": "Le dije ola a mi vecino al salir.",
+  "has_error": true,
+  "note": "'ola' means a sea wave, not a greeting; the greeting is spelled 'hola'."
+ },
+ {
+  "target": "basto/vasto",
+  "text": "Cruzaron a caballo un vasto territorio desértico.",
+  "has_error": false,
+  "note": "'vasto' (immense in extent) correctly describes a huge territory."
+ },
+ {
+  "target": "basto/vasto",
+  "text": "Cruzaron a caballo un basto territorio desértico.",
+  "has_error": true,
+  "note": "'basto' means coarse/rough, not large; 'vasto' is required to mean 'vast'."
+ },
+ {
+  "target": "sabia/savia",
+  "text": "La savia sube por el tronco del árbol en primavera.",
+  "has_error": false,
+  "note": "'savia' (plant sap) is the correct noun for what flows through a tree."
+ },
+ {
+  "target": "sabia/savia",
+  "text": "La sabia sube por el tronco del árbol en primavera.",
+  "has_error": true,
+  "note": "'sabia' means 'wise (woman)', not sap; the fluid in a tree is 'savia'."
+ },
+ {
+  "target": "cien/sien",
+  "text": "Necesito cien euros para pagar la matrícula.",
+  "has_error": false,
+  "note": "'cien' (the number 100) is correct as the quantity."
+ },
+ {
+  "target": "cien/sien",
+  "text": "Necesito sien euros para pagar la matrícula.",
+  "has_error": true,
+  "note": "'sien' is the temple of the head, not a number; '100' is 'cien'."
+ },
+ {
+  "target": "vez/ves",
+  "text": "Te lo voy a explicar una vez más.",
+  "has_error": false,
+  "note": "'vez' (occasion/instance) is the correct noun after 'una'."
+ },
+ {
+  "target": "vez/ves",
+  "text": "Te lo voy a explicar una ves más.",
+  "has_error": true,
+  "note": "'ves' is the verb 'you see'; the noun for 'instance' is 'vez'."
+ },
+ {
+  "target": "haber/a ver",
+  "text": "A ver si vienes a visitarnos pronto.",
+  "has_error": false,
+  "note": "The two-word 'a ver' ('let's see') is correct at the start of this expression."
+ },
+ {
+  "target": "haber/a ver",
+  "text": "Haber si vienes a visitarnos pronto.",
+  "has_error": true,
+  "note": "'haber' is the infinitive auxiliary; the expression 'let's see' is the two-word 'a ver'."
+ },
+ {
+  "target": "ha/a/ah",
+  "text": "Esta tarde ha llovido sin parar.",
+  "has_error": false,
+  "note": "'ha' (auxiliary 'haber') is correct before the participle 'llovido'."
+ },
+ {
+  "target": "ha/a/ah",
+  "text": "Esta tarde a llovido sin parar.",
+  "has_error": true,
+  "note": "'a' is a preposition and cannot be the auxiliary before 'llovido'; 'ha' is required."
+ },
+ {
+  "target": "e/eh/he",
+  "text": "Esta semana he visto tres películas muy buenas.",
+  "has_error": false,
+  "note": "'he' (auxiliary 'haber') is correct before the participle 'visto'."
+ },
+ {
+  "target": "e/eh/he",
+  "text": "Esta semana e visto tres películas muy buenas.",
+  "has_error": true,
+  "note": "'e' is the conjunction 'and'; the 1st-person auxiliary before 'visto' is 'he'."
+ },
+ {
+  "target": "ay/hay",
+  "text": "En la nevera hay leche y mantequilla.",
+  "has_error": false,
+  "note": "'hay' (impersonal 'haber' = there is/are) is correct here."
+ },
+ {
+  "target": "ay/hay",
+  "text": "En la nevera ay leche y mantequilla.",
+  "has_error": true,
+  "note": "'ay' is an interjection of pain; 'there is/are' is 'hay'."
+ },
+ {
+  "target": "tú/tu",
+  "text": "Tú siempre llegas tarde a las reuniones.",
+  "has_error": false,
+  "note": "tú = stressed subject pronoun before a verb; correct, unaccented possessive would need a noun."
+ },
+ {
+  "target": "tú/tu",
+  "text": "Tu siempre llegas tarde a las reuniones.",
+  "has_error": true,
+  "note": "Subject pronoun before the verb requires the accented tú; tu (possessive) needs a following noun, so this is wrong."
+ },
+ {
+  "target": "él/el",
+  "text": "Ayer él me llamó por teléfono dos veces.",
+  "has_error": false,
+  "note": "él = personal pronoun subject; correct."
+ },
+ {
+  "target": "él/el",
+  "text": "Ayer el me llamó por teléfono dos veces.",
+  "has_error": true,
+  "note": "The pronoun subject 'he' must be accented él; el is the article and needs a following noun, so this is wrong."
+ },
+ {
+  "target": "mí/mi",
+  "text": "Ese regalo es para mí, no para ti.",
+  "has_error": false,
+  "note": "mí = stressed object of preposition 'para'; correct."
+ },
+ {
+  "target": "mí/mi",
+  "text": "Ese regalo es para mi, no para ti.",
+  "has_error": true,
+  "note": "As object of the preposition 'para' it must be the stressed mí; mi (possessive) would need a noun, so this is wrong."
+ },
+ {
+  "target": "sí/si",
+  "text": "Sí, terminaré el informe esta misma tarde.",
+  "has_error": false,
+  "note": "sí = affirmation 'yes'; the comma forces the affirmation reading; correct."
+ },
+ {
+  "target": "sí/si",
+  "text": "Si, terminaré el informe esta misma tarde.",
+  "has_error": true,
+  "note": "The affirmation 'yes' must be accented sí; unaccented si means 'if' and cannot stand alone before a comma here, so this is wrong."
+ },
+ {
+  "target": "sé/se",
+  "text": "Yo no sé la respuesta de esa pregunta.",
+  "has_error": false,
+  "note": "sé = 1sg of saber 'I know'; correct."
+ },
+ {
+  "target": "sé/se",
+  "text": "Yo no se la respuesta de esa pregunta.",
+  "has_error": true,
+  "note": "The verb 'I know' must be accented sé; se is a clitic pronoun and cannot be the verb here, so this is wrong."
+ },
+ {
+  "target": "dé/de",
+  "text": "Espero que el juez le dé otra oportunidad.",
+  "has_error": false,
+  "note": "dé = present subjunctive of dar; correct."
+ },
+ {
+  "target": "dé/de",
+  "text": "Espero que el juez le de otra oportunidad.",
+  "has_error": true,
+  "note": "The subjunctive verb form must be accented dé; de is the preposition and cannot serve as the verb after 'le', so this is wrong."
+ },
+ {
+  "target": "té/te",
+  "text": "Por las mañanas prefiero un té con limón.",
+  "has_error": false,
+  "note": "té = the beverage tea (noun); correct."
+ },
+ {
+  "target": "té/te",
+  "text": "Por las mañanas prefiero un te con limón.",
+  "has_error": true,
+  "note": "The beverage 'tea' must be accented té; te is a clitic pronoun and cannot follow the article 'un' as a noun, so this is wrong."
+ },
+ {
+  "target": "más/mas",
+  "text": "Quiero comer más fruta y menos dulces.",
+  "has_error": false,
+  "note": "más = quantity adverb 'more'; correct."
+ },
+ {
+  "target": "más/mas",
+  "text": "Quiero comer mas fruta y menos dulces.",
+  "has_error": true,
+  "note": "The quantity adverb 'more' must be accented más; unaccented mas means literary 'but' and cannot fit here, so this is wrong."
+ },
+ {
+  "target": "qué/que",
+  "text": "¿Qué quieres cenar esta noche?",
+  "has_error": false,
+  "note": "qué = interrogative in a direct question; correct."
+ },
+ {
+  "target": "qué/que",
+  "text": "¿Que quieres cenar esta noche?",
+  "has_error": true,
+  "note": "In a direct interrogative the word must be accented qué; unaccented que is the relative/conjunction, so this is wrong."
+ },
+ {
+  "target": "cómo/como",
+  "text": "¿Cómo llegaste tan rápido al aeropuerto?",
+  "has_error": false,
+  "note": "cómo = interrogative 'how' in a direct question; correct."
+ },
+ {
+  "target": "cómo/como",
+  "text": "¿Como llegaste tan rápido al aeropuerto?",
+  "has_error": true,
+  "note": "In a direct interrogative the word must be accented cómo; unaccented como means 'as/like' or 'I eat', so this is wrong."
+ },
+ {
+  "target": "dónde/donde",
+  "text": "¿Dónde dejaste las llaves del coche?",
+  "has_error": false,
+  "note": "dónde = interrogative 'where' in a direct question; correct."
+ },
+ {
+  "target": "dónde/donde",
+  "text": "¿Donde dejaste las llaves del coche?",
+  "has_error": true,
+  "note": "In a direct interrogative the word must be accented dónde; unaccented donde is the relative adverb, so this is wrong."
+ },
+ {
+  "target": "cuándo/cuando",
+  "text": "¿Cuándo empieza la función de teatro?",
+  "has_error": false,
+  "note": "cuándo = interrogative 'when' in a direct question; correct."
+ },
+ {
+  "target": "cuándo/cuando",
+  "text": "¿Cuando empieza la función de teatro?",
+  "has_error": true,
+  "note": "In a direct interrogative the word must be accented cuándo; unaccented cuando is the temporal conjunction, so this is wrong."
+ },
+ {
+  "target": "bello/vello",
+  "text": "El atardecer sobre el mar era realmente bello.",
+  "has_error": false,
+  "note": "'bello' = beautiful (adjective qualifying 'atardecer'). Correct."
+ },
+ {
+  "target": "bello/vello",
+  "text": "El atardecer sobre el mar era realmente vello.",
+  "has_error": true,
+  "note": "Wrong: 'vello' = body hair; the adjective 'beautiful' must be 'bello'."
+ },
+ {
+  "target": "bota/vota",
+  "text": "Cada domingo ella vota en las elecciones del pueblo.",
+  "has_error": false,
+  "note": "'vota' = (she) votes (votar). Correct for casting a ballot."
+ },
+ {
+  "target": "bota/vota",
+  "text": "Cada domingo ella bota en las elecciones del pueblo.",
+  "has_error": true,
+  "note": "Wrong: 'bota' = boot / throws away (botar); voting requires 'vota'."
+ },
+ {
+  "target": "botar/votar",
+  "text": "Decidieron botar la vieja nevera porque ya no funcionaba.",
+  "has_error": false,
+  "note": "'botar' = to throw away/discard. Correct for getting rid of the fridge."
+ },
+ {
+  "target": "botar/votar",
+  "text": "Decidieron votar la vieja nevera porque ya no funcionaba.",
+  "has_error": true,
+  "note": "Wrong: 'votar' = to vote; discarding an object is 'botar'."
+ },
+ {
+  "target": "baca/vaca",
+  "text": "Atamos las maletas en la baca del coche para el viaje.",
+  "has_error": false,
+  "note": "'baca' = roof rack on a car. Correct."
+ },
+ {
+  "target": "baca/vaca",
+  "text": "Atamos las maletas en la vaca del coche para el viaje.",
+  "has_error": true,
+  "note": "Wrong: 'vaca' = cow; the roof rack is 'baca'."
+ },
+ {
+  "target": "bienes/vienes",
+  "text": "Al morir, repartió todos sus bienes entre sus hijos.",
+  "has_error": false,
+  "note": "'bienes' = goods/assets (noun). Correct for inherited property."
+ },
+ {
+  "target": "bienes/vienes",
+  "text": "Al morir, repartió todos sus vienes entre sus hijos.",
+  "has_error": true,
+  "note": "Wrong: 'vienes' = you come (venir); possessions are 'bienes'."
+ },
+ {
+  "target": "grabar/gravar",
+  "text": "Quiero grabar el concierto con mi teléfono.",
+  "has_error": false,
+  "note": "'grabar' = to record audio/video. Correct."
+ },
+ {
+  "target": "grabar/gravar",
+  "text": "Quiero gravar el concierto con mi teléfono.",
+  "has_error": true,
+  "note": "Wrong: 'gravar' = to tax/levy; recording is 'grabar'."
+ },
+ {
+  "target": "graba/grava",
+  "text": "El técnico graba el concierto desde la primera fila.",
+  "has_error": false,
+  "note": "'graba' = (he) records (grabar). Correct."
+ },
+ {
+  "target": "graba/grava",
+  "text": "El técnico grava el concierto desde la primera fila.",
+  "has_error": true,
+  "note": "Wrong: 'grava' = gravel / (he) taxes (gravar); recording is 'graba'."
+ },
+ {
+  "target": "rebelar(se)/revelar",
+  "text": "Los soldados decidieron rebelarse contra el general.",
+  "has_error": false,
+  "note": "'rebelarse' = to rebel/rise up; the 'contra' anchor confirms it. Correct."
+ },
+ {
+  "target": "rebelar(se)/revelar",
+  "text": "Los soldados decidieron revelarse contra el general.",
+  "has_error": true,
+  "note": "Wrong: 'revelarse' = to reveal oneself; rising up against is 'rebelarse'."
+ },
+ {
+  "target": "rebelo/revelo",
+  "text": "Me rebelo contra las normas injustas de la empresa.",
+  "has_error": false,
+  "note": "'rebelo' = (I) rebel (rebelarse), takes 'contra'. Correct."
+ },
+ {
+  "target": "rebelo/revelo",
+  "text": "Me revelo contra las normas injustas de la empresa.",
+  "has_error": true,
+  "note": "Wrong: 'revelo' = (I) reveal/develop film; rebelling against is 'rebelo'."
+ },
+ {
+  "target": "sabia/savia",
+  "text": "Su abuela era una mujer muy sabia y prudente.",
+  "has_error": false,
+  "note": "'sabia' = wise (feminine adjective). Correct; not the accented 'sabía'."
+ },
+ {
+  "target": "sabia/savia",
+  "text": "Su abuela era una mujer muy savia y prudente.",
+  "has_error": true,
+  "note": "Wrong: 'savia' = plant sap; describing a wise woman needs 'sabia'."
+ },
+ {
+  "target": "basto/vasto",
+  "text": "Posee vastos conocimientos de historia medieval.",
+  "has_error": false,
+  "note": "'vasto/vastos' = vast, extensive. Correct for extensive knowledge."
+ },
+ {
+  "target": "basto/vasto",
+  "text": "Posee bastos conocimientos de historia medieval.",
+  "has_error": true,
+  "note": "Wrong: 'basto' = coarse/crude; extensive knowledge is 'vasto'."
+ },
+ {
+  "target": "basta/vasta",
+  "text": "¡Ya basta de tantas quejas, por favor!",
+  "has_error": false,
+  "note": "'basta' = enough! (bastar). Correct in this exclamation."
+ },
+ {
+  "target": "basta/vasta",
+  "text": "¡Ya vasta de tantas quejas, por favor!",
+  "has_error": true,
+  "note": "Wrong: 'vasta' = vast (fem.); the 'enough!' interjection is 'basta'."
+ },
+ {
+  "target": "bacilo/vacilo",
+  "text": "El biólogo observó el bacilo de la tuberculosis al microscopio.",
+  "has_error": false,
+  "note": "'bacilo' = bacillus (rod-shaped bacterium). Correct."
+ },
+ {
+  "target": "bacilo/vacilo",
+  "text": "El biólogo observó el vacilo de la tuberculosis al microscopio.",
+  "has_error": true,
+  "note": "Wrong: 'vacilo' = (I) hesitate (vacilar); the bacterium is 'bacilo'."
+ },
+ {
+  "target": "tubo/tuvo",
+  "text": "El fontanero cambió el tubo oxidado del lavabo.",
+  "has_error": false,
+  "note": "'tubo' = pipe/tube (noun). Correct."
+ },
+ {
+  "target": "tubo/tuvo",
+  "text": "El fontanero cambió el tuvo oxidado del lavabo.",
+  "has_error": true,
+  "note": "Wrong: 'tuvo' = (he) had (tener); the pipe is 'tubo'."
+ },
+ {
+  "target": "casa/caza",
+  "text": "Compramos una casa con jardín a las afueras del pueblo.",
+  "has_error": false,
+  "note": "'casa' (dwelling) is correct for a house with a garden."
+ },
+ {
+  "target": "casa/caza",
+  "text": "Compramos una caza con jardín a las afueras del pueblo.",
+  "has_error": true,
+  "note": "Should be 'casa' (house); 'caza' means hunting/game, not a dwelling."
+ },
+ {
+  "target": "cazar/casar",
+  "text": "Su abuelo solía cazar perdices en el monte cada otoño.",
+  "has_error": false,
+  "note": "'cazar' (to hunt) is correct with prey (partridges) as object."
+ },
+ {
+  "target": "cazar/casar",
+  "text": "Su abuelo solía casar perdices en el monte cada otoño.",
+  "has_error": true,
+  "note": "Should be 'cazar' (to hunt animals); 'casar' means to marry/match."
+ },
+ {
+  "target": "cazo/caso",
+  "text": "Calentó la leche en un cazo pequeño sobre el fuego.",
+  "has_error": false,
+  "note": "'cazo' (small saucepan/ladle) is the correct kitchen utensil."
+ },
+ {
+  "target": "cazo/caso",
+  "text": "Calentó la leche en un caso pequeño sobre el fuego.",
+  "has_error": true,
+  "note": "Should be 'cazo' (saucepan); 'caso' means case/instance."
+ },
+ {
+  "target": "cocer/coser",
+  "text": "Hay que cocer las patatas veinte minutos antes de aplastarlas.",
+  "has_error": false,
+  "note": "'cocer' (to boil/cook) is correct for boiling potatoes."
+ },
+ {
+  "target": "cocer/coser",
+  "text": "Hay que coser las patatas veinte minutos antes de aplastarlas.",
+  "has_error": true,
+  "note": "Should be 'cocer' (to boil); 'coser' means to sew."
+ },
+ {
+  "target": "cocido/cosido",
+  "text": "El garbanzo quedó bien cocido tras dos horas de hervor.",
+  "has_error": false,
+  "note": "'cocido' (boiled/cooked) is correct for the result of boiling."
+ },
+ {
+  "target": "cocido/cosido",
+  "text": "El garbanzo quedó bien cosido tras dos horas de hervor.",
+  "has_error": true,
+  "note": "Should be 'cocido' (boiled); 'cosido' means sewn/stitched."
+ },
+ {
+  "target": "abrazar/abrasar",
+  "text": "Quiso abrazar a su madre nada más bajar del tren.",
+  "has_error": false,
+  "note": "'abrazar' (to hug) is correct for embracing a person."
+ },
+ {
+  "target": "abrazar/abrasar",
+  "text": "Quiso abrasar a su madre nada más bajar del tren.",
+  "has_error": true,
+  "note": "Should be 'abrazar' (to hug); 'abrasar' means to burn/scorch."
+ },
+ {
+  "target": "rebozar/rebosar",
+  "text": "Voy a rebozar el filete en huevo y pan rallado antes de freírlo.",
+  "has_error": false,
+  "note": "'rebozar' (to coat in batter/breadcrumbs) is correct in cooking."
+ },
+ {
+  "target": "rebozar/rebosar",
+  "text": "Voy a rebosar el filete en huevo y pan rallado antes de freírlo.",
+  "has_error": true,
+  "note": "Should be 'rebozar' (to bread/batter); 'rebosar' means to overflow."
+ },
+ {
+  "target": "cima/sima",
+  "text": "Tras horas de ascenso, llegaron por fin a la cima de la montaña.",
+  "has_error": false,
+  "note": "'cima' (summit/peak) is correct for the top of a mountain."
+ },
+ {
+  "target": "cima/sima",
+  "text": "Tras horas de ascenso, llegaron por fin a la sima de la montaña.",
+  "has_error": true,
+  "note": "Should be 'cima' (summit); 'sima' means chasm/abyss (downward)."
+ },
+ {
+  "target": "encima/enzima",
+  "text": "Dejó las llaves encima de la mesa del recibidor.",
+  "has_error": false,
+  "note": "'encima' (on top of) is correct for spatial position."
+ },
+ {
+  "target": "encima/enzima",
+  "text": "Dejó las llaves enzima de la mesa del recibidor.",
+  "has_error": true,
+  "note": "Should be 'encima' (on top); 'enzima' means enzyme (biochemistry)."
+ },
+ {
+  "target": "ciento",
+  "text": "El descuento es de un veinte por ciento sobre el precio final.",
+  "has_error": false,
+  "note": "'ciento' (hundred, in 'por ciento') is the correct word here."
+ },
+ {
+  "target": "ciento",
+  "text": "El descuento es de un veinte por siento sobre el precio final.",
+  "has_error": true,
+  "note": "Should be 'ciento' (hundred); 'siento' means I feel/I'm sorry."
+ },
+ {
+  "target": "cien/sien",
+  "text": "En la carrera había unos cien corredores en la línea de salida.",
+  "has_error": false,
+  "note": "'cien' (hundred, before a noun) is correct for the number of runners."
+ },
+ {
+  "target": "cien/sien",
+  "text": "En la carrera había unos sien corredores en la línea de salida.",
+  "has_error": true,
+  "note": "Should be 'cien' (hundred); 'sien' means temple (side of forehead)."
+ },
+ {
+  "target": "cierra/sierra",
+  "text": "Por favor, cierra la ventana antes de que entre el frío.",
+  "has_error": false,
+  "note": "'cierra' (closes/shut!, from cerrar) is correct for the action."
+ },
+ {
+  "target": "cierra/sierra",
+  "text": "Por favor, sierra la ventana antes de que entre el frío.",
+  "has_error": true,
+  "note": "Should be 'cierra' (close, verb); 'sierra' is a saw or mountain range."
+ },
+ {
+  "target": "ciervo/siervo",
+  "text": "Un ciervo cruzó el sendero de un salto y desapareció entre los árboles.",
+  "has_error": false,
+  "note": "'ciervo' (deer/stag) is correct for the animal."
+ },
+ {
+  "target": "ciervo/siervo",
+  "text": "Un siervo cruzó el sendero de un salto y desapareció entre los árboles.",
+  "has_error": true,
+  "note": "Should be 'ciervo' (deer); 'siervo' means serf/servant."
+ },
+ {
+  "target": "ciega/siega",
+  "text": "La anciana está ciega desde hace años y se guía con un bastón.",
+  "has_error": false,
+  "note": "'ciega' (blind, fem.) is correct for loss of sight."
+ },
+ {
+  "target": "ciega/siega",
+  "text": "La anciana está siega desde hace años y se guía con un bastón.",
+  "has_error": true,
+  "note": "Should be 'ciega' (blind); 'siega' means harvest/reaping."
+ },
+ {
+  "target": "gira/jira",
+  "text": "La banda de rock anunció una gira mundial con conciertos en veinte países.",
+  "has_error": false,
+  "note": "Concert/tour context forces 'gira'. Correct."
+ },
+ {
+  "target": "gira/jira",
+  "text": "La banda de rock anunció una jira mundial con conciertos en veinte países.",
+  "has_error": true,
+  "note": "'jira' means a country picnic/outing; with concerts/tour the correct word is 'gira'."
+ },
+ {
+  "target": "ingerir/injerir",
+  "text": "El médico le advirtió que no debía ingerir alcohol mientras tomara ese medicamento.",
+  "has_error": false,
+  "note": "Swallowing a substance into the body forces 'ingerir' (g). Correct."
+ },
+ {
+  "target": "ingerir/injerir",
+  "text": "El médico le advirtió que no debía injerir alcohol mientras tomara ese medicamento.",
+  "has_error": true,
+  "note": "'injerir' means to insert/meddle; ingesting alcohol requires 'ingerir' (g)."
+ },
+ {
+  "target": "agito/ajito",
+  "text": "Antes de servir el jarabe, lo agito bien para que no quede sedimento.",
+  "has_error": false,
+  "note": "'I shake/stir' (agitar, 1sg) forces 'agito' (g). Correct."
+ },
+ {
+  "target": "agito/ajito",
+  "text": "Antes de servir el jarabe, lo ajito bien para que no quede sedimento.",
+  "has_error": true,
+  "note": "'ajito' is 'little garlic clove', a noun; the verb 'I shake' is 'agito' (g)."
+ },
+ {
+  "target": "ojear/hojear",
+  "text": "Desde la colina me detuve a ojear el horizonte en busca del barco.",
+  "has_error": false,
+  "note": "Glancing/scanning a vista (from ojo) forces 'ojear'; you cannot leaf through a horizon. Correct."
+ },
+ {
+  "target": "ojear/hojear",
+  "text": "Desde la colina me detuve a hojear el horizonte en busca del barco.",
+  "has_error": true,
+  "note": "'hojear' = to leaf through pages; scanning the horizon needs 'ojear' (from ojo)."
+ },
+ {
+  "target": "calló/cayó",
+  "text": "En cuanto entró el director, el alumno se calló y dejó de hablar de inmediato.",
+  "has_error": false,
+  "note": "'Fell silent' (callar) is forced by 'dejó de hablar'. Correct."
+ },
+ {
+  "target": "calló/cayó",
+  "text": "En cuanto entró el director, el alumno se cayó y dejó de hablar de inmediato.",
+  "has_error": true,
+  "note": "'cayó' = fell down (caer); falling silent and ceasing to speak requires 'calló' (callar)."
+ },
+ {
+  "target": "callado/cayado",
+  "text": "Es un niño muy callado que apenas dice una palabra en clase.",
+  "has_error": false,
+  "note": "'Quiet/silent' (adjective from callar) is forced by 'apenas dice una palabra'. Correct."
+ },
+ {
+  "target": "callado/cayado",
+  "text": "Es un niño muy cayado que apenas dice una palabra en clase.",
+  "has_error": true,
+  "note": "'cayado' is a shepherd's staff (noun); describing a quiet person needs the adjective 'callado'."
+ },
+ {
+  "target": "valla/vaya/baya",
+  "text": "Saltó la valla del jardín para recuperar la pelota del vecino.",
+  "has_error": false,
+  "note": "A fence/barrier forces 'valla'. Correct."
+ },
+ {
+  "target": "valla/vaya/baya",
+  "text": "Saltó la baya del jardín para recuperar la pelota del vecino.",
+  "has_error": true,
+  "note": "'baya' is a berry (fruit); the fence one jumps over is 'valla'."
+ },
+ {
+  "target": "rallar/rayar",
+  "text": "Voy a rallar un poco de queso para echárselo a la pasta.",
+  "has_error": false,
+  "note": "Grating food with a grater forces 'rallar' (ll). Correct."
+ },
+ {
+  "target": "rallar/rayar",
+  "text": "Voy a rayar un poco de queso para echárselo a la pasta.",
+  "has_error": true,
+  "note": "'rayar' = to scratch/draw lines; grating cheese requires 'rallar' (ll)."
+ },
+ {
+  "target": "rallado/rayado",
+  "text": "Espolvoreó queso rallado sobre la lasaña recién horneada.",
+  "has_error": false,
+  "note": "Grated cheese forces 'rallado' (participle of rallar). Correct."
+ },
+ {
+  "target": "rallado/rayado",
+  "text": "Espolvoreó queso rayado sobre la lasaña recién horneada.",
+  "has_error": true,
+  "note": "'rayado' = scratched/lined/striped; grated cheese is 'queso rallado' (ll)."
+ },
+ {
+  "target": "arrollo/arroyo",
+  "text": "Los niños cruzaron descalzos el arroyo que bajaba de la montaña.",
+  "has_error": false,
+  "note": "A stream/brook (noun) forces 'arroyo' (y). Correct."
+ },
+ {
+  "target": "arrollo/arroyo",
+  "text": "Los niños cruzaron descalzos el arrollo que bajaba de la montaña.",
+  "has_error": true,
+  "note": "'arrollo' is the verb 'I run over/roll up' (arrollar); a stream is the noun 'arroyo' (y)."
+ },
+ {
+  "target": "halla/haya/aya",
+  "text": "Cada vez que se pierde, halla el camino de regreso siguiendo el río.",
+  "has_error": false,
+  "note": "'finds' (hallar, 3sg present) forces 'halla'. Correct."
+ },
+ {
+  "target": "halla/haya/aya",
+  "text": "Cada vez que se pierde, haya el camino de regreso siguiendo el río.",
+  "has_error": true,
+  "note": "'haya' is subjunctive of haber / a beech tree; 'finds the way' needs 'halla' (hallar)."
+ },
+ {
+  "target": "olla/hoya",
+  "text": "Dejó la sopa hirviendo a fuego lento en una olla de barro.",
+  "has_error": false,
+  "note": "A cooking pot forces 'olla' (ll). Correct."
+ },
+ {
+  "target": "olla/hoya",
+  "text": "Dejó la sopa hirviendo a fuego lento en una hoya de barro.",
+  "has_error": true,
+  "note": "'hoya' is a pit/hollow/grave; a cooking pot is 'olla' (ll)."
+ },
+ {
+  "target": "pollo/poyo",
+  "text": "Para la cena asamos un pollo entero con patatas al horno.",
+  "has_error": false,
+  "note": "Chicken (bird/food) forces 'pollo' (ll). Correct."
+ },
+ {
+  "target": "pollo/poyo",
+  "text": "Para la cena asamos un poyo entero con patatas al horno.",
+  "has_error": true,
+  "note": "'poyo' is a stone bench against a wall; the bird/food is 'pollo' (ll)."
+ },
+ {
+  "target": "malla/maya",
+  "text": "Compró una malla metálica para cercar el gallinero y proteger las gallinas.",
+  "has_error": false,
+  "note": "Mesh/netting forces 'malla' (ll). Correct."
+ },
+ {
+  "target": "malla/maya",
+  "text": "Compró una maya metálica para cercar el gallinero y proteger las gallinas.",
+  "has_error": true,
+  "note": "'maya' refers to the Maya people/civilization; metal mesh is 'malla' (ll)."
+ },
+ {
+  "target": "actual / actualmente",
+  "text": "El presidente actual lleva tres años en el cargo.",
+  "has_error": false,
+  "note": "'actual' correctly means current/present-day; he is the current president."
+ },
+ {
+  "target": "actual / actualmente",
+  "text": "No sé si la historia es actual o si se la inventó.",
+  "has_error": true,
+  "note": "Anglicism: 'actual' is used here to mean 'real/true' (English 'actual'), but Spanish 'actual' only means 'current'. Should be 'real/verdadera'."
+ },
+ {
+  "target": "embarazada / avergonzada",
+  "text": "Se quedó muy avergonzada cuando la corrigieron delante de todos.",
+  "has_error": false,
+  "note": "'avergonzada' correctly means embarrassed/ashamed."
+ },
+ {
+  "target": "embarazada / avergonzada",
+  "text": "Se quedó muy embarazada cuando la corrigieron delante de todos.",
+  "has_error": true,
+  "note": "Classic false friend: 'embarazada' means pregnant, not embarrassed; should be 'avergonzada'."
+ },
+ {
+  "target": "sensible / sensato",
+  "text": "Fue una decisión muy sensata, pensada con calma y sin prisas.",
+  "has_error": false,
+  "note": "'sensata' correctly means sensible/level-headed."
+ },
+ {
+  "target": "sensible / sensato",
+  "text": "Fue una decisión muy sensible, pensada con calma y sin prisas.",
+  "has_error": true,
+  "note": "False friend: 'sensible' means sensitive, not sensible; should be 'sensata'."
+ },
+ {
+  "target": "carpeta / alfombra",
+  "text": "Guardé todos los documentos en una carpeta amarilla.",
+  "has_error": false,
+  "note": "'carpeta' correctly means folder, where you keep documents."
+ },
+ {
+  "target": "carpeta / alfombra",
+  "text": "El gato manchó la carpeta del salón con sus patas.",
+  "has_error": true,
+  "note": "False friend: 'carpeta' means folder, not the floor carpet; a carpet in the living room is 'alfombra'."
+ },
+ {
+  "target": "éxito / salida",
+  "text": "Su primera novela fue un éxito rotundo de ventas.",
+  "has_error": false,
+  "note": "'éxito' correctly means success."
+ },
+ {
+  "target": "éxito / salida",
+  "text": "En caso de incendio, busca el éxito más cercano.",
+  "has_error": true,
+  "note": "False friend: 'éxito' means success, not exit; an emergency exit is 'salida'."
+ },
+ {
+  "target": "librería / biblioteca",
+  "text": "Saqué prestado este libro de la biblioteca del barrio.",
+  "has_error": false,
+  "note": "'biblioteca' correctly means a lending library where you borrow books."
+ },
+ {
+  "target": "librería / biblioteca",
+  "text": "Saqué prestado este libro de la librería del barrio.",
+  "has_error": true,
+  "note": "False friend: 'librería' is a bookstore (you buy, not borrow); a lending library is 'biblioteca'."
+ },
+ {
+  "target": "recordar / grabar",
+  "text": "Voy a grabar el concierto con el móvil para verlo después.",
+  "has_error": false,
+  "note": "'grabar' correctly means to record audio/video."
+ },
+ {
+  "target": "recordar / grabar",
+  "text": "Voy a recordar el concierto con el móvil para verlo después.",
+  "has_error": true,
+  "note": "False friend: 'recordar' means to remember, not to record media; should be 'grabar'."
+ },
+ {
+  "target": "asistir / atender / ayudar",
+  "text": "¿Me puedes ayudar a mover este sofá tan pesado?",
+  "has_error": false,
+  "note": "'ayudar' correctly means to assist/help with a task."
+ },
+ {
+  "target": "asistir / atender / ayudar",
+  "text": "¿Me puedes asistir a mover este sofá tan pesado?",
+  "has_error": true,
+  "note": "False friend: English 'assist' (help) is 'ayudar'; 'asistir a' means to attend an event, so 'asistir a mover' is wrong here."
+ },
+ {
+  "target": "realizar / darse cuenta",
+  "text": "De repente me di cuenta de que había olvidado las llaves dentro.",
+  "has_error": false,
+  "note": "'darse cuenta de' correctly means to realize/become aware."
+ },
+ {
+  "target": "realizar / darse cuenta",
+  "text": "De repente realicé que había olvidado las llaves dentro.",
+  "has_error": true,
+  "note": "False friend: 'realizar' means to carry out, not to realize/notice; should be 'me di cuenta'."
+ },
+ {
+  "target": "constipado / estreñido / resfriado",
+  "text": "Llevo toda la semana estreñido por no comer suficiente fibra.",
+  "has_error": false,
+  "note": "'estreñido' correctly means constipated (bowels)."
+ },
+ {
+  "target": "constipado / estreñido / resfriado",
+  "text": "Llevo toda la semana constipado por no comer suficiente fibra.",
+  "has_error": true,
+  "note": "False friend: 'constipado' means having a head cold, not constipated; bowel constipation is 'estreñido'."
+ },
+ {
+  "target": "molestar / abusar",
+  "text": "Deja de molestar a tu hermana, que está intentando estudiar.",
+  "has_error": false,
+  "note": "'molestar' correctly means to bother/annoy."
+ },
+ {
+  "target": "molestar / abusar",
+  "text": "El acusado fue detenido por molestar a varios menores.",
+  "has_error": true,
+  "note": "False friend: 'molestar' means to bother/annoy, not 'to molest'; the criminal sense is 'abusar de/acosar', so this sentence badly understates the crime."
+ },
+ {
+  "target": "introducir / presentar",
+  "text": "Permíteme presentarte a mi colega de la oficina, Marta.",
+  "has_error": false,
+  "note": "'presentar' correctly means to introduce a person."
+ },
+ {
+  "target": "introducir / presentar",
+  "text": "Permíteme introducirte a mi colega de la oficina, Marta.",
+  "has_error": true,
+  "note": "False friend: introducing a person is 'presentar'; 'introducir' means to insert/put in, so 'introducirte a mi colega' is wrong."
+ },
+ {
+  "target": "fábrica / tela / fabricar",
+  "text": "Compré tres metros de tela azul para hacer las cortinas.",
+  "has_error": false,
+  "note": "'tela' correctly means fabric/cloth."
+ },
+ {
+  "target": "fábrica / tela / fabricar",
+  "text": "Compré tres metros de fábrica azul para hacer las cortinas.",
+  "has_error": true,
+  "note": "False friend: 'fábrica' means factory, not fabric; cloth is 'tela'."
+ },
+ {
+  "target": "ropa / cuerda / soga",
+  "text": "Ató el paquete con una cuerda bien resistente.",
+  "has_error": false,
+  "note": "'cuerda' correctly means rope/cord."
+ },
+ {
+  "target": "ropa / cuerda / soga",
+  "text": "Ató el paquete con una ropa bien resistente.",
+  "has_error": true,
+  "note": "False friend: 'ropa' means clothing, not rope; rope is 'cuerda/soga'."
+ },
+ {
+  "target": "tubo/tuvo",
+  "text": "El fontanero cambió el tubo oxidado que goteaba debajo del fregadero.",
+  "has_error": false,
+  "note": "'tubo' (pipe) correct: concrete object with article and adjective."
+ },
+ {
+  "target": "tubo/tuvo",
+  "text": "El fontanero cambió el tuvo oxidado que goteaba debajo del fregadero.",
+  "has_error": true,
+  "note": "WRONG: 'tuvo' (verb 'had') used where the noun 'tubo' is required."
+ },
+ {
+  "target": "vaca/baca",
+  "text": "Atamos las maletas en la baca del coche antes de salir de viaje.",
+  "has_error": false,
+  "note": "'baca' (roof rack) correct: luggage on top of a car."
+ },
+ {
+  "target": "vaca/baca",
+  "text": "Atamos las maletas en la vaca del coche antes de salir de viaje.",
+  "has_error": true,
+  "note": "WRONG: 'vaca' (cow) instead of 'baca' (roof rack) in vehicle context."
+ },
+ {
+  "target": "bello/vello",
+  "text": "Contemplamos un bello atardecer desde lo alto de la colina.",
+  "has_error": false,
+  "note": "'bello' (beautiful, adjective) correct, modifying 'atardecer'."
+ },
+ {
+  "target": "bello/vello",
+  "text": "Contemplamos un vello atardecer desde lo alto de la colina.",
+  "has_error": true,
+  "note": "WRONG: 'vello' (body hair, noun) used as if it were the adjective 'bello'."
+ },
+ {
+  "target": "votar",
+  "text": "Miles de ciudadanos fueron a votar en las elecciones del domingo.",
+  "has_error": false,
+  "note": "'votar' (to vote) correct in an elections context."
+ },
+ {
+  "target": "votar",
+  "text": "Miles de ciudadanos fueron a botar en las elecciones del domingo.",
+  "has_error": true,
+  "note": "WRONG: 'botar' (to bounce/throw out) instead of 'votar' (to cast a ballot)."
+ },
+ {
+  "target": "grabar/gravar",
+  "text": "Decidimos grabar el concierto entero con tres cámaras distintas.",
+  "has_error": false,
+  "note": "'grabar' (to record) correct: recording video."
+ },
+ {
+  "target": "grabar/gravar",
+  "text": "Decidimos gravar el concierto entero con tres cámaras distintas.",
+  "has_error": true,
+  "note": "WRONG: 'gravar' (to tax) instead of 'grabar' (to record)."
+ },
+ {
+  "target": "rebelar/revelar",
+  "text": "El fotógrafo se encerró en el cuarto oscuro para revelar los negativos.",
+  "has_error": false,
+  "note": "'revelar' (to develop film) correct in a photography context."
+ },
+ {
+  "target": "rebelar/revelar",
+  "text": "El fotógrafo se encerró en el cuarto oscuro para rebelar los negativos.",
+  "has_error": true,
+  "note": "WRONG: 'rebelar' (to rebel) instead of 'revelar' (to develop/reveal)."
+ },
+ {
+  "target": "basto/vasto",
+  "text": "Desde la cima se divisaba un vasto desierto que parecía no tener fin.",
+  "has_error": false,
+  "note": "'vasto' (vast, immense) correct, describing huge extent."
+ },
+ {
+  "target": "basto/vasto",
+  "text": "Desde la cima se divisaba un basto desierto que parecía no tener fin.",
+  "has_error": true,
+  "note": "WRONG: 'basto' (coarse/rough) instead of 'vasto' (vast)."
+ },
+ {
+  "target": "bienes/vienes",
+  "text": "El abogado repartió todos los bienes entre los tres herederos.",
+  "has_error": false,
+  "note": "'bienes' (assets/property, noun) correct, object of 'repartió'."
+ },
+ {
+  "target": "bienes/vienes",
+  "text": "El abogado repartió todos los vienes entre los tres herederos.",
+  "has_error": true,
+  "note": "WRONG: 'vienes' (you come, verb) instead of the noun 'bienes'."
+ },
+ {
+  "target": "barón/varón",
+  "text": "En el certificado figuraba que el recién nacido era varón y sano.",
+  "has_error": false,
+  "note": "'varón' (male) correct in a birth/sex context."
+ },
+ {
+  "target": "barón/varón",
+  "text": "En el certificado figuraba que el recién nacido era barón y sano.",
+  "has_error": true,
+  "note": "WRONG: 'barón' (noble title) instead of 'varón' (male)."
+ },
+ {
+  "target": "hierba/hierva",
+  "text": "Los caballos pastaban tranquilos sobre la hierba húmeda del prado.",
+  "has_error": false,
+  "note": "'hierba' (grass, noun) correct."
+ },
+ {
+  "target": "hierba/hierva",
+  "text": "Los caballos pastaban tranquilos sobre la hierva húmeda del prado.",
+  "has_error": true,
+  "note": "WRONG: 'hierva' (subjunctive of 'hervir') instead of the noun 'hierba'."
+ },
+ {
+  "target": "sabia/savia",
+  "text": "La savia ascendía por el tronco para alimentar las hojas nuevas.",
+  "has_error": false,
+  "note": "'savia' (sap) correct in a botanical context."
+ },
+ {
+  "target": "sabia/savia",
+  "text": "La sabia ascendía por el tronco para alimentar las hojas nuevas.",
+  "has_error": true,
+  "note": "WRONG: 'sabia' (wise) instead of 'savia' (plant sap)."
+ },
+ {
+  "target": "hola/ola",
+  "text": "Una ola enorme rompió contra el malecón y empapó a los turistas.",
+  "has_error": false,
+  "note": "'ola' (wave) correct in a sea context."
+ },
+ {
+  "target": "hola/ola",
+  "text": "Una hola enorme rompió contra el malecón y empapó a los turistas.",
+  "has_error": true,
+  "note": "WRONG: 'hola' (hello) instead of 'ola' (wave)."
+ },
+ {
+  "target": "echo/hecho",
+  "text": "De hecho, no me había dado cuenta de que ya eran las tres.",
+  "has_error": false,
+  "note": "'hecho' correct in the fixed idiom 'de hecho' (in fact)."
+ },
+ {
+  "target": "echo/hecho",
+  "text": "De echo, no me había dado cuenta de que ya eran las tres.",
+  "has_error": true,
+  "note": "WRONG: 'echo' (I throw) instead of 'hecho' in the idiom 'de hecho'."
+ },
+ {
+  "target": "hay/ahí/ay",
+  "text": "Hay muchas razones para celebrar el resultado de este año.",
+  "has_error": false,
+  "note": "'hay' (there is/are) correct, impersonal existence."
+ },
+ {
+  "target": "hay/ahí/ay",
+  "text": "Ahí muchas razones para celebrar el resultado de este año.",
+  "has_error": true,
+  "note": "WRONG: 'ahí' (there, location) instead of existential 'hay'."
+ },
+ {
+  "target": "a ver/haber",
+  "text": "Vamos a ver qué pasa con el proyecto.",
+  "has_error": false,
+  "note": "Correct: 'a ver' (prep a + infinitive ver) precedes an act of checking. Swapping in 'haber' is impossible here — the auxiliary/existential infinitive cannot follow 'vamos a' and head an interrogative clause."
+ },
+ {
+  "target": "a ver/haber",
+  "text": "Vamos a haber qué pasa con el proyecto.",
+  "has_error": true,
+  "note": "Wrong: 'haber' (verb infinitive) cannot occupy the 'a ver qué pasa' slot; only 'a ver' fits before an interrogative act of looking."
+ },
+ {
+  "target": "haya/halla/aya/allá",
+  "text": "Espero que haya suficiente comida para todos.",
+  "has_error": false,
+  "note": "Correct: 'haya' = pres. subjunctive of haber, the impersonal-existential verb required by 'espero que'. True yeísmo homophone with 'halla'/'aya'."
+ },
+ {
+  "target": "haya/halla/aya/allá",
+  "text": "Espero que halla suficiente comida para todos.",
+  "has_error": true,
+  "note": "Wrong: 'halla' (3sg of hallar, 'finds') cannot express existence here; the existential subjunctive of haber ('haya') is required. Homophone under yeísmo."
+ },
+ {
+  "target": "porque/porqué/por que/por qué",
+  "text": "No vino a la fiesta porque estaba enfermo.",
+  "has_error": false,
+  "note": "Correct: causal conjunction 'porque' ('because') joins clauses with cause. Stress reduces; surfaces as [poɾˈke]."
+ },
+ {
+  "target": "porque/porqué/por que/por qué",
+  "text": "No vino a la fiesta por qué estaba enfermo.",
+  "has_error": true,
+  "note": "Wrong: 'por qué' is the interrogative 'why' and cannot introduce a causal subordinate in a declarative; the causal conjunction 'porque' is required."
+ },
+ {
+  "target": "sino/si no",
+  "text": "No quiero café sino té con leche.",
+  "has_error": false,
+  "note": "Correct: adversative 'sino' corrects the prior negation (no X sino Y). One word."
+ },
+ {
+  "target": "sino/si no",
+  "text": "No quiero café si no té con leche.",
+  "has_error": true,
+  "note": "Wrong: 'si no' (conditional 'if not') cannot perform the adversative correction after a negation; 'sino' is required."
+ },
+ {
+  "target": "también/tan bien",
+  "text": "Mi hermano también quiere venir con nosotros.",
+  "has_error": false,
+  "note": "Correct: additive adverb 'también' ('also'). Homophone with 'tan bien'."
+ },
+ {
+  "target": "también/tan bien",
+  "text": "Mi hermano tan bien quiere venir con nosotros.",
+  "has_error": true,
+  "note": "Wrong: 'tan bien' ('so well') is a degree adverbial and cannot mean 'also' in this additive slot; 'también' is required."
+ },
+ {
+  "target": "tampoco/tan poco",
+  "text": "Ella tampoco quiso firmar el contrato.",
+  "has_error": false,
+  "note": "Correct: negative additive adverb 'tampoco' ('not either'). Homophone with 'tan poco'."
+ },
+ {
+  "target": "tampoco/tan poco",
+  "text": "Ella tan poco quiso firmar el contrato.",
+  "has_error": true,
+  "note": "Wrong: 'tan poco' ('so little') quantifies smallness and cannot express the negative additive 'neither'; 'tampoco' is required."
+ },
+ {
+  "target": "demás/de más",
+  "text": "Los demás invitados llegaron muy tarde.",
+  "has_error": false,
+  "note": "Correct: indefinite 'demás' ('the other/remaining') modifies 'invitados'. Homophone with 'de más'."
+ },
+ {
+  "target": "demás/de más",
+  "text": "Los de más invitados llegaron muy tarde.",
+  "has_error": true,
+  "note": "Wrong: 'de más' ('extra/in excess') cannot function as the prenominal indefinite 'the rest'; 'demás' is required before the noun."
+ },
+ {
+  "target": "conque/con que/con qué",
+  "text": "Conque eras tú quien se llevó el dinero.",
+  "has_error": false,
+  "note": "Correct: consecutive conjunction 'conque' draws a conclusion ('so it was you...'). Surfaces as [ˈkoŋke]."
+ },
+ {
+  "target": "conque/con que/con qué",
+  "text": "Con que eras tú quien se llevó el dinero.",
+  "has_error": true,
+  "note": "Wrong: 'con que' (= con el que / prep + relative) cannot open a consecutive conclusion; the one-word consecutive 'conque' is required here."
+ },
+ {
+  "target": "adónde/adonde/a dónde/a donde",
+  "text": "Ese es el pueblo adonde vamos cada verano.",
+  "has_error": false,
+  "note": "Correct: relative adverb 'adonde' with expressed antecedent ('el pueblo'). Trap entry: accent form would be impossible in this relative slot, not merely a variant."
+ },
+ {
+  "target": "adónde/adonde/a dónde/a donde",
+  "text": "Ese es el pueblo adónde vamos cada verano.",
+  "has_error": true,
+  "note": "Wrong: accented 'adónde' is interrogative/exclamative and cannot head a relative clause modifying the explicit antecedent 'el pueblo'; the unaccented relative 'adonde' is required."
+ },
+ {
+  "target": "hay/ahí/ay",
+  "text": "Hay mucha gente esperando en la entrada.",
+  "has_error": false,
+  "note": "Correct: 'hay' = impersonal existential of haber, the clause's verb. Orthographic/near-homophone confusion with 'ahí'."
+ },
+ {
+  "target": "hay/ahí/ay",
+  "text": "Ahí mucha gente esperando en la entrada.",
+  "has_error": true,
+  "note": "Wrong: 'ahí' is a place adverb and cannot serve as the existential verb; the sentence has no verb without 'hay'. ('ahí' is oxytone/bisyllabic vs monosyllabic 'hay'.)"
+ },
+ {
+  "target": "asimismo/así mismo/a sí mismo",
+  "text": "Asimismo, agradeció la ayuda de todos los presentes.",
+  "has_error": false,
+  "note": "Correct: connective adverb 'asimismo' ('likewise') opening the clause. Trap entry: the error is the reflexive sense, not the co-valid 'así mismo'."
+ },
+ {
+  "target": "asimismo/así mismo/a sí mismo",
+  "text": "A sí mismo, agradeció la ayuda de todos los presentes.",
+  "has_error": true,
+  "note": "Wrong: 'a sí mismo' is the reflexive 'to himself' and cannot function as the sentence-initial connective 'likewise'; 'asimismo' is required for that additive meaning."
+ },
+ {
+  "target": "quehacer/qué hacer",
+  "text": "Tiene muchos quehaceres domésticos esta semana.",
+  "has_error": false,
+  "note": "Correct: 'quehaceres' = plural noun 'chores/tasks', modifiable by 'muchos' and 'domésticos'. Reading shown under seseo."
+ },
+ {
+  "target": "quehacer/qué hacer",
+  "text": "Tiene muchos qué hacer domésticos esta semana.",
+  "has_error": true,
+  "note": "Wrong: the interrogative phrase 'qué hacer' ('what to do') cannot be pluralized by 'muchos' nor take the adjective 'domésticos'; the noun 'quehaceres' is required."
+ },
+ {
+  "target": "valla/vaya/baya",
+  "text": "El perro saltó la valla del jardín.",
+  "has_error": false,
+  "note": "Correct: 'valla' = fence/barrier, the direct object of 'saltó'. Triple homophone under yeísmo + b/v merger."
+ },
+ {
+  "target": "valla/vaya/baya",
+  "text": "El perro saltó la vaya del jardín.",
+  "has_error": true,
+  "note": "Wrong: 'vaya' is a verb form / interjection and cannot be the noun object of 'saltó la'; 'valla' (the barrier) is required. Homophone."
+ },
+ {
+  "target": "cayó/calló",
+  "text": "El niño se cayó al suelo y empezó a llorar.",
+  "has_error": false,
+  "note": "Correct: 'cayó' = preterite of caer ('fell'); motion to the ground. Homophone with 'calló' under yeísmo."
+ },
+ {
+  "target": "cayó/calló",
+  "text": "El niño se calló al suelo y empezó a llorar.",
+  "has_error": true,
+  "note": "Wrong: 'calló' (preterite of callar, 'went silent') cannot combine with 'al suelo' (a destination of falling); 'cayó' is required. Homophone."
+ }
+]
