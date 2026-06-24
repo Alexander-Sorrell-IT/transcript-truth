@@ -89,6 +89,22 @@ def hf_read(audio_path, language=None, model="openai/whisper-large-v3"):
         return json.load(r).get("text", "").strip()
 
 
+def deepgram_structured(audio_path, language="en"):
+    """Deepgram with diarization + utterances + timestamps — the structured backbone for
+    the transcription runner. Returns [{start, end, speaker, text}]. (Scribe/Gemini stay
+    text-only; Deepgram is the timing/speaker reference — and our 0% WER witness.)"""
+    url = (f"https://api.deepgram.com/v1/listen?model=nova-3&language={language}"
+           "&smart_format=true&diarize=true&utterances=true&punctuate=true")
+    req = urllib.request.Request(url, data=open(audio_path, "rb").read(), headers={
+        "Authorization": "Token " + _key("DEEPGRAM_API_KEY"), "Content-Type": "audio/wav"})
+    with urllib.request.urlopen(req, timeout=300) as r:
+        d = json.load(r)
+    utts = d.get("results", {}).get("utterances", [])
+    return [{"start": u.get("start", 0.0), "end": u.get("end", 0.0),
+             "speaker": u.get("speaker", 0), "text": u.get("transcript", "").strip()}
+            for u in utts if u.get("transcript", "").strip()]
+
+
 def deepgram_read(audio_path, language="ja"):
     """Deepgram Nova — backup witness (weaker on bilingual audio; use for clean speech)."""
     url = f"https://api.deepgram.com/v1/listen?model=nova-3&language={language}&smart_format=true"
