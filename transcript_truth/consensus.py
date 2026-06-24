@@ -15,6 +15,8 @@ from .verdict import _toks
 ROSTER = {
     "ru": ["deepgram", "scribe", "hf", "gemini"],   # all usable; Deepgram strongest
     "uk": ["deepgram", "scribe"],                     # only these stay in Ukrainian; others drift
+    "es": ["deepgram", "scribe", "hf", "gemini"],   # well-supported by all witnesses
+    "en": ["deepgram", "scribe", "hf", "gemini"],
     # add "uk" extras (parakeet-uk/nemotron) here once the NIM function-id is wired
 }
 

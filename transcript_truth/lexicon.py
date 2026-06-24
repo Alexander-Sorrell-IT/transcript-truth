@@ -10,9 +10,10 @@ Gives es/en the same out-of-lexicon surfacer ru/uk already have, so the
 proper name), exactly like the Cyrillic version.
 """
 from __future__ import annotations
-import functools, re
+import os, json, functools, re
 from .types import Flag, Transcript
 
+_DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 _WORD = {
     "cyrillic": re.compile(r"[Ѐ-ӿ][Ѐ-ӿ’'\-]*"),
     "latin": re.compile(r"[^\W\d_]{2,}", re.UNICODE),
@@ -64,3 +65,52 @@ def make_unknown_word(lang: str, script: str = "latin", min_zipf: float = 3.0):
         return out
     unknown_word.__name__ = f"{lang}_unknown_word"
     return unknown_word
+
+
+@functools.lru_cache(maxsize=8)
+def _conf(lang: str):
+    """single-word index + multiword list of confusable members from <lang>_confirmed.json."""
+    try:
+        data = json.load(open(os.path.join(_DATA, f"{lang}_confirmed.json"), encoding="utf-8"))
+    except Exception:
+        return {}, []
+    single, multi = {}, []
+    for e in data:
+        for o in e.get("options", []):
+            w = (o.get("word") or "").strip().lower()
+            if not w:
+                continue
+            if " " in w or "-" in w:
+                multi.append((w, e))
+            else:
+                single.setdefault(w, e)
+    return single, multi
+
+
+def make_confusables(lang: str, script: str = "latin"):
+    """Generic confusable surfacer (review, opt-in) — Latin or Cyrillic. Mirrors the
+    es/ru surfacers so es/en share one implementation."""
+    rx = _WORD["cyrillic"] if script == "cyrillic" else _WORD["latin"]
+
+    def confusables(t: Transcript) -> list[Flag]:
+        single, multi = _conf(lang)
+        out = []
+        for ln in t.lines:
+            low = ln.text.lower()
+            hits = {}
+            for m in rx.finditer(ln.text):
+                e = single.get(m.group(0).lower())
+                if e and id(e) not in hits:
+                    hits[id(e)] = (m.group(0), e)
+            for w, e in multi:
+                if id(e) not in hits and re.search(r"\b" + re.escape(w) + r"\b", low):
+                    hits[id(e)] = (w, e)
+            for surf, e in hits.values():
+                alts = " / ".join(o.get("word", "") for o in e.get("options", []))
+                out.append(Flag(
+                    rule=f"{lang}_confusable", severity="review", line=ln.n, evidence=surf,
+                    label=f"{lang.upper()} confusable: '{surf}' — confirm by meaning ({alts})",
+                    fix=(e.get("note") or f"Pick by context: {alts}")[:300]))
+        return out
+    confusables.__name__ = f"{lang}_confusable"
+    return confusables
