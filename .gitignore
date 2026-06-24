@@ -18,3 +18,10 @@ data/jp_name_surfaces.json
 data/jp_pitch_accent.json
 data/jp_collocations.json
 *.thoth.txt
+
+# multilang build artifacts (large/raw/scratch)
+data/leipzig/
+data/samples/
+_bench.py
+_bench2.py
+_build_all.py

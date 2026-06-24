@@ -48,8 +48,12 @@ def gemini_read(audio_path, language=None):
     import base64, mimetypes
     audio = base64.b64encode(open(audio_path, "rb").read()).decode()
     ctype = mimetypes.guess_type(audio_path)[0] or "audio/mpeg"
-    instr = ("Transcribe this audio verbatim, exactly as spoken. Keep Japanese in Japanese "
-             "and English in English (do not translate). Output only the transcript text.")
+    if language and language.lower() not in ("ja", "jpn", "japanese"):
+        instr = ("Transcribe this audio verbatim, exactly as spoken, in its original language. "
+                 "Do not translate. Output only the transcript text.")
+    else:
+        instr = ("Transcribe this audio verbatim, exactly as spoken. Keep Japanese in Japanese "
+                 "and English in English (do not translate). Output only the transcript text.")
     body = json.dumps({"contents": [{"parts": [
         {"text": instr}, {"inline_data": {"mime_type": ctype, "data": audio}}]}]}).encode()
     key = _key("GEMINI_API_KEY")
@@ -69,6 +73,20 @@ def gemini_read(audio_path, language=None):
                 continue
             raise
     raise last
+
+
+def hf_read(audio_path, language=None, model="openai/whisper-large-v3"):
+    """Whisper-large-v3 via Hugging Face Inference Providers (free tier; multilingual,
+    auto-detects language). A 5th witness — adds the Whisper family to the consensus.
+    The legacy api-inference.huggingface.co host is dead; this uses the router endpoint."""
+    import mimetypes
+    ctype = mimetypes.guess_type(audio_path)[0] or "audio/wav"
+    req = urllib.request.Request(
+        f"https://router.huggingface.co/hf-inference/models/{model}",
+        data=open(audio_path, "rb").read(),
+        headers={"Authorization": "Bearer " + _key("HF_API_KEY"), "Content-Type": ctype})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        return json.load(r).get("text", "").strip()
 
 
 def deepgram_read(audio_path, language="ja"):

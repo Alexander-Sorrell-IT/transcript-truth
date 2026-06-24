@@ -6,6 +6,66 @@ tiebreaker vote. No single model decides — agreement IS the verification.
 import difflib
 from .verdict import _toks
 
+# ----------------------------------------------------------------------------
+# Language-aware roster consensus (multilingual; does NOT use the JP tokenizer).
+# Witnesses are chosen PER LANGUAGE — a model that produces wrong-language output
+# (e.g. Gemini -> Russian on Ukrainian, vanilla Whisper -> Latin) is excluded so it
+# can't poison the vote. Rosters are ordered by measured reliability.
+# ----------------------------------------------------------------------------
+ROSTER = {
+    "ru": ["deepgram", "scribe", "hf", "gemini"],   # all usable; Deepgram strongest
+    "uk": ["deepgram", "scribe"],                     # only these stay in Ukrainian; others drift
+    # add "uk" extras (parakeet-uk/nemotron) here once the NIM function-id is wired
+}
+
+
+def _witness_call(name, audio_path, lang):
+    from .witness import elevenlabs_read, deepgram_read, gemini_read, hf_read
+    if name == "scribe":   return elevenlabs_read(audio_path, None)
+    if name == "deepgram": return deepgram_read(audio_path, language=lang)
+    if name == "gemini":   return gemini_read(audio_path, language=lang)
+    if name == "hf":       return hf_read(audio_path, language=lang)
+    return ""
+
+
+def roster_panel(audio_path, lang):
+    """Run only the witnesses on this language's roster. Returns {model: text}."""
+    reads = {}
+    for name in ROSTER.get(lang, []):
+        try:
+            reads[name] = _witness_call(name, audio_path, lang)
+        except Exception:
+            reads[name] = ""
+    return reads
+
+
+def _norm_ws(s):
+    import re
+    return re.sub(r"\s+", " ", re.sub(r"[^\w\s']", " ", s.lower().replace("ё", "е"))).strip()
+
+
+def consensus_vote(reads):
+    """Majority vote across the rostered reads; medoid (min total distance) breaks ties.
+    Because the roster already excludes wrong-language witnesses, the majority is trustworthy."""
+    cands = [t for t in reads.values() if t]
+    if not cands:
+        return ""
+    from collections import Counter
+    c = Counter(_norm_ws(t) for t in cands)
+    top, n = c.most_common(1)[0]
+    if n >= 2:
+        for t in cands:
+            if _norm_ws(t) == top:
+                return t
+    return min(cands, key=lambda a: sum(
+        1 - difflib.SequenceMatcher(a=_norm_ws(a), b=_norm_ws(b)).ratio() for b in cands))
+
+
+def transcribe(audio_path, lang):
+    """Top-level language-aware transcription: rostered panel -> consensus text."""
+    reads = roster_panel(audio_path, lang)
+    return {"text": consensus_vote(reads), "reads": reads, "lang": lang}
+
 
 def _tok(text):
     # content tokens only — punctuation/space differ between models and aren't disagreements

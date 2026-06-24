@@ -1,0 +1,6344 @@
+[
+ {
+  "key": "мити",
+  "trap_type": "и/і near-pair",
+  "note": "Use 'мити' (wash) — the only standard form. 'мі-' here is a regional spelling of 'have'; in standard Ukrainian write 'мати'. Pick by meaning: washing => мити.",
+  "options": [
+   {
+    "word": "мити",
+    "pos": "verb",
+    "gloss": "to wash"
+   },
+   {
+    "word": "міти",
+    "pos": "none",
+    "gloss": "NOT a standard word (dialectal/erroneous for 'мати'/'have'); avoid"
+   }
+  ]
+ },
+ {
+  "key": "бити",
+  "trap_type": "и/і minimal pair",
+  "note": "Stressed first vowel differs: 'би-' (hit) vs 'бі-' (bit, computing). Context of violence/striking => бити; computing/data => біти.",
+  "options": [
+   {
+    "word": "бити",
+    "pos": "verb",
+    "gloss": "to beat, hit"
+   },
+   {
+    "word": "біти",
+    "pos": "noun",
+    "gloss": "bits (units of information), pl. of біт"
+   }
+  ]
+ },
+ {
+  "key": "лити",
+  "trap_type": "и/і decoy",
+  "note": "Only 'лити' (pour) is real. There is no noun 'літи'; do not be tempted by 'літо/літа'. If you hear pouring => лити.",
+  "options": [
+   {
+    "word": "лити",
+    "pos": "verb",
+    "gloss": "to pour"
+   },
+   {
+    "word": "літи",
+    "pos": "none",
+    "gloss": "NOT standard; do not use"
+   }
+  ]
+ },
+ {
+  "key": "пити",
+  "trap_type": "и/і minimal pair",
+  "note": "'пи-' (drink) vs 'пі-' (go). Listen for the first vowel: front-close [ɪ]=и (drink) vs [i]=і (go). Departure/movement => піти; consuming liquid => пити.",
+  "options": [
+   {
+    "word": "пити",
+    "pos": "verb",
+    "gloss": "to drink"
+   },
+   {
+    "word": "піти",
+    "pos": "verb",
+    "gloss": "to go (away), set off (perfective)"
+   }
+  ]
+ },
+ {
+  "key": "вити",
+  "trap_type": "и/і minimal pair",
+  "note": "Verb 'вити' (howl/twist) vs noun 'віти' (branches). Subject doing action => вити; tree parts/plural object => віти.",
+  "options": [
+   {
+    "word": "вити",
+    "pos": "verb",
+    "gloss": "to howl; to twist/weave"
+   },
+   {
+    "word": "віти",
+    "pos": "noun",
+    "gloss": "branches, boughs (pl. of вітка/гілка-style; nom.pl)"
+   }
+  ]
+ },
+ {
+  "key": "тин",
+  "trap_type": "и/і + soft sign",
+  "note": "'тин' (fence) is hard-ending; 'тінь' (shadow) has і and a soft sign. Outdoor barrier => тин; cast shade => тінь.",
+  "options": [
+   {
+    "word": "тин",
+    "pos": "noun",
+    "gloss": "wattle fence"
+   },
+   {
+    "word": "тінь",
+    "pos": "noun",
+    "gloss": "shadow, shade"
+   }
+  ]
+ },
+ {
+  "key": "син",
+  "trap_type": "и/і + soft sign trio",
+  "note": "'син' (son, hard н), 'синь' (blue color, soft н, still и), 'сінь' (porch/canopy, і + soft н). Family => син; color => синь; entryway/canopy => сінь.",
+  "options": [
+   {
+    "word": "син",
+    "pos": "noun",
+    "gloss": "son"
+   },
+   {
+    "word": "синь",
+    "pos": "noun",
+    "gloss": "blueness, the blue (poetic)"
+   }
+  ]
+ },
+ {
+  "key": "лис",
+  "trap_type": "и/і minimal pair",
+  "note": "Classic pair: 'лис' (fox) vs 'ліс' (forest). Animal => лис; woodland => ліс. The і in ліс often alternates with о (лісу/лісок).",
+  "options": [
+   {
+    "word": "лис",
+    "pos": "noun",
+    "gloss": "fox"
+   },
+   {
+    "word": "ліс",
+    "pos": "noun",
+    "gloss": "forest"
+   }
+  ]
+ },
+ {
+  "key": "бик",
+  "trap_type": "и/і minimal pair",
+  "note": "'бик' (bull) vs 'бік' (side). Animal => бик; spatial 'side/flank' => бік (note alternation бік/боку).",
+  "options": [
+   {
+    "word": "бик",
+    "pos": "noun",
+    "gloss": "bull"
+   },
+   {
+    "word": "бік",
+    "pos": "noun",
+    "gloss": "side"
+   }
+  ]
+ },
+ {
+  "key": "рис",
+  "trap_type": "и/і + soft sign trio",
+  "note": "'рис' (rice, grain), 'ріс' (he grew, verb), 'рись' (lynx/trot, soft sign). Food => рис; growth in past => ріс; cat or horse gait => рись.",
+  "options": [
+   {
+    "word": "рис",
+    "pos": "noun",
+    "gloss": "rice"
+   },
+   {
+    "word": "ріс",
+    "pos": "verb",
+    "gloss": "grew (masc. past of рости)"
+   },
+   {
+    "word": "рись",
+    "pos": "noun",
+    "gloss": "lynx; trot (gait)"
+   }
+  ]
+ },
+ {
+  "key": "мил",
+  "trap_type": "и/і + soft sign",
+  "note": "Avoid bare 'мил'; the real contrast is мило (soap) vs 'міль' (moth). Cleaning => мило; insect eating fabric => міль.",
+  "options": [
+   {
+    "word": "мил",
+    "pos": "none",
+    "gloss": "NOT standard alone; gen.pl context only"
+   },
+   {
+    "word": "міль",
+    "pos": "noun",
+    "gloss": "clothes moth"
+   }
+  ]
+ },
+ {
+  "key": "дим",
+  "trap_type": "и/і minimal pair",
+  "note": "'дим' (smoke) vs 'дім' (house). Combustion => дим; dwelling => дім (alternation дім/дому).",
+  "options": [
+   {
+    "word": "дим",
+    "pos": "noun",
+    "gloss": "smoke"
+   },
+   {
+    "word": "дім",
+    "pos": "noun",
+    "gloss": "house, home"
+   }
+  ]
+ },
+ {
+  "key": "вид",
+  "trap_type": "и/і homophone-ish pair",
+  "note": "Noun 'вид' (appearance/grammatical aspect) vs preposition 'від' (from). If it introduces a source/agent => від; if it's a thing meaning look/type => вид.",
+  "options": [
+   {
+    "word": "вид",
+    "pos": "noun",
+    "gloss": "appearance, look; aspect (grammar)"
+   },
+   {
+    "word": "від",
+    "pos": "prep",
+    "gloss": "from"
+   }
+  ]
+ },
+ {
+  "key": "гри",
+  "trap_type": "и/і case ending",
+  "note": "Both from 'гра'. 'гри' = of the game / games; 'грі' = to the game / in the game. Decide by case: genitive/plural => гри; dative/locative => грі.",
+  "options": [
+   {
+    "word": "гри",
+    "pos": "noun",
+    "gloss": "games (gen.sg/nom.pl of гра)"
+   },
+   {
+    "word": "грі",
+    "pos": "noun",
+    "gloss": "to/in the game (dat./loc. sg of гра)"
+   }
+  ]
+ },
+ {
+  "key": "ноги",
+  "trap_type": "и/і + consonant alternation",
+  "note": "'ноги' keeps г + и; dative/locative singular triggers г→з and і: 'нозі'. On the foot/to the foot => нозі; plural legs/of the leg => ноги.",
+  "options": [
+   {
+    "word": "ноги",
+    "pos": "noun",
+    "gloss": "legs/feet (nom.pl); of the leg (gen.sg)"
+   },
+   {
+    "word": "нозі",
+    "pos": "noun",
+    "gloss": "to/on the leg (dat./loc. sg, г→з)"
+   }
+  ]
+ },
+ {
+  "key": "руки",
+  "trap_type": "и/і + consonant alternation",
+  "note": "к→ц before і: 'руці' (in/on the hand). Plural or genitive => руки; dat./loc. singular => руці.",
+  "options": [
+   {
+    "word": "руки",
+    "pos": "noun",
+    "gloss": "hands/arms (nom.pl); of the hand (gen.sg)"
+   },
+   {
+    "word": "руці",
+    "pos": "noun",
+    "gloss": "to/on the hand (dat./loc. sg, к→ц)"
+   }
+  ]
+ },
+ {
+  "key": "книги",
+  "trap_type": "и/і + consonant alternation",
+  "note": "Same г→з + і rule: 'у книзі' (in the book) vs 'книги' (books / of the book). Location inside => книзі.",
+  "options": [
+   {
+    "word": "книги",
+    "pos": "noun",
+    "gloss": "books (nom.pl); of the book (gen.sg)"
+   },
+   {
+    "word": "книзі",
+    "pos": "noun",
+    "gloss": "to/in the book (dat./loc. sg, г→з)"
+   }
+  ]
+ },
+ {
+  "key": "мухи",
+  "trap_type": "и/і + consonant alternation",
+  "note": "х→с before і. Plural/genitive => мухи; dative/locative singular => мусі. Rare but real alternation pattern.",
+  "options": [
+   {
+    "word": "мухи",
+    "pos": "noun",
+    "gloss": "flies (nom.pl); of the fly (gen.sg)"
+   },
+   {
+    "word": "мусі",
+    "pos": "noun",
+    "gloss": "to/on the fly (dat./loc. sg, х→с)"
+   }
+  ]
+ },
+ {
+  "key": "при",
+  "trap_type": "и/і decoy",
+  "note": "Preposition is 'при' (и). No standalone 'прі'. If it means 'in the presence/vicinity of' => при.",
+  "options": [
+   {
+    "word": "при",
+    "pos": "prep",
+    "gloss": "by, near, in the presence of"
+   },
+   {
+    "word": "прі",
+    "pos": "none",
+    "gloss": "NOT a standalone word"
+   }
+  ]
+ },
+ {
+  "key": "їх",
+  "trap_type": "ї vs і initial",
+  "note": "'their/them' = 'їх' (iotated ї = [ji]). Never 'іх'. Possessive/object 3pl => їх.",
+  "options": [
+   {
+    "word": "їх",
+    "pos": "pronoun",
+    "gloss": "them, their (gen./acc. of вони)"
+   },
+   {
+    "word": "іх",
+    "pos": "none",
+    "gloss": "NOT standard"
+   }
+  ]
+ },
+ {
+  "key": "мій",
+  "trap_type": "й-final й/и+й",
+  "note": "Possessive 'мій' (my) has ій; imperative 'мий' (wash!) has ий. Command to clean => мий; ownership => мій.",
+  "options": [
+   {
+    "word": "мій",
+    "pos": "pronoun",
+    "gloss": "my (masc.)"
+   },
+   {
+    "word": "мий",
+    "pos": "verb",
+    "gloss": "wash! (imperative of мити)"
+   }
+  ]
+ },
+ {
+  "key": "край",
+  "trap_type": "ай/ий/ій triple",
+  "note": "'край' (edge/land, ай), 'крий' (cover!, ий), 'крій' (garment cut, ій). Geography/border => край; covering command => крий; tailoring => крій.",
+  "options": [
+   {
+    "word": "край",
+    "pos": "noun",
+    "gloss": "edge; land/region"
+   },
+   {
+    "word": "крий",
+    "pos": "verb",
+    "gloss": "cover! (imperative of крити)"
+   },
+   {
+    "word": "крій",
+    "pos": "noun",
+    "gloss": "cut/style (of clothing); cut! (imper. of краяти dialectal)"
+   }
+  ]
+ },
+ {
+  "key": "вів",
+  "trap_type": "і/и in past tense",
+  "note": "'вів' (he led, from вести) vs 'вив' (he howled, from вити). Guiding/leading => вів; making howling sound => вив.",
+  "options": [
+   {
+    "word": "вів",
+    "pos": "verb",
+    "gloss": "led (masc. past of вести)"
+   },
+   {
+    "word": "вив",
+    "pos": "verb",
+    "gloss": "howled (masc. past of вити)"
+   }
+  ]
+ },
+ {
+  "key": "віз",
+  "trap_type": "і/и decoy",
+  "note": "'віз' = cart AND 'he transported' — both with і. No 'виз'. Vehicle or past of везти => віз.",
+  "options": [
+   {
+    "word": "віз",
+    "pos": "noun/verb",
+    "gloss": "cart (noun); transported (masc. past of везти)"
+   },
+   {
+    "word": "виз",
+    "pos": "none",
+    "gloss": "NOT standard"
+   }
+  ]
+ },
+ {
+  "key": "міг",
+  "trap_type": "і/и minimal pair",
+  "note": "'міг' (was able) vs 'миг' (instant/blink). Ability in past => міг; split-second => миг (also мить).",
+  "options": [
+   {
+    "word": "міг",
+    "pos": "verb",
+    "gloss": "could (masc. past of могти)"
+   },
+   {
+    "word": "миг",
+    "pos": "noun",
+    "gloss": "blink, instant (миг ока)"
+   }
+  ]
+ },
+ {
+  "key": "мить",
+  "trap_type": "ить/ити ending",
+  "note": "Noun 'мить' (moment, soft-sign ending) vs verb 'мити' (wash, infinitive -ти). Time fragment => мить; cleaning action => мити.",
+  "options": [
+   {
+    "word": "мить",
+    "pos": "noun",
+    "gloss": "moment, instant"
+   },
+   {
+    "word": "мити",
+    "pos": "verb",
+    "gloss": "to wash"
+   }
+  ]
+ },
+ {
+  "key": "бій",
+  "trap_type": "ій/ий pair",
+  "note": "Noun 'бій' (battle, ій) vs imperative 'бий' (hit!, ий). Combat as an event => бій; command to strike => бий.",
+  "options": [
+   {
+    "word": "бій",
+    "pos": "noun",
+    "gloss": "fight, battle"
+   },
+   {
+    "word": "бий",
+    "pos": "verb",
+    "gloss": "beat! (imperative of бити)"
+   }
+  ]
+ },
+ {
+  "key": "пий",
+  "trap_type": "ий/ій decoy",
+  "note": "Imperative 'пий' (drink!) has ий. No standalone 'пій'. Command to drink => пий.",
+  "options": [
+   {
+    "word": "пий",
+    "pos": "verb",
+    "gloss": "drink! (imperative of пити)"
+   },
+   {
+    "word": "пій",
+    "pos": "none",
+    "gloss": "NOT standard (root in співати? no — avoid)"
+   }
+  ]
+ },
+ {
+  "key": "лий",
+  "trap_type": "ий/ій pair",
+  "note": "Imperative 'лий' (pour!) vs noun 'лій' (tallow/fat). Command to pour => лий; animal fat => лій.",
+  "options": [
+   {
+    "word": "лий",
+    "pos": "verb",
+    "gloss": "pour! (imperative of лити)"
+   },
+   {
+    "word": "лій",
+    "pos": "noun",
+    "gloss": "tallow, suet (rendered fat)"
+   }
+  ]
+ },
+ {
+  "key": "вий",
+  "trap_type": "ий/ій pair",
+  "note": "'вий' (howl!) vs 'вій' (of eyelashes / blow!). Howling command => вий; lashes or wind-blow => вій.",
+  "options": [
+   {
+    "word": "вий",
+    "pos": "verb",
+    "gloss": "howl! (imperative of вити); also folkloric 'Вій'"
+   },
+   {
+    "word": "вій",
+    "pos": "noun",
+    "gloss": "eyelashes (gen.pl of вія); blow! (imper. of віяти)"
+   }
+  ]
+ },
+ {
+  "key": "гнів",
+  "trap_type": "ів/ив pair",
+  "note": "Noun 'гнів' (anger, ів) vs verb 'гнив' (was rotting, ив). Emotion => гнів; decay process => гнив.",
+  "options": [
+   {
+    "word": "гнів",
+    "pos": "noun",
+    "gloss": "anger, wrath"
+   },
+   {
+    "word": "гнив",
+    "pos": "verb",
+    "gloss": "rotted (masc. past of гнити)"
+   }
+  ]
+ },
+ {
+  "key": "спів",
+  "trap_type": "ів/ив pair",
+  "note": "Noun 'спів' (singing, ів) vs verb 'спив' (drank off, ив). Music/vocal => спів; drinking action => спив.",
+  "options": [
+   {
+    "word": "спів",
+    "pos": "noun",
+    "gloss": "singing, song"
+   },
+   {
+    "word": "спив",
+    "pos": "verb",
+    "gloss": "drank up (masc. past of спити); 'спив-' in спиватися"
+   }
+  ]
+ },
+ {
+  "key": "гін",
+  "trap_type": "і/и + soft sign",
+  "note": "'гін' (drive/urge, hard) vs 'гинь' (perish!, и + soft sign). Impulse/season of rut => гін; command to die out => гинь.",
+  "options": [
+   {
+    "word": "гін",
+    "pos": "noun",
+    "gloss": "drive, urge; a furlong-like field measure; rut (animals)"
+   },
+   {
+    "word": "гинь",
+    "pos": "verb",
+    "gloss": "perish! (imperative of гинути)"
+   }
+  ]
+ },
+ {
+  "key": "кінь",
+  "trap_type": "і/и + soft sign pair",
+  "note": "'кінь' (horse, і) vs 'кинь' (throw!, и). Animal => кінь; command to toss => кинь. Both have soft н.",
+  "options": [
+   {
+    "word": "кінь",
+    "pos": "noun",
+    "gloss": "horse"
+   },
+   {
+    "word": "кинь",
+    "pos": "verb",
+    "gloss": "throw! (imperative of кинути)"
+   }
+  ]
+ },
+ {
+  "key": "гілка",
+  "trap_type": "і/а look/sound trap",
+  "note": "Not a pure и/і case but commonly mis-typed: 'гілка' (branch, і) vs 'галка' (jackdaw, а). Tree part => гілка; bird/tick mark => галка. Listen for і vs а.",
+  "options": [
+   {
+    "word": "гілка",
+    "pos": "noun",
+    "gloss": "branch, twig"
+   },
+   {
+    "word": "галка",
+    "pos": "noun",
+    "gloss": "jackdaw (bird); checkmark (colloq.)"
+   }
+  ]
+ },
+ {
+  "key": "тіло",
+  "trap_type": "і/и pair",
+  "note": "'тіло' (body, і) vs 'тил' (rear/home front, и). Physical body => тіло; behind-the-lines => тил. No word 'тило'.",
+  "options": [
+   {
+    "word": "тіло",
+    "pos": "noun",
+    "gloss": "body"
+   },
+   {
+    "word": "тил",
+    "pos": "noun",
+    "gloss": "rear, home front (military)"
+   }
+  ]
+ },
+ {
+  "key": "місто",
+  "trap_type": "і spelling integrity",
+  "note": "City is 'місто' (і, о). Do not slip into Russian-influenced 'место' or 'мисто'. Settlement => місто; (place=місце, different word).",
+  "options": [
+   {
+    "word": "місто",
+    "pos": "noun",
+    "gloss": "city, town"
+   },
+   {
+    "word": "мість",
+    "pos": "none",
+    "gloss": "NOT standard alone (root in вмістити)"
+   }
+  ]
+ },
+ {
+  "key": "ніч",
+  "trap_type": "і/и decoy",
+  "note": "'ніч' (night) is spelled with і (alternates ніч/ночі). No 'нич'. Time of darkness => ніч.",
+  "options": [
+   {
+    "word": "ніч",
+    "pos": "noun",
+    "gloss": "night"
+   },
+   {
+    "word": "нич",
+    "pos": "none",
+    "gloss": "NOT standard (cf. ніщо/нічого)"
+   }
+  ]
+ },
+ {
+  "key": "сім",
+  "trap_type": "і + apostrophe",
+  "note": "'сім' = seven (numeral, і). 'сім'я' = family (apostrophe before я). Counting => сім; household/kin => сім'я.",
+  "options": [
+   {
+    "word": "сім",
+    "pos": "numeral/noun",
+    "gloss": "seven (numeral); семи- forms; also 'сім' = of families? no — 'сім' is seven"
+   },
+   {
+    "word": "сім'я",
+    "pos": "noun",
+    "gloss": "family (with apostrophe)"
+   }
+  ]
+ },
+ {
+  "key": "вісім",
+  "trap_type": "і integrity",
+  "note": "'вісім' (eight) has two і's. No 'висим'. Counting eight => вісім (cf. восьми-).",
+  "options": [
+   {
+    "word": "вісім",
+    "pos": "numeral",
+    "gloss": "eight"
+   },
+   {
+    "word": "висим",
+    "pos": "none",
+    "gloss": "NOT standard"
+   }
+  ]
+ },
+ {
+  "key": "літо",
+  "trap_type": "і/и pair",
+  "note": "'літо' (summer, і) vs 'лито' (it was poured/cast, и). Season => літо; result of pouring/casting => лито.",
+  "options": [
+   {
+    "word": "літо",
+    "pos": "noun",
+    "gloss": "summer"
+   },
+   {
+    "word": "лито",
+    "pos": "verb",
+    "gloss": "poured (neut. past of лити); cast (метал лито)"
+   }
+  ]
+ },
+ {
+  "key": "біле",
+  "trap_type": "і/и pair",
+  "note": "'біле' (white, і) vs 'било' (it struck / bell clapper, и). Color => біле; striking action/object => било.",
+  "options": [
+   {
+    "word": "біле",
+    "pos": "adj",
+    "gloss": "white (neut.)"
+   },
+   {
+    "word": "било",
+    "pos": "verb",
+    "gloss": "it beat/struck (neut. past of бити); clapper of a bell"
+   }
+  ]
+ },
+ {
+  "key": "мілкий",
+  "trap_type": "і/и near-pair",
+  "note": "'мілкий' (shallow, і) vs 'милкий' (soapy/slippery, и). Depth/grain size => мілкий; soap-like feel => милкий.",
+  "options": [
+   {
+    "word": "мілкий",
+    "pos": "adj",
+    "gloss": "shallow; fine/small-grained"
+   },
+   {
+    "word": "милкий",
+    "pos": "adj",
+    "gloss": "soapy, slippery (милка вода)"
+   }
+  ]
+ },
+ {
+  "key": "вити",
+  "trap_type": "infinitive ending integrity",
+  "note": "Ukrainian infinitive ends in -ти: 'вити'. Avoid Russian-influenced 'вить'. Always use -ти ending.",
+  "options": [
+   {
+    "word": "вити",
+    "pos": "verb",
+    "gloss": "to howl / to twist"
+   },
+   {
+    "word": "вить",
+    "pos": "none",
+    "gloss": "NOT standard (Russian-style)"
+   }
+  ]
+ },
+ {
+  "key": "мрія",
+  "trap_type": "я/ї case ending",
+  "note": "'мрія' (a dream, nom.) vs 'мрії' (dreams / of a dream, -ї). Single subject => мрія; plural or genitive/dative => мрії.",
+  "options": [
+   {
+    "word": "мрія",
+    "pos": "noun",
+    "gloss": "dream, aspiration (nom.sg)"
+   },
+   {
+    "word": "мрії",
+    "pos": "noun",
+    "gloss": "of the dream / dreams (gen.sg, nom.pl, dat./loc.sg)"
+   }
+  ]
+ },
+ {
+  "key": "надія",
+  "trap_type": "я/ї case ending",
+  "note": "'надія' (hope, nom.) vs 'надії' (hopes / of hope, -ї). Nominative subject => надія; oblique/plural => надії.",
+  "options": [
+   {
+    "word": "надія",
+    "pos": "noun",
+    "gloss": "hope (nom.sg)"
+   },
+   {
+    "word": "надії",
+    "pos": "noun",
+    "gloss": "of hope / hopes (gen.sg, nom.pl, dat./loc.)"
+   }
+  ]
+ },
+ {
+  "key": "стаття",
+  "trap_type": "я/і case ending",
+  "note": "Soft-stem: 'стаття' (article, nom.) vs 'статті' (of/the articles, doubled т + і). One article subject => стаття; plural/genitive => статті.",
+  "options": [
+   {
+    "word": "стаття",
+    "pos": "noun",
+    "gloss": "article (nom.sg)"
+   },
+   {
+    "word": "статті",
+    "pos": "noun",
+    "gloss": "of the article / articles (gen.sg, nom.pl, dat./loc.)"
+   }
+  ]
+ },
+ {
+  "key": "Україна",
+  "trap_type": "ї integrity",
+  "note": "'Україна' has ї (Укра-Ї-на). The Russian-style 'Украина' (no dots) is wrong in Ukrainian text. Country name => Україна.",
+  "options": [
+   {
+    "word": "Україна",
+    "pos": "noun",
+    "gloss": "Ukraine (proper noun)"
+   },
+   {
+    "word": "Украина",
+    "pos": "none",
+    "gloss": "NOT Ukrainian spelling (Russian)"
+   }
+  ]
+ },
+ {
+  "key": "твої",
+  "trap_type": "ї plural vs ій singular",
+  "note": "'твої' (your, plural, -ї) vs 'твій' (your, masc.sg, -ій). Many of yours => твої; one masc. => твій.",
+  "options": [
+   {
+    "word": "твої",
+    "pos": "pronoun",
+    "gloss": "your (pl.)"
+   },
+   {
+    "word": "твій",
+    "pos": "pronoun",
+    "gloss": "your (masc. sg.)"
+   }
+  ]
+ },
+ {
+  "key": "мої",
+  "trap_type": "ї plural vs ій singular",
+  "note": "'мої' (my, plural, -ї) vs 'мій' (my, masc.sg, -ій). Several of mine => мої; one masc. => мій. Hear [ji] (мо-Ї) vs [ij] (мій).",
+  "options": [
+   {
+    "word": "мої",
+    "pos": "pronoun",
+    "gloss": "my (pl.)"
+   },
+   {
+    "word": "мій",
+    "pos": "pronoun",
+    "gloss": "my (masc. sg.)"
+   }
+  ]
+ },
+ {
+  "key": "гаї",
+  "trap_type": "ї plural vs й singular",
+  "note": "'гай' (grove, sg, ends -й) vs 'гаї' (groves, pl, ends -ї). One grove => гай; several => гаї.",
+  "options": [
+   {
+    "word": "гаї",
+    "pos": "noun",
+    "gloss": "groves (nom.pl of гай)"
+   },
+   {
+    "word": "гай",
+    "pos": "noun",
+    "gloss": "grove, copse (sg.)"
+   }
+  ]
+ },
+ {
+  "key": "краї",
+  "trap_type": "ї plural vs й singular",
+  "note": "'край' (edge/land, sg, -й) vs 'краї' (edges/lands, pl, -ї). Single border/region => край; plural => краї.",
+  "options": [
+   {
+    "word": "краї",
+    "pos": "noun",
+    "gloss": "edges / lands (nom.pl of край)"
+   },
+   {
+    "word": "край",
+    "pos": "noun",
+    "gloss": "edge; land (sg.)"
+   }
+  ]
+ },
+ {
+  "key": "моїй",
+  "trap_type": "ї vs їй vs ій",
+  "note": "'мій' (masc.sg), 'мої' (pl.), 'моїй' (fem. dat./loc.sg, ends -їй). To my (one fem. thing) => моїй; many => мої; one masc. => мій.",
+  "options": [
+   {
+    "word": "моїй",
+    "pos": "pronoun",
+    "gloss": "to my (fem. dat./loc. sg)"
+   },
+   {
+    "word": "мої",
+    "pos": "pronoun",
+    "gloss": "my (pl.)"
+   },
+   {
+    "word": "мій",
+    "pos": "pronoun",
+    "gloss": "my (masc. sg.)"
+   }
+  ]
+ },
+ {
+  "key": "їй",
+  "trap_type": "їй vs її",
+  "note": "'їй' (to her, dative, ends -й) vs 'її' (her/hers, gen./acc., ends -ї). Indirect object 'to her' => їй; possessive/direct object => її. Listen for final [j] vs [i].",
+  "options": [
+   {
+    "word": "їй",
+    "pos": "pronoun",
+    "gloss": "to her (dat. of вона)"
+   },
+   {
+    "word": "її",
+    "pos": "pronoun",
+    "gloss": "her, hers (gen./acc.)"
+   }
+  ]
+ },
+ {
+  "key": "дії",
+  "trap_type": "я/ї case ending",
+  "note": "'дія' (action, nom.sg) vs 'дії' (actions / of action, -ї). Single act subject => дія; plural or genitive => дії.",
+  "options": [
+   {
+    "word": "дії",
+    "pos": "noun",
+    "gloss": "actions / of action (nom.pl, gen.sg of дія)"
+   },
+   {
+    "word": "дія",
+    "pos": "noun",
+    "gloss": "action, act (nom.sg)"
+   }
+  ]
+ },
+ {
+  "key": "лінія",
+  "trap_type": "я/ї case ending",
+  "note": "'лінія' (a line, nom.) vs 'лінії' (lines / of the line, -ї). Subject single line => лінія; plural or oblique => лінії.",
+  "options": [
+   {
+    "word": "лінія",
+    "pos": "noun",
+    "gloss": "line (nom.sg)"
+   },
+   {
+    "word": "лінії",
+    "pos": "noun",
+    "gloss": "lines / of the line (gen.sg, nom.pl, dat./loc.)"
+   }
+  ]
+ },
+ {
+  "key": "сесія",
+  "trap_type": "я/ї case ending",
+  "note": "'сесія' (a session, nom.) vs 'сесії' (sessions / of the session, -ї). Single session => сесія; oblique/plural => сесії.",
+  "options": [
+   {
+    "word": "сесія",
+    "pos": "noun",
+    "gloss": "session (nom.sg)"
+   },
+   {
+    "word": "сесії",
+    "pos": "noun",
+    "gloss": "sessions / of the session (gen.sg, nom.pl, dat./loc.)"
+   }
+  ]
+ },
+ {
+  "key": "ґанок",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The porch/stoop is ґанок with hard ґ [g] (from Polish ganek). Spelling it with г is a very common error; there is no separate word 'ганок'. Listen for the plosive [g].",
+  "options": [
+   {
+    "word": "ґанок",
+    "pos": "noun",
+    "gloss": "porch, stoop"
+   },
+   {
+    "word": "ганок",
+    "pos": "noun",
+    "gloss": "(misspelling of ґанок; not a standard word)"
+   }
+  ]
+ },
+ {
+  "key": "ґатунок",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "'Grade/sort' is ґатунок with ґ [g]. Often miswritten with г. If the sense is quality-class of a product, use ґ.",
+  "options": [
+   {
+    "word": "ґатунок",
+    "pos": "noun",
+    "gloss": "grade, sort, quality (of goods)"
+   },
+   {
+    "word": "гатунок",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of ґатунок)"
+   }
+  ]
+ },
+ {
+  "key": "ґрунт",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "Soil/ground is ґрунт with ґ [g]. The г-spelling was the Soviet norm and is still widespread, but standard orthography requires ґ. All derivatives (ґрунтовний, ґрунтуватися) keep ґ.",
+  "options": [
+   {
+    "word": "ґрунт",
+    "pos": "noun",
+    "gloss": "soil, ground, basis"
+   },
+   {
+    "word": "грунт",
+    "pos": "noun",
+    "gloss": "(common nonstandard spelling of ґрунт)"
+   }
+  ]
+ },
+ {
+  "key": "ґудзик",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "A clothing button is ґудзик with ґ [g]. Do not confuse with гудіти (to hum/buzz, with г). The button always takes ґ.",
+  "options": [
+   {
+    "word": "ґудзик",
+    "pos": "noun",
+    "gloss": "button (on clothing)"
+   },
+   {
+    "word": "гудзик",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of ґудзик)"
+   }
+  ]
+ },
+ {
+  "key": "ґава",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The bird and the idiom 'ловити ґав' (to gawk/loaf) use ґ [g]. Standard spelling is ґава.",
+  "options": [
+   {
+    "word": "ґава",
+    "pos": "noun",
+    "gloss": "jackdaw/crow; (fig.) gawker, dawdler"
+   },
+   {
+    "word": "гава",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of ґава)"
+   }
+  ]
+ },
+ {
+  "key": "ґазда",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "Householder (Galician/Carpathian) is ґазда with ґ [g]. Fem. ґаздиня. The г-spelling is incorrect.",
+  "options": [
+   {
+    "word": "ґазда",
+    "pos": "noun",
+    "gloss": "master of the house, householder (Western dialect)"
+   },
+   {
+    "word": "газда",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of ґазда)"
+   }
+  ]
+ },
+ {
+  "key": "дзиґа",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The toy spinning top is дзиґа with ґ [g]. Easy to write with г by habit; standard form has ґ.",
+  "options": [
+   {
+    "word": "дзиґа",
+    "pos": "noun",
+    "gloss": "spinning top; (fig.) fidgety person"
+   },
+   {
+    "word": "дзига",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of дзиґа)"
+   }
+  ]
+ },
+ {
+  "key": "ґерлиґа",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "A shepherd's crook is ґерлиґа with ґ [g] in both positions. Both syllables take the plosive.",
+  "options": [
+   {
+    "word": "ґерлиґа",
+    "pos": "noun",
+    "gloss": "shepherd's crook"
+   },
+   {
+    "word": "герлига",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "аґрус",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "Gooseberry is аґрус with ґ [g] (from Polish agrest). Do not confuse with агро- (agriculture prefix, г). The berry takes ґ.",
+  "options": [
+   {
+    "word": "аґрус",
+    "pos": "noun",
+    "gloss": "gooseberry"
+   },
+   {
+    "word": "агрус",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of аґрус)"
+   }
+  ]
+ },
+ {
+  "key": "ґуля",
+  "trap_type": "minimal_pair",
+  "note": "Near-minimal pair. ґуля (noun, bump on the head) has ґ [g]; гуля (verb, walks/parties, from гуляти) has г [ɦ]. Use part of speech: a lump = ґ noun; an action = г verb.",
+  "options": [
+   {
+    "word": "ґуля",
+    "pos": "noun",
+    "gloss": "bump, lump, swelling"
+   },
+   {
+    "word": "гуля",
+    "pos": "verb",
+    "gloss": "(s)he is strolling/partying (form of гуляти)"
+   }
+  ]
+ },
+ {
+  "key": "ґрати",
+  "trap_type": "minimal_pair",
+  "note": "True minimal pair. ґрати (bars/grating, e.g. на ґратах = behind bars) takes ґ [g]; грати (to play, instrument/game) takes г [ɦ]. Distinguish by noun vs infinitive.",
+  "options": [
+   {
+    "word": "ґрати",
+    "pos": "noun",
+    "gloss": "grating, bars, grille"
+   },
+   {
+    "word": "грати",
+    "pos": "verb",
+    "gloss": "to play"
+   }
+  ]
+ },
+ {
+  "key": "ґедзь",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The horsefly is ґедзь with ґ [g]. The verb in dictionaries varies, but the insect noun takes the plosive ґ.",
+  "options": [
+   {
+    "word": "ґедзь",
+    "pos": "noun",
+    "gloss": "horsefly, gadfly"
+   },
+   {
+    "word": "гедзатися",
+    "pos": "verb",
+    "gloss": "(of cattle) to be tormented by gadflies"
+   }
+  ]
+ },
+ {
+  "key": "ґринджоли",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "A low peasant sled is ґринджоли (plurale tantum) with ґ [g]. Spell with ґ.",
+  "options": [
+   {
+    "word": "ґринджоли",
+    "pos": "noun",
+    "gloss": "small low sled, country sleigh"
+   },
+   {
+    "word": "гринджоли",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "джиґун",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "A philanderer/dandy is джиґун with ґ [g]. Keep the plosive ґ.",
+  "options": [
+   {
+    "word": "джиґун",
+    "pos": "noun",
+    "gloss": "ladies' man, dandy, flirt"
+   },
+   {
+    "word": "джигун",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґлей",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "Tree gum/resin and gley soil is ґлей with ґ [g]. Spell with ґ.",
+  "options": [
+   {
+    "word": "ґлей",
+    "pos": "noun",
+    "gloss": "gum/resin (from trees); gley clay"
+   },
+   {
+    "word": "глей",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of ґлей)"
+   }
+  ]
+ },
+ {
+  "key": "ґвалт",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "Uproar/violence and the cry for help is ґвалт with ґ [g] (from German Gewalt via Polish). Derivative ґвалтувати keeps ґ. Standard spelling uses ґ.",
+  "options": [
+   {
+    "word": "ґвалт",
+    "pos": "noun/interjection",
+    "gloss": "violence, uproar; (interj.) help!"
+   },
+   {
+    "word": "гвалт",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of ґвалт)"
+   }
+  ]
+ },
+ {
+  "key": "ґуля",
+  "trap_type": "derivative_keeps_g",
+  "note": "Both ґуля and its diminutive ґулька take ґ [g]. The hair-bun sense (ґулька) keeps the plosive too.",
+  "options": [
+   {
+    "word": "ґуля",
+    "pos": "noun",
+    "gloss": "bump, knob"
+   },
+   {
+    "word": "ґулька",
+    "pos": "noun",
+    "gloss": "little bump; hair bun"
+   }
+  ]
+ },
+ {
+  "key": "ґирлиґа",
+  "trap_type": "lookalike_different_word",
+  "note": "Don't be misled by visual similarity: ґирлиґа (shepherd's staff) has ґ [g]; гирло (river mouth) is a different word with г [ɦ]. Different roots entirely.",
+  "options": [
+   {
+    "word": "ґирлиґа",
+    "pos": "noun",
+    "gloss": "shepherd's staff (variant of ґерлиґа)"
+   },
+   {
+    "word": "гирло",
+    "pos": "noun",
+    "gloss": "river mouth, estuary"
+   }
+  ]
+ },
+ {
+  "key": "ґзимс",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The dialectal/older word for cornice ґзимс takes ґ [g]. The mainstream synonym is карниз. If using ґзимс, keep ґ.",
+  "options": [
+   {
+    "word": "ґзимс",
+    "pos": "noun",
+    "gloss": "cornice (architectural)"
+   },
+   {
+    "word": "карниз",
+    "pos": "noun",
+    "gloss": "cornice, curtain rail (standard synonym)"
+   }
+  ]
+ },
+ {
+  "key": "ґума",
+  "trap_type": "variant_letters",
+  "note": "Standard Ukrainian writes гума (rubber) with г. The Western/dialectal pronunciation ґума with ґ [g] exists in speech but the literary norm is г. Use гума in standard text.",
+  "options": [
+   {
+    "word": "ґума",
+    "pos": "noun",
+    "gloss": "rubber, elastic (dialectal/Western)"
+   },
+   {
+    "word": "гума",
+    "pos": "noun",
+    "gloss": "rubber (standard literary form, with г)"
+   }
+  ]
+ },
+ {
+  "key": "ґерґотати",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "To gabble/jabber is ґерґотати with ґ [g] in both root syllables. The plosive ґ is standard here.",
+  "options": [
+   {
+    "word": "ґерґотати",
+    "pos": "verb",
+    "gloss": "to gabble, jabber, gobble (turkey)"
+   },
+   {
+    "word": "герготати",
+    "pos": "verb",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґандж",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "Flaw/blemish is ґандж with ґ [g]. The г-spelling is incorrect; keep the plosive.",
+  "options": [
+   {
+    "word": "ґандж",
+    "pos": "noun",
+    "gloss": "defect, flaw, blemish"
+   },
+   {
+    "word": "гандж",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling of ґандж)"
+   }
+  ]
+ },
+ {
+  "key": "ґніт",
+  "trap_type": "minimal_pair",
+  "note": "Important minimal pair. ґніт = wick (ґ [g]); гніт = oppression or a press/weight (г [ɦ]). Candle/lamp context = ґ; political oppression or a weight = г.",
+  "options": [
+   {
+    "word": "ґніт",
+    "pos": "noun",
+    "gloss": "wick (of a candle/lamp)"
+   },
+   {
+    "word": "гніт",
+    "pos": "noun",
+    "gloss": "oppression; press/weight"
+   }
+  ]
+ },
+ {
+  "key": "ґуґля",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "This Carpathian word for a hooded cape takes ґ [g] in both syllables. Keep ґ.",
+  "options": [
+   {
+    "word": "ґуґля",
+    "pos": "noun",
+    "gloss": "hooded cloak (Hutsul); knob/lump (dialectal)"
+   },
+   {
+    "word": "гугля",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґаздувати",
+  "trap_type": "minimal_pair",
+  "note": "Near pair. ґаздувати (to run a household, from ґазда) uses ґ [g]; газувати (to accelerate / fizz, from газ) uses г [ɦ]. Farm-management vs gas/driving sense decides.",
+  "options": [
+   {
+    "word": "ґаздувати",
+    "pos": "verb",
+    "gloss": "to keep house, manage a farm"
+   },
+   {
+    "word": "газувати",
+    "pos": "verb",
+    "gloss": "to step on the gas, accelerate; to carbonate"
+   }
+  ]
+ },
+ {
+  "key": "ґвинт",
+  "trap_type": "variant_letters",
+  "note": "Standard Ukrainian writes гвинт (screw/propeller) with г. The ґвинт spelling with ґ [g] reflects dialectal pronunciation; literary norm is г.",
+  "options": [
+   {
+    "word": "ґвинт",
+    "pos": "noun",
+    "gloss": "screw (dialectal/colloquial)"
+   },
+   {
+    "word": "гвинт",
+    "pos": "noun",
+    "gloss": "screw, propeller (standard form, with г)"
+   }
+  ]
+ },
+ {
+  "key": "ґердан",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The traditional beaded necklace is ґердан with ґ [g]. Keep the plosive ґ.",
+  "options": [
+   {
+    "word": "ґердан",
+    "pos": "noun",
+    "gloss": "beaded necklace (Hutsul folk jewelry)"
+   },
+   {
+    "word": "гердан",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґноття",
+  "trap_type": "lookalike_different_word",
+  "note": "Distinguish wick-words from rot/manure words: ґніт/ґноття (wick, wicks) take ґ [g]; гній, гноїти (manure, to rot) take г [ɦ]. Different roots despite the look.",
+  "options": [
+   {
+    "word": "ґноття",
+    "pos": "noun",
+    "gloss": "wicks (collective of ґніт)"
+   },
+   {
+    "word": "гноїти",
+    "pos": "verb",
+    "gloss": "to let rot; to fertilize with manure"
+   }
+  ]
+ },
+ {
+  "key": "ґава",
+  "trap_type": "lookalike_different_word",
+  "note": "Don't confuse ґава (jackdaw/gawker, ґ [g]) with гавкати (to bark, г [ɦ]). Bird/idle-stare vs dog-bark; different letters.",
+  "options": [
+   {
+    "word": "ґава",
+    "pos": "noun",
+    "gloss": "jackdaw; gawker"
+   },
+   {
+    "word": "гавкати",
+    "pos": "verb",
+    "gloss": "to bark (of a dog)"
+   }
+  ]
+ },
+ {
+  "key": "ґедзкатися",
+  "trap_type": "derivative_keeps_g",
+  "note": "Verbs derived from ґедзь (gadfly) keep ґ [g]. The 'acting up/skittish' sense carries the plosive.",
+  "options": [
+   {
+    "word": "ґедзкатися",
+    "pos": "verb",
+    "gloss": "to act up, be skittish (as cattle bothered by gadflies)"
+   },
+   {
+    "word": "ґедзь",
+    "pos": "noun",
+    "gloss": "gadfly (reminder)"
+   }
+  ]
+ },
+ {
+  "key": "дзиґлик",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The little stool дзиґлик and the top дзиґа both take ґ [g]. Keep the plosive in this word family.",
+  "options": [
+   {
+    "word": "дзиґлик",
+    "pos": "noun",
+    "gloss": "stool, small chair (dialectal)"
+   },
+   {
+    "word": "дзиґа",
+    "pos": "noun",
+    "gloss": "spinning top (reminder)"
+   }
+  ]
+ },
+ {
+  "key": "ґерґіт",
+  "trap_type": "lookalike_different_word",
+  "note": "ґерґіт (gabble/jabber) takes ґ [g]; the unrelated гуркіт (rumble/din) takes г [ɦ]. Distinguish by sound described and root.",
+  "options": [
+   {
+    "word": "ґерґіт",
+    "pos": "noun",
+    "gloss": "gabble, jabber, gobbling sound"
+   },
+   {
+    "word": "гуркіт",
+    "pos": "noun",
+    "gloss": "rumble, din (with г)"
+   }
+  ]
+ },
+ {
+  "key": "гудзь",
+  "trap_type": "variant_letters",
+  "note": "The button/knob root appears as ґудз-/ґудзик with ґ [g] in standard spelling. When the sense is a fastening button, use ґ (ґудзик).",
+  "options": [
+   {
+    "word": "гудзь",
+    "pos": "noun",
+    "gloss": "knot, knob (dialectal)"
+   },
+   {
+    "word": "ґудзь",
+    "pos": "noun",
+    "gloss": "knot, knob, button (variant of ґудзик root)"
+   }
+  ]
+ },
+ {
+  "key": "ґешефт",
+  "trap_type": "variant_letters",
+  "note": "This borrowing (a 'deal'/racket) is often written ґешефт with ґ [g] reflecting the source [g], though г-spelling occurs too. Keep ґ when the hard plosive is pronounced.",
+  "options": [
+   {
+    "word": "ґешефт",
+    "pos": "noun",
+    "gloss": "shady deal, profiteering (colloq., from Yiddish/German)"
+   },
+   {
+    "word": "гешефт",
+    "pos": "noun",
+    "gloss": "(also written with г)"
+   }
+  ]
+ },
+ {
+  "key": "ґринджолята",
+  "trap_type": "derivative_keeps_g",
+  "note": "Diminutives of ґринджоли keep ґ [g]. The whole sled family takes the plosive.",
+  "options": [
+   {
+    "word": "ґринджолята",
+    "pos": "noun",
+    "gloss": "little sleds (dim. of ґринджоли)"
+   },
+   {
+    "word": "ґринджоли",
+    "pos": "noun",
+    "gloss": "low sled (reminder)"
+   }
+  ]
+ },
+ {
+  "key": "ґаздиня",
+  "trap_type": "derivative_keeps_g",
+  "note": "Feminine of ґазда is ґаздиня with ґ [g]. Keep the plosive matching ґазда.",
+  "options": [
+   {
+    "word": "ґаздиня",
+    "pos": "noun",
+    "gloss": "mistress of the house, housewife (Western)"
+   },
+   {
+    "word": "газдиня",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґвер",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "This Galician word for a rifle takes ґ [g] reflecting German [g]. Keep the plosive.",
+  "options": [
+   {
+    "word": "ґвер",
+    "pos": "noun",
+    "gloss": "rifle, gun (Western dialect, from German Gewehr)"
+   },
+   {
+    "word": "гвер",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґаблі",
+  "trap_type": "lookalike_different_word",
+  "note": "Distinct tools: ґаблі (pitchfork, dialectal) takes ґ [g]; граблі (rake) takes г [ɦ]. Different implements and letters; don't conflate.",
+  "options": [
+   {
+    "word": "ґаблі",
+    "pos": "noun",
+    "gloss": "pitchfork, dung fork (Western dialect)"
+   },
+   {
+    "word": "граблі",
+    "pos": "noun",
+    "gloss": "rake"
+   }
+  ]
+ },
+ {
+  "key": "ґиґнути",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "The slang 'to croak/die' is ґиґнути with ґ [g]. Keep the plosive.",
+  "options": [
+   {
+    "word": "ґиґнути",
+    "pos": "verb",
+    "gloss": "to kick the bucket, croak, die (slang)"
+   },
+   {
+    "word": "гигнути",
+    "pos": "verb",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "аґрусовий",
+  "trap_type": "derivative_keeps_g",
+  "note": "Adjectives from аґрус keep ґ [g] (аґрусовий, аґрусове варення). Match the noun's plosive.",
+  "options": [
+   {
+    "word": "аґрусовий",
+    "pos": "adjective",
+    "gloss": "gooseberry- (relating to gooseberry)"
+   },
+   {
+    "word": "агрусовий",
+    "pos": "adjective",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґратчастий",
+  "trap_type": "derivative_keeps_g",
+  "note": "Adjective from ґрати (grating) keeps ґ [g]: ґратчастий = latticed/checkered. Don't confuse with anything from грати (to play).",
+  "options": [
+   {
+    "word": "ґратчастий",
+    "pos": "adjective",
+    "gloss": "latticed, grated, checkered"
+   },
+   {
+    "word": "гратчастий",
+    "pos": "adjective",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґвалтувати",
+  "trap_type": "derivative_keeps_g",
+  "note": "Derived from ґвалт, the verb ґвалтувати keeps ґ [g]. Standard orthography uses the plosive throughout.",
+  "options": [
+   {
+    "word": "ґвалтувати",
+    "pos": "verb",
+    "gloss": "to rape; to use violence; to raise an alarm"
+   },
+   {
+    "word": "гвалтувати",
+    "pos": "verb",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґуральня",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "A spirits distillery is ґуральня with ґ [g] (from Polish gorzelnia). Keep the plosive; the г-spelling is nonstandard.",
+  "options": [
+   {
+    "word": "ґуральня",
+    "pos": "noun",
+    "gloss": "distillery (for spirits)"
+   },
+   {
+    "word": "гуральня",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ґерґотіти",
+  "trap_type": "lookalike_different_word",
+  "note": "Two onomatopoeic verbs: ґерґотіти (gobble/jabber) takes ґ [g]; гелготіти (geese honking/cackling) takes г [ɦ]. Match the animal sound and root.",
+  "options": [
+   {
+    "word": "ґерґотіти",
+    "pos": "verb",
+    "gloss": "to gobble (turkey); to jabber"
+   },
+   {
+    "word": "гелготіти",
+    "pos": "verb",
+    "gloss": "to cackle/honk (geese); to chatter (with г)"
+   }
+  ]
+ },
+ {
+  "key": "ґаздівство",
+  "trap_type": "derivative_keeps_g",
+  "note": "Noun from ґазда keeps ґ [g]: ґаздівство = farm/household management. Match the root plosive.",
+  "options": [
+   {
+    "word": "ґаздівство",
+    "pos": "noun",
+    "gloss": "household, farmstead, husbandry"
+   },
+   {
+    "word": "газдівство",
+    "pos": "noun",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "джиґнути",
+  "trap_type": "g_vs_gh_spelling",
+  "note": "This dialectal verb takes ґ [g]. Keep the plosive when the hard sound is heard.",
+  "options": [
+   {
+    "word": "джиґнути",
+    "pos": "verb",
+    "gloss": "to dart/spring (dialectal); to sting"
+   },
+   {
+    "word": "джигнути",
+    "pos": "verb",
+    "gloss": "(nonstandard spelling)"
+   }
+  ]
+ },
+ {
+  "key": "п'ять",
+  "trap_type": "apostrophe-required-after-labial",
+  "note": "After labials (б, п, в, м, ф) before я/ю/є/ї the apostrophe is mandatory. 'Five' is always п'ять. Never write пять.",
+  "options": [
+   {
+    "word": "п'ять",
+    "pos": "numeral",
+    "gloss": "five"
+   },
+   {
+    "word": "пять",
+    "pos": "none",
+    "gloss": "(not a valid Ukrainian spelling)"
+   }
+  ]
+ },
+ {
+  "key": "ім'я",
+  "trap_type": "apostrophe-after-labial",
+  "note": "'Name' is ім'я — apostrophe after м. Listen for the [j] glide: i-MYA. Compare derived imenni forms (імені, іменем) which drop the apostrophe because the labial is followed by е, not я.",
+  "options": [
+   {
+    "word": "ім'я",
+    "pos": "noun",
+    "gloss": "name (given name)"
+   },
+   {
+    "word": "імя",
+    "pos": "none",
+    "gloss": "(incorrect spelling)"
+   }
+  ]
+ },
+ {
+  "key": "в'ю",
+  "trap_type": "apostrophe-after-labial",
+  "note": "Both take an apostrophe after в before ю. в'ю = I wind; в'юн = the fish/a wriggly person. Distinguish by whether a noun suffix follows (-н).",
+  "options": [
+   {
+    "word": "в'ю",
+    "pos": "verb",
+    "gloss": "I twist/weave (1sg of вити)"
+   },
+   {
+    "word": "в'юн",
+    "pos": "noun",
+    "gloss": "loach (eel-like fish); fidget"
+   }
+  ]
+ },
+ {
+  "key": "бур'ян",
+  "trap_type": "apostrophe-after-r",
+  "note": "After hard р the apostrophe is used: бур'ян (weed), pronounced bur-YAN with a glide. Contrast буря (storm) where ря is a soft syllable [r'a], no glide, no apostrophe. Decide by sound: glide+[j] -> apostrophe; soft consonant -> none.",
+  "options": [
+   {
+    "word": "бур'ян",
+    "pos": "noun",
+    "gloss": "weed(s)"
+   },
+   {
+    "word": "буря",
+    "pos": "noun",
+    "gloss": "storm, tempest"
+   }
+  ]
+ },
+ {
+  "key": "об'єкт",
+  "trap_type": "apostrophe-after-prefix",
+  "note": "Prefix/root boundary after б before є needs an apostrophe: об'єкт. Same rule: об'єднання (union), суб'єкт (subject).",
+  "options": [
+   {
+    "word": "об'єкт",
+    "pos": "noun",
+    "gloss": "object"
+   },
+   {
+    "word": "обєкт",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "об'єднання",
+  "trap_type": "apostrophe-after-prefix",
+  "note": "Apostrophe after б (labial + prefix-like boundary) before є. You hear ob-YED-nan-nya with a glide.",
+  "options": [
+   {
+    "word": "об'єднання",
+    "pos": "noun",
+    "gloss": "union, association"
+   },
+   {
+    "word": "обєднання",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "духмяний",
+  "trap_type": "apostrophe-vs-no-apostrophe",
+  "note": "No apostrophe: духмяний — м preceded by root consonant х. Listen: there is no [j] glide before я.",
+  "options": [
+   {
+    "word": "духмяний",
+    "pos": "adjective",
+    "gloss": "fragrant, aromatic"
+   },
+   {
+    "word": "духм'яний",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "черв'як",
+  "trap_type": "apostrophe-required-vs-exception",
+  "note": "Apostrophe IS required in черв'як despite в being preceded by р — because here р belongs to a separate syllable structure and the labial is glided [v'jak]. Contrast морквяний (no apostrophe). Decide by the glide: hear [j] -> apostrophe.",
+  "options": [
+   {
+    "word": "черв'як",
+    "pos": "noun",
+    "gloss": "worm"
+   },
+   {
+    "word": "червяк",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "пам'ять",
+  "trap_type": "apostrophe-after-labial",
+  "note": "Apostrophe after м before я: пам'ять (PAM-yat'). Note the word ALSO ends in a soft sign on т. Two separate phenomena in one word.",
+  "options": [
+   {
+    "word": "пам'ять",
+    "pos": "noun",
+    "gloss": "memory"
+   },
+   {
+    "word": "память",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "здоров'я",
+  "trap_type": "apostrophe-after-labial",
+  "note": "Apostrophe after в: здоров'я (zdo-ROV-ya). Always written with apostrophe; the labial в is glided.",
+  "options": [
+   {
+    "word": "здоров'я",
+    "pos": "noun",
+    "gloss": "health"
+   },
+   {
+    "word": "здоровя",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "день",
+  "trap_type": "soft-sign-required",
+  "note": "Word-final soft н is marked with ь: день. Without the soft sign 'ден' would mis-spell. Listen for a palatalized [n'].",
+  "options": [
+   {
+    "word": "день",
+    "pos": "noun",
+    "gloss": "day"
+   },
+   {
+    "word": "ден",
+    "pos": "none",
+    "gloss": "(incorrect for 'day')"
+   }
+  ]
+ },
+ {
+  "key": "кут",
+  "trap_type": "soft-sign-changes-meaning",
+  "note": "Illustrates that a final soft sign marks palatalization. Use minimal-pair awareness: hear a soft final consonant -> add ь (e.g., кінь has soft н').",
+  "options": [
+   {
+    "word": "кут",
+    "pos": "noun",
+    "gloss": "corner, angle"
+   },
+   {
+    "word": "кінь",
+    "pos": "noun",
+    "gloss": "horse"
+   }
+  ]
+ },
+ {
+  "key": "стань",
+  "trap_type": "soft-sign-vs-none-final",
+  "note": "стань (imperative, soft н') vs стан (noun, hard н). Decide by the palatalization you hear and by syntax (verb command vs noun).",
+  "options": [
+   {
+    "word": "стань",
+    "pos": "verb",
+    "gloss": "stand/become! (imperative)"
+   },
+   {
+    "word": "стан",
+    "pos": "noun",
+    "gloss": "state, condition; waist; camp"
+   }
+  ]
+ },
+ {
+  "key": "будь",
+  "trap_type": "soft-sign-vs-none-final",
+  "note": "будь has a soft final д' and a soft sign. Hear BOOD' (soft). Common in будь ласка (please) and будь-який (any).",
+  "options": [
+   {
+    "word": "будь",
+    "pos": "verb",
+    "gloss": "be! (imperative); -ever (particle)"
+   },
+   {
+    "word": "буд",
+    "pos": "none",
+    "gloss": "(not a standalone word)"
+   }
+  ]
+ },
+ {
+  "key": "сіль",
+  "trap_type": "soft-sign-vs-none-final",
+  "note": "сіль (salt, soft л') vs сил (forces, gen. pl., hard л). The vowel differs too (і vs и) but the soft sign is the key cue: hear soft [l'] -> ь.",
+  "options": [
+   {
+    "word": "сіль",
+    "pos": "noun",
+    "gloss": "salt"
+   },
+   {
+    "word": "сил",
+    "pos": "noun",
+    "gloss": "of forces/strengths (gen. pl. of сила)"
+   }
+  ]
+ },
+ {
+  "key": "кінь",
+  "trap_type": "soft-sign-vs-none-final",
+  "note": "кінь (horse, soft н') is the everyday word. кін is rare. If context is an animal, it's кінь with a soft sign.",
+  "options": [
+   {
+    "word": "кінь",
+    "pos": "noun",
+    "gloss": "horse"
+   },
+   {
+    "word": "кін",
+    "pos": "noun",
+    "gloss": "stake/pot (in a game); a kind of stage (dialectal/old)"
+   }
+  ]
+ },
+ {
+  "key": "льох",
+  "trap_type": "soft-sign-before-o",
+  "note": "льох (cellar, soft л') vs лох (a plant / slang). The soft sign distinguishes meaning; decide by palatalization and context (storage vs slang/plant).",
+  "options": [
+   {
+    "word": "льох",
+    "pos": "noun",
+    "gloss": "cellar"
+   },
+   {
+    "word": "лох",
+    "pos": "noun",
+    "gloss": "Russian olive (oleaster); (slang) sucker/dupe"
+   }
+  ]
+ },
+ {
+  "key": "пальці",
+  "trap_type": "soft-sign-medial-before-consonant",
+  "note": "Soft л' before ц is written with ь: пальці. Compare singular палець (the ь appears finally there: палець -> stem пальц-). Hear soft [l'].",
+  "options": [
+   {
+    "word": "пальці",
+    "pos": "noun",
+    "gloss": "fingers (pl. of палець)"
+   },
+   {
+    "word": "палці",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "доньці",
+  "trap_type": "soft-sign-suffix-onk-enk",
+  "note": "донька -> доньці keeps the soft sign before ц in the н'. Don't confuse with донці (= to the Don, or 'bottoms'). Context: a daughter -> доньці.",
+  "options": [
+   {
+    "word": "доньці",
+    "pos": "noun",
+    "gloss": "to/for daughter (dat./loc. of донька)"
+   },
+   {
+    "word": "донці",
+    "pos": "none",
+    "gloss": "(incorrect for 'daughter')"
+   }
+  ]
+ },
+ {
+  "key": "ніч",
+  "trap_type": "soft-sign-vs-none-stem",
+  "note": "Both end in ч (never takes a soft sign in modern orthography — ч is always written hard, no ь after it). Listed to remind transcribers: do NOT add a soft sign after ч/щ word-finally (e.g., ніч, річ, піч).",
+  "options": [
+   {
+    "word": "ніч",
+    "pos": "noun",
+    "gloss": "night"
+   },
+   {
+    "word": "річ",
+    "pos": "noun",
+    "gloss": "thing"
+   }
+  ]
+ },
+ {
+  "key": "Харків",
+  "trap_type": "soft-sign-after-r-rule",
+  "note": "Final р in Ukrainian is hard and takes NO soft sign: лікар, Харків, кобзар, тепер. Don't add ь after final р (unlike some Russian forms).",
+  "options": [
+   {
+    "word": "Харків",
+    "pos": "name",
+    "gloss": "Kharkiv (city)"
+   },
+   {
+    "word": "лікар",
+    "pos": "noun",
+    "gloss": "doctor"
+   }
+  ]
+ },
+ {
+  "key": "Горький",
+  "trap_type": "soft-sign-after-r-medial",
+  "note": "Native Ukrainian гіркий (bitter) has NO soft sign after р — р is hard before к. A soft р' before a consonant is rare/foreign. For 'bitter' write гіркий, not гірький.",
+  "options": [
+   {
+    "word": "Горький",
+    "pos": "name",
+    "gloss": "Gorky (proper name, transliterated)"
+   },
+   {
+    "word": "гіркий",
+    "pos": "adjective",
+    "gloss": "bitter"
+   }
+  ]
+ },
+ {
+  "key": "ад'ютант",
+  "trap_type": "soft-sign-vs-apostrophe-loanword",
+  "note": "After д before ю in this loan use an APOSTROPHE: ад'ютант (d + [ju] glide). Compare кон'юнктура, ін'єкція, к'ярі — apostrophe after a consonant before я/ю/є/ї in loans where a glide is heard.",
+  "options": [
+   {
+    "word": "ад'ютант",
+    "pos": "noun",
+    "gloss": "adjutant, aide-de-camp"
+   },
+   {
+    "word": "адьютант",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "каньйон",
+  "trap_type": "soft-sign-loanword-ньй",
+  "note": "Soft н' + [jon]: каньйон (soft sign + й + о). Contrast кон'юнктура which uses an apostrophe — here the н is soft, so ьй, not апостроф.",
+  "options": [
+   {
+    "word": "каньйон",
+    "pos": "noun",
+    "gloss": "canyon"
+   },
+   {
+    "word": "каньон",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "пень",
+  "trap_type": "soft-sign-stem-alternation",
+  "note": "пень ends in soft н' -> final soft sign. Listen for [pen']. Oblique stem softens to пн- (пня, пню), where the soft sign disappears before the next vowel.",
+  "options": [
+   {
+    "word": "пень",
+    "pos": "noun",
+    "gloss": "tree stump"
+   },
+   {
+    "word": "пен",
+    "pos": "none",
+    "gloss": "(incorrect for 'stump')"
+   }
+  ]
+ },
+ {
+  "key": "робить",
+  "trap_type": "soft-sign-vs-none-verb-3sg",
+  "note": "3sg present робить ends in soft -ть (soft т'). Infinitive робити ends in -ти. Don't confuse: a final -ть with soft sign signals the conjugated 3rd person; -ти is the infinitive.",
+  "options": [
+   {
+    "word": "робить",
+    "pos": "verb",
+    "gloss": "(he/she) does/makes (3sg)"
+   },
+   {
+    "word": "робити",
+    "pos": "verb",
+    "gloss": "to do/make (infinitive)"
+   }
+  ]
+ },
+ {
+  "key": "сміятися",
+  "trap_type": "soft-sign-reflexive-infinitive",
+  "note": "Both are correct: -тися and the shortened -тись. The short form сміятись has a final soft sign. Choose by rhythm/register; both are standard.",
+  "options": [
+   {
+    "word": "сміятися",
+    "pos": "verb",
+    "gloss": "to laugh (reflexive infinitive)"
+   },
+   {
+    "word": "сміятись",
+    "pos": "verb",
+    "gloss": "to laugh (reflexive infinitive, short variant)"
+   }
+  ]
+ },
+ {
+  "key": "сядь",
+  "trap_type": "soft-sign-imperative-vs-3sg",
+  "note": "Imperative сядь has a final soft д'; the plural keeps the soft sign before -те: сядьте. Hear soft [d'] and add ь in both.",
+  "options": [
+   {
+    "word": "сядь",
+    "pos": "verb",
+    "gloss": "sit down! (imperative)"
+   },
+   {
+    "word": "сядьте",
+    "pos": "verb",
+    "gloss": "sit down! (imperative, plural/polite)"
+   }
+  ]
+ },
+ {
+  "key": "п'ятдесят",
+  "trap_type": "soft-sign-numeral-compound",
+  "note": "п'ятдесят: note the APOSTROPHE in п'ят- (from п'ять) but NO final soft sign on -сят. Two rules at once. Same: шістдесят, сімдесят.",
+  "options": [
+   {
+    "word": "п'ятдесят",
+    "pos": "numeral",
+    "gloss": "fifty"
+   },
+   {
+    "word": "п'ятдесять",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "різьбяр",
+  "trap_type": "soft-sign-before-suffix-omitted",
+  "note": "Contrast: різьбяр keeps the soft sign on з; but in -щина region names the soft sign of the base is often dropped (Умань -> Уманщина). Check whether the suffix is -ськ/-цьк/-зьк (keeps ь rules) vs -щин (drops base ь).",
+  "options": [
+   {
+    "word": "різьбяр",
+    "pos": "noun",
+    "gloss": "carver, sculptor"
+   },
+   {
+    "word": "Уманщина",
+    "pos": "noun",
+    "gloss": "the Uman region"
+   }
+  ]
+ },
+ {
+  "key": "Умань",
+  "trap_type": "soft-sign-dropped-region",
+  "note": "Умань has a final soft sign (soft н'). The adjective Уманський also has a soft sign but now inside -ський. The softness 'moves' with derivation; don't drop it from the suffix.",
+  "options": [
+   {
+    "word": "Умань",
+    "pos": "name",
+    "gloss": "Uman (city, final soft sign)"
+   },
+   {
+    "word": "Уманський",
+    "pos": "adjective",
+    "gloss": "of Uman (adj., soft sign in -ський)"
+   }
+  ]
+ },
+ {
+  "key": "лан",
+  "trap_type": "soft-sign-vs-none-minimal-pair",
+  "note": "Classic minimal pair: лан (field, hard н) vs лань (doe, soft н'). The soft sign alone changes the meaning. Decide by sense (terrain vs animal) and by the soft [n'].",
+  "options": [
+   {
+    "word": "лан",
+    "pos": "noun",
+    "gloss": "field (large open field)"
+   },
+   {
+    "word": "лань",
+    "pos": "noun",
+    "gloss": "doe, hind (female deer)"
+   }
+  ]
+ },
+ {
+  "key": "брат",
+  "trap_type": "soft-sign-vs-none-minimal-pair",
+  "note": "брат (brother) ends in hard т, no soft sign. Don't import the Russian infinitive 'брать' — the Ukrainian verb 'to take' is брати. Native final т here is hard.",
+  "options": [
+   {
+    "word": "брат",
+    "pos": "noun",
+    "gloss": "brother"
+   },
+   {
+    "word": "брать",
+    "pos": "none",
+    "gloss": "(incorrect; Ukrainian уживає брати)"
+   }
+  ]
+ },
+ {
+  "key": "ллють",
+  "trap_type": "apostrophe-after-labial-verb",
+  "note": "в'ється needs an apostrophe after labial в before є: в'ється (vye-tsya). (ллють shown for the doubled-л pattern, no apostrophe but a geminate.) Focus: labial + є/я/ю -> apostrophe.",
+  "options": [
+   {
+    "word": "ллють",
+    "pos": "verb",
+    "gloss": "(they) pour (3pl of лити)"
+   },
+   {
+    "word": "в'ється",
+    "pos": "verb",
+    "gloss": "(it) winds/curls (3sg of витися)"
+   }
+  ]
+ },
+ {
+  "key": "м'ясо",
+  "trap_type": "apostrophe-after-labial",
+  "note": "Apostrophe after м: м'ясо. Distinguish from м'ята (mint) and the verb stem in м'якшити. All keep the apostrophe after the labial.",
+  "options": [
+   {
+    "word": "м'ясо",
+    "pos": "noun",
+    "gloss": "meat"
+   },
+   {
+    "word": "мясо",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "буряк",
+  "trap_type": "apostrophe-vs-soft-decision",
+  "note": "Decision pair: буряк (beet) has soft р' + я = NO apostrophe (one syllable [ru-r'ak]? actually bu-RYAK, soft r). бур'ян (weed) HAS an apostrophe (glide [bur-jan]). Both after р — choose by whether you hear a [j] glide (apostrophe) or just a soft r (no apostrophe).",
+  "options": [
+   {
+    "word": "буряк",
+    "pos": "noun",
+    "gloss": "beet, beetroot"
+   },
+   {
+    "word": "бур'ян",
+    "pos": "noun",
+    "gloss": "weed(s)"
+   }
+  ]
+ },
+ {
+  "key": "з'явитися",
+  "trap_type": "apostrophe-after-prefix-vs-not",
+  "note": "Prefix з- + явитися -> з'явитися (apostrophe at the prefix/root seam before я). Same: з'їхати, з'єднати, з'юрмитися. After a prefix-final consonant before я/ю/є/ї, use an apostrophe.",
+  "options": [
+   {
+    "word": "з'явитися",
+    "pos": "verb",
+    "gloss": "to appear"
+   },
+   {
+    "word": "зявитися",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "сіль",
+  "trap_type": "soft-sign-vs-i-vowel",
+  "note": "сіль (salt, vowel і, soft л') vs сель (mudflow, vowel е, soft л'). Both have a soft sign; distinguish by the vowel (і vs е) and meaning.",
+  "options": [
+   {
+    "word": "сіль",
+    "pos": "noun",
+    "gloss": "salt"
+   },
+   {
+    "word": "сель",
+    "pos": "noun",
+    "gloss": "mudflow, debris flow"
+   }
+  ]
+ },
+ {
+  "key": "ім'я",
+  "trap_type": "apostrophe-vs-none-derived",
+  "note": "ім'я keeps the apostrophe (м + я), but the oblique stem імен- has NO apostrophe (м + е): імені, іменем, імена. Apostrophe appears only before я/ю/є/ї, not before е/и.",
+  "options": [
+   {
+    "word": "ім'я",
+    "pos": "noun",
+    "gloss": "name (nom./acc. sg.)"
+   },
+   {
+    "word": "імені",
+    "pos": "noun",
+    "gloss": "of the name / named after (gen. sg.)"
+   }
+  ]
+ },
+ {
+  "key": "сонце",
+  "trap_type": "soft-sign-stem-vs-suffix",
+  "note": "Neither takes a soft sign here: сонце (нц hard cluster) and сонячний. Don't insert a spurious ь in -нц-/-няч-. The н is not marked soft in these stems.",
+  "options": [
+   {
+    "word": "сонце",
+    "pos": "noun",
+    "gloss": "sun"
+   },
+   {
+    "word": "сонячний",
+    "pos": "adjective",
+    "gloss": "sunny, solar"
+   }
+  ]
+ },
+ {
+  "key": "обличчя",
+  "trap_type": "geminate-vs-apostrophe-decision",
+  "note": "Both geminate the soft consonant (чч) before я: обличчя, узбіччя. No apostrophe with ч. The doubling shows lengthened pronunciation; ч still never takes a soft sign.",
+  "options": [
+   {
+    "word": "обличчя",
+    "pos": "noun",
+    "gloss": "face"
+   },
+   {
+    "word": "узбіччя",
+    "pos": "noun",
+    "gloss": "roadside, shoulder of a road"
+   }
+  ]
+ },
+ {
+  "key": "статей",
+  "trap_type": "soft-sign-vs-geminate-no-double",
+  "note": "Gen. pl. of стаття is статей — the geminate тт SIMPLIFIES and a final soft sign-like softness is gone; spelled статей (one т). Don't carry the double тт into the genitive plural.",
+  "options": [
+   {
+    "word": "статей",
+    "pos": "noun",
+    "gloss": "of articles (gen. pl. of стаття)"
+   },
+   {
+    "word": "статтей",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "синій",
+  "trap_type": "soft-sign-final-vs-none-adj",
+  "note": "синій is the soft-stem adjective 'blue' (ends -ій). синь is a noun 'blueness' with a final soft sign. Decide by part of speech and ending: adjective -ій vs noun final -нь.",
+  "options": [
+   {
+    "word": "синій",
+    "pos": "adjective",
+    "gloss": "blue (m. nom. sg., soft-stem adj.)"
+   },
+   {
+    "word": "синь",
+    "pos": "noun",
+    "gloss": "blueness, blue expanse"
+   }
+  ]
+ },
+ {
+  "key": "вулиця",
+  "trap_type": "soft-sign-vs-none-vulytsya",
+  "note": "вулиця (nom. sg., -ця, no extra ь) vs вулиць (gen. pl., final ц becomes -ць with a soft sign). The soft sign appears in the genitive plural but not the nominative singular.",
+  "options": [
+   {
+    "word": "вулиця",
+    "pos": "noun",
+    "gloss": "street"
+   },
+   {
+    "word": "вулиць",
+    "pos": "noun",
+    "gloss": "of streets (gen. pl.)"
+   }
+  ]
+ },
+ {
+  "key": "В'ячеслав",
+  "trap_type": "apostrophe-after-labial-fam",
+  "note": "Apostrophe after в before я in this name: В'ячеслав. Many Ukrainian names need the apostrophe: Дем'ян, Лук'ян, Мар'яна, Уляна (this last has NO apostrophe — л + я is soft).",
+  "options": [
+   {
+    "word": "В'ячеслав",
+    "pos": "name",
+    "gloss": "Viacheslav (given name)"
+   },
+   {
+    "word": "Вячеслав",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "Мар'яна",
+  "trap_type": "apostrophe-vs-soft-name",
+  "note": "Decision pair: Мар'яна has an apostrophe (hard р + glide), but Уляна has NONE (soft л' + я). Same vowel я after different consonants -> р needs apostrophe, л is just soft.",
+  "options": [
+   {
+    "word": "Мар'яна",
+    "pos": "name",
+    "gloss": "Mariana (given name)"
+   },
+   {
+    "word": "Уляна",
+    "pos": "name",
+    "gloss": "Uliana (given name)"
+   }
+  ]
+ },
+ {
+  "key": "Дем'ян",
+  "trap_type": "apostrophe-after-labial-name",
+  "note": "Apostrophe after м before я: Дем'ян (and surname Дем'яненко). Labial + я -> apostrophe in personal names too.",
+  "options": [
+   {
+    "word": "Дем'ян",
+    "pos": "name",
+    "gloss": "Demian (given name)"
+   },
+   {
+    "word": "Демян",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "тюменський",
+  "trap_type": "soft-sign-before-suffix-omitted-sk",
+  "note": "тюменський keeps the soft sign in -ський even though the base might end hard; -ський/-зький/-цький always have ь. By contrast plain -нн- adjectives (доменний) have no soft sign. Identify the suffix to decide.",
+  "options": [
+   {
+    "word": "тюменський",
+    "pos": "adjective",
+    "gloss": "of Tyumen (adj.)"
+   },
+   {
+    "word": "доменний",
+    "pos": "adjective",
+    "gloss": "domain-/blast-furnace (adj.)"
+   }
+  ]
+ },
+ {
+  "key": "в'язь",
+  "trap_type": "soft-sign-after-z-vyaz",
+  "note": "Both start with в'я (apostrophe after labial в). They differ at the END: в'язь (script, soft з' + ь) vs в'яз (elm, hard з, no soft sign). One word, two phenomena: front apostrophe + a final soft-sign contrast.",
+  "options": [
+   {
+    "word": "в'язь",
+    "pos": "noun",
+    "gloss": "interlaced script, ligature"
+   },
+   {
+    "word": "в'яз",
+    "pos": "noun",
+    "gloss": "elm (tree)"
+   }
+  ]
+ },
+ {
+  "key": "стиль",
+  "trap_type": "soft-sign-suffix-ist-vs-ist",
+  "note": "стиль ends in a soft л' (soft sign). стиліст (the person noun -іст) ends in a hard т, no soft sign. Don't carry the base soft sign into the -іст derivative.",
+  "options": [
+   {
+    "word": "стиль",
+    "pos": "noun",
+    "gloss": "style"
+   },
+   {
+    "word": "стиліст",
+    "pos": "noun",
+    "gloss": "stylist"
+   }
+  ]
+ },
+ {
+  "key": "зв'язок",
+  "trap_type": "apostrophe-after-labial-derived",
+  "note": "Apostrophe after в before я: зв'язок (from зв'язати). The в is a labial preceded by з of the prefix-like cluster but still glided -> apostrophe. Same: зв'язати, зв'язківець, обов'язок.",
+  "options": [
+   {
+    "word": "зв'язок",
+    "pos": "noun",
+    "gloss": "connection, link, communication"
+   },
+   {
+    "word": "звязок",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "обов'язок",
+  "trap_type": "apostrophe-after-labial-obov'yazok",
+  "note": "Apostrophe after в before я: обов'язок. Hear [o-bo-VYA-zok] with a glide. Adjective обов'язковий (obligatory) keeps it too.",
+  "options": [
+   {
+    "word": "обов'язок",
+    "pos": "noun",
+    "gloss": "duty, obligation"
+   },
+   {
+    "word": "обовязок",
+    "pos": "none",
+    "gloss": "(incorrect)"
+   }
+  ]
+ },
+ {
+  "key": "громадянин",
+  "trap_type": "paronym",
+  "note": "Listen for the suffix. -ський on громадський = of society/public (громадський транспорт = public transport). -янський in громадянський = of citizenship (громадянська війна = civil war, громадянські права = civil rights). громадянин is the noun 'citizen'.",
+  "options": [
+   {
+    "word": "громадянин",
+    "pos": "noun",
+    "gloss": "citizen (member of a state)"
+   },
+   {
+    "word": "громадський",
+    "pos": "adj",
+    "gloss": "public, communal, civic"
+   },
+   {
+    "word": "громадянський",
+    "pos": "adj",
+    "gloss": "civil, civic (of citizenship)"
+   }
+  ]
+ },
+ {
+  "key": "особистий",
+  "trap_type": "paronym",
+  "note": "особистий = my own (особисте життя = personal life). особовий = administrative: особовий склад = personnel, особовий рахунок = personal account. особистісний = psychological: особистісний ріст = personal growth.",
+  "options": [
+   {
+    "word": "особистий",
+    "pos": "adj",
+    "gloss": "personal (belonging to one person)"
+   },
+   {
+    "word": "особовий",
+    "pos": "adj",
+    "gloss": "personnel/account (of persons en masse)"
+   },
+   {
+    "word": "особистісний",
+    "pos": "adj",
+    "gloss": "of personality, personality-related"
+   }
+  ]
+ },
+ {
+  "key": "духовний",
+  "trap_type": "paronym",
+  "note": "духовний = of the spirit/religion (духовна музика = sacred music). душевний = warm/sincere or psychiatric (душевна розмова = heart-to-heart, душевнохворий = mentally ill).",
+  "options": [
+   {
+    "word": "духовний",
+    "pos": "adj",
+    "gloss": "spiritual"
+   },
+   {
+    "word": "душевний",
+    "pos": "adj",
+    "gloss": "heartfelt, sincere; mental (of the soul/psyche)"
+   }
+  ]
+ },
+ {
+  "key": "ефективний",
+  "trap_type": "paronym",
+  "note": "ефективний = works, gets results (ефективний метод). ефектний = looks/sounds impressive (ефектний вихід = a dramatic entrance). The extra -ив- means 'actually works'.",
+  "options": [
+   {
+    "word": "ефективний",
+    "pos": "adj",
+    "gloss": "effective (producing results)"
+   },
+   {
+    "word": "ефектний",
+    "pos": "adj",
+    "gloss": "striking, impressive (making an impression)"
+   }
+  ]
+ },
+ {
+  "key": "адрес",
+  "trap_type": "paronym",
+  "note": "Masculine адрес = a congratulatory written address (вітальний адрес). Feminine адреса = postal/email address. Gender ending picks the meaning.",
+  "options": [
+   {
+    "word": "адрес",
+    "pos": "noun",
+    "gloss": "formal address/dedication (ceremonial speech to someone)"
+   },
+   {
+    "word": "адреса",
+    "pos": "noun",
+    "gloss": "address (street/location)"
+   }
+  ]
+ },
+ {
+  "key": "уява",
+  "trap_type": "paronym",
+  "note": "уява = the faculty of imagining (багата уява). уявлення = a concept/understanding of something (не маю уявлення = I have no idea).",
+  "options": [
+   {
+    "word": "уява",
+    "pos": "noun",
+    "gloss": "imagination"
+   },
+   {
+    "word": "уявлення",
+    "pos": "noun",
+    "gloss": "notion, idea, conception"
+   }
+  ]
+ },
+ {
+  "key": "гривня",
+  "trap_type": "paronym",
+  "note": "гривня (soft н) = money. гривна (hard н) = an old neck ornament. In financial transcripts always гривня.",
+  "options": [
+   {
+    "word": "гривня",
+    "pos": "noun",
+    "gloss": "hryvnia (Ukrainian currency)"
+   },
+   {
+    "word": "гривна",
+    "pos": "noun",
+    "gloss": "neck torque/necklace (ancient ornament)"
+   }
+  ]
+ },
+ {
+  "key": "стіл",
+  "trap_type": "paronym",
+  "note": "стіл = table (also дієтичний стіл = diet). стілець = chair (a seat). Don't render стілець as 'small table'.",
+  "options": [
+   {
+    "word": "стіл",
+    "pos": "noun",
+    "gloss": "table; cuisine/diet"
+   },
+   {
+    "word": "стілець",
+    "pos": "noun",
+    "gloss": "chair"
+   }
+  ]
+ },
+ {
+  "key": "кампанія",
+  "trap_type": "homophone",
+  "note": "Both sound near-identical. кАмпанія with а = a campaign (виборча кампанія = election campaign). кОмпанія with о = a firm or social group. Decide by context: business/people = компанія; organized effort = кампанія.",
+  "options": [
+   {
+    "word": "кампанія",
+    "pos": "noun",
+    "gloss": "campaign (organized drive)"
+   },
+   {
+    "word": "компанія",
+    "pos": "noun",
+    "gloss": "company (firm; group of people)"
+   }
+  ]
+ },
+ {
+  "key": "уповноважений",
+  "trap_type": "paronym",
+  "note": "уповноважений = appointed/authorized to act (Уповноважений з прав людини = Ombudsman). повноважний = possessing full authority (повноважний представник = plenipotentiary).",
+  "options": [
+   {
+    "word": "уповноважений",
+    "pos": "adj/noun",
+    "gloss": "authorized; commissioner/ombudsman"
+   },
+   {
+    "word": "повноважний",
+    "pos": "adj",
+    "gloss": "plenipotentiary, having full powers"
+   }
+  ]
+ },
+ {
+  "key": "виборний",
+  "trap_type": "paronym",
+  "note": "виборний = a post that is elected (виборна посада). виборчий = relating to the act of voting (виборча дільниця = polling station, виборчий бюлетень = ballot).",
+  "options": [
+   {
+    "word": "виборний",
+    "pos": "adj",
+    "gloss": "elective (filled by election)"
+   },
+   {
+    "word": "виборчий",
+    "pos": "adj",
+    "gloss": "electoral (of the election process)"
+   }
+  ]
+ },
+ {
+  "key": "дипломат",
+  "trap_type": "paronym",
+  "note": "дипломат = foreign-service official. дипломАНт = laureate who won a diploma in a competition. дипломник = final-year student doing their thesis. The -ант/-ник syllable is the tell.",
+  "options": [
+   {
+    "word": "дипломат",
+    "pos": "noun",
+    "gloss": "diplomat; attaché case"
+   },
+   {
+    "word": "дипломант",
+    "pos": "noun",
+    "gloss": "diploma/award winner (of a contest)"
+   },
+   {
+    "word": "дипломник",
+    "pos": "noun",
+    "gloss": "student writing a diploma thesis"
+   }
+  ]
+ },
+ {
+  "key": "економний",
+  "trap_type": "paronym",
+  "note": "економний = sparing in use (економна господиня, економний режим). економічний = of the economy/economics (економічна криза). Don't confuse with екологічний (environmental).",
+  "options": [
+   {
+    "word": "економний",
+    "pos": "adj",
+    "gloss": "thrifty, frugal (person/usage)"
+   },
+   {
+    "word": "економічний",
+    "pos": "adj",
+    "gloss": "economic (of the economy); economical"
+   },
+   {
+    "word": "екологічний",
+    "pos": "adj",
+    "gloss": "ecological"
+   }
+  ]
+ },
+ {
+  "key": "тактовний",
+  "trap_type": "paronym",
+  "note": "тактовний = polite, considerate (тактовна відповідь). тактичний = of military/strategy tactics (тактичний хід).",
+  "options": [
+   {
+    "word": "тактовний",
+    "pos": "adj",
+    "gloss": "tactful"
+   },
+   {
+    "word": "тактичний",
+    "pos": "adj",
+    "gloss": "tactical"
+   }
+  ]
+ },
+ {
+  "key": "гуманний",
+  "trap_type": "paronym",
+  "note": "гуманний = kind/merciful (гуманне ставлення). гуманітарний = humanitarian aid OR liberal-arts (гуманітарна допомога; гуманітарні науки). гуманістичний = of humanism (ideology).",
+  "options": [
+   {
+    "word": "гуманний",
+    "pos": "adj",
+    "gloss": "humane (compassionate)"
+   },
+   {
+    "word": "гуманітарний",
+    "pos": "adj",
+    "gloss": "humanitarian; of the humanities"
+   },
+   {
+    "word": "гуманістичний",
+    "pos": "adj",
+    "gloss": "humanistic"
+   }
+  ]
+ },
+ {
+  "key": "талан",
+  "trap_type": "paronym",
+  "note": "талАН (no t) = fortune/luck (щоб тобі талану). талант = ability. The final т changes meaning entirely; листen for it.",
+  "options": [
+   {
+    "word": "талан",
+    "pos": "noun",
+    "gloss": "luck, good fortune; destiny"
+   },
+   {
+    "word": "талант",
+    "pos": "noun",
+    "gloss": "talent, gift"
+   }
+  ]
+ },
+ {
+  "key": "вдача",
+  "trap_type": "homophone",
+  "note": "Near-homophones. вдача = a person's disposition (м'яка вдача = gentle nature). удача = a lucky outcome. Context: personality vs result.",
+  "options": [
+   {
+    "word": "вдача",
+    "pos": "noun",
+    "gloss": "character, temperament, nature"
+   },
+   {
+    "word": "удача",
+    "pos": "noun",
+    "gloss": "success, luck"
+   }
+  ]
+ },
+ {
+  "key": "відносини",
+  "trap_type": "paronym",
+  "note": "відносини = societal/international relations. стосунки = personal relationships. відношення = mathematical ratio. ставлення = one's attitude (ставлення до роботи). Russianism warning: avoid відношення for 'attitude'.",
+  "options": [
+   {
+    "word": "відносини",
+    "pos": "noun",
+    "gloss": "relations (between groups/states/social)"
+   },
+   {
+    "word": "відношення",
+    "pos": "noun",
+    "gloss": "ratio; relation (math/logic); attitude (dial.)"
+   },
+   {
+    "word": "стосунки",
+    "pos": "noun",
+    "gloss": "relationship (personal/interpersonal)"
+   },
+   {
+    "word": "ставлення",
+    "pos": "noun",
+    "gloss": "attitude toward something"
+   }
+  ]
+ },
+ {
+  "key": "показник",
+  "trap_type": "paronym",
+  "note": "показник = a metric/value (економічні показники). покажчик = a physical/textual pointer (покажчик повороту = turn signal, алфавітний покажчик = index).",
+  "options": [
+   {
+    "word": "показник",
+    "pos": "noun",
+    "gloss": "indicator, index, figure"
+   },
+   {
+    "word": "покажчик",
+    "pos": "noun",
+    "gloss": "pointer, sign, index (in a book)"
+   }
+  ]
+ },
+ {
+  "key": "уродливий",
+  "trap_type": "false-friend",
+  "note": "Beware Russian interference: in Ukrainian вродливий/уродливий means BEAUTIFUL, not ugly. 'Ugly' is потворний/негарний. Do not mistranslate.",
+  "options": [
+   {
+    "word": "уродливий",
+    "pos": "adj",
+    "gloss": "beautiful, comely (dialectal/poetic)"
+   },
+   {
+    "word": "вродливий",
+    "pos": "adj",
+    "gloss": "good-looking, handsome"
+   },
+   {
+    "word": "потворний",
+    "pos": "adj",
+    "gloss": "ugly, hideous"
+   }
+  ]
+ },
+ {
+  "key": "неділя",
+  "trap_type": "false-friend",
+  "note": "неділя = Sunday only (one day). 'Week' is тиждень. Russian неделя=week causes errors; keep them apart.",
+  "options": [
+   {
+    "word": "неділя",
+    "pos": "noun",
+    "gloss": "Sunday"
+   },
+   {
+    "word": "тиждень",
+    "pos": "noun",
+    "gloss": "week"
+   }
+  ]
+ },
+ {
+  "key": "город",
+  "trap_type": "false-friend",
+  "note": "город in Ukrainian = vegetable patch, NOT city. 'City' is місто. Russian город=city is a trap.",
+  "options": [
+   {
+    "word": "город",
+    "pos": "noun",
+    "gloss": "vegetable garden, kitchen garden"
+   },
+   {
+    "word": "місто",
+    "pos": "noun",
+    "gloss": "city, town"
+   }
+  ]
+ },
+ {
+  "key": "час",
+  "trap_type": "false-friend",
+  "note": "час = time generally. 'An hour' is година. Don't render час as 'hour' by default.",
+  "options": [
+   {
+    "word": "час",
+    "pos": "noun",
+    "gloss": "time; hour (dial.)"
+   },
+   {
+    "word": "година",
+    "pos": "noun",
+    "gloss": "hour"
+   }
+  ]
+ },
+ {
+  "key": "дружина",
+  "trap_type": "polysemy",
+  "note": "дружина = mostly 'wife', but historically a prince's military retinue (княжа дружина) and modern 'team/squad' (народна дружина = volunteer patrol). Decide by context: marriage vs military/sport.",
+  "options": [
+   {
+    "word": "дружина",
+    "pos": "noun",
+    "gloss": "wife; armed retinue/squad"
+   },
+   {
+    "word": "дружинник",
+    "pos": "noun",
+    "gloss": "member of a retinue/volunteer guard"
+   }
+  ]
+ },
+ {
+  "key": "луна",
+  "trap_type": "false-friend",
+  "note": "луна in Ukrainian = echo, NOT moon. 'Moon' is місяць. Russian луна=moon misleads.",
+  "options": [
+   {
+    "word": "луна",
+    "pos": "noun",
+    "gloss": "echo"
+   },
+   {
+    "word": "місяць",
+    "pos": "noun",
+    "gloss": "moon; month"
+   }
+  ]
+ },
+ {
+  "key": "запитання",
+  "trap_type": "paronym",
+  "note": "запитання = a question expecting an answer (поставити запитання). питання = both a question and a topic/issue (це складне питання = it's a complex issue). прохання = a request/plea, not a question.",
+  "options": [
+   {
+    "word": "запитання",
+    "pos": "noun",
+    "gloss": "question (asked for an answer)"
+   },
+   {
+    "word": "питання",
+    "pos": "noun",
+    "gloss": "question; issue, matter"
+   },
+   {
+    "word": "прохання",
+    "pos": "noun",
+    "gloss": "request"
+   }
+  ]
+ },
+ {
+  "key": "корисний",
+  "trap_type": "paronym",
+  "note": "корисний = helpful/healthy (корисна їжа). корисливий = motivated by personal gain (корисливі мотиви = mercenary motives). The -лив- flips it negative.",
+  "options": [
+   {
+    "word": "корисний",
+    "pos": "adj",
+    "gloss": "useful, beneficial"
+   },
+   {
+    "word": "корисливий",
+    "pos": "adj",
+    "gloss": "self-serving, mercenary, greedy"
+   }
+  ]
+ },
+ {
+  "key": "ділянка",
+  "trap_type": "paronym",
+  "note": "ділянка = a piece of land or a stretch/segment (земельна ділянка). дільниця = an admin unit/station (виборча дільниця = polling station, поліцейська дільниця = precinct).",
+  "options": [
+   {
+    "word": "ділянка",
+    "pos": "noun",
+    "gloss": "plot, section, area (land/precinct)"
+   },
+   {
+    "word": "дільниця",
+    "pos": "noun",
+    "gloss": "district/station (administrative: polling, police, medical)"
+   }
+  ]
+ },
+ {
+  "key": "уклін",
+  "trap_type": "paronym",
+  "note": "уклін = bowing (низький уклін = a deep bow). ухил = an incline or ideological deviation (ухил дороги; політичний ухил).",
+  "options": [
+   {
+    "word": "уклін",
+    "pos": "noun",
+    "gloss": "a bow (gesture of respect)"
+   },
+   {
+    "word": "ухил",
+    "pos": "noun",
+    "gloss": "slope, gradient; bias/deviation"
+   }
+  ]
+ },
+ {
+  "key": "квас",
+  "trap_type": "paronym",
+  "note": "квас = drink. квач = the children's game 'tag' or a tar brush. One letter, very different scene.",
+  "options": [
+   {
+    "word": "квас",
+    "pos": "noun",
+    "gloss": "kvass (fermented drink)"
+   },
+   {
+    "word": "квач",
+    "pos": "noun",
+    "gloss": "tag (the game); a daubing brush/swab"
+   }
+  ]
+ },
+ {
+  "key": "сім'я",
+  "trap_type": "homophone",
+  "note": "сім'я (with apostrophe, stress on я) = family; older/regional сíм'я can mean seed. сім = the number seven. Use apostrophe + context. For 'seeds' generally prefer насіння.",
+  "options": [
+   {
+    "word": "сім'я",
+    "pos": "noun",
+    "gloss": "family"
+   },
+   {
+    "word": "сім",
+    "pos": "numeral",
+    "gloss": "seven"
+   },
+   {
+    "word": "насіння",
+    "pos": "noun",
+    "gloss": "seed(s)"
+   }
+  ]
+ },
+ {
+  "key": "вити",
+  "trap_type": "paronym",
+  "note": "вити (no й) = to howl (вовк виє) or to wind/twine. вийти (with й) = to exit. The й and aspect differ; listen for the glide.",
+  "options": [
+   {
+    "word": "вити",
+    "pos": "verb",
+    "gloss": "to howl; to twist/weave"
+   },
+   {
+    "word": "вийти",
+    "pos": "verb",
+    "gloss": "to go out, exit"
+   }
+  ]
+ },
+ {
+  "key": "гадати",
+  "trap_type": "paronym",
+  "note": "гадати = to guess/reckon or do divination. гидувати = to feel revulsion. Different vowels (а vs и) and meanings; don't merge.",
+  "options": [
+   {
+    "word": "гадати",
+    "pos": "verb",
+    "gloss": "to think/suppose; to tell fortunes"
+   },
+   {
+    "word": "гидувати",
+    "pos": "verb",
+    "gloss": "to be disgusted, to disdain"
+   }
+  ]
+ },
+ {
+  "key": "завдання",
+  "trap_type": "paronym",
+  "note": "завдання = a task. завданий = inflicted (завдані збитки = damages caused). Different word class; -ння noun vs -ий participle.",
+  "options": [
+   {
+    "word": "завдання",
+    "pos": "noun",
+    "gloss": "task, assignment"
+   },
+   {
+    "word": "завданий",
+    "pos": "adj/part",
+    "gloss": "inflicted, caused (past passive part.)"
+   }
+  ]
+ },
+ {
+  "key": "ласкавий",
+  "trap_type": "paronym",
+  "note": "ласкавий = tender, kind (ласкаве слово). ласий = having a sweet tooth or coveting (ласий до грошей = greedy for money).",
+  "options": [
+   {
+    "word": "ласкавий",
+    "pos": "adj",
+    "gloss": "kind, gentle, affectionate"
+   },
+   {
+    "word": "ласий",
+    "pos": "adj",
+    "gloss": "fond of treats; eager/greedy for"
+   }
+  ]
+ },
+ {
+  "key": "вживати",
+  "trap_type": "paronym",
+  "note": "вживати/уживати are spelling variants (в/у alternation) = to use/consume (вживати заходів = to take measures; вживати алкоголь). споживати = to consume as a consumer (споживати енергію). Pick в- after consonant, у- after consonant cluster/at line start.",
+  "options": [
+   {
+    "word": "вживати",
+    "pos": "verb",
+    "gloss": "to use; to consume (food/substances)"
+   },
+   {
+    "word": "уживати",
+    "pos": "verb",
+    "gloss": "to use (variant spelling of вживати)"
+   },
+   {
+    "word": "споживати",
+    "pos": "verb",
+    "gloss": "to consume (food, resources)"
+   }
+  ]
+ },
+ {
+  "key": "наступний",
+  "trap_type": "paronym",
+  "note": "наступний = the next one (наступного дня). настійний = persistent (настійна вимога = urgent demand). наступальний = of an offensive (наступальна операція).",
+  "options": [
+   {
+    "word": "наступний",
+    "pos": "adj",
+    "gloss": "next, following"
+   },
+   {
+    "word": "настійний",
+    "pos": "adj",
+    "gloss": "insistent, urgent"
+   },
+   {
+    "word": "наступальний",
+    "pos": "adj",
+    "gloss": "offensive (attacking)"
+   }
+  ]
+ },
+ {
+  "key": "будинок",
+  "trap_type": "paronym",
+  "note": "будинок = a house/apartment block (житловий будинок). будівля = a building generally, often institutional. споруда = any built structure incl. bridges/towers (гідротехнічна споруда).",
+  "options": [
+   {
+    "word": "будинок",
+    "pos": "noun",
+    "gloss": "building, house (the structure)"
+   },
+   {
+    "word": "будівля",
+    "pos": "noun",
+    "gloss": "building, edifice (structure, often larger/public)"
+   },
+   {
+    "word": "споруда",
+    "pos": "noun",
+    "gloss": "construction, structure, facility"
+   }
+  ]
+ },
+ {
+  "key": "уособлювати",
+  "trap_type": "paronym",
+  "note": "All start у-with similar rhythm. уособлювати = to personify. усвідомлювати = to grasp/realize. усамітнюватися = to withdraw into solitude. Catch the root: особ (person), свідом (conscious), самітн (alone).",
+  "options": [
+   {
+    "word": "уособлювати",
+    "pos": "verb",
+    "gloss": "to embody, personify"
+   },
+   {
+    "word": "усвідомлювати",
+    "pos": "verb",
+    "gloss": "to realize, become aware"
+   },
+   {
+    "word": "усамітнюватися",
+    "pos": "verb",
+    "gloss": "to seclude oneself"
+   }
+  ]
+ },
+ {
+  "key": "знаменитий",
+  "trap_type": "paronym",
+  "note": "знаменитий = celebrated (знаменитий актор). знаменний = of great significance (знаменна подія = a landmark event). -ит- vs -нн-.",
+  "options": [
+   {
+    "word": "знаменитий",
+    "pos": "adj",
+    "gloss": "famous, renowned"
+   },
+   {
+    "word": "знаменний",
+    "pos": "adj",
+    "gloss": "significant, momentous"
+   }
+  ]
+ },
+ {
+  "key": "воєнний",
+  "trap_type": "paronym",
+  "note": "воєнний = relating to war itself (воєнний стан = martial law, воєнні дії = hostilities). військовий = pertaining to the army/soldiers (військова частина = military unit, військовий лікар).",
+  "options": [
+   {
+    "word": "воєнний",
+    "pos": "adj",
+    "gloss": "of war, wartime (military conflict)"
+   },
+   {
+    "word": "військовий",
+    "pos": "adj",
+    "gloss": "military (of the armed forces); a serviceman"
+   }
+  ]
+ },
+ {
+  "key": "квітневий",
+  "trap_type": "paronym",
+  "note": "квітневий = April's (квітнева погода). квітучий = in bloom/thriving (квітучий сад). квітчастий = covered in a flower print (квітчаста хустка).",
+  "options": [
+   {
+    "word": "квітневий",
+    "pos": "adj",
+    "gloss": "of April"
+   },
+   {
+    "word": "квітучий",
+    "pos": "adj",
+    "gloss": "blooming, flourishing"
+   },
+   {
+    "word": "квітчастий",
+    "pos": "adj",
+    "gloss": "flowery, floral-patterned"
+   }
+  ]
+ },
+ {
+  "key": "чисельний",
+  "trap_type": "paronym",
+  "note": "чисельний = relating to numbers (чисельна перевага = numerical superiority, чисельність = head-count). численний = many in number (численні гості = numerous guests). One с vs ис; both exist.",
+  "options": [
+   {
+    "word": "чисельний",
+    "pos": "adj",
+    "gloss": "numerical (of numbers/quantity)"
+   },
+   {
+    "word": "численний",
+    "pos": "adj",
+    "gloss": "numerous, many"
+   }
+  ]
+ },
+ {
+  "key": "дільник",
+  "trap_type": "paronym",
+  "note": "дільник = a divisor in arithmetic. подільник = one who shares/divides (also a tech splitter). Use дільник for the math term.",
+  "options": [
+   {
+    "word": "дільник",
+    "pos": "noun",
+    "gloss": "divisor (math)"
+   },
+   {
+    "word": "подільник",
+    "pos": "noun",
+    "gloss": "sharer/divider; splitter"
+   }
+  ]
+ },
+ {
+  "key": "досвід",
+  "trap_type": "paronym",
+  "note": "досвід = life/work experience (професійний досвід). дослід = a single experiment (хімічний дослід). дослідження = research/study. в vs л in the root distinguishes досвід/дослід.",
+  "options": [
+   {
+    "word": "досвід",
+    "pos": "noun",
+    "gloss": "experience (accumulated)"
+   },
+   {
+    "word": "дослід",
+    "pos": "noun",
+    "gloss": "experiment, trial"
+   },
+   {
+    "word": "дослідження",
+    "pos": "noun",
+    "gloss": "research, study, investigation"
+   }
+  ]
+ },
+ {
+  "key": "одружитися",
+  "trap_type": "paronym",
+  "note": "одружитися = neutral 'to marry' (works for both, takes з + кимось). оженитися = a man taking a wife. вийти заміж = a woman marrying. Pick by who is marrying.",
+  "options": [
+   {
+    "word": "одружитися",
+    "pos": "verb",
+    "gloss": "to get married (of either spouse)"
+   },
+   {
+    "word": "оженитися",
+    "pos": "verb",
+    "gloss": "to marry (of a man, take a wife)"
+   },
+   {
+    "word": "видати заміж",
+    "pos": "verb phrase",
+    "gloss": "to give (a woman) in marriage"
+   }
+  ]
+ },
+ {
+  "key": "тривати",
+  "trap_type": "paronym",
+  "note": "тривати = to endure in time (засідання триває). тримати = to hold physically. турбувати = to bother. Similar onset тр-/тур-; catch the root vowel and meaning.",
+  "options": [
+   {
+    "word": "тривати",
+    "pos": "verb",
+    "gloss": "to last, continue, go on"
+   },
+   {
+    "word": "турбувати",
+    "pos": "verb",
+    "gloss": "to disturb, worry, trouble"
+   },
+   {
+    "word": "тримати",
+    "pos": "verb",
+    "gloss": "to hold, keep"
+   }
+  ]
+ },
+ {
+  "key": "наголос",
+  "trap_type": "paronym",
+  "note": "голос = voice or a vote (віддати голос = cast a vote). наголос = word stress / emphasis. наголошувати = to stress a point. Don't drop the на- prefix when 'emphasis/stress' is meant.",
+  "options": [
+   {
+    "word": "наголос",
+    "pos": "noun",
+    "gloss": "stress (in pronunciation); emphasis"
+   },
+   {
+    "word": "голос",
+    "pos": "noun",
+    "gloss": "voice; vote"
+   },
+   {
+    "word": "наголошувати",
+    "pos": "verb",
+    "gloss": "to emphasize, stress"
+   }
+  ]
+ },
+ {
+  "key": "свідомий",
+  "trap_type": "paronym",
+  "note": "свідомий = aware/conscious or intentional (свідомий вибір). свідок = a witness (person). Same root свід-; one is adjective 'aware', other is noun 'witness'.",
+  "options": [
+   {
+    "word": "свідомий",
+    "pos": "adj",
+    "gloss": "conscious, aware; deliberate"
+   },
+   {
+    "word": "свідомісний",
+    "pos": "adj",
+    "gloss": "of consciousness (rare/technical)"
+   },
+   {
+    "word": "свідок",
+    "pos": "noun",
+    "gloss": "witness"
+   }
+  ]
+ },
+ {
+  "key": "запам'ятати",
+  "trap_type": "aspect",
+  "note": "пам'ятати = to remember (state). запам'ятати = to memorize once (perfective result). запам'ятовувати = ongoing memorizing. Aspect/prefix changes whether it's a state vs an act.",
+  "options": [
+   {
+    "word": "запам'ятати",
+    "pos": "verb",
+    "gloss": "to memorize, commit to memory"
+   },
+   {
+    "word": "запам'ятовувати",
+    "pos": "verb",
+    "gloss": "to be memorizing (imperfective)"
+   },
+   {
+    "word": "пам'ятати",
+    "pos": "verb",
+    "gloss": "to remember (hold in memory)"
+   }
+  ]
+ },
+ {
+  "key": "привітати",
+  "trap_type": "paronym",
+  "note": "привітати когось = to congratulate someone. привітатися з кимось (reflexive -ся) = to exchange greetings/say hi. The -ся flips it to a mutual greeting.",
+  "options": [
+   {
+    "word": "привітати",
+    "pos": "verb",
+    "gloss": "to greet; to congratulate"
+   },
+   {
+    "word": "привітатися",
+    "pos": "verb",
+    "gloss": "to say hello (greet someone)"
+   },
+   {
+    "word": "вітати",
+    "pos": "verb",
+    "gloss": "to greet/welcome; to congratulate"
+   }
+  ]
+ },
+ {
+  "key": "любий",
+  "trap_type": "false-friend",
+  "note": "любий in Ukrainian = dear/beloved, NOT 'any'. Russian любой=any is a trap. 'Any' is будь-який; 'some' is якийсь.",
+  "options": [
+   {
+    "word": "любий",
+    "pos": "adj",
+    "gloss": "dear, beloved"
+   },
+   {
+    "word": "будь-який",
+    "pos": "pronoun",
+    "gloss": "any"
+   },
+   {
+    "word": "якийсь",
+    "pos": "pronoun",
+    "gloss": "some, a certain"
+   }
+  ]
+ },
+ {
+  "key": "вродити",
+  "trap_type": "paronym",
+  "note": "вродити/уродити = (of land) to yield, or (dial.) to bear a child; в/у are spelling variants. народити = standard 'to give birth'. Use народити for childbirth in neutral register.",
+  "options": [
+   {
+    "word": "вродити",
+    "pos": "verb",
+    "gloss": "to yield a crop; to be born (dial.)"
+   },
+   {
+    "word": "уродити",
+    "pos": "verb",
+    "gloss": "variant of вродити (yield/give birth)"
+   },
+   {
+    "word": "народити",
+    "pos": "verb",
+    "gloss": "to give birth to"
+   }
+  ]
+ },
+ {
+  "key": "пробувати",
+  "trap_type": "paronym",
+  "note": "пробувати = to attempt/taste. перебувати = to be present/stay somewhere (перебувати в лікарні). прибувати = to arrive (поїзд прибуває). Prefix про-/пере-/при- decides everything.",
+  "options": [
+   {
+    "word": "пробувати",
+    "pos": "verb",
+    "gloss": "to try, attempt; to taste"
+   },
+   {
+    "word": "перебувати",
+    "pos": "verb",
+    "gloss": "to be located, stay, reside"
+   },
+   {
+    "word": "прибувати",
+    "pos": "verb",
+    "gloss": "to arrive; to increase"
+   }
+  ]
+ },
+ {
+  "key": "вид",
+  "trap_type": "paronym",
+  "note": "вид = a species/type or grammatical aspect, also a view (вид з вікна). вигляд = how something looks (мати гарний вигляд = to look good). For 'appearance' use вигляд, not вид.",
+  "options": [
+   {
+    "word": "вид",
+    "pos": "noun",
+    "gloss": "view; species/kind; aspect (grammar)"
+   },
+   {
+    "word": "вигляд",
+    "pos": "noun",
+    "gloss": "appearance, look"
+   }
+  ]
+ },
+ {
+  "key": "свято",
+  "trap_type": "paronym",
+  "note": "свято = a festive day/holiday. святий = holy or a saint. Same root; one is the celebration, the other 'sacred'. Stress and ending differ (свЯто vs святИй).",
+  "options": [
+   {
+    "word": "свято",
+    "pos": "noun",
+    "gloss": "holiday, celebration"
+   },
+   {
+    "word": "святий",
+    "pos": "adj/noun",
+    "gloss": "holy; a saint"
+   }
+  ]
+ },
+ {
+  "key": "загроза",
+  "trap_type": "paronym",
+  "note": "загроза = a danger/threat in general (загроза життю = threat to life). погроза = a uttered threat directed at a person (погрози й шантаж = threats and blackmail).",
+  "options": [
+   {
+    "word": "загроза",
+    "pos": "noun",
+    "gloss": "threat, menace"
+   },
+   {
+    "word": "погроза",
+    "pos": "noun",
+    "gloss": "a threat (verbal, against someone)"
+   }
+  ]
+ },
+ {
+  "key": "відомий",
+  "trap_type": "paronym",
+  "note": "відомий = known/famous (adj). відомість = a record sheet (платіжна відомість = payroll) or 'renown'. свідомість = consciousness (with с-). Don't confuse відомість/свідомість.",
+  "options": [
+   {
+    "word": "відомий",
+    "pos": "adj",
+    "gloss": "known, well-known"
+   },
+   {
+    "word": "відомість",
+    "pos": "noun",
+    "gloss": "register/list (document); fame; consciousness"
+   },
+   {
+    "word": "свідомість",
+    "pos": "noun",
+    "gloss": "consciousness, awareness"
+   }
+  ]
+ },
+ {
+  "key": "багатий",
+  "trap_type": "paronym",
+  "note": "багатий = rich (person). багаття = a fire/bonfire (розпалити багаття). багато = a lot (of). Same onset багат-; ending decides word and meaning. Note doubled -тт- in багаття.",
+  "options": [
+   {
+    "word": "багатий",
+    "pos": "adj",
+    "gloss": "rich, wealthy"
+   },
+   {
+    "word": "багаття",
+    "pos": "noun",
+    "gloss": "bonfire, campfire"
+   },
+   {
+    "word": "багато",
+    "pos": "adverb",
+    "gloss": "much, many, a lot"
+   }
+  ]
+ },
+ {
+  "key": "повстання",
+  "trap_type": "paronym",
+  "note": "повстання = a rebellion (національне повстання). постання = the act of arising/origination (постання держави = the emergence of a state). Insertion of -в- and meaning differ.",
+  "options": [
+   {
+    "word": "повстання",
+    "pos": "noun",
+    "gloss": "uprising, revolt"
+   },
+   {
+    "word": "постання",
+    "pos": "noun",
+    "gloss": "emergence, coming into being"
+   }
+  ]
+ },
+ {
+  "key": "відсоток",
+  "trap_type": "synonym-register",
+  "note": "Both mean 'percent'. відсоток is the preferred Ukrainian term; процент is acceptable but feels more borrowed/financial. In banking interest contexts both occur.",
+  "options": [
+   {
+    "word": "відсоток",
+    "pos": "noun",
+    "gloss": "percent, percentage"
+   },
+   {
+    "word": "процент",
+    "pos": "noun",
+    "gloss": "percent (synonym, of foreign origin)"
+   }
+  ]
+ },
+ {
+  "key": "наявний",
+  "trap_type": "paronym",
+  "note": "наявний = present/in stock (наявні кошти = available funds). наочний = visual/illustrative (наочний приклад = a vivid example, наочне приладдя = visual aids).",
+  "options": [
+   {
+    "word": "наявний",
+    "pos": "adj",
+    "gloss": "available, on hand, existing"
+   },
+   {
+    "word": "наочний",
+    "pos": "adj",
+    "gloss": "visual, demonstrable, clear (to see)"
+   }
+  ]
+ },
+ {
+  "key": "скарга",
+  "trap_type": "paronym",
+  "note": "скарга = a complaint (подати скаргу). скарб = treasure. скарбниця = treasury. г vs б at the end of skar- changes complaint into treasure.",
+  "options": [
+   {
+    "word": "скарга",
+    "pos": "noun",
+    "gloss": "complaint, grievance"
+   },
+   {
+    "word": "скарб",
+    "pos": "noun",
+    "gloss": "treasure"
+   },
+   {
+    "word": "скарбниця",
+    "pos": "noun",
+    "gloss": "treasury, treasure-house"
+   }
+  ]
+ },
+ {
+  "key": "завідувач",
+  "trap_type": "orthography",
+  "note": "Standard Ukrainian noun is завідувач (завідувач кафедри = head of department). The active-participle form завідуючий is a Russianism when used as a title; prefer завідувач.",
+  "options": [
+   {
+    "word": "завідувач",
+    "pos": "noun",
+    "gloss": "head, manager (of a department/unit)"
+   },
+   {
+    "word": "завідуючий",
+    "pos": "adj/noun",
+    "gloss": "managing (non-standard as a noun)"
+   }
+  ]
+ },
+ {
+  "key": "оснований",
+  "trap_type": "paronym",
+  "note": "заснований = founded (фірма заснована у 1990 = founded in 1990). обґрунтований = backed by reasoning (обґрунтоване рішення = a justified decision). Note ґ (with hook) in обґрунтований.",
+  "options": [
+   {
+    "word": "оснований",
+    "pos": "part",
+    "gloss": "founded/established on"
+   },
+   {
+    "word": "заснований",
+    "pos": "part",
+    "gloss": "founded, established"
+   },
+   {
+    "word": "обґрунтований",
+    "pos": "adj/part",
+    "gloss": "well-grounded, justified, substantiated"
+   }
+  ]
+ },
+ {
+  "key": "громадити",
+  "trap_type": "paronym",
+  "note": "громадити = to heap together (громадити сіно). громити = to crush/defeat (громити ворога). Presence of -ад- vs none flips gather into destroy.",
+  "options": [
+   {
+    "word": "громадити",
+    "pos": "verb",
+    "gloss": "to pile up, gather (e.g. hay)"
+   },
+   {
+    "word": "громити",
+    "pos": "verb",
+    "gloss": "to smash, rout, demolish"
+   }
+  ]
+ },
+ {
+  "key": "наводити",
+  "trap_type": "paronym",
+  "note": "наводити приклад = to give an example; наводити лад = to put in order. навозити = to haul in/fertilize. наважитися = to dare. Listen for д/з/ж in the stem.",
+  "options": [
+   {
+    "word": "наводити",
+    "pos": "verb",
+    "gloss": "to cite/give (examples); to aim; to bring on"
+   },
+   {
+    "word": "навозити",
+    "pos": "verb",
+    "gloss": "to cart in (a quantity); to manure"
+   },
+   {
+    "word": "наважитися",
+    "pos": "verb",
+    "gloss": "to dare, make up one's mind"
+   }
+  ]
+ },
+ {
+  "key": "дякувати",
+  "trap_type": "orthography",
+  "note": "дякувати (+ dative: дякую тобі) = to thank. Note the spelling дя- (soft д). Don't write 'спасибі' contexts as дзякати. PARTIAL-PLACEHOLDER",
+  "options": [
+   {
+    "word": "дякувати",
+    "pos": "verb",
+    "gloss": "to thank"
+   },
+   {
+    "word": "дещо",
+    "pos": "pronoun",
+    "gloss": "something, somewhat"
+   }
+  ]
+ },
+ {
+  "key": "усний",
+  "trap_type": "orthography",
+  "note": "усний = oral/spoken (усний іспит = oral exam); written correctly as усний (from уста), NOT вусний. Its antonym is письмовий (written).",
+  "options": [
+   {
+    "word": "усний",
+    "pos": "adj",
+    "gloss": "oral, verbal (spoken)"
+   },
+   {
+    "word": "письмовий",
+    "pos": "adj",
+    "gloss": "written"
+   }
+  ]
+ },
+ {
+  "key": "привид",
+  "trap_type": "paronym",
+  "note": "прИвид = a ghost. прИвід = a pretext/reason (привід для сварки) or a mechanical drive (повний привід = all-wheel drive). и vs і in the second syllable distinguishes ghost from reason.",
+  "options": [
+   {
+    "word": "привид",
+    "pos": "noun",
+    "gloss": "ghost, phantom, specter"
+   },
+   {
+    "word": "привід",
+    "pos": "noun",
+    "gloss": "reason, pretext, occasion; drive (mechanical)"
+   },
+   {
+    "word": "привод",
+    "pos": "noun",
+    "gloss": "compulsory bringing-in (legal); drive (tech)"
+   }
+  ]
+ },
+ {
+  "key": "насипати",
+  "trap_type": "paronym",
+  "note": "насипати = pour solids (насипати цукру). налити = pour liquids (налити води). Pick by whether the substance flows or pours as grains.",
+  "options": [
+   {
+    "word": "насипати",
+    "pos": "verb",
+    "gloss": "to pour/heap (dry/granular things)"
+   },
+   {
+    "word": "налити",
+    "pos": "verb",
+    "gloss": "to pour (liquids)"
+   },
+   {
+    "word": "насипатися",
+    "pos": "verb",
+    "gloss": "to be poured; to scold (colloq.)"
+   }
+  ]
+ },
+ {
+  "key": "котрий",
+  "trap_type": "paronym",
+  "note": "котрий/який both = 'which'; котрий often for selection among known items or time (котра година? = what time is it?). який asks about quality/kind. Often interchangeable but котра година is fixed for clock time.",
+  "options": [
+   {
+    "word": "котрий",
+    "pos": "pronoun",
+    "gloss": "which (one), that"
+   },
+   {
+    "word": "який",
+    "pos": "pronoun",
+    "gloss": "which, what kind of"
+   },
+   {
+    "word": "котра",
+    "pos": "pronoun",
+    "gloss": "which (fem.); 'what time'"
+   }
+  ]
+ },
+ {
+  "key": "професійний",
+  "trap_type": "paronym",
+  "note": "професійний = competent/expert (професійний підхід). професіональний = professional as opposed to amateur (професіональний спорт). професорський = pertaining to a professor.",
+  "options": [
+   {
+    "word": "професійний",
+    "pos": "adj",
+    "gloss": "professional (skilled, expert)"
+   },
+   {
+    "word": "професіональний",
+    "pos": "adj",
+    "gloss": "professional (by occupation, esp. sport/arts)"
+   },
+   {
+    "word": "професорський",
+    "pos": "adj",
+    "gloss": "of a professor"
+   }
+  ]
+ },
+ {
+  "key": "особа",
+  "trap_type": "paronym",
+  "note": "особа = a human person (юридична особа = legal entity). особина = a biological individual/specimen (рідкісна особина). Don't use особина for people.",
+  "options": [
+   {
+    "word": "особа",
+    "pos": "noun",
+    "gloss": "person, individual (formal/legal)"
+   },
+   {
+    "word": "особина",
+    "pos": "noun",
+    "gloss": "specimen, individual organism (biology)"
+   },
+   {
+    "word": "осіб",
+    "pos": "noun",
+    "gloss": "of persons (gen. pl. of особа)"
+   }
+  ]
+ },
+ {
+  "key": "отримувати",
+  "trap_type": "russism_lexical",
+  "note": "Surzhyk speakers say 'получати' (from Rus. получать). Clean Ukrainian uses 'отримувати' (to receive/obtain) or 'одержувати'. Pick 'отримувати/одержувати' unless quoting non-standard speech verbatim. Sound cue: 'по-лу-' opening is the red flag.",
+  "options": [
+   {
+    "word": "отримувати",
+    "pos": "verb",
+    "gloss": "to receive, obtain (standard)"
+   },
+   {
+    "word": "одержувати",
+    "pos": "verb",
+    "gloss": "to receive, obtain (standard, more formal)"
+   },
+   {
+    "word": "получати",
+    "pos": "verb",
+    "gloss": "RUSSISM for 'to receive' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "брати участь",
+  "trap_type": "russism_lexical",
+  "note": "'приймати участь' is a calque of Rus. 'принимать участие'. Correct Ukrainian is 'брати участь' (to take part). Listen for the verb before 'участь': if it's 'приймати', flag it; the right verb is 'брати'.",
+  "options": [
+   {
+    "word": "брати участь",
+    "pos": "phrase",
+    "gloss": "to take part (standard)"
+   },
+   {
+    "word": "приймати участь",
+    "pos": "phrase",
+    "gloss": "CALQUE from Russian — avoid; use 'брати участь'"
+   }
+  ]
+ },
+ {
+  "key": "протягом",
+  "trap_type": "russism_lexical",
+  "note": "Rus.-influenced 'на протязі' means literally 'in a draught of air' in Ukrainian (протяг = air draught). For 'during/throughout' use 'протягом' or 'упродовж'. If the meaning is a span of time, never 'на протязі'.",
+  "options": [
+   {
+    "word": "протягом",
+    "pos": "preposition",
+    "gloss": "during, throughout (standard)"
+   },
+   {
+    "word": "упродовж",
+    "pos": "preposition",
+    "gloss": "during, throughout (standard)"
+   },
+   {
+    "word": "на протязі",
+    "pos": "phrase",
+    "gloss": "RUSSISM for 'during'; literally 'in a draught of air' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "збігатися",
+  "trap_type": "russism_lexical",
+  "note": "'співпадати'/'співпадіння' calque Rus. 'совпадать/совпадение'. Standard: 'збігатися' (to coincide), 'збіг' (coincidence). Choose the 'збіг-' root.",
+  "options": [
+   {
+    "word": "збігатися",
+    "pos": "verb",
+    "gloss": "to coincide (standard)"
+   },
+   {
+    "word": "збіг",
+    "pos": "noun",
+    "gloss": "coincidence (standard)"
+   },
+   {
+    "word": "співпадати",
+    "pos": "verb",
+    "gloss": "CALQUE for 'to coincide' — avoid"
+   },
+   {
+    "word": "співпадіння",
+    "pos": "noun",
+    "gloss": "CALQUE for 'coincidence' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "наступний",
+  "trap_type": "russism_lexical",
+  "note": "'наступний' is fine for 'next/following', but surzhyk 'слідуючий' (from Rus. 'следующий') is non-standard. Use 'наступний'. The '-уючий' active-participle shape is itself a red flag in Ukrainian.",
+  "options": [
+   {
+    "word": "наступний",
+    "pos": "adjective",
+    "gloss": "next, following (standard)"
+   },
+   {
+    "word": "слідуючий",
+    "pos": "adjective",
+    "gloss": "RUSSISM/non-standard participle for 'next' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "наявний",
+  "trap_type": "calque_participle",
+  "note": "Ukrainian avoids '-учий/-ючий' active present participles that mirror Rus. '-ущий/-ющий'. 'існуючий' → use 'наявний', 'чинний', or a relative clause ('що існує'). Flag any '-уючий' adjective and rewrite.",
+  "options": [
+   {
+    "word": "наявний",
+    "pos": "adjective",
+    "gloss": "existing, available (standard)"
+   },
+   {
+    "word": "чинний",
+    "pos": "adjective",
+    "gloss": "in force, current (standard, for laws/rules)"
+   },
+   {
+    "word": "існуючий",
+    "pos": "adjective",
+    "gloss": "CALQUE participle 'existing' — avoid; rewrite"
+   }
+  ]
+ },
+ {
+  "key": "навчальний",
+  "trap_type": "russism_lexical",
+  "note": "'учбовий' is a russism (from Rus. 'учебный'); the clean form is 'навчальний' (educational, training). Use 'навчальний заклад', not 'учбовий заклад'.",
+  "options": [
+   {
+    "word": "навчальний",
+    "pos": "adjective",
+    "gloss": "educational, training (standard)"
+   },
+   {
+    "word": "учбовий",
+    "pos": "adjective",
+    "gloss": "RUSSISM for 'educational' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "захід",
+  "trap_type": "russism_lexical",
+  "note": "'міроприємство' calques Rus. 'мероприятие'. Standard Ukrainian: 'захід' (event/measure). Plural 'заходи'. Choose 'захід/заходи'.",
+  "options": [
+   {
+    "word": "захід",
+    "pos": "noun",
+    "gloss": "event, measure, undertaking (standard)"
+   },
+   {
+    "word": "міроприємство",
+    "pos": "noun",
+    "gloss": "CALQUE for 'event/measure' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "людський",
+  "trap_type": "false_friend",
+  "note": "'людний' = crowded; 'людський' = human/humane. Be careful: Rus. interference blurs these. For 'human rights' use 'людські права'→ actually 'права людини'; for 'humane' use 'гуманний/людяний'. 'людяний' = humane/kind.",
+  "options": [
+   {
+    "word": "людський",
+    "pos": "adjective",
+    "gloss": "human (pertaining to people)"
+   },
+   {
+    "word": "людяний",
+    "pos": "adjective",
+    "gloss": "humane, kindly (standard)"
+   },
+   {
+    "word": "людний",
+    "pos": "adjective",
+    "gloss": "crowded, populous — distinct meaning"
+   }
+  ]
+ },
+ {
+  "key": "правильно",
+  "trap_type": "russism_lexical",
+  "note": "'вірно' for 'correctly' is a russism (Rus. 'верно'); in Ukrainian 'вірно' = faithfully/loyally. For 'correctly' use 'правильно'. Context: loyalty → 'вірно'; right answer → 'правильно'.",
+  "options": [
+   {
+    "word": "правильно",
+    "pos": "adverb",
+    "gloss": "correctly (standard)"
+   },
+   {
+    "word": "вірно",
+    "pos": "adverb",
+    "gloss": "faithfully, loyally — NOT 'correctly' in standard usage"
+   }
+  ]
+ },
+ {
+  "key": "будь-який",
+  "trap_type": "russism_lexical",
+  "note": "'любий' = dear/beloved; surzhyk uses it for 'any' (Rus. 'любой'). For 'any' use 'будь-який'. Context: term of endearment → 'любий'; 'any of them' → 'будь-який'.",
+  "options": [
+   {
+    "word": "будь-який",
+    "pos": "pronoun",
+    "gloss": "any (standard)"
+   },
+   {
+    "word": "любий",
+    "pos": "adjective",
+    "gloss": "dear, beloved — NOT 'any'; false friend with Rus. 'любой'"
+   }
+  ]
+ },
+ {
+  "key": "є",
+  "trap_type": "russism_lexical",
+  "note": "'являтися' for 'to be' is a russism (Rus. 'являться'). In Ukrainian 'являтися' = to appear (in a vision/dream). For 'X is Y' use 'X є Y' or just the copula-less form. Flag 'являється' meaning 'is'.",
+  "options": [
+   {
+    "word": "є",
+    "pos": "verb",
+    "gloss": "is, are (standard copula)"
+   },
+   {
+    "word": "являтися",
+    "pos": "verb",
+    "gloss": "to appear (in a vision) — NOT 'to be'; russism when used as copula"
+   }
+  ]
+ },
+ {
+  "key": "стосуватися",
+  "trap_type": "russism_lexical",
+  "note": "'відноситися' for 'to relate/pertain' is heavily russified usage (Rus. 'относиться'). Prefer 'стосуватися' (to concern), 'належати' (to belong). Choose 'стосуватися' for 'pertain to'.",
+  "options": [
+   {
+    "word": "стосуватися",
+    "pos": "verb",
+    "gloss": "to concern, pertain to (standard)"
+   },
+   {
+    "word": "належати",
+    "pos": "verb",
+    "gloss": "to belong to (standard)"
+   },
+   {
+    "word": "відноситися",
+    "pos": "verb",
+    "gloss": "RUSSISM for 'to pertain/relate' — avoid; narrow standard sense exists"
+   }
+  ]
+ },
+ {
+  "key": "вважати",
+  "trap_type": "russism_lexical",
+  "note": "'рахувати' = to count (numbers); using it for 'to consider/think' is a russism (Rus. 'считать'). For 'to consider/believe' use 'вважати'. Context: arithmetic → 'рахувати'; opinion → 'вважати'.",
+  "options": [
+   {
+    "word": "вважати",
+    "pos": "verb",
+    "gloss": "to consider, deem, believe (standard)"
+   },
+   {
+    "word": "рахувати",
+    "pos": "verb",
+    "gloss": "to count (numbers) — NOT 'to consider'; russism in that sense"
+   }
+  ]
+ },
+ {
+  "key": "мабуть",
+  "trap_type": "russism_lexical",
+  "note": "'наверно/наверное' is a russism; standard Ukrainian for 'probably' is 'мабуть', 'напевно' (напевно also means 'for sure'/'certainly'). Use 'мабуть' for 'probably'.",
+  "options": [
+   {
+    "word": "мабуть",
+    "pos": "adverb",
+    "gloss": "probably, perhaps (standard)"
+   },
+   {
+    "word": "напевно",
+    "pos": "adverb",
+    "gloss": "surely, certainly; also 'probably' (standard)"
+   },
+   {
+    "word": "наверно",
+    "pos": "adverb",
+    "gloss": "RUSSISM for 'probably' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "обіцяти",
+  "trap_type": "russism_lexical",
+  "note": "'обіщати' is surzhyk (Rus. 'обещать'); standard is 'обіцяти' (to promise). Sound cue: the cluster '-щ-' vs '-ц-'. Use 'обіцяти'.",
+  "options": [
+   {
+    "word": "обіцяти",
+    "pos": "verb",
+    "gloss": "to promise (standard)"
+   },
+   {
+    "word": "обіщати",
+    "pos": "verb",
+    "gloss": "SURZHYK for 'to promise' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "добрий день",
+  "trap_type": "russism_lexical",
+  "note": "'дякую вам' is fine, but the russified greeting 'здраствуйте' must be 'здрастуйте'→ better 'добрий день / вітаю'. Avoid the Russian 'привіт всім'? — 'привіт' is fine informally. Flag 'здрастє/здрасті' as Russian.",
+  "options": [
+   {
+    "word": "добрий день",
+    "pos": "phrase",
+    "gloss": "good day, hello (standard)"
+   },
+   {
+    "word": "вітаю",
+    "pos": "verb",
+    "gloss": "I greet you; hello (standard)"
+   }
+  ]
+ },
+ {
+  "key": "дякую",
+  "trap_type": "russism_lexical",
+  "note": "'спасибі' is acceptable colloquially but in clean/formal Ukrainian prefer 'дякую'. Some style guides treat 'спасибі' as a russified borrowing; default to 'дякую'.",
+  "options": [
+   {
+    "word": "дякую",
+    "pos": "verb",
+    "gloss": "thank you (standard, preferred)"
+   },
+   {
+    "word": "спасибі",
+    "pos": "interjection",
+    "gloss": "thanks (colloquial; often flagged as russified — prefer 'дякую')"
+   }
+  ]
+ },
+ {
+  "key": "лікар",
+  "trap_type": "russism_lexical",
+  "note": "'врач' is Russian; standard Ukrainian is 'лікар' (doctor/physician). Use 'лікар'.",
+  "options": [
+   {
+    "word": "лікар",
+    "pos": "noun",
+    "gloss": "doctor, physician (standard)"
+   },
+   {
+    "word": "врач",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'doctor' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "ліки",
+  "trap_type": "russism_lexical",
+  "note": "'лікарство' is surzhyk for medicine; standard: 'ліки' (medicine, plural) or 'лікарський засіб'. Use 'ліки'.",
+  "options": [
+   {
+    "word": "ліки",
+    "pos": "noun",
+    "gloss": "medicine, medication (standard, pl.)"
+   },
+   {
+    "word": "лікарство",
+    "pos": "noun",
+    "gloss": "SURZHYK for 'medicine' — avoid; use 'ліки'"
+   }
+  ]
+ },
+ {
+  "key": "літак",
+  "trap_type": "russism_lexical",
+  "note": "'самольот' is Russian; standard Ukrainian is 'літак' (airplane). Use 'літак'.",
+  "options": [
+   {
+    "word": "літак",
+    "pos": "noun",
+    "gloss": "airplane (standard)"
+   },
+   {
+    "word": "самольот",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'airplane' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "годинник",
+  "trap_type": "russism_lexical",
+  "note": "'часи' = clock/watch is wrong; 'часи' = times/hours (pl. of час). A timepiece is 'годинник'. Surzhyk 'часи' for watch comes from Rus. 'часы'. Context: telling time device → 'годинник'.",
+  "options": [
+   {
+    "word": "годинник",
+    "pos": "noun",
+    "gloss": "clock, watch (standard)"
+   },
+   {
+    "word": "часи",
+    "pos": "noun",
+    "gloss": "times, epochs (pl. of 'час') — NOT 'watch'; false friend with Rus. 'часы'"
+   }
+  ]
+ },
+ {
+  "key": "неділя",
+  "trap_type": "russism_lexical",
+  "note": "'неділю' as 'week' (see above) extends to 'воскресіння' for Sunday. Standard: Sunday = 'неділя'; resurrection = 'воскресіння/воскресіння'. Don't use 'воскресенье'. Day of week → 'неділя'.",
+  "options": [
+   {
+    "word": "неділя",
+    "pos": "noun",
+    "gloss": "Sunday (standard)"
+   },
+   {
+    "word": "воскресіння",
+    "pos": "noun",
+    "gloss": "resurrection — NOT the weekday; russified 'воскресенье' is wrong for Sunday"
+   }
+  ]
+ },
+ {
+  "key": "рахувати",
+  "trap_type": "russism_lexical",
+  "note": "'счітати/щитати' surzhyk for 'to count'; standard 'рахувати' (to count) or 'лічити'. Sound cue: 'сч/щ' opening = russism. Use 'рахувати/лічити'.",
+  "options": [
+   {
+    "word": "рахувати",
+    "pos": "verb",
+    "gloss": "to count (standard)"
+   },
+   {
+    "word": "лічити",
+    "pos": "verb",
+    "gloss": "to count, reckon (standard)"
+   },
+   {
+    "word": "щитати",
+    "pos": "verb",
+    "gloss": "SURZHYK for 'to count' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "вітати",
+  "trap_type": "russism_lexical",
+  "note": "'поздравляти' surzhyk; standard 'вітати' (to congratulate). 'привітання' = congratulation. Use 'вітати/привітати'.",
+  "options": [
+   {
+    "word": "вітати",
+    "pos": "verb",
+    "gloss": "to congratulate, greet (standard)"
+   },
+   {
+    "word": "поздоровляти",
+    "pos": "verb",
+    "gloss": "to congratulate (standard, less common)"
+   }
+  ]
+ },
+ {
+  "key": "намагатися",
+  "trap_type": "russism_lexical",
+  "note": "'пробувати' = to try/taste is OK, but 'пытатися/питатися' for 'to try' is a russism (Rus. 'пытаться'); 'питати' in Ukrainian = to ask. For 'to try/attempt' use 'намагатися' or 'пробувати'. Context: question → 'питати'; attempt → 'намагатися'.",
+  "options": [
+   {
+    "word": "намагатися",
+    "pos": "verb",
+    "gloss": "to try, attempt (standard)"
+   },
+   {
+    "word": "пробувати",
+    "pos": "verb",
+    "gloss": "to try, attempt; to taste (standard)"
+   },
+   {
+    "word": "питати",
+    "pos": "verb",
+    "gloss": "to ask — NOT 'to try'; false friend with Rus. 'пытать'"
+   }
+  ]
+ },
+ {
+  "key": "щодо",
+  "trap_type": "russism_lexical",
+  "note": "'на счьот / на щот' surzhyk for 'regarding'; standard 'щодо' or 'стосовно'. Use 'щодо'.",
+  "options": [
+   {
+    "word": "щодо",
+    "pos": "preposition",
+    "gloss": "regarding, as for (standard)"
+   },
+   {
+    "word": "стосовно",
+    "pos": "preposition",
+    "gloss": "concerning, with respect to (standard)"
+   }
+  ]
+ },
+ {
+  "key": "переважно",
+  "trap_type": "russism_lexical",
+  "note": "'в основном' surzhyk; standard 'переважно', 'здебільшого', 'в основному' (latter is accepted but often flagged). Prefer 'переважно/здебільшого'.",
+  "options": [
+   {
+    "word": "переважно",
+    "pos": "adverb",
+    "gloss": "mainly, mostly (standard)"
+   },
+   {
+    "word": "здебільшого",
+    "pos": "adverb",
+    "gloss": "for the most part (standard)"
+   }
+  ]
+ },
+ {
+  "key": "взагалі",
+  "trap_type": "russism_lexical",
+  "note": "'вообще' surzhyk; standard 'взагалі' (in general, at all). Use 'взагалі'.",
+  "options": [
+   {
+    "word": "взагалі",
+    "pos": "adverb",
+    "gloss": "in general, at all (standard)"
+   },
+   {
+    "word": "загалом",
+    "pos": "adverb",
+    "gloss": "on the whole, in general (standard)"
+   },
+   {
+    "word": "вообще",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'in general' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "звичайно",
+  "trap_type": "russism_lexical",
+  "note": "'конєшно/канєшно' surzhyk; standard 'звичайно', 'певна річ', 'авжеж'. Use 'звичайно/авжеж'.",
+  "options": [
+   {
+    "word": "звичайно",
+    "pos": "adverb",
+    "gloss": "of course, certainly (standard)"
+   },
+   {
+    "word": "авжеж",
+    "pos": "particle",
+    "gloss": "of course, sure (standard, colloquial)"
+   },
+   {
+    "word": "конєшно",
+    "pos": "adverb",
+    "gloss": "SURZHYK for 'of course' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "також",
+  "trap_type": "russism_lexical",
+  "note": "'тоже/тоже саме' surzhyk; standard 'теж', 'також', 'те саме'. Use 'теж/також'.",
+  "options": [
+   {
+    "word": "також",
+    "pos": "adverb",
+    "gloss": "also, too (standard)"
+   },
+   {
+    "word": "теж",
+    "pos": "adverb",
+    "gloss": "also, too (standard, colloquial-neutral)"
+   },
+   {
+    "word": "тоже",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'also' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "тому що",
+  "trap_type": "russism_lexical",
+  "note": "'потому что / патаму шо' surzhyk; standard 'тому що', 'бо', 'оскільки'. Use 'тому що/бо'.",
+  "options": [
+   {
+    "word": "тому що",
+    "pos": "conjunction",
+    "gloss": "because (standard)"
+   },
+   {
+    "word": "бо",
+    "pos": "conjunction",
+    "gloss": "because, for (standard)"
+   },
+   {
+    "word": "потому що",
+    "pos": "conjunction",
+    "gloss": "SURZHYK for 'because' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "гарний",
+  "trap_type": "russism_lexical",
+  "note": "'красивий' is standard for 'beautiful', but watch 'прекрасний' vs russism 'прекрасний' (OK). The russism to flag is 'красівий' (mispronounced) — write 'красивий'. Also 'вродливий/гарний' for people.",
+  "options": [
+   {
+    "word": "гарний",
+    "pos": "adjective",
+    "gloss": "nice, pretty (standard)"
+   },
+   {
+    "word": "красивий",
+    "pos": "adjective",
+    "gloss": "beautiful (standard)"
+   }
+  ]
+ },
+ {
+  "key": "пропозиція",
+  "trap_type": "russism_lexical",
+  "note": "'предложення' surzhyk (Rus. 'предложение'); standard 'пропозиція' (proposal/offer) or 'речення' (sentence, grammar). Disambiguate: offer → 'пропозиція'; grammatical unit → 'речення'.",
+  "options": [
+   {
+    "word": "пропозиція",
+    "pos": "noun",
+    "gloss": "proposal, offer (standard)"
+   },
+   {
+    "word": "речення",
+    "pos": "noun",
+    "gloss": "sentence (grammar) (standard)"
+   },
+   {
+    "word": "предложення",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'proposal/sentence' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "питання",
+  "trap_type": "russism_lexical",
+  "note": "'вопрос' surzhyk; standard 'питання' (question, issue) or 'запитання' (question asked). Use 'питання'.",
+  "options": [
+   {
+    "word": "питання",
+    "pos": "noun",
+    "gloss": "question, issue, matter (standard)"
+   },
+   {
+    "word": "запитання",
+    "pos": "noun",
+    "gloss": "question (one being asked) (standard)"
+   },
+   {
+    "word": "вопрос",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'question' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "відповідати",
+  "trap_type": "russism_lexical",
+  "note": "'отвічати/отвітити' surzhyk; standard 'відповідати/відповісти' (to answer). 'відповідь' = answer. Use 'відповідати'.",
+  "options": [
+   {
+    "word": "відповідати",
+    "pos": "verb",
+    "gloss": "to answer, reply (standard)"
+   },
+   {
+    "word": "відповідь",
+    "pos": "noun",
+    "gloss": "answer, reply (standard)"
+   }
+  ]
+ },
+ {
+  "key": "вулиця",
+  "trap_type": "russism_lexical",
+  "note": "'улиця' surzhyk; standard 'вулиця' (street). Sound cue: initial 'в' before 'у'. Write 'вулиця'.",
+  "options": [
+   {
+    "word": "вулиця",
+    "pos": "noun",
+    "gloss": "street (standard)"
+   },
+   {
+    "word": "улиця",
+    "pos": "noun",
+    "gloss": "SURZHYK/RUSSIAN for 'street' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "ліжко",
+  "trap_type": "russism_lexical",
+  "note": "'кровать' surzhyk; standard 'ліжко' (bed). Use 'ліжко'.",
+  "options": [
+   {
+    "word": "ліжко",
+    "pos": "noun",
+    "gloss": "bed (standard)"
+   },
+   {
+    "word": "кровать",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'bed' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "рушник",
+  "trap_type": "russism_lexical",
+  "note": "'полотенце' Russian; standard 'рушник' (towel). Use 'рушник'.",
+  "options": [
+   {
+    "word": "рушник",
+    "pos": "noun",
+    "gloss": "towel (standard)"
+   },
+   {
+    "word": "полотенце",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'towel' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "горнятко",
+  "trap_type": "russism_lexical",
+  "note": "'чашка' is acceptable, but 'кружка' for mug is Russian; standard 'горнятко' or 'кухоль' (mug). Use 'горнятко/кухоль'.",
+  "options": [
+   {
+    "word": "горнятко",
+    "pos": "noun",
+    "gloss": "mug, small cup (standard)"
+   },
+   {
+    "word": "кухоль",
+    "pos": "noun",
+    "gloss": "mug, tankard (standard)"
+   },
+   {
+    "word": "кружка",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'mug' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "виделка",
+  "trap_type": "russism_lexical",
+  "note": "'ложка/виделка/ніж' — 'виделка' is the standard for fork; surzhyk 'вилка' (Rus. 'вилка') is non-standard. Use 'виделка'.",
+  "options": [
+   {
+    "word": "виделка",
+    "pos": "noun",
+    "gloss": "fork (standard)"
+   },
+   {
+    "word": "вилка",
+    "pos": "noun",
+    "gloss": "SURZHYK for 'fork'; in Ukrainian 'вилка' = electric plug — disambiguate"
+   }
+  ]
+ },
+ {
+  "key": "найкращий",
+  "trap_type": "russism_lexical",
+  "note": "'самий лучший / самий кращий' double russism: superlative formed with 'самий' calques Rus. For 'the best' use 'найкращий', 'найліпший'. Drop 'самий' superlatives; use 'най-' prefix.",
+  "options": [
+   {
+    "word": "найкращий",
+    "pos": "adjective",
+    "gloss": "the best (standard superlative)"
+   },
+   {
+    "word": "найліпший",
+    "pos": "adjective",
+    "gloss": "the best (standard superlative)"
+   },
+   {
+    "word": "самий кращий",
+    "pos": "phrase",
+    "gloss": "CALQUE superlative — avoid; use 'найкращий'"
+   }
+  ]
+ },
+ {
+  "key": "у мене є",
+  "trap_type": "calque_grammar",
+  "note": "Possessive 'у мене є' for 'I have' is acceptable Ukrainian, but the russified 'я маю' vs 'у мене є' choice: both fine. The trap is 'я імєю' (Rus. 'имею') — non-existent; use 'я маю' or 'у мене є'.",
+  "options": [
+   {
+    "word": "у мене є",
+    "pos": "phrase",
+    "gloss": "I have (standard)"
+   },
+   {
+    "word": "я маю",
+    "pos": "phrase",
+    "gloss": "I have (standard)"
+   }
+  ]
+ },
+ {
+  "key": "гроші",
+  "trap_type": "russism_lexical",
+  "note": "'дєньги / деньги' Russian; standard 'гроші' (money). Use 'гроші'.",
+  "options": [
+   {
+    "word": "гроші",
+    "pos": "noun",
+    "gloss": "money (standard, pl.)"
+   },
+   {
+    "word": "деньги",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'money' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "колір",
+  "trap_type": "russism_lexical",
+  "note": "'цвіт' = blossom/bloom (and color in some dialects), but for 'colour' standard is 'колір'. Surzhyk uses 'цвєт' (Rus. 'цвет') for color. Context: flower blossoming → 'цвіт'; hue → 'колір'.",
+  "options": [
+   {
+    "word": "колір",
+    "pos": "noun",
+    "gloss": "colour, hue (standard)"
+   },
+   {
+    "word": "цвіт",
+    "pos": "noun",
+    "gloss": "blossom, bloom — NOT standard for 'colour'; false friend with Rus. 'цвет'"
+   }
+  ]
+ },
+ {
+  "key": "робити",
+  "trap_type": "russism_lexical",
+  "note": "'неделать / нічого делать' — verb 'делати' is surzhyk (Rus. 'делать'); standard 'робити' (to do/make). Use 'робити'.",
+  "options": [
+   {
+    "word": "робити",
+    "pos": "verb",
+    "gloss": "to do, make (standard)"
+   },
+   {
+    "word": "ділати",
+    "pos": "verb",
+    "gloss": "SURZHYK for 'to do' (from Rus. 'делать') — avoid"
+   }
+  ]
+ },
+ {
+  "key": "розуміти",
+  "trap_type": "russism_lexical",
+  "note": "'понімати' surzhyk (Rus. 'понимать'); standard 'розуміти' (to understand). Use 'розуміти'.",
+  "options": [
+   {
+    "word": "розуміти",
+    "pos": "verb",
+    "gloss": "to understand (standard)"
+   },
+   {
+    "word": "понімати",
+    "pos": "verb",
+    "gloss": "SURZHYK for 'to understand' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "забувати",
+  "trap_type": "russism_lexical",
+  "note": "'забивати/забити' for 'to forget' is wrong; that's slang. 'забувати' = to forget. The russism trap is 'забивать на щось'. For 'to forget' use 'забувати/забути'.",
+  "options": [
+   {
+    "word": "забувати",
+    "pos": "verb",
+    "gloss": "to forget (standard)"
+   },
+   {
+    "word": "забивати",
+    "pos": "verb",
+    "gloss": "to hammer in; slang 'to not care' — NOT 'to forget'"
+   }
+  ]
+ },
+ {
+  "key": "чоловік",
+  "trap_type": "russism_lexical",
+  "note": "'жінка/чоловік' for spouses is standard. Russism 'муж/жена' — use 'чоловік' (husband) and 'дружина/жінка' (wife). Context: 'дружина' = wife (formal), 'жінка' = woman/wife.",
+  "options": [
+   {
+    "word": "чоловік",
+    "pos": "noun",
+    "gloss": "man; husband (standard)"
+   },
+   {
+    "word": "дружина",
+    "pos": "noun",
+    "gloss": "wife (standard, formal); also 'retinue/team'"
+   },
+   {
+    "word": "муж",
+    "pos": "noun",
+    "gloss": "archaic/poetic 'husband'; RUSSISM in everyday use — prefer 'чоловік'"
+   }
+  ]
+ },
+ {
+  "key": "родина",
+  "trap_type": "russism_lexical",
+  "note": "'сім'я' is standard for family; russified 'семья' must be 'сімʼя'. Watch apostrophe. Use 'сімʼя/родина'.",
+  "options": [
+   {
+    "word": "родина",
+    "pos": "noun",
+    "gloss": "family, kin (standard)"
+   },
+   {
+    "word": "семья",
+    "pos": "noun",
+    "gloss": "RUSSIAN spelling for 'family' — write 'сімʼя'"
+   }
+  ]
+ },
+ {
+  "key": "вчитель",
+  "trap_type": "russism_lexical",
+  "note": "'учитель' is acceptable, but 'вчитель' is the standard Ukrainian (teacher); both forms exist (в/у alternation). The russism to flag is 'учітєль' pronunciation. Write 'учитель' or 'вчитель'.",
+  "options": [
+   {
+    "word": "вчитель",
+    "pos": "noun",
+    "gloss": "teacher (standard)"
+   },
+   {
+    "word": "учитель",
+    "pos": "noun",
+    "gloss": "teacher (standard variant after consonant)"
+   }
+  ]
+ },
+ {
+  "key": "працювати",
+  "trap_type": "russism_lexical",
+  "note": "'роботати' is wrong; 'працювати' = to work, 'робота' = work/job. The russism trap is 'работа/работати'. Use 'працювати/робота'.",
+  "options": [
+   {
+    "word": "працювати",
+    "pos": "verb",
+    "gloss": "to work (standard)"
+   },
+   {
+    "word": "робота",
+    "pos": "noun",
+    "gloss": "work, job (standard)"
+   },
+   {
+    "word": "работа",
+    "pos": "noun",
+    "gloss": "RUSSIAN spelling — write 'робота'"
+   }
+  ]
+ },
+ {
+  "key": "більше",
+  "trap_type": "russism_lexical",
+  "note": "'больше/меньше' Russian; standard 'більше/менше' (more/less). Use 'більше/менше'.",
+  "options": [
+   {
+    "word": "більше",
+    "pos": "adverb",
+    "gloss": "more (standard)"
+   },
+   {
+    "word": "менше",
+    "pos": "adverb",
+    "gloss": "less (standard)"
+   },
+   {
+    "word": "больше",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'more' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "зараз",
+  "trap_type": "russism_lexical",
+  "note": "'сейчас/щас' surzhyk; standard 'зараз', 'тепер' (now). 'щойно' = just now. Use 'зараз/тепер'.",
+  "options": [
+   {
+    "word": "зараз",
+    "pos": "adverb",
+    "gloss": "now, right now (standard)"
+   },
+   {
+    "word": "тепер",
+    "pos": "adverb",
+    "gloss": "now, nowadays (standard)"
+   },
+   {
+    "word": "сейчас",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'now' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "все",
+  "trap_type": "russism_lexical",
+  "note": "'всьо/всё' surzhyk; standard 'все' (all/everything). 'усе' variant. Use 'все/усе'.",
+  "options": [
+   {
+    "word": "все",
+    "pos": "pronoun",
+    "gloss": "all, everything (standard)"
+   },
+   {
+    "word": "усе",
+    "pos": "pronoun",
+    "gloss": "all, everything (standard variant)"
+   },
+   {
+    "word": "всьо",
+    "pos": "pronoun",
+    "gloss": "SURZHYK for 'everything' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "ні",
+  "trap_type": "russism_lexical",
+  "note": "'нет/нєт' surzhyk; standard 'ні' (no). Use 'ні'.",
+  "options": [
+   {
+    "word": "ні",
+    "pos": "particle",
+    "gloss": "no (standard)"
+   },
+   {
+    "word": "нєт",
+    "pos": "particle",
+    "gloss": "RUSSIAN for 'no' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "так",
+  "trap_type": "russism_lexical",
+  "note": "'да' surzhyk; standard 'так' (yes). 'да' exists as a conjunction in dialect but as 'yes' it is Russian. Use 'так'.",
+  "options": [
+   {
+    "word": "так",
+    "pos": "particle",
+    "gloss": "yes (standard)"
+   },
+   {
+    "word": "да",
+    "pos": "particle",
+    "gloss": "RUSSISM for 'yes' — avoid (dialectal as conjunction only)"
+   }
+  ]
+ },
+ {
+  "key": "магазин",
+  "trap_type": "russism_lexical",
+  "note": "'магазін' surzhyk pronunciation; standard 'магазин' (shop) is fine, but also 'крамниця'. For 'store' prefer 'магазин/крамниця'; flag 'магазін' spelling.",
+  "options": [
+   {
+    "word": "магазин",
+    "pos": "noun",
+    "gloss": "shop, store (standard)"
+   },
+   {
+    "word": "крамниця",
+    "pos": "noun",
+    "gloss": "shop, store (standard, native)"
+   }
+  ]
+ },
+ {
+  "key": "невже",
+  "trap_type": "russism_lexical",
+  "note": "'считалка/щитати' aside, 'неужели' is Russian; standard 'невже' (really?, is it possible?). Use 'невже'.",
+  "options": [
+   {
+    "word": "невже",
+    "pos": "particle",
+    "gloss": "really?, is it possible? (standard)"
+   },
+   {
+    "word": "неужели",
+    "pos": "particle",
+    "gloss": "RUSSIAN equivalent — avoid"
+   }
+  ]
+ },
+ {
+  "key": "виходить",
+  "trap_type": "russism_lexical",
+  "note": "'получається' surzhyk (Rus. 'получается'); standard 'виходить', 'виявляється' (it turns out). Use 'виходить/виявляється'.",
+  "options": [
+   {
+    "word": "виходить",
+    "pos": "verb",
+    "gloss": "it turns out, it comes out (standard)"
+   },
+   {
+    "word": "виявляється",
+    "pos": "verb",
+    "gloss": "it turns out (standard)"
+   },
+   {
+    "word": "получається",
+    "pos": "verb",
+    "gloss": "SURZHYK 'it turns out' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "додавати",
+  "trap_type": "russism_lexical",
+  "note": "'добавляти' surzhyk (Rus. 'добавлять'); standard 'додавати' (to add). Use 'додавати'.",
+  "options": [
+   {
+    "word": "додавати",
+    "pos": "verb",
+    "gloss": "to add (standard)"
+   },
+   {
+    "word": "добавляти",
+    "pos": "verb",
+    "gloss": "SURZHYK for 'to add' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "заважати",
+  "trap_type": "russism_lexical",
+  "note": "'вмішуватися' OK, but 'мішати' for 'to hinder' is a russism (Rus. 'мешать'); standard 'заважати' (to hinder/disturb). 'мішати' in Ukrainian = to stir/mix. Context: stir food → 'мішати'; bother someone → 'заважати'.",
+  "options": [
+   {
+    "word": "заважати",
+    "pos": "verb",
+    "gloss": "to hinder, disturb, bother (standard)"
+   },
+   {
+    "word": "мішати",
+    "pos": "verb",
+    "gloss": "to stir, mix — NOT 'to hinder'; false friend with Rus. 'мешать'"
+   }
+  ]
+ },
+ {
+  "key": "наказати",
+  "trap_type": "russism_lexical",
+  "note": "'наказати' = to punish OR to order; the russism is using 'приказати' (Rus. 'приказать') for 'to order'. Standard for command: 'наказати', 'звеліти', 'розпорядитися'. Avoid 'приказати'.",
+  "options": [
+   {
+    "word": "наказати",
+    "pos": "verb",
+    "gloss": "to order, command; also to punish (standard)"
+   },
+   {
+    "word": "звеліти",
+    "pos": "verb",
+    "gloss": "to order, bid (standard)"
+   },
+   {
+    "word": "приказати",
+    "pos": "verb",
+    "gloss": "RUSSISM for 'to order' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "досвід",
+  "trap_type": "russism_lexical",
+  "note": "'опит' = poll/survey is standard ('опитування'); but 'опит' for 'experience' is a russism (Rus. 'опыт'). Standard 'досвід' (experience). Context: survey → 'опитування'; experience → 'досвід'.",
+  "options": [
+   {
+    "word": "досвід",
+    "pos": "noun",
+    "gloss": "experience (standard)"
+   },
+   {
+    "word": "опитування",
+    "pos": "noun",
+    "gloss": "survey, poll (standard)"
+   },
+   {
+    "word": "опит",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'experience'; in Ukrainian a clipped 'survey' — avoid for 'experience'"
+   }
+  ]
+ },
+ {
+  "key": "потрібно",
+  "trap_type": "russism_lexical",
+  "note": "'нужно/нужний' surzhyk; standard 'треба', 'потрібно', 'потрібний' (needed). Use 'треба/потрібно'.",
+  "options": [
+   {
+    "word": "потрібно",
+    "pos": "adverb",
+    "gloss": "it is necessary, needed (standard)"
+   },
+   {
+    "word": "треба",
+    "pos": "adverb",
+    "gloss": "need to, must (standard)"
+   },
+   {
+    "word": "нужно",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'needed' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "вистачати",
+  "trap_type": "russism_lexical",
+  "note": "'хватати/хватить' surzhyk for 'to be enough'; standard 'вистачати/вистачить' (to suffice). 'хапати' in Ukrainian = to grab. Context: grab → 'хапати'; suffice → 'вистачати'.",
+  "options": [
+   {
+    "word": "вистачати",
+    "pos": "verb",
+    "gloss": "to be enough, suffice (standard)"
+   },
+   {
+    "word": "хапати",
+    "pos": "verb",
+    "gloss": "to grab, snatch — NOT 'to suffice'"
+   },
+   {
+    "word": "хватати",
+    "pos": "verb",
+    "gloss": "SURZHYK for 'to suffice/grab' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "дорога",
+  "trap_type": "russism_lexical",
+  "note": "'дорога/путь' — 'путь' is masculine in Ukrainian and largely poetic; everyday 'road/way' is 'дорога', 'шлях'. Russified 'путь' overuse should become 'шлях/дорога'.",
+  "options": [
+   {
+    "word": "дорога",
+    "pos": "noun",
+    "gloss": "road, way (standard)"
+   },
+   {
+    "word": "шлях",
+    "pos": "noun",
+    "gloss": "way, path, route (standard)"
+   },
+   {
+    "word": "путь",
+    "pos": "noun",
+    "gloss": "way (archaic/poetic m.); overused under Rus. influence — prefer 'шлях/дорога'"
+   }
+  ]
+ },
+ {
+  "key": "свято",
+  "trap_type": "russism_lexical",
+  "note": "'празник' surzhyk; standard 'свято' (holiday, feast). Use 'свято'.",
+  "options": [
+   {
+    "word": "свято",
+    "pos": "noun",
+    "gloss": "holiday, feast, celebration (standard)"
+   },
+   {
+    "word": "празник",
+    "pos": "noun",
+    "gloss": "SURZHYK for 'holiday' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "подарунок",
+  "trap_type": "russism_lexical",
+  "note": "'подарок' surzhyk; standard 'подарунок', 'дарунок' (gift). Use 'подарунок'.",
+  "options": [
+   {
+    "word": "подарунок",
+    "pos": "noun",
+    "gloss": "gift, present (standard)"
+   },
+   {
+    "word": "дарунок",
+    "pos": "noun",
+    "gloss": "gift (standard, literary)"
+   },
+   {
+    "word": "подарок",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'gift' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "думка",
+  "trap_type": "russism_lexical",
+  "note": "'мнение' Russian; standard 'думка', 'погляд' (opinion, view). Use 'думка/погляд'.",
+  "options": [
+   {
+    "word": "думка",
+    "pos": "noun",
+    "gloss": "thought, opinion (standard)"
+   },
+   {
+    "word": "погляд",
+    "pos": "noun",
+    "gloss": "view, opinion (standard)"
+   }
+  ]
+ },
+ {
+  "key": "мета",
+  "trap_type": "russism_lexical",
+  "note": "'цель' Russian; standard 'мета', 'ціль' (ціль is OK for a target/aim). For 'goal/purpose' prefer 'мета'. Context: shooting target → 'ціль'; life goal → 'мета'.",
+  "options": [
+   {
+    "word": "мета",
+    "pos": "noun",
+    "gloss": "goal, aim, purpose (standard)"
+   },
+   {
+    "word": "ціль",
+    "pos": "noun",
+    "gloss": "target, aim (standard, concrete)"
+   },
+   {
+    "word": "цель",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'goal' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "випадок",
+  "trap_type": "russism_lexical",
+  "note": "'случай' Russian; standard 'випадок' (case, instance, occurrence). Use 'випадок'.",
+  "options": [
+   {
+    "word": "випадок",
+    "pos": "noun",
+    "gloss": "case, instance, occurrence (standard)"
+   },
+   {
+    "word": "случай",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'case' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "ділянка",
+  "trap_type": "russism_lexical",
+  "note": "'участок' surzhyk; standard 'ділянка' (plot, section, area). Use 'ділянка'.",
+  "options": [
+   {
+    "word": "ділянка",
+    "pos": "noun",
+    "gloss": "plot, section, area (standard)"
+   },
+   {
+    "word": "участок",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'plot/section' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "насправді",
+  "trap_type": "russism_lexical",
+  "note": "'на самом деле' Russian; standard 'насправді', 'власне', 'дійсно' (actually, in fact). Use 'насправді'.",
+  "options": [
+   {
+    "word": "насправді",
+    "pos": "adverb",
+    "gloss": "actually, in fact (standard)"
+   },
+   {
+    "word": "дійсно",
+    "pos": "adverb",
+    "gloss": "indeed, really (standard)"
+   },
+   {
+    "word": "на самом ділі",
+    "pos": "phrase",
+    "gloss": "SURZHYK calque 'actually' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "хотіти",
+  "trap_type": "russism_lexical",
+  "note": "'хотіти' standard, but surzhyk pronunciation 'хочу/хатєть'. Real trap: 'желати' for 'to want' (Rus. 'желать'); 'бажати' = to wish, 'хотіти' = to want. Use 'хотіти' (want) / 'бажати' (wish).",
+  "options": [
+   {
+    "word": "хотіти",
+    "pos": "verb",
+    "gloss": "to want (standard)"
+   },
+   {
+    "word": "бажати",
+    "pos": "verb",
+    "gloss": "to wish, desire (standard)"
+   }
+  ]
+ },
+ {
+  "key": "фарбувати",
+  "trap_type": "russism_lexical",
+  "note": "'красить/красити' surzhyk for 'to paint'; standard 'фарбувати' (to paint/dye). 'красити' in Ukrainian = to adorn/make beautiful. Context: paint a wall → 'фарбувати'; beautify → 'прикрашати'.",
+  "options": [
+   {
+    "word": "фарбувати",
+    "pos": "verb",
+    "gloss": "to paint, dye (standard)"
+   },
+   {
+    "word": "прикрашати",
+    "pos": "verb",
+    "gloss": "to decorate, adorn (standard)"
+   },
+   {
+    "word": "красити",
+    "pos": "verb",
+    "gloss": "to adorn (literary); SURZHYK for 'to paint' — prefer 'фарбувати'"
+   }
+  ]
+ },
+ {
+  "key": "повітря",
+  "trap_type": "russism_lexical",
+  "note": "'воздух' Russian; standard 'повітря' (air). Use 'повітря'.",
+  "options": [
+   {
+    "word": "повітря",
+    "pos": "noun",
+    "gloss": "air (standard)"
+   },
+   {
+    "word": "воздух",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'air' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "згідно з",
+  "trap_type": "calque_preposition",
+  "note": "'согласно з' / 'у відповідності з' calque Russian government. Standard: 'згідно з' (+ instrumental) or 'відповідно до' (+ genitive). Use 'згідно з' / 'відповідно до'.",
+  "options": [
+   {
+    "word": "згідно з",
+    "pos": "preposition",
+    "gloss": "according to (+ instrumental) (standard)"
+   },
+   {
+    "word": "відповідно до",
+    "pos": "preposition",
+    "gloss": "in accordance with (+ genitive) (standard)"
+   },
+   {
+    "word": "у відповідності з",
+    "pos": "phrase",
+    "gloss": "CALQUE 'in accordance with' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "дякую вам",
+  "trap_type": "calque_grammar",
+  "note": "'дякую вас' is wrong case; 'дякувати' governs the dative: 'дякую вам'. The russism 'благодарю вас' (accusative) leads to 'дякую вас'. Use 'дякую вам' (dative).",
+  "options": [
+   {
+    "word": "дякую вам",
+    "pos": "phrase",
+    "gloss": "thank you (correct dative)"
+   },
+   {
+    "word": "дякую вас",
+    "pos": "phrase",
+    "gloss": "WRONG case (calques Rus. accusative) — use 'дякую вам'"
+   }
+  ]
+ },
+ {
+  "key": "скаржитися",
+  "trap_type": "russism_lexical",
+  "note": "'жалітися/жаліти' for 'to complain/pity' — surzhyk 'жаловатися' (Rus. 'жаловаться'); standard 'скаржитися' (to complain). 'жаліти' = to pity (acceptable but 'шкодувати' preferred). Complaint → 'скаржитися'.",
+  "options": [
+   {
+    "word": "скаржитися",
+    "pos": "verb",
+    "gloss": "to complain (standard)"
+   },
+   {
+    "word": "шкодувати",
+    "pos": "verb",
+    "gloss": "to pity, regret, spare (standard)"
+   }
+  ]
+ },
+ {
+  "key": "ступінь",
+  "trap_type": "russism_lexical",
+  "note": "'степінь' = degree (math/academic) is fine; but russified 'степень' must be 'ступінь' for degree/rank, and 'степінь' is the math sense. Standard 'ступінь' (degree, level, step). Disambiguate by orthography; avoid 'степень'.",
+  "options": [
+   {
+    "word": "ступінь",
+    "pos": "noun",
+    "gloss": "degree, level, step, academic degree (standard)"
+   },
+   {
+    "word": "степінь",
+    "pos": "noun",
+    "gloss": "power/exponent (math) (standard, narrow)"
+   }
+  ]
+ },
+ {
+  "key": "привід",
+  "trap_type": "russism_lexical",
+  "note": "'являється прикладом' → use 'є прикладом'. More: 'привод' (reason) russism; standard 'привід' (occasion/reason) is fine in Ukrainian. The russism trap is 'повод' (Rus. 'повод'); standard 'привід'. Use 'привід'.",
+  "options": [
+   {
+    "word": "привід",
+    "pos": "noun",
+    "gloss": "occasion, pretext, reason (standard)"
+   },
+   {
+    "word": "повод",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'occasion/reason' — avoid; use 'привід'"
+   }
+  ]
+ },
+ {
+  "key": "залишок",
+  "trap_type": "russism_lexical",
+  "note": "'остаток' surzhyk; standard 'залишок', 'решта' (remainder, change). Money returned → 'решта'; leftover → 'залишок'. Avoid 'остаток'.",
+  "options": [
+   {
+    "word": "залишок",
+    "pos": "noun",
+    "gloss": "remainder, residue (standard)"
+   },
+   {
+    "word": "решта",
+    "pos": "noun",
+    "gloss": "the rest; change (money) (standard)"
+   },
+   {
+    "word": "остаток",
+    "pos": "noun",
+    "gloss": "SURZHYK for 'remainder' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "хворий",
+  "trap_type": "russism_lexical",
+  "note": "'больной/болєзнь' surzhyk; standard 'хворий' (sick), 'хвороба' (illness). Use 'хворий/хвороба'.",
+  "options": [
+   {
+    "word": "хворий",
+    "pos": "adjective",
+    "gloss": "sick, ill (standard)"
+   },
+   {
+    "word": "хвороба",
+    "pos": "noun",
+    "gloss": "illness, disease (standard)"
+   }
+  ]
+ },
+ {
+  "key": "щеплення",
+  "trap_type": "russism_lexical",
+  "note": "'прививка' surzhyk; standard 'щеплення' (vaccination). Use 'щеплення'.",
+  "options": [
+   {
+    "word": "щеплення",
+    "pos": "noun",
+    "gloss": "vaccination, inoculation (standard)"
+   },
+   {
+    "word": "прививка",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'vaccination' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "моральність",
+  "trap_type": "russism_lexical",
+  "note": "'нравственність/моральность' — standard 'мораль', 'моральність', 'чеснота'. Russism 'нравственність' (Rus. 'нравственность'). Use 'моральність'.",
+  "options": [
+   {
+    "word": "моральність",
+    "pos": "noun",
+    "gloss": "morality (standard)"
+   },
+   {
+    "word": "чеснота",
+    "pos": "noun",
+    "gloss": "virtue (standard)"
+   }
+  ]
+ },
+ {
+  "key": "дитячий садок",
+  "trap_type": "russism_lexical",
+  "note": "'дитсадок/детский сад' — standard 'дитячий садок', 'садочок'. Russism 'детсад'. Use 'дитячий садок'.",
+  "options": [
+   {
+    "word": "дитячий садок",
+    "pos": "phrase",
+    "gloss": "kindergarten (standard)"
+   },
+   {
+    "word": "садочок",
+    "pos": "noun",
+    "gloss": "kindergarten (standard, diminutive)"
+   }
+  ]
+ },
+ {
+  "key": "сніданок",
+  "trap_type": "russism_lexical",
+  "note": "'на завтра/завтрак' — 'завтрак' is Russian for breakfast; standard 'сніданок'. Don't confuse with 'завтра' (tomorrow, standard). Breakfast → 'сніданок'.",
+  "options": [
+   {
+    "word": "сніданок",
+    "pos": "noun",
+    "gloss": "breakfast (standard)"
+   },
+   {
+    "word": "завтра",
+    "pos": "adverb",
+    "gloss": "tomorrow (standard) — not to be confused"
+   },
+   {
+    "word": "завтрак",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'breakfast' — avoid; use 'сніданок'"
+   }
+  ]
+ },
+ {
+  "key": "вечеря",
+  "trap_type": "russism_lexical",
+  "note": "'обід' = lunch (standard). Russism 'ужин' for supper; standard 'вечеря'. Supper → 'вечеря'.",
+  "options": [
+   {
+    "word": "вечеря",
+    "pos": "noun",
+    "gloss": "supper, dinner (standard)"
+   },
+   {
+    "word": "обід",
+    "pos": "noun",
+    "gloss": "lunch, midday meal (standard)"
+   },
+   {
+    "word": "ужин",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'supper' — avoid; use 'вечеря'"
+   }
+  ]
+ },
+ {
+  "key": "невдача",
+  "trap_type": "russism_lexical",
+  "note": "'неудача' Russian; standard 'невдача', 'поразка' (failure, defeat). Use 'невдача'.",
+  "options": [
+   {
+    "word": "невдача",
+    "pos": "noun",
+    "gloss": "failure, misfortune (standard)"
+   },
+   {
+    "word": "поразка",
+    "pos": "noun",
+    "gloss": "defeat (standard)"
+   }
+  ]
+ },
+ {
+  "key": "успіх",
+  "trap_type": "russism_lexical",
+  "note": "'успіх' standard for 'success'; the russism is 'удача' for 'luck' → standard 'удача' is acceptable but 'щастя/везіння' preferred. For 'good luck' say 'щасти' / 'успіхів'. Avoid russified 'удачі' as a wish — use 'успіхів'.",
+  "options": [
+   {
+    "word": "успіх",
+    "pos": "noun",
+    "gloss": "success (standard)"
+   },
+   {
+    "word": "везіння",
+    "pos": "noun",
+    "gloss": "luck (standard)"
+   },
+   {
+    "word": "удача",
+    "pos": "noun",
+    "gloss": "luck (accepted but often russified in use; prefer 'везіння/успіх')"
+   }
+  ]
+ },
+ {
+  "key": "підприємство",
+  "trap_type": "russism_lexical",
+  "note": "'предприятие' Russian; standard 'підприємство' (enterprise, business). Use 'підприємство'.",
+  "options": [
+   {
+    "word": "підприємство",
+    "pos": "noun",
+    "gloss": "enterprise, company (standard)"
+   },
+   {
+    "word": "предприятие",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'enterprise' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "керувати",
+  "trap_type": "russism_lexical",
+  "note": "'руководити/руководство' surzhyk; standard 'керувати' (to lead/manage), 'керівництво' (management). Use 'керувати/керівництво'.",
+  "options": [
+   {
+    "word": "керувати",
+    "pos": "verb",
+    "gloss": "to manage, lead, drive (standard)"
+   },
+   {
+    "word": "керівництво",
+    "pos": "noun",
+    "gloss": "management, leadership (standard)"
+   },
+   {
+    "word": "руководство",
+    "pos": "noun",
+    "gloss": "RUSSISM for 'management' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "повинен",
+  "trap_type": "russism_lexical",
+  "note": "'довжен/должен' surzhyk; standard 'повинен', 'мусить', 'має' (must, ought). Use 'повинен/має'.",
+  "options": [
+   {
+    "word": "повинен",
+    "pos": "adjective",
+    "gloss": "obliged, must (standard)"
+   },
+   {
+    "word": "мусить",
+    "pos": "verb",
+    "gloss": "must, has to (standard)"
+   },
+   {
+    "word": "должен",
+    "pos": "adjective",
+    "gloss": "RUSSIAN for 'must' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "чекати",
+  "trap_type": "russism_lexical",
+  "note": "'ждати' is acceptable Ukrainian but 'чекати' is the neutral standard for 'to wait'; 'ждати' carries colloquial/poetic tone and is often a russism in surzhyk. Default to 'чекати'.",
+  "options": [
+   {
+    "word": "чекати",
+    "pos": "verb",
+    "gloss": "to wait (standard, neutral)"
+   },
+   {
+    "word": "очікувати",
+    "pos": "verb",
+    "gloss": "to expect, await (standard, formal)"
+   },
+   {
+    "word": "ждати",
+    "pos": "verb",
+    "gloss": "to wait (colloquial/poetic; often russified — prefer 'чекати')"
+   }
+  ]
+ },
+ {
+  "key": "відпочивати",
+  "trap_type": "russism_lexical",
+  "note": "'отдихати/отдих' surzhyk; standard 'відпочивати' (to rest), 'відпочинок' (rest). Use 'відпочивати/відпочинок'.",
+  "options": [
+   {
+    "word": "відпочивати",
+    "pos": "verb",
+    "gloss": "to rest, relax (standard)"
+   },
+   {
+    "word": "відпочинок",
+    "pos": "noun",
+    "gloss": "rest, vacation (standard)"
+   }
+  ]
+ },
+ {
+  "key": "лікувати",
+  "trap_type": "russism_lexical",
+  "note": "'самоліковий' aside; 'лечити/лічити' confusion: 'лікувати' = to treat (medically); 'лічити' = to count. Russism 'лєчити'. Treat patient → 'лікувати'. Don't confuse with 'лічити' (count).",
+  "options": [
+   {
+    "word": "лікувати",
+    "pos": "verb",
+    "gloss": "to treat, cure (medically) (standard)"
+   },
+   {
+    "word": "лічити",
+    "pos": "verb",
+    "gloss": "to count (standard) — different meaning"
+   }
+  ]
+ },
+ {
+  "key": "якість",
+  "trap_type": "russism_lexical",
+  "note": "'качество' Russian; standard 'якість' (quality). Use 'якість'.",
+  "options": [
+   {
+    "word": "якість",
+    "pos": "noun",
+    "gloss": "quality (standard)"
+   },
+   {
+    "word": "качество",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'quality' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "кількість",
+  "trap_type": "russism_lexical",
+  "note": "'кількість' standard; russism 'количество' must be 'кількість' (quantity, amount). Use 'кількість'.",
+  "options": [
+   {
+    "word": "кількість",
+    "pos": "noun",
+    "gloss": "quantity, amount, number (standard)"
+   },
+   {
+    "word": "количество",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'quantity' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "тим часом",
+  "trap_type": "russism_lexical",
+  "note": "'на ділі/на самом ділі' (see above). Also 'між тим/тим часом': for 'meanwhile' use 'тим часом', 'між тим'. Russism 'между тем'. Use 'тим часом'.",
+  "options": [
+   {
+    "word": "тим часом",
+    "pos": "phrase",
+    "gloss": "meanwhile (standard)"
+   },
+   {
+    "word": "між тим",
+    "pos": "phrase",
+    "gloss": "meanwhile, however (standard)"
+   },
+   {
+    "word": "между тим",
+    "pos": "phrase",
+    "gloss": "SURZHYK 'meanwhile' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "гаразд",
+  "trap_type": "russism_lexical",
+  "note": "'ладно/ладна' surzhyk for 'okay/fine'; standard 'гаразд', 'добре'. Use 'гаразд/добре'.",
+  "options": [
+   {
+    "word": "гаразд",
+    "pos": "adverb",
+    "gloss": "okay, all right, fine (standard)"
+   },
+   {
+    "word": "добре",
+    "pos": "adverb",
+    "gloss": "good, okay (standard)"
+   },
+   {
+    "word": "ладно",
+    "pos": "particle",
+    "gloss": "RUSSISM for 'okay' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "сміття",
+  "trap_type": "russism_lexical",
+  "note": "'мусор' Russian; standard 'сміття' (rubbish, trash). Use 'сміття'.",
+  "options": [
+   {
+    "word": "сміття",
+    "pos": "noun",
+    "gloss": "rubbish, garbage, trash (standard)"
+   },
+   {
+    "word": "мусор",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'trash' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "сходи",
+  "trap_type": "russism_lexical",
+  "note": "'лестница' Russian; standard 'сходи' (stairs), 'драбина' (ladder). Stairs → 'сходи'; ladder → 'драбина'.",
+  "options": [
+   {
+    "word": "сходи",
+    "pos": "noun",
+    "gloss": "stairs, staircase (standard)"
+   },
+   {
+    "word": "драбина",
+    "pos": "noun",
+    "gloss": "ladder (standard)"
+   }
+  ]
+ },
+ {
+  "key": "площа",
+  "trap_type": "russism_lexical",
+  "note": "'площа' = square/area (standard); russism 'площадь' must be 'площа'. Also 'майдан' (square). Use 'площа/майдан'.",
+  "options": [
+   {
+    "word": "площа",
+    "pos": "noun",
+    "gloss": "square, area (standard)"
+   },
+   {
+    "word": "майдан",
+    "pos": "noun",
+    "gloss": "town square (standard)"
+   },
+   {
+    "word": "площадь",
+    "pos": "noun",
+    "gloss": "RUSSIAN for 'square' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "неважливо",
+  "trap_type": "russism_lexical",
+  "note": "'неважно' surzhyk; standard 'неважливо', 'байдуже' (it does not matter). Use 'неважливо/байдуже'.",
+  "options": [
+   {
+    "word": "неважливо",
+    "pos": "adverb",
+    "gloss": "it does not matter, unimportant (standard)"
+   },
+   {
+    "word": "байдуже",
+    "pos": "adverb",
+    "gloss": "no matter, indifferent (standard)"
+   }
+  ]
+ },
+ {
+  "key": "далі",
+  "trap_type": "russism_lexical",
+  "note": "'дальше/далі' — standard 'далі' (further, next). Russism 'дальше'. Use 'далі'.",
+  "options": [
+   {
+    "word": "далі",
+    "pos": "adverb",
+    "gloss": "further, onward, next (standard)"
+   },
+   {
+    "word": "дальше",
+    "pos": "adverb",
+    "gloss": "RUSSISM for 'further' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "раніше",
+  "trap_type": "russism_lexical",
+  "note": "'раньше/раніше' — standard 'раніше' (earlier, before). Russism 'раньше'. Use 'раніше'.",
+  "options": [
+   {
+    "word": "раніше",
+    "pos": "adverb",
+    "gloss": "earlier, before, previously (standard)"
+   },
+   {
+    "word": "раньше",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'earlier' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "чому",
+  "trap_type": "russism_lexical",
+  "note": "'почему/чому' — standard 'чому' (why). Russism 'почему'. Use 'чому'.",
+  "options": [
+   {
+    "word": "чому",
+    "pos": "adverb",
+    "gloss": "why (standard)"
+   },
+   {
+    "word": "почему",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'why' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "отже",
+  "trap_type": "russism_lexical",
+  "note": "'значить/значить що' — as filler 'значить' is fine, but russified 'значіт' or overuse of 'так значить' should become 'отже', 'тобто'. For 'that is/so' use 'отже/тобто'.",
+  "options": [
+   {
+    "word": "отже",
+    "pos": "conjunction",
+    "gloss": "so, therefore (standard)"
+   },
+   {
+    "word": "тобто",
+    "pos": "conjunction",
+    "gloss": "that is, i.e. (standard)"
+   },
+   {
+    "word": "значіт",
+    "pos": "particle",
+    "gloss": "SURZHYK filler 'so/that means' — avoid; use 'отже'"
+   }
+  ]
+ },
+ {
+  "key": "поганий",
+  "trap_type": "russism_lexical",
+  "note": "'плохий/поганий' — standard 'поганий' (bad). Russism 'плохий'. Use 'поганий'.",
+  "options": [
+   {
+    "word": "поганий",
+    "pos": "adjective",
+    "gloss": "bad (standard)"
+   },
+   {
+    "word": "кепський",
+    "pos": "adjective",
+    "gloss": "bad, poor (standard, colloquial)"
+   },
+   {
+    "word": "плохий",
+    "pos": "adjective",
+    "gloss": "RUSSISM for 'bad' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "хороший",
+  "trap_type": "russism_lexical",
+  "note": "'хороший' is shared and standard, but for 'good' also 'добрий', 'гарний'. The russism trap is 'харошій' pronunciation; write 'хороший'. Fine to use.",
+  "options": [
+   {
+    "word": "хороший",
+    "pos": "adjective",
+    "gloss": "good (standard)"
+   },
+   {
+    "word": "добрий",
+    "pos": "adjective",
+    "gloss": "good, kind (standard)"
+   }
+  ]
+ },
+ {
+  "key": "знову",
+  "trap_type": "russism_lexical",
+  "note": "'оп'ять/опять' surzhyk; standard 'знову', 'знов' (again). Use 'знову'.",
+  "options": [
+   {
+    "word": "знову",
+    "pos": "adverb",
+    "gloss": "again, anew (standard)"
+   },
+   {
+    "word": "опять",
+    "pos": "adverb",
+    "gloss": "RUSSIAN for 'again' — avoid"
+   }
+  ]
+ },
+ {
+  "key": "витрати",
+  "trap_type": "russism_lexical",
+  "note": "'кошти' = funds/cost (standard, pl.); russism 'затрати/расходи' → standard 'витрати' (expenses). Use 'витрати/кошти'. 'расходи' is non-standard.",
+  "options": [
+   {
+    "word": "витрати",
+    "pos": "noun",
+    "gloss": "expenses, expenditures (standard)"
+   },
+   {
+    "word": "кошти",
+    "pos": "noun",
+    "gloss": "funds, means, money (standard)"
+   }
+  ]
+ },
+ {
+  "key": "сміятися",
+  "trap_type": "uk_verb_reflexive_tsya",
+  "note": "Ukrainian analogue of the Russian -ться/-тся trap, which the existing set covers only for Russian. In Ukrainian both forms END in -ться (no т/ться spelling split), but the ASR/human confusion is between the 3rd-person -ться form and the infinitive, AND with the spelling -цьця/-тся russism. Also -шся vs -сся. Entirely missing from Ukrainian coverage. Disambiguate: infinitive answers що робити? (вчитися); 3rd-person answers що робить? (вчиться).",
+  "options": [
+   {
+    "word": "сміятися",
+    "pos": "verb",
+    "gloss": "to laugh (infinitive)"
+   },
+   {
+    "word": "сміється",
+    "pos": "verb",
+    "gloss": "(he/she) laughs (3rd sg.) — -ється, not russism -ется"
+   },
+   {
+    "word": "усміхаєшся",
+    "pos": "verb",
+    "gloss": "you smile (2nd sg.) — -шся; common error -сся/-шся confusion"
+   }
+  ]
+ },
+ {
+  "key": "пів години",
+  "trap_type": "uk_piv_spacing",
+  "note": "Ukrainian пів- ('half') spelling under the 2019 orthography: with common nouns пів is written SEPARATELY (пів години, пів яблука), but in lexicalized compound words and with the meaning 'one of the cardinal directions/whole concept' it is written solid or with a hyphen (південь, півострів, пів-Києва with proper nouns). A live, post-reform transcription error with zero coverage in the current set. Disambiguate: пів + measurable common noun = space; established single concept = solid; пів + proper noun = hyphen.",
+  "options": [
+   {
+    "word": "пів години",
+    "pos": "numeral phrase",
+    "gloss": "half an hour — written with a SPACE (пів + common noun)"
+   },
+   {
+    "word": "південь",
+    "pos": "noun",
+    "gloss": "south; midday — lexicalized, written SOLID"
+   },
+   {
+    "word": "півострів",
+    "pos": "noun",
+    "gloss": "peninsula — established compound, SOLID"
+   },
+   {
+    "word": "пів-Києва",
+    "pos": "noun phrase",
+    "gloss": "half of Kyiv — пів + PROPER noun, HYPHENATED"
+   },
+   {
+    "word": "півколо",
+    "pos": "noun",
+    "gloss": "semicircle — established compound, SOLID (contrast 'пів кола' = half of a circle, spaced)"
+   }
+  ]
+ },
+ {
+  "key": "ніч",
+  "trap_type": "uk_vowel_alternation_o_i",
+  "note": "Ukrainian o/e ↔ і alternation in closed vs open syllables (ніч/ночі, стіл/стола, Київ/Києва). ASR and Russian-influenced typists pick the wrong vowel for the case form, producing non-words or wrong cases. This is a core Ukrainian morphophonemic trap distinct from the и/і/ї vowel-confusion set already present (which is about which i-letter, not the o↔і shift). Disambiguate: і appears in the closed (consonant-final) syllable; o/e returns when an ending opens the syllable.",
+  "options": [
+   {
+    "word": "ніч",
+    "pos": "noun",
+    "gloss": "night (nom. sg., closed syllable → і)"
+   },
+   {
+    "word": "ночі",
+    "pos": "noun",
+    "gloss": "of the night / nights (syllable opened → о); error 'нічі'"
+   },
+   {
+    "word": "стіл",
+    "pos": "noun",
+    "gloss": "table (nom. sg., closed → і)"
+   },
+   {
+    "word": "стола",
+    "pos": "noun",
+    "gloss": "of the table (gen., opened → о); error 'стіла'"
+   },
+   {
+    "word": "Київ",
+    "pos": "noun",
+    "gloss": "Kyiv (nom., closed → і)"
+   },
+   {
+    "word": "Києва",
+    "pos": "noun",
+    "gloss": "of Kyiv (gen., opened → е); error 'Київа'"
+   }
+  ]
+ },
+ {
+  "key": "білити",
+  "trap_type": "uk_paronym",
+  "note": "High-frequency Ukrainian paronyms (same root, different suffix/meaning) beyond the generic 'Ukrainian paronyms' bucket — pinned to concrete real pairs that are routinely swapped in Ukrainian clerical, legal and media speech. Each has a fixed collocational slot; disambiguate by the noun it modifies or the relation it expresses.",
+  "options": [
+   {
+    "word": "білити",
+    "pos": "verb",
+    "gloss": "to whitewash / whiten (білити стіну)"
+   },
+   {
+    "word": "біліти",
+    "pos": "verb",
+    "gloss": "to show white / turn white (сніг біліє)"
+   }
+  ]
+ }
+]
