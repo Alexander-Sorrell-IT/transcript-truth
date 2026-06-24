@@ -8,6 +8,7 @@ from ._base import Profile, register
 from ..cyrillic_rules import mixed_script
 from ..ru_rules import make_unknown_word, make_confusables
 from ..decision import make_decision
+from ..coherence_ml import make_coherence
 
 # Base (graded): hard homoglyph error + review-tier out-of-lexicon surfacer.
 register(Profile(
@@ -28,15 +29,15 @@ register(Profile(
 # lines too — like the Spanish surfacer, so it's deliberately NOT in the graded base).
 register(Profile(
     name="ru:full",
-    description="Russian — base + confusable surfacer + collocation decision layer",
+    description="Russian — base + surfacer + collocation decision + LLM coherence (review)",
     scanners=(mixed_script, make_unknown_word("ru"), make_confusables("ru"),
-              make_decision("ru", "cyrillic")),
+              make_decision("ru", "cyrillic"), make_coherence("ru", "cyrillic")),
     default_mode="clean_verbatim",
 ))
 register(Profile(
     name="uk:full",
-    description="Ukrainian — base + confusable surfacer + collocation decision layer",
+    description="Ukrainian — base + surfacer + collocation decision + LLM coherence (review)",
     scanners=(mixed_script, make_unknown_word("uk"), make_confusables("uk"),
-              make_decision("uk", "cyrillic")),
+              make_decision("uk", "cyrillic"), make_coherence("uk", "cyrillic")),
     default_mode="clean_verbatim",
 ))

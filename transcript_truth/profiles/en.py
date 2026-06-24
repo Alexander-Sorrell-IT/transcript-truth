@@ -3,6 +3,7 @@
 decision layer."""
 from ._base import Profile, register
 from ..lexicon import make_unknown_word, make_confusables
+from ..coherence_ml import make_coherence
 
 # NOTE: like Spanish, English confusables are grammatical homophones (there/their,
 # by/buy) — syntax-separated, not collocation-separated — so the decision layer
@@ -16,7 +17,8 @@ register(Profile(
 ))
 register(Profile(
     name="en:full",
-    description="English — base + homophone surfacer (review)",
-    scanners=(make_unknown_word("en", "latin"), make_confusables("en", "latin")),
+    description="English — base + homophone surfacer + LLM coherence (review; needs network)",
+    scanners=(make_unknown_word("en", "latin"), make_confusables("en", "latin"),
+              make_coherence("en", "latin")),
     default_mode="clean_verbatim",
 ))

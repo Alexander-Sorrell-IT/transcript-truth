@@ -4,6 +4,7 @@ decision layer (Leipzig-grounded)."""
 from ._base import Profile, register
 from ..lexicon import make_unknown_word
 from ..es_rules import homophone_traps
+from ..coherence_ml import make_coherence
 
 # NOTE: the collocation decision layer is intentionally NOT used for Spanish — es
 # confusables are grammatical homophones (haya/halla), separated by syntax not
@@ -17,7 +18,7 @@ register(Profile(
 ))
 register(Profile(
     name="es:full",
-    description="Spanish — base + accent-aware homophone surfacer (review)",
-    scanners=(make_unknown_word("es", "latin"), homophone_traps),
+    description="Spanish — base + homophone surfacer + LLM coherence (review; needs network)",
+    scanners=(make_unknown_word("es", "latin"), homophone_traps, make_coherence("es", "latin")),
     default_mode="clean_verbatim",
 ))
