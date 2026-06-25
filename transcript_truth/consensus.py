@@ -4,6 +4,9 @@ no ear needed), and the disagreement spans (the short list to ear-check). Deepgr
 tiebreaker vote. No single model decides — agreement IS the verification.
 """
 import difflib
+import os
+import subprocess
+import tempfile
 from .verdict import _toks
 
 # ----------------------------------------------------------------------------
@@ -63,10 +66,69 @@ def consensus_vote(reads):
         1 - difflib.SequenceMatcher(a=_norm_ws(a), b=_norm_ws(b)).ratio() for b in cands))
 
 
-def transcribe(audio_path, lang):
-    """Top-level language-aware transcription: rostered panel -> consensus text."""
+def _stretch(audio_path, rate):
+    """Time-stretch audio to `rate`x speed, PITCH PRESERVED (ffmpeg atempo). rate<1 = slower.
+    Returns a temp file path, or None if ffmpeg is unavailable / fails. Caller deletes it."""
+    if rate >= 0.999:
+        return None
+    # atempo only accepts 0.5..2.0 per filter; chain if we ever go below 0.5
+    chain = []
+    r = rate
+    while r < 0.5:
+        chain.append("atempo=0.5")
+        r /= 0.5
+    chain.append(f"atempo={r:.4f}")
+    fd, out = tempfile.mkstemp(suffix=".wav", prefix="ttslow_")
+    os.close(fd)
+    try:
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", audio_path, "-filter:a", ",".join(chain), out],
+            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return out
+    except (subprocess.CalledProcessError, FileNotFoundError, OSError):
+        if os.path.exists(out):
+            os.remove(out)
+        return None
+
+
+def _majority(reads):
+    """How many witnesses agree on the single most-common normalized read (0 if none)."""
+    from collections import Counter
+    cands = [t for t in reads.values() if t]
+    if not cands:
+        return 0
+    return Counter(_norm_ws(t) for t in cands).most_common(1)[0][1]
+
+
+def transcribe(audio_path, lang, slow_rates=(0.65, 0.5)):
+    """Top-level language-aware transcription: rostered panel -> consensus text.
+
+    When the normal-speed panel does NOT reach a clear majority (the witnesses disagree —
+    "we don't know"), automatically re-run the roster on PITCH-PRESERVED slowed audio and
+    fold those reads into the vote. Slowing reliably makes uncertain witnesses converge on
+    what's actually said (proved out on the Quicktate ES clips). Applies to ALL languages.
+    A normal-speed majority short-circuits — no slow pass needed, no wasted API calls.
+    Slowed reads are keyed `model@0.65x` so they stay visible and auditable.
+    """
     reads = roster_panel(audio_path, lang)
-    return {"text": consensus_vote(reads), "reads": reads, "lang": lang}
+    slowed_used = []
+    # Only escalate when normal speed is ambiguous (< 2 witnesses agreeing).
+    if _majority(reads) < 2:
+        for rate in slow_rates:
+            sp = _stretch(audio_path, rate)
+            if not sp:
+                continue
+            try:
+                for name, txt in roster_panel(sp, lang).items():
+                    if txt:
+                        reads[f"{name}@{rate:g}x"] = txt
+                slowed_used.append(rate)
+            finally:
+                os.remove(sp)
+            if _majority(reads) >= 2:   # converged — stop slowing
+                break
+    return {"text": consensus_vote(reads), "reads": reads, "lang": lang,
+            "slowed": slowed_used, "agreement": _majority(reads)}
 
 
 def _tok(text):
