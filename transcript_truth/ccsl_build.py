@@ -75,6 +75,38 @@ def detect_shots(video_path, fps) -> list[tuple[int, int]]:
     return bounds
 
 
+def _extract_audio(video_path):
+    """Extract the audio track to a temp 16k mono wav. Deepgram/consensus need an audio
+    file, not a video container. Returns the temp path, or None (no audio / ffmpeg fails)."""
+    import subprocess, tempfile, os
+    fd, out = tempfile.mkstemp(suffix=".wav", prefix="ccsl_aud_")
+    os.close(fd)
+    try:
+        r = subprocess.run(
+            ["ffmpeg", "-y", "-i", str(video_path), "-vn", "-ac", "1", "-ar", "16000", out],
+            check=False, capture_output=True)
+        if r.returncode == 0 and os.path.exists(out) and os.path.getsize(out) > 1024:
+            return out
+    except (FileNotFoundError, OSError):
+        pass
+    if os.path.exists(out):
+        os.remove(out)
+    return None
+
+
+def _total_frames(video_path, fps) -> int:
+    """Total source frames for the clip — duration x fps. 0 if ffprobe is unavailable."""
+    import subprocess
+    try:
+        dur = subprocess.run(
+            ["ffprobe", "-v", "0", "-show_entries", "format=duration",
+             "-of", "default=nw=1:nk=1", str(video_path)],
+            check=False, capture_output=True, text=True).stdout.strip()
+        return round(float(dur) * fps) if dur else 0
+    except (FileNotFoundError, OSError, ValueError):
+        return 0
+
+
 def _bucket_gemini(shot_in_tc, shot_out_tc, gem_objs, fps, N):
     """Collect Gemini objects whose MM:SS `t` falls inside [shot_in, shot_out)."""
     lo, hi = tc_to_frames(shot_in_tc, N), tc_to_frames(shot_out_tc, N)
@@ -152,6 +184,11 @@ def build_ccsl(video_path, lang="en", style="5F") -> str:
     fps, _vfr = probe_frame_rate(video_path)
     N = nominal_rate(fps)
     shots = detect_shots(video_path, fps)
+    if not shots:
+        # No hard cuts found (a single continuous take, or detection unavailable) —
+        # treat the whole clip as one shot so the visual read + dialogue still render.
+        total = _total_frames(video_path, fps)
+        shots = [(0, max(total - 1, 0))]
 
     gem_objs = []
     try:
@@ -163,21 +200,26 @@ def build_ccsl(video_path, lang="en", style="5F") -> str:
     except Exception:
         gem_objs = []
 
+    # Dialogue runs on the EXTRACTED audio track (deepgram/consensus can't read a video
+    # container). Deepgram owns the timing; the consensus read replaces the text.
+    import os as _os
+    audio_path = _extract_audio(video_path)
     utts = []
-    try:
-        from .witness import deepgram_structured
-        utts = deepgram_structured(video_path, language=lang)
-    except Exception:
-        utts = []
-
-    # Replace each Deepgram utterance's text with the consensus read for the same span.
-    try:
-        from .consensus import transcribe
-        cons = transcribe(video_path, lang)
-        if cons.get("text") and len(utts) == 1:
-            utts[0]["text"] = cons["text"]
-    except Exception:
-        pass
+    if audio_path:
+        try:
+            from .witness import deepgram_structured
+            utts = deepgram_structured(audio_path, language=lang)
+        except Exception:
+            utts = []
+        # Replace each Deepgram utterance's text with the consensus read for the same span.
+        try:
+            from .consensus import transcribe
+            cons = transcribe(audio_path, lang)
+            if cons.get("text") and len(utts) == 1:
+                utts[0]["text"] = cons["text"]
+        except Exception:
+            pass
+        _os.remove(audio_path)
 
     rows = merge(shots, gem_objs, utts, fps, N)
     return render_5d(rows) if style.upper() == "5D" else render_5f(rows)
