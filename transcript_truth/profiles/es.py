@@ -4,6 +4,7 @@ decision layer (Leipzig-grounded)."""
 from ._base import Profile, register
 from ..lexicon import make_unknown_word
 from ..es_rules import homophone_traps
+from ..es_names import make_name_surfacer
 from ..coherence_ml import make_coherence
 
 # NOTE: the collocation decision layer is intentionally NOT used for Spanish — es
@@ -18,7 +19,8 @@ register(Profile(
 ))
 register(Profile(
     name="es:full",
-    description="Spanish — base + homophone surfacer + LLM coherence (review; needs network)",
-    scanners=(make_unknown_word("es", "latin"), homophone_traps, make_coherence("es", "latin")),
+    description="Spanish — base + homophone surfacer + name surfacer + LLM coherence (review; needs network)",
+    scanners=(make_unknown_word("es", "latin"), homophone_traps,
+              make_name_surfacer("es"), make_coherence("es", "latin")),
     default_mode="clean_verbatim",
 ))
