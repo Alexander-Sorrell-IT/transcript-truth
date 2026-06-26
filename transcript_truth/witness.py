@@ -113,3 +113,84 @@ def deepgram_read(audio_path, language="ja"):
     with urllib.request.urlopen(req, timeout=120) as r:
         d = json.load(r)
     return d["results"]["channels"][0]["alternatives"][0]["transcript"].strip()
+
+
+def gemini_video_read(video_path, language=None):
+    """Gemini video witness — the VISUAL read for a CCSL (continuity logger). Watches the
+    whole reel and returns a raw JSON-array string (one object per shot); the ccsl_build
+    half parses it. This supplies shot DESCRIPTION + on-screen OCR only — it carries NO
+    authoritative timing (ffmpeg/PySceneDetect own every timecode) and is deliberately
+    kept OFF the consensus roster: it emits caption/continuity output, not verbatim speech,
+    so it would poison the token-majority vote.
+
+    Four REST steps against the Gemini Files API (raw urllib), reusing the 503/429/500
+    model-cascade pattern of `gemini_read`. Raises on missing key / HTTP error exactly
+    like its siblings — the builder is responsible for the try/except graceful-degrade."""
+    import time
+    key = _key("GEMINI_API_KEY")
+    data = open(video_path, "rb").read()
+
+    # 1) start a resumable upload — read back the upload URL from the response header.
+    start = urllib.request.Request(
+        "https://generativelanguage.googleapis.com/upload/v1beta/files",
+        data=json.dumps({"file": {"display_name": "reel"}}).encode(),
+        headers={
+            "x-goog-api-key": key,
+            "X-Goog-Upload-Protocol": "resumable",
+            "X-Goog-Upload-Command": "start",
+            "X-Goog-Upload-Header-Content-Length": str(len(data)),
+            "X-Goog-Upload-Header-Content-Type": "video/mp4",
+            "Content-Type": "application/json",
+        })
+    with urllib.request.urlopen(start, timeout=120) as r:
+        upload_url = r.headers.get("x-goog-upload-url")
+
+    # 2) upload the bytes and finalize — read back the file name/uri.
+    up = urllib.request.Request(upload_url, data=data, headers={
+        "x-goog-api-key": key,
+        "X-Goog-Upload-Offset": "0",
+        "X-Goog-Upload-Command": "upload, finalize",
+        "Content-Type": "video/mp4"})
+    with urllib.request.urlopen(up, timeout=600) as r:
+        f = json.load(r)["file"]
+    name, uri = f["name"], f["uri"]
+
+    # 3) poll until the file is ACTIVE (Gemini transcodes large video server-side).
+    for _ in range(60):
+        poll = urllib.request.Request(
+            f"https://generativelanguage.googleapis.com/v1beta/{name}",
+            headers={"x-goog-api-key": key})
+        with urllib.request.urlopen(poll, timeout=120) as r:
+            st = json.load(r).get("state")
+        if st == "ACTIVE":
+            break
+        time.sleep(5)
+
+    prompt = (
+        "You are a continuity logger. Watch the entire video. Output a JSON array, one "
+        "object per distinct camera shot in chronological order, keys: 't' (MM:SS), 'shot' "
+        "(WS/MS/CU/insert/title card), 'action' (one line), 'onscreen_text' (verbatim OCR "
+        "or \"\"). Output only the JSON array.")
+    body = json.dumps({
+        "contents": [{"parts": [
+            {"text": prompt},
+            {"file_data": {"mime_type": "video/mp4", "file_uri": uri}}]}],
+        "generationConfig": {"response_mime_type": "application/json"}}).encode()
+
+    # 4) generateContent with the same overloaded -> next-model cascade as gemini_read.
+    models = ["gemini-2.5-pro", "gemini-2.5-flash"]
+    last = None
+    for mdl in models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{mdl}:generateContent"
+        req = urllib.request.Request(url, data=body, headers={
+            "x-goog-api-key": key, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=600) as r:
+                d = json.load(r)
+            return d["candidates"][0]["content"]["parts"][0]["text"].strip()
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code in (503, 429, 500):   # overloaded/rate-limited -> try next model
+                continue
+            raise
+    raise last

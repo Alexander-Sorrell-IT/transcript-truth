@@ -27,6 +27,8 @@ def main(argv=None) -> int:
             profile = a.split("=", 1)[1]
         elif a == "--legal":
             profile = "legal"
+        elif a == "--ccsl":
+            profile = "ccsl"
         elif a == "--list-profiles":
             print("\n  available profiles:")
             for n in names():
