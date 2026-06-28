@@ -42,6 +42,49 @@ def elevenlabs_read(audio_path, language=None):
         return json.load(r).get("text", "").strip()
 
 
+def elevenlabs_diarize(audio_path, language=None):
+    """ElevenLabs Scribe WITH diarization — a second *structured* witness alongside
+    deepgram_structured. Returns [{start, end, speaker, text}] so speaker turns can be
+    voted across independent diarizers instead of trusting one. speaker ids are the raw
+    Scribe labels (speaker_0, speaker_1, ...); the consensus layer maps them to roles."""
+    import mimetypes
+    boundary = "----ttboundary7f3a"
+    fields = {"model_id": "scribe_v1", "diarize": "true", "timestamps_granularity": "word"}
+    if language:
+        fields["language_code"] = language
+    body = b""
+    for k, v in fields.items():
+        body += (f"--{boundary}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n").encode()
+    fn = os.path.basename(audio_path)
+    ctype = mimetypes.guess_type(audio_path)[0] or "audio/mpeg"
+    body += (f"--{boundary}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"{fn}\"\r\n"
+             f"Content-Type: {ctype}\r\n\r\n").encode()
+    body += open(audio_path, "rb").read() + f"\r\n--{boundary}--\r\n".encode()
+    req = urllib.request.Request("https://api.elevenlabs.io/v1/speech-to-text", data=body, headers={
+        "xi-api-key": _key("ELEVENLABS_API_KEY"),
+        "Content-Type": f"multipart/form-data; boundary={boundary}"})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        d = json.load(r)
+    turns, cur = [], None
+    for w in d.get("words", []):
+        if w.get("type") not in ("word", None):
+            if cur is not None:
+                cur["text"] += w.get("text", "")
+            continue
+        spk = w.get("speaker_id", "?")
+        if cur is None or cur["speaker"] != spk:
+            if cur:
+                turns.append(cur)
+            cur = {"start": w.get("start", 0.0), "end": w.get("end", 0.0),
+                   "speaker": spk, "text": w.get("text", "")}
+        else:
+            cur["text"] += w.get("text", "")
+            cur["end"] = w.get("end", cur["end"])
+    if cur:
+        turns.append(cur)
+    return [{**t, "text": t["text"].strip()} for t in turns if t["text"].strip()]
+
+
 def gemini_read(audio_path, language=None):
     """Gemini (multimodal LLM) — a 4th independent witness, different family again.
     Strong on accented/bilingual speech because it reasons over context, not just acoustics."""
