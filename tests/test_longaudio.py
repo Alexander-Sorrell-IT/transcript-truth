@@ -254,6 +254,10 @@ def test_legal_domain_composes_across_languages():
         assert "legal_tag" in rules and "legal_number" in rules, lang
     # without the legal domain, no legal flags
     assert not any(f.rule.startswith("legal") for f in audit_transcript(viol, profile="en").flags)
+    # legal terminology resource: misspelled terms flagged with the correct form, no false positives
+    terms = audit_transcript("The subpena and the defendent.", profile="en", domain="legal").flags
+    assert any(f.rule == "legal_term" and f.evidence == "subpena" for f in terms)
+    assert not any(f.rule == "legal_term" for f in audit_transcript("The subpoena and the defendant.", profile="en", domain="legal").flags)
 
 
 def test_medical_composes_across_languages_no_false_positive():

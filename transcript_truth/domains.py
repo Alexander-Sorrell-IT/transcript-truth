@@ -56,8 +56,9 @@ register_domain(
 from .legal_rules import (legal_titles, legal_numbers, legal_ampm, legal_tags,  # noqa: E402
                           legal_nonverbal, legal_spacing)
 from .scanners import timestamps as _timestamps  # noqa: E402
+from .legal_terms import legal_terms  # noqa: E402
 register_domain(
     "legal", (_timestamps, legal_titles, legal_numbers, legal_ampm, legal_tags,
-              legal_nonverbal, legal_spacing),
-    "Legal (TranscribeMe CVL) — composable formatting: titles, numbers, a.m./p.m., tags, spacing",
+              legal_nonverbal, legal_spacing, legal_terms),
+    "Legal (TranscribeMe CVL) — formatting (titles/numbers/a.m.-p.m./tags/spacing) + legal terminology",
 )
