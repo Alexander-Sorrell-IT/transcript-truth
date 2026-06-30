@@ -38,7 +38,10 @@ with any language. `domains.py` = the domain registry + `compose()`.
   numbers, a.m./p.m., tags, non-verbals, spacing) composing with ALL languages; the English-specific
   CVL half (spelling/slang/grammar) stays in the full `legal` profile. Per-language legal style data
   (e.g. French/German legal conventions) is the "more resources" path, like language lexicons.
-- ⬜ Add more domains (financial, etc.); per-language legal data; optional auto-pick domain by keyword.
+- ✅ **legal resourced** — `legal_terms.py` (82 curated Latin/legal-term misspelling→correction entries,
+  high-precision) wired into BOTH the legal domain and the standalone `legal` profile. Medical: RxNorm
+  drug check (25k) + ISMP + dosage; UMLS terminology pending NLM approval.
+- ⬜ Add more domains (financial, etc.); per-language legal style data; optional auto-pick domain by keyword.
 
 ## Cross-cutting principles (apply to every phase)
 - **No model in the verdict path.** Deterministic scanners own the grade; models only propose.
