@@ -194,6 +194,112 @@ def whisper_local(audio_path, language=None, model_size="large-v3"):
     return " ".join(s.text for s in segs).strip()
 
 
+# ISO 639-1 (our codes) -> 639-3 (what MMS / Seamless want)
+_ISO3 = {"en": "eng", "vi": "vie", "ar": "arb", "hi": "hin", "ur": "urd", "fr": "fra", "de": "deu",
+         "pt": "por", "tr": "tur", "es": "spa", "ru": "rus", "uk": "ukr", "ja": "jpn", "ko": "kor"}
+
+
+def _load_wav16(path):
+    """Load audio as a 16 kHz mono float array (chunks already are; whole files via ffmpeg)."""
+    import soundfile as sf
+    try:
+        wav, sr = sf.read(path)
+        if sr == 16000 and getattr(wav, "ndim", 1) == 1:
+            return wav
+    except Exception:
+        pass
+    import subprocess, tempfile, os
+    fd, tmp = tempfile.mkstemp(suffix=".wav"); os.close(fd)
+    subprocess.run(["ffmpeg", "-y", "-i", path, "-ac", "1", "-ar", "16000", tmp, "-loglevel", "error"], check=True)
+    wav, _ = sf.read(tmp); os.remove(tmp)
+    return wav
+
+
+_MMS = {}
+
+
+def mms_local(audio_path, language=None):
+    """Meta MMS (facebook/mms-1b-all) — free local ASR for 1000+ languages; strongest value on the
+    hard/thin-roster languages (ar/hi/ur). Loads the per-language adapter. Returns '' on any failure."""
+    lang3 = _ISO3.get((language or "en").split("-")[0], "eng")
+    try:
+        import torch
+        from transformers import Wav2Vec2ForCTC, AutoProcessor
+    except Exception:
+        return ""
+    if "model" not in _MMS:
+        try:
+            _MMS["proc"] = AutoProcessor.from_pretrained("facebook/mms-1b-all")
+            _MMS["model"] = Wav2Vec2ForCTC.from_pretrained("facebook/mms-1b-all")
+        except Exception:
+            return ""
+    proc, model = _MMS["proc"], _MMS["model"]
+    try:
+        proc.tokenizer.set_target_lang(lang3)
+        model.load_adapter(lang3)
+        wav = _load_wav16(audio_path)
+        inp = proc(wav, sampling_rate=16000, return_tensors="pt")
+        with torch.no_grad():
+            ids = torch.argmax(model(**inp).logits, dim=-1)
+        return proc.decode(ids[0]).strip()
+    except Exception:
+        return ""
+
+
+_PHOWHISPER = None
+
+
+def phowhisper_local(audio_path, language=None):
+    """PhoWhisper (vinai/PhoWhisper-large) — Vietnamese-specialized Whisper. Free, local. Returns ''."""
+    global _PHOWHISPER
+    try:
+        from transformers import pipeline
+    except Exception:
+        return ""
+    if _PHOWHISPER is None:
+        try:
+            _PHOWHISPER = pipeline("automatic-speech-recognition", model="vinai/PhoWhisper-large",
+                                   chunk_length_s=30)
+        except Exception:
+            return ""
+    try:
+        r = _PHOWHISPER(audio_path)
+        return (r.get("text", "") if isinstance(r, dict) else str(r)).strip()
+    except Exception:
+        return ""
+
+
+_SEAMLESS = {}
+
+
+def seamless_local(audio_path, language=None):
+    """Meta SeamlessM4T v2 (facebook/seamless-m4t-v2-large) — multilingual ASR (and the engine for the
+    future EN<->X translation track). Heavy (~9GB); free, local. Returns '' on any failure."""
+    lang3 = _ISO3.get((language or "en").split("-")[0], "eng")
+    try:
+        import torch
+        from transformers import AutoProcessor, SeamlessM4Tv2Model
+    except Exception:
+        return ""
+    if "model" not in _SEAMLESS:
+        try:
+            _SEAMLESS["proc"] = AutoProcessor.from_pretrained("facebook/seamless-m4t-v2-large")
+            _SEAMLESS["model"] = SeamlessM4Tv2Model.from_pretrained("facebook/seamless-m4t-v2-large")
+        except Exception:
+            return ""
+    proc, model = _SEAMLESS["proc"], _SEAMLESS["model"]
+    try:
+        import torch
+        wav = _load_wav16(audio_path)
+        inp = proc(audio=wav, sampling_rate=16000, return_tensors="pt")   # 'audio' (audios deprecated)
+        with torch.no_grad():
+            out = model.generate(**inp, tgt_lang=lang3, generate_speech=False)
+        seq = out[0] if torch.is_tensor(out) else out.sequences
+        return proc.decode(seq[0] if seq.ndim > 1 else seq, skip_special_tokens=True).strip()
+    except Exception:
+        return ""
+
+
 _PYANNOTE = None
 
 

@@ -17,7 +17,7 @@
 ### Needs YOU before I can wire them
 - **pyannote** (diarization/voice-fingerprint): accept the gated license on its HF page while logged in, then give me a HF **read token** (current HF key is the depleted inference one). Then I wire speaker embeddings.
 - **NVIDIA Parakeet/Canary**: choose **local (NeMo, heavy/free)** or **API (may need you to enable ASR in your NVIDIA account)**.
-- **On-demand, no auth (say the word):** Meta MMS, Meta Seamless (~9GB), PhoWhisper (vi), CAMeL Tools (ar) — I pull these when you want them.
+- **Meta MMS, PhoWhisper, Meta Seamless — DOWNLOADED + WIRED (2026-06-30).** `witness.mms_local` (in ar/hi/ur rosters), `witness.phowhisper_local` (in vi roster), `witness.seamless_local` (wired; also the EN↔X translation engine for Phase 8). All verified transcribing locally. CAMeL Tools data installed.
 
 ## The big insight: the highest-value upgrades are FREE and LOCAL
 Money buys *volume/reliability* on the paid APIs. But the biggest capability jumps cost **nothing** —

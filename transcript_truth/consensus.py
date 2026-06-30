@@ -26,10 +26,10 @@ ROSTER = {
     "pt": ["deepgram", "scribe", "hf", "gemini"],   # Tier-1
     "tr": ["deepgram", "scribe", "hf", "gemini"],   # Tier-1
     "ko": ["deepgram", "scribe", "gemini", "hf"],   # Tier-2: Korean, all read it
-    "vi": ["deepgram", "scribe", "gemini", "hf"],   # Tier-2: Vietnamese
-    "ar": ["deepgram", "scribe", "gemini", "hf"],   # Tier-3: witness quality not yet battery-validated
-    "hi": ["deepgram", "scribe", "gemini", "hf"],   # Tier-3
-    "ur": ["scribe", "gemini", "hf"],               # Tier-3: Deepgram ur support weaker
+    "vi": ["deepgram", "scribe", "gemini", "phowhisper"],   # Tier-2: + Vietnamese-specialized PhoWhisper
+    "ar": ["deepgram", "scribe", "gemini", "mms"],          # Tier-3: + Meta MMS (free, strong on thin rosters)
+    "hi": ["deepgram", "scribe", "gemini", "mms"],          # Tier-3: + MMS
+    "ur": ["scribe", "gemini", "mms"],                      # Tier-3: + MMS (Deepgram ur weaker)
     # add "uk" extras (parakeet-uk/nemotron) here once the NIM function-id is wired
 }
 
@@ -41,7 +41,25 @@ def _witness_call(name, audio_path, lang):
     if name == "gemini":   return gemini_read(audio_path, language=lang)
     if name == "hf":       return hf_read(audio_path, language=lang)
     if name == "whisper":  return whisper_local(audio_path, language=lang)
+    if name == "mms":       return witness_mms(audio_path, lang)
+    if name == "phowhisper": return witness_pho(audio_path, lang)
+    if name == "seamless":  return witness_seamless(audio_path, lang)
     return ""
+
+
+def witness_mms(audio_path, lang):
+    from .witness import mms_local
+    return mms_local(audio_path, language=lang)
+
+
+def witness_pho(audio_path, lang):
+    from .witness import phowhisper_local
+    return phowhisper_local(audio_path, language=lang)
+
+
+def witness_seamless(audio_path, lang):
+    from .witness import seamless_local
+    return seamless_local(audio_path, language=lang)
 
 
 # Witnesses with a single-call size/credit cap. On long audio these are auto-chopped
