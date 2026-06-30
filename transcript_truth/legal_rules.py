@@ -55,6 +55,8 @@ _SPELL = [
     (re.compile(r"\bU\.S\.(?!A)"), "US", "No periods: 'US', not 'U.S.'. [p.5]"),
     (re.compile(r"\be-mail\b", re.I), "email", "One word, no hyphen: 'email'. [p.5]"),
     (re.compile(r"\bhealth care\b", re.I), "healthcare", "One word: 'healthcare'. [p.5]"),
+    # 'internet' is always lowercase (p.5); guard so a legit sentence-initial capital isn't flagged.
+    (re.compile(r"(?<=[a-z,;:] )Internet\b"), "internet", "Lowercase: 'internet', not 'Internet'. [p.5]"),
 ]
 
 
