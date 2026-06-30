@@ -7,8 +7,10 @@ files (e.g. the medical lists) can be refreshed from their authoritative sources
 cli-enforcement's "re-derive from an external source on sync" idea, applied to transcription plugins.
 """
 from __future__ import annotations
+import base64
 import json
 import os
+import subprocess
 import urllib.request
 
 from . import config, manifest
@@ -16,12 +18,41 @@ from . import config, manifest
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def _remote_manifest(cfg):
+def _gh_token():
+    """A GitHub token so PRIVATE source repos work: env first, then the gh CLI."""
+    for v in ("GH_TOKEN", "GITHUB_TOKEN"):
+        if os.environ.get(v):
+            return os.environ[v]
+    try:
+        return subprocess.run(["gh", "auth", "token"], capture_output=True, text=True, timeout=10).stdout.strip() or None
+    except Exception:
+        return None
+
+
+def _fetch_file(cfg, path):
+    """Fetch a repo file via the authenticated GitHub contents API (works for private + public).
+    Returns bytes. Raises on error."""
     u = cfg["update"]
-    url = f"https://raw.githubusercontent.com/{u['source']}/{u['branch']}/plugins_manifest.json"
-    req = urllib.request.Request(url, headers={"User-Agent": "transcript-truth-updater"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.load(r)
+    url = f"https://api.github.com/repos/{u['source']}/contents/{path}?ref={u['branch']}"
+    headers = {"User-Agent": "transcript-truth-updater", "Accept": "application/vnd.github.raw+json"}
+    tok = _gh_token()
+    if tok:
+        headers["Authorization"] = f"Bearer {tok}"
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=25) as r:
+        data = r.read()
+    # raw accept header returns the file bytes directly; if JSON (base64) sneaks through, decode it
+    try:
+        j = json.loads(data)
+        if isinstance(j, dict) and j.get("encoding") == "base64":
+            return base64.b64decode(j["content"])
+    except Exception:
+        pass
+    return data
+
+
+def _remote_manifest(cfg):
+    return json.loads(_fetch_file(cfg, "plugins_manifest.json"))
 
 
 def _vt(v):
@@ -58,11 +89,8 @@ def apply(names, cfg=None):
     written = []
     for name in names:
         for rel in detail.get(name, {}).get("files", []):
-            url = f"https://raw.githubusercontent.com/{u['source']}/{u['branch']}/{rel}"
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": "transcript-truth-updater"})
-                with urllib.request.urlopen(req, timeout=30) as r:
-                    body = r.read()
+                body = _fetch_file(cfg, rel)
                 dest = os.path.join(_ROOT, rel)
                 os.makedirs(os.path.dirname(dest), exist_ok=True)
                 open(dest, "wb").write(body)

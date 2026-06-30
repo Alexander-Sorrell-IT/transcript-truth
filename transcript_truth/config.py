@@ -14,8 +14,8 @@ FREQUENCIES = {"off": None, "hourly": 3600, "daily": 86400, "weekly": 604800, "m
 DEFAULT = {
     "update": {
         "frequency": "weekly",                                  # off|hourly|daily|weekly|monthly
-        "source": "alexander-sorrell-it/transcript-truth",      # GitHub repo holding the plugin manifest
-        "branch": "main",
+        "source": "Alexander-Sorrell-IT/thoth",                 # GitHub repo holding the plugin manifest
+        "branch": "multilang-parity",
         "last_check": None,                                     # epoch seconds of last successful check
         "auto": True,                                          # allow auto-update when due
     }
