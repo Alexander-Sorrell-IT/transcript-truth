@@ -56,6 +56,39 @@ def dangerous_abbreviations(t: Transcript) -> list[Flag]:
     return out
 
 
+# a word sitting immediately before a dose (WORD 500 mg) is probably a drug name
+_DRUG_CTX = re.compile(r"\b([A-Za-z][A-Za-z\-]{3,})\s+\d+(?:\.\d+)?\s*(?:mg|mcg|ml|g|units?|iu)\b", re.I)
+
+
+def drug_name_check(t: Transcript) -> list[Flag]:
+    """Flag a word in DOSAGE position that isn't a known RxNorm drug (and suggest the closest real
+    one). Skips common English words (a high wordfreq = a verb like 'gave/took', not a drug).
+    No-ops until the drug list is downloaded via `--refresh-data` (medical_data.refresh_drugs)."""
+    from .medical_data import drug_set
+    drugs = drug_set()
+    if not drugs:
+        return []
+    import difflib
+    try:
+        from wordfreq import zipf_frequency
+    except Exception:
+        zipf_frequency = lambda w, l: 0.0
+    out: list[Flag] = []
+    for ln in t.lines:
+        for m in _DRUG_CTX.finditer(ln.text):
+            w = m.group(1)
+            wl = w.lower()
+            if wl in drugs or zipf_frequency(wl, "en") >= 3.3:   # known drug, or a common English word
+                continue
+            near = difflib.get_close_matches(wl, drugs, n=1, cutoff=0.85)
+            sugg = f" — did you mean '{near[0]}'?" if near else ""
+            out.append(Flag(
+                rule="med_drug_name", severity="review", line=ln.n, evidence=w,
+                label=f"'{w}' before a dose isn't a known drug name{sugg}",
+                fix="Verify the drug name against the prescription/audio (RxNorm has no match)."))
+    return out
+
+
 def dosage_hygiene(t: Transcript) -> list[Flag]:
     out: list[Flag] = []
     for ln in t.lines:

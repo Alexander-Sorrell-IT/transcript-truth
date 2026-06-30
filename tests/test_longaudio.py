@@ -232,6 +232,18 @@ def test_medical_dangerous_abbreviations():
     assert any(x.rule == "med_dosage" for x in f)          # 1.0 mg trailing zero
 
 
+def test_medical_drug_name_check():
+    from transcript_truth.medical_data import drug_set
+    if not drug_set():
+        return                                             # drug list not downloaded (--refresh-data); skip
+    from transcript_truth import audit_transcript
+    f = audit_transcript("gave metformine 500 mg", profile="en", domain="medical").flags
+    assert any(x.rule == "med_drug_name" and x.evidence == "metformine" for x in f)
+    # a real drug and a common verb in dose position must NOT flag
+    assert not any(x.rule == "med_drug_name" for x in audit_transcript("took metformin 500 mg", profile="en", domain="medical").flags)
+    assert not any(x.rule == "med_drug_name" for x in audit_transcript("gave 500 mg", profile="en", domain="medical").flags)
+
+
 def test_legal_domain_composes_across_languages():
     from transcript_truth import audit_transcript
     from transcript_truth.domains import domain_names

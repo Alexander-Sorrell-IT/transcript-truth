@@ -25,6 +25,10 @@ def main(argv=None) -> int:
                   f"{len(r.get('updates',{}))} updated, {len(r.get('new',{}))} new; "
                   f"applied {len(r.get('applied',[]))} files")
             return 0
+        elif a == "--refresh-data":               # re-pull domain reference data (RxNorm drugs, …)
+            from . import update
+            print("refresh-data:", update.refresh_data())
+            return 0
         elif a == "--update-check":
             from . import update
             r = update.check()

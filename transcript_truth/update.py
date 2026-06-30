@@ -100,6 +100,18 @@ def apply(names, cfg=None):
     return {"error": None, "written": written}
 
 
+def refresh_data():
+    """Re-pull domain reference DATA from authoritative sources (the 'more resources' layer):
+    RxNorm drug names for the medical domain, etc. Returns {source: count}."""
+    out = {}
+    try:
+        from .medical_data import refresh_drugs
+        out["rxnorm_drugs"] = refresh_drugs()
+    except Exception as e:
+        out["rxnorm_drugs"] = f"err {str(e)[:40]}"
+    return out
+
+
 def run(force=False, auto_apply=None):
     """Cadence-aware update. Returns a summary dict. `force` ignores the schedule."""
     cfg = config.load()

@@ -43,10 +43,10 @@ def compose(profile_name: str, domain_name: str) -> Profile:
 # --- built-in domains ---
 register_domain("general", (), "no domain-specific rules")
 
-from .medical_rules import dangerous_abbreviations, dosage_hygiene  # noqa: E402
+from .medical_rules import dangerous_abbreviations, dosage_hygiene, drug_name_check  # noqa: E402
 register_domain(
-    "medical", (dangerous_abbreviations, dosage_hygiene),
-    "Medical — ISMP 'Do Not Use' dangerous-abbreviation + dosage-hygiene checks (language-agnostic)",
+    "medical", (dangerous_abbreviations, dosage_hygiene, drug_name_check),
+    "Medical — ISMP dangerous-abbreviation + dosage hygiene + RxNorm drug-name check (language-agnostic)",
 )
 
 # Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide
