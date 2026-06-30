@@ -232,6 +232,16 @@ def test_medical_dangerous_abbreviations():
     assert any(x.rule == "med_dosage" for x in f)          # 1.0 mg trailing zero
 
 
+def test_transcribeme_legal_rules():
+    from transcript_truth import audit_transcript
+    f = audit_transcript("He [laughs] said see Page 5.", profile="en", domain="legal").flags
+    assert any(x.rule == "tm_sound_tag" and x.evidence == "[laughs]" for x in f)  # only coughs/sneezes/phone rings
+    assert any(x.rule == "tm_lowercase" and x.evidence == "Page" for x in f)       # Bates terms lowercase
+    # allowed sound tags + sentence-initial caps must stay clean
+    ok = audit_transcript("The witness [coughs]. Page 5 shows it.", profile="en", domain="legal").flags
+    assert not any(x.rule in ("tm_sound_tag", "tm_lowercase") for x in ok)
+
+
 def test_medical_drug_name_check():
     from transcript_truth.medical_data import drug_set
     if not drug_set():
