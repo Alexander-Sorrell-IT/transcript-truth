@@ -232,6 +232,18 @@ def test_medical_dangerous_abbreviations():
     assert any(x.rule == "med_dosage" for x in f)          # 1.0 mg trailing zero
 
 
+def test_legal_domain_composes_across_languages():
+    from transcript_truth import audit_transcript
+    from transcript_truth.domains import domain_names
+    assert "legal" in domain_names()
+    viol = "There were (laughs) twenty people and it was (inaudible)."
+    for lang in ("en", "fr", "ja"):
+        rules = {f.rule for f in audit_transcript(viol, profile=lang, domain="legal").flags}
+        assert "legal_tag" in rules and "legal_number" in rules, lang
+    # without the legal domain, no legal flags
+    assert not any(f.rule.startswith("legal") for f in audit_transcript(viol, profile="en").flags)
+
+
 def test_medical_composes_across_languages_no_false_positive():
     from transcript_truth import audit_transcript
     # same medical rules fire on French...

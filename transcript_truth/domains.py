@@ -48,3 +48,16 @@ register_domain(
     "medical", (dangerous_abbreviations, dosage_hygiene),
     "Medical — ISMP 'Do Not Use' dangerous-abbreviation + dosage-hygiene checks (language-agnostic)",
 )
+
+# Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide
+# that generalizes across languages (titles, numbers, a.m./p.m., bracketed tags, non-verbals,
+# label spacing, timestamps). The English-SPECIFIC half (CVL spelling/slang/contractions/grammar)
+# stays in the full `legal` PROFILE; per-language legal style data is the "more resources" path.
+from .legal_rules import (legal_titles, legal_numbers, legal_ampm, legal_tags,  # noqa: E402
+                          legal_nonverbal, legal_spacing)
+from .scanners import timestamps as _timestamps  # noqa: E402
+register_domain(
+    "legal", (_timestamps, legal_titles, legal_numbers, legal_ampm, legal_tags,
+              legal_nonverbal, legal_spacing),
+    "Legal (TranscribeMe CVL) — composable formatting: titles, numbers, a.m./p.m., tags, spacing",
+)

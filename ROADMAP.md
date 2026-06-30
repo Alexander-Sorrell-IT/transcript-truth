@@ -34,8 +34,11 @@ AND an optional **domain** plugin (medical/legal/… — language-agnostic rules
 with any language. `domains.py` = the domain registry + `compose()`.
 - ✅ **Domain axis built** — `domains.py`; **medical** domain done (`medical_rules`: ISMP "Do Not Use"
   dangerous-abbreviation list + dosage hygiene — a safety crown jewel; composes across languages, tested).
-- ⬜ Migrate the existing **legal** CVL profile onto the domain axis (so `legal × any language`); add more
-  domains (e.g. financial). Optional: auto-pick domain by keyword.
+- ✅ **legal** migrated onto the domain axis — `domains.py` registers `legal` (structural CVL: titles,
+  numbers, a.m./p.m., tags, non-verbals, spacing) composing with ALL languages; the English-specific
+  CVL half (spelling/slang/grammar) stays in the full `legal` profile. Per-language legal style data
+  (e.g. French/German legal conventions) is the "more resources" path, like language lexicons.
+- ⬜ Add more domains (financial, etc.); per-language legal data; optional auto-pick domain by keyword.
 
 ## Cross-cutting principles (apply to every phase)
 - **No model in the verdict path.** Deterministic scanners own the grade; models only propose.
