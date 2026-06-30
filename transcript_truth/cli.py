@@ -14,10 +14,39 @@ def main(argv=None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
     mode = "clean_verbatim"
     profile = "default"
+    domain = None
     do_thoth = False
     files = []
     for a in argv:
-        if a in ("--thoth", "--fix"):
+        if a == "--update":                       # cadence-aware: pull newer/new plugins now
+            from . import update
+            r = update.run(force=True)
+            print("update:", r["error"] if r.get("error") else
+                  f"{len(r.get('updates',{}))} updated, {len(r.get('new',{}))} new; "
+                  f"applied {len(r.get('applied',[]))} files")
+            return 0
+        elif a == "--update-check":
+            from . import update
+            r = update.check()
+            print("update check:", r["error"] or
+                  f"{len(r['updates'])} updates, {len(r['new'])} new plugins available")
+            return 0
+        elif a.startswith("--set-update-frequency="):
+            from . import config
+            try:
+                p = config.set_update_frequency(a.split("=", 1)[1])
+                print(f"update frequency set ({p})")
+            except ValueError as e:
+                print(e)
+            return 0
+        elif a == "--update-status":
+            from . import config
+            c = config.load()["update"]
+            print(f"frequency={c['frequency']} source={c['source']} last_check={c['last_check']} due={config.update_due()}")
+            return 0
+        elif a.startswith("--domain="):
+            domain = a.split("=", 1)[1]
+        elif a in ("--thoth", "--fix"):
             do_thoth = True
         elif a in ("--full", "--full-verbatim"):
             mode = "full_verbatim"
@@ -44,7 +73,7 @@ def main(argv=None) -> int:
     path = files[0]
     with open(path, encoding="utf-8") as fh:
         text = fh.read()
-    r = audit_transcript(text, mode=mode, profile=profile)
+    r = audit_transcript(text, mode=mode, profile=profile, domain=domain)
 
     print()
     print("  transcript-truth — guideline-compliance receipt")

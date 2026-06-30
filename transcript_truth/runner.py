@@ -52,3 +52,18 @@ def transcribe(audio_path: str, lang: str, profile: str | None = None,
     receipt = audit_transcript(content, mode=mode, profile=profile)
     return {"transcript": formatted, "content": content, "receipt": receipt,
             "lang": lang, "profile": profile, "n_utterances": len(utts)}
+
+
+def transcribe_auto(audio_path: str, mode: str = "clean_verbatim"):
+    """Auto-routed transcription: detect the language, then transcribe with that language's
+    profile — no manual `lang`/`--profile` needed. Falls back to English if detection fails.
+    Adds `detected` (the raw detected code) to the result."""
+    from .language import detect, profile_for
+    from .profiles import REGISTRY
+    lang = detect(audio_path) or "en"
+    prof = profile_for(lang)
+    if prof not in REGISTRY:                  # language mapped but its profile isn't built yet
+        prof = "default"                      # -> still run the mechanical checks, don't crash
+    out = transcribe(audio_path, lang, prof, mode)
+    out["detected"] = lang
+    return out

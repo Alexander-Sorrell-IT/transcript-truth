@@ -1,0 +1,120 @@
+[
+ {
+  "case": "clean",
+  "ref_words": 12,
+  "reads": {
+   "deepgram": "The quarterly report shows that revenue increased by 15% this year.",
+   "scribe": "The quarterly report shows that revenue increased by 15% this year.",
+   "hf": "",
+   "gemini": "The quarterly report shows that revenue increased by 15% this year."
+  },
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "gemini": 0.0,
+   "scribe": 0.0
+  },
+  "wer_consensus": 0.0,
+  "wer_consensus_raw": 0.1667,
+  "consensus_agreement_pct": 100,
+  "n_models": 3
+ },
+ {
+  "case": "fast",
+  "ref_words": 12,
+  "reads": {
+   "deepgram": "The quarterly report shows that revenue increased by 15% this year.",
+   "scribe": "The quarterly report shows that revenue increased by 15% this year.",
+   "hf": "",
+   "gemini": "The quarterly report shows that revenue increased by 15% this year."
+  },
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "gemini": 0.0,
+   "scribe": 0.0
+  },
+  "wer_consensus": 0.0,
+  "wer_consensus_raw": 0.1667,
+  "consensus_agreement_pct": 100,
+  "n_models": 3
+ },
+ {
+  "case": "noisy",
+  "ref_words": 12,
+  "reads": {
+   "deepgram": "The quarterly report shows that revenue increased by 15% this year.",
+   "scribe": "The quarterly report shows that revenue increased by 15% this year.",
+   "hf": "",
+   "gemini": "The quarterly report shows that revenue increased by 15% this year."
+  },
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "gemini": 0.0,
+   "scribe": 0.0
+  },
+  "wer_consensus": 0.0,
+  "wer_consensus_raw": 0.1667,
+  "consensus_agreement_pct": 100,
+  "n_models": 3
+ },
+ {
+  "case": "numbers",
+  "ref_words": 20,
+  "reads": {
+   "deepgram": "On 03/03/2025, doctor Eleanor Vance met the board in Zurich to approve the $47,000,000 acquisition.",
+   "scribe": "On March 3rd, 2025, Dr. Elena Vance met the board in Zurich to approve the $47 million acquisition.",
+   "hf": "",
+   "gemini": "On March 3rd, 2025, Dr. Eleanor Vance met the board in Zurich to approve the 47 million dollar acquisition."
+  },
+  "wer_by_model": {
+   "deepgram": 0.2778,
+   "gemini": 0.0556,
+   "scribe": 0.2222
+  },
+  "wer_consensus": 0.0556,
+  "wer_consensus_raw": 0.3182,
+  "consensus_agreement_pct": 89,
+  "n_models": 3
+ },
+ {
+  "case": "two_overlap",
+  "ref_words": 22,
+  "reads": {
+   "deepgram": "Did you finish the analysis we talked about on Tuesday? Need to double check the figures before the meeting.",
+   "scribe": "Did you finish the analysis we talked about on Tuesday? Almost, I just need to double-check the figures before the meeting.",
+   "hf": "",
+   "gemini": "Did you finish the analysis we talked about on Tuesday? Oh, yes. I just need to double-check the figures before the meeting."
+  },
+  "wer_by_model": {
+   "deepgram": 0.1364,
+   "gemini": 0.0909,
+   "scribe": 0.0
+  },
+  "wer_consensus": 0.0,
+  "wer_consensus_raw": 0.0,
+  "consensus_agreement_pct": 91,
+  "n_models": 3,
+  "diar_agreement_pct": 90.0,
+  "diar_speakers": "2 vs 2 ref"
+ },
+ {
+  "case": "two_seq",
+  "ref_words": 22,
+  "reads": {
+   "deepgram": "Did you finish the analysis we talked about on Tuesday? Almost. I just need to double check the figures before the meeting.",
+   "scribe": "Did you finish the analysis we talked about on Tuesday? Almost, I just need to double-check the figures before the meeting.",
+   "hf": "",
+   "gemini": "Did you finish the analysis we talked about on Tuesday? Almost, I just need to double-check the figures before the meeting."
+  },
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "gemini": 0.0,
+   "scribe": 0.0
+  },
+  "wer_consensus": 0.0,
+  "wer_consensus_raw": 0.0,
+  "consensus_agreement_pct": 100,
+  "n_models": 3,
+  "diar_agreement_pct": 100.0,
+  "diar_speakers": "2 vs 2 ref"
+ }
+]

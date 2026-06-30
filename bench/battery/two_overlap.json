@@ -1,0 +1,15 @@
+{
+ "text": "Did you finish the analysis we talked about on Tuesday? Almost, I just need to double check the figures before the meeting.",
+ "speakers": [
+  {
+   "start": 0,
+   "end": 2.998625,
+   "speaker": "S1"
+  },
+  {
+   "start": 1.498625,
+   "end": 5.321375,
+   "speaker": "S2"
+  }
+ ]
+}

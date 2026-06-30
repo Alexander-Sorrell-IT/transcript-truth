@@ -60,11 +60,24 @@ def elevenlabs_diarize(audio_path, language=None):
     body += (f"--{boundary}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"{fn}\"\r\n"
              f"Content-Type: {ctype}\r\n\r\n").encode()
     body += open(audio_path, "rb").read() + f"\r\n--{boundary}--\r\n".encode()
-    req = urllib.request.Request("https://api.elevenlabs.io/v1/speech-to-text", data=body, headers={
-        "xi-api-key": _key("ELEVENLABS_API_KEY"),
-        "Content-Type": f"multipart/form-data; boundary={boundary}"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        d = json.load(r)
+    # Whole-file diarize gives globally-consistent speaker ids (no per-chunk relabeling), so
+    # we do NOT chunk this — we just make the large upload robust. The big multipart POST can
+    # throw a transient SSL EOF / transport error; retry it rather than falling back to chopping
+    # (which would fragment speaker identities across pieces).
+    import ssl, time
+    d = None
+    for attempt in range(4):
+        req = urllib.request.Request("https://api.elevenlabs.io/v1/speech-to-text", data=body, headers={
+            "xi-api-key": _key("ELEVENLABS_API_KEY"),
+            "Content-Type": f"multipart/form-data; boundary={boundary}"})
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                d = json.load(r)
+            break
+        except (urllib.error.URLError, ssl.SSLError) as e:
+            if attempt == 3:
+                raise
+            time.sleep(2 * (attempt + 1))            # transient large-upload failure → retry
     turns, cur = [], None
     for w in d.get("words", []):
         if w.get("type") not in ("word", None):
@@ -118,18 +131,33 @@ def gemini_read(audio_path, language=None):
     raise last
 
 
-def hf_read(audio_path, language=None, model="openai/whisper-large-v3"):
+def hf_read(audio_path, language=None, model="openai/whisper-large-v3", retries=4):
     """Whisper-large-v3 via Hugging Face Inference Providers (free tier; multilingual,
     auto-detects language). A 5th witness — adds the Whisper family to the consensus.
-    The legacy api-inference.huggingface.co host is dead; this uses the router endpoint."""
-    import mimetypes
+    The legacy api-inference.huggingface.co host is dead; this uses the router endpoint.
+
+    HF's serverless model goes COLD (503 'loading') and rate-limits bursts (429) — the
+    real cause of the flaky empties, not audio length. So retry with backoff on the
+    transient codes; raise on anything else. This is what lets chunked/parallel HF be
+    reliable instead of dropping chunks silently."""
+    import mimetypes, time
     ctype = mimetypes.guess_type(audio_path)[0] or "audio/wav"
-    req = urllib.request.Request(
-        f"https://router.huggingface.co/hf-inference/models/{model}",
-        data=open(audio_path, "rb").read(),
-        headers={"Authorization": "Bearer " + _key("HF_API_KEY"), "Content-Type": ctype})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return json.load(r).get("text", "").strip()
+    data = open(audio_path, "rb").read()
+    delay = 2.0
+    for attempt in range(retries):
+        req = urllib.request.Request(
+            f"https://router.huggingface.co/hf-inference/models/{model}",
+            data=data,
+            headers={"Authorization": "Bearer " + _key("HF_API_KEY"), "Content-Type": ctype})
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return json.load(r).get("text", "").strip()
+        except urllib.error.HTTPError as e:
+            if e.code in (503, 429, 500, 502) and attempt < retries - 1:
+                time.sleep(delay); delay *= 2          # cold-start / throttle → back off
+                continue
+            raise
+    return ""
 
 
 def deepgram_structured(audio_path, language="en"):
@@ -146,6 +174,69 @@ def deepgram_structured(audio_path, language="en"):
     return [{"start": u.get("start", 0.0), "end": u.get("end", 0.0),
              "speaker": u.get("speaker", 0), "text": u.get("transcript", "").strip()}
             for u in utts if u.get("transcript", "").strip()]
+
+
+_WHISPER_LOCAL = None
+
+
+def whisper_local(audio_path, language=None, model_size="large-v3"):
+    """Local Whisper via faster-whisper — a FREE, unlimited, all-language witness that runs on the
+    M1 (no API, no credits, no rate limits). Replaces the HF Whisper witness that hit the 402 credit
+    wall. Model is loaded once and cached. Returns '' if faster-whisper isn't installed."""
+    global _WHISPER_LOCAL
+    try:
+        from faster_whisper import WhisperModel
+    except Exception:
+        return ""
+    if _WHISPER_LOCAL is None:
+        _WHISPER_LOCAL = WhisperModel(model_size, device="cpu", compute_type="int8")
+    segs, _ = _WHISPER_LOCAL.transcribe(audio_path, language=language or None, beam_size=1)
+    return " ".join(s.text for s in segs).strip()
+
+
+_PYANNOTE = None
+
+
+def pyannote_diarize(audio_path, language=None):
+    """pyannote.audio speaker diarization — a 3rd INDEPENDENT diarizer (embedding-based, local, free).
+    Different family than Deepgram/Scribe, so it strengthens cross-diarizer consensus and is the
+    voice-fingerprint backstop for very long audio. Returns [{start,end,speaker,text=''}] (diarization
+    only — no ASR). Uses HF_TOKEN; returns [] if pyannote/token unavailable."""
+    global _PYANNOTE
+    try:
+        from pyannote.audio import Pipeline
+    except Exception:
+        return []
+    if _PYANNOTE is None:
+        try:
+            tok = _key("HF_TOKEN")
+        except Exception:
+            return []
+        try:
+            _PYANNOTE = Pipeline.from_pretrained("pyannote/speaker-diarization-3.1", token=tok)
+        except TypeError:
+            _PYANNOTE = Pipeline.from_pretrained("pyannote/speaker-diarization-3.1", use_auth_token=tok)
+    out = _PYANNOTE(audio_path)
+    ann = getattr(out, "speaker_diarization", out)   # pyannote 4.x wraps it in DiarizeOutput
+    return [{"start": float(seg.start), "end": float(seg.end), "speaker": spk, "text": ""}
+            for seg, _, spk in ann.itertracks(yield_label=True)]
+
+
+def deepgram_detect_language(audio_path):
+    """Deepgram language auto-detection — returns the detected language code (e.g. 'en', 'ja',
+    'ru') or '' if undetermined. Cheap front-end so the router can pick the right roster/profile
+    without the caller specifying a language."""
+    url = "https://api.deepgram.com/v1/listen?model=nova-2&detect_language=true&punctuate=false"
+    req = urllib.request.Request(url, data=open(audio_path, "rb").read(), headers={
+        "Authorization": "Token " + _key("DEEPGRAM_API_KEY"), "Content-Type": "audio/wav"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        d = json.load(r)
+    ch = d.get("results", {}).get("channels", [{}])[0]
+    lang = ch.get("detected_language") or ""
+    if not lang:
+        alts = ch.get("alternatives", [{}])
+        lang = alts[0].get("languages", [""])[0] if alts else ""
+    return lang.split("-")[0].lower() if lang else ""    # 'en-US' -> 'en'
 
 
 def deepgram_read(audio_path, language="ja"):

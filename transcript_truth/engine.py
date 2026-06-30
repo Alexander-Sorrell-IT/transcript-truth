@@ -11,7 +11,7 @@ def parse_transcript(text: str, mode: str = "clean_verbatim") -> Transcript:
 
 
 def audit_transcript(text: str, mode: str = "clean_verbatim", coherence: bool = False,
-                     profile: str = "default") -> Receipt:
+                     profile: str = "default", domain: str | None = None) -> Receipt:
     """Ingest -> deterministic scanners -> pure-function grade. Mirrors RoboTruth.audit_diff.
 
     profile selects the language/style-guide rule set (see transcript_truth.profiles):
@@ -22,7 +22,11 @@ def audit_transcript(text: str, mode: str = "clean_verbatim", coherence: bool = 
     gated deterministically). It is OFF by default so the default path stays fast and
     model-free; its flags are 'review' tier (surfaced for a human, cap the grade at B,
     never enter the deterministic error score)."""
-    prof = get_profile(profile)
+    if domain and domain != "general":
+        from .domains import compose
+        prof = compose(profile, domain)     # language × domain = both scanner sets
+    else:
+        prof = get_profile(profile)
     t = parse_transcript(text, mode)
     flags = run_scanners(t, prof.scanners)
     if coherence:

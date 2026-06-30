@@ -7,6 +7,68 @@ import re
 
 _JP = re.compile(r"[぀-ヿ一-鿿々〆ー]")   # hiragana, katakana, kanji, ー
 _LATIN = re.compile(r"[A-Za-z]")
+_CYR = re.compile(r"[Ѐ-ӿ]")        # Cyrillic (ru/uk)
+_HANGUL = re.compile(r"[가-힣]")     # Korean
+_ARABIC = re.compile(r"[؀-ۿ]")     # Arabic/Urdu
+_DEVA = re.compile(r"[ऀ-ॿ]")       # Devanagari (Hindi)
+
+# lang code -> the deterministic profile that audits it (see transcript_truth.profiles).
+# New languages auto-route here the moment their profile is registered.
+PROFILE_FOR = {"ja": "default", "en": "en", "es": "es", "ru": "ru", "uk": "uk",
+               "de": "de", "fr": "fr", "pt": "pt", "tr": "tr", "vi": "vi",
+               "ko": "ko", "ar": "ar", "hi": "hi", "ur": "ur"}
+
+
+def profile_for(lang):
+    """Map a detected language code to its audit profile (falls back to 'default')."""
+    return PROFILE_FOR.get((lang or "").split("-")[0].lower(), "default")
+
+
+def detect(audio_path, slice_s=45):
+    """Auto-detect the spoken language of an audio file. Detects on the first `slice_s` seconds
+    (cheap) via Deepgram's detector. Returns a language code ('en', 'ja', ...) or '' if unknown.
+    The front door of routing: detect -> route to that language's roster + profile."""
+    from . import chunking, witness
+    probe_path, tmp = audio_path, None
+    if chunking.have_ffmpeg() and (chunking.probe(audio_path)[0] or 0) > slice_s:
+        import os, subprocess, tempfile
+        fd, tmp = tempfile.mkstemp(suffix=".wav", prefix="ttdetect_"); os.close(fd)
+        try:
+            subprocess.run(["ffmpeg", "-y", "-t", str(slice_s), "-i", audio_path,
+                            "-ac", "1", "-ar", "16000", tmp, "-loglevel", "error"], check=True)
+            probe_path = tmp
+        except Exception:
+            probe_path = audio_path
+    try:
+        return witness.deepgram_detect_language(probe_path)
+    finally:
+        if tmp and __import__("os").path.exists(tmp):
+            __import__("os").remove(tmp)
+
+
+def route(audio_path):
+    """Detect language and return the routing decision: {lang, profile, roster}. `roster` is the
+    witness list for that language (from consensus.ROSTER); empty if the language is unknown."""
+    from .consensus import ROSTER
+    lang = detect(audio_path)
+    return {"lang": lang, "profile": profile_for(lang), "roster": ROSTER.get(lang, [])}
+
+
+def script_of(ch):
+    """Coarse script class of a single character (for per-turn language tagging)."""
+    if _JP.search(ch):
+        return "ja"
+    if _HANGUL.search(ch):
+        return "ko"
+    if _CYR.search(ch):
+        return "cyr"      # ru/uk share a script — splitting them needs a model (code-switching phase)
+    if _ARABIC.search(ch):
+        return "ar"       # ar/ur share a script
+    if _DEVA.search(ch):
+        return "hi"
+    if _LATIN.search(ch):
+        return "en"       # en/es/de/fr/pt/tr share a script
+    return None
 
 
 def lang_of(text):

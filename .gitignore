@@ -25,3 +25,10 @@ data/samples/
 _bench.py
 _bench2.py
 _build_all.py
+
+# session scratch / automation one-offs
+*.mjs
+_*.py
+*.log
+setup_models.log
+bench/battery/*.wav

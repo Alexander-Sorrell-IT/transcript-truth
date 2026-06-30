@@ -1,0 +1,100 @@
+{
+  "engine": "0.2.0",
+  "plugins": {
+    "fr": "1.0.0",
+    "de": "1.0.0",
+    "pt": "1.0.0",
+    "tr": "1.0.0",
+    "ko": "1.0.0",
+    "vi": "1.0.0",
+    "ar": "1.0.0",
+    "hi": "1.0.0",
+    "ur": "1.0.0",
+    "medical": "1.0.0"
+  },
+  "detail": {
+    "fr": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/fr.py",
+        "transcript_truth/fr_rules.py"
+      ]
+    },
+    "de": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/de.py",
+        "transcript_truth/de_rules.py"
+      ]
+    },
+    "pt": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/pt.py",
+        "transcript_truth/pt_rules.py"
+      ]
+    },
+    "tr": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/tr.py",
+        "transcript_truth/tr_rules.py"
+      ]
+    },
+    "ko": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/ko.py",
+        "transcript_truth/ko_rules.py"
+      ]
+    },
+    "vi": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/vi.py",
+        "transcript_truth/vi_rules.py"
+      ]
+    },
+    "ar": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/ar.py",
+        "transcript_truth/script_rules.py"
+      ]
+    },
+    "hi": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/hi.py",
+        "transcript_truth/script_rules.py"
+      ]
+    },
+    "ur": {
+      "version": "1.0.0",
+      "kind": "language",
+      "files": [
+        "transcript_truth/profiles/ur.py",
+        "transcript_truth/script_rules.py"
+      ]
+    },
+    "medical": {
+      "version": "1.0.0",
+      "kind": "domain",
+      "files": [
+        "transcript_truth/medical_rules.py"
+      ],
+      "data_sources": {
+        "dangerous_abbreviations": "ISMP 'Do Not Use' list",
+        "drug_names": "RxNorm (NLM)"
+      }
+    }
+  }
+}
