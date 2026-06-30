@@ -35,7 +35,7 @@ _DO_NOT_USE = {
 # Unicode-aware: a token starts with a letter and keeps accented letters whole (so "reçu" is ONE
 # token and the single-letter 'u' rule can't fire inside it).
 _TOKEN = re.compile(r"[^\W\d_][\w.µ/]*", re.UNICODE)
-_TRAILING_ZERO = re.compile(r"\b(\d+)\.0+\s*(mg|ml|mcg|g|units?|l)\b", re.I)
+_TRAILING_ZERO = re.compile(r"\b(\d+\.\d*0)\s*(mg|ml|mcg|g|units?|l)\b", re.I)  # ANY decimal ending in 0
 _NAKED_DECIMAL = re.compile(r"(?<![\d.])\.(\d+)\s*(mg|ml|mcg|g|units?|l)\b", re.I)
 
 
@@ -44,9 +44,10 @@ def dangerous_abbreviations(t: Transcript) -> list[Flag]:
     for ln in t.lines:
         for m in _TOKEN.finditer(ln.text):
             w = m.group(0)
-            info = _DO_NOT_USE.get(w) or _DO_NOT_USE.get(w.strip("."))   # tolerate a trailing period
+            # tolerate periods anywhere: trailing (QD.) and interior (q.d. -> qd)
+            info = _DO_NOT_USE.get(w) or _DO_NOT_USE.get(w.strip(".")) or _DO_NOT_USE.get(w.replace(".", ""))
             if info:
-                w = w.strip(".") if w.strip(".") in _DO_NOT_USE else w
+                w = next((c for c in (w, w.strip("."), w.replace(".", "")) if c in _DO_NOT_USE), w)
                 meaning, why = info
                 out.append(Flag(
                     rule="med_dangerous_abbrev", severity="moderate", line=ln.n, evidence=w,
@@ -62,7 +63,7 @@ def dosage_hygiene(t: Transcript) -> list[Flag]:
             out.append(Flag(
                 rule="med_dosage", severity="moderate", line=ln.n, evidence=m.group(0).strip(),
                 label=f"Trailing zero '{m.group(0).strip()}' — drop it (a missed decimal = 10x overdose)",
-                fix=f"Write '{m.group(1)} {m.group(2)}' — never a trailing zero after a decimal."))
+                fix=f"Write '{m.group(1).rstrip('0').rstrip('.')} {m.group(2)}' — never a trailing zero after a decimal."))
         for m in _NAKED_DECIMAL.finditer(ln.text):
             out.append(Flag(
                 rule="med_dosage", severity="moderate", line=ln.n, evidence=m.group(0).strip(),

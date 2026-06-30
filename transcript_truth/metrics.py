@@ -62,46 +62,61 @@ _SCALES = {"hundred":100,"thousand":1000,"million":1000000,"billion":1000000000}
 _ORD = lambda w: w[:-2] if w[-2:] in ("th","st","nd","rd") and w[:-2].isdigit() else w
 
 
+_ORD_WORD = {"first": "one", "second": "two", "third": "three", "fourth": "four", "fifth": "five",
+             "sixth": "six", "seventh": "seven", "eighth": "eight", "ninth": "nine", "tenth": "ten",
+             "eleventh": "eleven", "twelfth": "twelve", "thirteenth": "thirteen", "twentieth": "twenty",
+             "thirtieth": "thirty"}
+_NUMWORDS = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+             "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
+             "nineteen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
+             "hundred", "thousand", "million", "billion", "trillion"}
+
+
 def _normalize_numbers(text):
-    """Canonicalize number/date/currency FORMATTING so WER measures words, not style:
-    spelled numbers -> digits, %/$ -> words, strip commas + ordinal suffixes, two adjacent
-    2-digit words read as a year (twenty twenty-five -> 2025). Bounded — covers the common
-    transcription cases, not every exotic numeral."""
+    """Canonicalize number/currency FORMATTING so WER measures words, not style: spelled cardinals
+    -> digits (via word2number), %/$ normalized, commas + ordinal suffixes stripped. CONSERVATIVE by
+    design — it never invents a wrong number: hyphenated DIGIT ranges (5-10) and phone numbers are
+    left intact (not summed), years-spelled-as-words are left alone (no fragile year guess), and any
+    word-run word2number can't parse is left verbatim. Under-normalizes rare cases rather than mangle
+    common ones (the twenty-one->2001 / 5-10->15 class of bug)."""
     import re
-    s = text.lower().replace("-", " ")
-    s = s.replace("%", " percent ").replace("$", " dollars ")
-    s = re.sub(r"(\d),(\d)", r"\1\2", s)                 # 47,000,000 -> 47000000
-    s = re.sub(r"[,.;:]", " | ", s)                       # keep punctuation as run-breakers
-    toks = [_ORD(t) for t in re.sub(r"[^\w\s'|]", " ", s).split()]
+    s = text.lower()
+    s = s.replace("%", " percent ").replace("$", " ")
+    s = re.sub(r"(\d),(\d)", r"\1\2", s)                       # 47,000,000 -> 47000000
+    s = re.sub(r"\b(\d+)(st|nd|rd|th)\b", r"\1", s)            # 3rd -> 3
+    s = re.sub(r"(?<=[a-z])-(?=[a-z])", " ", s)                # WORD-word hyphen -> space (compounds only)
+    toks = s.split()
     out, i = [], 0
     while i < len(toks):
-        cur, used, scaled = 0, False, 0
-        j = i
-        while j < len(toks):                             # collect a run of numbers (words OR digits)
-            w = toks[j]
-            if w in _UNITS:
-                cur += _UNITS[w]; used = True; j += 1
-            elif w.isdigit():
-                cur += int(w); used = True; j += 1
-            elif w in _SCALES:
-                cur = (cur or 1) * _SCALES[w]; scaled += cur; cur = 0; used = True; j += 1
-            elif w == "and" and used:
-                j += 1
-            else:
-                break                                    # punctuation '|' or any non-number breaks the run
-        if used:
-            val = scaled + cur
-            # year: "twenty twenty five" / "nineteen ninety nine" -> 2025 / 1999
-            if scaled == 0 and toks[i] in ("twenty", "nineteen") and j - i >= 2:
-                a = _UNITS.get(toks[i], 0); b = sum(_UNITS.get(t, 0) for t in toks[i+1:j])
-                if 0 < b < 100:
-                    val = a * 100 + b
-            out.append(str(val)); i = j
+        core = _ORD_WORD.get(toks[i].strip(".,;:!?'"), toks[i].strip(".,;:!?'"))
+        if core in _NUMWORDS:
+            run, j = [], i
+            while j < len(toks):
+                c = _ORD_WORD.get(toks[j].strip(".,;:!?'"), toks[j].strip(".,;:!?'"))
+                if c in _NUMWORDS or c == "and":
+                    run.append(c); j += 1
+                else:
+                    break
+            while run and run[-1] == "and":
+                run.pop(); j -= 1
+            try:
+                from word2number import w2n
+                out.append(str(w2n.word_to_num(" ".join(run))))
+            except Exception:
+                out.extend(toks[i:j])                          # not a clean cardinal -> leave verbatim
+            i = j
+            continue
+        out.append(toks[i]); i += 1
+    # collapse "<digit> <scale>" so "47 million" (=47 1000000) matches "forty seven million" (=47000000)
+    _SCALE_INT = {"100", "1000", "1000000", "1000000000", "1000000000000"}
+    merged = []
+    for t in out:
+        if merged and t in _SCALE_INT and re.fullmatch(r"\d+(\.\d+)?", merged[-1] or ""):
+            v = float(merged[-1]) * int(t)
+            merged[-1] = str(int(v)) if v == int(v) else str(v)
         else:
-            if toks[i] != "|":
-                out.append(toks[i])
-            i += 1
-    return " ".join(out)
+            merged.append(t)
+    return " ".join(merged)
 
 
 def wer(reference: str, hypothesis: str, normalize_numbers: bool = True):

@@ -64,7 +64,9 @@ def test_wer():
 def test_wer_number_aware_ignores_formatting():
     # "15%" vs "fifteen percent" is formatting, not an error
     assert M.wer("revenue rose fifteen percent", "revenue rose 15%") == 0.0
-    assert M.wer("on march third, twenty twenty-five", "on march 3rd, 2025") == 0.0  # punctuated date
+    assert M.wer("she turned twenty-one", "she turned 21") == 0.0          # cardinal, not a year guess
+    assert M.wer("forty seven million dollars", "47 million dollars") == 0.0
+    assert M.wer("take 5-10 mg", "take 5-10 mg") == 0.0                     # ranges left intact, not summed
     # but a real word error is still counted
     assert M.wer("doctor eleanor vance", "doctor elena vance", normalize_numbers=True) > 0
     # raw mode still sees formatting as a diff

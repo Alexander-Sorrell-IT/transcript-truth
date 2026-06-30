@@ -11,7 +11,9 @@ from .types import Flag, Transcript
 # A LETTER immediately before ; : ! ? or » -> missing the required French space.
 # Anchoring on a letter (not \S) avoids false-firing on times/timestamps ("12:30", "[00:01:02]")
 # and numeric ratios, where the char before the colon is a digit.
-_NEEDS_SPACE_BEFORE = re.compile(r"[A-Za-zÀ-ÿ]([;:!?»])")
+# ; ! ? » : flag when a letter precedes. ':' ONLY when it's a PROSE colon (followed by space/end) —
+# a colon glued to following text is a URL/email/scheme (https://, mailto:jean), not French prose.
+_NEEDS_SPACE_BEFORE = re.compile(r"[A-Za-zÀ-ÿ]([;!?»])|[A-Za-zÀ-ÿ](:)(?=\s|$)")
 # Opening guillemet not followed by a space.
 _NEEDS_SPACE_AFTER = re.compile(r"(«)[^\s]")
 _LABEL = "{ ; : ! ? »"  # for the fix message
@@ -21,7 +23,7 @@ def french_spacing(t: Transcript) -> list[Flag]:
     out: list[Flag] = []
     for ln in t.lines:
         for m in _NEEDS_SPACE_BEFORE.finditer(ln.text):
-            p = m.group(1)
+            p = m.group(1) or m.group(2)
             out.append(Flag(
                 rule="fr_spacing", label=f"French: a space is required before « {p} »",
                 line=ln.n, severity="minor", evidence=m.group(0),

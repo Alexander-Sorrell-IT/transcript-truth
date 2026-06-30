@@ -51,30 +51,36 @@ _CHOP_WINDOW_S = 110
 _CHOP_OVERLAP_S = 20
 
 
-def _splice(a, b, win=60, min_anchor=4):
+def _splice(a, b, win=80, min_anchor=4):
     """Stitch chunk-read b onto a by removing the duplicated overlap at the seam.
 
-    The two chunks share ~overlap_s of audio, but ASR transcribes those boundary words a
-    little differently per chunk, so an EXACT suffix==prefix match fails. Instead we fuzzy-
-    align A's tail against B's head (difflib) and cut both at the matched overlap block:
-    keep A up to where the shared run starts, keep B from where it ends. Returns
-    (merged, seam_ok); seam_ok=False => no convincing overlap found (a possible loss),
-    surfaced rather than silently concatenated. This is the 're-listen to the seam' check."""
+    SAFETY INVARIANT: we NEVER cut content out of A — only ever trim B's duplicated prefix.
+    (Cutting A is how the old version silently dropped words when a phrase repeated near the
+    seam: difflib anchored on the wrong copy and discarded A's tail. Trimming only B can at
+    worst duplicate, never lose.)
+
+    Primary: find the exact suffix-of-A == prefix-of-B overlap (immune to internal repeats) and
+    drop that many words from B. Fallback: if ASR variance breaks the exact match, trim B's
+    duplicated head only when the fuzzy match starts B's head; otherwise keep ALL of A and ALL of
+    B and flag the seam (seam_ok=False) for re-listen. Words are never silently lost."""
     aw, bw = a.split(), b.split()
     if not aw:
         return b, True
     if not bw:
         return a, True
-    tail = aw[-win:]                                  # A's trailing words
-    head = bw[:win]                                   # B's leading words
-    sm = difflib.SequenceMatcher(None, [w.lower() for w in tail], [w.lower() for w in head])
-    m = sm.find_longest_match(0, len(tail), 0, len(head))
-    if m.size >= min_anchor:
-        # cut A at the start of the shared run, B at the end of it -> overlap kept once
-        keep_a = aw[:len(aw) - len(tail) + m.a]
-        keep_b = bw[m.b + m.size:]
-        return " ".join(keep_a + tail[m.a:m.a + m.size] + keep_b), True
-    return " ".join(aw + bw), False                   # no anchor: concat + flag the seam
+    al = [w.lower() for w in aw[-win:]]
+    bl = [w.lower() for w in bw[:win]]
+    # exact suffix(A)==prefix(B) overlap — the TRUE seam overlap, robust to repeated phrases
+    cap = min(len(al), len(bl))
+    for k in range(cap, min_anchor - 1, -1):
+        if al[-k:] == bl[:k]:
+            return " ".join(aw + bw[k:]), True       # trim B's duplicated prefix; A untouched
+    # fuzzy fallback (ASR variance): trim B's head only if the match IS B's head; never cut A
+    sm = difflib.SequenceMatcher(None, al, bl)
+    m = sm.find_longest_match(0, len(al), 0, len(bl))
+    if m.size >= min_anchor and m.b == 0:
+        return " ".join(aw + bw[m.size:]), True       # drop only B's duplicated head
+    return " ".join(aw + bw), (m.size >= min_anchor)  # keep everything; flag if no anchor
 
 
 def _transcribe_chunks(chunks, name, lang, max_workers=3):
