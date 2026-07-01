@@ -293,14 +293,19 @@ def test_legal_domain_core_plus_english_layer():
 def test_medical_domain_core_plus_english_layer():
     from transcript_truth import audit_transcript
     from transcript_truth.domains import domain_languages
-    assert domain_languages("medical") == ["en"]                    # only en has the RxNorm drug layer
-    # universal core (ISMP dangerous-abbrev + dosage hygiene) works in ANY language:
+    assert domain_languages("medical") == ["en"]                    # only en has the ISMP+RxNorm layer
+    # universal core = dosage-number hygiene — works in ANY language:
     for lang in ("en", "fr", "ko"):
-        f = audit_transcript("MS 1.0 mg", profile=lang, domain="medical").flags
-        assert any(x.rule == "med_dangerous_abbrev" and x.evidence == "MS" for x in f), lang
-    # English RxNorm drug-name check is en-only — never misfires on native non-English words:
-    assert not any(x.rule == "med_drug_name"
-                   for x in audit_transcript("des cachets 500 mg", profile="fr", domain="medical").flags)
+        assert any(x.rule == "med_dosage"
+                   for x in audit_transcript("2.50 mg", profile=lang, domain="medical").flags), lang
+    # ...and is locale-safe: a thousands-separator period ("1.000 mg" = 1000) is NOT read as a decimal:
+    assert not any(x.rule == "med_dosage"
+                   for x in audit_transcript("1.000 mg", profile="de", domain="medical").flags)
+    # English/US-medical layer (ISMP abbrevs + RxNorm) is en-only — fires for en, never on native words:
+    assert any(x.rule == "med_dangerous_abbrev"
+               for x in audit_transcript("Give MS now", profile="en", domain="medical").flags)
+    assert not any(x.rule.startswith("med_dangerous") or x.rule == "med_drug_name"
+                   for x in audit_transcript("khối u ác tính", profile="vi", domain="medical").flags)
 
 
 # --- Phase 2: language routing (pure, no API) ---

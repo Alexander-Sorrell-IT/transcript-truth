@@ -35,7 +35,10 @@ _DO_NOT_USE = {
 # Unicode-aware: a token starts with a letter and keeps accented letters whole (so "reçu" is ONE
 # token and the single-letter 'u' rule can't fire inside it).
 _TOKEN = re.compile(r"[^\W\d_][\w.µ/]*", re.UNICODE)
-_TRAILING_ZERO = re.compile(r"\b(\d+\.\d*0)\s*(mg|ml|mcg|g|units?|l)\b", re.I)  # ANY decimal ending in 0
+# trailing zero after a decimal — but only 1–2 fractional digits ("1.0", "2.50"). A 3+-digit group
+# ("1.000") is a THOUSANDS separator in de/es/pt/etc. (= 1000), NOT a decimal; flagging it and
+# advising "1 mg" would be a 1000x underdose. Capping the fraction keeps this locale-safe.
+_TRAILING_ZERO = re.compile(r"\b(\d+\.\d?0)\s*(mg|ml|mcg|g|units?|l)\b", re.I)
 _NAKED_DECIMAL = re.compile(r"(?<![\d.])\.(\d+)\s*(mg|ml|mcg|g|units?|l)\b", re.I)
 
 

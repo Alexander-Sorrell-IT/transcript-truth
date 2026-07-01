@@ -51,10 +51,14 @@ def compose(profile_name: str, domain_name: str) -> Profile:
         raise KeyError(f"unknown domain {domain_name!r}; available: {avail}")
     dom = DOMAIN_REGISTRY[domain_name]
     extra = dom["per_language"].get(profile_name, ())        # language-specific layer (if built)
+    combined, seen, scanners = tuple(base.scanners) + dom["scanners"] + tuple(extra), set(), []
+    for s in combined:                                       # dedup: a base profile may already carry
+        if s not in seen:                                    # a core scanner (e.g. timestamps) — don't
+            seen.add(s); scanners.append(s)                  # run it twice (was double-counting)
     return Profile(
         name=f"{profile_name}+{domain_name}",
         description=f"{base.description}  +  {dom['description']}",
-        scanners=tuple(base.scanners) + dom["scanners"] + tuple(extra),
+        scanners=tuple(scanners),
         modes=base.modes, default_mode=base.default_mode,
         fixers=getattr(base, "fixers", ()),   # keep the language profile's redline fixers (was dropped)
     )
@@ -66,12 +70,13 @@ register_domain("general", (), "no domain-specific rules")
 from .medical_rules import dangerous_abbreviations, dosage_hygiene, drug_name_check  # noqa: E402
 register_domain(
     "medical",
-    # universal core (every language): ISMP abbrevs + dosage-number hygiene are medical conventions,
-    # not English words — safe and useful in any language.
-    scanners=(dangerous_abbreviations, dosage_hygiene),
-    # English-specific layer: RxNorm drug-name check uses an English frequency gate.
-    per_language={"en": (drug_name_check,)},
-    description="Medical — ISMP dangerous-abbrev + dosage hygiene (all languages) + RxNorm drug names (en)",
+    # universal core (every language): dosage-number hygiene (trailing-zero/naked-decimal) is
+    # locale-safe number safety, useful in any language.
+    scanners=(dosage_hygiene,),
+    # English/US-medical layer: ISMP abbreviations are English/Latin letter-abbrevs (u, cc, MS…) that
+    # collide with native words in other languages; RxNorm drug-name check uses an English frequency gate.
+    per_language={"en": (dangerous_abbreviations, drug_name_check)},
+    description="Medical — dosage hygiene (all languages) + ISMP abbrevs & RxNorm drug names (en)",
 )
 
 # Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide
@@ -85,13 +90,12 @@ from .legal_terms import legal_terms  # noqa: E402
 from .tm_legal import tm_sound_tags, tm_lowercase_terms, tm_speaker_caps, tm_double_dash, tm_spoken_punct  # noqa: E402
 register_domain(
     "legal",
-    # universal core (every language): timestamp format + double-dash-attaches punctuation are
-    # language-neutral legal-transcript conventions.
-    scanners=(_timestamps, tm_double_dash),
+    # universal core (every language): timestamp format is the one language-neutral legal convention.
+    scanners=(_timestamps,),
     # English layer: American-English CVL — case (Colloquy caps), spelling, titles, accents, English
-    # tag words, English number words, Latin terms — all English/US-legal-specific.
-    per_language={"en": (legal_titles, legal_numbers, legal_ampm, legal_tags, legal_nonverbal,
-                         legal_spacing, legal_terms, tm_sound_tags, tm_lowercase_terms,
-                         tm_speaker_caps, tm_spoken_punct)},
-    description="Legal — timestamp/dash core (all languages) + TranscribeMe CVL (en)",
+    # tag words/number words, Latin terms, and the double-dash-attach convention — all English CVL.
+    per_language={"en": (tm_double_dash, legal_titles, legal_numbers, legal_ampm, legal_tags,
+                         legal_nonverbal, legal_spacing, legal_terms, tm_sound_tags,
+                         tm_lowercase_terms, tm_speaker_caps, tm_spoken_punct)},
+    description="Legal — timestamp core (all languages) + TranscribeMe CVL (en)",
 )

@@ -98,7 +98,11 @@ def _splice(a, b, win=80, min_anchor=4):
     m = sm.find_longest_match(0, len(al), 0, len(bl))
     if m.size >= min_anchor and m.b == 0:
         return " ".join(aw + bw[m.size:]), True       # drop only B's duplicated head
-    return " ".join(aw + bw), (m.size >= min_anchor)  # keep everything; flag if no anchor
+    # Reaching here means the overlap was NOT cleanly at B's head (leading ASR artifact, m.b>0) or
+    # no anchor at all. We keep everything (never lose words), but the seam is NOT clean — the
+    # overlap is still duplicated in B. Return False so the seam is counted bad AND routed to the
+    # bridge repair, instead of certifying duplicated text as clean.
+    return " ".join(aw + bw), False
 
 
 def _relisten(name, cp, lang):

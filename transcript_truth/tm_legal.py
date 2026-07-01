@@ -64,7 +64,7 @@ _SPK = re.compile(r"^\s*([A-Za-z][A-Za-z .'\-]{0,37}?[A-Za-z])\s{2,}\S")
 _LABEL_MARKERS = (
     "mr", "ms", "mrs", "dr", "miss", "mister", "madam", "sir",
     "judge", "justice", "officer", "detective", "sergeant", "lieutenant", "captain",
-    "deputy", "attorney", "counsel", "counselor", "chief", "doctor", "professor",
+    "deputy", "attorney", "counsel", "counselor", "chief", "doctor", "professor", "investigator",
     "the court", "the witness", "the clerk", "the bailiff", "the reporter",
     "the interpreter", "the defendant", "the plaintiff", "the foreperson", "the jury",
     "by mr", "by ms", "by mrs", "by the",
@@ -110,22 +110,22 @@ def tm_double_dash(t: Transcript) -> list[Flag]:
 
 
 # Spoken punctuation (p.24): when a speaker DICTATES punctuation ("comma", "period", "stop"…), omit
-# the word and use the actual mark. The tell that it's dictated (not the noun "comma"/"period") is
-# that it sits adjacent to real punctuation: ", comma," or "…, stop." — high-precision.
+# the word and use the actual mark. Every one of these words is also an ordinary word — "stop"
+# (imperative), "period" (the emphatic idiom), "comma" (naming the mark) — so a LONE hit is
+# ambiguous. We only fire when the pattern REPEATS (2+ hits in the line = clearly dictation, as in
+# "nose, comma, throat, comma, eyes, stop."). The terminal lookahead uses (?-i:[A-Z]) so re.I
+# doesn't let a lowercase word satisfy the "next sentence starts capitalized" guard.
 _SPOKEN_PUNCT = re.compile(
-    r",\s*(comma|semicolon|colon)\s*,|,\s*(period|full stop|stop)\s*(?=\.|$|\s[A-Z])", re.I)
+    r",\s*(comma|semicolon|colon)\s*,|,\s*(period|full stop|stop)\s*(?=\.|$|\s(?-i:[A-Z]))", re.I)
 
 
 def tm_spoken_punct(t: Transcript) -> list[Flag]:
     out: list[Flag] = []
     for ln in t.lines:
         ms = list(_SPOKEN_PUNCT.finditer(ln.text))
+        if len(ms) < 2:                             # a lone punctuation-word is ambiguous — skip
+            continue
         for m in ms:
-            is_terminal = bool(m.group(2))          # period/stop/full stop (comma-guarded → unambiguous)
-            # a lone ", comma," / ", colon," is ambiguous with a sentence that merely NAMES the marks
-            # ("use a colon, comma, or period") — require 2+ dictation hits before firing on those.
-            if not is_terminal and len(ms) < 2:
-                continue
             word = (m.group(1) or m.group(2))
             out.append(Flag(
                 rule="tm_spoken_punct", severity="moderate", line=ln.n, evidence=word,
