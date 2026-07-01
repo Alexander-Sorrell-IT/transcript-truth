@@ -1,140 +1,105 @@
 # transcript-truth
 
-> **Did the transcript follow the guidelines?**
-> A deterministic transcription-QA auditor. Paste a transcript → get a receipt: every
-> guideline violation, cited at its line, with the fix — and a grade from a pure
-> function. **No model in the verdict path.**
+> **Multi-model transcription + deterministic QA.**
+> Audio in → an accurate transcript (many models vote, hard audio recovered) → a receipt:
+> every guideline violation cited at its line, with the fix, and a grade from a pure function.
+> **Models propose; a deterministic pure function owns the verdict.**
 
-Forked from [RoboTruth](https://github.com/Alexander-Sorrell-IT/robotruth)'s engine.
-RoboTruth answers *"did the AI's PR do only what it claimed?"* with deterministic
-scanners and zero LLM in the verdict. transcript-truth applies the same spine to
-transcription: deterministic **guideline scanners** read the transcript, a
-pure-function grader emits the verdict.
+Full system map + model list: **[ARCHITECTURE.md](ARCHITECTURE.md)**.
 
-## Why "no model in the verdict path" matters here
+---
 
-We learned this the hard way: an LLM asked to judge transcription guidelines was
-**confidently wrong** — unanimous, "high confidence," still incorrect, with no way
-for a non-expert to catch it. So the LLM is nowhere near the verdict. Only
-deterministic rule hits are. Every flag is reproducible and points at a line.
+## The two halves
 
-## What it checks (the mechanical half — fully deterministic)
+**1. Transcription core** — audio → accurate text.
+Multi-model ASR consensus (Deepgram · Gemini · ElevenLabs Scribe · Whisper · Meta MMS · PhoWhisper · Seamless) vote per-language; VAD chunking with **bridge chunks** + **slow-down-and-listen** recover hard audio; whole-file **diarization** (Deepgram · pyannote · Scribe) assigns speakers via a reference map. Models *propose* the text.
 
-| Scanner | Catches |
-|---|---|
-| `timestamps` | timestamps not in `[HH:MM:SS]` form (parens, missing zero-pad) |
-| `speaker_labels` | uncertain-speaker `?` misplaced (`Speaker? 1:` instead of `?Speaker 1:`) |
-| `inaudible` | malformed `[inaudible/unintelligible HH:MM:SS]` tags (misspelled, missing timestamp) |
-| `fillers` | Clean-Verbatim fillers left in (um, uh, you know, I mean, kind of, sort of) |
-| `spacing` | double spaces, space before punctuation |
+**2. QA engine** — text → grade.
+The **2-tier plugin system** (`language × domain`) scans the transcript; a pure function grades the flags.
 
-## The honest line (where to point it)
+## Models propose, the verdict is deterministic
 
-The scanners above are the **mechanical** half of any style guide — fully deterministic,
-fully citable, and most of what fails a QA pass. The **semantic** half (is this the
-right word for the meaning? does it read naturally?) is deliberately *not* automated:
-that needs a human who can read the language.
+Models are **integral to detection** — they transcribe, and they propose flags (e.g. the homophone witness). But the **grade** is a pure function over the flags. Model-proposed flags are **`review` tier** (advisory: they surface for a human and cap the grade at B, but never enter the hard error score). So: *models everywhere in detection, no model in the verdict math.*
 
-- **English transcription / your AI-eval work** → you verify the semantic half yourself,
-  so this tool is pure upside: it enforces the mechanics with zero false confidence.
-- **A language you can't read** → the mechanical half still works, but the semantic half
-  is the wall. Don't let any tool pretend otherwise.
+---
 
-## Run (point it at a file)
-
-```bash
-# default profile (Japanese + GoTranscript English)
-python3 -m transcript_truth.cli samples/sample_clean_verbatim.txt
-python3 -m transcript_truth.cli path/to/file.txt --full                    # full-verbatim (keeps fillers)
-
-# TranscribeMe Clean Verbatim for Legal (CVL)
-python3 -m transcript_truth.cli samples/sample_legal_cvl.txt --legal       # or --profile=legal
-python3 -m transcript_truth.cli --list-profiles                            # see all profiles
-
-# Thoth — deterministic auto-fix (writes <file>.thoth.txt, no model)
-python3 -m transcript_truth.cli samples/sample_legal_cvl.txt --legal --thoth
-
-python3 tests/test_transcript_truth.py     # default engine tests
-python3 tests/test_legal.py                # CVL legal tests
-python3 tests/test_personal.py             # personal-profile tests
-python3 tests/test_thoth.py                # auto-fix tests
-```
+## USE IT CORRECTLY — the 2-tier stack, models on
 
 ```python
 from transcript_truth import audit_transcript
-receipt = audit_transcript(open("file.txt").read(), profile="legal")       # or "default"
-print(receipt.grade, [(f.line, f.label) for f in receipt.flags])
+
+# FULL STACK: language tier × domain tier, with the model checks ON
+receipt = audit_transcript(text, profile="en", domain="legal", coherence=True)
+print(receipt.grade, [(f.line, f.rule, f.label) for f in receipt.flags])
 ```
 
-## Profiles — one plug-in per language / style guide
+- **`profile`** = the **LANGUAGE tier** — one of 14 (`en`, `fr`, `de`, `pt`, `es`, `tr`, `vi`, `ja`, `ko`, `ru`, `uk`, `ar`, `hi`, `ur`). Handles *that language's* grammar / spelling / script / homophones.
+- **`domain`** = the **DOMAIN tier** — `legal` (TranscribeMe CVL) or `medical` (RxNorm + ISMP + UMLS). Sits **on top** of any language.
+- **`coherence=True`** = turn the **model checks ON** (homophone witness, etc.). This is what catches its/it's, affect/effect, their/there.
 
-Each guideline is a drop-in **profile** in `transcript_truth/profiles/`. A profile bundles
-the deterministic scanners that apply to it and self-registers at import time. To add a new
-language or style guide, drop one file in that folder — nothing else changes:
+> ⚠️ **Common mistake (don't do this):** `audit_transcript(text, profile="legal")` runs the CVL *formatting* scanners **only** — no language grammar, no models. It will miss homophones and general grammar. Always compose the **language tier** and pass **`coherence=True`** unless you specifically want formatting-only.
 
-```python
-# transcript_truth/profiles/my_guide.py
-from ._base import Profile, register
-from ..my_rules import MY_SCANNERS
-register(Profile(name="myguide", description="...", scanners=(*MY_SCANNERS,)))
+**Rule of thumb:** to check anything for real, use the full stack — `profile=<language>, domain=<domain>, coherence=True`. That's what the engine is.
+
+---
+
+## The 2-tier plugin system
+
+`compose(language, domain)` merges: the **language tier's** scanners **+** the **domain's universal core** (all languages) **+** the domain's **per-language layer** (built where rules are language-specific), deduped into one Profile.
+
+- **A domain is built ONCE** and composes with every language. It adapts via (a) the universal core, (b) language-aware scanners (UMLS verifies in the transcript's own language; `wordfreq` scores frequency per-language), and (c) a small per-language layer only where rules are genuinely language-specific (ISMP = US, CVL = English).
+- Adding a language never rebuilds a domain; adding a domain never touches the languages.
+
+| Domain | Universal core (all languages) | Per-language layer |
+|---|---|---|
+| **legal** | timestamp format | **en:** full TranscribeMe CVL (caps, spelling, titles, tags, numbers, dashes, Latin terms) |
+| **medical** | dosage-number hygiene (locale-safe) + **multilingual UMLS** terminology | **en:** ISMP dangerous abbreviations + RxNorm drug names |
+
+## CLI
+
+```bash
+python3 -m transcript_truth.cli file.txt --profile=en --domain=legal   # full stack
+python3 -m transcript_truth.cli file.txt --legal --thoth               # + deterministic auto-fix
+python3 -m transcript_truth.cli --list-profiles
+python3 -m transcript_truth.cli --update-check                         # plugin updates (see below)
 ```
 
-| Profile | Covers |
-|---|---|
-| `default` (`jp`, `gotranscript`) | Japanese + GoTranscript English — the original engine |
-| `legal` (`cvl`) | TranscribeMe **Clean Verbatim for Legal** (English) |
-| `me` (`alex`, `personal`) | the `legal` profile **plus** one transcriber's own recurring slips |
+## Reference data / APIs (data, not models)
 
-The legal profile is a **separate** profile, not extra default scanners, because CVL
-*contradicts* the GoTranscript rules: CVL writes `okay` (lowercase), keeps `yeah` and the
-crutch words `you know`/`I mean`, omits only `uh/ah/um/er`, and writes `[inaudible]` with no
-timestamp. Every legal flag cites its style-guide page (e.g. `[p.9]`).
+RxNorm drug names (cached, `--refresh-data`) · **UMLS** medical terminology (live licensed API, multilingual) · `wordfreq` (per-language frequency) · ISMP "Do Not Use" list · the 24-page TranscribeMe CVL guide → scanners.
 
-> **Legal-exam boundary:** the TranscribeMe Legal Prequalification Exam is **no-AI, taken solo** —
-> using AI to produce or check exam answers is a permanent block. These profiles are a **study /
-> self-check aid** for the guide and your *own* practice transcripts (the SG, research, and
-> spell-checkers are the explicitly *permitted* tools), not an exam autopilot.
+## Update system (plugin cadence)
+
+`config.py` sets a cadence (**off / hourly / daily / weekly / monthly**); `manifest.py` tracks plugin versions; `update.py` pulls newer/new plugins from the source repo (authenticated GitHub API). New languages and new domain coverage ship as plugin updates — `--update`, `--update-check`, `--refresh-data`, `--set-update-frequency`.
 
 ## Thoth — deterministic auto-fix
 
-The scanners *report*; **Thoth** *applies* the fix. It's the same spine — **no model** —
-just the **same compiled patterns the scanners detect with, applied via `re.sub`**, so
-detection and correction can never drift. It is **profile-agnostic**: it applies whatever
-fixer set the chosen profile carries (`default` = language-safe filler removal, `legal` =
-the full CVL "Redline" set, `me` = that plus personal apostrophe fixes).
+The scanners *report*; **Thoth** *applies* the fix — the **same compiled patterns**, applied via `re.sub`, so detection and correction can't drift. Profile-agnostic (applies the chosen profile's fixer set). Only deterministic, ~always-correct fixes are applied; semantic/`review`-tier judgment calls stay flags for the human.
 
-```bash
-python3 -m transcript_truth.cli file.txt --legal --thoth     # writes file.thoth.txt
-```
 ```python
 from transcript_truth.thoth import thoth
 fixed, changes = thoth(open("file.txt").read(), profile="legal")
 ```
 
-Only **deterministic, ~always-correct** fixes are applied. The semantic judgment calls
-(`review`-tier: which homophone a sentence *means*, `cant`/`wont`, つなぎ言葉 that might be
-real words) are **never auto-applied** — they stay flags for the human, the same boundary the
-whole engine keeps. On the legal sample, Thoth takes the receipt **D → A**.
-
 ## Layout
 
 ```
 transcript_truth/
-  types.py          Flag / Line / Transcript / Receipt
-  scanners.py       deterministic guideline scanners  (the rules)
-  legal_rules.py    CVL legal scanners + Redline fixers
-  personal_rules.py one transcriber's recurring slips + fixers
-  grade.py          pure-function grade (A–F)          (the verdict)
-  engine.py         ingest → scan → grade
-  thoth.py          deterministic auto-fix             (apply the fix)
-  cli.py            paste-a-file CLI receipt
-  profiles/         one plug-in per language / style guide
-tests/              55 passing tests
-samples/            transcripts with planted violations
+  consensus.py      multi-model ASR consensus + chunking/bridge/relisten + diarization
+  chunking.py       VAD chunking, time-stretch (slow-listen), bridge windows
+  witness.py        the ASR/diarizer model adapters
+  language.py       language auto-detect + routing
+  engine.py         audit_transcript: ingest → compose(language×domain) → scan → grade
+  domains.py        the DOMAIN tier (legal, medical) — universal core + per-language layers
+  profiles/         the LANGUAGE tier — one plug-in per language (14)
+  legal_rules.py / tm_legal.py   CVL legal scanners + fixers
+  medical_rules.py / umls.py     medical scanners + UMLS verification
+  grade.py          pure-function grade (A–F)  (the verdict)
+  thoth.py          deterministic auto-fix
+  config.py / manifest.py / update.py   plugin update system
+tests/              128 passing tests
 ```
 
-## Next surfaces (free, like RoboTruth)
-
-The engine is import-once; the same `audit_transcript` can back a web paste-box, an
-MCP server (`audit_transcript` exposed to Claude/Cursor), and an API — exactly how
-RoboTruth ships one engine to web + MCP + CLI.
+> **Legal-exam note:** the TranscribeMe Legal Prequalification Exam is **no-AI, taken solo** — the
+> style guide, research, and spell-checkers are the *permitted* tools. The engine is a **study /
+> self-check aid** for the guide and your **own practice transcripts**. Know your own risk on the live exam.
