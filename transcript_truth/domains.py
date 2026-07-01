@@ -14,13 +14,17 @@ from .profiles._base import Profile, get as get_profile
 DOMAIN_REGISTRY = {}
 
 
-def register_domain(name, scanners, description="", languages="*"):
-    """`languages` is the domain's LANGUAGE SCOPE: "*" = every language, or a tuple of language-
-    profile codes it's valid for. A domain whose rules are language-specific (legal CVL = American
-    English; medical = English RxNorm/ISMP) declares its real scope, so composition never applies
-    those rules to an incompatible language (which would only misfire)."""
+def register_domain(name, scanners=(), description="", per_language=None):
+    """A domain is TWO parts so it composes with ANY language:
+      • `scanners`     = the language-NEUTRAL core (dosage numbers, timestamps, ISMP abbrevs, dash
+                         format) — safe and useful for every language.
+      • `per_language` = {lang: (extra scanners,)} — that language's SPECIFIC rules (English RxNorm
+                         drug names, English CVL spelling/case, etc.). Added only for that language.
+    So `compose(lang, domain)` = base + core + per_language.get(lang). Every language gets the
+    universal core; a language gets the specialized layer once we've built its content."""
     DOMAIN_REGISTRY[name] = {"name": name, "scanners": tuple(scanners),
-                             "description": description, "languages": languages}
+                             "per_language": {k: tuple(v) for k, v in (per_language or {}).items()},
+                             "description": description}
     return DOMAIN_REGISTRY[name]
 
 
@@ -28,20 +32,17 @@ def domain_names():
     return sorted(DOMAIN_REGISTRY)
 
 
-def domain_supports(domain_name: str, profile_name: str) -> bool:
-    """Does `domain_name`'s rule set apply to language profile `profile_name`?"""
+def domain_languages(domain_name: str) -> list:
+    """Languages that have a dedicated per-language layer (beyond the universal core)."""
     dom = DOMAIN_REGISTRY.get(domain_name)
-    if not dom:
-        return False
-    langs = dom["languages"]
-    return langs == "*" or profile_name in langs
+    return sorted(dom["per_language"]) if dom else []
 
 
 def compose(profile_name: str, domain_name: str) -> Profile:
-    """Return a Profile running the language profile's scanners PLUS the domain's — but ONLY if the
-    domain SUPPORTS this language. An unsupported pairing (e.g. Korean + English-legal) cleanly
-    returns the base language profile (the domain no-ops) instead of misfiring English rules on it.
-    This is what makes the two-plugin system honest: language × domain compose only when compatible."""
+    """Return a Profile running the language profile's scanners PLUS the domain's universal core PLUS
+    that language's per-language domain layer (if any). The domain composes with EVERY language via
+    its core; the language-specific rules attach only where they belong — so a French transcript gets
+    universal dosage/timestamp checks under `medical`/`legal`, but English CVL/RxNorm never misfire on it."""
     base = get_profile(profile_name)
     if domain_name in (None, "", "general"):
         return base
@@ -49,12 +50,11 @@ def compose(profile_name: str, domain_name: str) -> Profile:
         avail = ", ".join(domain_names()) or "(none)"
         raise KeyError(f"unknown domain {domain_name!r}; available: {avail}")
     dom = DOMAIN_REGISTRY[domain_name]
-    if not domain_supports(domain_name, profile_name):
-        return base                      # domain not valid for this language → no-op, never misfire
+    extra = dom["per_language"].get(profile_name, ())        # language-specific layer (if built)
     return Profile(
         name=f"{profile_name}+{domain_name}",
         description=f"{base.description}  +  {dom['description']}",
-        scanners=tuple(base.scanners) + dom["scanners"],
+        scanners=tuple(base.scanners) + dom["scanners"] + tuple(extra),
         modes=base.modes, default_mode=base.default_mode,
         fixers=getattr(base, "fixers", ()),   # keep the language profile's redline fixers (was dropped)
     )
@@ -65,9 +65,13 @@ register_domain("general", (), "no domain-specific rules")
 
 from .medical_rules import dangerous_abbreviations, dosage_hygiene, drug_name_check  # noqa: E402
 register_domain(
-    "medical", (dangerous_abbreviations, dosage_hygiene, drug_name_check),
-    "Medical — ISMP dangerous-abbreviation + dosage hygiene + RxNorm drug-name check (English)",
-    languages=("en",),   # RxNorm drug names + ISMP abbrevs + English frequency gate = English-scoped
+    "medical",
+    # universal core (every language): ISMP abbrevs + dosage-number hygiene are medical conventions,
+    # not English words — safe and useful in any language.
+    scanners=(dangerous_abbreviations, dosage_hygiene),
+    # English-specific layer: RxNorm drug-name check uses an English frequency gate.
+    per_language={"en": (drug_name_check,)},
+    description="Medical — ISMP dangerous-abbrev + dosage hygiene (all languages) + RxNorm drug names (en)",
 )
 
 # Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide
@@ -80,9 +84,14 @@ from .scanners import timestamps as _timestamps  # noqa: E402
 from .legal_terms import legal_terms  # noqa: E402
 from .tm_legal import tm_sound_tags, tm_lowercase_terms, tm_speaker_caps, tm_double_dash, tm_spoken_punct  # noqa: E402
 register_domain(
-    "legal", (_timestamps, legal_titles, legal_numbers, legal_ampm, legal_tags,
-              legal_nonverbal, legal_spacing, legal_terms, tm_sound_tags, tm_lowercase_terms,
-              tm_speaker_caps, tm_double_dash, tm_spoken_punct),
-    "Legal (TranscribeMe CVL) — formatting + terminology + TranscribeMe rules (sound-tags, Bates, Colloquy caps, dashes)",
-    languages=("en",),   # American-English CVL — case/spelling/titles/accents are English-specific
+    "legal",
+    # universal core (every language): timestamp format + double-dash-attaches punctuation are
+    # language-neutral legal-transcript conventions.
+    scanners=(_timestamps, tm_double_dash),
+    # English layer: American-English CVL — case (Colloquy caps), spelling, titles, accents, English
+    # tag words, English number words, Latin terms — all English/US-legal-specific.
+    per_language={"en": (legal_titles, legal_numbers, legal_ampm, legal_tags, legal_nonverbal,
+                         legal_spacing, legal_terms, tm_sound_tags, tm_lowercase_terms,
+                         tm_speaker_caps, tm_spoken_punct)},
+    description="Legal — timestamp/dash core (all languages) + TranscribeMe CVL (en)",
 )
