@@ -272,14 +272,19 @@ def test_medical_drug_name_check():
     assert not any(x.rule == "med_drug_name" for x in audit_transcript("gave 500 mg", profile="en", domain="medical").flags)
 
 
-def test_legal_domain_composes_across_languages():
+def test_legal_domain_is_english_scoped():
     from transcript_truth import audit_transcript
-    from transcript_truth.domains import domain_names
+    from transcript_truth.domains import domain_names, domain_supports
     assert "legal" in domain_names()
+    # legal (American-English CVL) is English-scoped: composes with en, no-ops on other languages —
+    # honest 2-plugin system (it won't misfire English case/spelling/accent rules on fr/ja/ko/ar).
+    assert domain_supports("legal", "en") and not domain_supports("legal", "fr")
     viol = "There were (laughs) twenty people and it was (inaudible)."
-    for lang in ("en", "fr", "ja"):
-        rules = {f.rule for f in audit_transcript(viol, profile=lang, domain="legal").flags}
-        assert "legal_tag" in rules and "legal_number" in rules, lang
+    en_rules = {f.rule for f in audit_transcript(viol, profile="en", domain="legal").flags}
+    assert "legal_tag" in en_rules and "legal_number" in en_rules          # English → legal runs
+    for lang in ("fr", "ja"):                                              # non-English → clean no-op
+        assert not any(f.rule.startswith(("legal", "tm_"))
+                       for f in audit_transcript(viol, profile=lang, domain="legal").flags), lang
     # without the legal domain, no legal flags
     assert not any(f.rule.startswith("legal") for f in audit_transcript(viol, profile="en").flags)
     # legal terminology resource: misspelled terms flagged with the correct form, no false positives
@@ -288,14 +293,15 @@ def test_legal_domain_composes_across_languages():
     assert not any(f.rule == "legal_term" for f in audit_transcript("The subpoena and the defendant.", profile="en", domain="legal").flags)
 
 
-def test_medical_composes_across_languages_no_false_positive():
+def test_medical_domain_is_english_scoped():
     from transcript_truth import audit_transcript
-    # same medical rules fire on French...
-    fr = audit_transcript("Donner MS 1.0 mg.", profile="fr", domain="medical").flags
-    assert any(x.rule == "med_dangerous_abbrev" and x.evidence == "MS" for x in fr)
-    # ...but accented French words don't trip the single-letter 'u' rule
-    assert not any(x.rule == "med_dangerous_abbrev"
-                   for x in audit_transcript("Le patient a reçu le traitement.", profile="fr", domain="medical").flags)
+    # medical (RxNorm/ISMP English) fires on English...
+    en = audit_transcript("Give MS 1.0 mg.", profile="en", domain="medical").flags
+    assert any(x.rule == "med_dangerous_abbrev" and x.evidence == "MS" for x in en)
+    # ...but composes as a clean NO-OP on a non-English language (honest 2-plugin scoping — the
+    # English RxNorm/frequency rules are NOT applied to French, so no misfire on native words).
+    fr = audit_transcript("Le patient a reçu des cachets 500 mg.", profile="fr", domain="medical").flags
+    assert not any(x.rule.startswith("med_") for x in fr)
 
 
 # --- Phase 2: language routing (pure, no API) ---

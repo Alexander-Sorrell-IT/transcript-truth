@@ -14,8 +14,13 @@ from .profiles._base import Profile, get as get_profile
 DOMAIN_REGISTRY = {}
 
 
-def register_domain(name, scanners, description=""):
-    DOMAIN_REGISTRY[name] = {"name": name, "scanners": tuple(scanners), "description": description}
+def register_domain(name, scanners, description="", languages="*"):
+    """`languages` is the domain's LANGUAGE SCOPE: "*" = every language, or a tuple of language-
+    profile codes it's valid for. A domain whose rules are language-specific (legal CVL = American
+    English; medical = English RxNorm/ISMP) declares its real scope, so composition never applies
+    those rules to an incompatible language (which would only misfire)."""
+    DOMAIN_REGISTRY[name] = {"name": name, "scanners": tuple(scanners),
+                             "description": description, "languages": languages}
     return DOMAIN_REGISTRY[name]
 
 
@@ -23,8 +28,20 @@ def domain_names():
     return sorted(DOMAIN_REGISTRY)
 
 
+def domain_supports(domain_name: str, profile_name: str) -> bool:
+    """Does `domain_name`'s rule set apply to language profile `profile_name`?"""
+    dom = DOMAIN_REGISTRY.get(domain_name)
+    if not dom:
+        return False
+    langs = dom["languages"]
+    return langs == "*" or profile_name in langs
+
+
 def compose(profile_name: str, domain_name: str) -> Profile:
-    """Return a Profile that runs the language profile's scanners PLUS the domain's scanners."""
+    """Return a Profile running the language profile's scanners PLUS the domain's — but ONLY if the
+    domain SUPPORTS this language. An unsupported pairing (e.g. Korean + English-legal) cleanly
+    returns the base language profile (the domain no-ops) instead of misfiring English rules on it.
+    This is what makes the two-plugin system honest: language × domain compose only when compatible."""
     base = get_profile(profile_name)
     if domain_name in (None, "", "general"):
         return base
@@ -32,11 +49,14 @@ def compose(profile_name: str, domain_name: str) -> Profile:
         avail = ", ".join(domain_names()) or "(none)"
         raise KeyError(f"unknown domain {domain_name!r}; available: {avail}")
     dom = DOMAIN_REGISTRY[domain_name]
+    if not domain_supports(domain_name, profile_name):
+        return base                      # domain not valid for this language → no-op, never misfire
     return Profile(
         name=f"{profile_name}+{domain_name}",
         description=f"{base.description}  +  {dom['description']}",
         scanners=tuple(base.scanners) + dom["scanners"],
         modes=base.modes, default_mode=base.default_mode,
+        fixers=getattr(base, "fixers", ()),   # keep the language profile's redline fixers (was dropped)
     )
 
 
@@ -46,7 +66,8 @@ register_domain("general", (), "no domain-specific rules")
 from .medical_rules import dangerous_abbreviations, dosage_hygiene, drug_name_check  # noqa: E402
 register_domain(
     "medical", (dangerous_abbreviations, dosage_hygiene, drug_name_check),
-    "Medical — ISMP dangerous-abbreviation + dosage hygiene + RxNorm drug-name check (language-agnostic)",
+    "Medical — ISMP dangerous-abbreviation + dosage hygiene + RxNorm drug-name check (English)",
+    languages=("en",),   # RxNorm drug names + ISMP abbrevs + English frequency gate = English-scoped
 )
 
 # Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide
@@ -63,4 +84,5 @@ register_domain(
               legal_nonverbal, legal_spacing, legal_terms, tm_sound_tags, tm_lowercase_terms,
               tm_speaker_caps, tm_double_dash, tm_spoken_punct),
     "Legal (TranscribeMe CVL) — formatting + terminology + TranscribeMe rules (sound-tags, Bates, Colloquy caps, dashes)",
+    languages=("en",),   # American-English CVL — case/spelling/titles/accents are English-specific
 )
