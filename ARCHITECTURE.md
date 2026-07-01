@@ -78,3 +78,47 @@ domain's per-language layer (if built). A domain is **built once**; it adapts to
 (a) the universal core, (b) language-aware scanners (UMLS in the transcript's language, `wordfreq`
 per language), and (c) a small per-language layer only where rules are genuinely language-specific
 (ISMP = US, CVL = English). Adding a language never means rebuilding a domain.
+
+---
+
+# Model map — every model and where it runs
+
+**Models live ONLY in the transcription half.** The QA/verdict half has zero models (scanners are
+deterministic; RxNorm/UMLS/wordfreq are data/API lookups, not models).
+
+```
+── ① LANGUAGE DETECT ─────────────────────────────────────────────────────────
+    Deepgram Nova-2  (deepgram_detect_language) → picks language → roster
+
+── ② ASR WITNESSES  (vote → _splice → transcript) ────────────────────────────
+    deepgram   = Deepgram Nova-3             (cloud API)
+    scribe     = ElevenLabs Scribe v1         (cloud API)
+    gemini     = Google Gemini 2.0-flash → flash-latest → 2.5-flash → 2.5-lite (cascade)
+    hf         = OpenAI Whisper large-v3      (HuggingFace inference API)
+    whisper    = faster-whisper large-v3      (LOCAL on the Mac — free)
+    mms        = Meta MMS-1B-all              (facebook/mms-1b-all)
+    phowhisper = VinAI PhoWhisper-large       (Vietnamese-specialized)
+    seamless   = Meta Seamless-M4T-v2-large   (multilingual)
+
+── ③ DIARIZATION  (who spoke when → reference-map, ~95.8%) ────────────────────
+    Deepgram Nova (diarize) · pyannote/speaker-diarization-3.1 · ElevenLabs Scribe
+    → cross-diarizer consensus
+
+── ④ COHERENCE  (OPTIONAL, opt-in, 'review' tier — NEVER in the verdict) ──────
+    Qwen (blank-fill homophone check) · gated deterministically
+```
+
+## Per-language ASR roster (which witnesses vote for each language)
+| Languages | Witnesses |
+|---|---|
+| en, fr, de, pt, tr, es | Deepgram · Scribe · Whisper(HF) · Gemini |
+| ja, ko, ru | Deepgram · Scribe · Gemini · Whisper(HF) |
+| uk | Deepgram · Scribe |
+| vi | Deepgram · Scribe · Gemini · **PhoWhisper** (VN specialist) |
+| ar, hi | Deepgram · Scribe · Gemini · **MMS** (Meta) |
+| ur | Scribe · Gemini · MMS  (Deepgram ur weak → dropped) |
+
+## By tier
+- **Cloud APIs:** Deepgram (Nova-2/3), ElevenLabs Scribe v1, Google Gemini (4-model cascade), HF Whisper large-v3
+- **Local / free:** faster-whisper large-v3, Meta MMS-1B, VinAI PhoWhisper-large, Meta Seamless-M4T-v2, pyannote 3.1
+- **Optional:** Qwen (coherence only, never in the verdict)
