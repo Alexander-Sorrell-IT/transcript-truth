@@ -164,6 +164,16 @@ def legal_nonverbal(t: Transcript) -> list[Flag]:
 # ----------------------------------------------------------- titles (p.12)
 # Do NOT use Mrs. or Miss with a name -> use Ms.
 _MRS = re.compile(r"\b(Mrs\.?|Miss)\s+[A-Z][a-z]+")
+# A professional title/rank used WITH a name is capitalized (p.12: "Doctor Jamison", "Sergeant
+# Saunders", "Investigator Joe Bloggs"). Case-sensitive so only a LOWERCASE title before a
+# Capitalized name flags. Skip capitalized non-names (days/months/pronoun) to avoid false positives.
+_TITLE_WORDS = ("doctor|officer|detective|sergeant|lieutenant|captain|judge|justice|investigator|"
+                "attorney|professor|nurse|deputy|marshal|colonel|major|general|admiral|reverend|"
+                "senator|governor|mayor|president|director|chief|counselor|agent")
+_TITLE_CAP = re.compile(r"\b(" + _TITLE_WORDS + r")\s+([A-Z][a-z]+)")
+_TITLE_SKIP = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday",
+               "January", "February", "March", "April", "May", "June", "July", "August",
+               "September", "October", "November", "December", "I"}
 
 
 def legal_titles(t: Transcript) -> list[Flag]:
@@ -173,6 +183,13 @@ def legal_titles(t: Transcript) -> list[Flag]:
             out.append(_flag("legal_title", f"'{m.group(0)}' — use 'Ms.' with a name",
                              ln.n, m.group(0),
                              "Never Mrs./Miss with a name, however it's spoken — use 'Ms.'. [p.12]"))
+        for m in _TITLE_CAP.finditer(ln.text):
+            title, name = m.group(1), m.group(2)
+            if name in _TITLE_SKIP:
+                continue
+            out.append(_flag("legal_title_caps", f"'{title} {name}' — capitalize the title used with a name",
+                             ln.n, f"{title} {name}",
+                             f"A title used with a name is capitalized: '{title.capitalize()} {name}'. [p.12]"))
     return out
 
 
