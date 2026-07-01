@@ -49,3 +49,43 @@ def tm_lowercase_terms(t: Transcript) -> list[Flag]:
                 label=f"Legal: '{w}' should be lowercase (page/paragraph/line/number stay lowercase)",
                 fix=f"Write '{w.lower()}' — these reference terms are never capitalized in CVL."))
     return out
+
+
+# --- Legal Entrance Exam: structural rules (Colloquy / Q&A / dashes) ---
+# Colloquy speaker IDs are ALL CAPS — surnames for lawyers (MR. SMITH), titles for judges
+# (THE COURT), THE WITNESS; Q/A for examination (guide p.3). A speaker label = a name-like prefix
+# at line start followed by 2+ spaces (the WorkHub tab separator; CVL body text is single-spaced).
+_SPK = re.compile(r"^\s*([A-Za-z][A-Za-z .'\-]{0,38}?)\s{2,}\S")
+
+
+def tm_speaker_caps(t: Transcript) -> list[Flag]:
+    out: list[Flag] = []
+    for ln in t.lines:
+        m = _SPK.match(ln.text)
+        if not m:
+            continue
+        lab = m.group(1).strip()
+        if lab in ("Q", "A"):                       # examination labels are correct as-is
+            continue
+        if any(c.islower() for c in lab):           # a Colloquy ID with lowercase → not all caps
+            out.append(Flag(
+                rule="tm_speaker_caps", severity="moderate", line=ln.n, evidence=lab,
+                label=f"Legal: speaker ID '{lab}' must be ALL CAPS (Colloquy)",
+                fix=f"Write '{lab.upper()}' — Colloquy speaker IDs are all caps."))
+    return out
+
+
+# Double dashes (false starts, interruptions, repetitions) ATTACH to the preceding word —
+# 'word-- next', never 'word -- next' (a space-both-sides single dash is the offset rule). [p.10]
+_SPACE_BEFORE_DDASH = re.compile(r"(?<=\w) -- ")
+
+
+def tm_double_dash(t: Transcript) -> list[Flag]:
+    out: list[Flag] = []
+    for ln in t.lines:
+        for m in _SPACE_BEFORE_DDASH.finditer(ln.text):
+            out.append(Flag(
+                rule="tm_double_dash", severity="minor", line=ln.n, evidence=m.group(0).strip() or "--",
+                label="Legal: double dash attaches to the preceding word — no space before '--'",
+                fix="Write 'word-- next'; the dashes attach to the word before them (single dash ' - ' is the offset rule)."))
+    return out

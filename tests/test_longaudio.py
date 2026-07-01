@@ -242,6 +242,15 @@ def test_transcribeme_legal_rules():
     assert not any(x.rule in ("tm_sound_tag", "tm_lowercase") for x in ok)
 
 
+def test_transcribeme_legal_structure():
+    from transcript_truth import audit_transcript
+    f = audit_transcript("Mr. Smith   I was going-- I mean, I was -- there.", profile="en", domain="legal").flags
+    assert any(x.rule == "tm_speaker_caps" and x.evidence == "Mr. Smith" for x in f)  # Colloquy ID caps
+    assert any(x.rule == "tm_double_dash" for x in f)                                  # dash attaches
+    ok = audit_transcript("MR. SMITH   I was going-- I mean, there.", profile="en", domain="legal").flags
+    assert not any(x.rule in ("tm_speaker_caps", "tm_double_dash") for x in ok)
+
+
 def test_medical_drug_name_check():
     from transcript_truth.medical_data import drug_set
     if not drug_set():
