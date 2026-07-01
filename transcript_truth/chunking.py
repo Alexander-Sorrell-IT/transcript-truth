@@ -10,6 +10,47 @@ def have_ffmpeg() -> bool:
     return bool(shutil.which("ffmpeg") and shutil.which("ffprobe"))
 
 
+def time_stretch(path: str, rate: float = 0.8, out_path: str | None = None) -> str | None:
+    """Slow-down-and-listen (CV guide p.2): re-render audio at a different SPEED without changing
+    pitch, so ASR gets a second, clearer pass at fast/unclear speech. rate<1.0 = slower (0.8 = 80%
+    speed), rate>1.0 = faster. Language- and mode-agnostic — operates on raw audio. ffmpeg's atempo
+    filter is valid for 0.5–2.0; chain filters for values beyond that. Returns the new path (16kHz
+    mono WAV) or None if ffmpeg is unavailable / the render fails."""
+    if not have_ffmpeg() or rate <= 0:
+        return None
+    # decompose rate into a chain of atempo factors each within [0.5, 2.0]
+    factors, r = [], rate
+    while r < 0.5:
+        factors.append(0.5); r /= 0.5
+    while r > 2.0:
+        factors.append(2.0); r /= 2.0
+    factors.append(r)
+    chain = ",".join(f"atempo={f:.4f}" for f in factors)
+    out_path = out_path or (path + f".x{rate:.2f}.wav")
+    try:
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", path, "-filter:a", chain, "-ac", "1", "-ar", "16000",
+             out_path, "-loglevel", "error"], timeout=300, check=True)
+        return out_path if os.path.exists(out_path) and os.path.getsize(out_path) > 1000 else None
+    except Exception:
+        return None
+
+
+def cut_window(path: str, start_s: float, length_s: float, out_path: str | None = None) -> str | None:
+    """Extract a single [start, start+length] audio window (16kHz mono WAV). Used to cut a BRIDGE
+    chunk straddling a specific seam on demand. Returns the path or None on failure."""
+    if not have_ffmpeg():
+        return None
+    out_path = out_path or (path + f".w{start_s:.0f}_{length_s:.0f}.wav")
+    try:
+        subprocess.run(
+            ["ffmpeg", "-y", "-ss", str(max(0.0, start_s)), "-t", str(length_s), "-i", path,
+             "-ac", "1", "-ar", "16000", out_path, "-loglevel", "error"], timeout=300, check=True)
+        return out_path if os.path.exists(out_path) and os.path.getsize(out_path) > 1000 else None
+    except Exception:
+        return None
+
+
 def probe(path: str):
     """(duration_seconds, size_bytes). duration 0.0 if ffprobe unavailable/fails."""
     dur = 0.0

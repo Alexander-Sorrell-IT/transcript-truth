@@ -101,8 +101,28 @@ def _splice(a, b, win=80, min_anchor=4):
     return " ".join(aw + bw), (m.size >= min_anchor)  # keep everything; flag if no anchor
 
 
-def _transcribe_chunks(chunks, name, lang, max_workers=3):
-    """Run witness `name` over a list of (idx, off, path) chunks, in parallel, order-preserved."""
+def _relisten(name, cp, lang):
+    """Slow-down-and-listen (CV guide p.2): a chunk came back empty, so re-render it slower and
+    transcribe again — often recovers fast/unclear speech the first pass missed. Language- and
+    mode-agnostic. Returns the recovered text (or "")."""
+    from . import chunking
+    slow = chunking.time_stretch(cp, 0.8)
+    if not slow:
+        return ""
+    try:
+        return _witness_call(name, slow, lang) or ""
+    except Exception:
+        return ""
+    finally:
+        try:
+            os.remove(slow)
+        except Exception:
+            pass
+
+
+def _transcribe_chunks(chunks, name, lang, max_workers=3, relisten=True):
+    """Run witness `name` over a list of (idx, off, path) chunks, in parallel, order-preserved.
+    Any chunk that comes back EMPTY gets a second, slowed-down listen before we give up."""
     import concurrent.futures
     parts = [""] * len(chunks)
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as ex:
@@ -112,15 +132,39 @@ def _transcribe_chunks(chunks, name, lang, max_workers=3):
                 parts[futs[f]] = f.result() or ""
             except Exception:
                 parts[futs[f]] = ""
+    if relisten:                                    # slow-down-and-listen on the empties
+        for k, (_, _, cp) in enumerate(chunks):
+            if not parts[k]:
+                parts[k] = _relisten(name, cp, lang)
     return parts
+
+
+def _bridge_seam(name, audio_path, lang, seam_s, span_s=30.0):
+    """Cut a BRIDGE chunk straddling a seam (the 'section between the sections') and transcribe it,
+    so a seam the two main chunks couldn't be stitched across gets a clean, un-clipped read to
+    join through. Returns the bridge text (or "")."""
+    from . import chunking
+    bp = chunking.cut_window(audio_path, max(0.0, seam_s - span_s / 2), span_s)
+    if not bp:
+        return ""
+    try:
+        txt = _witness_call(name, bp, lang) or ""
+        return txt or _relisten(name, bp, lang)     # slow-listen the bridge too if it's empty
+    except Exception:
+        return ""
+    finally:
+        try:
+            os.remove(bp)
+        except Exception:
+            pass
 
 
 def _chopped_witness(name, audio_path, lang):
     """Chop long audio into OVERLAPPING sections, transcribe (parallel), stitch at the seams.
     Consecutive chunks share `_CHOP_OVERLAP_S` of audio at their EDGES — exactly where the
-    splicer looks — so the overlap dedups cleanly and no word is dropped at a cut. The
-    splicer's search window is sized to the overlap (fast speech ≈ 3 words/s) plus headroom.
-    Returns (full_text, bad_seam_count)."""
+    splicer looks — so the overlap dedups cleanly and no word is dropped at a cut. If a seam
+    still won't splice, a BRIDGE chunk straddling that seam is cut on demand and spliced through
+    (the 'sections between the sections' design). Returns (full_text, bad_seam_count)."""
     from . import chunking
     # Prefer silence-aware (VAD) cuts so no word is split at a seam; fall back to fixed windows.
     chunks = chunking.split_audio_vad(audio_path, window_s=_CHOP_WINDOW_S, overlap_s=_CHOP_OVERLAP_S) \
@@ -131,10 +175,19 @@ def _chopped_witness(name, audio_path, lang):
     win = int(_CHOP_OVERLAP_S * 3.5) + 20            # words spanning the overlap region + slack
     full = parts[0]
     bad = 0
-    for nxt in parts[1:]:
+    for i, nxt in enumerate(parts[1:], start=1):
         if not nxt:
             bad += 1; continue
-        full, ok = _splice(full, nxt, win=win)
+        spliced, ok = _splice(full, nxt, win=win)
+        if not ok:                                   # seam won't join — bridge it on demand
+            seam_s = chunks[i][1]                     # offset of this chunk = the seam time
+            bridge = _bridge_seam(name, audio_path, lang, seam_s)
+            if bridge:
+                viab, ok1 = _splice(full, bridge, win=win)
+                spliced2, ok2 = _splice(viab, nxt, win=win)
+                if ok1 or ok2:
+                    spliced, ok = spliced2, True
+        full = spliced
         bad += (not ok)
     return full, bad
 
