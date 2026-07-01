@@ -35,8 +35,10 @@ def _load_cache() -> dict:
 def _save_cache() -> None:
     try:
         os.makedirs(os.path.dirname(_CACHE_PATH), exist_ok=True)
-        with open(_CACHE_PATH, "w") as f:
+        tmp = _CACHE_PATH + ".tmp"                # atomic write: temp + rename, so a concurrent
+        with open(tmp, "w") as f:                 # reader never sees a half-written (corrupt) file
             json.dump(_cache, f)
+        os.replace(tmp, _CACHE_PATH)
     except Exception:
         pass
 
@@ -82,25 +84,36 @@ def lookup(term: str):
         return None                          # couldn't check → caller must no-op, never flag
 
 
-# Fire only inside a clear diagnosis/condition context, where a following word is very likely a
-# medical term — so a word UMLS doesn't recognize there is a probable misspelling (UMLS is
-# comprehensive: it has diabetes/hypertension/etc.). Context-gated = high precision.
+# Fire only inside a clear diagnosis/condition context, where the following words are very likely a
+# medical term — so a term UMLS doesn't recognize there is a probable misspelling (UMLS is
+# comprehensive: it has diabetes/hypertension/etc.). Context-gated = high precision. Capture the whole
+# condition PHRASE (up to punctuation or a boundary word) so multi-word conditions ("type 2 diabetes")
+# are checked, not just the first token.
 _DX_CTX = re.compile(
     r"\b(?:diagnosed with|history of|presents with|presenting with|suffers from|"
     r"complains of|complaining of|treated for|consistent with|suggestive of)\s+"
-    r"(?:a |an |the |chronic |acute |severe |mild |possible |suspected )?"
-    r"([A-Za-z][A-Za-z\-]{5,})", re.I)
+    r"(?:a |an |the )?"
+    r"([A-Za-z][A-Za-z0-9\- ]{2,38}?)"
+    r"(?=[.,;:!?]|\s+(?:and|or|but|since|with|who|which|after|before|for|in|on|at|last|this|"
+    r"that|today|yesterday|now|currently|recently|per)\b|$)", re.I)
 
 
 def umls_term_check(t: Transcript) -> list[Flag]:
     out: list[Flag] = []
     for ln in t.lines:
         for m in _DX_CTX.finditer(ln.text):
-            term = m.group(1)
-            name = lookup(term)
-            if name == "":                   # confirmed NOT in UMLS (None = couldn't check → skip)
-                out.append(Flag(
-                    rule="med_umls_term", severity="review", line=ln.n, evidence=term,
-                    label=f"Medical: '{term}' not found in UMLS — verify this condition/term",
-                    fix=f"'{term}' isn't a recognized UMLS term; check the spelling against the record."))
+            phrase = m.group(1).strip()
+            head = phrase.split()[-1] if phrase.split() else ""
+            if len(head) < 5:                        # too short to be a checkable condition head
+                continue
+            name = lookup(phrase)                    # try the whole phrase first
+            if name is None:                         # couldn't check (no key/offline/error) → no flag
+                continue
+            if name == "":                           # phrase not in UMLS — fall back to the head noun
+                hname = lookup(head)                 # so "pneumonia yesterday" → head "pneumonia" clears
+                if hname == "":                      # BOTH not found → likely a real misspelling
+                    out.append(Flag(
+                        rule="med_umls_term", severity="review", line=ln.n, evidence=phrase,
+                        label=f"Medical: '{phrase}' not found in UMLS — verify this condition/term",
+                        fix=f"'{phrase}' isn't a recognized UMLS term; check the spelling against the record."))
     return out
