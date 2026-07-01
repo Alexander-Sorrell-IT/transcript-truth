@@ -120,10 +120,20 @@ def _dx_regex(lang):
     return _dx_cache[lang]
 
 
+def _freq(word, lang):
+    """word-frequency (zipf) in `lang`, falling back to English; 0.0 if wordfreq is unavailable."""
+    try:
+        from wordfreq import zipf_frequency, available_languages
+        return zipf_frequency(word, lang if lang in available_languages() else "en")
+    except Exception:
+        return 0.0
+
+
 def umls_term_check(t: Transcript) -> list[Flag]:
     """Verify a diagnosis-context term against UMLS, in the transcript's OWN language. Built once;
     works for every language with a phrase row above, reusing that language plugin. Graceful."""
-    rx = _dx_regex(getattr(t, "lang", "en") or "en")
+    lang = getattr(t, "lang", "en") or "en"
+    rx = _dx_regex(lang)
     if rx is None:                                    # no trigger phrases for this language → no-op
         return []
     out: list[Flag] = []
@@ -133,6 +143,11 @@ def umls_term_check(t: Transcript) -> list[Flag]:
             words = phrase.split()
             head = words[-1] if words else ""
             if len(head) < 5:                        # too short to be a checkable condition head
+                continue
+            # a COMMON word (in this language) is not a medical misspelling — it's ordinary speech that
+            # merely followed "history of"/"presents with" ("...history of arriving unannounced"). Skip
+            # it. Misspellings sit at zipf ~0; every everyday word is ≥3.0. This is the no-FP guard.
+            if _freq(head.lower(), lang) >= 3.0:
                 continue
             name = lookup(phrase)                    # try the whole phrase first
             if name is None:                         # couldn't check (no key/offline/error) → no flag

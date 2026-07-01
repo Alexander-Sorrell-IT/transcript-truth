@@ -305,6 +305,16 @@ def test_umls_context_gating_multilingual():
     assert _dx_regex("ko") is None                                    # no phrases yet → safe no-op
 
 
+def test_umls_no_false_positive_on_common_words():
+    # a non-medical phrase after a diagnosis trigger ("history of arriving unannounced") must NOT
+    # flag: the head is a common word (zipf>=3.0) so it's skipped BEFORE any UMLS call. Offline —
+    # the frequency gate short-circuits, so no network is touched. Grade must stay A (review caps B).
+    from transcript_truth import audit_transcript
+    r = audit_transcript("She has a long history of arriving unannounced", profile="en", domain="medical")
+    assert not any(f.rule == "med_umls_term" for f in r.flags)
+    assert r.grade == "A"
+
+
 def test_medical_domain_core_plus_english_layer():
     from transcript_truth import audit_transcript
     from transcript_truth.domains import domain_languages
