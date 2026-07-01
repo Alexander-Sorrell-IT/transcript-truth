@@ -28,6 +28,8 @@ class Line:
 class Transcript:
     lines: List[Line]
     mode: str = "clean_verbatim"   # clean_verbatim | full_verbatim
+    lang: str = "en"               # composed language code — lets a domain scanner adapt (frequency,
+                                   # UMLS language) to the language plugin it's composed with
 
 
 @dataclass

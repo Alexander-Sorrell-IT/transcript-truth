@@ -290,13 +290,19 @@ def test_legal_domain_core_plus_english_layer():
     assert not any(f.rule == "legal_term" for f in audit_transcript("The subpoena and the defendant.", profile="en", domain="legal").flags)
 
 
-def test_umls_context_gating():
-    # offline, deterministic: UMLS check only considers a term in a clear diagnosis context (so it
-    # never blanket-flags ordinary words); the actual API verification is graceful (no key → no-op).
-    from transcript_truth.umls import _DX_CTX
-    assert _DX_CTX.search("Patient diagnosed with pneumonia.").group(1).lower() == "pneumonia"
-    assert _DX_CTX.search("History of hypertension today").group(1).lower() == "hypertension"
-    assert _DX_CTX.search("She likes pneumonia trivia") is None       # no diagnosis context → no candidate
+def test_umls_context_gating_multilingual():
+    # offline, deterministic: the UMLS check is LANGUAGE-AWARE — each language contributes its own
+    # diagnosis-context phrases; the same multilingual UMLS verifier runs for all. Only a term in a
+    # clear diagnosis context is considered (never blanket-flags), and the API step is graceful.
+    from transcript_truth.umls import _dx_regex
+    en = _dx_regex("en")
+    assert en.search("Patient diagnosed with pneumonia.").group(1).lower() == "pneumonia"
+    assert en.search("History of hypertension today").group(1).lower() == "hypertension"
+    assert en.search("She likes pneumonia trivia") is None            # no diagnosis context → no candidate
+    # built once → other languages work via their own phrase rows; a language with none no-ops
+    assert _dx_regex("es").search("diagnosticado con neumonía") is not None
+    assert _dx_regex("fr").search("antécédents de diabète") is not None
+    assert _dx_regex("ko") is None                                    # no phrases yet → safe no-op
 
 
 def test_medical_domain_core_plus_english_layer():

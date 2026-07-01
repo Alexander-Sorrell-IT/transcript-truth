@@ -71,15 +71,15 @@ from .medical_rules import dangerous_abbreviations, dosage_hygiene, drug_name_ch
 from .umls import umls_term_check  # noqa: E402
 register_domain(
     "medical",
-    # universal core (every language): dosage-number hygiene (trailing-zero/naked-decimal) is
-    # locale-safe number safety, useful in any language.
-    scanners=(dosage_hygiene,),
-    # English/US-medical layer: ISMP abbreviations are English/Latin letter-abbrevs (u, cc, MS…) that
-    # collide with native words in other languages; RxNorm drug names + UMLS terminology are English/
-    # US-medical. umls_term_check verifies diagnosis-context terms via the licensed UTS API (graceful:
-    # no key / offline → no-ops).
-    per_language={"en": (dangerous_abbreviations, drug_name_check, umls_term_check)},
-    description="Medical — dosage hygiene (all languages) + ISMP/RxNorm/UMLS (en)",
+    # UNIVERSAL core (every language): dosage-number hygiene (locale-safe) + UMLS terminology.
+    # umls_term_check is multilingual — UMLS resolves native terms in every language it covers, and
+    # the check verifies in the transcript's OWN language (reusing that language plugin). Built ONCE,
+    # works across languages — no per-language medical build. Graceful: no key/offline → no-ops.
+    scanners=(dosage_hygiene, umls_term_check),
+    # English/US-medical layer: ISMP abbreviations (u, cc, MS…) are the US list, and the RxNorm
+    # drug-name check uses English drug data — genuinely US/English-specific, so English-only.
+    per_language={"en": (dangerous_abbreviations, drug_name_check)},
+    description="Medical — dosage + multilingual UMLS terminology (all languages) + ISMP & RxNorm (en)",
 )
 
 # Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide

@@ -28,6 +28,7 @@ def audit_transcript(text: str, mode: str = "clean_verbatim", coherence: bool = 
     else:
         prof = get_profile(profile)
     t = parse_transcript(text, mode)
+    t.lang = profile                        # composed language → domain scanners adapt to it
     flags = run_scanners(t, prof.scanners)
     if coherence:
         from .coherence import coherence_homophones

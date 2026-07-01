@@ -73,15 +73,18 @@ def drug_name_check(t: Transcript) -> list[Flag]:
         return []
     import difflib
     try:
-        from wordfreq import zipf_frequency
+        from wordfreq import zipf_frequency, available_languages
+        langs = available_languages()
     except Exception:
-        zipf_frequency = lambda w, l: 0.0
+        zipf_frequency, langs = (lambda w, l: 0.0), {}
+    lang = getattr(t, "lang", "en") or "en"
+    freq_lang = lang if lang in langs else "en"          # score frequency in the transcript's language
     out: list[Flag] = []
     for ln in t.lines:
         for m in _DRUG_CTX.finditer(ln.text):
             w = m.group(1)
             wl = w.lower()
-            if wl in drugs or zipf_frequency(wl, "en") >= 3.3:   # known drug, or a common English word
+            if wl in drugs or zipf_frequency(wl, freq_lang) >= 3.3:   # known drug, or a common word in-lang
                 continue
             near = difflib.get_close_matches(wl, drugs, n=1, cutoff=0.85)
             sugg = f" — did you mean '{near[0]}'?" if near else ""

@@ -84,26 +84,54 @@ def lookup(term: str):
         return None                          # couldn't check → caller must no-op, never flag
 
 
-# Fire only inside a clear diagnosis/condition context, where the following words are very likely a
-# medical term — so a term UMLS doesn't recognize there is a probable misspelling (UMLS is
-# comprehensive: it has diabetes/hypertension/etc.). Context-gated = high precision. Capture the whole
-# condition PHRASE (up to punctuation or a boundary word) so multi-word conditions ("type 2 diabetes")
-# are checked, not just the first token.
-_DX_CTX = re.compile(
-    r"\b(?:diagnosed with|history of|presents with|presenting with|suffers from|"
-    r"complains of|complaining of|treated for|consistent with|suggestive of)\s+"
-    r"(?:a |an |the )?"
-    r"([A-Za-z][A-Za-z0-9\- ]{2,38}?)"
-    r"(?=[.,;:!?]|\s+(?:and|or|but|since|with|who|which|after|before|for|in|on|at|last|this|"
-    r"that|today|yesterday|now|currently|recently|per)\b|$)", re.I)
+# Diagnosis/condition CONTEXT phrases per language — the one language-specific piece. The medical
+# domain is built ONCE; each language contributes its trigger phrases so the SAME (multilingual) UMLS
+# verifier works across the language plugins. UMLS resolves native terms in all these languages
+# (verified: neumonía→Pneumonia, diabète→Diabetes, Lungenentzündung→Pneumonitis). Add a language by
+# adding one row — no separate "Spanish medical" build. Languages absent here simply no-op (safe).
+_DX_PHRASES = {
+    "en": ("diagnosed with", "history of", "presents with", "presenting with", "suffers from",
+           "complains of", "complaining of", "treated for", "consistent with", "suggestive of"),
+    "es": ("diagnosticado con", "diagnosticada con", "antecedentes de", "historia de", "presenta",
+           "refiere", "tratado por", "tratada por", "compatible con"),
+    "fr": ("diagnostiqué avec", "diagnostiquée avec", "antécédents de", "présente", "souffre de",
+           "traité pour", "traitée pour", "compatible avec"),
+    "de": ("diagnostiziert mit", "anamnese von", "leidet an", "behandelt wegen", "verdacht auf"),
+    "pt": ("diagnosticado com", "diagnosticada com", "histórico de", "apresenta", "tratado para",
+           "tratada para", "compatível com"),
+    "it": ("diagnosticato con", "diagnosticata con", "storia di", "presenta", "soffre di",
+           "trattato per", "trattata per", "compatibile con"),
+}
+# capture-boundary words (a mix across the covered languages) — only truncate the captured phrase;
+# the head-noun fallback is the real safety net, so over/under-capture never causes a false positive.
+_BOUNDARY = (r"(?=[.,;:!?]|\s+(?:and|or|but|since|with|after|before|for|in|on|at|this|that|today|"
+             r"yesterday|now|currently|recently|per|y|e|o|et|ou|und|oder|mit|seit|con|di|du|des)\b|$)")
+_dx_cache = {}
+
+
+def _dx_regex(lang):
+    """Per-language diagnosis-context regex (cached). None if we have no phrases for this language."""
+    if lang not in _dx_cache:
+        phrases = _DX_PHRASES.get(lang)
+        _dx_cache[lang] = re.compile(
+            r"(?:" + "|".join(re.escape(p) for p in phrases) + r")\s+"
+            r"(?:a |an |the |un |una |el |la |le |les |der |die |das |o |uma )?"
+            r"([^\s.,;:!?][^.,;:!?\n]{2,45}?)" + _BOUNDARY, re.I) if phrases else None
+    return _dx_cache[lang]
 
 
 def umls_term_check(t: Transcript) -> list[Flag]:
+    """Verify a diagnosis-context term against UMLS, in the transcript's OWN language. Built once;
+    works for every language with a phrase row above, reusing that language plugin. Graceful."""
+    rx = _dx_regex(getattr(t, "lang", "en") or "en")
+    if rx is None:                                    # no trigger phrases for this language → no-op
+        return []
     out: list[Flag] = []
     for ln in t.lines:
-        for m in _DX_CTX.finditer(ln.text):
+        for m in rx.finditer(ln.text):
             phrase = m.group(1).strip()
-            head = phrase.split()[-1] if phrase.split() else ""
+            words = phrase.split()
+            head = words[-1] if words else ""
             if len(head) < 5:                        # too short to be a checkable condition head
                 continue
             name = lookup(phrase)                    # try the whole phrase first
