@@ -34,10 +34,11 @@ def tm_sound_tags(t: Transcript) -> list[Flag]:
 
 
 # Bates/reference terms stay lowercase even mid-reference (training: "the word 'number' in Bates
-# references or words like page, paragraph, or line ... do not get capitalized"). Only fires in a
-# REFERENCE context — the term must be followed by a NUMBER — so a surname/proper noun ("Officer
-# Page", "Number Two", "Line dance") is never flagged. Lookbehind spares sentence-initial capitals.
-_LC_TERMS = re.compile(r"(?<=[a-z,;:\-] )(Number|Page|Paragraph|Line)\b(?=\s+\d)")
+# references or words like page, paragraph, or line ... do not get capitalized"). Fires ONLY when
+# (a) an all-lowercase word precedes it (a reference lead-in like "see/on/the page 5" — NOT a proper
+# noun like "Facebook Page 5"), AND (b) a NUMBER follows. So surnames/proper nouns ("Officer Page",
+# "Facebook Page", "Number Two", "Line dance") and sentence-initial capitals are all spared.
+_LC_TERMS = re.compile(r"\b[a-z]+ (Number|Page|Paragraph|Line)\b(?=\s+\d)")
 
 
 def tm_lowercase_terms(t: Transcript) -> list[Flag]:
