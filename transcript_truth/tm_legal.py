@@ -34,9 +34,10 @@ def tm_sound_tags(t: Transcript) -> list[Flag]:
 
 
 # Bates/reference terms stay lowercase even mid-reference (training: "the word 'number' in Bates
-# references or words like page, paragraph, or line ... do not get capitalized"). Guard with a
-# lookbehind so a legitimate sentence-initial capital isn't flagged.
-_LC_TERMS = re.compile(r"(?<=[a-z,;:\-] )(Number|Page|Paragraph|Line)\b")
+# references or words like page, paragraph, or line ... do not get capitalized"). Only fires in a
+# REFERENCE context — the term must be followed by a NUMBER — so a surname/proper noun ("Officer
+# Page", "Number Two", "Line dance") is never flagged. Lookbehind spares sentence-initial capitals.
+_LC_TERMS = re.compile(r"(?<=[a-z,;:\-] )(Number|Page|Paragraph|Line)\b(?=\s+\d)")
 
 
 def tm_lowercase_terms(t: Transcript) -> list[Flag]:
@@ -55,8 +56,24 @@ def tm_lowercase_terms(t: Transcript) -> list[Flag]:
 # Colloquy speaker IDs are ALL CAPS — surnames for lawyers (MR. SMITH), titles for judges
 # (THE COURT), THE WITNESS; Q/A for examination (guide p.3). A speaker label = a name-like prefix
 # at line start followed by 2+ spaces (the WorkHub tab separator; CVL body text is single-spaced).
-# prefix must END in a letter (so "This is one.  This" — a double-space typo — isn't read as a label)
 _SPK = re.compile(r"^\s*([A-Za-z][A-Za-z .'\-]{0,37}?[A-Za-z])\s{2,}\S")
+# ...but a stray mid-sentence double space is NOT a label. Only flag a prefix that is actually a
+# recognized legal title/role (in the wrong case) — never arbitrary prose ("Well  I don't know",
+# "I went to the store  and..."). Bare-surname labels without a title aren't flagged (can't be told
+# from prose), which keeps zero false positives on ordinary sentences.
+_LABEL_MARKERS = (
+    "mr", "ms", "mrs", "dr", "miss", "mister", "madam", "sir",
+    "judge", "justice", "officer", "detective", "sergeant", "lieutenant", "captain",
+    "deputy", "attorney", "counsel", "counselor", "chief", "doctor", "professor",
+    "the court", "the witness", "the clerk", "the bailiff", "the reporter",
+    "the interpreter", "the defendant", "the plaintiff", "the foreperson", "the jury",
+    "by mr", "by ms", "by mrs", "by the",
+)
+
+
+def _is_legal_label(lab: str) -> bool:
+    low = lab.lower()
+    return any(low == k or low.startswith(k + " ") or low.startswith(k + ".") for k in _LABEL_MARKERS)
 
 
 def tm_speaker_caps(t: Transcript) -> list[Flag]:
@@ -66,9 +83,9 @@ def tm_speaker_caps(t: Transcript) -> list[Flag]:
         if not m:
             continue
         lab = m.group(1).strip()
-        if lab in ("Q", "A"):                       # examination labels are correct as-is
+        if lab in ("Q", "A") or not _is_legal_label(lab):   # only recognized legal labels
             continue
-        if any(c.islower() for c in lab):           # a Colloquy ID with lowercase → not all caps
+        if any(c.islower() for c in lab):                   # a legal label with lowercase → not all caps
             out.append(Flag(
                 rule="tm_speaker_caps", severity="moderate", line=ln.n, evidence=lab,
                 label=f"Legal: speaker ID '{lab}' must be ALL CAPS (Colloquy)",
@@ -102,7 +119,13 @@ _SPOKEN_PUNCT = re.compile(
 def tm_spoken_punct(t: Transcript) -> list[Flag]:
     out: list[Flag] = []
     for ln in t.lines:
-        for m in _SPOKEN_PUNCT.finditer(ln.text):
+        ms = list(_SPOKEN_PUNCT.finditer(ln.text))
+        for m in ms:
+            is_terminal = bool(m.group(2))          # period/stop/full stop (comma-guarded → unambiguous)
+            # a lone ", comma," / ", colon," is ambiguous with a sentence that merely NAMES the marks
+            # ("use a colon, comma, or period") — require 2+ dictation hits before firing on those.
+            if not is_terminal and len(ms) < 2:
+                continue
             word = (m.group(1) or m.group(2))
             out.append(Flag(
                 rule="tm_spoken_punct", severity="moderate", line=ln.n, evidence=word,

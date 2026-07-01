@@ -80,8 +80,10 @@ def split_audio(path: str, window_s: int = 600, overlap_s: int = 5, out_dir: str
             ["ffmpeg", "-y", "-ss", str(start), "-t", str(window_s + overlap_s),
              "-i", path, "-ac", "1", "-ar", "16000", cp, "-loglevel", "error"],
             timeout=300)
-        if os.path.getsize(cp) < 1000:
-            os.remove(cp); break
+        if not os.path.exists(cp) or os.path.getsize(cp) < 1000:  # ffmpeg may have produced nothing
+            if os.path.exists(cp):
+                os.remove(cp)
+            break
         chunks.append((i, start, cp))
         i += 1; start += window_s
         if not dur:

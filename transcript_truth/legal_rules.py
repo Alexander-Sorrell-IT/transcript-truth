@@ -55,8 +55,7 @@ _SPELL = [
     (re.compile(r"\bU\.S\.(?!A)"), "US", "No periods: 'US', not 'U.S.'. [p.5]"),
     (re.compile(r"\be-mail\b", re.I), "email", "One word, no hyphen: 'email'. [p.5]"),
     (re.compile(r"\bhealth care\b", re.I), "healthcare", "One word: 'healthcare'. [p.5]"),
-    # 'internet' is always lowercase (p.5); guard so a legit sentence-initial capital isn't flagged.
-    (re.compile(r"(?<=[a-z,;:] )Internet\b"), "internet", "Lowercase: 'internet', not 'Internet'. [p.5]"),
+    # 'internet' lowercase (p.5) is handled by the dedicated inline check below — don't duplicate here.
 ]
 
 
@@ -296,7 +295,9 @@ def legal_spacing(t: Transcript) -> list[Flag]:
 # hard flag, so the tool never pretends to have read the meaning.
 
 # "could of / should of / would of / must of" -> "... have" (a misheard ''ve').
-_OF_FOR_HAVE = re.compile(r"\b(could|should|would|must|might|may)\s+of\b", re.I)
+# NOTE: 'may of'/'might of' are excluded — "May of 2020" (date) and "might of course" are common
+# legit uses; only could/should/would/must + of is unambiguously "…have".
+_OF_FOR_HAVE = re.compile(r"\b(could|should|would|must)\s+of\b", re.I)
 
 # A curated possessed-noun list: directly after you're/there/they're/it's, these
 # are ~always the possessive homophone, not the contraction. Kept short on

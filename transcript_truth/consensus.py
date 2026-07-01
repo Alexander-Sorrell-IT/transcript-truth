@@ -180,12 +180,16 @@ def _chopped_witness(name, audio_path, lang):
             bad += 1; continue
         spliced, ok = _splice(full, nxt, win=win)
         if not ok:                                   # seam won't join — bridge it on demand
-            seam_s = chunks[i][1]                     # offset of this chunk = the seam time
+            # true seam ≈ chunk start + half the overlap (VAD chunks start overlap/2 before the cut)
+            seam_s = chunks[i][1] + _CHOP_OVERLAP_S / 2.0
             bridge = _bridge_seam(name, audio_path, lang, seam_s)
             if bridge:
                 viab, ok1 = _splice(full, bridge, win=win)
                 spliced2, ok2 = _splice(viab, nxt, win=win)
-                if ok1 or ok2:
+                # accept the bridged join ONLY if BOTH seams deduped cleanly; otherwise a half-clean
+                # bridge would append the bridge's restatement of already-present text (duplication)
+                # AND hide it from the bad-seam counter. Fall back to the flagged full+nxt concat.
+                if ok1 and ok2:
                     spliced, ok = spliced2, True
         full = spliced
         bad += (not ok)
