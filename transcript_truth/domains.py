@@ -57,10 +57,10 @@ from .legal_rules import (legal_titles, legal_numbers, legal_ampm, legal_tags,  
                           legal_nonverbal, legal_spacing)
 from .scanners import timestamps as _timestamps  # noqa: E402
 from .legal_terms import legal_terms  # noqa: E402
-from .tm_legal import tm_sound_tags, tm_lowercase_terms, tm_speaker_caps, tm_double_dash  # noqa: E402
+from .tm_legal import tm_sound_tags, tm_lowercase_terms, tm_speaker_caps, tm_double_dash, tm_spoken_punct  # noqa: E402
 register_domain(
     "legal", (_timestamps, legal_titles, legal_numbers, legal_ampm, legal_tags,
               legal_nonverbal, legal_spacing, legal_terms, tm_sound_tags, tm_lowercase_terms,
-              tm_speaker_caps, tm_double_dash),
+              tm_speaker_caps, tm_double_dash, tm_spoken_punct),
     "Legal (TranscribeMe CVL) — formatting + terminology + TranscribeMe rules (sound-tags, Bates, Colloquy caps, dashes)",
 )

@@ -251,6 +251,15 @@ def test_transcribeme_legal_structure():
     assert not any(x.rule in ("tm_speaker_caps", "tm_double_dash") for x in ok)
 
 
+def test_transcribeme_spoken_punctuation():
+    from transcript_truth import audit_transcript
+    f = audit_transcript("Runny nose, comma, sore throat, comma, and red eyes, stop.", profile="legal").flags
+    assert sum(1 for x in f if x.rule == "tm_spoken_punct") == 3   # two commas + one stop
+    # real nouns "comma"/"period" must NOT flag
+    ok = audit_transcript("That line needs a comma. She had a rough period.", profile="legal").flags
+    assert not any(x.rule == "tm_spoken_punct" for x in ok)
+
+
 def test_medical_drug_name_check():
     from transcript_truth.medical_data import drug_set
     if not drug_set():

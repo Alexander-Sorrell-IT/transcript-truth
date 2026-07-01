@@ -55,7 +55,8 @@ def tm_lowercase_terms(t: Transcript) -> list[Flag]:
 # Colloquy speaker IDs are ALL CAPS — surnames for lawyers (MR. SMITH), titles for judges
 # (THE COURT), THE WITNESS; Q/A for examination (guide p.3). A speaker label = a name-like prefix
 # at line start followed by 2+ spaces (the WorkHub tab separator; CVL body text is single-spaced).
-_SPK = re.compile(r"^\s*([A-Za-z][A-Za-z .'\-]{0,38}?)\s{2,}\S")
+# prefix must END in a letter (so "This is one.  This" — a double-space typo — isn't read as a label)
+_SPK = re.compile(r"^\s*([A-Za-z][A-Za-z .'\-]{0,37}?[A-Za-z])\s{2,}\S")
 
 
 def tm_speaker_caps(t: Transcript) -> list[Flag]:
@@ -88,4 +89,23 @@ def tm_double_dash(t: Transcript) -> list[Flag]:
                 rule="tm_double_dash", severity="minor", line=ln.n, evidence=m.group(0).strip() or "--",
                 label="Legal: double dash attaches to the preceding word — no space before '--'",
                 fix="Write 'word-- next'; the dashes attach to the word before them (single dash ' - ' is the offset rule)."))
+    return out
+
+
+# Spoken punctuation (p.24): when a speaker DICTATES punctuation ("comma", "period", "stop"…), omit
+# the word and use the actual mark. The tell that it's dictated (not the noun "comma"/"period") is
+# that it sits adjacent to real punctuation: ", comma," or "…, stop." — high-precision.
+_SPOKEN_PUNCT = re.compile(
+    r",\s*(comma|semicolon|colon)\s*,|,\s*(period|full stop|stop)\s*(?=\.|$|\s[A-Z])", re.I)
+
+
+def tm_spoken_punct(t: Transcript) -> list[Flag]:
+    out: list[Flag] = []
+    for ln in t.lines:
+        for m in _SPOKEN_PUNCT.finditer(ln.text):
+            word = (m.group(1) or m.group(2))
+            out.append(Flag(
+                rule="tm_spoken_punct", severity="moderate", line=ln.n, evidence=word,
+                label=f"Legal: dictated punctuation '{word}' should be omitted, using only the mark",
+                fix=f"Remove the spoken word '{word}' and keep only the actual punctuation. [p.24]"))
     return out
