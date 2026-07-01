@@ -68,15 +68,18 @@ def compose(profile_name: str, domain_name: str) -> Profile:
 register_domain("general", (), "no domain-specific rules")
 
 from .medical_rules import dangerous_abbreviations, dosage_hygiene, drug_name_check  # noqa: E402
+from .umls import umls_term_check  # noqa: E402
 register_domain(
     "medical",
     # universal core (every language): dosage-number hygiene (trailing-zero/naked-decimal) is
     # locale-safe number safety, useful in any language.
     scanners=(dosage_hygiene,),
     # English/US-medical layer: ISMP abbreviations are English/Latin letter-abbrevs (u, cc, MS…) that
-    # collide with native words in other languages; RxNorm drug-name check uses an English frequency gate.
-    per_language={"en": (dangerous_abbreviations, drug_name_check)},
-    description="Medical — dosage hygiene (all languages) + ISMP abbrevs & RxNorm drug names (en)",
+    # collide with native words in other languages; RxNorm drug names + UMLS terminology are English/
+    # US-medical. umls_term_check verifies diagnosis-context terms via the licensed UTS API (graceful:
+    # no key / offline → no-ops).
+    per_language={"en": (dangerous_abbreviations, drug_name_check, umls_term_check)},
+    description="Medical — dosage hygiene (all languages) + ISMP/RxNorm/UMLS (en)",
 )
 
 # Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide

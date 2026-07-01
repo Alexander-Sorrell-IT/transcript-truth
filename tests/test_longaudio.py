@@ -290,6 +290,15 @@ def test_legal_domain_core_plus_english_layer():
     assert not any(f.rule == "legal_term" for f in audit_transcript("The subpoena and the defendant.", profile="en", domain="legal").flags)
 
 
+def test_umls_context_gating():
+    # offline, deterministic: UMLS check only considers a term in a clear diagnosis context (so it
+    # never blanket-flags ordinary words); the actual API verification is graceful (no key → no-op).
+    from transcript_truth.umls import _DX_CTX
+    assert _DX_CTX.search("Patient diagnosed with pneumonia.").group(1).lower() == "pneumonia"
+    assert _DX_CTX.search("History of hypertension today").group(1).lower() == "hypertension"
+    assert _DX_CTX.search("She likes pneumonia trivia") is None       # no diagnosis context → no candidate
+
+
 def test_medical_domain_core_plus_english_layer():
     from transcript_truth import audit_transcript
     from transcript_truth.domains import domain_languages
