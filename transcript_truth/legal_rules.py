@@ -4,8 +4,9 @@ Deterministic scanners encoding the rules of the "CV for Legal Style Guide"
 (TranscribeMe, updated 9-June-2025). No model, no network — every flag is a
 regex/rule hit cited at its line, with a guideline-grounded fix and a page
 reference. This is the *mechanical* half of the CVL guide; the semantic half
-(is this the right word? does the comma reflect the real sentence boundary?)
-is the human listener's job, exactly as in the rest of the engine.
+(is this the right word? does the comma reflect the real sentence boundary?) is
+handled by the engine's opt-in coherence layer as 'review' flags a human
+CONFIRMS — surfaced, not punted to the human, and never in the grade.
 
 CONFLICT NOTE — why this is a separate profile, not the default scanners:
 CVL Legal disagrees with the GoTranscript English rules already in the engine.
@@ -305,11 +306,11 @@ def legal_spacing(t: Transcript) -> list[Flag]:
 # uncertain" — so these cite [grammar], not a page. DELIBERATELY high-confidence
 # patterns only: each fires on a mechanical adjacency that is wrong in ~every
 # context (you're + a possessed noun, of-for-'ve), never on a judgment call about
-# which homophone a sentence "means". The semantic half — is THIS the right
-# homophone in a sentence that could legitimately go either way? — stays the
-# human's job, the same boundary the rest of the engine keeps. The one
-# context-dependent check (possessive 'their' + a finite verb) is 'review', not a
-# hard flag, so the tool never pretends to have read the meaning.
+# which homophone a sentence "means". The genuinely either-way call is left to the
+# engine's coherence layer (opt-in, model, 'review' tier) — surfaced for a human to
+# CONFIRM, not decided in these mechanical patterns. The one context-dependent
+# check here (possessive 'their' + a finite verb) is itself 'review', not a hard
+# flag, so the tool never pretends to have read the meaning.
 
 # "could of / should of / would of / must of" -> "... have" (a misheard ''ve').
 # NOTE: 'may of'/'might of' are excluded — "May of 2020" (date) and "might of course" are common

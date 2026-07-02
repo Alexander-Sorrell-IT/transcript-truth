@@ -134,3 +134,48 @@ Multi-agent harness: each agent probes one failure mode against the Phase-1 batt
 ## Suggested order & rationale
 **0 → 1 → 2 → 3 → (4, 8 in parallel) → 5 → 6 → 7.**
 Measurement (1) before any language work so every addition is provable. Routing (2) before languages so they auto-activate. Tier-1 (3) first for fast wins. Adversarial agents (7) last, once there's a battery + multiple languages to stress.
+
+---
+
+## Phase 9 — Multi-language domain coverage + auto-extend  (2026-07-01)
+**Goal:** every language gets legal & medical, and adding a NEW language auto-extends both — write the
+language ONCE, each domain adds a thin per-language layer; a new language instantly gets the shared
+domain core, and its per-language layer is stubbed + tracked until filled.
+
+**Context — the fix that unblocked this (done 2026-07-01):** the legal DOMAIN's English layer was
+incomplete (structural CVL only — dropped spelling/slang/grammar), and `compose()` dropped domain
+fixers. Both fixed: `profile=en, domain=legal` now == the standalone `legal` profile for flags AND
+autofix (parity proven, 128 tests pass, adversarially verified: ~230 inputs, 0 FPs / 0 parity breaks).
+Legal now composes onto any language exactly like medical. So the machine is correct; only per-language
+CONTENT remains. Medical already travels via multilingual UMLS; legal needs per-language style content.
+
+### Part 1 — make the machine auto-extend (small; high-leverage; DO FIRST)
+1. ✅ **Auto-core** (already true): a new language plugin instantly gets legal(timestamps) +
+   medical(dosage + multilingual UMLS) via `compose()`, zero work — graceful, never broken.
+2. **Coverage map** — `domains.coverage_report()` + `cli --coverage`: for every language × domain,
+   report `core` vs `full`. The living version of the one-off cross-language scan.
+3. **Scaffolder** — stub a new language's per-language legal/medical files from the English template
+   so filling content is fill-in-the-blank, not plumbing.
+4. **Manifest correctness** — the hand-kept `plugins_manifest.json` is stale (missing en/es/ru/uk/ja
+   + the whole `legal` domain + per-language-domain granularity). Fix it + add a registry-vs-manifest
+   validator so drift is caught. This is what lets per-language layers SHIP via the updater.
+5. **The lock** — a regression test pinning `en+legal == legal` (flags + fixers) so the slot can
+   never silently break again — protects EVERY future language, not just English.
+
+### Part 2 — fill content, prioritized (the research-heavy part)
+- **Medical:** effectively done for all languages now (UMLS + dosage). Per-country drug/abbrev lists
+  are a later nice-to-have. Mark medical "good" across the board.
+- **Legal:** per-language style rules = real research each. Sequence by NEED: `en` ✅ · `es` = first
+  template build · everything else = clone-when-needed, never speculative.
+  ⚠️ Some English CVL rules would CORRUPT other languages (e.g. `legal_accents` strips accents, but
+  es/fr KEEP them) — each language needs its OWN legal layer, not a copy of English.
+
+### Part 3 — ship via the updater
+Each per-language layer = its own file + a versioned manifest entry → publish to the source repo →
+every install pulls "new legal for X / new medical for Y" on its cadence. The app-store, as designed.
+
+### Part 4 — tests (nothing's done until measured)
+Every per-language layer ships with a test + a battery scenario. Coverage map + the lock guard the machine.
+
+**Honest sequencing vs income:** Part 1 now (small, permanent, makes every future language cheap);
+skip Part 2 legal content beyond English until a real need appears — English is the exam + the income.

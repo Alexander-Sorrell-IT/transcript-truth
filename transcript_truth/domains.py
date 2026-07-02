@@ -11,25 +11,42 @@ Domains self-register here; `compose(lang_profile, domain)` returns a merged Pro
 from __future__ import annotations
 from .profiles._base import Profile, get as get_profile
 
-DOMAIN_REGISTRY = {}
+DOMAIN_REGISTRY = {}   # FIELD plugins (what SUBJECT is this): legal, medical …
+SITE_REGISTRY = {}     # SITE/format plugins (what OUTPUT FORMAT / platform): transcribeme …
 
 
-def register_domain(name, scanners=(), description="", per_language=None):
-    """A domain is TWO parts so it composes with ANY language:
-      • `scanners`     = the language-NEUTRAL core (dosage numbers, timestamps, ISMP abbrevs, dash
-                         format) — safe and useful for every language.
-      • `per_language` = {lang: (extra scanners,)} — that language's SPECIFIC rules (English RxNorm
-                         drug names, English CVL spelling/case, etc.). Added only for that language.
-    So `compose(lang, domain)` = base + core + per_language.get(lang). Every language gets the
-    universal core; a language gets the specialized layer once we've built its content."""
-    DOMAIN_REGISTRY[name] = {"name": name, "scanners": tuple(scanners),
-                             "per_language": {k: tuple(v) for k, v in (per_language or {}).items()},
-                             "description": description}
-    return DOMAIN_REGISTRY[name]
+def _register(registry, name, scanners=(), description="", per_language=None, per_language_fixers=None):
+    """Register a composable LAYER (field or site). A layer is THREE parts so it composes with ANY
+    language:
+      • `scanners`     = the language-NEUTRAL core — safe/useful for every language.
+      • `per_language` = {lang: (extra scanners,)} — that language's SPECIFIC rules. Added only there.
+      • `per_language_fixers` = {lang: (extra Redline autofixers,)} — that language's deterministic
+                         auto-fixes, so a composed plug autofixes exactly like a standalone profile.
+    `compose(lang, field, site)` merges base + each layer's core + per_language.get(lang)."""
+    registry[name] = {"name": name, "scanners": tuple(scanners),
+                      "per_language": {k: tuple(v) for k, v in (per_language or {}).items()},
+                      "per_language_fixers": {k: tuple(v) for k, v in (per_language_fixers or {}).items()},
+                      "description": description}
+    return registry[name]
+
+
+def register_domain(name, scanners=(), description="", per_language=None, per_language_fixers=None):
+    """Register a FIELD plugin (subject: legal, medical). Composes on the DOMAIN axis."""
+    return _register(DOMAIN_REGISTRY, name, scanners, description, per_language, per_language_fixers)
+
+
+def register_site(name, scanners=(), description="", per_language=None, per_language_fixers=None):
+    """Register a SITE/format plugin (per-website output format: transcribeme, rev, …). Same layer
+    shape as a domain — it just composes on the SITE axis: language × field × site."""
+    return _register(SITE_REGISTRY, name, scanners, description, per_language, per_language_fixers)
 
 
 def domain_names():
     return sorted(DOMAIN_REGISTRY)
+
+
+def site_names():
+    return sorted(SITE_REGISTRY)
 
 
 def domain_languages(domain_name: str) -> list:
@@ -38,30 +55,150 @@ def domain_languages(domain_name: str) -> list:
     return sorted(dom["per_language"]) if dom else []
 
 
-def compose(profile_name: str, domain_name: str) -> Profile:
-    """Return a Profile running the language profile's scanners PLUS the domain's universal core PLUS
-    that language's per-language domain layer (if any). The domain composes with EVERY language via
-    its core; the language-specific rules attach only where they belong — so a French transcript gets
-    universal dosage/timestamp checks under `medical`/`legal`, but English CVL/RxNorm never misfire on it."""
+# --- Part 1: multi-language auto-extend — coverage map + scaffolder ---
+# Meta/style profiles that are NOT reusable language plugs. (Japanese currently rides `default`.)
+_NON_LANGUAGE_PROFILES = {"default", "legal", "ccsl", "me", "agent"}
+
+
+def language_profiles() -> list:
+    """The registered LANGUAGE plugs (excludes meta/style profiles and `:full` variants)."""
+    from .profiles import names as _names
+    return [n for n in _names() if ":" not in n and n not in _NON_LANGUAGE_PROFILES]
+
+
+def coverage_report() -> list:
+    """For every language × layer (FIELD + SITE): 'full' (has a per-language layer) or 'core'
+    (universal core only). The LIVING cross-language scan — a NEW language auto-appears ('core' for
+    free, 'full' once its layer is written). Covers both the field axis (legal/medical) and the site
+    axis (transcribeme/…). Each row: {language, layer, kind: field|site, coverage}."""
+    rows = []
+    for lang in language_profiles():
+        for kind, reg in (("field", DOMAIN_REGISTRY), ("site", SITE_REGISTRY)):
+            for nm in sorted(reg):
+                if nm == "general":
+                    continue
+                has = lang in reg[nm]["per_language"]
+                rows.append({"language": lang, "layer": nm, "kind": kind,
+                             "coverage": "full" if has else "core"})
+    return rows
+
+
+_STUB_TEMPLATE = '''"""{domain} domain — {lang} per-language layer (SCAFFOLD — fill me in).
+
+Clone the English layer's intent, adapted to {lang}'s conventions. DO NOT copy English rules blindly:
+some (e.g. accent-stripping) would CORRUPT correct {lang} text. Every flag = a deterministic rule hit
+cited at its line, with a fix. No model in the verdict path.
+"""
+from __future__ import annotations
+import re  # noqa: F401
+from .types import Flag, Transcript  # noqa: F401
+
+
+def {domain}_{lang}_example(t: Transcript) -> list:
+    """TODO: replace with real {lang} {domain} rules."""
+    return []
+
+
+{LANG}_{DOMAIN}_SCANNERS = ({domain}_{lang}_example,)
+'''
+
+
+def scaffold_domain_layer(lang: str, domain: str, write: bool = True) -> dict:
+    """Create a stub per-language layer file for (lang, domain) from the template, so filling a new
+    language is fill-in-the-blank. Returns the path + the exact snippet to register it. SAFE: never
+    edits domains.py itself, never overwrites an existing file."""
+    import os
+    if domain not in DOMAIN_REGISTRY or domain == "general":
+        raise KeyError(f"unknown domain {domain!r}; available: {', '.join(domain_names())}")
+    root = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(root, f"{domain}_{lang}_rules.py")
+    created = False
+    if write and not os.path.exists(path):
+        body = _STUB_TEMPLATE.format(lang=lang, domain=domain, LANG=lang.upper(), DOMAIN=domain.upper())
+        with open(path, "w", encoding="utf-8") as fh:
+            fh.write(body)
+        created = True
+    snippet = (f'from .{domain}_{lang}_rules import {lang.upper()}_{domain.upper()}_SCANNERS\n'
+               f'DOMAIN_REGISTRY[{domain!r}]["per_language"][{lang!r}] = '
+               f'{lang.upper()}_{domain.upper()}_SCANNERS')
+    return {"path": path, "created": created, "register_snippet": snippet}
+
+
+def autodiscover_domain_layers() -> list:
+    """Auto-wire per-language FIELD or SITE layers BY CONVENTION, so a downloaded pack self-installs.
+    A file `{layer}_{lang}_rules.py` exporting `{LANG}_{LAYER}_SCANNERS` (and optionally
+    `{LANG}_{LAYER}_FIXERS`), where {layer} is a registered field (legal/medical) OR site
+    (transcribeme/…), is picked up automatically — no editing this file. This is the 'download a new
+    language/site → its legal/medical/format layers set themselves up' mechanism. Returns [(layer, lang)].
+    Safe: the pattern needs TWO underscores (layer_lang_rules), so existing single-underscore files
+    (legal_rules.py, medical_rules.py, es_rules.py…) never false-match; a bad module is skipped."""
+    import os, importlib, re as _re
+    root = os.path.dirname(os.path.abspath(__file__))
+    pat = _re.compile(r"^([a-z]+)_([a-z]{2,3})_rules\.py$")
+    found = []
+    for fn in sorted(os.listdir(root)):
+        m = pat.match(fn)
+        if not m:
+            continue
+        layer, lang = m.group(1), m.group(2)
+        reg = (DOMAIN_REGISTRY if layer in DOMAIN_REGISTRY else
+               SITE_REGISTRY if layer in SITE_REGISTRY else None)
+        if reg is None or layer == "general":
+            continue
+        try:
+            mod = importlib.import_module(f".{layer}_{lang}_rules", __package__)
+        except Exception:
+            continue
+        scanners = getattr(mod, f"{lang.upper()}_{layer.upper()}_SCANNERS", None)
+        if not scanners:
+            continue
+        reg[layer]["per_language"][lang] = tuple(scanners)
+        fixers = getattr(mod, f"{lang.upper()}_{layer.upper()}_FIXERS", None)
+        if fixers:
+            reg[layer]["per_language_fixers"][lang] = tuple(fixers)
+        found.append((layer, lang))
+    return found
+
+
+def compose(profile_name: str, domain_name: str = None, site_name: str = None) -> Profile:
+    """Compose a LANGUAGE plug with an optional FIELD (domain) and optional SITE (format) layer:
+    `language × field × site`. Each layer contributes its universal core + that language's
+    per-language scanners/fixers; everything is deduped. A layer composes with EVERY language via its
+    core; per-language rules attach only where built. Back-compatible: `compose(lang, domain)` still works.
+
+        compose("en", "legal", "transcribeme")  # English + legal field + TranscribeMe format = full CVL
+        compose("en", "medical")                # English + medical, format-agnostic
+        compose("es", None, "transcribeme")     # Spanish, TranscribeMe format, no field
+    """
     base = get_profile(profile_name)
-    if domain_name in (None, "", "general"):
+    layers = []
+    for reg, nm, kind in ((DOMAIN_REGISTRY, domain_name, "domain"), (SITE_REGISTRY, site_name, "site")):
+        if nm in (None, "", "general"):
+            continue
+        if nm not in reg:
+            avail = ", ".join(sorted(reg)) or "(none)"
+            raise KeyError(f"unknown {kind} {nm!r}; available: {avail}")
+        layers.append(reg[nm])
+    if not layers:
         return base
-    if domain_name not in DOMAIN_REGISTRY:
-        avail = ", ".join(domain_names()) or "(none)"
-        raise KeyError(f"unknown domain {domain_name!r}; available: {avail}")
-    dom = DOMAIN_REGISTRY[domain_name]
-    extra = dom["per_language"].get(profile_name, ())        # language-specific layer (if built)
-    combined, seen, scanners = tuple(base.scanners) + dom["scanners"] + tuple(extra), set(), []
-    for s in combined:                                       # dedup: a base profile may already carry
-        if s not in seen:                                    # a core scanner (e.g. timestamps) — don't
-            seen.add(s); scanners.append(s)                  # run it twice (was double-counting)
-    return Profile(
-        name=f"{profile_name}+{domain_name}",
-        description=f"{base.description}  +  {dom['description']}",
-        scanners=tuple(scanners),
-        modes=base.modes, default_mode=base.default_mode,
-        fixers=getattr(base, "fixers", ()),   # keep the language profile's redline fixers (was dropped)
-    )
+    seen, scanners = set(), []
+    for s in base.scanners:                                  # base language scanners first
+        if s not in seen:
+            seen.add(s); scanners.append(s)
+    fixers = list(getattr(base, "fixers", ()))
+    descr = [base.description]
+    for lay in layers:                                       # then each layer's core + per-language
+        for s in tuple(lay["scanners"]) + lay["per_language"].get(profile_name, ()):
+            if s not in seen:                                # dedup: never run a shared scanner twice
+                seen.add(s); scanners.append(s)
+        for fx in lay["per_language_fixers"].get(profile_name, ()):
+            if fx not in fixers:                             # dedup fixers; keep the Redline path in the plug
+                fixers.append(fx)
+        descr.append(lay["description"])
+    tag = "+".join([profile_name] + [lay["name"] for lay in layers])
+    return Profile(name=tag, description="  +  ".join(descr),
+                   scanners=tuple(scanners), modes=base.modes,
+                   default_mode=base.default_mode, fixers=tuple(fixers))
 
 
 # --- built-in domains ---
@@ -82,23 +219,34 @@ register_domain(
     description="Medical — dosage + multilingual UMLS terminology (all languages) + ISMP & RxNorm (en)",
 )
 
-# Legal (TranscribeMe CVL) as a composable DOMAIN — the structural/formatting half of the guide
-# that generalizes across languages (titles, numbers, a.m./p.m., bracketed tags, non-verbals,
-# label spacing, timestamps). The English-SPECIFIC half (CVL spelling/slang/contractions/grammar)
-# stays in the full `legal` PROFILE; per-language legal style data is the "more resources" path.
-from .legal_rules import (legal_titles, legal_numbers, legal_ampm, legal_tags,  # noqa: E402
-                          legal_nonverbal, legal_spacing)
+# Legal as a composable FIELD (subject). Now SITE-NEUTRAL: the TranscribeMe-specific FORMAT (the tm_*
+# rules) was split out into the `transcribeme` SITE below, so `legal` holds legal-transcription content
+# (Latin terms + CVL spelling/slang/grammar/titles/numbers/…) that a court transcript needs anywhere,
+# and the site supplies the platform's output format. `compose("en","legal","transcribeme")` == the
+# old full CVL (== the standalone `legal` profile). Other languages get the timestamp core today.
+from .legal_rules import LEGAL_SCANNERS, LEGAL_FIXERS  # noqa: E402 — CVL scanners + Redline autofixers
 from .scanners import timestamps as _timestamps  # noqa: E402
 from .legal_terms import legal_terms  # noqa: E402
 from .tm_legal import tm_sound_tags, tm_lowercase_terms, tm_speaker_caps, tm_double_dash, tm_spoken_punct  # noqa: E402
 register_domain(
     "legal",
-    # universal core (every language): timestamp format is the one language-neutral legal convention.
-    scanners=(_timestamps,),
-    # English layer: American-English CVL — case (Colloquy caps), spelling, titles, accents, English
-    # tag words/number words, Latin terms, and the double-dash-attach convention — all English CVL.
-    per_language={"en": (tm_double_dash, legal_titles, legal_numbers, legal_ampm, legal_tags,
-                         legal_nonverbal, legal_spacing, legal_terms, tm_sound_tags,
-                         tm_lowercase_terms, tm_speaker_caps, tm_spoken_punct)},
-    description="Legal — timestamp core (all languages) + TranscribeMe CVL (en)",
+    scanners=(_timestamps,),                    # universal core: timestamp format
+    per_language={"en": (*LEGAL_SCANNERS, legal_terms)},
+    per_language_fixers={"en": LEGAL_FIXERS},   # the CVL Redline autofix set travels with the plug
+    description="Legal — timestamp core (all languages) + American-English CVL content (en)",
 )
+
+# --- SITE axis: per-website OUTPUT FORMAT plugins (language × field × SITE) ---
+# TranscribeMe's format (the tm_* rules: speaker caps, sound tags, dash-attach, spoken punctuation)
+# was split OUT of the legal field so it can pair with ANY field, and so `legal` is site-neutral.
+# `compose("en","legal","transcribeme")` reassembles the full TranscribeMe CVL.
+register_site(
+    "transcribeme",
+    scanners=(),                                # (timestamp format could move here later; tm_* are en today)
+    per_language={"en": (tm_double_dash, tm_sound_tags, tm_lowercase_terms, tm_speaker_caps, tm_spoken_punct)},
+    description="TranscribeMe output format (speaker caps, sound tags, dash-attach, spoken punctuation)",
+)
+
+# Auto-wire any per-language field/site layers present by convention (download a language/site pack →
+# its layers self-install). Runs AFTER the built-in field + site plugins are registered.
+autodiscover_domain_layers()

@@ -2,9 +2,12 @@
 
 Each scanner: (Transcript) -> list[Flag].  No model, no network — pure regex/rule
 hits cited at line. These are the rules that are FULLY deterministic on plain
-text (the mechanical half of any transcription style guide). Semantic checks
-(right word for the meaning, natural phrasing) are deliberately NOT here — that
-is the half a human must verify, and the half that lied to us in Japanese.
+text (the mechanical half of any transcription style guide). Semantics are NOT
+left to the human: the no-model collocation check (context_homophones, below) and
+the opt-in coherence model layer both attack "is this the right word?" — but as
+'review' flags the engine SURFACES for a human to CONFIRM, never in the verdict
+math. (The lesson from Japanese: a model that "reads meaning" will confidently
+lie, so meaning is review-tier, never the grade.)
 """
 from __future__ import annotations
 import re

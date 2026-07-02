@@ -38,8 +38,11 @@ def _split_label(text: str) -> Tuple[str, str]:
 def thoth(text: str, profile: str = "default") -> Tuple[str, List[Tuple[int, str, str]]]:
     """Return (fixed_text, changes), changes = [(line_no, before, after), ...].
 
-    Only lines that actually changed appear in `changes`."""
-    prof = get_profile(profile)
+    Only lines that actually changed appear in `changes`.
+    `profile` may be a profile NAME or an already-composed Profile object (e.g. a
+    `language × domain` plug from domains.compose), so the plug's Redline fixers apply."""
+    from .profiles._base import Profile
+    prof = profile if isinstance(profile, Profile) else get_profile(profile)
     out: List[str] = []
     changes: List[Tuple[int, str, str]] = []
     for i, line in enumerate(text.splitlines(), 1):

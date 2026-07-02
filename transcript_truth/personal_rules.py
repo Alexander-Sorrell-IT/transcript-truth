@@ -9,8 +9,9 @@ regex hit cited at its line. It rides ON TOP of the legal (CVL) profile.
 SCOPE, honestly: this catches only the mechanical, high-frequency, regex-able
 slips. The things that make the writing *his* — the anaphora, the hairpin tonal
 turns, the rawness — are NOT errors and are never touched. And the genuinely
-semantic slips (comma splices, run-ons, which homophone a sentence "means") stay
-the human's job, the same boundary the whole engine keeps. Cites [personal].
+semantic slips (comma splices, run-ons) aren't caught by this mechanical profile;
+homophone-meaning calls are handled by the engine's coherence layer as 'review'
+flags a human CONFIRMS. Cites [personal].
 """
 from __future__ import annotations
 import re

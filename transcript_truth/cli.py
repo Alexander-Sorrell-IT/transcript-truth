@@ -15,6 +15,7 @@ def main(argv=None) -> int:
     mode = "clean_verbatim"
     profile = "default"
     domain = None
+    site = None
     do_thoth = False
     files = []
     for a in argv:
@@ -50,6 +51,8 @@ def main(argv=None) -> int:
             return 0
         elif a.startswith("--domain="):
             domain = a.split("=", 1)[1]
+        elif a.startswith("--site="):
+            site = a.split("=", 1)[1]
         elif a in ("--thoth", "--fix"):
             do_thoth = True
         elif a in ("--full", "--full-verbatim"):
@@ -68,6 +71,25 @@ def main(argv=None) -> int:
                 print(f"    {n:<10} {REGISTRY[n].description}")
             print()
             return 0
+        elif a == "--coverage":
+            from .domains import coverage_report
+            from .manifest import manifest_gaps
+            print("\n  language × layer coverage (full = per-language layer; core = universal core only):")
+            cur = None
+            for row in coverage_report():
+                if row["language"] != cur:
+                    cur = row["language"]
+                    print(f"\n    {cur}:")
+                mark = "✓ full" if row["coverage"] == "full" else "· core"
+                print(f"      {row['layer']:<12} [{row['kind']:<5}] {mark}")
+            gaps = manifest_gaps()
+            if any(gaps.values()):
+                print(f"\n  manifest drift (registered but not shippable via update):")
+                for k in ("languages", "domains", "sites"):
+                    if gaps.get(k):
+                        print(f"    {k+':':<11} {', '.join(gaps[k])}")
+            print()
+            return 0
         else:
             files.append(a)
     if not files:
@@ -77,7 +99,7 @@ def main(argv=None) -> int:
     path = files[0]
     with open(path, encoding="utf-8") as fh:
         text = fh.read()
-    r = audit_transcript(text, mode=mode, profile=profile, domain=domain)
+    r = audit_transcript(text, mode=mode, profile=profile, domain=domain, site=site)
 
     print()
     print("  transcript-truth — guideline-compliance receipt")
@@ -102,7 +124,14 @@ def main(argv=None) -> int:
     if do_thoth:
         import os
         from .thoth import thoth
-        fixed, changes = thoth(text, profile)
+        # apply the SAME plug that graded: a composed language×field×site profile carries the
+        # layers' Redline fixers (e.g. en+legal+transcribeme → CVL autofix), so pass the composed object.
+        if (domain and domain != "general") or (site and site != "general"):
+            from .domains import compose
+            fix_profile = compose(profile, domain, site)
+        else:
+            fix_profile = profile
+        fixed, changes = thoth(text, fix_profile)
         base, ext = os.path.splitext(path)
         out_path = f"{base}.thoth{ext or '.txt'}"
         with open(out_path, "w", encoding="utf-8") as fh:
@@ -115,7 +144,7 @@ def main(argv=None) -> int:
             print(f"  L{ln:<3} {before!r}")
             print(f"       → {after!r}")
         print("  " + "=" * 60)
-        after_grade = audit_transcript(fixed, mode=mode, profile=profile).grade
+        after_grade = audit_transcript(fixed, mode=mode, profile=profile, domain=domain, site=site).grade
         print(f"  {len(changes)} line(s) fixed   grade {r.grade} → {after_grade}")
         print(f"  wrote: {out_path}")
         print()

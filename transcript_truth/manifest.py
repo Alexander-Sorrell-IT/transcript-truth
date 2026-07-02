@@ -30,7 +30,28 @@ PLUGINS = {
                     "dangerous_abbreviations": "ISMP 'Do Not Use' list",
                     "drug_names": "RxNorm (NLM)",
                 }},
+    "legal": {"version": "1.2.0", "kind": "domain",   # 1.2.0: site-neutral (tm_* split into the transcribeme site)
+              "files": ["transcript_truth/legal_rules.py", "transcript_truth/legal_terms.py"],
+              "data_sources": {"cvl": "TranscribeMe Clean Verbatim for Legal (en)"}},
+    # sites (output-format / per-website plugins)
+    "transcribeme": {"version": "1.0.0", "kind": "site",
+                     "files": ["transcript_truth/tm_legal.py"],
+                     "data_sources": {"format": "TranscribeMe output format (en)"}},
 }
+
+
+def manifest_gaps():
+    """Registry-vs-manifest drift check: language plugs / domains / sites that are REGISTERED in the
+    engine but MISSING from PLUGINS (so the updater can't ship them). Returns
+    {'languages': [...], 'domains': [...], 'sites': [...]}. Note: some registered languages
+    (en/es/ru/uk) predate the manifest — surfaced here to be added."""
+    from .domains import language_profiles, domain_names, site_names
+    m_langs = {n for n, p in PLUGINS.items() if p["kind"] == "language"}
+    m_doms = {n for n, p in PLUGINS.items() if p["kind"] == "domain"}
+    m_sites = {n for n, p in PLUGINS.items() if p["kind"] == "site"}
+    return {"languages": sorted(l for l in language_profiles() if l not in m_langs),
+            "domains": sorted(d for d in domain_names() if d not in m_doms and d != "general"),
+            "sites": sorted(s for s in site_names() if s not in m_sites and s != "general")}
 
 
 def local_manifest():
