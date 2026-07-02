@@ -18,7 +18,10 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 - **Phase A ✅ (2026-07-02):** independent-FAMILY voting (same-base Whisper reads share 1 vote;
   specialized fine-tunes independent) + wav2vec2 wired as 9th witness + on-demand LOCAL_TIER
   (free local models fold in only when cloud lacks a 2-family majority). Suite 273 green.
-- Phases B–H pending: token-level voting, two-tier slow path, multi-model detect, diarization
+- **Phase B ✅ (2026-07-02):** token-level (ROVER) `consensus_tokens` over the medoid backbone —
+  per-word independent-family majority can rebuild a transcript no single model got right, medoid
+  backstop prevents disfluent seams, surfaces `uncertain_spans`; `transcribe()` now returns it. Suite 279 green.
+- Phases C–H pending: two-tier slow path, multi-model detect, diarization
   cross-vote, 2nd coherence LLM, legal/medical re-exam loop, wire consensus into runner (last).
 
 ## Testing (2026-07-02) — coverage push (Phases 1–4 done)

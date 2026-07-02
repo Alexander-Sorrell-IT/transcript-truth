@@ -441,6 +441,68 @@ def consensus_vote(reads):
         1 - difflib.SequenceMatcher(a=_norm_ws(a), b=_norm_ws(b)).ratio() for b in cands))
 
 
+def _medoid_name(nonempty):
+    names = list(nonempty)
+    def dist(x, y):
+        return 1 - difflib.SequenceMatcher(a=_norm_ws(nonempty[x]), b=_norm_ws(nonempty[y])).ratio()
+    return min(names, key=lambda x: sum(dist(x, y) for y in names if y != x))
+
+
+def consensus_tokens(reads):
+    """Token-level (ROVER-style) consensus over the medoid backbone (MODEL_MAP.md Stage 1/B).
+
+    The medoid (most-central read) is the coherent backbone. Word by word, if an INDEPENDENT-family
+    majority backs a DIFFERENT word AND outnumbers the families backing the backbone's word, adopt it;
+    otherwise keep the backbone word (so we never stitch a locally-plausible but globally-disfluent
+    Franken-transcript on a lone outlier). This can reconstruct a transcript NO single model got right
+    (the proper-noun frontier). Returns {text, uncertain_spans:[{index, from?, to?, word?, families,
+    contested?}]}. uncertain_spans is the surfaced-uncertainty map for the receipt."""
+    from collections import defaultdict
+    nonempty = {k: v for k, v in reads.items() if v}
+    if not nonempty:
+        return {"text": "", "uncertain_spans": []}
+    if len(nonempty) == 1:
+        return {"text": next(iter(nonempty.values())), "uncertain_spans": []}
+
+    anchor = _medoid_name(nonempty)
+    atoks = nonempty[anchor].split()
+    fam = [defaultdict(set) for _ in atoks]     # index -> {word_lower: {families}}
+    surf = [dict() for _ in atoks]              # index -> {word_lower: representative surface}
+    for i, w in enumerate(atoks):
+        fam[i][w.lower()].add(_family(anchor)); surf[i][w.lower()] = w
+
+    for n, txt in nonempty.items():
+        if n == anchor:
+            continue
+        otoks = txt.split()
+        sm = difflib.SequenceMatcher(a=[t.lower() for t in atoks],
+                                     b=[t.lower() for t in otoks], autojunk=False)
+        for op, i1, i2, j1, j2 in sm.get_opcodes():
+            if op == "equal":
+                for k in range(i1, i2):
+                    fam[k][atoks[k].lower()].add(_family(n))
+            elif op == "replace":
+                for k in range(i1, i2):        # align replacement tokens onto anchor positions
+                    rel = j1 + (k - i1)
+                    if rel < j2:
+                        cw = otoks[rel]
+                        fam[k][cw.lower()].add(_family(n)); surf[k].setdefault(cw.lower(), cw)
+            # insert/delete: leave the backbone intact (don't add/remove words on a minority read)
+
+    out, spans = [], []
+    for i, w in enumerate(atoks):
+        winner, wfams = max(fam[i].items(), key=lambda kv: len(kv[1]))
+        anchor_n = len(fam[i][w.lower()])
+        if winner != w.lower() and len(wfams) > anchor_n and len(wfams) >= 2:
+            out.append(surf[i][winner])
+            spans.append({"index": i, "from": w, "to": surf[i][winner], "families": len(wfams)})
+        else:
+            out.append(w)
+            if len(fam[i]) > 1:                # families split here even though backbone kept
+                spans.append({"index": i, "word": w, "contested": True, "families": anchor_n})
+    return {"text": " ".join(out), "uncertain_spans": spans}
+
+
 def _stretch(audio_path, rate):
     """Time-stretch audio to `rate`x speed, PITCH PRESERVED (ffmpeg atempo). rate<1 = slower.
     Returns a temp file path, or None if ffmpeg is unavailable / fails. Caller deletes it."""
@@ -501,7 +563,9 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5)):
                 os.remove(sp)
             if _majority(reads) >= 2:   # converged — stop slowing
                 break
-    return {"text": consensus_vote(reads), "reads": reads, "lang": lang,
+    tok = consensus_tokens(reads)
+    return {"text": tok["text"], "uncertain_spans": tok["uncertain_spans"],
+            "reads": reads, "lang": lang,
             "slowed": slowed_used, "agreement": _majority(reads)}
 
 
