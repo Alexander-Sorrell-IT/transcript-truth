@@ -33,6 +33,44 @@ ROSTER = {
     # add "uk" extras (parakeet-uk/nemotron) here once the NIM function-id is wired
 }
 
+# Vote-independence map (MODEL_MAP.md family rule): two witnesses share ONE vote only if they
+# are the same base weights. Specialized fine-tunes get their OWN family — they hear differently.
+#   hf (Whisper-large-v3) + local whisper  -> same "whisper" base -> collapse to 1 vote
+#   phowhisper / wav2vec2                   -> specialized         -> independent votes
+FAMILY = {
+    "deepgram": "deepgram", "scribe": "elevenlabs", "gemini": "gemini",
+    "hf": "whisper", "whisper": "whisper",          # same base — never double-count
+    "mms": "mms", "seamless": "seamless",
+    "phowhisper": "phowhisper", "wav2vec2": "wav2vec2",   # specialized -> own family
+}
+
+# Free LOCAL witnesses folded in ON-DEMAND (only when the cloud roster doesn't reach an
+# independent majority) — keeps them off the 16GB Air on easy audio. Per-language so we only
+# add models that actually read that language.
+LOCAL_TIER = {
+    "en": ["whisper", "mms", "seamless"], "es": ["whisper", "mms", "seamless"],
+    "fr": ["whisper", "mms", "seamless"], "de": ["whisper", "mms", "seamless"],
+    "pt": ["whisper", "mms", "seamless"], "tr": ["whisper", "mms"],
+    "ja": ["whisper", "wav2vec2"], "ru": ["whisper", "mms"], "ko": ["whisper", "mms"],
+    "vi": ["whisper"], "ar": ["seamless"], "hi": ["seamless"], "uk": ["whisper", "mms"],
+}
+
+
+def _family(name):
+    """Vote-independence family for a witness name (slow-rate suffix `@0.65x` stripped)."""
+    return FAMILY.get(name.split("@", 1)[0], name.split("@", 1)[0])
+
+
+def _family_agreement(reads):
+    """{normalized_text: set(independent families that produced it)} — the basis for a vote
+    that counts INDEPENDENT opinions, not correlated same-base reads."""
+    from collections import defaultdict
+    fam = defaultdict(set)
+    for name, t in reads.items():
+        if t:
+            fam[_norm_ws(t)].add(_family(name))
+    return fam
+
 
 def _witness_call(name, audio_path, lang):
     from .witness import elevenlabs_read, deepgram_read, gemini_read, hf_read, whisper_local
@@ -44,6 +82,7 @@ def _witness_call(name, audio_path, lang):
     if name == "mms":       return witness_mms(audio_path, lang)
     if name == "phowhisper": return witness_pho(audio_path, lang)
     if name == "seamless":  return witness_seamless(audio_path, lang)
+    if name == "wav2vec2":  return witness_wav2vec2(audio_path, lang)
     return ""
 
 
@@ -60,6 +99,13 @@ def witness_pho(audio_path, lang):
 def witness_seamless(audio_path, lang):
     from .witness import seamless_local
     return seamless_local(audio_path, language=lang)
+
+
+def witness_wav2vec2(audio_path, lang):  # pragma: no cover
+    """Independent CTC acoustic witness (wav2vec2-XLSR). Different family from every Whisper —
+    a real second opinion. Language-specialized fine-tunes are loaded inside acoustic2."""
+    from .acoustic2 import read
+    return read(audio_path)
 
 
 # Witnesses with a single-call size/credit cap. On long audio these are auto-chopped
@@ -312,15 +358,9 @@ def chopped_diarize(audio_path, lang, diarizer="scribe"):
     return _merge_diarized_chunks(chunk_turns, _CHOP_OVERLAP_S)
 
 
-def roster_panel(audio_path, lang, seams=None):
-    """Run this language's roster, concurrently. Whole-file witnesses are called once;
-    size/credit-capped witnesses (scribe, hf) are auto-chopped+stitched on long audio so
-    they participate instead of silently failing. `seams` (optional dict) is filled with
-    {model: bad_seam_count} for the chopped witnesses. Returns {model: text}."""
+def _run_witnesses(names, audio_path, lang, long, seams):
+    """Run the named witnesses concurrently. Returns {name: text} (empty on failure)."""
     import concurrent.futures
-    from . import chunking
-    dur = chunking.probe(audio_path)[0] if chunking.have_ffmpeg() else 0.0
-    long = dur > _CHOP_WINDOW_S
 
     def one(name):
         if long and name in CHOP_LIMITED:
@@ -331,13 +371,8 @@ def roster_panel(audio_path, lang, seams=None):
         return _witness_call(name, audio_path, lang)
 
     reads = {}
-    names = list(ROSTER.get(lang, []))
-    if "whisper" not in names:                  # local Whisper: free, multilingual, always-on
-        try:
-            import faster_whisper  # noqa: F401
-            names.append("whisper")
-        except Exception:
-            pass
+    if not names:
+        return reads
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, len(names))) as ex:
         futs = {ex.submit(one, n): n for n in names}
         for f in concurrent.futures.as_completed(futs):
@@ -345,7 +380,43 @@ def roster_panel(audio_path, lang, seams=None):
                 reads[futs[f]] = f.result()
             except Exception:
                 reads[futs[f]] = ""
+    return {n: reads.get(n, "") for n in names}
+
+
+def roster_panel(audio_path, lang, seams=None):
+    """Run this language's roster, concurrently, and fold in FREE LOCAL witnesses ON-DEMAND —
+    only when the cloud reads don't reach an independent-family majority (MODEL_MAP.md Stage 1).
+    Easy audio stays cheap (cloud only); hard audio automatically widens to 7+ independent votes.
+    Chopped/stitched for long-audio-capped witnesses; `seams` collects their bad-seam counts.
+    Returns {model: text}."""
+    from . import chunking
+    dur = chunking.probe(audio_path)[0] if chunking.have_ffmpeg() else 0.0
+    long = dur > _CHOP_WINDOW_S
+
+    names = list(ROSTER.get(lang, []))
+    reads = _run_witnesses(names, audio_path, lang, long, seams)
+
+    # On-demand local tier: only pay the local-compute cost when the cloud roster is UNCERTAIN
+    # (fewer than 2 independent families agree). Skips models already in the roster.
+    if _majority(reads) < 2:
+        extra = [n for n in LOCAL_TIER.get(lang, []) if n not in names and _local_available(n)]
+        if extra:
+            reads.update(_run_witnesses(extra, audio_path, lang, long, seams))
+            names += extra
     return {n: reads.get(n, "") for n in names}    # stable roster order
+
+
+def _local_available(name):
+    """Is the local witness's backend importable? (keeps a missing optional dep from erroring)."""
+    try:
+        if name == "whisper":
+            import faster_whisper  # noqa: F401
+        elif name == "wav2vec2":
+            import torch, transformers  # noqa: F401
+        # mms / seamless are checked inside their witness (graceful "" on absence)
+        return True
+    except Exception:
+        return False
 
 
 def _norm_ws(s):
@@ -354,17 +425,17 @@ def _norm_ws(s):
 
 
 def consensus_vote(reads):
-    """Majority vote across the rostered reads; medoid (min total distance) breaks ties.
-    Because the roster already excludes wrong-language witnesses, the majority is trustworthy."""
+    """Vote across the rostered reads by INDEPENDENT-FAMILY agreement (MODEL_MAP.md rule): a read
+    backed by >=2 independent families wins; otherwise the medoid (min total distance) breaks ties.
+    Counting families — not raw reads — stops two same-base Whisper witnesses forming a false majority."""
     cands = [t for t in reads.values() if t]
     if not cands:
         return ""
-    from collections import Counter
-    c = Counter(_norm_ws(t) for t in cands)
-    top, n = c.most_common(1)[0]
-    if n >= 2:
+    fam = _family_agreement(reads)
+    top_text, top_fams = max(fam.items(), key=lambda kv: len(kv[1]))
+    if len(top_fams) >= 2:
         for t in cands:
-            if _norm_ws(t) == top:
+            if _norm_ws(t) == top_text:
                 return t
     return min(cands, key=lambda a: sum(
         1 - difflib.SequenceMatcher(a=_norm_ws(a), b=_norm_ws(b)).ratio() for b in cands))
@@ -396,12 +467,11 @@ def _stretch(audio_path, rate):
 
 
 def _majority(reads):
-    """How many witnesses agree on the single most-common normalized read (0 if none)."""
-    from collections import Counter
-    cands = [t for t in reads.values() if t]
-    if not cands:
-        return 0
-    return Counter(_norm_ws(t) for t in cands).most_common(1)[0][1]
+    """How many INDEPENDENT families agree on the most-common normalized read (0 if none).
+    Family-based so two correlated same-base reads count once — a majority means independent
+    corroboration, which is what makes the vote trustworthy and gates the slow-path escalation."""
+    fam = _family_agreement(reads)
+    return max((len(f) for f in fam.values()), default=0)
 
 
 def transcribe(audio_path, lang, slow_rates=(0.65, 0.5)):
