@@ -304,6 +304,30 @@ def diarize_consensus(audio_path, lang, diarizers=("deepgram", "pyannote")):
     return rep
 
 
+def _speaker_count(turns):
+    return len({t["speaker"] for t in turns}) if turns else 0
+
+
+def diarize_best(audio_path, lang, primary="deepgram", max_speakers=8):
+    """Diarization with a cost guard (MODEL_MAP.md Stage 3): use the single PRIMARY diarizer when
+    its result looks confident (cheap, preserves the measured 95.8% whole-file result); escalate to
+    a cross-vote of independent diarizers (`diarize_consensus`) ONLY when the primary looks unsure —
+    empty output or an implausible speaker count (over-segmentation). Returns
+    {turns, speakers, method, agreement_pct}."""
+    try:
+        turns = diarize_long(audio_path, lang, primary)
+    except Exception:
+        turns = None
+    n = _speaker_count(turns)
+    if turns and 0 < n <= max_speakers:
+        return {"turns": turns, "speakers": n, "method": primary, "agreement_pct": None}
+    # unsure → cross-vote independent diarizers
+    rep = diarize_consensus(audio_path, lang)
+    cturns = rep.get("turns") or turns or []
+    return {"turns": cturns, "speakers": _speaker_count(cturns),
+            "method": "consensus", "agreement_pct": rep.get("agreement_pct")}
+
+
 def diarize_long(audio_path, lang, diarizer="scribe"):
     """Production long-audio diarization (the reference-map architecture, measurement-backed).
 
