@@ -51,6 +51,18 @@ def test_same_family_reads_do_not_form_a_token_majority():
     assert r["text"] in ("the cat sat", "the bat sat")   # never invents; stays a real read
 
 
+def test_tokenization_mismatch_does_not_duplicate_words():
+    # regression (bench two_seq): "double check" (2 tokens) vs "double-check" (1 token) must NOT
+    # produce "double-check check". Unequal-length spans are tokenization artifacts, not word votes.
+    r = consensus_tokens({
+        "deepgram": "please double check the figures",
+        "scribe":   "please double-check the figures",
+        "gemini":   "please double-check the figures",
+    })
+    assert "double-check check" not in r["text"] and "check check" not in r["text"]
+    assert r["text"].split().count("check") <= 1
+
+
 def test_empty_and_single():
     assert consensus_tokens({}) == {"text": "", "uncertain_spans": []}
     assert consensus_tokens({"a": "only one read"})["text"] == "only one read"

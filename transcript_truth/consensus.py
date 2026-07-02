@@ -505,13 +505,14 @@ def consensus_tokens(reads):
             if op == "equal":
                 for k in range(i1, i2):
                     fam[k][atoks[k].lower()].add(_family(n))
-            elif op == "replace":
-                for k in range(i1, i2):        # align replacement tokens onto anchor positions
-                    rel = j1 + (k - i1)
-                    if rel < j2:
-                        cw = otoks[rel]
-                        fam[k][cw.lower()].add(_family(n)); surf[k].setdefault(cw.lower(), cw)
-            # insert/delete: leave the backbone intact (don't add/remove words on a minority read)
+            elif op == "replace" and (i2 - i1) == (j2 - j1):
+                # 1:1 positional substitution ONLY — an equal-length swap is a genuine word
+                # disagreement. Unequal spans are a tokenization artifact (e.g. "double check" vs
+                # "double-check"); overriding those duplicates/drops words, so we trust the backbone.
+                for k in range(i1, i2):
+                    cw = otoks[j1 + (k - i1)]
+                    fam[k][cw.lower()].add(_family(n)); surf[k].setdefault(cw.lower(), cw)
+            # unequal replace / insert / delete: leave the backbone intact (no add/drop on a minority read)
 
     out, spans = [], []
     for i, w in enumerate(atoks):

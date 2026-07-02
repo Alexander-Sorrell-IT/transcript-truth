@@ -1,0 +1,51 @@
+{
+ "rows": [
+  {
+   "case": "clean",
+   "best_single": 0.0,
+   "whole_vote": 0.0,
+   "token_vote": 0.0,
+   "n_models": 3
+  },
+  {
+   "case": "fast",
+   "best_single": 0.0,
+   "whole_vote": 0.0,
+   "token_vote": 0.0,
+   "n_models": 3
+  },
+  {
+   "case": "noisy",
+   "best_single": 0.0,
+   "whole_vote": 0.0,
+   "token_vote": 0.0,
+   "n_models": 3
+  },
+  {
+   "case": "numbers",
+   "best_single": 0.1765,
+   "whole_vote": 0.1765,
+   "token_vote": 0.1765,
+   "n_models": 3
+  },
+  {
+   "case": "two_overlap",
+   "best_single": 0.0,
+   "whole_vote": 0.0,
+   "token_vote": 0.0,
+   "n_models": 3
+  },
+  {
+   "case": "two_seq",
+   "best_single": 0.0,
+   "whole_vote": 0.0,
+   "token_vote": 0.0,
+   "n_models": 3
+  }
+ ],
+ "mean": {
+  "best_single": 0.0294,
+  "whole_vote": 0.0294,
+  "token_vote": 0.0294
+ }
+}
