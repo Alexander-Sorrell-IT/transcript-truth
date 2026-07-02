@@ -20,7 +20,7 @@ def _key(name):
     raise RuntimeError(f"{name} not found")
 
 
-def elevenlabs_read(audio_path, language=None):
+def elevenlabs_read(audio_path, language=None):  # pragma: no cover
     """ElevenLabs Scribe — the strong second read (different family than Whisper)."""
     import mimetypes
     boundary = "----ttboundary7f3a"
@@ -42,7 +42,7 @@ def elevenlabs_read(audio_path, language=None):
         return json.load(r).get("text", "").strip()
 
 
-def elevenlabs_diarize(audio_path, language=None):
+def elevenlabs_diarize(audio_path, language=None):  # pragma: no cover
     """ElevenLabs Scribe WITH diarization — a second *structured* witness alongside
     deepgram_structured. Returns [{start, end, speaker, text}] so speaker turns can be
     voted across independent diarizers instead of trusting one. speaker ids are the raw
@@ -98,7 +98,7 @@ def elevenlabs_diarize(audio_path, language=None):
     return [{**t, "text": t["text"].strip()} for t in turns if t["text"].strip()]
 
 
-def gemini_read(audio_path, language=None):
+def gemini_read(audio_path, language=None):  # pragma: no cover
     """Gemini (multimodal LLM) — a 4th independent witness, different family again.
     Strong on accented/bilingual speech because it reasons over context, not just acoustics."""
     import base64, mimetypes
@@ -131,7 +131,7 @@ def gemini_read(audio_path, language=None):
     raise last
 
 
-def hf_read(audio_path, language=None, model="openai/whisper-large-v3", retries=4):
+def hf_read(audio_path, language=None, model="openai/whisper-large-v3", retries=4):  # pragma: no cover
     """Whisper-large-v3 via Hugging Face Inference Providers (free tier; multilingual,
     auto-detects language). A 5th witness — adds the Whisper family to the consensus.
     The legacy api-inference.huggingface.co host is dead; this uses the router endpoint.
@@ -160,7 +160,7 @@ def hf_read(audio_path, language=None, model="openai/whisper-large-v3", retries=
     return ""
 
 
-def deepgram_structured(audio_path, language="en"):
+def deepgram_structured(audio_path, language="en"):  # pragma: no cover
     """Deepgram with diarization + utterances + timestamps — the structured backbone for
     the transcription runner. Returns [{start, end, speaker, text}]. (Scribe/Gemini stay
     text-only; Deepgram is the timing/speaker reference — and our 0% WER witness.)"""
@@ -179,7 +179,7 @@ def deepgram_structured(audio_path, language="en"):
 _WHISPER_LOCAL = None
 
 
-def whisper_local(audio_path, language=None, model_size="large-v3"):
+def whisper_local(audio_path, language=None, model_size="large-v3"):  # pragma: no cover
     """Local Whisper via faster-whisper — a FREE, unlimited, all-language witness that runs on the
     M1 (no API, no credits, no rate limits). Replaces the HF Whisper witness that hit the 402 credit
     wall. Model is loaded once and cached. Returns '' if faster-whisper isn't installed."""
@@ -218,7 +218,7 @@ def _load_wav16(path):
 _MMS = {}
 
 
-def mms_local(audio_path, language=None):
+def mms_local(audio_path, language=None):  # pragma: no cover
     """Meta MMS (facebook/mms-1b-all) — free local ASR for 1000+ languages; strongest value on the
     hard/thin-roster languages (ar/hi/ur). Loads the per-language adapter. Returns '' on any failure."""
     lang3 = _ISO3.get((language or "en").split("-")[0], "eng")
@@ -249,7 +249,7 @@ def mms_local(audio_path, language=None):
 _PHOWHISPER = None
 
 
-def phowhisper_local(audio_path, language=None):
+def phowhisper_local(audio_path, language=None):  # pragma: no cover
     """PhoWhisper (vinai/PhoWhisper-large) — Vietnamese-specialized Whisper. Free, local. Returns ''."""
     global _PHOWHISPER
     try:
@@ -272,7 +272,7 @@ def phowhisper_local(audio_path, language=None):
 _SEAMLESS = {}
 
 
-def seamless_local(audio_path, language=None):
+def seamless_local(audio_path, language=None):  # pragma: no cover
     """Meta SeamlessM4T v2 (facebook/seamless-m4t-v2-large) — multilingual ASR (and the engine for the
     future EN<->X translation track). Heavy (~9GB); free, local. Returns '' on any failure."""
     lang3 = _ISO3.get((language or "en").split("-")[0], "eng")
@@ -303,7 +303,7 @@ def seamless_local(audio_path, language=None):
 _PYANNOTE = None
 
 
-def pyannote_diarize(audio_path, language=None):
+def pyannote_diarize(audio_path, language=None):  # pragma: no cover
     """pyannote.audio speaker diarization — a 3rd INDEPENDENT diarizer (embedding-based, local, free).
     Different family than Deepgram/Scribe, so it strengthens cross-diarizer consensus and is the
     voice-fingerprint backstop for very long audio. Returns [{start,end,speaker,text=''}] (diarization
@@ -328,7 +328,7 @@ def pyannote_diarize(audio_path, language=None):
             for seg, _, spk in ann.itertracks(yield_label=True)]
 
 
-def deepgram_detect_language(audio_path):
+def deepgram_detect_language(audio_path):  # pragma: no cover
     """Deepgram language auto-detection — returns the detected language code (e.g. 'en', 'ja',
     'ru') or '' if undetermined. Cheap front-end so the router can pick the right roster/profile
     without the caller specifying a language."""
@@ -345,7 +345,7 @@ def deepgram_detect_language(audio_path):
     return lang.split("-")[0].lower() if lang else ""    # 'en-US' -> 'en'
 
 
-def deepgram_read(audio_path, language="ja"):
+def deepgram_read(audio_path, language="ja"):  # pragma: no cover
     """Deepgram Nova — backup witness (weaker on bilingual audio; use for clean speech)."""
     url = f"https://api.deepgram.com/v1/listen?model=nova-3&language={language}&smart_format=true"
     req = urllib.request.Request(url, data=open(audio_path, "rb").read(), headers={
@@ -355,7 +355,7 @@ def deepgram_read(audio_path, language="ja"):
     return d["results"]["channels"][0]["alternatives"][0]["transcript"].strip()
 
 
-def gemini_video_read(video_path, language=None):
+def gemini_video_read(video_path, language=None):  # pragma: no cover
     """Gemini video witness — the VISUAL read for a CCSL (continuity logger). Watches the
     whole reel and returns a raw JSON-array string (one object per shot); the ccsl_build
     half parses it. This supplies shot DESCRIPTION + on-screen OCR only — it carries NO

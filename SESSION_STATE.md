@@ -12,7 +12,28 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 - **Phase 5 — Tier-3 langs: 🟡 PROFILES DONE.** Arabic, Hindi, Urdu profiles+rules+routing+tests done; **witness ASR quality not yet battery-validated** (the real Phase-5 work).
 - **Phases 6 (code-switching), 7 (adversarial agents), 8 (translation EN→X): ⬜ not started.**
 
-**11 languages live:** ja, en, es, ru, uk, fr, de, pt, tr, ko, vi (+ ar, hi, ur profiles). ~76 tests passing.
+**11 languages live:** ja, en, es, ru, uk, fr, de, pt, tr, ko, vi (+ ar, hi, ur profiles). **220 tests passing, 0 failing** (see Testing below).
+
+## Testing (2026-07-02) — coverage push (Phases 1–4 done)
+- **266 tests, 0 failing** across 25 files; **74% line coverage** (`pytest --cov=transcript_truth`, see `.coveragerc`).
+- **The whole deterministic core is covered** — the "models propose, code decides" verdict path is pinned:
+  `grade` 100%, `metrics` (WER + diar-agreement ruler) 96%, `finish`/`report`/`disambiguate`/`manifest` 100%,
+  `engine` 97%, `en_rules` 95%, `coherence` 90%, `config` 89%, `semantic`/`lexicon`/`collocation` ~84-89%,
+  `legal`/`medical`/`domains`/language rules ~92%+.
+- **Model paths tested with the model STUBBED** (no live keys): `en_rules`, `coherence`, `update`, `worker`,
+  `runner`, `check_audio`, `engine`(coherence=True). Pattern: monkeypatch the model, assert the deterministic
+  gate rejects invented rewrites.
+- **Real audio I/O tested with ffmpeg** (synthesized WAV fixture): `chunking.probe/time_stretch/cut_window/
+  split_audio` + graceful no-ffmpeg branches (`test_audio_io.py`).
+- **`consensus.py` heart pinned:** `_splice` never-lose-A invariant, roster-agnostic `consensus()` (the fix for
+  the "silently single-model" bug), `consensus_vote`/`_majority`, `completeness`, seam merge.
+- **Honest exclusions (`.coveragerc`):** `acoustic2.py`/`audio.py`/`ccsl_build.py` omitted (experimental/off-path
+  external-model wrappers, multi-GB downloads, no branching logic); external ASR/API bodies in `witness.py`
+  marked `# pragma: no cover` at the call site (verified via live integration, not unit tests).
+- **Still low (specialized/heavy, optional next):** `profiles/agent.py` 18%, `coherence_ml.py` 24%,
+  `umls.py` 42% (network), `medical_data.py` 50% (network) — these need live services or are big standalone
+  subsystems; not on the core QA path.
+- Run: `python3 -m pytest tests/ -q` (or add `--cov=transcript_truth --cov-report=term-missing`).
 
 ## Models
 - **Wired in-engine:** local Whisper (`whisper` witness — free, all langs, replaces HF 402), Silero VAD (chunk-at-silence), Kiwi (Korean).

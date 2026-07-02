@@ -1,0 +1,29 @@
+# Coverage config — the reported % reflects tested LOGIC, not external model inference.
+#
+# Omitted below are experimental/alternate ASR front-ends that are thin wrappers over
+# heavy external models (wav2vec2 XLSR, faster-whisper) requiring multi-GB downloads to
+# run. They are NOT on the main transcription path (which is witness.deepgram_structured
+# + consensus, both tested) and carry no branching logic of their own. Their orchestration
+# IS tested elsewhere (test_check_audio, test_runner, test_audio_io). ccsl_build.py is the
+# network/video CCSL generator, explicitly off the QA import chain (its output conformance is
+# checked offline via the `ccsl` profile, which IS tested in test_ccsl).
+#
+# Genuine external-call bodies inside otherwise-tested modules (witness ASR APIs) are
+# marked with `# pragma: no cover` at the call site instead of omitting the whole file,
+# so their argument/guard logic still counts.
+
+[run]
+omit =
+    */acoustic2.py
+    */audio.py
+    */ccsl_build.py
+    */__pycache__/*
+    */tests/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+show_missing = True

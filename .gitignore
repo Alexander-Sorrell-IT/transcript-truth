@@ -32,3 +32,4 @@ _*.py
 *.log
 setup_models.log
 bench/battery/*.wav
+.coverage

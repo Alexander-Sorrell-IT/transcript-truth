@@ -234,20 +234,20 @@ def test_medical_dangerous_abbreviations():
 
 def test_transcribeme_legal_rules():
     from transcript_truth import audit_transcript
-    f = audit_transcript("He [laughs] said see Page 5.", profile="en", domain="legal").flags
+    f = audit_transcript("He [laughs] said see Page 5.", profile="en", domain="legal", site="transcribeme").flags
     assert any(x.rule == "tm_sound_tag" and x.evidence == "[laughs]" for x in f)  # only coughs/sneezes/phone rings
     assert any(x.rule == "tm_lowercase" and x.evidence == "Page" for x in f)       # Bates terms lowercase
     # allowed sound tags + sentence-initial caps must stay clean
-    ok = audit_transcript("The witness [coughs]. Page 5 shows it.", profile="en", domain="legal").flags
+    ok = audit_transcript("The witness [coughs]. Page 5 shows it.", profile="en", domain="legal", site="transcribeme").flags
     assert not any(x.rule in ("tm_sound_tag", "tm_lowercase") for x in ok)
 
 
 def test_transcribeme_legal_structure():
     from transcript_truth import audit_transcript
-    f = audit_transcript("Mr. Smith   I was going-- I mean, I was -- there.", profile="en", domain="legal").flags
+    f = audit_transcript("Mr. Smith   I was going-- I mean, I was -- there.", profile="en", domain="legal", site="transcribeme").flags
     assert any(x.rule == "tm_speaker_caps" and x.evidence == "Mr. Smith" for x in f)  # Colloquy ID caps
     assert any(x.rule == "tm_double_dash" for x in f)                                  # dash attaches
-    ok = audit_transcript("MR. SMITH   I was going-- I mean, there.", profile="en", domain="legal").flags
+    ok = audit_transcript("MR. SMITH   I was going-- I mean, there.", profile="en", domain="legal", site="transcribeme").flags
     assert not any(x.rule in ("tm_speaker_caps", "tm_double_dash") for x in ok)
 
 
