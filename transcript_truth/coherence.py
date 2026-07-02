@@ -35,12 +35,20 @@ def _en(w):
     return f"{w} ({', '.join(g[:2])})" if g else w
 
 
-def coherence_homophones(text, max_checks=5):
-    """For each content word with same-reading alternatives, BLANK it and ask Qwen to
-    fill the blank from the closed candidate list. Blanking removes the anchor, so Qwen
-    reasons from context instead of rubber-stamping what's written. If its fill differs
-    from the written word (and is a real same-reading candidate), flag it. One Qwen call
-    per checked word; capped at max_checks."""
+def _qwen_voter(prompt):
+    return qwen([{"role": "user", "content": prompt}], max_tokens=15)
+
+
+def coherence_homophones(text, max_checks=5, voters=None):
+    """For each content word with same-reading alternatives, BLANK it and ask the voter LLM(s) to
+    fill the blank from the closed candidate list. Blanking removes the anchor, so the model reasons
+    from context instead of rubber-stamping what's written; the closed list means it can't invent a
+    non-homophone. A flag fires only when a MAJORITY of voters agree on the SAME candidate that
+    differs from the written word (MODEL_MAP.md Stage 4): with one voter that's its pick (original
+    behavior); with two gated voters (Qwen + Gemini) both must agree — cutting false positives.
+    Unanimous multi-voter picks are marked higher-confidence. Capped at max_checks words."""
+    from collections import Counter
+    voters = voters or [_qwen_voter]
     ridx = reading_index()
     flags, seen = [], set()
     for m in _tok.tokenize(text, _C):
@@ -55,15 +63,24 @@ def coherence_homophones(text, max_checks=5):
             break
         blanked = text.replace(s, "___", 1)
         opts = "、".join(cands[:12])
-        try:
-            fill = qwen([{"role": "user", "content":
-                "文の___に入る最も適切な語を候補から1つだけ選び、漢字のみ答えてください。\n"
-                f"文：{blanked}\n候補：{opts}"}], max_tokens=15).strip(" 「」。、（）()")
-        except Exception:
+        prompt = ("文の___に入る最も適切な語を候補から1つだけ選び、漢字のみ答えてください。\n"
+                  f"文：{blanked}\n候補：{opts}")
+        picks = []
+        for v in voters:
+            try:
+                fill = (v(prompt) or "").strip(" 「」。、（）()")
+            except Exception:
+                continue
+            if fill and fill != s and fill in cands:      # gated: real same-reading candidate only
+                picks.append(fill)
+        if not picks:
             continue
-        if fill and fill != s and fill in cands:
-            flags.append(Flag(
-                rule="coherence_homophone", severity="review",
-                label=f"{_en(s)} may be wrong — {_en(fill)} fits the context (same sound)",
-                evidence=s, fix=f"Consider {fill} — same reading, fits the meaning."))
+        top, n = Counter(picks).most_common(1)[0]
+        if n <= len(voters) / 2:                          # need a majority of voters to agree
+            continue
+        conf = " (both models agree)" if len(voters) > 1 and n == len(voters) else ""
+        flags.append(Flag(
+            rule="coherence_homophone", severity="review",
+            label=f"{_en(s)} may be wrong — {_en(top)} fits the context (same sound){conf}",
+            evidence=s, fix=f"Consider {top} — same reading, fits the meaning."))
     return flags

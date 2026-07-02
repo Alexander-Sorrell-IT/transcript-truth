@@ -30,7 +30,10 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 - **Phase E ✅ (2026-07-02):** `diarize_best` — single primary diarizer when confident (cheap,
   preserves 95.8%); cross-vote (`diarize_consensus`) only when primary is empty/over-segmented.
   Suite 293 green.
-- Phases F–H pending: 2nd coherence LLM, legal/medical re-exam loop, wire consensus into runner (last).
+- **Phase F ✅ (2026-07-02):** `coherence_homophones(voters=...)` — 2 gated LLM voters (Qwen+Gemini)
+  must AGREE on the same in-candidate pick to flag (cuts false positives); default single-voter
+  back-compat; unanimous picks marked higher-confidence. Suite 297 green.
+- Phases G–H pending: legal/medical re-exam loop, wire consensus into runner (last).
 
 ## Testing (2026-07-02) — coverage push (Phases 1–4 done)
 - **266 tests, 0 failing** across 25 files; **74% line coverage** (`pytest --cov=transcript_truth`, see `.coveragerc`).
