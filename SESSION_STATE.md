@@ -15,6 +15,11 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 **11 languages live:** ja, en, es, ru, uk, fr, de, pt, tr, ko, vi (+ ar, hi, ur profiles). **220 tests passing, 0 failing** (see Testing below).
 
 ## Multi-model upgrades (see MODEL_MAP.md + IMPLEMENTATION_PLAN.md, 8 phases A–H)
+- **Multi-model VALIDATED LIVE (2026-07-02, `bench/live_bench.py` on hard clips):** on real hard audio
+  the vote beats single-model Deepgram. WER (lower=better): accent+noise 0.105→**0.0**, crosstalk 0.167→0.167
+  (tie — overlap is a diarization problem, not a word-vote), propernouns 0.60→**0.45**. MEAN single 0.291 →
+  whole-vote 0.240 → **token-vote 0.206**. Token (Phase B) is best overall; won or tied every clip. Clean TTS
+  battery still ties (no disagreement to resolve). Hard clips via `bench/make_hard_battery.py`.
 - **Phase A ✅ (2026-07-02):** independent-FAMILY voting (same-base Whisper reads share 1 vote;
   specialized fine-tunes independent) + wav2vec2 wired as 9th witness + on-demand LOCAL_TIER
   (free local models fold in only when cloud lacks a 2-family majority). Suite 273 green.

@@ -1,0 +1,101 @@
+[
+ {
+  "case": "hard_accent_noise",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "seamless",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.1053,
+   "scribe": 0.0526,
+   "hf": 0.0,
+   "gemini": 0.1053,
+   "whisper": 0.0,
+   "mms": 0.3684,
+   "seamless": 0.1579
+  },
+  "deepgram_only": 0.1053,
+  "whole_vote": 0.0526,
+  "token_vote": 0.0,
+  "reads": {
+   "deepgram": "The quarterly report from Siobhan and Jorog showed a 14% rise in the Ljubljana division before the orders.",
+   "scribe": "The quarterly report from Shevon and Njoroge showed a 14% rise in the Ljubljana division before the audit-",
+   "hf": "The quarterly report from Siobhan and Njoroge showed a 14% rise in the Ljubljana division before the audit.",
+   "gemini": "The quarterly report from Chevon and Joros showed a 14% rise in the Ljubljana division before the audit.",
+   "whisper": "The quarterly report from Siobhan and Njoroge showed a 14% rise in the Ljubljana division before the audit.",
+   "mms": "the quarterly report from shavon and jorog showed that fourteen per cent rising the libliana division before the audit",
+   "seamless": "The quarterly report from Chebone and Jorg showed a 14 percent increase in the Ljubljana division before the audit."
+  }
+ },
+ {
+  "case": "hard_crosstalk",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "seamless",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.1667,
+   "scribe": 0.0,
+   "hf": 0.2,
+   "gemini": 0.1,
+   "whisper": 0.0333,
+   "mms": 0.3,
+   "seamless": 0.5667
+  },
+  "deepgram_only": 0.1667,
+  "whole_vote": 0.1667,
+  "token_vote": 0.1667,
+  "reads": {
+   "deepgram": "So did the shipment from Reykjavik clear customs on Thursday morning as planned? Manifest, and I am still waiting on the broker to call back.",
+   "scribe": "So did the shipment from Reykjavik clear customs on Thursday morning as planned? Not yet. They flagged the manifest and I am still waiting on the broker to call back.",
+   "hf": "So did the shipment from Reykjavik Clear Customs on Thursday morning as planned? And I am still waiting on the broker to call back.",
+   "gemini": "So did the shipment from Reykjavik clear customs on Thursday morning as planned? No, it's flagged the manifest and I am still waiting on the broker to call back.",
+   "whisper": "So did the shipment from Reykjavik Clear Customs on Thursday morning as planned?  Not yet, they flagged a manifest and I am still waiting on the broker to call back.",
+   "mms": "so did the shipment from rakiovi clear customs on tusday morning as clan manifest an i am still waiting on the broker to call back",
+   "seamless": "So the shipment from the Radio Clear Channel on Tuesday morning is still waiting for the broker to call back."
+  }
+ },
+ {
+  "case": "hard_propernouns",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "seamless",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.6,
+   "scribe": 0.15,
+   "hf": 0.5,
+   "gemini": 0.2,
+   "whisper": 0.5,
+   "mms": 0.45,
+   "seamless": 0.35
+  },
+  "deepgram_only": 0.6,
+  "whole_vote": 0.5,
+  "token_vote": 0.45,
+  "reads": {
+   "deepgram": "Doctor Wynn and Mizakonkwo transferred \u20ac47,000 to the Cajizo account in Gabarone on 03/03/2025.",
+   "scribe": "Dr. Win and Ms. Okonkwo transferred \u20ac47,000 to the Kagiso account in Gaborone on the 3rd of March 2025.",
+   "hf": "D.R. Wynn and Misa Kongkwo transferred \u20ac47,000 to the Cogizzo account in Gaborone on 3 March 2025.",
+   "gemini": "DR wind and Ms. Akonku transferred 47,000 euros to the Kajiso account in Gaborone on the 3rd of March 2025.",
+   "whisper": "D.R. Win and Misa Kongkwo transferred \u20ac47,000 to the Cogizzo account in Gaborone on 3 March 2025.",
+   "mms": "diarwin and mizaconque transferred forty seven thousand euros to the kajizo account in gaberone on third  march two thousand and twenty five",
+   "seamless": "D.R. Wynn and Miscellaneous transferred forty-seven thousand euros to the Cajun account in Gaborone on the third of March twenty-five."
+  }
+ }
+]
