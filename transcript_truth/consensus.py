@@ -536,20 +536,23 @@ def _majority(reads):
     return max((len(f) for f in fam.values()), default=0)
 
 
-def transcribe(audio_path, lang, slow_rates=(0.65, 0.5)):
-    """Top-level language-aware transcription: rostered panel -> consensus text.
+def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
+    """Top-level language-aware transcription — the explicit TWO-TIER path (MODEL_MAP.md Stage 2):
 
-    When the normal-speed panel does NOT reach a clear majority (the witnesses disagree —
-    "we don't know"), automatically re-run the roster on PITCH-PRESERVED slowed audio and
-    fold those reads into the vote. Slowing reliably makes uncertain witnesses converge on
-    what's actually said (proved out on the Quicktate ES clips). Applies to ALL languages.
-    A normal-speed majority short-circuits — no slow pass needed, no wasted API calls.
-    Slowed reads are keyed `model@0.65x` so they stay visible and auditable.
-    """
+      TIER 1 (normal): always run the roster at normal speed -> consensus text.
+      TIER 2 (slow):   re-run the roster on PITCH-PRESERVED slowed audio and fold those reads in.
+                       Slowing makes uncertain witnesses converge on what's actually said.
+
+    General content escalates to slow only when normal is ambiguous (< 2 independent families
+    agree) and STOPS once it converges — no wasted API calls on easy audio. For high-stakes
+    domain in ('legal','medical') the slow tier ALWAYS runs the full ladder, even when normal is
+    already confident, so we double-check. Slowed reads are keyed `model@0.65x` (visible/auditable).
+    Returns the normal-tier text too, plus whether the slow tier CHANGED the result (compare)."""
     reads = roster_panel(audio_path, lang)
+    normal_text = consensus_tokens(reads)["text"]
     slowed_used = []
-    # Only escalate when normal speed is ambiguous (< 2 witnesses agreeing).
-    if _majority(reads) < 2:
+    always_slow = domain in ("legal", "medical")   # double-check high-stakes content
+    if always_slow or _majority(reads) < 2:
         for rate in slow_rates:
             sp = _stretch(audio_path, rate)
             if not sp:
@@ -561,11 +564,14 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5)):
                 slowed_used.append(rate)
             finally:
                 os.remove(sp)
-            if _majority(reads) >= 2:   # converged — stop slowing
+            # general content stops once it converges; legal/medical runs the full ladder
+            if not always_slow and _majority(reads) >= 2:
                 break
     tok = consensus_tokens(reads)
     return {"text": tok["text"], "uncertain_spans": tok["uncertain_spans"],
-            "reads": reads, "lang": lang,
+            "normal_text": normal_text,
+            "slow_changed": _norm_ws(tok["text"]) != _norm_ws(normal_text),
+            "reads": reads, "lang": lang, "domain": domain,
             "slowed": slowed_used, "agreement": _majority(reads)}
 
 

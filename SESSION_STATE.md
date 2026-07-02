@@ -21,8 +21,11 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 - **Phase B ✅ (2026-07-02):** token-level (ROVER) `consensus_tokens` over the medoid backbone —
   per-word independent-family majority can rebuild a transcript no single model got right, medoid
   backstop prevents disfluent seams, surfaces `uncertain_spans`; `transcribe()` now returns it. Suite 279 green.
-- Phases C–H pending: two-tier slow path, multi-model detect, diarization
-  cross-vote, 2nd coherence LLM, legal/medical re-exam loop, wire consensus into runner (last).
+- **Phase C ✅ (2026-07-02):** explicit two-tier slow path — Tier-1 normal always; Tier-2 slow
+  escalates on uncertainty for general content (stops on convergence), ALWAYS runs the full
+  ladder for legal/medical; `transcribe(domain=...)` returns normal_text + slow_changed. Suite 284 green.
+- Phases D–H pending: multi-model detect, diarization cross-vote, 2nd coherence LLM,
+  legal/medical re-exam loop, wire consensus into runner (last).
 
 ## Testing (2026-07-02) — coverage push (Phases 1–4 done)
 - **266 tests, 0 failing** across 25 files; **74% line coverage** (`pytest --cov=transcript_truth`, see `.coveragerc`).
