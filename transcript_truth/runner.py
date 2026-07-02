@@ -54,6 +54,49 @@ def transcribe(audio_path: str, lang: str, profile: str | None = None,
             "lang": lang, "profile": profile, "n_utterances": len(utts)}
 
 
+# Term-accuracy rules where a mis-transcription is high-stakes (drug names, dosages, dangerous
+# abbreviations, verified medical/legal terms) — these drive the re-examination loop.
+_CRITICAL_DOMAIN_RULES = {"med_drug_name", "med_dosage", "med_dangerous_abbrev",
+                          "med_umls_term", "legal_term"}
+
+
+def _critical_domain_flags(receipt):
+    return [f for f in receipt.flags
+            if f.rule in _CRITICAL_DOMAIN_RULES or f.severity == "critical"]
+
+
+def transcribe_domain_verified(audio_path: str, lang: str, domain: str,
+                               mode: str = "clean_verbatim", max_rounds: int = 2,
+                               transcribe_fn=None):
+    """High-stakes legal/medical re-examination loop (MODEL_MAP.md Stage 4).
+
+    Transcribe (normal+slow — `domain` forces the slow tier), audit against the domain guide, and
+    if a CRITICAL term is still flagged, re-read + re-audit — up to `max_rounds` — because a mis-heard
+    drug name or legal term is the costliest error. Stops early when the transcript is clean of
+    critical flags OR a re-read changes nothing (stable). `transcribe_fn` (no-arg) is injectable; it
+    defaults to the multi-model consensus transcription for this domain.
+    Returns {content, receipt, rounds, resolved, remaining_flags, lang, profile, domain}."""
+    profile = LANG_PROFILE.get(lang, "default")
+    if transcribe_fn is None:
+        from . import consensus
+        transcribe_fn = lambda: consensus.transcribe(audio_path, lang, domain=domain)
+
+    content, receipt, rounds = None, None, 0
+    while rounds < max_rounds:
+        rounds += 1
+        new_content = (transcribe_fn() or {}).get("text", "")
+        if content is not None and new_content == content:
+            break                                    # re-read changed nothing → stable, stop
+        content = new_content
+        receipt = audit_transcript(content, mode=mode, profile=profile, domain=domain)
+        if not _critical_domain_flags(receipt):
+            break                                    # clean of critical terms → done
+    return {"content": content, "receipt": receipt, "rounds": rounds,
+            "resolved": not _critical_domain_flags(receipt),
+            "remaining_flags": _critical_domain_flags(receipt),
+            "lang": lang, "profile": profile, "domain": domain}
+
+
 def transcribe_auto(audio_path: str, mode: str = "clean_verbatim"):
     """Auto-routed transcription: detect the language, then transcribe with that language's
     profile — no manual `lang`/`--profile` needed. Falls back to English if detection fails.
