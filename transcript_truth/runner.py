@@ -9,6 +9,7 @@ available as a text cross-check.
 """
 from __future__ import annotations
 import re
+import difflib
 from . import chunking, witness
 from .engine import audit_transcript
 
@@ -40,18 +41,59 @@ def _utterances(audio_path: str, lang: str):
     return witness.deepgram_structured(audio_path, lang)
 
 
+def _redistribute(utterances, corrected_text):
+    """Merge consensus TEXT onto the Deepgram STRUCTURE (MODEL_MAP.md Stage H): keep each
+    utterance's timestamps + speaker, but replace its WORDS with the aligned slice of the
+    multi-model consensus text. Aligns the corrected tokens to the concatenated utterance tokens
+    (difflib) and redistributes them to the utterance that owned each anchor position."""
+    dg_tokens, owner = [], []
+    for ui, u in enumerate(utterances):
+        for w in u["text"].split():
+            dg_tokens.append(w); owner.append(ui)
+    ctoks = corrected_text.split()
+    if not dg_tokens or not ctoks:
+        return utterances
+    sm = difflib.SequenceMatcher(a=[t.lower() for t in dg_tokens],
+                                 b=[t.lower() for t in ctoks], autojunk=False)
+    words = [[] for _ in utterances]
+    for op, i1, i2, j1, j2 in sm.get_opcodes():
+        if op == "delete":
+            continue                                  # consensus dropped these words
+        if op == "equal":                             # 1:1 — assign each token to its own owner
+            for k in range(i1, i2):
+                words[owner[k]].append(ctoks[j1 + (k - i1)])
+        else:                                         # replace/insert -> owner of the anchor start
+            ui = owner[i1] if i1 < len(owner) else owner[-1]
+            words[ui].extend(ctoks[j1:j2])
+    return [{**u, "text": " ".join(words[ui]) or u["text"]} for ui, u in enumerate(utterances)]
+
+
 def transcribe(audio_path: str, lang: str, profile: str | None = None,
-               mode: str = "clean_verbatim"):
-    """Returns {transcript (formatted), content, receipt, lang, profile, n_utterances}."""
+               mode: str = "clean_verbatim", multi_model: bool = True, consensus_fn=None):
+    """End-to-end: audio -> draft (timestamps+speakers) -> QA. Returns {transcript, content,
+    receipt, lang, profile, n_utterances, multi_model}.
+
+    multi_model (default ON) merges the MULTI-MODEL consensus text onto Deepgram's structure —
+    Deepgram supplies the timestamps + speaker turns (its acoustic backbone), the consensus vote
+    supplies the WORDS. So the end-to-end path is no longer single-model. Falls back to Deepgram's
+    own text if the consensus is empty (no keys/offline). `consensus_fn` (no-arg -> text) injectable."""
     profile = profile or LANG_PROFILE.get(lang, "default")
-    utts = _utterances(audio_path, lang)
+    utts = _utterances(audio_path, lang)              # Deepgram structural backbone
     for u in utts:
         u["text"] = _clean(u["text"], lang)
+    if multi_model and utts:
+        if consensus_fn is None:
+            from . import consensus
+            consensus_fn = lambda: (consensus.transcribe(audio_path, lang) or {}).get("text", "")
+        ctext = _clean(consensus_fn() or "", lang)
+        if ctext:
+            utts = _redistribute(utts, ctext)         # consensus words, Deepgram timing/speakers
     formatted = "\n".join(f"{_ts(u['start'])} Speaker {u['speaker'] + 1}: {u['text']}" for u in utts)
     content = "\n".join(u["text"] for u in utts)
     receipt = audit_transcript(content, mode=mode, profile=profile)
     return {"transcript": formatted, "content": content, "receipt": receipt,
-            "lang": lang, "profile": profile, "n_utterances": len(utts)}
+            "lang": lang, "profile": profile, "n_utterances": len(utts),
+            "multi_model": bool(multi_model)}
 
 
 # Term-accuracy rules where a mis-transcription is high-stakes (drug names, dosages, dangerous

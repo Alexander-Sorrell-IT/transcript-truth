@@ -32,7 +32,7 @@ def test_transcribe_wires_asr_to_audit(monkeypatch, tmp_path):
                             {"start": 0.0, "end": 2.0, "speaker": 0, "text": "This is a clean line."},
                             {"start": 2.0, "end": 4.0, "speaker": 1, "text": "And so is this one."},
                         ])
-    res = runner.transcribe(fake, "en")
+    res = runner.transcribe(fake, "en", multi_model=False)
     assert res["n_utterances"] == 2
     assert "[00:00] Speaker 1: This is a clean line." in res["transcript"]
     assert res["receipt"].grade == "A"           # clean content -> grade A from the real auditor
@@ -43,5 +43,5 @@ def test_transcribe_empty_audio_yields_no_utterances(monkeypatch, tmp_path):
     fake = str(tmp_path / "audio.wav")
     open(fake, "wb").write(b"x")
     monkeypatch.setattr(runner.witness, "deepgram_structured", lambda path, lang: [])
-    res = runner.transcribe(fake, "en")
+    res = runner.transcribe(fake, "en", multi_model=False)
     assert res["n_utterances"] == 0 and res["content"] == ""

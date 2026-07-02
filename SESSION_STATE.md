@@ -36,7 +36,11 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 - **Phase G ✅ (2026-07-02):** `runner.transcribe_domain_verified` — legal/medical loop: transcribe
   (normal+slow) -> audit vs domain guide -> if a CRITICAL term flagged, re-read + re-audit up to
   max_rounds (stops when clean or a re-read changes nothing). Suite 301 green.
-- Phase H pending: wire multi-model consensus into runner (the headline; last).
+- **Phase H ✅ (2026-07-02):** wired multi-model consensus into `runner.transcribe` (multi_model=ON):
+  Deepgram supplies timestamps+speakers (structural backbone), the consensus vote supplies the WORDS
+  (`_redistribute` aligns consensus text onto the utterances); graceful fallback to Deepgram text if
+  consensus empty. **End-to-end path is no longer single-model.** Suite 304 green.
+- **ALL 8 phases (A–H) DONE.** Multi-model upgrade complete.
 
 ## Testing (2026-07-02) — coverage push (Phases 1–4 done)
 - **266 tests, 0 failing** across 25 files; **74% line coverage** (`pytest --cov=transcript_truth`, see `.coveragerc`).
