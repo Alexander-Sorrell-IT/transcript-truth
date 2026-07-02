@@ -14,6 +14,13 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 
 **11 languages live:** ja, en, es, ru, uk, fr, de, pt, tr, ko, vi (+ ar, hi, ur profiles). **220 tests passing, 0 failing** (see Testing below).
 
+## Multi-model upgrades (see MODEL_MAP.md + IMPLEMENTATION_PLAN.md, 8 phases A–H)
+- **Phase A ✅ (2026-07-02):** independent-FAMILY voting (same-base Whisper reads share 1 vote;
+  specialized fine-tunes independent) + wav2vec2 wired as 9th witness + on-demand LOCAL_TIER
+  (free local models fold in only when cloud lacks a 2-family majority). Suite 273 green.
+- Phases B–H pending: token-level voting, two-tier slow path, multi-model detect, diarization
+  cross-vote, 2nd coherence LLM, legal/medical re-exam loop, wire consensus into runner (last).
+
 ## Testing (2026-07-02) — coverage push (Phases 1–4 done)
 - **266 tests, 0 failing** across 25 files; **74% line coverage** (`pytest --cov=transcript_truth`, see `.coveragerc`).
 - **The whole deterministic core is covered** — the "models propose, code decides" verdict path is pinned:
