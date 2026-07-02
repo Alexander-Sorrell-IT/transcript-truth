@@ -24,34 +24,53 @@ def profile_for(lang):
     return PROFILE_FOR.get((lang or "").split("-")[0].lower(), "default")
 
 
-def detect(audio_path, slice_s=45):
-    """Auto-detect the spoken language of an audio file. Detects on the first `slice_s` seconds
-    (cheap) via Deepgram's detector. Returns a language code ('en', 'ja', ...) or '' if unknown.
-    The front door of routing: detect -> route to that language's roster + profile."""
-    from . import chunking, witness
-    probe_path, tmp = audio_path, None
+def _detect_slice(audio_path, slice_s):
+    """Cut the first `slice_s` seconds for cheap detection. Returns (path, tmp_or_None)."""
+    from . import chunking
     if chunking.have_ffmpeg() and (chunking.probe(audio_path)[0] or 0) > slice_s:
         import os, subprocess, tempfile
         fd, tmp = tempfile.mkstemp(suffix=".wav", prefix="ttdetect_"); os.close(fd)
         try:
             subprocess.run(["ffmpeg", "-y", "-t", str(slice_s), "-i", audio_path,
                             "-ac", "1", "-ar", "16000", tmp, "-loglevel", "error"], check=True)
-            probe_path = tmp
+            return tmp, tmp
         except Exception:
-            probe_path = audio_path
+            return audio_path, None
+    return audio_path, None
+
+
+def detect_multi(audio_path, slice_s=45):
+    """Two-detector language id (MODEL_MAP.md Stage 0): Deepgram + free local Whisper, so ONE
+    detector can't misroute the whole job. Returns {lang, candidates, agree, deepgram, whisper}:
+    `lang` is Deepgram's read (primary) with Whisper as fallback; `agree` is True when both name
+    the same language; `candidates` lists every language named so the caller can try both rosters."""
+    from . import witness
+    probe_path, tmp = _detect_slice(audio_path, slice_s)
     try:
-        return witness.deepgram_detect_language(probe_path)
+        d = witness.deepgram_detect_language(probe_path) or ""
+        w = witness.whisper_detect_language(probe_path) or ""
     finally:
         if tmp and __import__("os").path.exists(tmp):
             __import__("os").remove(tmp)
+    return {"lang": d or w, "candidates": sorted({c for c in (d, w) if c}),
+            "agree": bool(d and w and d == w), "deepgram": d, "whisper": w}
+
+
+def detect(audio_path, slice_s=45):
+    """Best single language code (Deepgram primary, Whisper fallback). See detect_multi for the
+    agreement/candidates a caller can act on."""
+    return detect_multi(audio_path, slice_s)["lang"]
 
 
 def route(audio_path):
-    """Detect language and return the routing decision: {lang, profile, roster}. `roster` is the
-    witness list for that language (from consensus.ROSTER); empty if the language is unknown."""
+    """Detect language and return the routing decision: {lang, profile, roster, candidates,
+    detect_agree}. When the two detectors DISAGREE, `candidates` holds both so the caller can
+    run both rosters and pick by first-pass agreement instead of trusting one detector."""
     from .consensus import ROSTER
-    lang = detect(audio_path)
-    return {"lang": lang, "profile": profile_for(lang), "roster": ROSTER.get(lang, [])}
+    d = detect_multi(audio_path)
+    lang = d["lang"]
+    return {"lang": lang, "profile": profile_for(lang), "roster": ROSTER.get(lang, []),
+            "candidates": d["candidates"], "detect_agree": d["agree"]}
 
 
 def script_of(ch):

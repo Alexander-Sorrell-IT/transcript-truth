@@ -194,6 +194,23 @@ def whisper_local(audio_path, language=None, model_size="large-v3"):  # pragma: 
     return " ".join(s.text for s in segs).strip()
 
 
+def whisper_detect_language(audio_path):  # pragma: no cover
+    """Free local-Whisper language id — the second detector that cross-checks Deepgram's, so one
+    detector can't misroute the whole job. Returns an ISO-639-1 code, or '' if unavailable."""
+    global _WHISPER_LOCAL
+    try:
+        from faster_whisper import WhisperModel
+    except Exception:
+        return ""
+    if _WHISPER_LOCAL is None:
+        _WHISPER_LOCAL = WhisperModel("large-v3", device="cpu", compute_type="int8")
+    try:
+        _, info = _WHISPER_LOCAL.transcribe(audio_path, beam_size=1)
+        return getattr(info, "language", "") or ""
+    except Exception:
+        return ""
+
+
 # ISO 639-1 (our codes) -> 639-3 (what MMS / Seamless want)
 _ISO3 = {"en": "eng", "vi": "vie", "ar": "arb", "hi": "hin", "ur": "urd", "fr": "fra", "de": "deu",
          "pt": "por", "tr": "tur", "es": "spa", "ru": "rus", "uk": "ukr", "ja": "jpn", "ko": "kor"}

@@ -24,8 +24,11 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 - **Phase C ✅ (2026-07-02):** explicit two-tier slow path — Tier-1 normal always; Tier-2 slow
   escalates on uncertainty for general content (stops on convergence), ALWAYS runs the full
   ladder for legal/medical; `transcribe(domain=...)` returns normal_text + slow_changed. Suite 284 green.
-- Phases D–H pending: multi-model detect, diarization cross-vote, 2nd coherence LLM,
-  legal/medical re-exam loop, wire consensus into runner (last).
+- **Phase D ✅ (2026-07-02):** two-detector language id — `detect_multi` cross-checks Deepgram +
+  free local Whisper; agree→route, disagree→`candidates` lists both so caller tries both rosters.
+  `route()` returns candidates + detect_agree. Suite 289 green.
+- Phases E–H pending: diarization cross-vote, 2nd coherence LLM, legal/medical re-exam loop,
+  wire consensus into runner (last).
 
 ## Testing (2026-07-02) — coverage push (Phases 1–4 done)
 - **266 tests, 0 failing** across 25 files; **74% line coverage** (`pytest --cov=transcript_truth`, see `.coveragerc`).
