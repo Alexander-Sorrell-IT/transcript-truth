@@ -11,6 +11,7 @@ multilingual) + decision collocations (context fit: en/es/ru/uk/jp). For languag
 lexical signal (e.g. rare proper nouns absent from every dictionary) it returns low confidence, so
 the caller falls back to the vote — it helps where it has signal, stays silent where it doesn't.
 """
+import unicodedata
 from . import lexicon
 from . import decision as _dec
 
@@ -18,7 +19,11 @@ _STRIP = ".,!?;:'\"()[]«»„“”…-—"
 
 
 def _clean(w):
-    return w.strip(_STRIP).lower()
+    """Lowercase + strip punctuation, robust to casing artifacts. Turkish dotted-İ lowercases to
+    'i' + a combining dot (U+0307) which no wordlist matches; drop that stray mark so 'İstanbul'
+    normalizes to 'istanbul'. NFC-normalize so composed/decomposed forms compare equal."""
+    s = unicodedata.normalize("NFC", w.strip(_STRIP).lower().replace("̇", ""))
+    return s
 
 
 # Web-frequency floor for the proper-noun tier. Real names ("Kagiso" zipf~1.6, "Reykjavik" ~2.8)
@@ -28,10 +33,20 @@ _NAME_FLOOR = 1.0
 
 
 def _is_known(word, lang):
-    """Dictionary-valid (correctly-spelled real word) in `lang`. Authoritative on spelling."""
+    """Dictionary-valid (a correctly-spelled real word OR a known name) in `lang`. Japanese uses its
+    native authoritative data — JMdict (words) + JMnedict (954k name surfaces) via verdict — which is
+    richer than any frequency signal; every other language uses its lexicon backend."""
     w = _clean(word)
     if not w:
         return False
+    if lang in ("ja", "jp"):
+        try:
+            from . import verdict
+            raw = word.strip(_STRIP)
+            if verdict.gloss(raw) is not None or raw in verdict.name_index():
+                return True
+        except Exception:
+            pass
     try:
         return bool(lexicon.is_known(w, lang))
     except Exception:

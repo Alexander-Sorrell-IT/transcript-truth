@@ -15,6 +15,12 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 **11 languages live:** ja, en, es, ru, uk, fr, de, pt, tr, ko, vi (+ ar, hi, ur profiles). **220 tests passing, 0 failing** (see Testing below).
 
 ## Multi-model upgrades (see MODEL_MAP.md + IMPLEMENTATION_PLAN.md, 8 phases A–H)
+- **PER-LANGUAGE PARITY PROVEN (2026-07-03):** probed the adjudicator in all 14 languages; found +
+  fixed 3 real gaps — Turkish İ casefolding (`.lower()` -> combining U+0307; `_clean` now strips it),
+  Korean tokenization (**needs `pip install mecab-ko-dic mecab-python3`** for wordfreq ko), and Japanese
+  now uses its native JMdict + 954k-name JMnedict gazetteer (via verdict) instead of generic wordfreq.
+  All 14 langs now: real word/name beats pure garble (override), two real words DEFER (safe). 28 parity
+  tests (`test_parity_languages.py`), 14 langs x 2 properties. Suite 344 green.
 - **The 'brain' — deterministic adjudicator (2026-07-03):** `adjudicate.py` scores each candidate
   word by deterministic linguistic validity (lexicon real-word) + collocation fit, wired into
   `consensus_tokens(reads, lang)` as the FIRST decider: a real word beats a mis-heard NON-word even
