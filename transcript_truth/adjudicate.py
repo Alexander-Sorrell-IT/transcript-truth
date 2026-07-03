@@ -21,15 +21,40 @@ def _clean(w):
     return w.strip(_STRIP).lower()
 
 
-def _validity(word, lang):
-    """1.0 if a real word in `lang`, else 0.0 (graceful 0.0 if the backend is unavailable)."""
+# Web-frequency floor for the proper-noun tier. Real names ("Kagiso" zipf~1.6, "Reykjavik" ~2.8)
+# clear it; mis-heard non-words ("Cogizzo", "Njorog") score 0.0 (they appear nowhere). wordfreq
+# covers every language we support, so this gives PROPER-NOUN parity with no per-language gazetteer.
+_NAME_FLOOR = 1.0
+
+
+def _is_known(word, lang):
+    """Dictionary-valid (correctly-spelled real word) in `lang`. Authoritative on spelling."""
+    w = _clean(word)
+    if not w:
+        return False
+    try:
+        return bool(lexicon.is_known(w, lang))
+    except Exception:
+        return False
+
+
+def _zipf(word, lang):
+    """Web-corpus frequency (0.0 if unseen / unavailable). Distinguishes a real name that appears
+    in text from a mis-heard non-word that appears nowhere."""
     w = _clean(word)
     if not w:
         return 0.0
     try:
-        return 1.0 if lexicon.is_known(w, lang) else 0.0
+        from wordfreq import zipf_frequency
+        return zipf_frequency(w, lang)
     except Exception:
         return 0.0
+
+
+def _validity(word, lang):
+    """Kept for callers/tests: 1.0 if dictionary-valid OR a frequent real name, else 0.0. The
+    per-position decision in adjudicate() uses the sharper two-tier rule below, not this union."""
+    return 1.0 if (_is_known(word, lang) or _zipf(word, lang) >= _NAME_FLOOR) else 0.0
 
 
 def _fit(word, context, lang):
@@ -53,12 +78,17 @@ def score(word, context, lang):
 
 def adjudicate(candidates, context, lang):
     """candidates: proposed surfaces for one position. context: neighbours. Returns
-    (best_surface, confidence). CONFIDENCE IS A VALIDITY MARGIN ONLY: it's high only when the best
-    candidate is a real word and the runner-up is NOT. Collocation fit orders among equally-valid
-    words but can never trigger an override on its own — so the judge promotes a real word over a
-    mis-heard non-word, but never rewrites one valid word into another (that would 'correct' the
-    speaker's actual phrasing, e.g. 'waiting on' -> 'waiting for'). Homophone-among-valid-words is
-    left to the review-tier scanners, not silently changed here."""
+    (best_surface, confidence). Confidence is 1.0 only when the judge can cleanly separate a real
+    word/name from a mis-heard non-word; 0.0 otherwise (caller then defers to the vote).
+
+    TWO-TIER rule (this is what keeps names in but misspellings out):
+      TIER 1 — dictionary: if SOME candidates are correctly-spelled real words and some aren't,
+        pick the best real word (fit breaks ties). Handles misspellings ('their' beats 'thier',
+        because 'thier' — however frequent — is not a dictionary word while 'their' is).
+      TIER 2 — proper nouns: only when NO candidate is a dictionary word (real names aren't in
+        fixed dictionaries), use web frequency — a name appears in text, a mishearing scores 0.
+        ('Kagiso' beats 'Cogizzo'.) If all are dictionary-valid, or all are equally name-like /
+        equally unseen, confidence is 0.0 — never rewrite one valid word into another."""
     uniq, seen = [], set()
     for c in candidates:
         k = _clean(c)
@@ -66,9 +96,24 @@ def adjudicate(candidates, context, lang):
             seen.add(k); uniq.append(c)
     if not uniq:
         return "", 0.0
-    # rank by (validity, fit): fit only breaks ties among words of equal validity
-    ranked = sorted(uniq, key=lambda c: (_validity(c, lang), _fit(c, context, lang)), reverse=True)
-    best = ranked[0]
-    runner_validity = _validity(ranked[1], lang) if len(ranked) > 1 else 0.0
-    confidence = _validity(best, lang) - runner_validity     # 1.0 only: real word vs non-word
-    return best, round(confidence, 4)
+
+    known = {c: _is_known(c, lang) for c in uniq}
+    n_known = sum(known.values())
+    # TIER 1 — dictionary separates them
+    if 0 < n_known < len(uniq):
+        valid = [c for c in uniq if known[c]]
+        best = max(valid, key=lambda c: _fit(c, context, lang))
+        return best, 1.0
+    if n_known == len(uniq):
+        return uniq[0], 0.0                       # all valid dictionary words -> defer to vote
+
+    # TIER 2 — none are dictionary words (proper-noun territory) -> web frequency separates them.
+    # ONLY act on the unambiguous case: exactly ONE candidate appears in web text (a real name) and
+    # every other is unseen (a mishearing). If two+ candidates are plausible names, frequency can't
+    # say which was actually spoken (higher-frequency != correct — 'Jorg' is commoner than the
+    # correct-but-rarer 'Njoroge'), so we defer to the vote rather than pick the more common name.
+    freq = {c: _zipf(c, lang) for c in uniq}
+    above = [c for c in uniq if freq[c] >= _NAME_FLOOR]
+    if len(above) == 1:
+        return above[0], 1.0
+    return uniq[0], 0.0                            # ambiguous names / all unseen -> defer

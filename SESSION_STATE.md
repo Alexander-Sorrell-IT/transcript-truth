@@ -21,7 +21,12 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
   as a lone minority (proven: 2 models agree 'thier', judge picks scribe's 'their'). CONSERVATIVE —
   overrides ONLY on validity (never swaps one valid word for another; the bench caught + we fixed a
   'waiting on'->'waiting for' regression). Safe on hard clips (never worse). FRONTIER: proper nouns
-  aren't in any dictionary, so validity can't judge them — needs a names gazetteer next. Suite 313 green.
+  aren't in fixed dictionaries — SOLVED with a two-tier rule + wordfreq (no gazetteer, UNIVERSAL
+  across all 11 languages): Tier 1 dictionary decides spelling (misspelling 'thier' loses to 'their');
+  Tier 2 web-frequency separates a lone real name from mishearings ('Kagiso' beats 'Cogizzo'), and
+  DEFERS when 2+ plausible names compete ('Njoroge' vs 'Jorg'). Bench-measured on hard clips:
+  proper-nouns 0.45->0.35, no regressions, MEAN vote 0.206 -> brain 0.172 (vs single-Deepgram 0.291).
+  Validity signal is already universal (every lang has a lexicon backend). Suite 316 green.
 - **Multi-model VALIDATED LIVE (2026-07-02, `bench/live_bench.py` on hard clips):** on real hard audio
   the vote beats single-model Deepgram. WER (lower=better): accent+noise 0.105→**0.0**, crosstalk 0.167→0.167
   (tie — overlap is a diarization problem, not a word-vote), propernouns 0.60→**0.45**. MEAN single 0.291 →

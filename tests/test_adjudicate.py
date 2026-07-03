@@ -51,6 +51,24 @@ def test_no_lang_falls_back_to_vote():
     assert consensus_tokens(reads)["text"] == "i saw thier house"
 
 
+def test_proper_name_beats_mishearing_via_frequency():
+    # neither is a dictionary word; Tier 2: 'Kagiso' appears in web text, 'Cogizzo' does not
+    best, conf = adjudicate(["Cogizzo", "Kagiso"], ["account"], "en")
+    assert best == "Kagiso" and conf >= 1.0
+
+
+def test_two_plausible_names_defer():
+    # both 'Njoroge' and 'Jorg' are real names (both appear in text) -> can't tell -> defer
+    best, conf = adjudicate(["Njoroge", "Jorg"], [], "en")
+    assert conf < 1.0
+
+
+def test_frequent_misspelling_still_loses_to_dictionary_word():
+    # 'thier' is a FREQUENT misspelling (high zipf) but not a dictionary word; 'their' is -> Tier 1
+    best, conf = adjudicate(["thier", "their"], ["house"], "en")
+    assert best == "their" and conf >= 1.0
+
+
 def test_clean_agreement_unaffected():
     reads = {"deepgram": "the cat sat", "gemini": "the cat sat", "scribe": "the cat sat"}
     assert consensus_tokens(reads, "en")["text"] == "the cat sat"
