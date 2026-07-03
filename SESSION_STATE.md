@@ -117,7 +117,13 @@ DEEPGRAM_API_KEY · GEMINI_API_KEY · HF_API_KEY (inference, depleted/402) · **
 - **NVIDIA Parakeet/Canary:** choose local NeMo vs the build.nvidia.com API.
 - (HuggingFace is fully handled — gates accepted, token in place.)
 
-## UMLS (medical terminology) — PENDING APPROVAL (requested 2026-06-30)
+## UMLS (medical terminology) — LIVE (key verified 2026-07-03)
+- **`UMLS_API_KEY` is in `.env` and VERIFIED LIVE**: resolves aspirin (C0004057) and multilingually
+  diabète/corazon/Herz (FR/ES/DE -> real concepts; ES+DE both -> C0018787 Heart = cross-language norm).
+  `umls.py` (umls_term_check) is wired to it. Medical is a single FIELD plugin composing on ANY language
+  (UMLS is itself multilingual) -> nothing left to download for medical. Legal remains English-only / hard.
+
+## UMLS — original pending note (SUPERSEDED by the LIVE note above)
 - License request SUBMITTED via UTS (account: Alexander-Sorrell-IT, Google sign-in, "Individual Use" /
   "Software development", selected UMLS + RxNorm). NLM reviews in **~3 business days** (may run to ~Jul 6
   due to July 4) → approval email → API key in the UTS Profile.
