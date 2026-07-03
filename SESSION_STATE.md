@@ -15,6 +15,13 @@ Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + pe
 **11 languages live:** ja, en, es, ru, uk, fr, de, pt, tr, ko, vi (+ ar, hi, ur profiles). **220 tests passing, 0 failing** (see Testing below).
 
 ## Multi-model upgrades (see MODEL_MAP.md + IMPLEMENTATION_PLAN.md, 8 phases A–H)
+- **The 'brain' — deterministic adjudicator (2026-07-03):** `adjudicate.py` scores each candidate
+  word by deterministic linguistic validity (lexicon real-word) + collocation fit, wired into
+  `consensus_tokens(reads, lang)` as the FIRST decider: a real word beats a mis-heard NON-word even
+  as a lone minority (proven: 2 models agree 'thier', judge picks scribe's 'their'). CONSERVATIVE —
+  overrides ONLY on validity (never swaps one valid word for another; the bench caught + we fixed a
+  'waiting on'->'waiting for' regression). Safe on hard clips (never worse). FRONTIER: proper nouns
+  aren't in any dictionary, so validity can't judge them — needs a names gazetteer next. Suite 313 green.
 - **Multi-model VALIDATED LIVE (2026-07-02, `bench/live_bench.py` on hard clips):** on real hard audio
   the vote beats single-model Deepgram. WER (lower=better): accent+noise 0.105→**0.0**, crosstalk 0.167→0.167
   (tie — overlap is a diarization problem, not a word-vote), propernouns 0.60→**0.45**. MEAN single 0.291 →

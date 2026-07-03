@@ -472,15 +472,22 @@ def _medoid_name(nonempty):
     return min(names, key=lambda x: sum(dist(x, y) for y in names if y != x))
 
 
-def consensus_tokens(reads):
-    """Token-level (ROVER-style) consensus over the medoid backbone (MODEL_MAP.md Stage 1/B).
+# the deterministic judge overrides the vote only when its winner clears this margin over the
+# runner-up (validity 1.0 = a real word vs a non-word). Conservative: weak signal -> defer to vote.
+_ADJ_STRONG = 1.0
 
-    The medoid (most-central read) is the coherent backbone. Word by word, if an INDEPENDENT-family
-    majority backs a DIFFERENT word AND outnumbers the families backing the backbone's word, adopt it;
-    otherwise keep the backbone word (so we never stitch a locally-plausible but globally-disfluent
-    Franken-transcript on a lone outlier). This can reconstruct a transcript NO single model got right
-    (the proper-noun frontier). Returns {text, uncertain_spans:[{index, from?, to?, word?, families,
-    contested?}]}. uncertain_spans is the surfaced-uncertainty map for the receipt."""
+
+def consensus_tokens(reads, lang=None):
+    """Token-level (ROVER-style) consensus over the medoid backbone (MODEL_MAP.md Stage 1/B), with a
+    DETERMINISTIC ADJUDICATOR as the first decider when `lang` is given (Stage 'brain').
+
+    The medoid (most-central read) is the coherent backbone. Word by word:
+      1. if `lang` is set and the witnesses disagree, the deterministic judge (adjudicate: word
+         validity + collocation fit) scores the candidates; if one clears `_ADJ_STRONG` it wins —
+         even as a lone minority (a real word beats a mis-heard non-word regardless of vote count);
+      2. else if an INDEPENDENT-family majority backs a different word than the backbone, adopt it;
+      3. else keep the backbone word (never stitch a disfluent Franken-transcript on a lone outlier).
+    This is 'models propose, code decides' applied to word choice. Returns {text, uncertain_spans}."""
     from collections import defaultdict
     nonempty = {k: v for k, v in reads.items() if v}
     if not nonempty:
@@ -516,6 +523,18 @@ def consensus_tokens(reads):
 
     out, spans = [], []
     for i, w in enumerate(atoks):
+        # 1) deterministic judge FIRST — when there's a real disagreement and a language to judge in
+        if lang and len(fam[i]) > 1:
+            from .adjudicate import adjudicate
+            context = [atoks[j] for j in range(len(atoks)) if j != i]
+            best, conf = adjudicate([surf[i][k] for k in fam[i]], context, lang)
+            if conf >= _ADJ_STRONG:
+                out.append(best)
+                if best.lower() != w.lower():
+                    spans.append({"index": i, "from": w, "to": best,
+                                  "by": "adjudicator", "confidence": conf})
+                continue
+        # 2) independent-family majority vote
         winner, wfams = max(fam[i].items(), key=lambda kv: len(kv[1]))
         anchor_n = len(fam[i][w.lower()])
         if winner != w.lower() and len(wfams) > anchor_n and len(wfams) >= 2:
@@ -574,7 +593,7 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
     already confident, so we double-check. Slowed reads are keyed `model@0.65x` (visible/auditable).
     Returns the normal-tier text too, plus whether the slow tier CHANGED the result (compare)."""
     reads = roster_panel(audio_path, lang)
-    normal_text = consensus_tokens(reads)["text"]
+    normal_text = consensus_tokens(reads, lang)["text"]
     slowed_used = []
     always_slow = domain in ("legal", "medical")   # double-check high-stakes content
     if always_slow or _majority(reads) < 2:
@@ -592,7 +611,7 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
             # general content stops once it converges; legal/medical runs the full ladder
             if not always_slow and _majority(reads) >= 2:
                 break
-    tok = consensus_tokens(reads)
+    tok = consensus_tokens(reads, lang)
     return {"text": tok["text"], "uncertain_spans": tok["uncertain_spans"],
             "normal_text": normal_text,
             "slow_changed": _norm_ws(tok["text"]) != _norm_ws(normal_text),
