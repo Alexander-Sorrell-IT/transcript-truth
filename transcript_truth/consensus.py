@@ -56,9 +56,25 @@ LOCAL_TIER = {
 }
 
 
+# Per-witness reliability priors (0-1), measured as 1 - mean WER on the hard-clip bench
+# (bench/live_results.json). Used to steer UNCERTAIN positions to the most-accurate witness instead
+# of the medoid, and to weight family votes. Tunable / re-measurable per language (calibration).
+RELIABILITY = {
+    "scribe": 0.93, "gemini": 0.87, "whisper": 0.82, "hf": 0.77,
+    "deepgram": 0.71, "seamless": 0.64, "mms": 0.63,
+    "phowhisper": 0.80, "wav2vec2": 0.70,      # specialized locals — reasonable priors
+}
+_DEFAULT_RELIABILITY = 0.70
+
+
 def _family(name):
     """Vote-independence family for a witness name (slow-rate suffix `@0.65x` stripped)."""
     return FAMILY.get(name.split("@", 1)[0], name.split("@", 1)[0])
+
+
+def _reliability(name):
+    """Measured accuracy prior for a witness (slow-rate suffix stripped)."""
+    return RELIABILITY.get(name.split("@", 1)[0], _DEFAULT_RELIABILITY)
 
 
 def _family_agreement(reads):
@@ -472,6 +488,18 @@ def _medoid_name(nonempty):
     return min(names, key=lambda x: sum(dist(x, y) for y in names if y != x))
 
 
+def _anchor_name(nonempty):
+    """The backbone read to build consensus from. Reliability-first (MODEL_MAP.md / Phase I): start
+    from the most-accurate witness's read, then refine it word-by-word — so a proven-strong witness
+    (Scribe) anchors the transcript instead of a mediocre-but-central medoid. Ties broken by medoid
+    centrality. Measured: this is what lets the consensus BEAT the best single model on hard audio."""
+    medoid = _medoid_name(nonempty)
+    def central(x):
+        return -sum(1 - difflib.SequenceMatcher(a=_norm_ws(nonempty[x]), b=_norm_ws(nonempty[y])).ratio()
+                    for y in nonempty if y != x)
+    return max(nonempty, key=lambda n: (_reliability(n), central(n)))
+
+
 # the deterministic judge overrides the vote only when its winner clears this margin over the
 # runner-up (validity 1.0 = a real word vs a non-word). Conservative: weak signal -> defer to vote.
 _ADJ_STRONG = 1.0
@@ -495,12 +523,13 @@ def consensus_tokens(reads, lang=None):
     if len(nonempty) == 1:
         return {"text": next(iter(nonempty.values())), "uncertain_spans": []}
 
-    anchor = _medoid_name(nonempty)
+    anchor = _anchor_name(nonempty)
     atoks = nonempty[anchor].split()
     fam = [defaultdict(set) for _ in atoks]     # index -> {word_lower: {families}}
     surf = [dict() for _ in atoks]              # index -> {word_lower: representative surface}
+    wit = [defaultdict(set) for _ in atoks]     # index -> {word_lower: {witness names}} (for reliability)
     for i, w in enumerate(atoks):
-        fam[i][w.lower()].add(_family(anchor)); surf[i][w.lower()] = w
+        fam[i][w.lower()].add(_family(anchor)); surf[i][w.lower()] = w; wit[i][w.lower()].add(anchor)
 
     for n, txt in nonempty.items():
         if n == anchor:
@@ -511,7 +540,7 @@ def consensus_tokens(reads, lang=None):
         for op, i1, i2, j1, j2 in sm.get_opcodes():
             if op == "equal":
                 for k in range(i1, i2):
-                    fam[k][atoks[k].lower()].add(_family(n))
+                    fam[k][atoks[k].lower()].add(_family(n)); wit[k][atoks[k].lower()].add(n)
             elif op == "replace" and (i2 - i1) == (j2 - j1):
                 # 1:1 positional substitution ONLY — an equal-length swap is a genuine word
                 # disagreement. Unequal spans are a tokenization artifact (e.g. "double check" vs
@@ -519,32 +548,62 @@ def consensus_tokens(reads, lang=None):
                 for k in range(i1, i2):
                     cw = otoks[j1 + (k - i1)]
                     fam[k][cw.lower()].add(_family(n)); surf[k].setdefault(cw.lower(), cw)
+                    wit[k][cw.lower()].add(n)
             # unequal replace / insert / delete: leave the backbone intact (no add/drop on a minority read)
 
     out, spans = [], []
     for i, w in enumerate(atoks):
-        # 1) deterministic judge FIRST — when there's a real disagreement and a language to judge in
-        if lang and len(fam[i]) > 1:
-            from .adjudicate import adjudicate
-            context = [atoks[j] for j in range(len(atoks)) if j != i]
-            best, conf = adjudicate([surf[i][k] for k in fam[i]], context, lang)
-            if conf >= _ADJ_STRONG:
-                out.append(best)
-                if best.lower() != w.lower():
-                    spans.append({"index": i, "from": w, "to": best,
-                                  "by": "adjudicator", "confidence": conf})
-                continue
-        # 2) independent-family majority vote
-        winner, wfams = max(fam[i].items(), key=lambda kv: len(kv[1]))
-        anchor_n = len(fam[i][w.lower()])
-        if winner != w.lower() and len(wfams) > anchor_n and len(wfams) >= 2:
-            out.append(surf[i][winner])
-            spans.append({"index": i, "from": w, "to": surf[i][winner], "families": len(wfams)})
+        wl = w.lower()
+        if len(fam[i]) <= 1:                    # everyone agrees here
+            out.append(w); continue
+        cands = list(fam[i])
+        winner = _decide_word(wl, cands, surf[i], fam[i], wit[i], atoks, i, lang)
+        out.append(surf[i][winner])
+        if winner != wl:
+            spans.append({"index": i, "from": w, "to": surf[i][winner], "by": "consensus"})
         else:
-            out.append(w)
-            if len(fam[i]) > 1:                # families split here even though backbone kept
-                spans.append({"index": i, "word": w, "contested": True, "families": anchor_n})
+            spans.append({"index": i, "word": w, "contested": True})
     return {"text": " ".join(out), "uncertain_spans": spans}
+
+
+def _decide_word(wl, cands, surf_i, fam_i, wit_i, atoks, i, lang):
+    """One position, several candidate words. Deterministic decision (MODEL_MAP.md 'brain'):
+      1. PRUNE garbage — pure mishearings (unseen non-words) and misspellings (non-dict words close
+         to a dict candidate). What survives is real words + real names only.
+      2. If the backbone word itself was garbage, we MUST pick a survivor.
+      3. Among survivors: an independent-family MAJORITY wins; else the RELIABILITY prior picks
+         (a proven-strong witness's name beats a mediocre one) — but two competing DICTIONARY words
+         are left to the backbone (never rewrite one valid word into another, e.g. 'waiting on/for').
+    Reuses the adjudicator's validity signals (dictionary + web-frequency name floor)."""
+    from .adjudicate import _is_known, _zipf, _NAME_FLOOR
+
+    def relmax(c):
+        return max(_reliability(n) for n in wit_i[c])
+    dict_c = [c for c in cands if _is_known(surf_i[c], lang)]
+
+    def plausible(c):
+        s = surf_i[c]
+        return _is_known(s, lang) or _zipf(s, lang) >= _NAME_FLOOR
+    def misspell(c):                             # non-dict word that's a near-variant of a real word
+        return (not _is_known(surf_i[c], lang)) and any(
+            difflib.SequenceMatcher(None, c, d).ratio() >= 0.7 for d in dict_c)
+
+    survivors = [c for c in cands if plausible(c) and not misspell(c)] or cands
+    fmax = max(survivors, key=lambda c: len(fam_i[c]))
+    fmax_ct = len(fam_i[fmax])
+
+    if wl not in survivors:                      # backbone was garbage -> must replace it
+        # prefer a family majority; otherwise the most reliable survivor
+        if sum(1 for c in survivors if len(fam_i[c]) == fmax_ct) == 1 and fmax_ct >= 2:
+            return fmax
+        return max(survivors, key=relmax)
+    if fmax != wl and fmax_ct > len(fam_i[wl]) and fmax_ct >= 2:
+        return fmax                              # a real independent-family majority overrides
+    if not _is_known(surf_i[wl], lang):          # backbone is a NAME -> a more-reliable name may win
+        rmax = max(survivors, key=relmax)
+        if relmax(rmax) > relmax(wl):
+            return rmax
+    return wl                                    # keep backbone (incl. two competing dict words)
 
 
 def _stretch(audio_path, rate):

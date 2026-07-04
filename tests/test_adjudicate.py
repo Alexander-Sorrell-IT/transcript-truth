@@ -37,11 +37,15 @@ def test_adjudicator_overrides_majority_on_validity():
     assert consensus_tokens(reads, "en")["text"] == "i saw their house"    # adjudicated
 
 
-def test_adjudicator_records_the_override_span():
-    reads = {"deepgram": "i saw thier house", "gemini": "i saw thier house",
-             "scribe": "i saw their house"}
-    spans = consensus_tokens(reads, "en")["uncertain_spans"]
-    assert any(s.get("by") == "adjudicator" and s.get("to") == "their" for s in spans)
+def test_records_override_span_when_backbone_is_wrong():
+    # the most-reliable witness (scribe = the anchor) has the MISSPELLING; the others are right.
+    # the misspelling is pruned and the correct word overrides the backbone -> span recorded.
+    reads = {"scribe": "i saw thier house", "deepgram": "i saw their house",
+             "gemini": "i saw their house"}
+    r = consensus_tokens(reads, "en")
+    assert r["text"] == "i saw their house"
+    assert any(s.get("by") == "consensus" and s.get("to") == "their"
+               for s in r["uncertain_spans"])
 
 
 def test_no_lang_falls_back_to_vote():
