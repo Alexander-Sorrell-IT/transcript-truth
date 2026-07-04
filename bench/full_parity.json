@@ -1,0 +1,268 @@
+[
+ {
+  "lang": "ar",
+  "consensus": 0.438,
+  "best_single": 0.312,
+  "best_model": "gemini",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.375,
+   "scribe": 0.375,
+   "gemini": 0.312,
+   "seamless": 0.375
+  },
+  "reads": {
+   "deepgram": "أرسل طبيب نجوم سبعة وأربعين ألف يورو لا حسابك غيسو في مارسيليا في الثالث من مارس",
+   "scribe": "أرسل الطبيب لجوين 47 ألف يورو لا حساب، كاغيث في مارسيليا في الثالث من مارس.",
+   "gemini": "أرسل الطبيب نجيب سبعة وأربعين ألف يورو لحساب كريس في مارسيليا في الثالث من مارس",
+   "seamless": "أرسل طبيب نجومين 47 ألف يورو لا حساب كاغيزو في مرسيليا في الثالث من مارس"
+  }
+ },
+ {
+  "lang": "de",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.133,
+   "scribe": 0.0,
+   "hf": 0.2,
+   "gemini": 0.0
+  },
+  "reads": {
+   "deepgram": "Doktor Noien sandte 47000 Euro an das Konto von in München am dritten März.",
+   "scribe": "Doktor Nguyen sandte siebenundvierzigtausend Euro an das Konto von Kagiso in München am dritten März.",
+   "hf": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
+   "gemini": "Doktor Nguyen sandte siebenundvierzigtausend Euro an das Konto von Kagiso in München am dritten März."
+  }
+ },
+ {
+  "lang": "es",
+  "consensus": 0.1,
+  "best_single": 0.1,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.15,
+   "scribe": 0.1,
+   "hf": 0.1,
+   "gemini": 0.1,
+   "whisper": 0.1,
+   "mms": 0.35,
+   "seamless": 0.15
+  },
+  "reads": {
+   "deepgram": "Doctora Wen envió 47000 euros a la cuenta de Caciso en Guadalajara el 3 de marzo.",
+   "scribe": "La doctora Wen envió cuarenta y siete mil euros a la cuenta de CACISO en Guadalajara el 3 de marzo.",
+   "hf": "La doctora Wen envió 47.000 euros a la cuenta de Caciso en Guadalajara el 3 de marzo.",
+   "gemini": "La doctora Owen envió 47.000 euros a la cuenta de Kacizo en Guadalajara el 3 de marzo.",
+   "whisper": "La doctora Wen envió 47.000 euros a la cuenta de Caciso en Guadalajara el 3 de marzo.",
+   "mms": "la doctora gwen envió cuarenta y siete mero euros a la cuenta de caciso en guadalanjara al tres de mar zo",
+   "seamless": "La Dra. Wen envió 47 mil euros a la cuenta de Caciso en Guadalajara el 3 de marzo."
+  }
+ },
+ {
+  "lang": "fr",
+  "consensus": 0.053,
+  "best_single": 0.053,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.105,
+   "scribe": 0.053,
+   "hf": 0.21,
+   "gemini": 0.105,
+   "whisper": 0.21,
+   "mms": 0.21,
+   "seamless": 0.105
+  },
+  "reads": {
+   "deepgram": "Le docteur Ndian a envoyé 47000 euros vers le compte de Cagiso à Marseille le 3 mars.",
+   "scribe": "Le docteur Ndian a envoyé quarante-sept mille euros vers le compte de Kagiso à Marseille le trois mars.",
+   "hf": "Le Dr Nguyen a envoyé 47 000 euros vers le comte de Cagiso à Marseille le 3 mars.",
+   "gemini": "Le docteur Nguyen a envoyé 47 000 euros vers le compte de Kajizo à Marseille le 3 mars.",
+   "whisper": "Le Dr Nguyen a envoyé 47 000 euros vers le comte de Cagiso à Marseille le 3 mars.",
+   "mms": "le docteur nugian a envoyé quarante-sept millo euros vers le compte de kagizo à marseille le mars",
+   "seamless": "Le docteur Nguyen a envoyé 47 000 euros vers le compte de Cagiso à Marseille le 3 mars."
+  }
+ },
+ {
+  "lang": "hi",
+  "consensus": 0.086,
+  "best_single": 0.029,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.457,
+   "scribe": 0.029,
+   "gemini": 0.286,
+   "mms": 0.2,
+   "seamless": 1.0
+  },
+  "reads": {
+   "deepgram": "Doctor Nagunn ने Marcele में काग़ज़ों के खाते में सैंतालीस हज़ार तीन March को भेजे.",
+   "scribe": "डॉक्टर नगुयेन ने मार्सेले में कागिसो के खाते में सैंतालीस हज़ार यूरो तीन मार्च को भेजे।",
+   "gemini": "डॉक्टर नगुएन ने मार्सेल में कागिसो के खाते में 47,000 यूरो 3 मार्च को भेजे।",
+   "mms": "डॉक्टर नगुएन ने मार्जसेले में काकिसों के खाते में सेंटालीस   हजार यूरोप तीन मार्ज को भेजे",
+   "seamless": "Dr. Nagoyan sent 47,000 euros to the account of the papers in Marseille in March."
+  }
+ },
+ {
+  "lang": "ja",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.154,
+   "scribe": 0.0,
+   "gemini": 0.231,
+   "hf": 0.103,
+   "whisper": 0.128,
+   "wav2vec2": 0.692
+  },
+  "reads": {
+   "deepgram": "グエンギ氏はレイキャビクの鍵噌の口座に4万7千ユーロを3月3日に送金しまし",
+   "scribe": "グエン医師はレイキャビクのカギソの口座に四万七千ユーロを三月三日に送金しました。",
+   "gemini": "ウェンニッシュはレイキャビクの彼の口座に4万7000ユーロを3月3日に送金しました。",
+   "hf": "ウェンニ氏はレイキャビクのカギソの口座に47,000ユーロを3月3日に送金しました。",
+   "whisper": "ウェニ氏は、レイキャビクのカギソの口座に47,000ユーロを3月3日に送金しました。",
+   "wav2vec2": "道師が生の下の小座に去南で夏線入戸を三ダツに日に上産しました"
+  }
+ },
+ {
+  "lang": "ko",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.081,
+   "scribe": 0.0,
+   "gemini": 0.189,
+   "hf": 0.108,
+   "whisper": 0.108,
+   "mms": 0.432
+  },
+  "reads": {
+   "deepgram": "영웅엔 박사가 레이캬비크에 있는 카기소 계좌로 사 만 칠 천 유로를 삼 월 삼 일에 보냈습니다.",
+   "scribe": "응우옌 박사가 레이캬비크에 있는 카기소 계좌로 사만 칠천 유로를 삼 월 삼 일에 보냈습니다.",
+   "gemini": "왜냐하면 박사가 레이크비크에 있는 가기소 계좌로 37,000유로를 3월 3일에 보냈습니다.",
+   "hf": "은후엔 박사가 레이캐비크에 있는 카기소 계좌로 47,000유로를 3월 3일에 보냈습니다.",
+   "whisper": "은후엔 박사가 레이캐비크에 있는 카기소 계좌로 47,000유로를 3월 3일에 보냈습니다.",
+   "mms": "음우연 박자가 레이길라비크에 있는 가기서 개주하로 3한 7천유로를 삼보활 삼밀에 권냈습니다"
+  }
+ },
+ {
+  "lang": "pt",
+  "consensus": 0.095,
+  "best_single": 0.048,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.095,
+   "scribe": 0.048,
+   "hf": 0.048,
+   "gemini": 0.143,
+   "whisper": 0.048,
+   "mms": 0.286,
+   "seamless": 0.143
+  },
+  "reads": {
+   "deepgram": "A doutora Nuilene enviou 47000 euros para a conta de Kagizue em Lisboa no dia 3 de março.",
+   "scribe": "A doutora Noémia enviou quarenta e sete mil euros para a conta de Kagiso em Lisboa, no dia 3 de março.",
+   "hf": "A doutora Nguyen enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março.",
+   "gemini": "A doutora Nui En enviou 47.000 euros para a conta de Kajisu em Lisboa no dia 3 de março.",
+   "whisper": "A doutora Nguyen enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março.",
+   "mms": "a door anuiel enviou quarenta e  sete mel euros para a contade cajizo em lisboa no dia três de março",
+   "seamless": "A Dra. Anil enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março."
+  }
+ },
+ {
+  "lang": "ru",
+  "consensus": 0.214,
+  "best_single": 0.214,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.357,
+   "scribe": 0.214,
+   "hf": 0.214,
+   "gemini": 0.214,
+   "whisper": 0.286,
+   "mms": 0.643
+  },
+  "reads": {
+   "deepgram": "Доктор Нгуйн отправил 47 1000 евро на счет Кагиса в Новосибирске 3-его марта.",
+   "scribe": "Доктор Нгуй отправил сорок семь тысяч евро на счет Кагиса в Новосибирске третьего марта.",
+   "hf": "Доктор Нгуен отправил 47 тысяч евро на счет КГИСа в Новосибирске 3 марта.",
+   "gemini": "доктор ему отправил 47000 евро на счёт Кадисов Новосибирске третьего марта",
+   "whisper": "Доктор Нгуен отправил 47 тысяч евро на счет Кагисов Новосибирске 3 марта.",
+   "mms": "доктор нвуйн отправил сорок семь 00сяч евра на щёт кагисовного себирски 3реьего марта"
+  }
+ },
+ {
+  "lang": "tr",
+  "consensus": 0.167,
+  "best_single": 0.083,
+  "best_model": "deepgram",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.083,
+   "scribe": 0.167,
+   "hf": 0.333,
+   "gemini": 0.583,
+   "whisper": 0.333,
+   "mms": 0.667
+  },
+  "reads": {
+   "deepgram": "Doktor Zuyen üç Mart'ta Marsilya'daki KAGISO hesabına kırk yedi bin euro gönderdi.",
+   "scribe": "Doktor, Lucy'in 3 Mart'ta Marsilya'daki kadınsı hesabına kırk yedi bin euro gönderdi.",
+   "hf": "Dr. Ziyan 3 Mart'ta Marsilya'daki Kagiso hesabına 47 bin euro gönderdi.",
+   "gemini": "Doktor Duyanic Marta Marvilya'daki Kagiso hesabına 47.000 euro gönderdi.",
+   "whisper": "Dr. Ziyan 3 Mart'ta Marsilya'daki Kagiso hesabına 47 bin euro gönderdi.",
+   "mms": "doktor guyeniç martta maclivyadaki kagison hesabına kırfı yedi bir nivro gönderdi"
+  }
+ },
+ {
+  "lang": "uk",
+  "consensus": 0.071,
+  "best_single": 0.071,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.286,
+   "scribe": 0.071,
+   "whisper": 0.143,
+   "mms": 0.357
+  },
+  "reads": {
+   "deepgram": "Лікар Нгуєм надіслав 47 тисяч євро на рахунок Кагісу в Новособірську 3 березня.",
+   "scribe": "Лікар Нгуєн надіслав сорок сім тисяч євро на рахунок КАГІСу в Новосибірську третього березня.",
+   "whisper": "Лікар Нгуєн надіслав 47 тисяч євро на рахунок КАГІСу в Новосибірську 3 березня.",
+   "mms": "лікар нгуєн надіслав 47 000 євро на рахунок кагісов новосебірську 3о березня"
+  }
+ },
+ {
+  "lang": "vi",
+  "consensus": 0.048,
+  "best_single": 0.048,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.143,
+   "scribe": 0.048,
+   "gemini": 0.191,
+   "phowhisper": 0.191,
+   "whisper": 0.143
+  },
+  "reads": {
+   "deepgram": "Bác sĩ Nguyễn đã gửi bốn mươi bảy nghìn euro vào tài khoản Cazor ở Marc-Sei vào ngày ba tháng ba.",
+   "scribe": "Bác sĩ Nguyễn đã gửi bốn mươi bảy nghìn Euro vào tài khoản Cargill ở Marseille vào ngày 3 tháng Ba.",
+   "gemini": "Bác sĩ Nguyễn đã gửi 407.000 Euro vào tài khoản kaso ở Marce vào ngày 3 tháng 3",
+   "phowhisper": "bác sĩ nguyễn đã gửi bốn mươi bảy nghìn euro vào tài khoản cash so ở mặt xe vào ngày ba tháng ba.",
+   "whisper": "Bác sĩ Nguyễn đã gửi 47.000 euro vào tài khoản Gasso ở mạc xe vào ngày 3 tháng 3."
+  }
+ }
+]
