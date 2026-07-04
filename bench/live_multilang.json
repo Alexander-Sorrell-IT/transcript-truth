@@ -1,0 +1,225 @@
+[
+ {
+  "lang": "de",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "seamless",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.222,
+   "scribe": 0.0,
+   "hf": 0.278,
+   "gemini": 0.278,
+   "whisper": 0.278,
+   "mms": 0.444,
+   "seamless": 0.278
+  },
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "consensus": 0.167,
+  "consensus_wins": false,
+  "reads": {
+   "deepgram": "Doktor Nguyen und Frau Okongwo überweisen 47000 Euro auf das Konto von in München am dritten März.",
+   "scribe": "Doktor Nguyen und Frau Okonkwo überwiesen siebenundvierzigtausend Euro auf das Konto von Kagiso in München am dritten März.",
+   "hf": "Dr. Nguyen und Frau Okonkwo überwiesen 47.000 Euro auf das Konto von Cargiso in München am 3. März.",
+   "gemini": "Dr. Nguyen und Frau Okonkwo überweisen 47.000 Euro auf das Konto von Kagiso in München am 3. März.",
+   "whisper": "Dr. Nguyen und Frau Okonkwo überwiesen 47.000 Euro auf das Konto von Cargiso in München am 3. März.",
+   "mms": "doktor in gujen und frau okong wo überwiesen siebenundvierzig nuleld euro auf das konto von kagiso in münchen am drittn mär",
+   "seamless": "Dr. Inguyen und Frau Okonkwo überwiesen 47.000 Euro auf das Konto von KAGISO in München am 3. März."
+  }
+ },
+ {
+  "lang": "es",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "seamless",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.35,
+   "scribe": 0.15,
+   "hf": 0.3,
+   "gemini": 0.3,
+   "whisper": 0.3,
+   "mms": 0.35,
+   "seamless": 0.3
+  },
+  "best_single": 0.15,
+  "best_model": "scribe",
+  "consensus": 0.15,
+  "consensus_wins": true,
+  "reads": {
+   "deepgram": "Ministra Andiaye transfirió 47000 euros a la cuenta de Xiomara en Guadalajara el 3 de marzo.",
+   "scribe": "La ministra en viaje transfirió cuarenta y siete mil euros a la cuenta de Xiomara en Guadalajara el 3 de marzo.",
+   "hf": "La ministra Andiaye transfirió 47.000 euros a la cuenta de Xiomara en Guadalajara el 3 de marzo.",
+   "gemini": "La ministra Andiayet transfirió 47 000 euros a la cuenta de Xiomara en Guadalajara el 3 de marzo.",
+   "whisper": "La ministra Andiaye transfirió 47.000 euros a la cuenta de Xiomara en Guadalajara el 3 de marzo.",
+   "mms": "la ministra andialue transfirió cuarenta y siete cero euros a la cuenta de siomara en guadalajara al de mar zo",
+   "seamless": "La ministra Mdiaye transfirió 47 mil euros a la cuenta de Siomara en Guadalajara el 3 de marzo."
+  }
+ },
+ {
+  "lang": "fr",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "seamless",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.318,
+   "scribe": 0.091,
+   "hf": 0.409,
+   "gemini": 0.273,
+   "whisper": 0.455,
+   "mms": 0.318,
+   "seamless": 0.409
+  },
+  "best_single": 0.091,
+  "best_model": "scribe",
+  "consensus": 0.227,
+  "consensus_wins": false,
+  "reads": {
+   "deepgram": "Le docteur Ndian et madame Ekonkwo ont viré 47000 euros vers le compte de Cagiso à Marseille le 3 mars.",
+   "scribe": "Le docteur Ndian et madame Okonkwo ont viré quarante-sept mille euros vers le compte de Kagiso à Marseille le 3 mars.",
+   "hf": "Le Dr Ndiaye et Madame Konko ont viré 47 000 euros vers le comte de Cagiso à Marseille le 3 mars.",
+   "gemini": "Le docteur N'Diaye et madame Konkouo ont viré 47 000 euros vers le compte de Kagiso à Marseille le 3 mars.",
+   "whisper": "Le Dr Ndiang et Mme Konko ont viré 47 000 euros vers le comte de Cagiso à Marseille le 3 mars.",
+   "mms": "le docteur ndian et madame concourent enviré quarante sept milro euros vers le compte de kagizo à marseille le mars",
+   "seamless": "Le docteur Ndian et Madame Me Konkou ont environ 47 000 euros vers le compte de Cagizo à Marseille le 3 mars."
+  }
+ },
+ {
+  "lang": "ja",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "scribe",
+   "wav2vec2",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.553,
+   "scribe": 0.026,
+   "gemini": 0.658,
+   "hf": 0.684,
+   "whisper": 0.737,
+   "wav2vec2": 0.974
+  },
+  "best_single": 0.026,
+  "best_model": "scribe",
+  "consensus": 0.974,
+  "consensus_wins": false,
+  "reads": {
+   "deepgram": "グエンギ氏はミュンヘンのカギソの口座に4万7000ユーロを3月3日に送金しました",
+   "scribe": "フエン医師はミュンヘンのカギソの口座に四万七千ユーロを三月三日に送金しました。",
+   "gemini": "ウェン氏は、リューヘンのカギソの口座に、4万7000ユーロを、3月3日に送金しました。",
+   "hf": "ウェンイ氏は、ユーヘンのカギソの口座に47,000ユーロを3月3日に送金しました。",
+   "whisper": "ウェンイ氏は、有変のカギソの口座に47,000ユーロを3月3日に送金しました。",
+   "wav2vec2": "円師が2銭の作の2座に4南だ夏千ン入ドを三雑に日にと進しました"
+  }
+ },
+ {
+  "lang": "ko",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.029,
+   "scribe": 0.0,
+   "gemini": 0.343,
+   "hf": 0.571,
+   "whisper": 0.571,
+   "mms": 0.429
+  },
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "consensus": 0.143,
+  "consensus_wins": false,
+  "reads": {
+   "deepgram": "영우옌 박사가 뮌헨에 있는 카기소 계좌로 사 만 칠 천 유로를 삼 월 삼 일에 송금했습니다",
+   "scribe": "응우옌 박사가 뮌헨에 있는 카기소 계좌로 사만 칠천 유로를 삼 월 삼 일에 송금했습니다.",
+   "gemini": "대우인터사가 뮌헨에 있는 카기소 계좌로 4만 7천 유로를 3월 3일에 송금했습니다.",
+   "hf": "의무인 박사가 무인해내 있는 파기소 계좌로 47,000유로를 3월 3일에 송금했습니다.",
+   "whisper": "의무인 박사가 무인해내 있는 파기소 계좌로 47,000유로를 3월 3일에 송금했습니다.",
+   "mms": "음우낸 박사가 맹행에 있는 가기서 계좌로 삼한 7천 유로를 삼무할 삼입에 섬겸했습니다"
+  }
+ },
+ {
+  "lang": "pt",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "mms",
+   "scribe",
+   "seamless",
+   "whisper"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.333,
+   "scribe": 0.048,
+   "hf": 0.286,
+   "gemini": 0.238,
+   "whisper": 0.286,
+   "mms": 0.238,
+   "seamless": 0.333
+  },
+  "best_single": 0.048,
+  "best_model": "scribe",
+  "consensus": 0.095,
+  "consensus_wins": false,
+  "reads": {
+   "deepgram": "A doutora Nuilene transferiu 47000 euros para a conta de Kagizu em Lisboa no dia 3 de março.",
+   "scribe": "A doutora Noêmia transferiu quarenta e sete mil euros para a conta de Kagiso em Lisboa no dia três de março.",
+   "hf": "A doutora Nguyen transferiu 47 mil euros para a conta de Cajizo e Lisboa no dia 3 de março.",
+   "gemini": "A doutora Nguyen transferiu 47 mil euros para a conta de Kajisue em Lisboa no dia 3 de março.",
+   "whisper": "A doutora Nguyen transferiu 47 mil euros para a conta de Cagiso e Lisboa no dia 3 de março.",
+   "mms": "a dotor anuien transferiu quarenta e sete mel euros para a conta de cajizo em lisboa no dia tê de março",
+   "seamless": "A Dra. Anuên transferiu 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março."
+  }
+ },
+ {
+  "lang": "ru",
+  "witnesses": [
+   "deepgram",
+   "gemini",
+   "hf",
+   "scribe"
+  ],
+  "wer_by_model": {
+   "deepgram": 0.429,
+   "scribe": 0.143,
+   "hf": 0.357,
+   "gemini": 0.0
+  },
+  "best_single": 0.0,
+  "best_model": "gemini",
+  "consensus": 0.143,
+  "consensus_wins": false,
+  "reads": {
+   "deepgram": "Доктор Нгунь перевёл 47 1000 евро на счёт Ксении в Новосибирске 3-его марта.",
+   "scribe": "Доктор Нгуен перевел сорок семь тысяч евро на счет Ксении в Новосибирске третьего марта.",
+   "hf": "Доктор Нгуен перевел 47 тысяч евро на счет Ксении в Новосибирске 3 марта.",
+   "gemini": "Доктор Нгуен перевёл сорок семь тысяч евро на счёт Ксении в Новосибирске третьего марта."
+  }
+ }
+]

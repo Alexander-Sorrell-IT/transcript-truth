@@ -46,6 +46,13 @@ def test_wer_number_normalization_can_be_disabled():
     assert wer("it rose 15%", "it rose fifteen percent", normalize_numbers=False) > 0.0
 
 
+def test_wer_cjk_tokenized_by_character():
+    # space-free scripts have no word boundaries; WER must tokenize CJK by char, not by space
+    assert wer("三月三日", "三月三日") == 0.0
+    assert wer("三月三日", "三月四日") == 0.25          # 1 of 4 chars wrong (not 1.0)
+    assert wer("응우옌 박사가", "응우옌 사사가") == round(1 / 6, 4)  # 6 Hangul chars, 1 wrong
+
+
 def test_normalize_numbers_scale_merge():
     # "47 million" and "forty seven million" canonicalize to the same integer
     assert _normalize_numbers("47 million") == _normalize_numbers("forty seven million")

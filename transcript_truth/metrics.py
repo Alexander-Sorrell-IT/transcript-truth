@@ -127,8 +127,22 @@ def wer(reference: str, hypothesis: str, normalize_numbers: bool = True):
     import re
     if normalize_numbers:
         reference, hypothesis = _normalize_numbers(reference), _normalize_numbers(hypothesis)
-    norm = lambda s: re.sub(r"[^\w\s']", " ", s.lower()).split()
-    r, h = norm(reference), norm(hypothesis)
+
+    def _tokenize(s):
+        # Space-free scripts (CJK: Han, Hiragana, Katakana, Hangul) have no word boundaries, so
+        # splitting on spaces yields ~1 "word" and WER becomes meaningless. Tokenize those by
+        # CHARACTER (the standard CER for CJK) while keeping run-length Latin/Cyrillic words intact.
+        s = re.sub(r"[^\w\s']", " ", s.lower())
+        toks = []
+        for m in re.finditer(r"[぀-ヿ㐀-䶿一-鿿가-힣]|[^\s]+", s):
+            g = m.group(0)
+            if re.fullmatch(r"[぀-ヿ㐀-䶿一-鿿가-힣]", g):
+                toks.append(g)                     # one CJK char = one token
+            else:
+                toks.extend(g.split())
+        return toks
+
+    r, h = _tokenize(reference), _tokenize(hypothesis)
     if not r:
         return 0.0 if not h else 1.0
     # DP edit distance

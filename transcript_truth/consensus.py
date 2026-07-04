@@ -464,6 +464,33 @@ def _norm_ws(s):
     return re.sub(r"\s+", " ", re.sub(r"[^\w\s']", " ", s.lower().replace("ё", "е"))).strip()
 
 
+_CJK_RE = None
+
+
+def _wtok(s):
+    """Word-tokenize for consensus alignment. Space-free scripts (CJK: Han/Kana/Hangul) have no word
+    boundaries, so `.split()` yields ONE giant token and the word-level merge can't work (it replaces
+    the whole sentence on a single disagreement). Tokenize CJK by CHARACTER, Latin/Cyrillic by word —
+    mirrors metrics.wer so the thing we optimize matches the thing we measure."""
+    global _CJK_RE
+    if _CJK_RE is None:
+        import re
+        _CJK_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿가-힣]")
+    if not _CJK_RE.search(s):
+        return s.split()
+    toks, buf = [], ""
+    for ch in s:
+        if _CJK_RE.match(ch):
+            if buf.strip():
+                toks.extend(buf.split()); buf = ""
+            toks.append(ch)
+        else:
+            buf += ch
+    if buf.strip():
+        toks.extend(buf.split())
+    return toks
+
+
 def consensus_vote(reads):
     """Vote across the rostered reads by INDEPENDENT-FAMILY agreement (MODEL_MAP.md rule): a read
     backed by >=2 independent families wins; otherwise the medoid (min total distance) breaks ties.
@@ -524,7 +551,7 @@ def consensus_tokens(reads, lang=None):
         return {"text": next(iter(nonempty.values())), "uncertain_spans": []}
 
     anchor = _anchor_name(nonempty)
-    atoks = nonempty[anchor].split()
+    atoks = _wtok(nonempty[anchor])
     fam = [defaultdict(set) for _ in atoks]     # index -> {word_lower: {families}}
     surf = [dict() for _ in atoks]              # index -> {word_lower: representative surface}
     wit = [defaultdict(set) for _ in atoks]     # index -> {word_lower: {witness names}} (for reliability)
@@ -534,7 +561,7 @@ def consensus_tokens(reads, lang=None):
     for n, txt in nonempty.items():
         if n == anchor:
             continue
-        otoks = txt.split()
+        otoks = _wtok(txt)
         sm = difflib.SequenceMatcher(a=[t.lower() for t in atoks],
                                      b=[t.lower() for t in otoks], autojunk=False)
         for op, i1, i2, j1, j2 in sm.get_opcodes():
@@ -597,13 +624,21 @@ def _decide_word(wl, cands, surf_i, fam_i, wit_i, atoks, i, lang):
         if sum(1 for c in survivors if len(fam_i[c]) == fmax_ct) == 1 and fmax_ct >= 2:
             return fmax
         return max(survivors, key=relmax)
+    # backbone word is a VALID dictionary word: keep it. A majority must NOT rewrite one valid word
+    # into another — that "corrects" the speaker's real phrasing or just reformats (digits vs spelled
+    # numbers, 'siebenundvierzigtausend' vs '47.000' — same value; number FORMAT is a downstream
+    # style/site decision, not the vote's job). Genuine homophone-among-valid-words is left to the
+    # review-tier scanners, never silently changed here.
+    if _is_known(surf_i[wl], lang):
+        return wl
+    # backbone is NOT a dictionary word (a NAME, or uncertain): a real independent-family majority
+    # of a DIFFERENT plausible word overrides; else a more-reliable plausible candidate wins.
     if fmax != wl and fmax_ct > len(fam_i[wl]) and fmax_ct >= 2:
-        return fmax                              # a real independent-family majority overrides
-    if not _is_known(surf_i[wl], lang):          # backbone is a NAME -> a more-reliable name may win
-        rmax = max(survivors, key=relmax)
-        if relmax(rmax) > relmax(wl):
-            return rmax
-    return wl                                    # keep backbone (incl. two competing dict words)
+        return fmax
+    rmax = max(survivors, key=relmax)
+    if rmax != wl and relmax(rmax) > relmax(wl):
+        return rmax
+    return wl
 
 
 def _stretch(audio_path, rate):
