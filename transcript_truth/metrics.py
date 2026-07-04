@@ -119,14 +119,40 @@ def _normalize_numbers(text):
     return " ".join(merged)
 
 
-def wer(reference: str, hypothesis: str, normalize_numbers: bool = True):
+def _canon_numbers_lang(s, lang):
+    """Canonicalize number FORMAT so digits and spelled-out numbers score as equal in ANY language:
+    every digit-run is rewritten to its spelled form in `lang` (num2words), which then tokenizes like
+    the spelled reference. So '47.000' == 'siebenundvierzigtausend' (de) == '四万七千' (ja). This makes
+    WER measure whether the number was HEARD right, not which format it was written in (a style choice).
+    No-op if num2words is unavailable or the language is unsupported."""
+    import re
+    try:
+        from num2words import num2words
+    except Exception:
+        return s
+
+    def repl(m):
+        digits = m.group(0).replace(",", "").replace(".", "")
+        if not digits.isdigit():
+            return m.group(0)
+        try:
+            return " " + num2words(int(digits), lang=lang) + " "
+        except Exception:
+            return m.group(0)
+    return re.sub(r"\d[\d.,]*", repl, s)
+
+
+def wer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: str = "en"):
     """Word Error Rate (Levenshtein over words) — the text-accuracy ruler. 0.0 = identical.
-    Case/punctuation-insensitive. With normalize_numbers (default) it canonicalizes number/
-    date/currency formatting so "15%" and "fifteen percent" don't count as an error — measuring
-    real word accuracy, not style. Pass normalize_numbers=False for raw formatting-sensitive WER."""
+    Case/punctuation-insensitive. With normalize_numbers (default) it canonicalizes number/date/
+    currency FORMATTING so digits and spelled-out numbers don't count as an error ("15%" == "fifteen
+    percent"; "47.000" == "siebenundvierzigtausend") — measuring whether the number was HEARD right,
+    not how it was written. `lang` picks the spelling language (multilingual via num2words). Pass
+    normalize_numbers=False for raw formatting-sensitive WER."""
     import re
     if normalize_numbers:
-        reference, hypothesis = _normalize_numbers(reference), _normalize_numbers(hypothesis)
+        reference = _canon_numbers_lang(_normalize_numbers(reference), lang)
+        hypothesis = _canon_numbers_lang(_normalize_numbers(hypothesis), lang)
 
     def _tokenize(s):
         # Space-free scripts (CJK: Han, Hiragana, Katakana, Hangul) have no word boundaries, so

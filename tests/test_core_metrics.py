@@ -53,6 +53,13 @@ def test_wer_cjk_tokenized_by_character():
     assert wer("응우옌 박사가", "응우옌 사사가") == round(1 / 6, 4)  # 6 Hangul chars, 1 wrong
 
 
+def test_wer_number_format_neutral_multilingual():
+    # digits vs spelled-out numbers must score EQUAL in each language ("why not both")
+    assert wer("47000 Euro", "siebenundvierzigtausend Euro", lang="de") == 0.0
+    assert wer("47000 euros", "quarante-sept mille euros", lang="fr") == 0.0
+    assert wer("47000ユーロ", "四万七千ユーロ", lang="ja") == 0.0
+
+
 def test_normalize_numbers_scale_merge():
     # "47 million" and "forty seven million" canonicalize to the same integer
     assert _normalize_numbers("47 million") == _normalize_numbers("forty seven million")

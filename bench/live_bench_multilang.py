@@ -24,10 +24,10 @@ def run():
         print(f"[{lang}] running roster ...", flush=True)
         reads = C.roster_panel(audio, lang)
         live = {m: t for m, t in reads.items() if t}
-        by = {m: round(M.wer(ref, t), 3) for m, t in live.items()}
+        by = {m: round(M.wer(ref, t, lang=lang), 3) for m, t in live.items()}
         best_single = min(by.values()) if by else None
         best_model = min(by, key=by.get) if by else None
-        consensus = round(M.wer(ref, C.consensus_tokens(reads, lang)["text"]), 3)
+        consensus = round(M.wer(ref, C.consensus_tokens(reads, lang)["text"], lang=lang), 3)
         row = {"lang": lang, "witnesses": sorted(live), "wer_by_model": by,
                "best_single": best_single, "best_model": best_model, "consensus": consensus,
                "consensus_wins": (best_single is None) or (consensus <= best_single),
