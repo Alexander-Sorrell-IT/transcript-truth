@@ -28,7 +28,7 @@ ROSTER = {
     "tr": ["deepgram", "scribe", "hf", "gemini"],   # Tier-1
     "ko": ["deepgram", "scribe", "gemini", "hf"],   # Tier-2: Korean, all read it
     "vi": ["deepgram", "scribe", "gemini", "phowhisper"],   # Tier-2: + Vietnamese-specialized PhoWhisper
-    "ar": ["deepgram", "scribe", "gemini", "hf", "mms"],    # Tier-3: + Whisper-large-v3 (the bench showed all 4 prior witnesses bad 0.31-0.44) + MMS
+    "ar": ["deepgram", "scribe", "gemini", "hf", "wav2vec2", "mms"],  # Tier-3: + Whisper-large-v3 + XLSR-arabic (independent CTC family; every cloud witness measured bad 0.31-0.44)
     "hi": ["deepgram", "scribe", "gemini", "hf", "mms"],    # Tier-3: + Whisper + MMS
     "ur": ["scribe", "gemini", "hf", "mms"],                # Tier-3: + Whisper + MMS (Deepgram ur weaker)
     # add "uk" extras (parakeet-uk/nemotron) here once the NIM function-id is wired
@@ -143,7 +143,7 @@ def witness_wav2vec2(audio_path, lang):  # pragma: no cover
     """Independent CTC acoustic witness (wav2vec2-XLSR). Different family from every Whisper —
     a real second opinion. Language-specialized fine-tunes are loaded inside acoustic2."""
     from .acoustic2 import read
-    return read(audio_path)
+    return read(audio_path, lang=lang if lang in ("ja", "ar", "fa") else "ja")
 
 
 # Witnesses with a single-call size/credit cap. On long audio these are auto-chopped
