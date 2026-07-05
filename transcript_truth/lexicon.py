@@ -1,7 +1,11 @@
 """Generic authority-dictionary (known-word) check across languages.
 
-One interface, three backends, picked per language:
+One interface, four backends, picked per language:
   - ru/uk -> pymorphy3 / OpenCorpora (morphological: knows inflected forms)
+  - ko -> mecab-ko-dic (morphological: real words parse into whole dictionary
+    morphemes; ASR garble shatters into single-char scraps). wordfreq is USELESS
+    for Korean validity: it averages per-syllable frequency, so any hangul string
+    scores > 0 (measured: garble '즈끄즈' zipf 4.27 vs real '계좌' 4.44).
   - en/es/... -> pyspellchecker (wordlist)
   - fallback -> wordfreq (frequency > 0)
 
@@ -25,6 +29,12 @@ def _backend(lang: str):
     if lang in ("ru", "uk"):
         import pymorphy3
         return ("pymorphy", pymorphy3.MorphAnalyzer(lang=lang))
+    if lang == "ko":
+        try:
+            import MeCab, mecab_ko_dic
+            return ("mecab_ko", MeCab.Tagger(mecab_ko_dic.MECAB_ARGS))
+        except Exception:
+            return ("freq", None)
     try:
         from spellchecker import SpellChecker
         return ("spell", SpellChecker(language=lang))
@@ -38,6 +48,16 @@ def is_known(word: str, lang: str) -> bool:
         return obj.parse(word)[0].is_known
     if kind == "spell":
         return word.lower() in obj
+    if kind == "mecab_ko":
+        # known iff most of the word is covered by multi-char dictionary morphemes;
+        # garble parses only into 1-char scraps (즈+끄+즈), real words don't (계좌, 그러+면).
+        lines = [l for l in obj.parse(word).split("\n") if "\t" in l]
+        if not lines:
+            return False
+        covered = sum(len(l.split("\t")[0]) for l in lines
+                      if len(l.split("\t")[0]) >= 2
+                      and not l.split("\t")[1].startswith(("UNKNOWN", "UNA", "SY")))
+        return len(word) < 2 or covered * 2 >= len(word)
     from wordfreq import zipf_frequency
     return zipf_frequency(word.lower(), lang) > 0
 
