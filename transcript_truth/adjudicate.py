@@ -11,7 +11,7 @@ multilingual) + decision collocations (context fit: en/es/ru/uk/jp). For languag
 lexical signal (e.g. rare proper nouns absent from every dictionary) it returns low confidence, so
 the caller falls back to the vote — it helps where it has signal, stays silent where it doesn't.
 """
-import os, json, functools, unicodedata
+import os, json, functools, unicodedata, difflib
 from . import lexicon
 from . import decision as _dec
 
@@ -29,6 +29,33 @@ def gazetteer():
         return set(json.load(open(os.path.join(_DATA, "gazetteer.json"), encoding="utf-8")))
     except Exception:
         return set()
+
+
+@functools.lru_cache(maxsize=1)
+def _gazetteer_romanized():
+    """Collapsed-romanization index of the gazetteer, for cross-script name lookup: Devanagari
+    'कागिसो' romanizes to 'kaagiso' -> collapse repeats -> 'kagiso' = the Latin entry. This is the
+    bridge that gives non-Latin scripts the same name coverage as Latin ones (built lazily, once)."""
+    return {_collapse(n) for n in gazetteer() if n.isascii()}
+
+
+def _collapse(s):
+    return "".join(c for i, c in enumerate(s) if i == 0 or c != s[i - 1])
+
+
+def _name_in_gazetteer(w):
+    """Exact surface first; for non-ASCII candidates fall back to collapsed romanization."""
+    g = gazetteer()
+    if w in g:
+        return True
+    if w.isascii():
+        return False
+    try:
+        from unidecode import unidecode
+        r = _collapse(unidecode(w).lower().strip())
+        return bool(r) and r in _gazetteer_romanized()
+    except Exception:
+        return False
 
 
 def _clean(w):
@@ -61,9 +88,27 @@ def _is_known(word, lang):
         except Exception:
             pass
     # multilingual NAME gazetteer — the data cell that gives every language JP-level name recognition
-    g = gazetteer()
-    if w in g or raw.lower() in g:
+    if _name_in_gazetteer(w) or _name_in_gazetteer(raw.lower()):
         return True
+    try:
+        return bool(lexicon.is_known(w, lang))
+    except Exception:
+        return False
+
+
+def _is_word(word, lang):
+    """Dictionary WORD only (lexicon / JMdict) — no gazetteer. The word-vs-name distinction lets
+    the adjudicator demote gazetteer entries that are really misspellings of a competing word."""
+    w = _clean(word)
+    if not w:
+        return False
+    if lang in ("ja", "jp"):
+        try:
+            from . import verdict
+            if verdict.gloss(word.strip(_STRIP)) is not None:
+                return True
+        except Exception:
+            pass
     try:
         return bool(lexicon.is_known(w, lang))
     except Exception:
@@ -130,6 +175,17 @@ def adjudicate(candidates, context, lang):
         return "", 0.0
 
     known = {c: _is_known(c, lang) for c in uniq}
+    # DEMOTE name-only near-variants of a competing dictionary WORD: the person-name gazetteer is
+    # fat enough to contain surname-shaped misspellings ('Thier' the surname vs 'thier' the typo of
+    # 'their'). A candidate whose validity rests ONLY on the gazetteer, sitting a hair from a real
+    # dictionary word in the same slot, is a mishearing of that word — not a name (ratio 0.75:
+    # thier/their=0.8 demoted; कागिसो/कागजों=0.67 and Kagiso/Cajizo=0.5 stay names).
+    words = [c for c in uniq if _is_word(c, lang)]
+    for c in uniq:
+        if known[c] and not _is_word(c, lang) and any(
+                difflib.SequenceMatcher(None, _clean(c), _clean(d)).ratio() >= 0.75
+                for d in words):
+            known[c] = False
     n_known = sum(known.values())
     # TIER 1 — dictionary separates them
     if 0 < n_known < len(uniq):

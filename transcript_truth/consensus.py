@@ -602,17 +602,19 @@ def _decide_word(wl, cands, surf_i, fam_i, wit_i, atoks, i, lang):
          (a proven-strong witness's name beats a mediocre one) — but two competing DICTIONARY words
          are left to the backbone (never rewrite one valid word into another, e.g. 'waiting on/for').
     Reuses the adjudicator's validity signals (dictionary + web-frequency name floor)."""
-    from .adjudicate import _is_known, _zipf, _NAME_FLOOR
+    from .adjudicate import _is_known, _is_word, _zipf, _NAME_FLOOR
 
     def relmax(c):
         return max(_reliability(n) for n in wit_i[c])
-    dict_c = [c for c in cands if _is_known(surf_i[c], lang)]
+    # dictionary WORDS only (not gazetteer names): the fat person-name gazetteer contains
+    # surname-shaped strings ('Thier'), and a name must not shield a typo of a competing word.
+    dict_c = [c for c in cands if _is_word(surf_i[c], lang)]
 
     def plausible(c):
         s = surf_i[c]
         return _is_known(s, lang) or _zipf(s, lang) >= _NAME_FLOOR
-    def misspell(c):                             # non-dict word that's a near-variant of a real word
-        return (not _is_known(surf_i[c], lang)) and any(
+    def misspell(c):                             # non-WORD that's a near-variant of a real word
+        return (not _is_word(surf_i[c], lang)) and any(
             difflib.SequenceMatcher(None, c, d).ratio() >= 0.7 for d in dict_c)
 
     survivors = [c for c in cands if plausible(c) and not misspell(c)] or cands
