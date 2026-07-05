@@ -1,4 +1,26 @@
-# transcript-truth — session state (2026-06-30)
+# transcript-truth — session state (2026-07-05)
+
+## REAL parity push (2026-07-05) — measure, then fill the JA-gap with DATA, not hand-tuning
+- **Live full-parity bench re-run:** honest map was 8/12 WIN/tie (BEHIND: ar 0.438/0.312, hi 0.143/0.029,
+  tr 0.25/0.083, pt 0.095/0.048 — the vote actively WORSE than the best single model there).
+- **Root causes (diffed consensus vs best reads):** every loss was a PROPER-NOUN loss
+  ('Kagiso'->कागजों/Cajizo, 'Nguyen' dropped). Old gazetteer = 391k, places-only (cities15000,
+  no PPLX, no PEOPLE). JA never hits this because JMnedict has 954k names.
+- **Fixes (all data / general-mechanism; commits 5a9a9d5, dc06111, 97b04a4):**
+  1. Gazetteer rebuilt: cities500 + names-dataset (1.47M person names) = **2.6M surfaces** +
+     cross-script romanized lookup (unidecode + repeat-collapse: कागिसो -> kagiso).
+  2. Word-vs-name split (`_is_word` vs `_is_known`): the fat gazetteer contains surname-shaped
+     misspellings ('Thier'), so a name-only near-variant (ratio>=0.75) of a competing DICT word
+     is demoted — keeps "their beats thier" while keeping Kagiso/कागिसो alive.
+  3. Korean lexicon was FAKE (wordfreq averages syllables; garble scored zipf 4.27) -> real
+     mecab-ko-dic morpheme-coverage backend.
+  4. Collocation cells for ALL 9 missing langs (fr de pt tr ko vi ar hi ur) via ONE generic
+     builder (`bench/build_collocations_multilang.py`): Wikipedia stream, corpus-share stopwords
+     (self-calibrating), \p{L}\p{M} tokenizer (stdlib re shreds Devanagari at matras).
+- **RESULT (re-scored on saved reads): parity 10/12** — hi 0.143->0.029 (=best), pt 0.095->0.048 (=best),
+  uk 0.143->0.071 (**consensus now BEATS its best single**). Suite 346 green.
+- **Still BEHIND:** tr (vote drops 'Nguyen'; deepgram is the lone good witness — needs per-language
+  reliability weighting) and ar (ALL 4 witnesses bad 0.31-0.44 — needs a better Arabic roster).
 
 Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + per-phase status),
 `MODELS.md` (model strategy + install), `bench/BASELINE.md` (measured scorecard).
