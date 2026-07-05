@@ -4,6 +4,7 @@ no ear needed), and the disagreement spans (the short list to ear-check). Deepgr
 tiebreaker vote. No single model decides — agreement IS the verification.
 """
 import difflib
+import functools as _functools
 import os
 import subprocess
 import tempfile
@@ -27,9 +28,9 @@ ROSTER = {
     "tr": ["deepgram", "scribe", "hf", "gemini"],   # Tier-1
     "ko": ["deepgram", "scribe", "gemini", "hf"],   # Tier-2: Korean, all read it
     "vi": ["deepgram", "scribe", "gemini", "phowhisper"],   # Tier-2: + Vietnamese-specialized PhoWhisper
-    "ar": ["deepgram", "scribe", "gemini", "mms"],          # Tier-3: + Meta MMS (free, strong on thin rosters)
-    "hi": ["deepgram", "scribe", "gemini", "mms"],          # Tier-3: + MMS
-    "ur": ["scribe", "gemini", "mms"],                      # Tier-3: + MMS (Deepgram ur weaker)
+    "ar": ["deepgram", "scribe", "gemini", "hf", "mms"],    # Tier-3: + Whisper-large-v3 (the bench showed all 4 prior witnesses bad 0.31-0.44) + MMS
+    "hi": ["deepgram", "scribe", "gemini", "hf", "mms"],    # Tier-3: + Whisper + MMS
+    "ur": ["scribe", "gemini", "hf", "mms"],                # Tier-3: + Whisper + MMS (Deepgram ur weaker)
     # add "uk" extras (parakeet-uk/nemotron) here once the NIM function-id is wired
 }
 
@@ -52,7 +53,8 @@ LOCAL_TIER = {
     "fr": ["whisper", "mms", "seamless"], "de": ["whisper", "mms", "seamless"],
     "pt": ["whisper", "mms", "seamless"], "tr": ["whisper", "mms"],
     "ja": ["whisper", "wav2vec2"], "ru": ["whisper", "mms"], "ko": ["whisper", "mms"],
-    "vi": ["whisper"], "ar": ["seamless"], "hi": ["seamless"], "uk": ["whisper", "mms"],
+    "vi": ["whisper"], "ar": ["whisper", "seamless"], "hi": ["whisper", "seamless"],
+    "uk": ["whisper", "mms"], "ur": ["whisper", "seamless"],
 }
 
 
@@ -72,9 +74,29 @@ def _family(name):
     return FAMILY.get(name.split("@", 1)[0], name.split("@", 1)[0])
 
 
-def _reliability(name):
-    """Measured accuracy prior for a witness (slow-rate suffix stripped)."""
-    return RELIABILITY.get(name.split("@", 1)[0], _DEFAULT_RELIABILITY)
+@_functools.lru_cache(maxsize=1)
+def _reliability_by_lang():
+    """PER-LANGUAGE measured reliability (data/witness_reliability.json, built by
+    bench/build_reliability.py from the multi-clip parity bench). {} if not built."""
+    import os, json
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                     "data", "witness_reliability.json")
+    try:
+        return json.load(open(p, encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def _reliability(name, lang=None):
+    """Measured accuracy prior for a witness (slow-rate suffix stripped). Per-language
+    measurement wins over the global prior — 'gemini is great globally, bad at Turkish'
+    is exactly the kind of fact only a per-language table can hold."""
+    base = name.split("@", 1)[0]
+    if lang:
+        r = _reliability_by_lang().get(lang, {}).get(base)
+        if r is not None:
+            return r
+    return RELIABILITY.get(base, _DEFAULT_RELIABILITY)
 
 
 def _family_agreement(reads):
@@ -515,7 +537,7 @@ def _medoid_name(nonempty):
     return min(names, key=lambda x: sum(dist(x, y) for y in names if y != x))
 
 
-def _anchor_name(nonempty):
+def _anchor_name(nonempty, lang=None):
     """The backbone read to build consensus from. Reliability-first (MODEL_MAP.md / Phase I): start
     from the most-accurate witness's read, then refine it word-by-word — so a proven-strong witness
     (Scribe) anchors the transcript instead of a mediocre-but-central medoid. Ties broken by medoid
@@ -524,6 +546,9 @@ def _anchor_name(nonempty):
     def central(x):
         return -sum(1 - difflib.SequenceMatcher(a=_norm_ws(nonempty[x]), b=_norm_ws(nonempty[y])).ratio()
                     for y in nonempty if y != x)
+    # GLOBAL prior only for anchor choice — measured (48-clip bench): per-language reliability
+    # here flips anchors on sliver-sized differences (es scribe 0.851 vs gemini 0.876) and LOSES
+    # clips (41/48 vs 42/48). Per-language weights stay in _decide_word, where they are safe.
     return max(nonempty, key=lambda n: (_reliability(n), central(n)))
 
 
@@ -550,7 +575,7 @@ def consensus_tokens(reads, lang=None):
     if len(nonempty) == 1:
         return {"text": next(iter(nonempty.values())), "uncertain_spans": []}
 
-    anchor = _anchor_name(nonempty)
+    anchor = _anchor_name(nonempty, lang)
     atoks = _wtok(nonempty[anchor])
     fam = [defaultdict(set) for _ in atoks]     # index -> {word_lower: {families}}
     surf = [dict() for _ in atoks]              # index -> {word_lower: representative surface}
@@ -605,7 +630,7 @@ def _decide_word(wl, cands, surf_i, fam_i, wit_i, atoks, i, lang):
     from .adjudicate import _is_known, _is_word, _zipf, _NAME_FLOOR
 
     def relmax(c):
-        return max(_reliability(n) for n in wit_i[c])
+        return max(_reliability(n, lang) for n in wit_i[c])
     # dictionary WORDS only (not gazetteer names): the fat person-name gazetteer contains
     # surname-shaped strings ('Thier'), and a name must not shield a typo of a competing word.
     dict_c = [c for c in cands if _is_word(surf_i[c], lang)]
