@@ -22,6 +22,20 @@
 - **Still BEHIND:** tr (vote drops 'Nguyen'; deepgram is the lone good witness — needs per-language
   reliability weighting) and ar (ALL 4 witnesses bad 0.31-0.44 — needs a better Arabic roster).
 
+## Gap-close round 2 (2026-07-05, commit 7b92e17) — 48-clip measured verdict
+- **Battery 4x'd:** `bench/make_full_parity_battery2.py` adds 3 clips/lang (different names/numbers)
+  -> 48 hard clips. Full live bench re-run on all of them (bench/fp_run2.log, full_parity.json).
+- **RESULT: 42/48 clips WIN/tie.** Per lang: ja ko fr hi ru uk vi = 4/4 (hi was the worst language
+  a day ago); de es pt ar = 3/4; tr = 2/4. ar improved via Whisper(hf) added to roster.
+- **Per-language reliability MEASURED** (`bench/build_reliability.py` -> data/witness_reliability.json,
+  >=2 clips required). Wired via `_reliability(name, lang)`; used ONLY in _decide_word. Anchor selection
+  keeps the GLOBAL prior — measured: per-lang anchor flips on slivers and LOSES clips (41/48 vs 42/48).
+- **N=1 lesson proven:** the 'deepgram is the tr anchor' theory from 1 clip was WRONG — over 4 clips
+  scribe averages best in tr. Never tune on one sentence.
+- **Remaining honest gaps:** tr 2/4 (consensus mean 0.29 vs best 0.247 — small); ar mean 0.295 = tie
+  (every witness still bad: best ar witness hf=0.575 reliability; needs a real Arabic ASR model);
+  de/es/pt each dropped 1 clip on formatting-ish diffs. Suite 346 green.
+
 Single source of truth for where we are. Companion docs: `ROADMAP.md` (plan + per-phase status),
 `MODELS.md` (model strategy + install), `bench/BASELINE.md` (measured scorecard).
 
