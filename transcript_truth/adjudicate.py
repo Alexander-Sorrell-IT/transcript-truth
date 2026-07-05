@@ -110,7 +110,15 @@ def _is_word(word, lang):
         except Exception:
             pass
     try:
-        return bool(lexicon.is_known(w, lang))
+        if lexicon.is_known(w, lang):
+            return True
+    except Exception:
+        pass
+    # colloquial/slang cell (kaikki) — slang words aren't in spellcheckers; without this a real
+    # spoken form looks like garble and can lose to a dictionary near-variant.
+    try:
+        from .colloquial import known_colloquial
+        return known_colloquial(w, lang)
     except Exception:
         return False
 

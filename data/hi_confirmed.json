@@ -1,0 +1,6275 @@
+[
+ {
+  "key": "अँधेरा/अंधेरा",
+  "reading": "ʌndʰeːɾaː",
+  "options": [
+   {
+    "word": "अँधेरा",
+    "gloss": ""
+   },
+   {
+    "word": "अंधेरा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अँधेरी/अंधेरी",
+  "reading": "ʌndʰeːɾi",
+  "options": [
+   {
+    "word": "अँधेरी",
+    "gloss": ""
+   },
+   {
+    "word": "अंधेरी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अँधेरे/अंधेरे",
+  "reading": "ʌndʰeːɾeː",
+  "options": [
+   {
+    "word": "अँधेरे",
+    "gloss": ""
+   },
+   {
+    "word": "अंधेरे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अं/अन",
+  "reading": "ʌn",
+  "options": [
+   {
+    "word": "अं",
+    "gloss": ""
+   },
+   {
+    "word": "अन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंत/अन्त",
+  "reading": "ʌnt",
+  "options": [
+   {
+    "word": "अंत",
+    "gloss": ""
+   },
+   {
+    "word": "अन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंततः/अन्ततः",
+  "reading": "ʌntətəh",
+  "options": [
+   {
+    "word": "अंततः",
+    "gloss": ""
+   },
+   {
+    "word": "अन्ततः",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतर/अन्तर",
+  "reading": "ʌntəɾ",
+  "options": [
+   {
+    "word": "अंतर",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतरजाल/अंतर्जाल",
+  "reading": "ʌntəɾɟaːl",
+  "options": [
+   {
+    "word": "अंतरजाल",
+    "gloss": ""
+   },
+   {
+    "word": "अंतर्जाल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतरराष्ट्रीय/अन्तरराष्ट्रीय",
+  "reading": "ʌntəɾɾaːʂʈɾij",
+  "options": [
+   {
+    "word": "अंतरराष्ट्रीय",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तरराष्ट्रीय",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतराल/अन्तराल",
+  "reading": "ʌntəɾaːl",
+  "options": [
+   {
+    "word": "अंतराल",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तराल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतराष्ट्रीय/अन्तराष्ट्रीय",
+  "reading": "ʌntəɾaːʂʈɾij",
+  "options": [
+   {
+    "word": "अंतराष्ट्रीय",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तराष्ट्रीय",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतरिक्ष/अन्तरिक्ष",
+  "reading": "ʌntəɾɪkʃ",
+  "options": [
+   {
+    "word": "अंतरिक्ष",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तरिक्ष",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतर्गत/अन्तर्गत",
+  "reading": "ʌntʌɾɡət",
+  "options": [
+   {
+    "word": "अंतर्गत",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तर्गत",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतर्राष्ट्रीय/अन्तर्राष्ट्रीय",
+  "reading": "ʌntərɾaːʂʈɾij",
+  "options": [
+   {
+    "word": "अंतर्राष्ट्रीय",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तर्राष्ट्रीय",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंतिम/अन्तिम",
+  "reading": "ʌntɪm",
+  "options": [
+   {
+    "word": "अंतिम",
+    "gloss": ""
+   },
+   {
+    "word": "अन्तिम",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंदर/अन्दर",
+  "reading": "ʌndəɾ",
+  "options": [
+   {
+    "word": "अंदर",
+    "gloss": ""
+   },
+   {
+    "word": "अन्दर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंध/अन्ध",
+  "reading": "ʌndʰ",
+  "options": [
+   {
+    "word": "अंध",
+    "gloss": ""
+   },
+   {
+    "word": "अन्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंधकार/अन्धकार",
+  "reading": "ʌndʰəkaːɾ",
+  "options": [
+   {
+    "word": "अंधकार",
+    "gloss": ""
+   },
+   {
+    "word": "अन्धकार",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंधविश्वास/अन्धविश्वास",
+  "reading": "ʌndʰəʋɪʃʋaːs",
+  "options": [
+   {
+    "word": "अंधविश्वास",
+    "gloss": ""
+   },
+   {
+    "word": "अन्धविश्वास",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंबर/अम्बर",
+  "reading": "ʌmbəɾ",
+  "options": [
+   {
+    "word": "अंबर",
+    "gloss": ""
+   },
+   {
+    "word": "अम्बर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंबानी/अम्बानी",
+  "reading": "ʌmbaːni",
+  "options": [
+   {
+    "word": "अंबानी",
+    "gloss": ""
+   },
+   {
+    "word": "अम्बानी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंबाला/अम्बाला",
+  "reading": "ʌmbaːlaː",
+  "options": [
+   {
+    "word": "अंबाला",
+    "gloss": ""
+   },
+   {
+    "word": "अम्बाला",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंबिका/अम्बिका",
+  "reading": "ʌmbɪkaː",
+  "options": [
+   {
+    "word": "अंबिका",
+    "gloss": ""
+   },
+   {
+    "word": "अम्बिका",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अंबेडकर/अम्बेडकर",
+  "reading": "ʌmbeːɖəkəɾ",
+  "options": [
+   {
+    "word": "अंबेडकर",
+    "gloss": ""
+   },
+   {
+    "word": "अम्बेडकर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अखंड/अखण्ड",
+  "reading": "ʌkʰʌɳɖ",
+  "options": [
+   {
+    "word": "अखंड",
+    "gloss": ""
+   },
+   {
+    "word": "अखण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अखंडता/अखण्डता",
+  "reading": "ʌkʰʌɳɖətaː",
+  "options": [
+   {
+    "word": "अखंडता",
+    "gloss": ""
+   },
+   {
+    "word": "अखण्डता",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अतिशयोक्ति/अतिश्योक्ति",
+  "reading": "ʌtɪʃjoːktɪ",
+  "options": [
+   {
+    "word": "अतिशयोक्ति",
+    "gloss": ""
+   },
+   {
+    "word": "अतिश्योक्ति",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अत्यंत/अत्यन्त",
+  "reading": "ʌtːjʌnt",
+  "options": [
+   {
+    "word": "अत्यंत",
+    "gloss": ""
+   },
+   {
+    "word": "अत्यन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अदभुत/अद्भुत",
+  "reading": "ʌdbʰʊt",
+  "options": [
+   {
+    "word": "अदभुत",
+    "gloss": ""
+   },
+   {
+    "word": "अद्भुत",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अनंत/अनन्त",
+  "reading": "ʌnʌnt",
+  "options": [
+   {
+    "word": "अनंत",
+    "gloss": ""
+   },
+   {
+    "word": "अनन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अनुसंधान/अनुसन्धान",
+  "reading": "ʌnʊsndʰaːn",
+  "options": [
+   {
+    "word": "अनुसंधान",
+    "gloss": ""
+   },
+   {
+    "word": "अनुसन्धान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अभयारण्य/अभ्यारण्य",
+  "reading": "ʌbʰjaːɾʌɳjə",
+  "options": [
+   {
+    "word": "अभयारण्य",
+    "gloss": ""
+   },
+   {
+    "word": "अभ्यारण्य",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अभिनंदन/अभिनन्दन",
+  "reading": "ʌbʰɪnʌndən",
+  "options": [
+   {
+    "word": "अभिनंदन",
+    "gloss": ""
+   },
+   {
+    "word": "अभिनन्दन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अर्थात/अर्थात्",
+  "reading": "ʌɾtʰaːt",
+  "options": [
+   {
+    "word": "अर्थात",
+    "gloss": ""
+   },
+   {
+    "word": "अर्थात्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अलका/अल्का",
+  "reading": "ʌlkaː",
+  "options": [
+   {
+    "word": "अलका",
+    "gloss": ""
+   },
+   {
+    "word": "अल्का",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अविलंब/अविलम्ब",
+  "reading": "ʌʋɪlʌmb",
+  "options": [
+   {
+    "word": "अविलंब",
+    "gloss": ""
+   },
+   {
+    "word": "अविलम्ब",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "असंभव/असम्भव",
+  "reading": "ʌsʌmbʰəʋ",
+  "options": [
+   {
+    "word": "असंभव",
+    "gloss": ""
+   },
+   {
+    "word": "असम्भव",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "अहम/अहम्",
+  "reading": "ɛhəm",
+  "options": [
+   {
+    "word": "अहम",
+    "gloss": ""
+   },
+   {
+    "word": "अहम्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "आएँ/आएं",
+  "reading": "aːẽː",
+  "options": [
+   {
+    "word": "आएँ",
+    "gloss": ""
+   },
+   {
+    "word": "आएं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "आएँगे/आएंगे",
+  "reading": "aːẽːɡeː",
+  "options": [
+   {
+    "word": "आएँगे",
+    "gloss": ""
+   },
+   {
+    "word": "आएंगे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "आगया/आज्ञा",
+  "reading": "aːɡjaː",
+  "options": [
+   {
+    "word": "आगया",
+    "gloss": ""
+   },
+   {
+    "word": "आज्ञा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "आनंद/आनन्द",
+  "reading": "aːnʌnd",
+  "options": [
+   {
+    "word": "आनंद",
+    "gloss": ""
+   },
+   {
+    "word": "आनन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "आरंभ/आरम्भ",
+  "reading": "aːɾʌmbʰ",
+  "options": [
+   {
+    "word": "आरंभ",
+    "gloss": ""
+   },
+   {
+    "word": "आरम्भ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "इकट्ठा/इकठ्ठा",
+  "reading": "ɪkʌʈʰʈʰaː",
+  "options": [
+   {
+    "word": "इकट्ठा",
+    "gloss": ""
+   },
+   {
+    "word": "इकठ्ठा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "इनकार/इन्कार",
+  "reading": "ɪnkaːɾ",
+  "options": [
+   {
+    "word": "इनकार",
+    "gloss": ""
+   },
+   {
+    "word": "इन्कार",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "इनसान/इन्सान",
+  "reading": "ɪnsaːn",
+  "options": [
+   {
+    "word": "इनसान",
+    "gloss": ""
+   },
+   {
+    "word": "इन्सान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "इस/इस्",
+  "reading": "ɪs",
+  "options": [
+   {
+    "word": "इस",
+    "gloss": ""
+   },
+   {
+    "word": "इस्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "इसराइल/इस्राइल",
+  "reading": "ɪsɾaːɪl",
+  "options": [
+   {
+    "word": "इसराइल",
+    "gloss": ""
+   },
+   {
+    "word": "इस्राइल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "इसलाम/इस्लाम",
+  "reading": "ɪslaːm",
+  "options": [
+   {
+    "word": "इसलाम",
+    "gloss": ""
+   },
+   {
+    "word": "इस्लाम",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ईसवी/ईस्वी",
+  "reading": "iːsʋi",
+  "options": [
+   {
+    "word": "ईसवी",
+    "gloss": ""
+   },
+   {
+    "word": "ईस्वी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उंगलियाँ/उंगलियां",
+  "reading": "ʊŋɡəlɪjã",
+  "options": [
+   {
+    "word": "उंगलियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "उंगलियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उत्तराखंड/उत्तराखण्ड",
+  "reading": "ʊtːɾaːkʰʌɳɖ",
+  "options": [
+   {
+    "word": "उत्तराखंड",
+    "gloss": ""
+   },
+   {
+    "word": "उत्तराखण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उदघाटन/उद्घाटन",
+  "reading": "ʊdɡʰaːʈən",
+  "options": [
+   {
+    "word": "उदघाटन",
+    "gloss": ""
+   },
+   {
+    "word": "उद्घाटन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उपखंड/उपखण्ड",
+  "reading": "ʊpəkʰʌɳɖ",
+  "options": [
+   {
+    "word": "उपखंड",
+    "gloss": ""
+   },
+   {
+    "word": "उपखण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उपलब्धियाँ/उपलब्धियां",
+  "reading": "ʊpəlʌbdʰɪjã",
+  "options": [
+   {
+    "word": "उपलब्धियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "उपलब्धियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उरई/उरी",
+  "reading": "ʊɾi",
+  "options": [
+   {
+    "word": "उरई",
+    "gloss": ""
+   },
+   {
+    "word": "उरी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उलटा/उल्टा",
+  "reading": "ʊlʈaː",
+  "options": [
+   {
+    "word": "उलटा",
+    "gloss": ""
+   },
+   {
+    "word": "उल्टा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उलटी/उल्टी",
+  "reading": "ʊlʈi",
+  "options": [
+   {
+    "word": "उलटी",
+    "gloss": ""
+   },
+   {
+    "word": "उल्टी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "उलटे/उल्टे",
+  "reading": "ʊlʈeː",
+  "options": [
+   {
+    "word": "उलटे",
+    "gloss": ""
+   },
+   {
+    "word": "उल्टे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ऊँ/ऊं",
+  "reading": "ũ",
+  "options": [
+   {
+    "word": "ऊँ",
+    "gloss": ""
+   },
+   {
+    "word": "ऊं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ऋतिक/रितिक",
+  "reading": "ɾɪtɪk",
+  "options": [
+   {
+    "word": "ऋतिक",
+    "gloss": ""
+   },
+   {
+    "word": "रितिक",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ऋतु/रितु",
+  "reading": "ɾɪtʊ",
+  "options": [
+   {
+    "word": "ऋतु",
+    "gloss": ""
+   },
+   {
+    "word": "रितु",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "एम/एम्",
+  "reading": "eːm",
+  "options": [
+   {
+    "word": "एम",
+    "gloss": ""
+   },
+   {
+    "word": "एम्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "एवँ/एवं",
+  "reading": "eːʋən",
+  "options": [
+   {
+    "word": "एवँ",
+    "gloss": ""
+   },
+   {
+    "word": "एवं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "एवम/एवम्",
+  "reading": "eːʋəm",
+  "options": [
+   {
+    "word": "एवम",
+    "gloss": ""
+   },
+   {
+    "word": "एवम्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ओम/ओम्",
+  "reading": "oːm",
+  "options": [
+   {
+    "word": "ओम",
+    "gloss": ""
+   },
+   {
+    "word": "ओम्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ओलंपिक/ओलम्पिक",
+  "reading": "oːlʌmpɪk",
+  "options": [
+   {
+    "word": "ओलंपिक",
+    "gloss": ""
+   },
+   {
+    "word": "ओलम्पिक",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "और/औऱ",
+  "reading": "ɔːɾ",
+  "options": [
+   {
+    "word": "और",
+    "gloss": ""
+   },
+   {
+    "word": "औऱ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंधा/कन्धा",
+  "reading": "kʌndʰaː",
+  "options": [
+   {
+    "word": "कंधा",
+    "gloss": ""
+   },
+   {
+    "word": "कन्धा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंधे/कन्धे",
+  "reading": "kʌndʰeː",
+  "options": [
+   {
+    "word": "कंधे",
+    "gloss": ""
+   },
+   {
+    "word": "कन्धे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंधों/कन्धों",
+  "reading": "kʌndʰõ",
+  "options": [
+   {
+    "word": "कंधों",
+    "gloss": ""
+   },
+   {
+    "word": "कन्धों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंपनियाँ/कंपनियां/कम्पनियाँ/कम्पनियां",
+  "reading": "kʌmpənɪjã",
+  "options": [
+   {
+    "word": "कंपनियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "कंपनियां",
+    "gloss": ""
+   },
+   {
+    "word": "कम्पनियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "कम्पनियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंपनियों/कम्पनियों",
+  "reading": "kʌmpənɪjõ",
+  "options": [
+   {
+    "word": "कंपनियों",
+    "gloss": ""
+   },
+   {
+    "word": "कम्पनियों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंपनी/कम्पनी",
+  "reading": "kʌmpəni",
+  "options": [
+   {
+    "word": "कंपनी",
+    "gloss": ""
+   },
+   {
+    "word": "कम्पनी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंप्यूटर/कम्प्यूटर",
+  "reading": "kəmpːjuːʈəɾ",
+  "options": [
+   {
+    "word": "कंप्यूटर",
+    "gloss": ""
+   },
+   {
+    "word": "कम्प्यूटर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कंबल/कम्बल",
+  "reading": "kʌmbəl",
+  "options": [
+   {
+    "word": "कंबल",
+    "gloss": ""
+   },
+   {
+    "word": "कम्बल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कमियाँ/कमियां",
+  "reading": "kʌmɪjã",
+  "options": [
+   {
+    "word": "कमियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "कमियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "करता/कर्ता",
+  "reading": "kʌɾtaː",
+  "options": [
+   {
+    "word": "करता",
+    "gloss": ""
+   },
+   {
+    "word": "कर्ता",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "करुंगा/करूंगा",
+  "reading": "kəɾũɡaː",
+  "options": [
+   {
+    "word": "करुंगा",
+    "gloss": ""
+   },
+   {
+    "word": "करूंगा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "करूँ/करूं",
+  "reading": "kʌɾũ",
+  "options": [
+   {
+    "word": "करूँ",
+    "gloss": ""
+   },
+   {
+    "word": "करूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "करेँ/करें",
+  "reading": "kʌɾẽː",
+  "options": [
+   {
+    "word": "करेँ",
+    "gloss": ""
+   },
+   {
+    "word": "करें",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कलई/कली",
+  "reading": "kʌli",
+  "options": [
+   {
+    "word": "कलई",
+    "gloss": ""
+   },
+   {
+    "word": "कली",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कहाँ/कहां",
+  "reading": "kʌhã",
+  "options": [
+   {
+    "word": "कहाँ",
+    "gloss": ""
+   },
+   {
+    "word": "कहां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कहानियाँ/कहानियां",
+  "reading": "kəhaːnɪjã",
+  "options": [
+   {
+    "word": "कहानियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "कहानियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कहीँ/कहीं",
+  "reading": "kʌhĩ",
+  "options": [
+   {
+    "word": "कहीँ",
+    "gloss": ""
+   },
+   {
+    "word": "कहीं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कहुँ/कहूँ/कहूं",
+  "reading": "kʌhũ",
+  "options": [
+   {
+    "word": "कहुँ",
+    "gloss": ""
+   },
+   {
+    "word": "कहूँ",
+    "gloss": ""
+   },
+   {
+    "word": "कहूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "क़ुरआन/क़ुरान",
+  "reading": "qʊɾaːn",
+  "options": [
+   {
+    "word": "क़ुरआन",
+    "gloss": ""
+   },
+   {
+    "word": "क़ुरान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कारपोरेट/कार्पोरेट",
+  "reading": "kaːɾpoːɾeːʈ",
+  "options": [
+   {
+    "word": "कारपोरेट",
+    "gloss": ""
+   },
+   {
+    "word": "कार्पोरेट",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कारपोरेशन/कार्पोरेशन",
+  "reading": "kaːɾpoːɾeːʃən",
+  "options": [
+   {
+    "word": "कारपोरेशन",
+    "gloss": ""
+   },
+   {
+    "word": "कार्पोरेशन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कारवाँ/कारवां",
+  "reading": "kaːɾʋã",
+  "options": [
+   {
+    "word": "कारवाँ",
+    "gloss": ""
+   },
+   {
+    "word": "कारवां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "किससे/किस्से",
+  "reading": "kɪsseː",
+  "options": [
+   {
+    "word": "किससे",
+    "gloss": ""
+   },
+   {
+    "word": "किस्से",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कुएँ/कुएं",
+  "reading": "kʊẽː",
+  "options": [
+   {
+    "word": "कुएँ",
+    "gloss": ""
+   },
+   {
+    "word": "कुएं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कुमाऊँ/कुमाऊं",
+  "reading": "kʊmaːũ",
+  "options": [
+   {
+    "word": "कुमाऊँ",
+    "gloss": ""
+   },
+   {
+    "word": "कुमाऊं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कुरआन/कुरान",
+  "reading": "kʊɾaːn",
+  "options": [
+   {
+    "word": "कुरआन",
+    "gloss": ""
+   },
+   {
+    "word": "कुरान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कॉरपोरेट/कॉर्पोरेट",
+  "reading": "kɔɾpoːɾeːʈ",
+  "options": [
+   {
+    "word": "कॉरपोरेट",
+    "gloss": ""
+   },
+   {
+    "word": "कॉर्पोरेट",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "कॉरपोरेशन/कॉर्पोरेशन",
+  "reading": "kɔɾpoːɾeːʃən",
+  "options": [
+   {
+    "word": "कॉरपोरेशन",
+    "gloss": ""
+   },
+   {
+    "word": "कॉर्पोरेशन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "क्यूँ/क्यूं",
+  "reading": "kːjũ",
+  "options": [
+   {
+    "word": "क्यूँ",
+    "gloss": ""
+   },
+   {
+    "word": "क्यूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "खंड/खण्ड",
+  "reading": "kʰʌɳɖ",
+  "options": [
+   {
+    "word": "खंड",
+    "gloss": ""
+   },
+   {
+    "word": "खण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "खंभे/खम्भे",
+  "reading": "kʰʌmbʰeː",
+  "options": [
+   {
+    "word": "खंभे",
+    "gloss": ""
+   },
+   {
+    "word": "खम्भे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "खाँ/खां",
+  "reading": "kʰã",
+  "options": [
+   {
+    "word": "खाँ",
+    "gloss": ""
+   },
+   {
+    "word": "खां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "खिंच/खींच",
+  "reading": "kʰĩc",
+  "options": [
+   {
+    "word": "खिंच",
+    "gloss": ""
+   },
+   {
+    "word": "खींच",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "खिंची/खींची",
+  "reading": "kʰĩci",
+  "options": [
+   {
+    "word": "खिंची",
+    "gloss": ""
+   },
+   {
+    "word": "खींची",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "खुशियाँ/खुशियां",
+  "reading": "kʰʊʃɪjã",
+  "options": [
+   {
+    "word": "खुशियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "खुशियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गंदगी/गन्दगी",
+  "reading": "ɡʌndəɡi",
+  "options": [
+   {
+    "word": "गंदगी",
+    "gloss": ""
+   },
+   {
+    "word": "गन्दगी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गंदा/गन्दा",
+  "reading": "ɡʌndaː",
+  "options": [
+   {
+    "word": "गंदा",
+    "gloss": ""
+   },
+   {
+    "word": "गन्दा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गंदी/गन्दी",
+  "reading": "ɡʌndi",
+  "options": [
+   {
+    "word": "गंदी",
+    "gloss": ""
+   },
+   {
+    "word": "गन्दी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गंभीर/गम्भीर",
+  "reading": "ɡəmbʰiːɾ",
+  "options": [
+   {
+    "word": "गंभीर",
+    "gloss": ""
+   },
+   {
+    "word": "गम्भीर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गंभीरता/गम्भीरता",
+  "reading": "ɡəmbʰiːɾtaː",
+  "options": [
+   {
+    "word": "गंभीरता",
+    "gloss": ""
+   },
+   {
+    "word": "गम्भीरता",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गठबंधन/गठबन्धन",
+  "reading": "ɡəʈʰəbʌndʰən",
+  "options": [
+   {
+    "word": "गठबंधन",
+    "gloss": ""
+   },
+   {
+    "word": "गठबन्धन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गतिविधियाँ/गतिविधियां",
+  "reading": "ɡʌtɪʋɪdʰɪjã",
+  "options": [
+   {
+    "word": "गतिविधियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "गतिविधियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गलतियाँ/गलतियां",
+  "reading": "ɡʌltɪjã",
+  "options": [
+   {
+    "word": "गलतियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "गलतियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गाड़ियाँ/गाड़ियां",
+  "reading": "ɡaːr.ɪjã",
+  "options": [
+   {
+    "word": "गाड़ियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "गाड़ियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गालियाँ/गालियां",
+  "reading": "ɡaːlɪjã",
+  "options": [
+   {
+    "word": "गालियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "गालियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गुलिस्ताँ/गुलिस्तां",
+  "reading": "ɡʊlɪstã",
+  "options": [
+   {
+    "word": "गुलिस्ताँ",
+    "gloss": ""
+   },
+   {
+    "word": "गुलिस्तां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गेहूँ/गेहूं",
+  "reading": "ɡeːhũ",
+  "options": [
+   {
+    "word": "गेहूँ",
+    "gloss": ""
+   },
+   {
+    "word": "गेहूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "गोलियाँ/गोलियां",
+  "reading": "ɡoːlɪjã",
+  "options": [
+   {
+    "word": "गोलियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "गोलियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ग्यान/ज्ञान",
+  "reading": "ɡjaːn",
+  "options": [
+   {
+    "word": "ग्यान",
+    "gloss": ""
+   },
+   {
+    "word": "ज्ञान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ग्रंथ/ग्रन्थ",
+  "reading": "ɡɾʌntʰ",
+  "options": [
+   {
+    "word": "ग्रंथ",
+    "gloss": ""
+   },
+   {
+    "word": "ग्रन्थ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ग्रंथों/ग्रन्थों",
+  "reading": "ɡɾʌntʰõ",
+  "options": [
+   {
+    "word": "ग्रंथों",
+    "gloss": ""
+   },
+   {
+    "word": "ग्रन्थों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "घंटा/घण्टा",
+  "reading": "ɡʰʌɳʈaː",
+  "options": [
+   {
+    "word": "घंटा",
+    "gloss": ""
+   },
+   {
+    "word": "घण्टा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "घंटे/घण्टे",
+  "reading": "ɡʰʌɳʈeː",
+  "options": [
+   {
+    "word": "घंटे",
+    "gloss": ""
+   },
+   {
+    "word": "घण्टे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "घंटों/घण्टों",
+  "reading": "ɡʰʌɳʈõ",
+  "options": [
+   {
+    "word": "घंटों",
+    "gloss": ""
+   },
+   {
+    "word": "घण्टों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चँदा/चंदा/चन्दा",
+  "reading": "cʌndaː",
+  "options": [
+   {
+    "word": "चँदा",
+    "gloss": ""
+   },
+   {
+    "word": "चंदा",
+    "gloss": ""
+   },
+   {
+    "word": "चन्दा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंडीगढ़/चण्डीगढ़",
+  "reading": "cəɳɖiɡʌr.h",
+  "options": [
+   {
+    "word": "चंडीगढ़",
+    "gloss": ""
+   },
+   {
+    "word": "चण्डीगढ़",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंद/चन्द",
+  "reading": "cʌnd",
+  "options": [
+   {
+    "word": "चंद",
+    "gloss": ""
+   },
+   {
+    "word": "चन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंदन/चन्दन",
+  "reading": "cʌndən",
+  "options": [
+   {
+    "word": "चंदन",
+    "gloss": ""
+   },
+   {
+    "word": "चन्दन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंद्र/चन्द्र",
+  "reading": "cʌndɾə",
+  "options": [
+   {
+    "word": "चंद्र",
+    "gloss": ""
+   },
+   {
+    "word": "चन्द्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंद्रगुप्त/चन्द्रगुप्त",
+  "reading": "cəndɾəɡʊpt",
+  "options": [
+   {
+    "word": "चंद्रगुप्त",
+    "gloss": ""
+   },
+   {
+    "word": "चन्द्रगुप्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंद्रमा/चन्द्रमा",
+  "reading": "cʌndɾəmaː",
+  "options": [
+   {
+    "word": "चंद्रमा",
+    "gloss": ""
+   },
+   {
+    "word": "चन्द्रमा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंपारण/चम्पारण",
+  "reading": "cəmpaːɾəɳ",
+  "options": [
+   {
+    "word": "चंपारण",
+    "gloss": ""
+   },
+   {
+    "word": "चम्पारण",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चंबल/चम्बल",
+  "reading": "cʌmbəl",
+  "options": [
+   {
+    "word": "चंबल",
+    "gloss": ""
+   },
+   {
+    "word": "चम्बल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चिदंबरम/चिदम्बरम",
+  "reading": "cɪdʌmbəɾəm",
+  "options": [
+   {
+    "word": "चिदंबरम",
+    "gloss": ""
+   },
+   {
+    "word": "चिदम्बरम",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "चूड़ियाँ/चूड़ियां",
+  "reading": "cuːr.ɪjã",
+  "options": [
+   {
+    "word": "चूड़ियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "चूड़ियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "छंद/छन्द",
+  "reading": "cʰʌnd",
+  "options": [
+   {
+    "word": "छंद",
+    "gloss": ""
+   },
+   {
+    "word": "छन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "छः/छह",
+  "reading": "cʰʌh",
+  "options": [
+   {
+    "word": "छः",
+    "gloss": ""
+   },
+   {
+    "word": "छह",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "छुट्टियाँ/छुट्टियां",
+  "reading": "cʰʊʈʈɪjã",
+  "options": [
+   {
+    "word": "छुट्टियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "छुट्टियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जंतु/जन्तु",
+  "reading": "ɟʌntʊ",
+  "options": [
+   {
+    "word": "जंतु",
+    "gloss": ""
+   },
+   {
+    "word": "जन्तु",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जंतुओं/जन्तुओं",
+  "reading": "ɟʌntʊõ",
+  "options": [
+   {
+    "word": "जंतुओं",
+    "gloss": ""
+   },
+   {
+    "word": "जन्तुओं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जगत/जगत्",
+  "reading": "ɟʌɡət",
+  "options": [
+   {
+    "word": "जगत",
+    "gloss": ""
+   },
+   {
+    "word": "जगत्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जनसंपर्क/जनसम्पर्क",
+  "reading": "ɟənəsəmpʌɾk",
+  "options": [
+   {
+    "word": "जनसंपर्क",
+    "gloss": ""
+   },
+   {
+    "word": "जनसम्पर्क",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जयंती/जयन्ती",
+  "reading": "ɟəjʌnti",
+  "options": [
+   {
+    "word": "जयंती",
+    "gloss": ""
+   },
+   {
+    "word": "जयन्ती",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जयचंद/जयचन्द",
+  "reading": "ɟəjəcʌnd",
+  "options": [
+   {
+    "word": "जयचंद",
+    "gloss": ""
+   },
+   {
+    "word": "जयचन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जहाँ/जहां",
+  "reading": "ɟʌhã",
+  "options": [
+   {
+    "word": "जहाँ",
+    "gloss": ""
+   },
+   {
+    "word": "जहां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जाऊँ/जाऊं",
+  "reading": "ɟaːũ",
+  "options": [
+   {
+    "word": "जाऊँ",
+    "gloss": ""
+   },
+   {
+    "word": "जाऊं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जाएँ/जाय",
+  "reading": "ɟaːj",
+  "options": [
+   {
+    "word": "जाएँ",
+    "gloss": ""
+   },
+   {
+    "word": "जाय",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जाएँगी/जाएंगी",
+  "reading": "ɟaːẽːɡi",
+  "options": [
+   {
+    "word": "जाएँगी",
+    "gloss": ""
+   },
+   {
+    "word": "जाएंगी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जाएँगे/जाएंगे",
+  "reading": "ɟaːẽːɡeː",
+  "options": [
+   {
+    "word": "जाएँगे",
+    "gloss": ""
+   },
+   {
+    "word": "जाएंगे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जातियाँ/जातियां",
+  "reading": "ɟaːtɪjã",
+  "options": [
+   {
+    "word": "जातियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "जातियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जानकारियाँ/जानकारियां",
+  "reading": "ɟaːnkaːɾɪjã",
+  "options": [
+   {
+    "word": "जानकारियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "जानकारियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जिंद/जींद",
+  "reading": "ɟĩd",
+  "options": [
+   {
+    "word": "जिंद",
+    "gloss": ""
+   },
+   {
+    "word": "जींद",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "जीवंत/जीवन्त",
+  "reading": "ɟiʋʌnt",
+  "options": [
+   {
+    "word": "जीवंत",
+    "gloss": ""
+   },
+   {
+    "word": "जीवन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "झंडा/झण्डा",
+  "reading": "ɟʰʌɳɖaː",
+  "options": [
+   {
+    "word": "झंडा",
+    "gloss": ""
+   },
+   {
+    "word": "झण्डा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "झारखंड/झारखण्ड",
+  "reading": "ɟʰaːɾəkʰʌɳɖ",
+  "options": [
+   {
+    "word": "झारखंड",
+    "gloss": ""
+   },
+   {
+    "word": "झारखण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "टारगेट/टार्गेट",
+  "reading": "ʈaːɾɡeːʈ",
+  "options": [
+   {
+    "word": "टारगेट",
+    "gloss": ""
+   },
+   {
+    "word": "टार्गेट",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "टिप्पणियाँ/टिप्पणियां",
+  "reading": "ʈɪpːɳɪjã",
+  "options": [
+   {
+    "word": "टिप्पणियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "टिप्पणियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ट्रंप/ट्रम्प",
+  "reading": "ʈɾʌmp",
+  "options": [
+   {
+    "word": "ट्रंप",
+    "gloss": ""
+   },
+   {
+    "word": "ट्रम्प",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ठंड/ठण्ड",
+  "reading": "ʈʰʌɳɖ",
+  "options": [
+   {
+    "word": "ठंड",
+    "gloss": ""
+   },
+   {
+    "word": "ठण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ठंडा/ठण्डा",
+  "reading": "ʈʰʌɳɖaː",
+  "options": [
+   {
+    "word": "ठंडा",
+    "gloss": ""
+   },
+   {
+    "word": "ठण्डा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तंत्र/तन्त्र",
+  "reading": "tʌntɾə",
+  "options": [
+   {
+    "word": "तंत्र",
+    "gloss": ""
+   },
+   {
+    "word": "तन्त्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तंबाकू/तम्बाकू",
+  "reading": "təmbaːkuː",
+  "options": [
+   {
+    "word": "तंबाकू",
+    "gloss": ""
+   },
+   {
+    "word": "तम्बाकू",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तंबू/तम्बू",
+  "reading": "tʌmbuː",
+  "options": [
+   {
+    "word": "तंबू",
+    "gloss": ""
+   },
+   {
+    "word": "तम्बू",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तत्पश्चात/तत्पश्चात्",
+  "reading": "tətpəʃcaːt",
+  "options": [
+   {
+    "word": "तत्पश्चात",
+    "gloss": ""
+   },
+   {
+    "word": "तत्पश्चात्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तनहा/तन्हा",
+  "reading": "tʌnhaː",
+  "options": [
+   {
+    "word": "तनहा",
+    "gloss": ""
+   },
+   {
+    "word": "तन्हा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तनहाई/तन्हाई",
+  "reading": "tənhaːi",
+  "options": [
+   {
+    "word": "तनहाई",
+    "gloss": ""
+   },
+   {
+    "word": "तन्हाई",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तसवीर/तस्वीर",
+  "reading": "təsʋiːɾ",
+  "options": [
+   {
+    "word": "तसवीर",
+    "gloss": ""
+   },
+   {
+    "word": "तस्वीर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "तुरंत/तुरन्त",
+  "reading": "tʊɾʌnt",
+  "options": [
+   {
+    "word": "तुरंत",
+    "gloss": ""
+   },
+   {
+    "word": "तुरन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दंड/दण्ड",
+  "reading": "dʌɳɖ",
+  "options": [
+   {
+    "word": "दंड",
+    "gloss": ""
+   },
+   {
+    "word": "दण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दंडित/दण्डित",
+  "reading": "dʌɳɖɪt",
+  "options": [
+   {
+    "word": "दंडित",
+    "gloss": ""
+   },
+   {
+    "word": "दण्डित",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दंपति/दम्पति",
+  "reading": "dʌmpətɪ",
+  "options": [
+   {
+    "word": "दंपति",
+    "gloss": ""
+   },
+   {
+    "word": "दम्पति",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दयानंद/दयानन्द",
+  "reading": "dəjaːnʌnd",
+  "options": [
+   {
+    "word": "दयानंद",
+    "gloss": ""
+   },
+   {
+    "word": "दयानन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दास्ताँ/दास्तां",
+  "reading": "daːstã",
+  "options": [
+   {
+    "word": "दास्ताँ",
+    "gloss": ""
+   },
+   {
+    "word": "दास्तां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दिखाएँगे/दिखाएंगे",
+  "reading": "dɪkʰaːẽːɡeː",
+  "options": [
+   {
+    "word": "दिखाएँगे",
+    "gloss": ""
+   },
+   {
+    "word": "दिखाएंगे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दिगंबर/दिगम्बर",
+  "reading": "dɪɡʌmbəɾ",
+  "options": [
+   {
+    "word": "दिगंबर",
+    "gloss": ""
+   },
+   {
+    "word": "दिगम्बर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दिसंबर/दिसम्बर",
+  "reading": "dɪsʌmbəɾ",
+  "options": [
+   {
+    "word": "दिसंबर",
+    "gloss": ""
+   },
+   {
+    "word": "दिसम्बर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दुनियाँ/दुनियां",
+  "reading": "dʊnɪjã",
+  "options": [
+   {
+    "word": "दुनियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "दुनियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दूँ/दूं",
+  "reading": "dũ",
+  "options": [
+   {
+    "word": "दूँ",
+    "gloss": ""
+   },
+   {
+    "word": "दूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "दूरियाँ/दूरियां",
+  "reading": "duːɾɪjã",
+  "options": [
+   {
+    "word": "दूरियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "दूरियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "धन्यवाद/धन्यवाद्",
+  "reading": "dʰənjəʋaːd",
+  "options": [
+   {
+    "word": "धन्यवाद",
+    "gloss": ""
+   },
+   {
+    "word": "धन्यवाद्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "धुएँ/धुएं",
+  "reading": "dʰʊẽː",
+  "options": [
+   {
+    "word": "धुएँ",
+    "gloss": ""
+   },
+   {
+    "word": "धुएं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नं/नन",
+  "reading": "nʌn",
+  "options": [
+   {
+    "word": "नं",
+    "gloss": ""
+   },
+   {
+    "word": "नन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नंद/नन्द",
+  "reading": "nʌnd",
+  "options": [
+   {
+    "word": "नंद",
+    "gloss": ""
+   },
+   {
+    "word": "नन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नंदा/नन्दा",
+  "reading": "nʌndaː",
+  "options": [
+   {
+    "word": "नंदा",
+    "gloss": ""
+   },
+   {
+    "word": "नन्दा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नंबर/नम्बर",
+  "reading": "nʌmbəɾ",
+  "options": [
+   {
+    "word": "नंबर",
+    "gloss": ""
+   },
+   {
+    "word": "नम्बर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नदियाँ/नदियां",
+  "reading": "nʌdɪjã",
+  "options": [
+   {
+    "word": "नदियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "नदियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नवंबर/नवम्बर",
+  "reading": "nəʋʌmbəɾ",
+  "options": [
+   {
+    "word": "नवंबर",
+    "gloss": ""
+   },
+   {
+    "word": "नवम्बर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नहिं/नहीँ/नहीं",
+  "reading": "nʌhĩ",
+  "options": [
+   {
+    "word": "नहिं",
+    "gloss": ""
+   },
+   {
+    "word": "नहीँ",
+    "gloss": ""
+   },
+   {
+    "word": "नहीं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "निंद/नींद",
+  "reading": "nĩd",
+  "options": [
+   {
+    "word": "निंद",
+    "gloss": ""
+   },
+   {
+    "word": "नींद",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "निबंध/निबन्ध",
+  "reading": "nɪbʌndʰ",
+  "options": [
+   {
+    "word": "निबंध",
+    "gloss": ""
+   },
+   {
+    "word": "निबन्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नियंत्रण/नियन्त्रण",
+  "reading": "nɪjʌntɾəɳ",
+  "options": [
+   {
+    "word": "नियंत्रण",
+    "gloss": ""
+   },
+   {
+    "word": "नियन्त्रण",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "निरंतर/निरन्तर",
+  "reading": "nɪɾʌntəɾ",
+  "options": [
+   {
+    "word": "निरंतर",
+    "gloss": ""
+   },
+   {
+    "word": "निरन्तर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "निलंबित/निलम्बित",
+  "reading": "nɪlʌmbɪt",
+  "options": [
+   {
+    "word": "निलंबित",
+    "gloss": ""
+   },
+   {
+    "word": "निलम्बित",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नीतियाँ/नीतियां",
+  "reading": "niːtɪjã",
+  "options": [
+   {
+    "word": "नीतियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "नीतियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "नुकसान/नुक्सान",
+  "reading": "nʊksaːn",
+  "options": [
+   {
+    "word": "नुकसान",
+    "gloss": ""
+   },
+   {
+    "word": "नुक्सान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पं/पन",
+  "reading": "pʌn",
+  "options": [
+   {
+    "word": "पं",
+    "gloss": ""
+   },
+   {
+    "word": "पन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पंक्तियाँ/पंक्तियां",
+  "reading": "pʌŋktɪjã",
+  "options": [
+   {
+    "word": "पंक्तियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "पंक्तियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पंडित/पण्डित",
+  "reading": "pʌɳɖɪt",
+  "options": [
+   {
+    "word": "पंडित",
+    "gloss": ""
+   },
+   {
+    "word": "पण्डित",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पंत/पन्त",
+  "reading": "pʌnt",
+  "options": [
+   {
+    "word": "पंत",
+    "gloss": ""
+   },
+   {
+    "word": "पन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पंद्रह/पन्द्रह",
+  "reading": "pʌndɾəh",
+  "options": [
+   {
+    "word": "पंद्रह",
+    "gloss": ""
+   },
+   {
+    "word": "पन्द्रह",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पंप/पम्प",
+  "reading": "pʌmp",
+  "options": [
+   {
+    "word": "पंप",
+    "gloss": ""
+   },
+   {
+    "word": "पम्प",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पत्तियाँ/पत्तियां",
+  "reading": "pʌtːɪjã",
+  "options": [
+   {
+    "word": "पत्तियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "पत्तियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पत्नियाँ/पत्नियां",
+  "reading": "pʌtnɪjã",
+  "options": [
+   {
+    "word": "पत्नियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "पत्नियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पर/पर्",
+  "reading": "pʌɾ",
+  "options": [
+   {
+    "word": "पर",
+    "gloss": ""
+   },
+   {
+    "word": "पर्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परंतु/परन्तु",
+  "reading": "pəɾʌntʊ",
+  "options": [
+   {
+    "word": "परंतु",
+    "gloss": ""
+   },
+   {
+    "word": "परन्तु",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परंपरा/परम्परा",
+  "reading": "pəɾʌmpəɾaː",
+  "options": [
+   {
+    "word": "परंपरा",
+    "gloss": ""
+   },
+   {
+    "word": "परम्परा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परंपराओं/परम्पराओं",
+  "reading": "pəɾəmpəɾaːw",
+  "options": [
+   {
+    "word": "परंपराओं",
+    "gloss": ""
+   },
+   {
+    "word": "परम्पराओं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परंपरागत/परम्परागत",
+  "reading": "pəɾəmpəɾaːɡət",
+  "options": [
+   {
+    "word": "परंपरागत",
+    "gloss": ""
+   },
+   {
+    "word": "परम्परागत",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परदा/पर्दा",
+  "reading": "pʌɾdaː",
+  "options": [
+   {
+    "word": "परदा",
+    "gloss": ""
+   },
+   {
+    "word": "पर्दा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परदे/पर्दे",
+  "reading": "pʌɾdeː",
+  "options": [
+   {
+    "word": "परदे",
+    "gloss": ""
+   },
+   {
+    "word": "पर्दे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परिषद/परिषद्",
+  "reading": "pʌɾɪʂəd",
+  "options": [
+   {
+    "word": "परिषद",
+    "gloss": ""
+   },
+   {
+    "word": "परिषद्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परिस्थितियाँ/परिस्थितियां",
+  "reading": "pəɾɪstʰɪtɪjã",
+  "options": [
+   {
+    "word": "परिस्थितियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "परिस्थितियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "परेशानियाँ/परेशानियां",
+  "reading": "pəɾeːʃaːnɪjã",
+  "options": [
+   {
+    "word": "परेशानियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "परेशानियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पश्चात/पश्चात्",
+  "reading": "pəʃcaːt",
+  "options": [
+   {
+    "word": "पश्चात",
+    "gloss": ""
+   },
+   {
+    "word": "पश्चात्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पसंद/पसन्द",
+  "reading": "pəsʌnd",
+  "options": [
+   {
+    "word": "पसंद",
+    "gloss": ""
+   },
+   {
+    "word": "पसन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पाएँगे/पाएंगे",
+  "reading": "paːẽːɡeː",
+  "options": [
+   {
+    "word": "पाएँगे",
+    "gloss": ""
+   },
+   {
+    "word": "पाएंगे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पाबंदी/पाबन्दी",
+  "reading": "paːbʌndi",
+  "options": [
+   {
+    "word": "पाबंदी",
+    "gloss": ""
+   },
+   {
+    "word": "पाबन्दी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पारंपरिक/पारम्परिक",
+  "reading": "paːɾʌmpəɾɪk",
+  "options": [
+   {
+    "word": "पारंपरिक",
+    "gloss": ""
+   },
+   {
+    "word": "पारम्परिक",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पार्टियाँ/पार्टियां",
+  "reading": "paːɾʈɪjã",
+  "options": [
+   {
+    "word": "पार्टियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "पार्टियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पिछले/पिछ्ले",
+  "reading": "pɪcʰleː",
+  "options": [
+   {
+    "word": "पिछले",
+    "gloss": ""
+   },
+   {
+    "word": "पिछ्ले",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पुंछ/पूंछ",
+  "reading": "pũcʰ",
+  "options": [
+   {
+    "word": "पुंछ",
+    "gloss": ""
+   },
+   {
+    "word": "पूंछ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "पैगंबर/पैगम्बर",
+  "reading": "pɛːɡʌmbəɾ",
+  "options": [
+   {
+    "word": "पैगंबर",
+    "gloss": ""
+   },
+   {
+    "word": "पैगम्बर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रखंड/प्रखण्ड",
+  "reading": "pɾəkʰʌɳɖ",
+  "options": [
+   {
+    "word": "प्रखंड",
+    "gloss": ""
+   },
+   {
+    "word": "प्रखण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रचंड/प्रचण्ड",
+  "reading": "pɾəcʌɳɖ",
+  "options": [
+   {
+    "word": "प्रचंड",
+    "gloss": ""
+   },
+   {
+    "word": "प्रचण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रजातियाँ/प्रजातियां",
+  "reading": "pɾəɟaːtɪjã",
+  "options": [
+   {
+    "word": "प्रजातियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "प्रजातियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रतिबंध/प्रतिबन्ध",
+  "reading": "pɾətɪbʌndʰ",
+  "options": [
+   {
+    "word": "प्रतिबंध",
+    "gloss": ""
+   },
+   {
+    "word": "प्रतिबन्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रधानमंत्री/प्रधानमन्त्री",
+  "reading": "pɾədʰaːnəmʌntɾi",
+  "options": [
+   {
+    "word": "प्रधानमंत्री",
+    "gloss": ""
+   },
+   {
+    "word": "प्रधानमन्त्री",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रबंध/प्रबन्ध",
+  "reading": "pɾəbʌndʰ",
+  "options": [
+   {
+    "word": "प्रबंध",
+    "gloss": ""
+   },
+   {
+    "word": "प्रबन्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रबंधक/प्रबन्धक",
+  "reading": "pɾəbʌndʰək",
+  "options": [
+   {
+    "word": "प्रबंधक",
+    "gloss": ""
+   },
+   {
+    "word": "प्रबन्धक",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रबंधन/प्रबन्धन",
+  "reading": "pɾəbʌndʰən",
+  "options": [
+   {
+    "word": "प्रबंधन",
+    "gloss": ""
+   },
+   {
+    "word": "प्रबन्धन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रारंभ/प्रारम्भ",
+  "reading": "pɾaːɾʌmbʰ",
+  "options": [
+   {
+    "word": "प्रारंभ",
+    "gloss": ""
+   },
+   {
+    "word": "प्रारम्भ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रारंभिक/प्रारम्भिक",
+  "reading": "pɾaːɾʌmbʰɪk",
+  "options": [
+   {
+    "word": "प्रारंभिक",
+    "gloss": ""
+   },
+   {
+    "word": "प्रारम्भिक",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "प्रेमचंद/प्रेमचन्द",
+  "reading": "pɾeːməcʌnd",
+  "options": [
+   {
+    "word": "प्रेमचंद",
+    "gloss": ""
+   },
+   {
+    "word": "प्रेमचन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "फँस/फंस",
+  "reading": "pʰʌns",
+  "options": [
+   {
+    "word": "फँस",
+    "gloss": ""
+   },
+   {
+    "word": "फंस",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "फँसा/फंसा",
+  "reading": "pʰʌnsaː",
+  "options": [
+   {
+    "word": "फँसा",
+    "gloss": ""
+   },
+   {
+    "word": "फंसा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "फँसी/फंसी",
+  "reading": "pʰʌnsi",
+  "options": [
+   {
+    "word": "फँसी",
+    "gloss": ""
+   },
+   {
+    "word": "फंसी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "फंड/फण्ड",
+  "reading": "pʰʌɳɖ",
+  "options": [
+   {
+    "word": "फंड",
+    "gloss": ""
+   },
+   {
+    "word": "फण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "फाउंडेशन/फाउण्डेशन",
+  "reading": "pʰaːʊɳɖeːʃən",
+  "options": [
+   {
+    "word": "फाउंडेशन",
+    "gloss": ""
+   },
+   {
+    "word": "फाउण्डेशन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंद/बन्द",
+  "reading": "bʌnd",
+  "options": [
+   {
+    "word": "बंद",
+    "gloss": ""
+   },
+   {
+    "word": "बन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंदर/बन्दर",
+  "reading": "bʌndəɾ",
+  "options": [
+   {
+    "word": "बंदर",
+    "gloss": ""
+   },
+   {
+    "word": "बन्दर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंदा/बन्दा",
+  "reading": "bʌndaː",
+  "options": [
+   {
+    "word": "बंदा",
+    "gloss": ""
+   },
+   {
+    "word": "बन्दा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंदी/बन्दी",
+  "reading": "bʌndi",
+  "options": [
+   {
+    "word": "बंदी",
+    "gloss": ""
+   },
+   {
+    "word": "बन्दी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंदूक/बन्दूक",
+  "reading": "bənduːk",
+  "options": [
+   {
+    "word": "बंदूक",
+    "gloss": ""
+   },
+   {
+    "word": "बन्दूक",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंदे/बन्दे",
+  "reading": "bʌndeː",
+  "options": [
+   {
+    "word": "बंदे",
+    "gloss": ""
+   },
+   {
+    "word": "बन्दे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंध/बन्ध",
+  "reading": "bʌndʰ",
+  "options": [
+   {
+    "word": "बंध",
+    "gloss": ""
+   },
+   {
+    "word": "बन्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंधन/बन्धन",
+  "reading": "bʌndʰən",
+  "options": [
+   {
+    "word": "बंधन",
+    "gloss": ""
+   },
+   {
+    "word": "बन्धन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंधु/बन्धु",
+  "reading": "bʌndʰʊ",
+  "options": [
+   {
+    "word": "बंधु",
+    "gloss": ""
+   },
+   {
+    "word": "बन्धु",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंधुओं/बन्धुओं",
+  "reading": "bʌndʰʊõ",
+  "options": [
+   {
+    "word": "बंधुओं",
+    "gloss": ""
+   },
+   {
+    "word": "बन्धुओं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंपर/बम्पर",
+  "reading": "bʌmpəɾ",
+  "options": [
+   {
+    "word": "बंपर",
+    "gloss": ""
+   },
+   {
+    "word": "बम्पर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बंबई/बम्बई",
+  "reading": "bʌmbəi",
+  "options": [
+   {
+    "word": "बंबई",
+    "gloss": ""
+   },
+   {
+    "word": "बम्बई",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बताऊँ/बताऊं",
+  "reading": "bətaːũ",
+  "options": [
+   {
+    "word": "बताऊँ",
+    "gloss": ""
+   },
+   {
+    "word": "बताऊं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बताएँगे/बताएंगे",
+  "reading": "bətaːẽːɡeː",
+  "options": [
+   {
+    "word": "बताएँगे",
+    "gloss": ""
+   },
+   {
+    "word": "बताएंगे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बदायूँ/बदायूं",
+  "reading": "bədaːjũ",
+  "options": [
+   {
+    "word": "बदायूँ",
+    "gloss": ""
+   },
+   {
+    "word": "बदायूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बनाएँगे/बनाएंगे",
+  "reading": "bənaːẽːɡeː",
+  "options": [
+   {
+    "word": "बनाएँगे",
+    "gloss": ""
+   },
+   {
+    "word": "बनाएंगे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बयाँ/बयां",
+  "reading": "bʌjã",
+  "options": [
+   {
+    "word": "बयाँ",
+    "gloss": ""
+   },
+   {
+    "word": "बयां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बरबाद/बर्बाद",
+  "reading": "bəɾbaːd",
+  "options": [
+   {
+    "word": "बरबाद",
+    "gloss": ""
+   },
+   {
+    "word": "बर्बाद",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बरबादी/बर्बादी",
+  "reading": "bəɾbaːdi",
+  "options": [
+   {
+    "word": "बरबादी",
+    "gloss": ""
+   },
+   {
+    "word": "बर्बादी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बसंत/बसन्त",
+  "reading": "bəsʌnt",
+  "options": [
+   {
+    "word": "बसंत",
+    "gloss": ""
+   },
+   {
+    "word": "बसन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बसती/बस्ती",
+  "reading": "bʌsti",
+  "options": [
+   {
+    "word": "बसती",
+    "gloss": ""
+   },
+   {
+    "word": "बस्ती",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बसते/बस्ते",
+  "reading": "bʌsteː",
+  "options": [
+   {
+    "word": "बसते",
+    "gloss": ""
+   },
+   {
+    "word": "बस्ते",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बाएँ/बाय",
+  "reading": "baːj",
+  "options": [
+   {
+    "word": "बाएँ",
+    "gloss": ""
+   },
+   {
+    "word": "बाय",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बारंबार/बारम्बार",
+  "reading": "baːɾmbaːɾ",
+  "options": [
+   {
+    "word": "बारंबार",
+    "gloss": ""
+   },
+   {
+    "word": "बारम्बार",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बिलकुल/बिल्कुल",
+  "reading": "bɪlkʊl",
+  "options": [
+   {
+    "word": "बिलकुल",
+    "gloss": ""
+   },
+   {
+    "word": "बिल्कुल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बीमारियाँ/बीमारियां",
+  "reading": "bimaːɾɪjã",
+  "options": [
+   {
+    "word": "बीमारियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "बीमारियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बुलंद/बुलन्द",
+  "reading": "bʊlʌnd",
+  "options": [
+   {
+    "word": "बुलंद",
+    "gloss": ""
+   },
+   {
+    "word": "बुलन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बुलंदशहर/बुलन्दशहर",
+  "reading": "bʊlʌndəʃəhəɾ",
+  "options": [
+   {
+    "word": "बुलंदशहर",
+    "gloss": ""
+   },
+   {
+    "word": "बुलन्दशहर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बृज/ब्रिज",
+  "reading": "bɾɪɟ",
+  "options": [
+   {
+    "word": "बृज",
+    "gloss": ""
+   },
+   {
+    "word": "ब्रिज",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बेटियाँ/बेटियां",
+  "reading": "beːʈɪjã",
+  "options": [
+   {
+    "word": "बेटियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "बेटियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "बैटरी/बैट्री",
+  "reading": "bɛːʈɾi",
+  "options": [
+   {
+    "word": "बैटरी",
+    "gloss": ""
+   },
+   {
+    "word": "बैट्री",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "भंडार/भण्डार",
+  "reading": "bʰəɳɖaːɾ",
+  "options": [
+   {
+    "word": "भंडार",
+    "gloss": ""
+   },
+   {
+    "word": "भण्डार",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "भंडारी/भण्डारी",
+  "reading": "bʰəɳɖaːɾi",
+  "options": [
+   {
+    "word": "भंडारी",
+    "gloss": ""
+   },
+   {
+    "word": "भण्डारी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "भगवन/भगवन्",
+  "reading": "bʰʌɡəʋən",
+  "options": [
+   {
+    "word": "भगवन",
+    "gloss": ""
+   },
+   {
+    "word": "भगवन्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "भगवान/भगवान्",
+  "reading": "bʰəɡʋaːn",
+  "options": [
+   {
+    "word": "भगवान",
+    "gloss": ""
+   },
+   {
+    "word": "भगवान्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "भरती/भर्ती",
+  "reading": "bʰʌɾti",
+  "options": [
+   {
+    "word": "भरती",
+    "gloss": ""
+   },
+   {
+    "word": "भर्ती",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "भाषाओँ/भाषाओं",
+  "reading": "bʰaːʂaːw",
+  "options": [
+   {
+    "word": "भाषाओँ",
+    "gloss": ""
+   },
+   {
+    "word": "भाषाओं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "भूकंप/भूकम्प",
+  "reading": "bʰuːkʌmp",
+  "options": [
+   {
+    "word": "भूकंप",
+    "gloss": ""
+   },
+   {
+    "word": "भूकम्प",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मं/मन",
+  "reading": "mʌn",
+  "options": [
+   {
+    "word": "मं",
+    "gloss": ""
+   },
+   {
+    "word": "मन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंडल/मण्डल",
+  "reading": "mʌɳɖəl",
+  "options": [
+   {
+    "word": "मंडल",
+    "gloss": ""
+   },
+   {
+    "word": "मण्डल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंडली/मण्डली",
+  "reading": "mʌɳɖəli",
+  "options": [
+   {
+    "word": "मंडली",
+    "gloss": ""
+   },
+   {
+    "word": "मण्डली",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंडी/मण्डी",
+  "reading": "mʌɳɖi",
+  "options": [
+   {
+    "word": "मंडी",
+    "gloss": ""
+   },
+   {
+    "word": "मण्डी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंत्र/मन्त्र",
+  "reading": "mʌntɾə",
+  "options": [
+   {
+    "word": "मंत्र",
+    "gloss": ""
+   },
+   {
+    "word": "मन्त्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंत्री/मन्त्री",
+  "reading": "mʌntɾi",
+  "options": [
+   {
+    "word": "मंत्री",
+    "gloss": ""
+   },
+   {
+    "word": "मन्त्री",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंत्रों/मन्त्रों",
+  "reading": "mʌntɾõ",
+  "options": [
+   {
+    "word": "मंत्रों",
+    "gloss": ""
+   },
+   {
+    "word": "मन्त्रों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंद/मन्द",
+  "reading": "mʌnd",
+  "options": [
+   {
+    "word": "मंद",
+    "gloss": ""
+   },
+   {
+    "word": "मन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंदिर/मन्दिर",
+  "reading": "mʌndɪɾ",
+  "options": [
+   {
+    "word": "मंदिर",
+    "gloss": ""
+   },
+   {
+    "word": "मन्दिर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंदिरों/मन्दिरों",
+  "reading": "mʌndɪɾõ",
+  "options": [
+   {
+    "word": "मंदिरों",
+    "gloss": ""
+   },
+   {
+    "word": "मन्दिरों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मंे/मने",
+  "reading": "mʌneː",
+  "options": [
+   {
+    "word": "मंे",
+    "gloss": ""
+   },
+   {
+    "word": "मने",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मछलियाँ/मछलियां",
+  "reading": "mʌcʰlɪjã",
+  "options": [
+   {
+    "word": "मछलियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "मछलियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "महान/महान्",
+  "reading": "məhaːn",
+  "options": [
+   {
+    "word": "महान",
+    "gloss": ""
+   },
+   {
+    "word": "महान्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "माँ/मां",
+  "reading": "mã",
+  "options": [
+   {
+    "word": "माँ",
+    "gloss": ""
+   },
+   {
+    "word": "मां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मातरम/मातरम्",
+  "reading": "maːtəɾəm",
+  "options": [
+   {
+    "word": "मातरम",
+    "gloss": ""
+   },
+   {
+    "word": "मातरम्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मिटटी/मिट्टी",
+  "reading": "mɪʈʈi",
+  "options": [
+   {
+    "word": "मिटटी",
+    "gloss": ""
+   },
+   {
+    "word": "मिट्टी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मियाँ/मियां",
+  "reading": "mɪjã",
+  "options": [
+   {
+    "word": "मियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "मियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मुख्यमंत्री/मुख्यमन्त्री",
+  "reading": "mʊkʰjəmʌntɾi",
+  "options": [
+   {
+    "word": "मुख्यमंत्री",
+    "gloss": ""
+   },
+   {
+    "word": "मुख्यमन्त्री",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मुट्ठी/मुठ्ठी",
+  "reading": "mʊʈʰʈʰi",
+  "options": [
+   {
+    "word": "मुट्ठी",
+    "gloss": ""
+   },
+   {
+    "word": "मुठ्ठी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मुसलिम/मुस्लिम",
+  "reading": "mʊslɪm",
+  "options": [
+   {
+    "word": "मुसलिम",
+    "gloss": ""
+   },
+   {
+    "word": "मुस्लिम",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मूर्तियाँ/मूर्तियां",
+  "reading": "muːɾtɪjã",
+  "options": [
+   {
+    "word": "मूर्तियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "मूर्तियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मेँ/में",
+  "reading": "mẽː",
+  "options": [
+   {
+    "word": "मेँ",
+    "gloss": ""
+   },
+   {
+    "word": "में",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "मैँ/मैं",
+  "reading": "mɛ̃",
+  "options": [
+   {
+    "word": "मैँ",
+    "gloss": ""
+   },
+   {
+    "word": "मैं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "यंत्र/यन्त्र",
+  "reading": "jʌntɾə",
+  "options": [
+   {
+    "word": "यंत्र",
+    "gloss": ""
+   },
+   {
+    "word": "यन्त्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "यहाँ/यहां",
+  "reading": "jʌhã",
+  "options": [
+   {
+    "word": "यहाँ",
+    "gloss": ""
+   },
+   {
+    "word": "यहां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "यूँ/यूं",
+  "reading": "jũ",
+  "options": [
+   {
+    "word": "यूँ",
+    "gloss": ""
+   },
+   {
+    "word": "यूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "रं/रन",
+  "reading": "ɾʌn",
+  "options": [
+   {
+    "word": "रं",
+    "gloss": ""
+   },
+   {
+    "word": "रन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "रविंद्र/रवींद्र",
+  "reading": "ɾəʋĩdɾə",
+  "options": [
+   {
+    "word": "रविंद्र",
+    "gloss": ""
+   },
+   {
+    "word": "रवींद्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "रहूँ/रहूं",
+  "reading": "ɾʌhũ",
+  "options": [
+   {
+    "word": "रहूँ",
+    "gloss": ""
+   },
+   {
+    "word": "रहूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "रामचंद्र/रामचन्द्र",
+  "reading": "ɾaːməcʌndɾə",
+  "options": [
+   {
+    "word": "रामचंद्र",
+    "gloss": ""
+   },
+   {
+    "word": "रामचन्द्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "रेलवे/रेल्वे",
+  "reading": "ɾeːlʋeː",
+  "options": [
+   {
+    "word": "रेलवे",
+    "gloss": ""
+   },
+   {
+    "word": "रेल्वे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "रोटियाँ/रोटियां",
+  "reading": "ɾoːʈɪjã",
+  "options": [
+   {
+    "word": "रोटियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "रोटियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लंड/लण्ड",
+  "reading": "lʌɳɖ",
+  "options": [
+   {
+    "word": "लंड",
+    "gloss": ""
+   },
+   {
+    "word": "लण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लंदन/लन्दन",
+  "reading": "lʌndən",
+  "options": [
+   {
+    "word": "लंदन",
+    "gloss": ""
+   },
+   {
+    "word": "लन्दन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लंबा/लम्बा",
+  "reading": "lʌmbaː",
+  "options": [
+   {
+    "word": "लंबा",
+    "gloss": ""
+   },
+   {
+    "word": "लम्बा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लंबाई/लम्बाई",
+  "reading": "ləmbaːi",
+  "options": [
+   {
+    "word": "लंबाई",
+    "gloss": ""
+   },
+   {
+    "word": "लम्बाई",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लंबी/लम्बी",
+  "reading": "lʌmbi",
+  "options": [
+   {
+    "word": "लंबी",
+    "gloss": ""
+   },
+   {
+    "word": "लम्बी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लंबे/लम्बे",
+  "reading": "lʌmbeː",
+  "options": [
+   {
+    "word": "लंबे",
+    "gloss": ""
+   },
+   {
+    "word": "लम्बे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लगाएँगे/लगाएंगे",
+  "reading": "ləɡaːẽːɡeː",
+  "options": [
+   {
+    "word": "लगाएँगे",
+    "gloss": ""
+   },
+   {
+    "word": "लगाएंगे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लड़कियाँ/लड़कियां",
+  "reading": "lʌr.kɪjã",
+  "options": [
+   {
+    "word": "लड़कियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "लड़कियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लुंगी/लूंगी",
+  "reading": "lũɡi",
+  "options": [
+   {
+    "word": "लुंगी",
+    "gloss": ""
+   },
+   {
+    "word": "लूंगी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लूँ/लूं",
+  "reading": "lũ",
+  "options": [
+   {
+    "word": "लूँ",
+    "gloss": ""
+   },
+   {
+    "word": "लूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लॉगइन/लॉगिन",
+  "reading": "lɔɡɪn",
+  "options": [
+   {
+    "word": "लॉगइन",
+    "gloss": ""
+   },
+   {
+    "word": "लॉगिन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लोकतंत्र/लोकतन्त्र",
+  "reading": "loːkətʌntɾə",
+  "options": [
+   {
+    "word": "लोकतंत्र",
+    "gloss": ""
+   },
+   {
+    "word": "लोकतन्त्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "लोगोँ/लोगों",
+  "reading": "loːɡõ",
+  "options": [
+   {
+    "word": "लोगोँ",
+    "gloss": ""
+   },
+   {
+    "word": "लोगों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वंदना/वन्दना",
+  "reading": "ʋʌndənaː",
+  "options": [
+   {
+    "word": "वंदना",
+    "gloss": ""
+   },
+   {
+    "word": "वन्दना",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वंदे/वन्दे",
+  "reading": "ʋʌndeː",
+  "options": [
+   {
+    "word": "वंदे",
+    "gloss": ""
+   },
+   {
+    "word": "वन्दे",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वरन/वरन्",
+  "reading": "ʋʌɾən",
+  "options": [
+   {
+    "word": "वरन",
+    "gloss": ""
+   },
+   {
+    "word": "वरन्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वसंत/वसन्त",
+  "reading": "ʋəsʌnt",
+  "options": [
+   {
+    "word": "वसंत",
+    "gloss": ""
+   },
+   {
+    "word": "वसन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वस्तुएँ/वस्तुएं",
+  "reading": "ʋʌstʊẽː",
+  "options": [
+   {
+    "word": "वस्तुएँ",
+    "gloss": ""
+   },
+   {
+    "word": "वस्तुएं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वहाँ/वहां",
+  "reading": "ʋʌhã",
+  "options": [
+   {
+    "word": "वहाँ",
+    "gloss": ""
+   },
+   {
+    "word": "वहां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वहीँ/वहीं",
+  "reading": "ʋʌhĩ",
+  "options": [
+   {
+    "word": "वहीँ",
+    "gloss": ""
+   },
+   {
+    "word": "वहीं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वाँ/वां",
+  "reading": "ʋã",
+  "options": [
+   {
+    "word": "वाँ",
+    "gloss": ""
+   },
+   {
+    "word": "वां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वाक/वाक्",
+  "reading": "ʋaːk",
+  "options": [
+   {
+    "word": "वाक",
+    "gloss": ""
+   },
+   {
+    "word": "वाक्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "विडंबना/विडम्बना",
+  "reading": "ʋɪɖʌmbənaː",
+  "options": [
+   {
+    "word": "विडंबना",
+    "gloss": ""
+   },
+   {
+    "word": "विडम्बना",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "विद्युत/विद्युत्",
+  "reading": "ʋɪdjʊt",
+  "options": [
+   {
+    "word": "विद्युत",
+    "gloss": ""
+   },
+   {
+    "word": "विद्युत्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "विद्वान/विद्वान्",
+  "reading": "ʋɪdʋaːn",
+  "options": [
+   {
+    "word": "विद्वान",
+    "gloss": ""
+   },
+   {
+    "word": "विद्वान्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "विलंब/विलम्ब",
+  "reading": "ʋɪlʌmb",
+  "options": [
+   {
+    "word": "विलंब",
+    "gloss": ""
+   },
+   {
+    "word": "विलम्ब",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "विवेकानंद/विवेकानन्द",
+  "reading": "ʋɪʋeːkaːnʌnd",
+  "options": [
+   {
+    "word": "विवेकानंद",
+    "gloss": ""
+   },
+   {
+    "word": "विवेकानन्द",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "विशवास/विश्वास",
+  "reading": "ʋɪʃʋaːs",
+  "options": [
+   {
+    "word": "विशवास",
+    "gloss": ""
+   },
+   {
+    "word": "विश्वास",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "वृंदावन/वृन्दावन",
+  "reading": "ʋɾɪndaːʋən",
+  "options": [
+   {
+    "word": "वृंदावन",
+    "gloss": ""
+   },
+   {
+    "word": "वृन्दावन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "शंभू/शम्भू",
+  "reading": "ʃʌmbʰuː",
+  "options": [
+   {
+    "word": "शंभू",
+    "gloss": ""
+   },
+   {
+    "word": "शम्भू",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "शक्तियाँ/शक्तियां",
+  "reading": "ʃʌktɪjã",
+  "options": [
+   {
+    "word": "शक्तियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "शक्तियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "शत/शत्",
+  "reading": "ʃʌt",
+  "options": [
+   {
+    "word": "शत",
+    "gloss": ""
+   },
+   {
+    "word": "शत्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "शाहजहाँ/शाहजहां",
+  "reading": "ʃaːhəɟhã",
+  "options": [
+   {
+    "word": "शाहजहाँ",
+    "gloss": ""
+   },
+   {
+    "word": "शाहजहां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "शिक्षाविद/शिक्षाविद्",
+  "reading": "ʃɪkʃaːʋɪd",
+  "options": [
+   {
+    "word": "शिक्षाविद",
+    "gloss": ""
+   },
+   {
+    "word": "शिक्षाविद्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "शुभारंभ/शुभारम्भ",
+  "reading": "ʃʊbʰaːɾʌmbʰ",
+  "options": [
+   {
+    "word": "शुभारंभ",
+    "gloss": ""
+   },
+   {
+    "word": "शुभारम्भ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "श्रीमद/श्रीमद्",
+  "reading": "ʃɾiːməd",
+  "options": [
+   {
+    "word": "श्रीमद",
+    "gloss": ""
+   },
+   {
+    "word": "श्रीमद्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "षड्यंत्र/षड्यन्त्र",
+  "reading": "ʂəɖjʌntɾə",
+  "options": [
+   {
+    "word": "षड्यंत्र",
+    "gloss": ""
+   },
+   {
+    "word": "षड्यन्त्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सं/सन/सन्",
+  "reading": "sʌn",
+  "options": [
+   {
+    "word": "सं",
+    "gloss": ""
+   },
+   {
+    "word": "सन",
+    "gloss": ""
+   },
+   {
+    "word": "सन्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संत/सन्त",
+  "reading": "sʌnt",
+  "options": [
+   {
+    "word": "संत",
+    "gloss": ""
+   },
+   {
+    "word": "सन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संतान/सन्तान",
+  "reading": "səntaːn",
+  "options": [
+   {
+    "word": "संतान",
+    "gloss": ""
+   },
+   {
+    "word": "सन्तान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संतुलन/सन्तुलन",
+  "reading": "sʌntʊlən",
+  "options": [
+   {
+    "word": "संतुलन",
+    "gloss": ""
+   },
+   {
+    "word": "सन्तुलन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संतुष्ट/सन्तुष्ट",
+  "reading": "səntʊʂʈ",
+  "options": [
+   {
+    "word": "संतुष्ट",
+    "gloss": ""
+   },
+   {
+    "word": "सन्तुष्ट",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संतों/सन्तों",
+  "reading": "sʌntõ",
+  "options": [
+   {
+    "word": "संतों",
+    "gloss": ""
+   },
+   {
+    "word": "सन्तों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संतोष/सन्तोष",
+  "reading": "səntoːʂ",
+  "options": [
+   {
+    "word": "संतोष",
+    "gloss": ""
+   },
+   {
+    "word": "सन्तोष",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संदर्भ/सन्दर्भ",
+  "reading": "səndʌɾbʰ",
+  "options": [
+   {
+    "word": "संदर्भ",
+    "gloss": ""
+   },
+   {
+    "word": "सन्दर्भ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संदेश/सन्देश",
+  "reading": "səndeːʃ",
+  "options": [
+   {
+    "word": "संदेश",
+    "gloss": ""
+   },
+   {
+    "word": "सन्देश",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संदेह/सन्देह",
+  "reading": "səndeːh",
+  "options": [
+   {
+    "word": "संदेह",
+    "gloss": ""
+   },
+   {
+    "word": "सन्देह",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संधि/सन्धि",
+  "reading": "sʌndʰɪ",
+  "options": [
+   {
+    "word": "संधि",
+    "gloss": ""
+   },
+   {
+    "word": "सन्धि",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपति/सम्पति",
+  "reading": "sʌmpətɪ",
+  "options": [
+   {
+    "word": "संपति",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पति",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपत्ति/सम्पत्ति",
+  "reading": "səmpʌtːɪ",
+  "options": [
+   {
+    "word": "संपत्ति",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पत्ति",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपदा/सम्पदा",
+  "reading": "sʌmpədaː",
+  "options": [
+   {
+    "word": "संपदा",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पदा",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपन्न/सम्पन्न",
+  "reading": "səmpʌnnə",
+  "options": [
+   {
+    "word": "संपन्न",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पन्न",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपन्नता/सम्पन्नता",
+  "reading": "səmpʌnnətaː",
+  "options": [
+   {
+    "word": "संपन्नता",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पन्नता",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपर्क/सम्पर्क",
+  "reading": "səmpʌɾk",
+  "options": [
+   {
+    "word": "संपर्क",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पर्क",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपादक/सम्पादक",
+  "reading": "səmpaːdək",
+  "options": [
+   {
+    "word": "संपादक",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पादक",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपादकीय/सम्पादकीय",
+  "reading": "səmpaːdkiːj",
+  "options": [
+   {
+    "word": "संपादकीय",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पादकीय",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपादन/सम्पादन",
+  "reading": "səmpaːdən",
+  "options": [
+   {
+    "word": "संपादन",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पादन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपादित/सम्पादित",
+  "reading": "səmpaːdɪt",
+  "options": [
+   {
+    "word": "संपादित",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पादित",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संपूर्ण/सम्पूर्ण",
+  "reading": "səmpuːrɳə",
+  "options": [
+   {
+    "word": "संपूर्ण",
+    "gloss": ""
+   },
+   {
+    "word": "सम्पूर्ण",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संप्रदाय/सम्प्रदाय",
+  "reading": "səmpɾədaːj",
+  "options": [
+   {
+    "word": "संप्रदाय",
+    "gloss": ""
+   },
+   {
+    "word": "सम्प्रदाय",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संप्रदायों/सम्प्रदायों",
+  "reading": "səmpɾədaːjõ",
+  "options": [
+   {
+    "word": "संप्रदायों",
+    "gloss": ""
+   },
+   {
+    "word": "सम्प्रदायों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संबंध/सम्बंध/सम्बन्ध",
+  "reading": "səmbʌndʰ",
+  "options": [
+   {
+    "word": "संबंध",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बंध",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बन्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संबंधित/संबन्धित/सम्बंधित/सम्बन्धित",
+  "reading": "səmbʌndʰɪt",
+  "options": [
+   {
+    "word": "संबंधित",
+    "gloss": ""
+   },
+   {
+    "word": "संबन्धित",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बंधित",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बन्धित",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संबंधी/सम्बंधी/सम्बन्धी",
+  "reading": "səmbʌndʰi",
+  "options": [
+   {
+    "word": "संबंधी",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बंधी",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बन्धी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संबंधों/सम्बन्धों",
+  "reading": "səmbʌndʰõ",
+  "options": [
+   {
+    "word": "संबंधों",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बन्धों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संबद्ध/सम्बद्ध",
+  "reading": "səmbʌdʰː",
+  "options": [
+   {
+    "word": "संबद्ध",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बद्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संबोधन/सम्बोधन",
+  "reading": "səmboːdʰən",
+  "options": [
+   {
+    "word": "संबोधन",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बोधन",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संबोधित/सम्बोधित",
+  "reading": "səmboːdʰɪt",
+  "options": [
+   {
+    "word": "संबोधित",
+    "gloss": ""
+   },
+   {
+    "word": "सम्बोधित",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभल/सम्भल",
+  "reading": "sʌmbʰəl",
+  "options": [
+   {
+    "word": "संभल",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभव/सम्भव",
+  "reading": "sʌmbʰəʋ",
+  "options": [
+   {
+    "word": "संभव",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भव",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभवतः/सम्भवतः",
+  "reading": "sʌmbʰəʋətəh",
+  "options": [
+   {
+    "word": "संभवतः",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भवतः",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभाल/सम्भाल",
+  "reading": "səmbʰaːl",
+  "options": [
+   {
+    "word": "संभाल",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भाल",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभालो/सम्भालो",
+  "reading": "səmbʰaːloː",
+  "options": [
+   {
+    "word": "संभालो",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भालो",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभावना/सम्भावना",
+  "reading": "səmbʰaːʋnaː",
+  "options": [
+   {
+    "word": "संभावना",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भावना",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभावित/सम्भावित",
+  "reading": "səmbʰaːʋɪt",
+  "options": [
+   {
+    "word": "संभावित",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भावित",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संभोग/सम्भोग",
+  "reading": "səmbʰoːɡ",
+  "options": [
+   {
+    "word": "संभोग",
+    "gloss": ""
+   },
+   {
+    "word": "सम्भोग",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "संवत/संवत्",
+  "reading": "sʌnʋət",
+  "options": [
+   {
+    "word": "संवत",
+    "gloss": ""
+   },
+   {
+    "word": "संवत्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सकूँ/सकूं",
+  "reading": "sʌkũ",
+  "options": [
+   {
+    "word": "सकूँ",
+    "gloss": ""
+   },
+   {
+    "word": "सकूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सत/सत्",
+  "reading": "sʌt",
+  "options": [
+   {
+    "word": "सत",
+    "gloss": ""
+   },
+   {
+    "word": "सत्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सतत/सतत्",
+  "reading": "sʌtət",
+  "options": [
+   {
+    "word": "सतत",
+    "gloss": ""
+   },
+   {
+    "word": "सतत्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "समंदर/समन्दर",
+  "reading": "səmʌndəɾ",
+  "options": [
+   {
+    "word": "समंदर",
+    "gloss": ""
+   },
+   {
+    "word": "समन्दर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सरकार/सर्कार",
+  "reading": "səɾkaːɾ",
+  "options": [
+   {
+    "word": "सरकार",
+    "gloss": ""
+   },
+   {
+    "word": "सर्कार",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "साक्षात/साक्षात्",
+  "reading": "saːkʃaːt",
+  "options": [
+   {
+    "word": "साक्षात",
+    "gloss": ""
+   },
+   {
+    "word": "साक्षात्",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सिंग/सींग",
+  "reading": "sĩɡ",
+  "options": [
+   {
+    "word": "सिंग",
+    "gloss": ""
+   },
+   {
+    "word": "सींग",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सिकंदर/सिकन्दर",
+  "reading": "sɪkʌndəɾ",
+  "options": [
+   {
+    "word": "सिकंदर",
+    "gloss": ""
+   },
+   {
+    "word": "सिकन्दर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सितंबर/सितम्बर",
+  "reading": "sɪtʌmbəɾ",
+  "options": [
+   {
+    "word": "सितंबर",
+    "gloss": ""
+   },
+   {
+    "word": "सितम्बर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सुगंध/सुगन्ध",
+  "reading": "sʊɡʌndʰ",
+  "options": [
+   {
+    "word": "सुगंध",
+    "gloss": ""
+   },
+   {
+    "word": "सुगन्ध",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सुननी/सुन्नी",
+  "reading": "sʊnni",
+  "options": [
+   {
+    "word": "सुननी",
+    "gloss": ""
+   },
+   {
+    "word": "सुन्नी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सुलतान/सुल्तान",
+  "reading": "sʊltaːn",
+  "options": [
+   {
+    "word": "सुलतान",
+    "gloss": ""
+   },
+   {
+    "word": "सुल्तान",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सुलतानपुर/सुल्तानपुर",
+  "reading": "sʊltaːnpʊɾ",
+  "options": [
+   {
+    "word": "सुलतानपुर",
+    "gloss": ""
+   },
+   {
+    "word": "सुल्तानपुर",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "सेकंड/सेकण्ड",
+  "reading": "seːkʌɳɖ",
+  "options": [
+   {
+    "word": "सेकंड",
+    "gloss": ""
+   },
+   {
+    "word": "सेकण्ड",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "स्तंभ/स्तम्भ",
+  "reading": "stʌmbʰ",
+  "options": [
+   {
+    "word": "स्तंभ",
+    "gloss": ""
+   },
+   {
+    "word": "स्तम्भ",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "स्तंभों/स्तम्भों",
+  "reading": "stʌmbʰõ",
+  "options": [
+   {
+    "word": "स्तंभों",
+    "gloss": ""
+   },
+   {
+    "word": "स्तम्भों",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "स्त्रियाँ/स्त्रियां",
+  "reading": "stɾɪjã",
+  "options": [
+   {
+    "word": "स्त्रियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "स्त्रियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "स्वतंत्र/स्वतन्त्र",
+  "reading": "sʋətʌntɾə",
+  "options": [
+   {
+    "word": "स्वतंत्र",
+    "gloss": ""
+   },
+   {
+    "word": "स्वतन्त्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "स्वतंत्रता/स्वतन्त्रता",
+  "reading": "sʋətʌntɾətaː",
+  "options": [
+   {
+    "word": "स्वतंत्रता",
+    "gloss": ""
+   },
+   {
+    "word": "स्वतन्त्रता",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हँस/हंस",
+  "reading": "hʌns",
+  "options": [
+   {
+    "word": "हँस",
+    "gloss": ""
+   },
+   {
+    "word": "हंस",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हँसते/हंसते",
+  "reading": "hʌnsəteː",
+  "options": [
+   {
+    "word": "हँसते",
+    "gloss": ""
+   },
+   {
+    "word": "हंसते",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हँसने/हंसने",
+  "reading": "hʌnsəneː",
+  "options": [
+   {
+    "word": "हँसने",
+    "gloss": ""
+   },
+   {
+    "word": "हंसने",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हँसी/हंसी",
+  "reading": "hʌnsi",
+  "options": [
+   {
+    "word": "हँसी",
+    "gloss": ""
+   },
+   {
+    "word": "हंसी",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हड्डियाँ/हड्डियां",
+  "reading": "hʌɖɖɪjã",
+  "options": [
+   {
+    "word": "हड्डियाँ",
+    "gloss": ""
+   },
+   {
+    "word": "हड्डियां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हरिश्चंद्र/हरिश्चन्द्र",
+  "reading": "həɾɪʃcʌndɾə",
+  "options": [
+   {
+    "word": "हरिश्चंद्र",
+    "gloss": ""
+   },
+   {
+    "word": "हरिश्चन्द्र",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हलका/हल्का",
+  "reading": "hʌlkaː",
+  "options": [
+   {
+    "word": "हलका",
+    "gloss": ""
+   },
+   {
+    "word": "हल्का",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हलकी/हल्की",
+  "reading": "hʌlki",
+  "options": [
+   {
+    "word": "हलकी",
+    "gloss": ""
+   },
+   {
+    "word": "हल्की",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हलके/हल्के",
+  "reading": "hʌlkeː",
+  "options": [
+   {
+    "word": "हलके",
+    "gloss": ""
+   },
+   {
+    "word": "हल्के",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हाँ/हां",
+  "reading": "hã",
+  "options": [
+   {
+    "word": "हाँ",
+    "gloss": ""
+   },
+   {
+    "word": "हां",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हुँ/हुं/हूँ/हूं",
+  "reading": "hũ",
+  "options": [
+   {
+    "word": "हुँ",
+    "gloss": ""
+   },
+   {
+    "word": "हुं",
+    "gloss": ""
+   },
+   {
+    "word": "हूँ",
+    "gloss": ""
+   },
+   {
+    "word": "हूं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हेमंत/हेमन्त",
+  "reading": "heːmʌnt",
+  "options": [
+   {
+    "word": "हेमंत",
+    "gloss": ""
+   },
+   {
+    "word": "हेमन्त",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "हैँ/हैं",
+  "reading": "hɛ̃",
+  "options": [
+   {
+    "word": "हैँ",
+    "gloss": ""
+   },
+   {
+    "word": "हैं",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ }
+]

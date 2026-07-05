@@ -1,0 +1,212 @@
+[
+ {
+  "key": "ab/abe",
+  "reading": "abɛ",
+  "options": [
+   {
+    "word": "ab",
+    "gloss": ""
+   },
+   {
+    "word": "abe",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ağ/ağa",
+  "reading": "aː",
+  "options": [
+   {
+    "word": "ağ",
+    "gloss": ""
+   },
+   {
+    "word": "ağa",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bb/bebe",
+  "reading": "bebɛ",
+  "options": [
+   {
+    "word": "bb",
+    "gloss": ""
+   },
+   {
+    "word": "bebe",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bere/br",
+  "reading": "beɾɛ",
+  "options": [
+   {
+    "word": "bere",
+    "gloss": ""
+   },
+   {
+    "word": "br",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "boks/box",
+  "reading": "bɔks",
+  "options": [
+   {
+    "word": "boks",
+    "gloss": ""
+   },
+   {
+    "word": "box",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "dağ/dağa",
+  "reading": "daː",
+  "options": [
+   {
+    "word": "dağ",
+    "gloss": ""
+   },
+   {
+    "word": "dağa",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "deyin/değin",
+  "reading": "dejɪn",
+  "options": [
+   {
+    "word": "deyin",
+    "gloss": ""
+   },
+   {
+    "word": "değin",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ekstra/extra",
+  "reading": "ɛkstra",
+  "options": [
+   {
+    "word": "ekstra",
+    "gloss": ""
+   },
+   {
+    "word": "extra",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sağ/sağa",
+  "reading": "saː",
+  "options": [
+   {
+    "word": "sağ",
+    "gloss": ""
+   },
+   {
+    "word": "sağa",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "seks/sex",
+  "reading": "sɛks",
+  "options": [
+   {
+    "word": "seks",
+    "gloss": ""
+   },
+   {
+    "word": "sex",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "teksas/texas",
+  "reading": "tɛksas",
+  "options": [
+   {
+    "word": "teksas",
+    "gloss": ""
+   },
+   {
+    "word": "texas",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "yemeye/yemeğe",
+  "reading": "jemejɛ",
+  "options": [
+   {
+    "word": "yemeye",
+    "gloss": ""
+   },
+   {
+    "word": "yemeğe",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "yemeyi/yemeği",
+  "reading": "jemejɪ",
+  "options": [
+   {
+    "word": "yemeyi",
+    "gloss": ""
+   },
+   {
+    "word": "yemeği",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "çağ/çağa",
+  "reading": "tʃaː",
+  "options": [
+   {
+    "word": "çağ",
+    "gloss": ""
+   },
+   {
+    "word": "çağa",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ }
+]

@@ -69,3 +69,37 @@ def casual_forms(t: Transcript) -> list[Flag]:
                     line=ln.n, severity="review", evidence=c, fix=gloss,
                 ))
     return out
+
+
+# ---------------------------------------------------------------------------
+# Generic multilingual layer — data/<lang>_colloquial.json (kaikki/Wiktionary,
+# built by bench/build_colloquial_multilang.py; same shape as the JP cell).
+# Lookup-not-scan, exactly like the JP layer above.
+# ---------------------------------------------------------------------------
+import functools as _functools
+
+_DATA_DIR = os.path.dirname(_DATA)
+
+
+@_functools.lru_cache(maxsize=16)
+def _lang_cell(lang: str):
+    """{form_lower: entry} for one language's colloquial/idiom cell ({} if absent)."""
+    try:
+        entries = json.load(open(os.path.join(_DATA_DIR, f"{lang}_colloquial.json"),
+                                 encoding="utf-8"))
+        return {e["form"].lower(): e for e in entries if e.get("form")}
+    except Exception:
+        return {}
+
+
+def slang_lookup_lang(word: str, lang: str):
+    """Known colloquial/slang/idiom form in `lang`? Entry or None. ja uses the JP cell."""
+    if lang in ("ja", "jp"):
+        return slang_lookup(word)
+    return _lang_cell(lang).get(word.lower())
+
+
+def known_colloquial(word: str, lang: str) -> bool:
+    """Validity signal for the adjudicator: slang words ('chelou') are NOT in spellcheckers,
+    and without this they look like garble and can lose to a dictionary near-variant."""
+    return slang_lookup_lang(word, lang) is not None

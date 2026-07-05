@@ -1,0 +1,7568 @@
+[
+ {
+  "key": "aa/ah/ahh",
+  "reading": "ɑː",
+  "options": [
+   {
+    "word": "aa",
+    "gloss": ""
+   },
+   {
+    "word": "ah",
+    "gloss": ""
+   },
+   {
+    "word": "ahh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ab/app",
+  "reading": "ap",
+  "options": [
+   {
+    "word": "ab",
+    "gloss": ""
+   },
+   {
+    "word": "app",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "abs/apps",
+  "reading": "aps",
+  "options": [
+   {
+    "word": "abs",
+    "gloss": ""
+   },
+   {
+    "word": "apps",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ac/ag/ak",
+  "reading": "ɑːk",
+  "options": [
+   {
+    "word": "ac",
+    "gloss": ""
+   },
+   {
+    "word": "ag",
+    "gloss": ""
+   },
+   {
+    "word": "ak",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "academy/akademie",
+  "reading": "ɑkadeːmiː",
+  "options": [
+   {
+    "word": "academy",
+    "gloss": ""
+   },
+   {
+    "word": "akademie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "act/akt",
+  "reading": "akt",
+  "options": [
+   {
+    "word": "act",
+    "gloss": ""
+   },
+   {
+    "word": "akt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "action/aktion",
+  "reading": "aktsjoːn",
+  "options": [
+   {
+    "word": "action",
+    "gloss": ""
+   },
+   {
+    "word": "aktion",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "active/aktive",
+  "reading": "aktiːvə",
+  "options": [
+   {
+    "word": "active",
+    "gloss": ""
+   },
+   {
+    "word": "aktive",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ad/at",
+  "reading": "ɑːt",
+  "options": [
+   {
+    "word": "ad",
+    "gloss": ""
+   },
+   {
+    "word": "at",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ae/äh",
+  "reading": "ɛː",
+  "options": [
+   {
+    "word": "ae",
+    "gloss": ""
+   },
+   {
+    "word": "äh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "af/av",
+  "reading": "ɑːf",
+  "options": [
+   {
+    "word": "af",
+    "gloss": ""
+   },
+   {
+    "word": "av",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "africa/afrika",
+  "reading": "afriːkɑː",
+  "options": [
+   {
+    "word": "africa",
+    "gloss": ""
+   },
+   {
+    "word": "afrika",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "agb/akp",
+  "reading": "akp",
+  "options": [
+   {
+    "word": "agb",
+    "gloss": ""
+   },
+   {
+    "word": "akp",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ai/ei/ey",
+  "reading": "aɪ",
+  "options": [
+   {
+    "word": "ai",
+    "gloss": ""
+   },
+   {
+    "word": "ei",
+    "gloss": ""
+   },
+   {
+    "word": "ey",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "alan/allan",
+  "reading": "alɑːn",
+  "options": [
+   {
+    "word": "alan",
+    "gloss": ""
+   },
+   {
+    "word": "allan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "albtraum/alptraum",
+  "reading": "alptɾaʊm",
+  "options": [
+   {
+    "word": "albtraum",
+    "gloss": ""
+   },
+   {
+    "word": "alptraum",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "alfa/alpha",
+  "reading": "alfɑː",
+  "options": [
+   {
+    "word": "alfa",
+    "gloss": ""
+   },
+   {
+    "word": "alpha",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "alla/allah",
+  "reading": "alɑː",
+  "options": [
+   {
+    "word": "alla",
+    "gloss": ""
+   },
+   {
+    "word": "allah",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "amd/amt",
+  "reading": "amt",
+  "options": [
+   {
+    "word": "amd",
+    "gloss": ""
+   },
+   {
+    "word": "amt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ami/amy",
+  "reading": "ɑmiː",
+  "options": [
+   {
+    "word": "ami",
+    "gloss": ""
+   },
+   {
+    "word": "amy",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "an/ann",
+  "reading": "an",
+  "options": [
+   {
+    "word": "an",
+    "gloss": ""
+   },
+   {
+    "word": "ann",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ana/anna",
+  "reading": "anɑː",
+  "options": [
+   {
+    "word": "ana",
+    "gloss": ""
+   },
+   {
+    "word": "anna",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "anni/annie",
+  "reading": "aniː",
+  "options": [
+   {
+    "word": "anni",
+    "gloss": ""
+   },
+   {
+    "word": "annie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ansetzen/ansätzen",
+  "reading": "anzɛtsən",
+  "options": [
+   {
+    "word": "ansetzen",
+    "gloss": ""
+   },
+   {
+    "word": "ansätzen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "arc/arg",
+  "reading": "aɾk",
+  "options": [
+   {
+    "word": "arc",
+    "gloss": ""
+   },
+   {
+    "word": "arg",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ard/art",
+  "reading": "aɾt",
+  "options": [
+   {
+    "word": "ard",
+    "gloss": ""
+   },
+   {
+    "word": "art",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "arthur/artur",
+  "reading": "aɾtuːɾ",
+  "options": [
+   {
+    "word": "arthur",
+    "gloss": ""
+   },
+   {
+    "word": "artur",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "atlantic/atlantik",
+  "reading": "atlantiːk",
+  "options": [
+   {
+    "word": "atlantic",
+    "gloss": ""
+   },
+   {
+    "word": "atlantik",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "aufwendig/aufwändig",
+  "reading": "aʊfvɛndɪç",
+  "options": [
+   {
+    "word": "aufwendig",
+    "gloss": ""
+   },
+   {
+    "word": "aufwändig",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "baar/bahr/bar",
+  "reading": "bɑːɾ",
+  "options": [
+   {
+    "word": "baar",
+    "gloss": ""
+   },
+   {
+    "word": "bahr",
+    "gloss": ""
+   },
+   {
+    "word": "bar",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bad/bat",
+  "reading": "bɑːt",
+  "options": [
+   {
+    "word": "bad",
+    "gloss": ""
+   },
+   {
+    "word": "bat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bahn/ban",
+  "reading": "bɑːn",
+  "options": [
+   {
+    "word": "bahn",
+    "gloss": ""
+   },
+   {
+    "word": "ban",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bart/barth",
+  "reading": "baɾt",
+  "options": [
+   {
+    "word": "bart",
+    "gloss": ""
+   },
+   {
+    "word": "barth",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "becker/bäcker",
+  "reading": "bɛkɜ",
+  "options": [
+   {
+    "word": "becker",
+    "gloss": ""
+   },
+   {
+    "word": "bäcker",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bed/bet/beth",
+  "reading": "beːt",
+  "options": [
+   {
+    "word": "bed",
+    "gloss": ""
+   },
+   {
+    "word": "bet",
+    "gloss": ""
+   },
+   {
+    "word": "beth",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "belle/bälle",
+  "reading": "bɛlə",
+  "options": [
+   {
+    "word": "belle",
+    "gloss": ""
+   },
+   {
+    "word": "bälle",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bender/bänder",
+  "reading": "bɛndɜ",
+  "options": [
+   {
+    "word": "bender",
+    "gloss": ""
+   },
+   {
+    "word": "bänder",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "benedict/benedikt",
+  "reading": "bəneːdɪkt",
+  "options": [
+   {
+    "word": "benedict",
+    "gloss": ""
+   },
+   {
+    "word": "benedikt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "biber/bieber",
+  "reading": "biːbɜ",
+  "options": [
+   {
+    "word": "biber",
+    "gloss": ""
+   },
+   {
+    "word": "bieber",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "biografie/biographie",
+  "reading": "bɪoːɡɾafiː",
+  "options": [
+   {
+    "word": "biografie",
+    "gloss": ""
+   },
+   {
+    "word": "biographie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bis/biss",
+  "reading": "bɪs",
+  "options": [
+   {
+    "word": "bis",
+    "gloss": ""
+   },
+   {
+    "word": "biss",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bog/book",
+  "reading": "boːk",
+  "options": [
+   {
+    "word": "bog",
+    "gloss": ""
+   },
+   {
+    "word": "book",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "boot/bot",
+  "reading": "boːt",
+  "options": [
+   {
+    "word": "boot",
+    "gloss": ""
+   },
+   {
+    "word": "bot",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "boote/bote",
+  "reading": "boːtə",
+  "options": [
+   {
+    "word": "boote",
+    "gloss": ""
+   },
+   {
+    "word": "bote",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "booten/boten",
+  "reading": "boːtən",
+  "options": [
+   {
+    "word": "booten",
+    "gloss": ""
+   },
+   {
+    "word": "boten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "boots/bots",
+  "reading": "boːts",
+  "options": [
+   {
+    "word": "boots",
+    "gloss": ""
+   },
+   {
+    "word": "bots",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "brand/brandt",
+  "reading": "bɾant",
+  "options": [
+   {
+    "word": "brand",
+    "gloss": ""
+   },
+   {
+    "word": "brandt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bud/but",
+  "reading": "buːt",
+  "options": [
+   {
+    "word": "bud",
+    "gloss": ""
+   },
+   {
+    "word": "but",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "bund/bunt",
+  "reading": "bʊnt",
+  "options": [
+   {
+    "word": "bund",
+    "gloss": ""
+   },
+   {
+    "word": "bunt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "busch/bush",
+  "reading": "bʊʃ",
+  "options": [
+   {
+    "word": "busch",
+    "gloss": ""
+   },
+   {
+    "word": "bush",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "busen/bussen",
+  "reading": "bʊsən",
+  "options": [
+   {
+    "word": "busen",
+    "gloss": ""
+   },
+   {
+    "word": "bussen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ca/ka",
+  "reading": "kɑː",
+  "options": [
+   {
+    "word": "ca",
+    "gloss": ""
+   },
+   {
+    "word": "ka",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cad/cat/kat",
+  "reading": "kɑːt",
+  "options": [
+   {
+    "word": "cad",
+    "gloss": ""
+   },
+   {
+    "word": "cat",
+    "gloss": ""
+   },
+   {
+    "word": "kat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "caesar/cäsar",
+  "reading": "kɛːzɑːɾ",
+  "options": [
+   {
+    "word": "caesar",
+    "gloss": ""
+   },
+   {
+    "word": "cäsar",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cam/kam",
+  "reading": "kɑːm",
+  "options": [
+   {
+    "word": "cam",
+    "gloss": ""
+   },
+   {
+    "word": "kam",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "camera/kamera",
+  "reading": "kɑmeːrɑː",
+  "options": [
+   {
+    "word": "camera",
+    "gloss": ""
+   },
+   {
+    "word": "kamera",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "camp/kamp",
+  "reading": "kamp",
+  "options": [
+   {
+    "word": "camp",
+    "gloss": ""
+   },
+   {
+    "word": "kamp",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "can/kahn/kan",
+  "reading": "kɑːn",
+  "options": [
+   {
+    "word": "can",
+    "gloss": ""
+   },
+   {
+    "word": "kahn",
+    "gloss": ""
+   },
+   {
+    "word": "kan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "canada/kanada",
+  "reading": "kɑnadɑː",
+  "options": [
+   {
+    "word": "canada",
+    "gloss": ""
+   },
+   {
+    "word": "kanada",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "canon/kanon",
+  "reading": "kɑnoːn",
+  "options": [
+   {
+    "word": "canon",
+    "gloss": ""
+   },
+   {
+    "word": "kanon",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cap/kap",
+  "reading": "kɑːp",
+  "options": [
+   {
+    "word": "cap",
+    "gloss": ""
+   },
+   {
+    "word": "kap",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "capital/kapital",
+  "reading": "kɑpiːtɑːl",
+  "options": [
+   {
+    "word": "capital",
+    "gloss": ""
+   },
+   {
+    "word": "kapital",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "card/kart",
+  "reading": "kaɾt",
+  "options": [
+   {
+    "word": "card",
+    "gloss": ""
+   },
+   {
+    "word": "kart",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "carl/karl",
+  "reading": "kaɾl",
+  "options": [
+   {
+    "word": "carl",
+    "gloss": ""
+   },
+   {
+    "word": "karl",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "carsten/karsten",
+  "reading": "kɑːɾstən",
+  "options": [
+   {
+    "word": "carsten",
+    "gloss": ""
+   },
+   {
+    "word": "karsten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cartoon/karton",
+  "reading": "kaɾtoːn",
+  "options": [
+   {
+    "word": "cartoon",
+    "gloss": ""
+   },
+   {
+    "word": "karton",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "caspar/kaspar",
+  "reading": "kaspɑːɾ",
+  "options": [
+   {
+    "word": "caspar",
+    "gloss": ""
+   },
+   {
+    "word": "kaspar",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "casper/kasper",
+  "reading": "kaspɜ",
+  "options": [
+   {
+    "word": "casper",
+    "gloss": ""
+   },
+   {
+    "word": "kasper",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ce/ke",
+  "reading": "keː",
+  "options": [
+   {
+    "word": "ce",
+    "gloss": ""
+   },
+   {
+    "word": "ke",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "celle/zelle",
+  "reading": "tsɛlə",
+  "options": [
+   {
+    "word": "celle",
+    "gloss": ""
+   },
+   {
+    "word": "zelle",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "center/centre",
+  "reading": "sɛntɜ",
+  "options": [
+   {
+    "word": "center",
+    "gloss": ""
+   },
+   {
+    "word": "centre",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "chain/schein",
+  "reading": "ʃaɪn",
+  "options": [
+   {
+    "word": "chain",
+    "gloss": ""
+   },
+   {
+    "word": "schein",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cham/scham",
+  "reading": "ʃɑːm",
+  "options": [
+   {
+    "word": "cham",
+    "gloss": ""
+   },
+   {
+    "word": "scham",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "charlie/charly",
+  "reading": "ʃaɾliː",
+  "options": [
+   {
+    "word": "charlie",
+    "gloss": ""
+   },
+   {
+    "word": "charly",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "chatten/schatten",
+  "reading": "ʃatən",
+  "options": [
+   {
+    "word": "chatten",
+    "gloss": ""
+   },
+   {
+    "word": "schatten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "child/schild",
+  "reading": "ʃɪlt",
+  "options": [
+   {
+    "word": "child",
+    "gloss": ""
+   },
+   {
+    "word": "schild",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "christina/cristina/kristina",
+  "reading": "kɾɪstiːnɑː",
+  "options": [
+   {
+    "word": "christina",
+    "gloss": ""
+   },
+   {
+    "word": "cristina",
+    "gloss": ""
+   },
+   {
+    "word": "kristina",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ci/ki",
+  "reading": "kiː",
+  "options": [
+   {
+    "word": "ci",
+    "gloss": ""
+   },
+   {
+    "word": "ki",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cia/kia",
+  "reading": "kiːɑː",
+  "options": [
+   {
+    "word": "cia",
+    "gloss": ""
+   },
+   {
+    "word": "kia",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cis/kies",
+  "reading": "kiːs",
+  "options": [
+   {
+    "word": "cis",
+    "gloss": ""
+   },
+   {
+    "word": "kies",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "clara/klara",
+  "reading": "klɑrɑː",
+  "options": [
+   {
+    "word": "clara",
+    "gloss": ""
+   },
+   {
+    "word": "klara",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "classic/klassik",
+  "reading": "klasiːk",
+  "options": [
+   {
+    "word": "classic",
+    "gloss": ""
+   },
+   {
+    "word": "klassik",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "claus/klaus",
+  "reading": "klaʊs",
+  "options": [
+   {
+    "word": "claus",
+    "gloss": ""
+   },
+   {
+    "word": "klaus",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "click/klick",
+  "reading": "klɪk",
+  "options": [
+   {
+    "word": "click",
+    "gloss": ""
+   },
+   {
+    "word": "klick",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "clique/klicke",
+  "reading": "klɪkə",
+  "options": [
+   {
+    "word": "clique",
+    "gloss": ""
+   },
+   {
+    "word": "klicke",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "club/klub",
+  "reading": "kluːp",
+  "options": [
+   {
+    "word": "club",
+    "gloss": ""
+   },
+   {
+    "word": "klub",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "clubs/klubs",
+  "reading": "kluːps",
+  "options": [
+   {
+    "word": "clubs",
+    "gloss": ""
+   },
+   {
+    "word": "klubs",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "co/ko",
+  "reading": "koː",
+  "options": [
+   {
+    "word": "co",
+    "gloss": ""
+   },
+   {
+    "word": "ko",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cod/code/kot",
+  "reading": "koːt",
+  "options": [
+   {
+    "word": "cod",
+    "gloss": ""
+   },
+   {
+    "word": "code",
+    "gloss": ""
+   },
+   {
+    "word": "kot",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "col/kohl",
+  "reading": "koːl",
+  "options": [
+   {
+    "word": "col",
+    "gloss": ""
+   },
+   {
+    "word": "kohl",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "cole/coole/kohle",
+  "reading": "koːlə",
+  "options": [
+   {
+    "word": "cole",
+    "gloss": ""
+   },
+   {
+    "word": "coole",
+    "gloss": ""
+   },
+   {
+    "word": "kohle",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "collection/kollektion",
+  "reading": "kɔlɛktsjoːn",
+  "options": [
+   {
+    "word": "collection",
+    "gloss": ""
+   },
+   {
+    "word": "kollektion",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "college/kollege",
+  "reading": "kɔleːɡə",
+  "options": [
+   {
+    "word": "college",
+    "gloss": ""
+   },
+   {
+    "word": "kollege",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "commission/kommission",
+  "reading": "kɔmɪsjoːn",
+  "options": [
+   {
+    "word": "commission",
+    "gloss": ""
+   },
+   {
+    "word": "kommission",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "communication/kommunikation",
+  "reading": "kɔmuːniːkatsjoːn",
+  "options": [
+   {
+    "word": "communication",
+    "gloss": ""
+   },
+   {
+    "word": "kommunikation",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "compact/kompakt",
+  "reading": "kɔmpakt",
+  "options": [
+   {
+    "word": "compact",
+    "gloss": ""
+   },
+   {
+    "word": "kompakt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "company/kompanie",
+  "reading": "kɔmpaniː",
+  "options": [
+   {
+    "word": "company",
+    "gloss": ""
+   },
+   {
+    "word": "kompanie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "congress/kongress",
+  "reading": "kɔŋɡɾɛs",
+  "options": [
+   {
+    "word": "congress",
+    "gloss": ""
+   },
+   {
+    "word": "kongress",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "conrad/konrad",
+  "reading": "kɔnrɑːt",
+  "options": [
+   {
+    "word": "conrad",
+    "gloss": ""
+   },
+   {
+    "word": "konrad",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "constantin/konstantin",
+  "reading": "kɔnstantɪn",
+  "options": [
+   {
+    "word": "constantin",
+    "gloss": ""
+   },
+   {
+    "word": "konstantin",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "contact/kontakt",
+  "reading": "kɔntakt",
+  "options": [
+   {
+    "word": "contact",
+    "gloss": ""
+   },
+   {
+    "word": "kontakt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "coop/cop",
+  "reading": "koːp",
+  "options": [
+   {
+    "word": "coop",
+    "gloss": ""
+   },
+   {
+    "word": "cop",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "corp/korb",
+  "reading": "kɔɾp",
+  "options": [
+   {
+    "word": "corp",
+    "gloss": ""
+   },
+   {
+    "word": "korb",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "corps/korps",
+  "reading": "kɔɾps",
+  "options": [
+   {
+    "word": "corps",
+    "gloss": ""
+   },
+   {
+    "word": "korps",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "coup/ku/kuh",
+  "reading": "kuː",
+  "options": [
+   {
+    "word": "coup",
+    "gloss": ""
+   },
+   {
+    "word": "ku",
+    "gloss": ""
+   },
+   {
+    "word": "kuh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "creative/kreative",
+  "reading": "kɾeːatiːvə",
+  "options": [
+   {
+    "word": "creative",
+    "gloss": ""
+   },
+   {
+    "word": "kreative",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "credit/kredit",
+  "reading": "kɾeːdɪt",
+  "options": [
+   {
+    "word": "credit",
+    "gloss": ""
+   },
+   {
+    "word": "kredit",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "dad/dat",
+  "reading": "dɑːt",
+  "options": [
+   {
+    "word": "dad",
+    "gloss": ""
+   },
+   {
+    "word": "dat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "das/dass",
+  "reading": "das",
+  "options": [
+   {
+    "word": "das",
+    "gloss": ""
+   },
+   {
+    "word": "dass",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "de/dee",
+  "reading": "deː",
+  "options": [
+   {
+    "word": "de",
+    "gloss": ""
+   },
+   {
+    "word": "dee",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "di/die",
+  "reading": "diː",
+  "options": [
+   {
+    "word": "di",
+    "gloss": ""
+   },
+   {
+    "word": "die",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "did/dit",
+  "reading": "diːt",
+  "options": [
+   {
+    "word": "did",
+    "gloss": ""
+   },
+   {
+    "word": "dit",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "dies/dis",
+  "reading": "diːs",
+  "options": [
+   {
+    "word": "dies",
+    "gloss": ""
+   },
+   {
+    "word": "dis",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "direct/direkt",
+  "reading": "diːrɛkt",
+  "options": [
+   {
+    "word": "direct",
+    "gloss": ""
+   },
+   {
+    "word": "direkt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "direction/direktion",
+  "reading": "diːrɛktsjoːn",
+  "options": [
+   {
+    "word": "direction",
+    "gloss": ""
+   },
+   {
+    "word": "direktion",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "director/direktor",
+  "reading": "diːrɛktoːɾ",
+  "options": [
+   {
+    "word": "director",
+    "gloss": ""
+   },
+   {
+    "word": "direktor",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "doc/dog",
+  "reading": "doːk",
+  "options": [
+   {
+    "word": "doc",
+    "gloss": ""
+   },
+   {
+    "word": "dog",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "doctor/doktor",
+  "reading": "dɔktoːɾ",
+  "options": [
+   {
+    "word": "doctor",
+    "gloss": ""
+   },
+   {
+    "word": "doktor",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "dom/doom",
+  "reading": "doːm",
+  "options": [
+   {
+    "word": "dom",
+    "gloss": ""
+   },
+   {
+    "word": "doom",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "dominic/dominique",
+  "reading": "doːmiːniːk",
+  "options": [
+   {
+    "word": "dominic",
+    "gloss": ""
+   },
+   {
+    "word": "dominique",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "doof/dow",
+  "reading": "doːf",
+  "options": [
+   {
+    "word": "doof",
+    "gloss": ""
+   },
+   {
+    "word": "dow",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "dreier/dreyer",
+  "reading": "dɾaɪɜ",
+  "options": [
+   {
+    "word": "dreier",
+    "gloss": ""
+   },
+   {
+    "word": "dreyer",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "eb/ep",
+  "reading": "eːp",
+  "options": [
+   {
+    "word": "eb",
+    "gloss": ""
+   },
+   {
+    "word": "ep",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ec/eeg/eg/ehc/ek",
+  "reading": "eːk",
+  "options": [
+   {
+    "word": "ec",
+    "gloss": ""
+   },
+   {
+    "word": "eeg",
+    "gloss": ""
+   },
+   {
+    "word": "eg",
+    "gloss": ""
+   },
+   {
+    "word": "ehc",
+    "gloss": ""
+   },
+   {
+    "word": "ek",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "eckardt/eckart",
+  "reading": "ɛkaɾt",
+  "options": [
+   {
+    "word": "eckardt",
+    "gloss": ""
+   },
+   {
+    "word": "eckart",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ed/et/eth",
+  "reading": "eːt",
+  "options": [
+   {
+    "word": "ed",
+    "gloss": ""
+   },
+   {
+    "word": "et",
+    "gloss": ""
+   },
+   {
+    "word": "eth",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "eddie/eddy",
+  "reading": "ɛdiː",
+  "options": [
+   {
+    "word": "eddie",
+    "gloss": ""
+   },
+   {
+    "word": "eddy",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "edit/edith",
+  "reading": "eːdɪt",
+  "options": [
+   {
+    "word": "edit",
+    "gloss": ""
+   },
+   {
+    "word": "edith",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ee/eh",
+  "reading": "eː",
+  "options": [
+   {
+    "word": "ee",
+    "gloss": ""
+   },
+   {
+    "word": "eh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "effect/effekt",
+  "reading": "ɛfɛkt",
+  "options": [
+   {
+    "word": "effect",
+    "gloss": ""
+   },
+   {
+    "word": "effekt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ehm/em",
+  "reading": "eːm",
+  "options": [
+   {
+    "word": "ehm",
+    "gloss": ""
+   },
+   {
+    "word": "em",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "einsetzen/einsätzen",
+  "reading": "aɪnzɛtsən",
+  "options": [
+   {
+    "word": "einsetzen",
+    "gloss": ""
+   },
+   {
+    "word": "einsätzen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "end/ent",
+  "reading": "ɛnt",
+  "options": [
+   {
+    "word": "end",
+    "gloss": ""
+   },
+   {
+    "word": "ent",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "endstand/entstand",
+  "reading": "ɛntʃtant",
+  "options": [
+   {
+    "word": "endstand",
+    "gloss": ""
+   },
+   {
+    "word": "entstand",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "energie/energy",
+  "reading": "eːnɛɾɡiː",
+  "options": [
+   {
+    "word": "energie",
+    "gloss": ""
+   },
+   {
+    "word": "energy",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "englisch/english",
+  "reading": "ɛŋlɪʃ",
+  "options": [
+   {
+    "word": "englisch",
+    "gloss": ""
+   },
+   {
+    "word": "english",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "engsten/ängsten",
+  "reading": "ɛŋstən",
+  "options": [
+   {
+    "word": "engsten",
+    "gloss": ""
+   },
+   {
+    "word": "ängsten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "eric/erik",
+  "reading": "eːrɪk",
+  "options": [
+   {
+    "word": "eric",
+    "gloss": ""
+   },
+   {
+    "word": "erik",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "es/ess",
+  "reading": "ɛs",
+  "options": [
+   {
+    "word": "es",
+    "gloss": ""
+   },
+   {
+    "word": "ess",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ev/ew",
+  "reading": "eːf",
+  "options": [
+   {
+    "word": "ev",
+    "gloss": ""
+   },
+   {
+    "word": "ew",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "executive/exekutive",
+  "reading": "ɛkseːkuːtiːvə",
+  "options": [
+   {
+    "word": "executive",
+    "gloss": ""
+   },
+   {
+    "word": "exekutive",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "face/fake",
+  "reading": "fɑːkə",
+  "options": [
+   {
+    "word": "face",
+    "gloss": ""
+   },
+   {
+    "word": "fake",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fact/fakt",
+  "reading": "fakt",
+  "options": [
+   {
+    "word": "fact",
+    "gloss": ""
+   },
+   {
+    "word": "fakt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "factor/faktor",
+  "reading": "faktoːɾ",
+  "options": [
+   {
+    "word": "factor",
+    "gloss": ""
+   },
+   {
+    "word": "faktor",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fahr/far",
+  "reading": "fɑːɾ",
+  "options": [
+   {
+    "word": "fahr",
+    "gloss": ""
+   },
+   {
+    "word": "far",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "faire/fähre",
+  "reading": "fɛːrə",
+  "options": [
+   {
+    "word": "faire",
+    "gloss": ""
+   },
+   {
+    "word": "fähre",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fantasie/fantasy/phantasie",
+  "reading": "fantaziː",
+  "options": [
+   {
+    "word": "fantasie",
+    "gloss": ""
+   },
+   {
+    "word": "fantasy",
+    "gloss": ""
+   },
+   {
+    "word": "phantasie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fantasien/phantasien",
+  "reading": "fantaziːən",
+  "options": [
+   {
+    "word": "fantasien",
+    "gloss": ""
+   },
+   {
+    "word": "phantasien",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fasst/fast",
+  "reading": "fast",
+  "options": [
+   {
+    "word": "fasst",
+    "gloss": ""
+   },
+   {
+    "word": "fast",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fe/fee",
+  "reading": "feː",
+  "options": [
+   {
+    "word": "fe",
+    "gloss": ""
+   },
+   {
+    "word": "fee",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fed/feed",
+  "reading": "feːt",
+  "options": [
+   {
+    "word": "fed",
+    "gloss": ""
+   },
+   {
+    "word": "feed",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "feel/fehl",
+  "reading": "feːl",
+  "options": [
+   {
+    "word": "feel",
+    "gloss": ""
+   },
+   {
+    "word": "fehl",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "feld/fällt",
+  "reading": "fɛlt",
+  "options": [
+   {
+    "word": "feld",
+    "gloss": ""
+   },
+   {
+    "word": "fällt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fi/vie",
+  "reading": "fiː",
+  "options": [
+   {
+    "word": "fi",
+    "gloss": ""
+   },
+   {
+    "word": "vie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fiction/fiktion",
+  "reading": "fɪktsjoːn",
+  "options": [
+   {
+    "word": "fiction",
+    "gloss": ""
+   },
+   {
+    "word": "fiktion",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fiel/phil/viel",
+  "reading": "fiːl",
+  "options": [
+   {
+    "word": "fiel",
+    "gloss": ""
+   },
+   {
+    "word": "phil",
+    "gloss": ""
+   },
+   {
+    "word": "viel",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fielen/vielen",
+  "reading": "fiːlən",
+  "options": [
+   {
+    "word": "fielen",
+    "gloss": ""
+   },
+   {
+    "word": "vielen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fisch/fish",
+  "reading": "fɪʃ",
+  "options": [
+   {
+    "word": "fisch",
+    "gloss": ""
+   },
+   {
+    "word": "fish",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fischer/fisher",
+  "reading": "fɪʃɜ",
+  "options": [
+   {
+    "word": "fischer",
+    "gloss": ""
+   },
+   {
+    "word": "fisher",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "flo/floh",
+  "reading": "floː",
+  "options": [
+   {
+    "word": "flo",
+    "gloss": ""
+   },
+   {
+    "word": "floh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "focus/fokus",
+  "reading": "foːkʊs",
+  "options": [
+   {
+    "word": "focus",
+    "gloss": ""
+   },
+   {
+    "word": "fokus",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "folk/volk",
+  "reading": "fɔlk",
+  "options": [
+   {
+    "word": "folk",
+    "gloss": ""
+   },
+   {
+    "word": "volk",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ford/fort",
+  "reading": "fɔɾt",
+  "options": [
+   {
+    "word": "ford",
+    "gloss": ""
+   },
+   {
+    "word": "fort",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "foto/photo",
+  "reading": "foːtoː",
+  "options": [
+   {
+    "word": "foto",
+    "gloss": ""
+   },
+   {
+    "word": "photo",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fotos/photos",
+  "reading": "foːtoːs",
+  "options": [
+   {
+    "word": "fotos",
+    "gloss": ""
+   },
+   {
+    "word": "photos",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "four/fuhr/fur",
+  "reading": "fuːɾ",
+  "options": [
+   {
+    "word": "four",
+    "gloss": ""
+   },
+   {
+    "word": "fuhr",
+    "gloss": ""
+   },
+   {
+    "word": "fur",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "frei/frey",
+  "reading": "fraɪ",
+  "options": [
+   {
+    "word": "frei",
+    "gloss": ""
+   },
+   {
+    "word": "frey",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "freud/freut",
+  "reading": "frɔøt",
+  "options": [
+   {
+    "word": "freud",
+    "gloss": ""
+   },
+   {
+    "word": "freut",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "frisst/frist",
+  "reading": "frɪst",
+  "options": [
+   {
+    "word": "frisst",
+    "gloss": ""
+   },
+   {
+    "word": "frist",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "fuer/für",
+  "reading": "fyːɾ",
+  "options": [
+   {
+    "word": "fuer",
+    "gloss": ""
+   },
+   {
+    "word": "für",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "färben/verben",
+  "reading": "fɛɾbən",
+  "options": [
+   {
+    "word": "färben",
+    "gloss": ""
+   },
+   {
+    "word": "verben",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gab/gap",
+  "reading": "ɡɑːp",
+  "options": [
+   {
+    "word": "gab",
+    "gloss": ""
+   },
+   {
+    "word": "gap",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gabi/gaby",
+  "reading": "ɡɑbiː",
+  "options": [
+   {
+    "word": "gabi",
+    "gloss": ""
+   },
+   {
+    "word": "gaby",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "galaxie/galaxy",
+  "reading": "ɡɑlaksiː",
+  "options": [
+   {
+    "word": "galaxie",
+    "gloss": ""
+   },
+   {
+    "word": "galaxy",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ge/geh",
+  "reading": "ɡeː",
+  "options": [
+   {
+    "word": "ge",
+    "gloss": ""
+   },
+   {
+    "word": "geh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gehn/gen",
+  "reading": "ɡeːn",
+  "options": [
+   {
+    "word": "gehn",
+    "gloss": ""
+   },
+   {
+    "word": "gen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "geht/get",
+  "reading": "ɡeːt",
+  "options": [
+   {
+    "word": "geht",
+    "gloss": ""
+   },
+   {
+    "word": "get",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gehts/gez",
+  "reading": "ɡeːts",
+  "options": [
+   {
+    "word": "gehts",
+    "gloss": ""
+   },
+   {
+    "word": "gez",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gel/gell",
+  "reading": "ɡɛl",
+  "options": [
+   {
+    "word": "gel",
+    "gloss": ""
+   },
+   {
+    "word": "gell",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "genus/genuss",
+  "reading": "ɡənʊs",
+  "options": [
+   {
+    "word": "genus",
+    "gloss": ""
+   },
+   {
+    "word": "genuss",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gerd/gert",
+  "reading": "ɡɛɾt",
+  "options": [
+   {
+    "word": "gerd",
+    "gloss": ""
+   },
+   {
+    "word": "gert",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gerhard/gerhardt",
+  "reading": "ɡɛɾhaɾt",
+  "options": [
+   {
+    "word": "gerhard",
+    "gloss": ""
+   },
+   {
+    "word": "gerhardt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gesten/gästen",
+  "reading": "ɡɛstən",
+  "options": [
+   {
+    "word": "gesten",
+    "gloss": ""
+   },
+   {
+    "word": "gästen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gewand/gewandt",
+  "reading": "ɡəvant",
+  "options": [
+   {
+    "word": "gewand",
+    "gloss": ""
+   },
+   {
+    "word": "gewandt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "god/good/got",
+  "reading": "ɡoːt",
+  "options": [
+   {
+    "word": "god",
+    "gloss": ""
+   },
+   {
+    "word": "good",
+    "gloss": ""
+   },
+   {
+    "word": "got",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "grad/grat",
+  "reading": "ɡɾɑːt",
+  "options": [
+   {
+    "word": "grad",
+    "gloss": ""
+   },
+   {
+    "word": "grat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "grand/grant",
+  "reading": "ɡɾant",
+  "options": [
+   {
+    "word": "grand",
+    "gloss": ""
+   },
+   {
+    "word": "grant",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "gunter/gunther",
+  "reading": "ɡʊntɜ",
+  "options": [
+   {
+    "word": "gunter",
+    "gloss": ""
+   },
+   {
+    "word": "gunther",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "günter/günther",
+  "reading": "ɡʏntɜ",
+  "options": [
+   {
+    "word": "günter",
+    "gloss": ""
+   },
+   {
+    "word": "günther",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "haas/has",
+  "reading": "hɑːs",
+  "options": [
+   {
+    "word": "haas",
+    "gloss": ""
+   },
+   {
+    "word": "has",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "haase/hase",
+  "reading": "hɑːzə",
+  "options": [
+   {
+    "word": "haase",
+    "gloss": ""
+   },
+   {
+    "word": "hase",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hahn/han",
+  "reading": "hɑːn",
+  "options": [
+   {
+    "word": "hahn",
+    "gloss": ""
+   },
+   {
+    "word": "han",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hai/hei/hey/hi",
+  "reading": "haɪ",
+  "options": [
+   {
+    "word": "hai",
+    "gloss": ""
+   },
+   {
+    "word": "hei",
+    "gloss": ""
+   },
+   {
+    "word": "hey",
+    "gloss": ""
+   },
+   {
+    "word": "hi",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hain/hein",
+  "reading": "haɪn",
+  "options": [
+   {
+    "word": "hain",
+    "gloss": ""
+   },
+   {
+    "word": "hein",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hanna/hannah",
+  "reading": "hanɑː",
+  "options": [
+   {
+    "word": "hanna",
+    "gloss": ""
+   },
+   {
+    "word": "hannah",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hard/hart",
+  "reading": "haɾt",
+  "options": [
+   {
+    "word": "hard",
+    "gloss": ""
+   },
+   {
+    "word": "hart",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hartz/harz",
+  "reading": "haɾts",
+  "options": [
+   {
+    "word": "hartz",
+    "gloss": ""
+   },
+   {
+    "word": "harz",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hasst/hast",
+  "reading": "hast",
+  "options": [
+   {
+    "word": "hasst",
+    "gloss": ""
+   },
+   {
+    "word": "hast",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hat/hatt",
+  "reading": "hat",
+  "options": [
+   {
+    "word": "hat",
+    "gloss": ""
+   },
+   {
+    "word": "hatt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "head/heat",
+  "reading": "heːɑːt",
+  "options": [
+   {
+    "word": "head",
+    "gloss": ""
+   },
+   {
+    "word": "heat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "heer/her",
+  "reading": "heːɾ",
+  "options": [
+   {
+    "word": "heer",
+    "gloss": ""
+   },
+   {
+    "word": "her",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "held/hält",
+  "reading": "hɛlt",
+  "options": [
+   {
+    "word": "held",
+    "gloss": ""
+   },
+   {
+    "word": "hält",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "henri/henry",
+  "reading": "hɛnriː",
+  "options": [
+   {
+    "word": "henri",
+    "gloss": ""
+   },
+   {
+    "word": "henry",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hermann/herrmann",
+  "reading": "hɛɾman",
+  "options": [
+   {
+    "word": "hermann",
+    "gloss": ""
+   },
+   {
+    "word": "herrmann",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hertz/herz",
+  "reading": "hɛɾts",
+  "options": [
+   {
+    "word": "hertz",
+    "gloss": ""
+   },
+   {
+    "word": "herz",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hiess/his",
+  "reading": "hiːs",
+  "options": [
+   {
+    "word": "hiess",
+    "gloss": ""
+   },
+   {
+    "word": "his",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hob/hop",
+  "reading": "hoːp",
+  "options": [
+   {
+    "word": "hob",
+    "gloss": ""
+   },
+   {
+    "word": "hop",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hoc/hook",
+  "reading": "hoːk",
+  "options": [
+   {
+    "word": "hoc",
+    "gloss": ""
+   },
+   {
+    "word": "hook",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hof/how",
+  "reading": "hoːf",
+  "options": [
+   {
+    "word": "hof",
+    "gloss": ""
+   },
+   {
+    "word": "how",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hoffmann/hofmann",
+  "reading": "hɔfman",
+  "options": [
+   {
+    "word": "hoffmann",
+    "gloss": ""
+   },
+   {
+    "word": "hofmann",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hohl/hol",
+  "reading": "hoːl",
+  "options": [
+   {
+    "word": "hohl",
+    "gloss": ""
+   },
+   {
+    "word": "hol",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hohle/hole",
+  "reading": "hoːlə",
+  "options": [
+   {
+    "word": "hohle",
+    "gloss": ""
+   },
+   {
+    "word": "hole",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hold/holt",
+  "reading": "hɔlt",
+  "options": [
+   {
+    "word": "hold",
+    "gloss": ""
+   },
+   {
+    "word": "holt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hood/hot",
+  "reading": "hoːt",
+  "options": [
+   {
+    "word": "hood",
+    "gloss": ""
+   },
+   {
+    "word": "hot",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hu/huh",
+  "reading": "huː",
+  "options": [
+   {
+    "word": "hu",
+    "gloss": ""
+   },
+   {
+    "word": "huh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "hund/hunt",
+  "reading": "hʊnt",
+  "options": [
+   {
+    "word": "hund",
+    "gloss": ""
+   },
+   {
+    "word": "hunt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "höchster/höxter",
+  "reading": "hœkstɜ",
+  "options": [
+   {
+    "word": "höchster",
+    "gloss": ""
+   },
+   {
+    "word": "höxter",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ib/ip",
+  "reading": "iːp",
+  "options": [
+   {
+    "word": "ib",
+    "gloss": ""
+   },
+   {
+    "word": "ip",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ic/ig/ihk/iq",
+  "reading": "iːk",
+  "options": [
+   {
+    "word": "ic",
+    "gloss": ""
+   },
+   {
+    "word": "ig",
+    "gloss": ""
+   },
+   {
+    "word": "ihk",
+    "gloss": ""
+   },
+   {
+    "word": "iq",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ick/ik",
+  "reading": "ɪk",
+  "options": [
+   {
+    "word": "ick",
+    "gloss": ""
+   },
+   {
+    "word": "ik",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "id/it",
+  "reading": "iːt",
+  "options": [
+   {
+    "word": "id",
+    "gloss": ""
+   },
+   {
+    "word": "it",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ie/ih",
+  "reading": "iː",
+  "options": [
+   {
+    "word": "ie",
+    "gloss": ""
+   },
+   {
+    "word": "ih",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ihr/ir",
+  "reading": "iːɾ",
+  "options": [
+   {
+    "word": "ihr",
+    "gloss": ""
+   },
+   {
+    "word": "ir",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ihre/ire",
+  "reading": "iːrə",
+  "options": [
+   {
+    "word": "ihre",
+    "gloss": ""
+   },
+   {
+    "word": "ire",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ihren/iren",
+  "reading": "iːrən",
+  "options": [
+   {
+    "word": "ihren",
+    "gloss": ""
+   },
+   {
+    "word": "iren",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "in/inn",
+  "reading": "ɪn",
+  "options": [
+   {
+    "word": "in",
+    "gloss": ""
+   },
+   {
+    "word": "inn",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "incl/inkl",
+  "reading": "ɪnkl",
+  "options": [
+   {
+    "word": "incl",
+    "gloss": ""
+   },
+   {
+    "word": "inkl",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "inclusive/inklusive",
+  "reading": "ɪnkluːziːvə",
+  "options": [
+   {
+    "word": "inclusive",
+    "gloss": ""
+   },
+   {
+    "word": "inklusive",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "isst/ist",
+  "reading": "ɪst",
+  "options": [
+   {
+    "word": "isst",
+    "gloss": ""
+   },
+   {
+    "word": "ist",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ivan/iwan",
+  "reading": "iːvɑːn",
+  "options": [
+   {
+    "word": "ivan",
+    "gloss": ""
+   },
+   {
+    "word": "iwan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ja/ya",
+  "reading": "jɑː",
+  "options": [
+   {
+    "word": "ja",
+    "gloss": ""
+   },
+   {
+    "word": "ya",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "jacob/jakob",
+  "reading": "jɑkoːp",
+  "options": [
+   {
+    "word": "jacob",
+    "gloss": ""
+   },
+   {
+    "word": "jakob",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "jaeger/jäger",
+  "reading": "jɛːɡɜ",
+  "options": [
+   {
+    "word": "jaeger",
+    "gloss": ""
+   },
+   {
+    "word": "jäger",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "jagd/jagt",
+  "reading": "jɑːkt",
+  "options": [
+   {
+    "word": "jagd",
+    "gloss": ""
+   },
+   {
+    "word": "jagt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "jahn/jan",
+  "reading": "jɑːn",
+  "options": [
+   {
+    "word": "jahn",
+    "gloss": ""
+   },
+   {
+    "word": "jan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "jay/yay",
+  "reading": "jɛɪ",
+  "options": [
+   {
+    "word": "jay",
+    "gloss": ""
+   },
+   {
+    "word": "yay",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "jeep/jep/yep",
+  "reading": "jeːp",
+  "options": [
+   {
+    "word": "jeep",
+    "gloss": ""
+   },
+   {
+    "word": "jep",
+    "gloss": ""
+   },
+   {
+    "word": "yep",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ji/yi",
+  "reading": "jiː",
+  "options": [
+   {
+    "word": "ji",
+    "gloss": ""
+   },
+   {
+    "word": "yi",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "jo/joh/yo",
+  "reading": "joː",
+  "options": [
+   {
+    "word": "jo",
+    "gloss": ""
+   },
+   {
+    "word": "joh",
+    "gloss": ""
+   },
+   {
+    "word": "yo",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "joan/johan",
+  "reading": "joːɑːn",
+  "options": [
+   {
+    "word": "joan",
+    "gloss": ""
+   },
+   {
+    "word": "johan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "john/jon",
+  "reading": "dʒɔn",
+  "options": [
+   {
+    "word": "john",
+    "gloss": ""
+   },
+   {
+    "word": "jon",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "josef/joseph",
+  "reading": "joːzeːf",
+  "options": [
+   {
+    "word": "josef",
+    "gloss": ""
+   },
+   {
+    "word": "joseph",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ju/you/yu",
+  "reading": "juː",
+  "options": [
+   {
+    "word": "ju",
+    "gloss": ""
+   },
+   {
+    "word": "you",
+    "gloss": ""
+   },
+   {
+    "word": "yu",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "juan/yuan",
+  "reading": "juːɑːn",
+  "options": [
+   {
+    "word": "juan",
+    "gloss": ""
+   },
+   {
+    "word": "yuan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "juli/julie",
+  "reading": "juːliː",
+  "options": [
+   {
+    "word": "juli",
+    "gloss": ""
+   },
+   {
+    "word": "julie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "kai/key",
+  "reading": "kaɪ",
+  "options": [
+   {
+    "word": "kai",
+    "gloss": ""
+   },
+   {
+    "word": "key",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "kannte/kante",
+  "reading": "kantə",
+  "options": [
+   {
+    "word": "kannte",
+    "gloss": ""
+   },
+   {
+    "word": "kante",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "kannten/kanten",
+  "reading": "kantən",
+  "options": [
+   {
+    "word": "kannten",
+    "gloss": ""
+   },
+   {
+    "word": "kanten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "kathrin/katrin",
+  "reading": "katɾɪn",
+  "options": [
+   {
+    "word": "kathrin",
+    "gloss": ""
+   },
+   {
+    "word": "katrin",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "kennt/kent",
+  "reading": "kɛnt",
+  "options": [
+   {
+    "word": "kennt",
+    "gloss": ""
+   },
+   {
+    "word": "kent",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "knight/night",
+  "reading": "(en)naɪt(de)",
+  "options": [
+   {
+    "word": "knight",
+    "gloss": ""
+   },
+   {
+    "word": "night",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "koennen/können",
+  "reading": "kœnən",
+  "options": [
+   {
+    "word": "koennen",
+    "gloss": ""
+   },
+   {
+    "word": "können",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "konnten/konten",
+  "reading": "kɔntən",
+  "options": [
+   {
+    "word": "konnten",
+    "gloss": ""
+   },
+   {
+    "word": "konten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "kraus/krauss",
+  "reading": "kɾaʊs",
+  "options": [
+   {
+    "word": "kraus",
+    "gloss": ""
+   },
+   {
+    "word": "krauss",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "kyle/kühle",
+  "reading": "kyːlə",
+  "options": [
+   {
+    "word": "kyle",
+    "gloss": ""
+   },
+   {
+    "word": "kühle",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "küsste/küste",
+  "reading": "kʏstə",
+  "options": [
+   {
+    "word": "küsste",
+    "gloss": ""
+   },
+   {
+    "word": "küste",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lad/lat",
+  "reading": "lɑːt",
+  "options": [
+   {
+    "word": "lad",
+    "gloss": ""
+   },
+   {
+    "word": "lat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lahn/lan",
+  "reading": "lɑːn",
+  "options": [
+   {
+    "word": "lahn",
+    "gloss": ""
+   },
+   {
+    "word": "lan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "laien/leihen/leyen",
+  "reading": "laɪən",
+  "options": [
+   {
+    "word": "laien",
+    "gloss": ""
+   },
+   {
+    "word": "leihen",
+    "gloss": ""
+   },
+   {
+    "word": "leyen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lasst/last",
+  "reading": "last",
+  "options": [
+   {
+    "word": "lasst",
+    "gloss": ""
+   },
+   {
+    "word": "last",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "le/lee",
+  "reading": "leː",
+  "options": [
+   {
+    "word": "le",
+    "gloss": ""
+   },
+   {
+    "word": "lee",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "led/let",
+  "reading": "leːt",
+  "options": [
+   {
+    "word": "led",
+    "gloss": ""
+   },
+   {
+    "word": "let",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "leer/lehr/ler",
+  "reading": "leːɾ",
+  "options": [
+   {
+    "word": "leer",
+    "gloss": ""
+   },
+   {
+    "word": "lehr",
+    "gloss": ""
+   },
+   {
+    "word": "ler",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "leere/lehre",
+  "reading": "leːrə",
+  "options": [
+   {
+    "word": "leere",
+    "gloss": ""
+   },
+   {
+    "word": "lehre",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "leeren/lehren",
+  "reading": "leːrən",
+  "options": [
+   {
+    "word": "leeren",
+    "gloss": ""
+   },
+   {
+    "word": "lehren",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "leerer/lehrer",
+  "reading": "leːrɜ",
+  "options": [
+   {
+    "word": "leerer",
+    "gloss": ""
+   },
+   {
+    "word": "lehrer",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lest/lässt",
+  "reading": "lɛst",
+  "options": [
+   {
+    "word": "lest",
+    "gloss": ""
+   },
+   {
+    "word": "lässt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "leuten/läuten",
+  "reading": "lɔøtən",
+  "options": [
+   {
+    "word": "leuten",
+    "gloss": ""
+   },
+   {
+    "word": "läuten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "li/lie",
+  "reading": "liː",
+  "options": [
+   {
+    "word": "li",
+    "gloss": ""
+   },
+   {
+    "word": "lie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lied/lit",
+  "reading": "liːt",
+  "options": [
+   {
+    "word": "lied",
+    "gloss": ""
+   },
+   {
+    "word": "lit",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lief/liv",
+  "reading": "liːf",
+  "options": [
+   {
+    "word": "lief",
+    "gloss": ""
+   },
+   {
+    "word": "liv",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "liegen/ligen",
+  "reading": "liːɡən",
+  "options": [
+   {
+    "word": "liegen",
+    "gloss": ""
+   },
+   {
+    "word": "ligen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lies/liess",
+  "reading": "liːs",
+  "options": [
+   {
+    "word": "lies",
+    "gloss": ""
+   },
+   {
+    "word": "liess",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lilli/lilly",
+  "reading": "lɪliː",
+  "options": [
+   {
+    "word": "lilli",
+    "gloss": ""
+   },
+   {
+    "word": "lilly",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lob/loop",
+  "reading": "loːp",
+  "options": [
+   {
+    "word": "lob",
+    "gloss": ""
+   },
+   {
+    "word": "loop",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "local/lokal",
+  "reading": "loːkɑːl",
+  "options": [
+   {
+    "word": "local",
+    "gloss": ""
+   },
+   {
+    "word": "lokal",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lock/lok",
+  "reading": "lɔk",
+  "options": [
+   {
+    "word": "lock",
+    "gloss": ""
+   },
+   {
+    "word": "lok",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lou/lu",
+  "reading": "luː",
+  "options": [
+   {
+    "word": "lou",
+    "gloss": ""
+   },
+   {
+    "word": "lu",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "louis/luis",
+  "reading": "luːɪs",
+  "options": [
+   {
+    "word": "louis",
+    "gloss": ""
+   },
+   {
+    "word": "luis",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "louise/luise",
+  "reading": "luːɪsə",
+  "options": [
+   {
+    "word": "louise",
+    "gloss": ""
+   },
+   {
+    "word": "luise",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "lucas/lukas",
+  "reading": "luːkɑːs",
+  "options": [
+   {
+    "word": "lucas",
+    "gloss": ""
+   },
+   {
+    "word": "lukas",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "maas/mas",
+  "reading": "mɑːs",
+  "options": [
+   {
+    "word": "maas",
+    "gloss": ""
+   },
+   {
+    "word": "mas",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mac/mag",
+  "reading": "mɑːk",
+  "options": [
+   {
+    "word": "mac",
+    "gloss": ""
+   },
+   {
+    "word": "mag",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mad/mat",
+  "reading": "mɑːt",
+  "options": [
+   {
+    "word": "mad",
+    "gloss": ""
+   },
+   {
+    "word": "mat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mahl/mal",
+  "reading": "mɑːl",
+  "options": [
+   {
+    "word": "mahl",
+    "gloss": ""
+   },
+   {
+    "word": "mal",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mahler/maler",
+  "reading": "mɑːlɜ",
+  "options": [
+   {
+    "word": "mahler",
+    "gloss": ""
+   },
+   {
+    "word": "maler",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mai/mei",
+  "reading": "maɪ",
+  "options": [
+   {
+    "word": "mai",
+    "gloss": ""
+   },
+   {
+    "word": "mei",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "maier/mayer/mayr/meier/meyer",
+  "reading": "maɪɜ",
+  "options": [
+   {
+    "word": "maier",
+    "gloss": ""
+   },
+   {
+    "word": "mayer",
+    "gloss": ""
+   },
+   {
+    "word": "mayr",
+    "gloss": ""
+   },
+   {
+    "word": "meier",
+    "gloss": ""
+   },
+   {
+    "word": "meyer",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "main/mein",
+  "reading": "maɪn",
+  "options": [
+   {
+    "word": "main",
+    "gloss": ""
+   },
+   {
+    "word": "mein",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "man/mann",
+  "reading": "man",
+  "options": [
+   {
+    "word": "man",
+    "gloss": ""
+   },
+   {
+    "word": "mann",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "marc/mark",
+  "reading": "maɾk",
+  "options": [
+   {
+    "word": "marc",
+    "gloss": ""
+   },
+   {
+    "word": "mark",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "marco/marko",
+  "reading": "maɾkoː",
+  "options": [
+   {
+    "word": "marco",
+    "gloss": ""
+   },
+   {
+    "word": "marko",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "marcus/markus",
+  "reading": "maɾkʊs",
+  "options": [
+   {
+    "word": "marcus",
+    "gloss": ""
+   },
+   {
+    "word": "markus",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "marta/martha",
+  "reading": "maɾtɑː",
+  "options": [
+   {
+    "word": "marta",
+    "gloss": ""
+   },
+   {
+    "word": "martha",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mathe/matte",
+  "reading": "matə",
+  "options": [
+   {
+    "word": "mathe",
+    "gloss": ""
+   },
+   {
+    "word": "matte",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mathias/matthias",
+  "reading": "matiːɑːs",
+  "options": [
+   {
+    "word": "mathias",
+    "gloss": ""
+   },
+   {
+    "word": "matthias",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "me/meh",
+  "reading": "meː",
+  "options": [
+   {
+    "word": "me",
+    "gloss": ""
+   },
+   {
+    "word": "meh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "med/meet/met/meth",
+  "reading": "meːt",
+  "options": [
+   {
+    "word": "med",
+    "gloss": ""
+   },
+   {
+    "word": "meet",
+    "gloss": ""
+   },
+   {
+    "word": "met",
+    "gloss": ""
+   },
+   {
+    "word": "meth",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "meer/mehr/mer",
+  "reading": "meːɾ",
+  "options": [
+   {
+    "word": "meer",
+    "gloss": ""
+   },
+   {
+    "word": "mehr",
+    "gloss": ""
+   },
+   {
+    "word": "mer",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mehl/mel",
+  "reading": "meːl",
+  "options": [
+   {
+    "word": "mehl",
+    "gloss": ""
+   },
+   {
+    "word": "mel",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "merck/merk",
+  "reading": "mɛɾk",
+  "options": [
+   {
+    "word": "merck",
+    "gloss": ""
+   },
+   {
+    "word": "merk",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "merkte/märkte",
+  "reading": "mɛɾktə",
+  "options": [
+   {
+    "word": "merkte",
+    "gloss": ""
+   },
+   {
+    "word": "märkte",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "merz/märz",
+  "reading": "mɛɾts",
+  "options": [
+   {
+    "word": "merz",
+    "gloss": ""
+   },
+   {
+    "word": "märz",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mexico/mexiko",
+  "reading": "mɛksiːkoː",
+  "options": [
+   {
+    "word": "mexico",
+    "gloss": ""
+   },
+   {
+    "word": "mexiko",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "miene/mine",
+  "reading": "miːnə",
+  "options": [
+   {
+    "word": "miene",
+    "gloss": ""
+   },
+   {
+    "word": "mine",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mind/mint",
+  "reading": "mɪnt",
+  "options": [
+   {
+    "word": "mind",
+    "gloss": ""
+   },
+   {
+    "word": "mint",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "misst/mist",
+  "reading": "mɪst",
+  "options": [
+   {
+    "word": "misst",
+    "gloss": ""
+   },
+   {
+    "word": "mist",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mohr/moor",
+  "reading": "moːɾ",
+  "options": [
+   {
+    "word": "mohr",
+    "gloss": ""
+   },
+   {
+    "word": "moor",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mon/moon",
+  "reading": "moːn",
+  "options": [
+   {
+    "word": "mon",
+    "gloss": ""
+   },
+   {
+    "word": "moon",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "monica/monika",
+  "reading": "moːniːkɑː",
+  "options": [
+   {
+    "word": "monica",
+    "gloss": ""
+   },
+   {
+    "word": "monika",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "moore/more",
+  "reading": "moːrə",
+  "options": [
+   {
+    "word": "moore",
+    "gloss": ""
+   },
+   {
+    "word": "more",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "mus/muss",
+  "reading": "mʊs",
+  "options": [
+   {
+    "word": "mus",
+    "gloss": ""
+   },
+   {
+    "word": "muss",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "music/musik",
+  "reading": "muːziːk",
+  "options": [
+   {
+    "word": "music",
+    "gloss": ""
+   },
+   {
+    "word": "musik",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "musst/must",
+  "reading": "mʊst",
+  "options": [
+   {
+    "word": "musst",
+    "gloss": ""
+   },
+   {
+    "word": "must",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "na/nah",
+  "reading": "nɑː",
+  "options": [
+   {
+    "word": "na",
+    "gloss": ""
+   },
+   {
+    "word": "nah",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "nahm/nam",
+  "reading": "nɑːm",
+  "options": [
+   {
+    "word": "nahm",
+    "gloss": ""
+   },
+   {
+    "word": "nam",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "nahmen/namen",
+  "reading": "nɑːmən",
+  "options": [
+   {
+    "word": "nahmen",
+    "gloss": ""
+   },
+   {
+    "word": "namen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "naht/nat",
+  "reading": "nɑːt",
+  "options": [
+   {
+    "word": "naht",
+    "gloss": ""
+   },
+   {
+    "word": "nat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "navi/navy",
+  "reading": "nɑviː",
+  "options": [
+   {
+    "word": "navi",
+    "gloss": ""
+   },
+   {
+    "word": "navy",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ne/nee",
+  "reading": "neː",
+  "options": [
+   {
+    "word": "ne",
+    "gloss": ""
+   },
+   {
+    "word": "nee",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ned/need/net",
+  "reading": "neːt",
+  "options": [
+   {
+    "word": "ned",
+    "gloss": ""
+   },
+   {
+    "word": "need",
+    "gloss": ""
+   },
+   {
+    "word": "net",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "nehm/nem",
+  "reading": "neːm",
+  "options": [
+   {
+    "word": "nehm",
+    "gloss": ""
+   },
+   {
+    "word": "nem",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ni/nie",
+  "reading": "niː",
+  "options": [
+   {
+    "word": "ni",
+    "gloss": ""
+   },
+   {
+    "word": "nie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "nico/niko",
+  "reading": "niːkoː",
+  "options": [
+   {
+    "word": "nico",
+    "gloss": ""
+   },
+   {
+    "word": "niko",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "nicolai/nikolai",
+  "reading": "niːkoːlaɪ",
+  "options": [
+   {
+    "word": "nicolai",
+    "gloss": ""
+   },
+   {
+    "word": "nikolai",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "niels/nils",
+  "reading": "niːls",
+  "options": [
+   {
+    "word": "niels",
+    "gloss": ""
+   },
+   {
+    "word": "nils",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "nord/north",
+  "reading": "nɔɾt",
+  "options": [
+   {
+    "word": "nord",
+    "gloss": ""
+   },
+   {
+    "word": "north",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "nov/now",
+  "reading": "noːf",
+  "options": [
+   {
+    "word": "nov",
+    "gloss": ""
+   },
+   {
+    "word": "now",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "obs/ops",
+  "reading": "oːps",
+  "options": [
+   {
+    "word": "obs",
+    "gloss": ""
+   },
+   {
+    "word": "ops",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "od/ot",
+  "reading": "oːt",
+  "options": [
+   {
+    "word": "od",
+    "gloss": ""
+   },
+   {
+    "word": "ot",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "oh/ohh/oo",
+  "reading": "oː",
+  "options": [
+   {
+    "word": "oh",
+    "gloss": ""
+   },
+   {
+    "word": "ohh",
+    "gloss": ""
+   },
+   {
+    "word": "oo",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ohne/one",
+  "reading": "oːnə",
+  "options": [
+   {
+    "word": "ohne",
+    "gloss": ""
+   },
+   {
+    "word": "one",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ohr/or",
+  "reading": "oːɾ",
+  "options": [
+   {
+    "word": "ohr",
+    "gloss": ""
+   },
+   {
+    "word": "or",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "oscar/oskar",
+  "reading": "ɔskɑːɾ",
+  "options": [
+   {
+    "word": "oscar",
+    "gloss": ""
+   },
+   {
+    "word": "oskar",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ots/oz",
+  "reading": "oːts",
+  "options": [
+   {
+    "word": "ots",
+    "gloss": ""
+   },
+   {
+    "word": "oz",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ou/uh",
+  "reading": "uː",
+  "options": [
+   {
+    "word": "ou",
+    "gloss": ""
+   },
+   {
+    "word": "uh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "our/uhr/ur",
+  "reading": "uːɾ",
+  "options": [
+   {
+    "word": "our",
+    "gloss": ""
+   },
+   {
+    "word": "uhr",
+    "gloss": ""
+   },
+   {
+    "word": "ur",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "paar/par",
+  "reading": "pɑːɾ",
+  "options": [
+   {
+    "word": "paar",
+    "gloss": ""
+   },
+   {
+    "word": "par",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "packt/pakt",
+  "reading": "pakt",
+  "options": [
+   {
+    "word": "packt",
+    "gloss": ""
+   },
+   {
+    "word": "pakt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "pad/pat",
+  "reading": "pɑːt",
+  "options": [
+   {
+    "word": "pad",
+    "gloss": ""
+   },
+   {
+    "word": "pat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "passt/past",
+  "reading": "past",
+  "options": [
+   {
+    "word": "passt",
+    "gloss": ""
+   },
+   {
+    "word": "past",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "passte/paste",
+  "reading": "pastə",
+  "options": [
+   {
+    "word": "passte",
+    "gloss": ""
+   },
+   {
+    "word": "paste",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "perfect/perfekt",
+  "reading": "pɛɾfɛkt",
+  "options": [
+   {
+    "word": "perfect",
+    "gloss": ""
+   },
+   {
+    "word": "perfekt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "petri/petry",
+  "reading": "pɛtɾiː",
+  "options": [
+   {
+    "word": "petri",
+    "gloss": ""
+   },
+   {
+    "word": "petry",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "phoenix/phönix",
+  "reading": "føːnɪks",
+  "options": [
+   {
+    "word": "phoenix",
+    "gloss": ""
+   },
+   {
+    "word": "phönix",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "pi/pie",
+  "reading": "piː",
+  "options": [
+   {
+    "word": "pi",
+    "gloss": ""
+   },
+   {
+    "word": "pie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "platform/plattform",
+  "reading": "platfɔɾm",
+  "options": [
+   {
+    "word": "platform",
+    "gloss": ""
+   },
+   {
+    "word": "plattform",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "pohl/pol",
+  "reading": "poːl",
+  "options": [
+   {
+    "word": "pohl",
+    "gloss": ""
+   },
+   {
+    "word": "pol",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "pour/pur",
+  "reading": "puːɾ",
+  "options": [
+   {
+    "word": "pour",
+    "gloss": ""
+   },
+   {
+    "word": "pur",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "product/produkt",
+  "reading": "pɾoːdʊkt",
+  "options": [
+   {
+    "word": "product",
+    "gloss": ""
+   },
+   {
+    "word": "produkt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "production/produktion",
+  "reading": "pɾoːdʊktsjoːn",
+  "options": [
+   {
+    "word": "production",
+    "gloss": ""
+   },
+   {
+    "word": "produktion",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "project/projekt",
+  "reading": "pɾoːjɛkt",
+  "options": [
+   {
+    "word": "project",
+    "gloss": ""
+   },
+   {
+    "word": "projekt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "pu/puh",
+  "reading": "puː",
+  "options": [
+   {
+    "word": "pu",
+    "gloss": ""
+   },
+   {
+    "word": "puh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "raab/rap",
+  "reading": "rɑːp",
+  "options": [
+   {
+    "word": "raab",
+    "gloss": ""
+   },
+   {
+    "word": "rap",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "rad/rat",
+  "reading": "rɑːt",
+  "options": [
+   {
+    "word": "rad",
+    "gloss": ""
+   },
+   {
+    "word": "rat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "raf/raw",
+  "reading": "rɑːf",
+  "options": [
+   {
+    "word": "raf",
+    "gloss": ""
+   },
+   {
+    "word": "raw",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "raid/reid",
+  "reading": "raɪt",
+  "options": [
+   {
+    "word": "raid",
+    "gloss": ""
+   },
+   {
+    "word": "reid",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "rain/rein/rhein",
+  "reading": "raɪn",
+  "options": [
+   {
+    "word": "rain",
+    "gloss": ""
+   },
+   {
+    "word": "rein",
+    "gloss": ""
+   },
+   {
+    "word": "rhein",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "rainer/reiner",
+  "reading": "raɪnɜ",
+  "options": [
+   {
+    "word": "rainer",
+    "gloss": ""
+   },
+   {
+    "word": "reiner",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ralf/ralph",
+  "reading": "ralf",
+  "options": [
+   {
+    "word": "ralf",
+    "gloss": ""
+   },
+   {
+    "word": "ralph",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "re/reh",
+  "reading": "reː",
+  "options": [
+   {
+    "word": "re",
+    "gloss": ""
+   },
+   {
+    "word": "reh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "record/rekord",
+  "reading": "reːkɔɾt",
+  "options": [
+   {
+    "word": "record",
+    "gloss": ""
+   },
+   {
+    "word": "rekord",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "red/reed",
+  "reading": "reːt",
+  "options": [
+   {
+    "word": "red",
+    "gloss": ""
+   },
+   {
+    "word": "reed",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ref/rev",
+  "reading": "reːf",
+  "options": [
+   {
+    "word": "ref",
+    "gloss": ""
+   },
+   {
+    "word": "rev",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "rei/rey",
+  "reading": "raɪ",
+  "options": [
+   {
+    "word": "rei",
+    "gloss": ""
+   },
+   {
+    "word": "rey",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "reine/rheine",
+  "reading": "raɪnə",
+  "options": [
+   {
+    "word": "reine",
+    "gloss": ""
+   },
+   {
+    "word": "rheine",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "reinhard/reinhardt",
+  "reading": "raɪnhaɾt",
+  "options": [
+   {
+    "word": "reinhard",
+    "gloss": ""
+   },
+   {
+    "word": "reinhardt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "reis/reiss",
+  "reading": "raɪs",
+  "options": [
+   {
+    "word": "reis",
+    "gloss": ""
+   },
+   {
+    "word": "reiss",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "reisst/reist",
+  "reading": "raɪst",
+  "options": [
+   {
+    "word": "reisst",
+    "gloss": ""
+   },
+   {
+    "word": "reist",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ried/riet",
+  "reading": "riːt",
+  "options": [
+   {
+    "word": "ried",
+    "gloss": ""
+   },
+   {
+    "word": "riet",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "riese/rise",
+  "reading": "riːzə",
+  "options": [
+   {
+    "word": "riese",
+    "gloss": ""
+   },
+   {
+    "word": "rise",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "right/wright",
+  "reading": "(en)ɹaɪt(de)",
+  "options": [
+   {
+    "word": "right",
+    "gloss": ""
+   },
+   {
+    "word": "wright",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ro/roh",
+  "reading": "roː",
+  "options": [
+   {
+    "word": "ro",
+    "gloss": ""
+   },
+   {
+    "word": "roh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "rod/root/rot",
+  "reading": "roːt",
+  "options": [
+   {
+    "word": "rod",
+    "gloss": ""
+   },
+   {
+    "word": "root",
+    "gloss": ""
+   },
+   {
+    "word": "rot",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "room/ruhm",
+  "reading": "ruːm",
+  "options": [
+   {
+    "word": "room",
+    "gloss": ""
+   },
+   {
+    "word": "ruhm",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ru/ruh",
+  "reading": "ruː",
+  "options": [
+   {
+    "word": "ru",
+    "gloss": ""
+   },
+   {
+    "word": "ruh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "rudolf/rudolph",
+  "reading": "ruːdɔlf",
+  "options": [
+   {
+    "word": "rudolf",
+    "gloss": ""
+   },
+   {
+    "word": "rudolph",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "rue/ruhe",
+  "reading": "ruːə",
+  "options": [
+   {
+    "word": "rue",
+    "gloss": ""
+   },
+   {
+    "word": "ruhe",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sa/sah",
+  "reading": "zɑː",
+  "options": [
+   {
+    "word": "sa",
+    "gloss": ""
+   },
+   {
+    "word": "sah",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "saal/sal",
+  "reading": "zɑːl",
+  "options": [
+   {
+    "word": "saal",
+    "gloss": ""
+   },
+   {
+    "word": "sal",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "saale/sale",
+  "reading": "zɑːlə",
+  "options": [
+   {
+    "word": "saale",
+    "gloss": ""
+   },
+   {
+    "word": "sale",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "saat/sad/sat",
+  "reading": "zɑːt",
+  "options": [
+   {
+    "word": "saat",
+    "gloss": ""
+   },
+   {
+    "word": "sad",
+    "gloss": ""
+   },
+   {
+    "word": "sat",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "said/seid/seit",
+  "reading": "zaɪt",
+  "options": [
+   {
+    "word": "said",
+    "gloss": ""
+   },
+   {
+    "word": "seid",
+    "gloss": ""
+   },
+   {
+    "word": "seit",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "saiten/seiten",
+  "reading": "zaɪtən",
+  "options": [
+   {
+    "word": "saiten",
+    "gloss": ""
+   },
+   {
+    "word": "seiten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sara/sarah",
+  "reading": "zɑrɑː",
+  "options": [
+   {
+    "word": "sara",
+    "gloss": ""
+   },
+   {
+    "word": "sarah",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "scala/skala",
+  "reading": "skɑlɑː",
+  "options": [
+   {
+    "word": "scala",
+    "gloss": ""
+   },
+   {
+    "word": "skala",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schaf/shaw",
+  "reading": "ʃɑːf",
+  "options": [
+   {
+    "word": "schaf",
+    "gloss": ""
+   },
+   {
+    "word": "shaw",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schafft/schaft",
+  "reading": "ʃaft",
+  "options": [
+   {
+    "word": "schafft",
+    "gloss": ""
+   },
+   {
+    "word": "schaft",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schied/shit",
+  "reading": "ʃiːt",
+  "options": [
+   {
+    "word": "schied",
+    "gloss": ""
+   },
+   {
+    "word": "shit",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schmid/schmied",
+  "reading": "ʃmiːt",
+  "options": [
+   {
+    "word": "schmid",
+    "gloss": ""
+   },
+   {
+    "word": "schmied",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schmidt/schmitt",
+  "reading": "ʃmɪt",
+  "options": [
+   {
+    "word": "schmidt",
+    "gloss": ""
+   },
+   {
+    "word": "schmitt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schultz/schulz",
+  "reading": "ʃʊlts",
+  "options": [
+   {
+    "word": "schultz",
+    "gloss": ""
+   },
+   {
+    "word": "schulz",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schwartz/schwarz",
+  "reading": "ʃvaɾts",
+  "options": [
+   {
+    "word": "schwartz",
+    "gloss": ""
+   },
+   {
+    "word": "schwarz",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "schweitzer/schweizer",
+  "reading": "ʃvaɪtsɜ",
+  "options": [
+   {
+    "word": "schweitzer",
+    "gloss": ""
+   },
+   {
+    "word": "schweizer",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "script/skript",
+  "reading": "skɾɪpt",
+  "options": [
+   {
+    "word": "script",
+    "gloss": ""
+   },
+   {
+    "word": "skript",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "se/see/seh",
+  "reading": "zeː",
+  "options": [
+   {
+    "word": "se",
+    "gloss": ""
+   },
+   {
+    "word": "see",
+    "gloss": ""
+   },
+   {
+    "word": "seh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sec/sek",
+  "reading": "zeːk",
+  "options": [
+   {
+    "word": "sec",
+    "gloss": ""
+   },
+   {
+    "word": "sek",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "section/sektion",
+  "reading": "zɛktsjoːn",
+  "options": [
+   {
+    "word": "section",
+    "gloss": ""
+   },
+   {
+    "word": "sektion",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sed/seht/set/seth",
+  "reading": "zeːt",
+  "options": [
+   {
+    "word": "sed",
+    "gloss": ""
+   },
+   {
+    "word": "seht",
+    "gloss": ""
+   },
+   {
+    "word": "set",
+    "gloss": ""
+   },
+   {
+    "word": "seth",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "seen/sehen",
+  "reading": "zeːən",
+  "options": [
+   {
+    "word": "seen",
+    "gloss": ""
+   },
+   {
+    "word": "sehen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sehn/sen",
+  "reading": "zeːn",
+  "options": [
+   {
+    "word": "sehn",
+    "gloss": ""
+   },
+   {
+    "word": "sen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sehr/ser",
+  "reading": "zeːɾ",
+  "options": [
+   {
+    "word": "sehr",
+    "gloss": ""
+   },
+   {
+    "word": "ser",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "setze/sätze",
+  "reading": "zɛtsə",
+  "options": [
+   {
+    "word": "setze",
+    "gloss": ""
+   },
+   {
+    "word": "sätze",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "setzen/sätzen",
+  "reading": "zɛtsən",
+  "options": [
+   {
+    "word": "setzen",
+    "gloss": ""
+   },
+   {
+    "word": "sätzen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "si/sie/sieh",
+  "reading": "ziː",
+  "options": [
+   {
+    "word": "si",
+    "gloss": ""
+   },
+   {
+    "word": "sie",
+    "gloss": ""
+   },
+   {
+    "word": "sieh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sic/sieg",
+  "reading": "ziːk",
+  "options": [
+   {
+    "word": "sic",
+    "gloss": ""
+   },
+   {
+    "word": "sieg",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sid/sieht/sit",
+  "reading": "ziːt",
+  "options": [
+   {
+    "word": "sid",
+    "gloss": ""
+   },
+   {
+    "word": "sieht",
+    "gloss": ""
+   },
+   {
+    "word": "sit",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "so/soo",
+  "reading": "zoː",
+  "options": [
+   {
+    "word": "so",
+    "gloss": ""
+   },
+   {
+    "word": "soo",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sofia/sophia",
+  "reading": "zoːfiːɑː",
+  "options": [
+   {
+    "word": "sofia",
+    "gloss": ""
+   },
+   {
+    "word": "sophia",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "sohn/son",
+  "reading": "zoːn",
+  "options": [
+   {
+    "word": "sohn",
+    "gloss": ""
+   },
+   {
+    "word": "son",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "soul/suhl",
+  "reading": "zuːl",
+  "options": [
+   {
+    "word": "soul",
+    "gloss": ""
+   },
+   {
+    "word": "suhl",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "spahn/span",
+  "reading": "ʃpɑːn",
+  "options": [
+   {
+    "word": "spahn",
+    "gloss": ""
+   },
+   {
+    "word": "span",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "stadt/statt",
+  "reading": "ʃtat",
+  "options": [
+   {
+    "word": "stadt",
+    "gloss": ""
+   },
+   {
+    "word": "statt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "starrt/start",
+  "reading": "ʃtaɾt",
+  "options": [
+   {
+    "word": "starrt",
+    "gloss": ""
+   },
+   {
+    "word": "start",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "stefan/stephan",
+  "reading": "ʃteːfɑːn",
+  "options": [
+   {
+    "word": "stefan",
+    "gloss": ""
+   },
+   {
+    "word": "stephan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "stefanie/stephanie",
+  "reading": "ʃteːfaniː",
+  "options": [
+   {
+    "word": "stefanie",
+    "gloss": ""
+   },
+   {
+    "word": "stephanie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "stemmen/stämmen",
+  "reading": "ʃtɛmən",
+  "options": [
+   {
+    "word": "stemmen",
+    "gloss": ""
+   },
+   {
+    "word": "stämmen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "stiel/stil",
+  "reading": "ʃtiːl",
+  "options": [
+   {
+    "word": "stiel",
+    "gloss": ""
+   },
+   {
+    "word": "stil",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "stop/stopp",
+  "reading": "ʃtɔp",
+  "options": [
+   {
+    "word": "stop",
+    "gloss": ""
+   },
+   {
+    "word": "stopp",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "städte/stätte",
+  "reading": "ʃtɛtə",
+  "options": [
+   {
+    "word": "städte",
+    "gloss": ""
+   },
+   {
+    "word": "stätte",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "städten/stätten",
+  "reading": "ʃtɛtən",
+  "options": [
+   {
+    "word": "städten",
+    "gloss": ""
+   },
+   {
+    "word": "stätten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "tai/thai",
+  "reading": "taɪ",
+  "options": [
+   {
+    "word": "tai",
+    "gloss": ""
+   },
+   {
+    "word": "thai",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "tan/than",
+  "reading": "tɑːn",
+  "options": [
+   {
+    "word": "tan",
+    "gloss": ""
+   },
+   {
+    "word": "than",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "tat/that",
+  "reading": "tɑːt",
+  "options": [
+   {
+    "word": "tat",
+    "gloss": ""
+   },
+   {
+    "word": "that",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "te/tee",
+  "reading": "teː",
+  "options": [
+   {
+    "word": "te",
+    "gloss": ""
+   },
+   {
+    "word": "tee",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "technologie/technology",
+  "reading": "tɛçnoːloːɡiː",
+  "options": [
+   {
+    "word": "technologie",
+    "gloss": ""
+   },
+   {
+    "word": "technology",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ten/then",
+  "reading": "teːn",
+  "options": [
+   {
+    "word": "ten",
+    "gloss": ""
+   },
+   {
+    "word": "then",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "teresa/theresa",
+  "reading": "teːreːzɑː",
+  "options": [
+   {
+    "word": "teresa",
+    "gloss": ""
+   },
+   {
+    "word": "theresa",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "theorie/theory",
+  "reading": "teːoːriː",
+  "options": [
+   {
+    "word": "theorie",
+    "gloss": ""
+   },
+   {
+    "word": "theory",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "thiel/til",
+  "reading": "tiːl",
+  "options": [
+   {
+    "word": "thiel",
+    "gloss": ""
+   },
+   {
+    "word": "til",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "thomas/tomas",
+  "reading": "toːmɑːs",
+  "options": [
+   {
+    "word": "thomas",
+    "gloss": ""
+   },
+   {
+    "word": "tomas",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "thor/tor",
+  "reading": "toːɾ",
+  "options": [
+   {
+    "word": "thor",
+    "gloss": ""
+   },
+   {
+    "word": "tor",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "thorsten/torsten",
+  "reading": "toːɾstən",
+  "options": [
+   {
+    "word": "thorsten",
+    "gloss": ""
+   },
+   {
+    "word": "torsten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "three/tree",
+  "reading": "tɾeː",
+  "options": [
+   {
+    "word": "three",
+    "gloss": ""
+   },
+   {
+    "word": "tree",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "thun/tun",
+  "reading": "tuːn",
+  "options": [
+   {
+    "word": "thun",
+    "gloss": ""
+   },
+   {
+    "word": "tun",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "tod/tot",
+  "reading": "toːt",
+  "options": [
+   {
+    "word": "tod",
+    "gloss": ""
+   },
+   {
+    "word": "tot",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "toni/tony",
+  "reading": "toːniː",
+  "options": [
+   {
+    "word": "toni",
+    "gloss": ""
+   },
+   {
+    "word": "tony",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "trend/trennt",
+  "reading": "tɾɛnt",
+  "options": [
+   {
+    "word": "trend",
+    "gloss": ""
+   },
+   {
+    "word": "trennt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ub/up",
+  "reading": "uːp",
+  "options": [
+   {
+    "word": "ub",
+    "gloss": ""
+   },
+   {
+    "word": "up",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ubs/ups",
+  "reading": "uːps",
+  "options": [
+   {
+    "word": "ubs",
+    "gloss": ""
+   },
+   {
+    "word": "ups",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "uf/uv",
+  "reading": "uːf",
+  "options": [
+   {
+    "word": "uf",
+    "gloss": ""
+   },
+   {
+    "word": "uv",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ullrich/ulrich",
+  "reading": "ʊlrɪç",
+  "options": [
+   {
+    "word": "ullrich",
+    "gloss": ""
+   },
+   {
+    "word": "ulrich",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "unsere/unsre",
+  "reading": "ʊnzrə",
+  "options": [
+   {
+    "word": "unsere",
+    "gloss": ""
+   },
+   {
+    "word": "unsre",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "usd/ust",
+  "reading": "ʊst",
+  "options": [
+   {
+    "word": "usd",
+    "gloss": ""
+   },
+   {
+    "word": "ust",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "va/wa",
+  "reading": "vɑː",
+  "options": [
+   {
+    "word": "va",
+    "gloss": ""
+   },
+   {
+    "word": "wa",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vage/waage/wage",
+  "reading": "vɑːɡə",
+  "options": [
+   {
+    "word": "vage",
+    "gloss": ""
+   },
+   {
+    "word": "waage",
+    "gloss": ""
+   },
+   {
+    "word": "wage",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "val/wahl/wal",
+  "reading": "vɑːl",
+  "options": [
+   {
+    "word": "val",
+    "gloss": ""
+   },
+   {
+    "word": "wahl",
+    "gloss": ""
+   },
+   {
+    "word": "wal",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "van/wahn/wan",
+  "reading": "vɑːn",
+  "options": [
+   {
+    "word": "van",
+    "gloss": ""
+   },
+   {
+    "word": "wahn",
+    "gloss": ""
+   },
+   {
+    "word": "wan",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "var/wahr/war",
+  "reading": "vɑːɾ",
+  "options": [
+   {
+    "word": "var",
+    "gloss": ""
+   },
+   {
+    "word": "wahr",
+    "gloss": ""
+   },
+   {
+    "word": "war",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ve/we/weh",
+  "reading": "veː",
+  "options": [
+   {
+    "word": "ve",
+    "gloss": ""
+   },
+   {
+    "word": "we",
+    "gloss": ""
+   },
+   {
+    "word": "weh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "veit/wait/weit",
+  "reading": "vaɪt",
+  "options": [
+   {
+    "word": "veit",
+    "gloss": ""
+   },
+   {
+    "word": "wait",
+    "gloss": ""
+   },
+   {
+    "word": "weit",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "verband/verbannt",
+  "reading": "fɛɾbant",
+  "options": [
+   {
+    "word": "verband",
+    "gloss": ""
+   },
+   {
+    "word": "verbannt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "veronica/veronika",
+  "reading": "fɛɾoːniːkɑː",
+  "options": [
+   {
+    "word": "veronica",
+    "gloss": ""
+   },
+   {
+    "word": "veronika",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vetter/wetter",
+  "reading": "vɛtɜ",
+  "options": [
+   {
+    "word": "vetter",
+    "gloss": ""
+   },
+   {
+    "word": "wetter",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "victor/viktor",
+  "reading": "vɪktoːɾ",
+  "options": [
+   {
+    "word": "victor",
+    "gloss": ""
+   },
+   {
+    "word": "viktor",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "victoria/viktoria",
+  "reading": "vɪktoːriːɑː",
+  "options": [
+   {
+    "word": "victoria",
+    "gloss": ""
+   },
+   {
+    "word": "viktoria",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "villen/willen",
+  "reading": "vɪlən",
+  "options": [
+   {
+    "word": "villen",
+    "gloss": ""
+   },
+   {
+    "word": "willen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vis/wies",
+  "reading": "viːs",
+  "options": [
+   {
+    "word": "vis",
+    "gloss": ""
+   },
+   {
+    "word": "wies",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vladimir/wladimir",
+  "reading": "vlɑdiːmiːɾ",
+  "options": [
+   {
+    "word": "vladimir",
+    "gloss": ""
+   },
+   {
+    "word": "wladimir",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vo/who/wo",
+  "reading": "voː",
+  "options": [
+   {
+    "word": "vo",
+    "gloss": ""
+   },
+   {
+    "word": "who",
+    "gloss": ""
+   },
+   {
+    "word": "wo",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vogt/voigt",
+  "reading": "foːkt",
+  "options": [
+   {
+    "word": "vogt",
+    "gloss": ""
+   },
+   {
+    "word": "voigt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vol/wohl",
+  "reading": "voːl",
+  "options": [
+   {
+    "word": "vol",
+    "gloss": ""
+   },
+   {
+    "word": "wohl",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "volt/wollt",
+  "reading": "vɔlt",
+  "options": [
+   {
+    "word": "volt",
+    "gloss": ""
+   },
+   {
+    "word": "wollt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "vu/wu",
+  "reading": "vuː",
+  "options": [
+   {
+    "word": "vu",
+    "gloss": ""
+   },
+   {
+    "word": "wu",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wahre/ware",
+  "reading": "vɑːrə",
+  "options": [
+   {
+    "word": "wahre",
+    "gloss": ""
+   },
+   {
+    "word": "ware",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wahren/waren",
+  "reading": "vɑːrən",
+  "options": [
+   {
+    "word": "wahren",
+    "gloss": ""
+   },
+   {
+    "word": "waren",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wald/walt",
+  "reading": "valt",
+  "options": [
+   {
+    "word": "wald",
+    "gloss": ""
+   },
+   {
+    "word": "walt",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "walter/walther",
+  "reading": "valtɜ",
+  "options": [
+   {
+    "word": "walter",
+    "gloss": ""
+   },
+   {
+    "word": "walther",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wand/want",
+  "reading": "vant",
+  "options": [
+   {
+    "word": "wand",
+    "gloss": ""
+   },
+   {
+    "word": "want",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wat/what",
+  "reading": "vɑːt",
+  "options": [
+   {
+    "word": "wat",
+    "gloss": ""
+   },
+   {
+    "word": "what",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wayne/weine",
+  "reading": "vaɪnə",
+  "options": [
+   {
+    "word": "wayne",
+    "gloss": ""
+   },
+   {
+    "word": "weine",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wehr/wer",
+  "reading": "veːɾ",
+  "options": [
+   {
+    "word": "wehr",
+    "gloss": ""
+   },
+   {
+    "word": "wer",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wehrt/werd",
+  "reading": "veːɾt",
+  "options": [
+   {
+    "word": "wehrt",
+    "gloss": ""
+   },
+   {
+    "word": "werd",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "weis/weiss",
+  "reading": "vaɪs",
+  "options": [
+   {
+    "word": "weis",
+    "gloss": ""
+   },
+   {
+    "word": "weiss",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "weisst/weist",
+  "reading": "vaɪst",
+  "options": [
+   {
+    "word": "weisst",
+    "gloss": ""
+   },
+   {
+    "word": "weist",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wen/when",
+  "reading": "veːn",
+  "options": [
+   {
+    "word": "wen",
+    "gloss": ""
+   },
+   {
+    "word": "when",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wende/wände",
+  "reading": "vɛndə",
+  "options": [
+   {
+    "word": "wende",
+    "gloss": ""
+   },
+   {
+    "word": "wände",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wenden/wänden",
+  "reading": "vɛndən",
+  "options": [
+   {
+    "word": "wenden",
+    "gloss": ""
+   },
+   {
+    "word": "wänden",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "were/where",
+  "reading": "veːrə",
+  "options": [
+   {
+    "word": "were",
+    "gloss": ""
+   },
+   {
+    "word": "where",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "which/wich",
+  "reading": "vɪç",
+  "options": [
+   {
+    "word": "which",
+    "gloss": ""
+   },
+   {
+    "word": "wich",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wi/wie",
+  "reading": "viː",
+  "options": [
+   {
+    "word": "wi",
+    "gloss": ""
+   },
+   {
+    "word": "wie",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wider/wieder",
+  "reading": "viːdɜ",
+  "options": [
+   {
+    "word": "wider",
+    "gloss": ""
+   },
+   {
+    "word": "wieder",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wien/win",
+  "reading": "viːn",
+  "options": [
+   {
+    "word": "wien",
+    "gloss": ""
+   },
+   {
+    "word": "win",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "willi/willy",
+  "reading": "vɪliː",
+  "options": [
+   {
+    "word": "willi",
+    "gloss": ""
+   },
+   {
+    "word": "willy",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wird/wirt/wirth",
+  "reading": "vɪɾt",
+  "options": [
+   {
+    "word": "wird",
+    "gloss": ""
+   },
+   {
+    "word": "wirt",
+    "gloss": ""
+   },
+   {
+    "word": "wirth",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wolf/wolff",
+  "reading": "vɔlf",
+  "options": [
+   {
+    "word": "wolf",
+    "gloss": ""
+   },
+   {
+    "word": "wolff",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wüsste/wüste",
+  "reading": "vʏstə",
+  "options": [
+   {
+    "word": "wüsste",
+    "gloss": ""
+   },
+   {
+    "word": "wüste",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "wüssten/wüsten",
+  "reading": "vʏstən",
+  "options": [
+   {
+    "word": "wüssten",
+    "gloss": ""
+   },
+   {
+    "word": "wüsten",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "ze/zeh",
+  "reading": "tseː",
+  "options": [
+   {
+    "word": "ze",
+    "gloss": ""
+   },
+   {
+    "word": "zeh",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "zehn/zen",
+  "reading": "tseːn",
+  "options": [
+   {
+    "word": "zehn",
+    "gloss": ""
+   },
+   {
+    "word": "zen",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ }
+]

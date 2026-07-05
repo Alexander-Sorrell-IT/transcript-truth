@@ -1,0 +1,2294 @@
+[
+ {
+  "key": "가구/가꾸",
+  "reading": "ɡɐqu",
+  "options": [
+   {
+    "word": "가구",
+    "gloss": ""
+   },
+   {
+    "word": "가꾸",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "가만/감안",
+  "reading": "ɡɐmɐn",
+  "options": [
+   {
+    "word": "가만",
+    "gloss": ""
+   },
+   {
+    "word": "감안",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "갈게/갈께",
+  "reading": "ɡɐɫqe",
+  "options": [
+   {
+    "word": "갈게",
+    "gloss": ""
+   },
+   {
+    "word": "갈께",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "갈게요/갈께요",
+  "reading": "ɡɐɫqejo",
+  "options": [
+   {
+    "word": "갈게요",
+    "gloss": ""
+   },
+   {
+    "word": "갈께요",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "감사/감싸",
+  "reading": "ɡɐmsɐ",
+  "options": [
+   {
+    "word": "감사",
+    "gloss": ""
+   },
+   {
+    "word": "감싸",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "거리/걸이",
+  "reading": "ɡʌɾi",
+  "options": [
+   {
+    "word": "거리",
+    "gloss": ""
+   },
+   {
+    "word": "걸이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "괴도/궤도",
+  "reading": "ɡwedo",
+  "options": [
+   {
+    "word": "괴도",
+    "gloss": ""
+   },
+   {
+    "word": "궤도",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "구경/국영",
+  "reading": "ɡuqjʌŋ",
+  "options": [
+   {
+    "word": "구경",
+    "gloss": ""
+   },
+   {
+    "word": "국영",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "구지/굳이",
+  "reading": "ɡudʑi",
+  "options": [
+   {
+    "word": "구지",
+    "gloss": ""
+   },
+   {
+    "word": "굳이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "기리/길이",
+  "reading": "ɡiɾi",
+  "options": [
+   {
+    "word": "기리",
+    "gloss": ""
+   },
+   {
+    "word": "길이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "기피/깊이",
+  "reading": "ɡiphi",
+  "options": [
+   {
+    "word": "기피",
+    "gloss": ""
+   },
+   {
+    "word": "깊이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "나미/남이",
+  "reading": "nɐmi",
+  "options": [
+   {
+    "word": "나미",
+    "gloss": ""
+   },
+   {
+    "word": "남이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "나섰/났었",
+  "reading": "nɐsʌt",
+  "options": [
+   {
+    "word": "나섰",
+    "gloss": ""
+   },
+   {
+    "word": "났었",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "노기/녹이",
+  "reading": "noqi",
+  "options": [
+   {
+    "word": "노기",
+    "gloss": ""
+   },
+   {
+    "word": "녹이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "노리/놀이",
+  "reading": "noɾi",
+  "options": [
+   {
+    "word": "노리",
+    "gloss": ""
+   },
+   {
+    "word": "놀이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "노인/놓인",
+  "reading": "noin",
+  "options": [
+   {
+    "word": "노인",
+    "gloss": ""
+   },
+   {
+    "word": "놓인",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "다닐/단일",
+  "reading": "dɐniɫ",
+  "options": [
+   {
+    "word": "다닐",
+    "gloss": ""
+   },
+   {
+    "word": "단일",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "데스/데쓰",
+  "reading": "desɯ",
+  "options": [
+   {
+    "word": "데스",
+    "gloss": ""
+   },
+   {
+    "word": "데쓰",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "도라/돌아",
+  "reading": "doɾɐ",
+  "options": [
+   {
+    "word": "도라",
+    "gloss": ""
+   },
+   {
+    "word": "돌아",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "도련/돌연",
+  "reading": "doɾjʌn",
+  "options": [
+   {
+    "word": "도련",
+    "gloss": ""
+   },
+   {
+    "word": "돌연",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "도립/돌입",
+  "reading": "doɾip",
+  "options": [
+   {
+    "word": "도립",
+    "gloss": ""
+   },
+   {
+    "word": "돌입",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "드려/들여",
+  "reading": "dɯɾjʌ",
+  "options": [
+   {
+    "word": "드려",
+    "gloss": ""
+   },
+   {
+    "word": "들여",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "드려서/들여서",
+  "reading": "dɯɾjʌsʌ",
+  "options": [
+   {
+    "word": "드려서",
+    "gloss": ""
+   },
+   {
+    "word": "들여서",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "드렸/들였",
+  "reading": "dɯɾjʌt",
+  "options": [
+   {
+    "word": "드렸",
+    "gloss": ""
+   },
+   {
+    "word": "들였",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "드린/들인",
+  "reading": "dɯɾin",
+  "options": [
+   {
+    "word": "드린",
+    "gloss": ""
+   },
+   {
+    "word": "들인",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "드릴/들일",
+  "reading": "dɯɾiɫ",
+  "options": [
+   {
+    "word": "드릴",
+    "gloss": ""
+   },
+   {
+    "word": "들일",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "드릴게요/드릴께요",
+  "reading": "dɯɾiɫqejo",
+  "options": [
+   {
+    "word": "드릴게요",
+    "gloss": ""
+   },
+   {
+    "word": "드릴께요",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "로서/로써",
+  "reading": "ɾosʌ",
+  "options": [
+   {
+    "word": "로서",
+    "gloss": ""
+   },
+   {
+    "word": "로써",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "마니/많이",
+  "reading": "mɐni",
+  "options": [
+   {
+    "word": "마니",
+    "gloss": ""
+   },
+   {
+    "word": "많이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "마키/막히",
+  "reading": "mɐkhi",
+  "options": [
+   {
+    "word": "마키",
+    "gloss": ""
+   },
+   {
+    "word": "막히",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "마티/맞히",
+  "reading": "mɐthi",
+  "options": [
+   {
+    "word": "마티",
+    "gloss": ""
+   },
+   {
+    "word": "맞히",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "마틴/맞힌",
+  "reading": "mɐthin",
+  "options": [
+   {
+    "word": "마틴",
+    "gloss": ""
+   },
+   {
+    "word": "맞힌",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "만나/맛나",
+  "reading": "mɐnnɐ",
+  "options": [
+   {
+    "word": "만나",
+    "gloss": ""
+   },
+   {
+    "word": "맛나",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "만난/맛난",
+  "reading": "mɐnnɐn",
+  "options": [
+   {
+    "word": "만난",
+    "gloss": ""
+   },
+   {
+    "word": "맛난",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "모리/몰이",
+  "reading": "moɾi",
+  "options": [
+   {
+    "word": "모리",
+    "gloss": ""
+   },
+   {
+    "word": "몰이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "모시/모씨",
+  "reading": "mosi",
+  "options": [
+   {
+    "word": "모시",
+    "gloss": ""
+   },
+   {
+    "word": "모씨",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "무늬/문의",
+  "reading": "munɯj",
+  "options": [
+   {
+    "word": "무늬",
+    "gloss": ""
+   },
+   {
+    "word": "문의",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "미나/민아",
+  "reading": "minɐ",
+  "options": [
+   {
+    "word": "미나",
+    "gloss": ""
+   },
+   {
+    "word": "민아",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "미스/미쓰",
+  "reading": "misɯ",
+  "options": [
+   {
+    "word": "미스",
+    "gloss": ""
+   },
+   {
+    "word": "미쓰",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "바라/발아",
+  "reading": "pɐɾɐ",
+  "options": [
+   {
+    "word": "바라",
+    "gloss": ""
+   },
+   {
+    "word": "발아",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "바람/발암",
+  "reading": "pɐɾɐm",
+  "options": [
+   {
+    "word": "바람",
+    "gloss": ""
+   },
+   {
+    "word": "발암",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "바르/빠르",
+  "reading": "pɐɾɯ",
+  "options": [
+   {
+    "word": "바르",
+    "gloss": ""
+   },
+   {
+    "word": "빠르",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "바른/빠른",
+  "reading": "pɐɾɯn",
+  "options": [
+   {
+    "word": "바른",
+    "gloss": ""
+   },
+   {
+    "word": "빠른",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "바를/빠를",
+  "reading": "pɐɾɯɫ",
+  "options": [
+   {
+    "word": "바를",
+    "gloss": ""
+   },
+   {
+    "word": "빠를",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "바이/빠이",
+  "reading": "pɐi",
+  "options": [
+   {
+    "word": "바이",
+    "gloss": ""
+   },
+   {
+    "word": "빠이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "바카/박하",
+  "reading": "pɐkhɐ",
+  "options": [
+   {
+    "word": "바카",
+    "gloss": ""
+   },
+   {
+    "word": "박하",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "박혀/밝혀",
+  "reading": "pɐkhjʌ",
+  "options": [
+   {
+    "word": "박혀",
+    "gloss": ""
+   },
+   {
+    "word": "밝혀",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "박히/밝히",
+  "reading": "pɐkhi",
+  "options": [
+   {
+    "word": "박히",
+    "gloss": ""
+   },
+   {
+    "word": "밝히",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "박힌/밝힌",
+  "reading": "pɐkhin",
+  "options": [
+   {
+    "word": "박힌",
+    "gloss": ""
+   },
+   {
+    "word": "밝힌",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "반갑/반값",
+  "reading": "pɐnqɐp",
+  "options": [
+   {
+    "word": "반갑",
+    "gloss": ""
+   },
+   {
+    "word": "반값",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "발간/빨간",
+  "reading": "pɐɫqɐn",
+  "options": [
+   {
+    "word": "발간",
+    "gloss": ""
+   },
+   {
+    "word": "빨간",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "발라/빨라",
+  "reading": "pɐlɐ",
+  "options": [
+   {
+    "word": "발라",
+    "gloss": ""
+   },
+   {
+    "word": "빨라",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "발랐/빨랐",
+  "reading": "pɐlɐt",
+  "options": [
+   {
+    "word": "발랐",
+    "gloss": ""
+   },
+   {
+    "word": "빨랐",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "발리/빨리",
+  "reading": "pɐli",
+  "options": [
+   {
+    "word": "발리",
+    "gloss": ""
+   },
+   {
+    "word": "빨리",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "버려/벌여",
+  "reading": "pʌɾjʌ",
+  "options": [
+   {
+    "word": "버려",
+    "gloss": ""
+   },
+   {
+    "word": "벌여",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "버렸/벌였",
+  "reading": "pʌɾjʌt",
+  "options": [
+   {
+    "word": "버렸",
+    "gloss": ""
+   },
+   {
+    "word": "벌였",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "버리/벌이",
+  "reading": "pʌɾi",
+  "options": [
+   {
+    "word": "버리",
+    "gloss": ""
+   },
+   {
+    "word": "벌이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "버린/벌인",
+  "reading": "pʌɾin",
+  "options": [
+   {
+    "word": "버린",
+    "gloss": ""
+   },
+   {
+    "word": "벌인",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "버린다/벌인다",
+  "reading": "pʌɾindɐ",
+  "options": [
+   {
+    "word": "버린다",
+    "gloss": ""
+   },
+   {
+    "word": "벌인다",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "버릴/벌일",
+  "reading": "pʌɾiɫ",
+  "options": [
+   {
+    "word": "버릴",
+    "gloss": ""
+   },
+   {
+    "word": "벌일",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "부러/불어",
+  "reading": "puɾʌ",
+  "options": [
+   {
+    "word": "부러",
+    "gloss": ""
+   },
+   {
+    "word": "불어",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "부려/뿌려",
+  "reading": "puɾjʌ",
+  "options": [
+   {
+    "word": "부려",
+    "gloss": ""
+   },
+   {
+    "word": "뿌려",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "부렸/뿌렸",
+  "reading": "puɾjʌt",
+  "options": [
+   {
+    "word": "부렸",
+    "gloss": ""
+   },
+   {
+    "word": "뿌렸",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "부리/뿌리",
+  "reading": "puɾi",
+  "options": [
+   {
+    "word": "부리",
+    "gloss": ""
+   },
+   {
+    "word": "뿌리",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "부림/불임",
+  "reading": "puɾim",
+  "options": [
+   {
+    "word": "부림",
+    "gloss": ""
+   },
+   {
+    "word": "불임",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "불상/불쌍",
+  "reading": "puɫsɐŋ",
+  "options": [
+   {
+    "word": "불상",
+    "gloss": ""
+   },
+   {
+    "word": "불쌍",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "불시/불씨",
+  "reading": "puɫsi",
+  "options": [
+   {
+    "word": "불시",
+    "gloss": ""
+   },
+   {
+    "word": "불씨",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "비고/비꼬",
+  "reading": "piqo",
+  "options": [
+   {
+    "word": "비고",
+    "gloss": ""
+   },
+   {
+    "word": "비꼬",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "사냥/산양",
+  "reading": "sɐnjɐŋ",
+  "options": [
+   {
+    "word": "사냥",
+    "gloss": ""
+   },
+   {
+    "word": "산양",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "사울/싸울",
+  "reading": "sɐuɫ",
+  "options": [
+   {
+    "word": "사울",
+    "gloss": ""
+   },
+   {
+    "word": "싸울",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "사이/싸이/쌓이",
+  "reading": "sɐi",
+  "options": [
+   {
+    "word": "사이",
+    "gloss": ""
+   },
+   {
+    "word": "싸이",
+    "gloss": ""
+   },
+   {
+    "word": "쌓이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "사이코/싸이코",
+  "reading": "sɐikho",
+  "options": [
+   {
+    "word": "사이코",
+    "gloss": ""
+   },
+   {
+    "word": "싸이코",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "사이트/싸이트",
+  "reading": "sɐithɯ",
+  "options": [
+   {
+    "word": "사이트",
+    "gloss": ""
+   },
+   {
+    "word": "싸이트",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "사인/싸인/쌓인",
+  "reading": "sɐin",
+  "options": [
+   {
+    "word": "사인",
+    "gloss": ""
+   },
+   {
+    "word": "싸인",
+    "gloss": ""
+   },
+   {
+    "word": "쌓인",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "상용/쌍용",
+  "reading": "sɐŋjoŋ",
+  "options": [
+   {
+    "word": "상용",
+    "gloss": ""
+   },
+   {
+    "word": "쌍용",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "새기/새끼/색이",
+  "reading": "sɛqi",
+  "options": [
+   {
+    "word": "새기",
+    "gloss": ""
+   },
+   {
+    "word": "새끼",
+    "gloss": ""
+   },
+   {
+    "word": "색이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "새긴/색인",
+  "reading": "sɛqin",
+  "options": [
+   {
+    "word": "새긴",
+    "gloss": ""
+   },
+   {
+    "word": "색인",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "서도/써도",
+  "reading": "sʌdo",
+  "options": [
+   {
+    "word": "서도",
+    "gloss": ""
+   },
+   {
+    "word": "써도",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "서서/써서",
+  "reading": "sʌsʌ",
+  "options": [
+   {
+    "word": "서서",
+    "gloss": ""
+   },
+   {
+    "word": "써서",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "서요/써요",
+  "reading": "sʌjo",
+  "options": [
+   {
+    "word": "서요",
+    "gloss": ""
+   },
+   {
+    "word": "써요",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "섬머/썸머",
+  "reading": "sʌmmʌ",
+  "options": [
+   {
+    "word": "섬머",
+    "gloss": ""
+   },
+   {
+    "word": "썸머",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "성시/성씨",
+  "reading": "sʌŋsi",
+  "options": [
+   {
+    "word": "성시",
+    "gloss": ""
+   },
+   {
+    "word": "성씨",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "세기/세끼",
+  "reading": "seqi",
+  "options": [
+   {
+    "word": "세기",
+    "gloss": ""
+   },
+   {
+    "word": "세끼",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "수기/숙이",
+  "reading": "suqi",
+  "options": [
+   {
+    "word": "수기",
+    "gloss": ""
+   },
+   {
+    "word": "숙이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "수능/순응",
+  "reading": "sunɯŋ",
+  "options": [
+   {
+    "word": "수능",
+    "gloss": ""
+   },
+   {
+    "word": "순응",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "수만/수많",
+  "reading": "sumɐn",
+  "options": [
+   {
+    "word": "수만",
+    "gloss": ""
+   },
+   {
+    "word": "수많",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "스리/쓰리",
+  "reading": "sɯɾi",
+  "options": [
+   {
+    "word": "스리",
+    "gloss": ""
+   },
+   {
+    "word": "쓰리",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "슬슬/쓸쓸",
+  "reading": "sɯɫsɯɫ",
+  "options": [
+   {
+    "word": "슬슬",
+    "gloss": ""
+   },
+   {
+    "word": "쓸쓸",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "습니다/씁니다",
+  "reading": "sɯpnidɐ",
+  "options": [
+   {
+    "word": "습니다",
+    "gloss": ""
+   },
+   {
+    "word": "씁니다",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시네/씨네",
+  "reading": "sine",
+  "options": [
+   {
+    "word": "시네",
+    "gloss": ""
+   },
+   {
+    "word": "씨네",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시드/씨드",
+  "reading": "sidɯ",
+  "options": [
+   {
+    "word": "시드",
+    "gloss": ""
+   },
+   {
+    "word": "씨드",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시럽/실업",
+  "reading": "siɾʌp",
+  "options": [
+   {
+    "word": "시럽",
+    "gloss": ""
+   },
+   {
+    "word": "실업",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시련/실연",
+  "reading": "siɾjʌn",
+  "options": [
+   {
+    "word": "시련",
+    "gloss": ""
+   },
+   {
+    "word": "실연",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시모/심오",
+  "reading": "simo",
+  "options": [
+   {
+    "word": "시모",
+    "gloss": ""
+   },
+   {
+    "word": "심오",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시발/씨발",
+  "reading": "sibɐɫ",
+  "options": [
+   {
+    "word": "시발",
+    "gloss": ""
+   },
+   {
+    "word": "씨발",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시방/씨방",
+  "reading": "sibɐŋ",
+  "options": [
+   {
+    "word": "시방",
+    "gloss": ""
+   },
+   {
+    "word": "씨방",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시알/씨알",
+  "reading": "siɐɫ",
+  "options": [
+   {
+    "word": "시알",
+    "gloss": ""
+   },
+   {
+    "word": "씨알",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시키/식히",
+  "reading": "sikhi",
+  "options": [
+   {
+    "word": "시키",
+    "gloss": ""
+   },
+   {
+    "word": "식히",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "시티/씨티",
+  "reading": "sithi",
+  "options": [
+   {
+    "word": "시티",
+    "gloss": ""
+   },
+   {
+    "word": "씨티",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "싱크/씽크",
+  "reading": "siŋkhɯ",
+  "options": [
+   {
+    "word": "싱크",
+    "gloss": ""
+   },
+   {
+    "word": "씽크",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "아가/아까",
+  "reading": "ɐqɐ",
+  "options": [
+   {
+    "word": "아가",
+    "gloss": ""
+   },
+   {
+    "word": "아까",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "아기/아끼",
+  "reading": "ɐqi",
+  "options": [
+   {
+    "word": "아기",
+    "gloss": ""
+   },
+   {
+    "word": "아끼",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "아닐/안일",
+  "reading": "ɐniɫ",
+  "options": [
+   {
+    "word": "아닐",
+    "gloss": ""
+   },
+   {
+    "word": "안일",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "아물/암울",
+  "reading": "ɐmuɫ",
+  "options": [
+   {
+    "word": "아물",
+    "gloss": ""
+   },
+   {
+    "word": "암울",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "아사/아싸",
+  "reading": "ɐsɐ",
+  "options": [
+   {
+    "word": "아사",
+    "gloss": ""
+   },
+   {
+    "word": "아싸",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "아시/아씨",
+  "reading": "ɐsi",
+  "options": [
+   {
+    "word": "아시",
+    "gloss": ""
+   },
+   {
+    "word": "아씨",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "아카/악하",
+  "reading": "ɐkhɐ",
+  "options": [
+   {
+    "word": "아카",
+    "gloss": ""
+   },
+   {
+    "word": "악하",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "어쨋든/어쨌든",
+  "reading": "ʌtɕɛttɯn",
+  "options": [
+   {
+    "word": "어쨋든",
+    "gloss": ""
+   },
+   {
+    "word": "어쨌든",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "여섯/였었",
+  "reading": "jʌsʌt",
+  "options": [
+   {
+    "word": "여섯",
+    "gloss": ""
+   },
+   {
+    "word": "였었",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "올게/올께",
+  "reading": "oɫqe",
+  "options": [
+   {
+    "word": "올게",
+    "gloss": ""
+   },
+   {
+    "word": "올께",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "유가/육아",
+  "reading": "juqɐ",
+  "options": [
+   {
+    "word": "유가",
+    "gloss": ""
+   },
+   {
+    "word": "육아",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "유나/윤아",
+  "reading": "junɐ",
+  "options": [
+   {
+    "word": "유나",
+    "gloss": ""
+   },
+   {
+    "word": "윤아",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "으로서/으로써",
+  "reading": "ɯɾosʌ",
+  "options": [
+   {
+    "word": "으로서",
+    "gloss": ""
+   },
+   {
+    "word": "으로써",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "이기/이끼",
+  "reading": "iqi",
+  "options": [
+   {
+    "word": "이기",
+    "gloss": ""
+   },
+   {
+    "word": "이끼",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "이너/인어",
+  "reading": "inʌ",
+  "options": [
+   {
+    "word": "이너",
+    "gloss": ""
+   },
+   {
+    "word": "인어",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "이러/일어",
+  "reading": "iɾʌ",
+  "options": [
+   {
+    "word": "이러",
+    "gloss": ""
+   },
+   {
+    "word": "일어",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "일가/일까",
+  "reading": "iɫqɐ",
+  "options": [
+   {
+    "word": "일가",
+    "gloss": ""
+   },
+   {
+    "word": "일까",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "자구/자꾸",
+  "reading": "tɕɐqu",
+  "options": [
+   {
+    "word": "자구",
+    "gloss": ""
+   },
+   {
+    "word": "자꾸",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "자긴/작인",
+  "reading": "tɕɐqin",
+  "options": [
+   {
+    "word": "자긴",
+    "gloss": ""
+   },
+   {
+    "word": "작인",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "자나/잖아",
+  "reading": "tɕɐnɐ",
+  "options": [
+   {
+    "word": "자나",
+    "gloss": ""
+   },
+   {
+    "word": "잖아",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "자녀/잔여",
+  "reading": "tɕɐnjʌ",
+  "options": [
+   {
+    "word": "자녀",
+    "gloss": ""
+   },
+   {
+    "word": "잔여",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "자리/짜리",
+  "reading": "tɕɐɾi",
+  "options": [
+   {
+    "word": "자리",
+    "gloss": ""
+   },
+   {
+    "word": "짜리",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "자식/짜식",
+  "reading": "tɕɐsiq",
+  "options": [
+   {
+    "word": "자식",
+    "gloss": ""
+   },
+   {
+    "word": "짜식",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "자필/잡힐",
+  "reading": "tɕɐphiɫ",
+  "options": [
+   {
+    "word": "자필",
+    "gloss": ""
+   },
+   {
+    "word": "잡힐",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "잘리/짤리",
+  "reading": "tɕɐli",
+  "options": [
+   {
+    "word": "잘리",
+    "gloss": ""
+   },
+   {
+    "word": "짤리",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "장구/짱구",
+  "reading": "tɕɐŋqu",
+  "options": [
+   {
+    "word": "장구",
+    "gloss": ""
+   },
+   {
+    "word": "짱구",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "저녁/전역",
+  "reading": "tɕʌnjʌq",
+  "options": [
+   {
+    "word": "저녁",
+    "gloss": ""
+   },
+   {
+    "word": "전역",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "조개/쪼개",
+  "reading": "tɕoqɛ",
+  "options": [
+   {
+    "word": "조개",
+    "gloss": ""
+   },
+   {
+    "word": "쪼개",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "조기/조끼",
+  "reading": "tɕoqi",
+  "options": [
+   {
+    "word": "조기",
+    "gloss": ""
+   },
+   {
+    "word": "조끼",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "존나/좆나",
+  "reading": "tɕonnɐ",
+  "options": [
+   {
+    "word": "존나",
+    "gloss": ""
+   },
+   {
+    "word": "좆나",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "주니/준이",
+  "reading": "tɕuni",
+  "options": [
+   {
+    "word": "주니",
+    "gloss": ""
+   },
+   {
+    "word": "준이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "주려/줄여",
+  "reading": "tɕuɾjʌ",
+  "options": [
+   {
+    "word": "주려",
+    "gloss": ""
+   },
+   {
+    "word": "줄여",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지경/직영",
+  "reading": "tɕiqjʌŋ",
+  "options": [
+   {
+    "word": "지경",
+    "gloss": ""
+   },
+   {
+    "word": "직영",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지나/진아",
+  "reading": "tɕinɐ",
+  "options": [
+   {
+    "word": "지나",
+    "gloss": ""
+   },
+   {
+    "word": "진아",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지난/진안",
+  "reading": "tɕinɐn",
+  "options": [
+   {
+    "word": "지난",
+    "gloss": ""
+   },
+   {
+    "word": "진안",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지니/진이",
+  "reading": "tɕini",
+  "options": [
+   {
+    "word": "지니",
+    "gloss": ""
+   },
+   {
+    "word": "진이",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지르/찌르",
+  "reading": "tɕiɾɯ",
+  "options": [
+   {
+    "word": "지르",
+    "gloss": ""
+   },
+   {
+    "word": "찌르",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지른/찌른",
+  "reading": "tɕiɾɯn",
+  "options": [
+   {
+    "word": "지른",
+    "gloss": ""
+   },
+   {
+    "word": "찌른",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지질/찌질",
+  "reading": "tɕidʑiɫ",
+  "options": [
+   {
+    "word": "지질",
+    "gloss": ""
+   },
+   {
+    "word": "찌질",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지켜/찍혀",
+  "reading": "tɕikhjʌ",
+  "options": [
+   {
+    "word": "지켜",
+    "gloss": ""
+   },
+   {
+    "word": "찍혀",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지켰/찍혔",
+  "reading": "tɕikhjʌt",
+  "options": [
+   {
+    "word": "지켰",
+    "gloss": ""
+   },
+   {
+    "word": "찍혔",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지키/찍히",
+  "reading": "tɕikhi",
+  "options": [
+   {
+    "word": "지키",
+    "gloss": ""
+   },
+   {
+    "word": "찍히",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "지킨/찍힌",
+  "reading": "tɕikhin",
+  "options": [
+   {
+    "word": "지킨",
+    "gloss": ""
+   },
+   {
+    "word": "찍힌",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "질러/찔러",
+  "reading": "tɕilʌ",
+  "options": [
+   {
+    "word": "질러",
+    "gloss": ""
+   },
+   {
+    "word": "찔러",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "질렀/찔렀",
+  "reading": "tɕilʌt",
+  "options": [
+   {
+    "word": "질렀",
+    "gloss": ""
+   },
+   {
+    "word": "찔렀",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "질려/찔려",
+  "reading": "tɕiljʌ",
+  "options": [
+   {
+    "word": "질려",
+    "gloss": ""
+   },
+   {
+    "word": "찔려",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "집집/찝찝",
+  "reading": "tɕiptɕip",
+  "options": [
+   {
+    "word": "집집",
+    "gloss": ""
+   },
+   {
+    "word": "찝찝",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "차고/착오",
+  "reading": "tʃhɐqo",
+  "options": [
+   {
+    "word": "차고",
+    "gloss": ""
+   },
+   {
+    "word": "착오",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "최장/췌장",
+  "reading": "tʃhwedʑɐŋ",
+  "options": [
+   {
+    "word": "최장",
+    "gloss": ""
+   },
+   {
+    "word": "췌장",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "토기/토끼",
+  "reading": "thoqi",
+  "options": [
+   {
+    "word": "토기",
+    "gloss": ""
+   },
+   {
+    "word": "토끼",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "포구/폭우",
+  "reading": "phoqu",
+  "options": [
+   {
+    "word": "포구",
+    "gloss": ""
+   },
+   {
+    "word": "폭우",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ },
+ {
+  "key": "할게요/할께요",
+  "reading": "hɐɫqejo",
+  "options": [
+   {
+    "word": "할게요",
+    "gloss": ""
+   },
+   {
+    "word": "할께요",
+    "gloss": ""
+   }
+  ],
+  "note": "same espeak-ng pronunciation — ASR homophone trap (auto-derived)"
+ }
+]
