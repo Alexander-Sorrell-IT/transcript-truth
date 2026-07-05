@@ -22,6 +22,24 @@
 - **Still BEHIND:** tr (vote drops 'Nguyen'; deepgram is the lone good witness — needs per-language
   reliability weighting) and ar (ALL 4 witnesses bad 0.31-0.44 — needs a better Arabic roster).
 
+## Gap-close round 4 (2026-07-05) — Arabic witness, GitHub LIVE, 84-clip verified map
+- **XLSR-arabic wired** (acoustic2 generalized per-language; tashkeel stripped — raw output is fully
+  diacritized and scored WER 2.6-3.8 on formatting alone; stripped = 0.25 on clip-a, better than
+  every cloud witness there). ar roster now 6 witnesses / 5 independent families.
+- **REPO IS PUBLIC + update system LIVE:** github.com/Alexander-Sorrell-IT/transcript-truth
+  (origin; old thoth remote preserved as 'thoth'). `--update` verifies clean against it.
+- **Battery = 84 clips (7/lang × 12).** A label-corruption incident (incremental runner guessed
+  legacy clip names from glob order while the battery grew) was caught, repaired from git history,
+  and PROVEN clean: integrity sweep recomputes every row's per-model WER from stored reads vs its
+  labeled ref — only 1 corrupt row survived repair, rerun. Runner now refuses unlabeled/inconsistent rows.
+- **HONEST FINAL MAP (63/84 WIN/tie, re-scored with the full current stack):**
+  ko 7/7, uk 7/7 (con BEATS best .116/.142), vi 7/7 (BEATS .101/.109), fr 6/7, pt 6/7, ru 6/7,
+  de 5/7 (mean parity .077/.076), es 5/7, ja 5/7, hi 4/7, tr 4/7 (.301/.215), ar 1/7 (.364/.287).
+  The bigger battery is a truer, harder ruler than the old 4-clip view (which read 87%).
+- **Remaining real gaps:** ar (all witnesses 0.25-0.5 — model ceiling), tr + es (vote merges errors
+  on hard clips; per-lang reliability now measured on 7 clips — next lever is reliability-weighted
+  family votes in _decide_word, test offline vs these cached reads). Suite 346 green.
+
 ## Gap-close round 3 (2026-07-05, commit a947fcc) — idiom + trap-set cells for EVERYONE
 - **Idiom/colloquial cells built for all 13 non-JA languages** (`bench/build_colloquial_multilang.py`,
   source kaikki.org = machine-readable Wiktionary, same authority class as JMdict; glosses + tags):
