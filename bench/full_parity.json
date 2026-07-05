@@ -1,122 +1,5 @@
 [
  {
-  "lang": "ar",
-  "consensus": 0.312,
-  "best_single": 0.25,
-  "best_model": "whisper",
-  "wins": false,
-  "wer_by_model": {
-   "deepgram": 0.375,
-   "scribe": 0.375,
-   "gemini": 0.312,
-   "hf": 0.312,
-   "whisper": 0.25,
-   "seamless": 0.375
-  },
-  "reads": {
-   "deepgram": "أرسل طبيب نجوم سبعة وأربعين ألف يورو لا حسابك غيسو في مارسيليا في الثالث من مارس",
-   "scribe": "أرسل الطبيب لجوين 47 ألف يورو لا حساب، كاغيث في مارسيليا في الثالث من مارس.",
-   "gemini": "أرسل الطبيب نجيب سبعة وأربعين ألف يورو لحساب كغيسو في مارسيليا في الثالث من مارس",
-   "hf": "أرسل طبيب نجوين 47 ألف يورو لا حساب كاغيسو في مارسيليا في الثالث من مارس",
-   "whisper": "أرسل طبيب نجوين 47 ألف يورو لا حساب كاغيسو في مرسيليا في الثالث من مارس",
-   "seamless": "أرسل طبيب نجومين 47 ألف يورو لا حساب كاغيزو في مرسيليا في الثالث من مارس"
-  }
- },
- {
-  "lang": "ar",
-  "consensus": 0.471,
-  "best_single": 0.471,
-  "best_model": "deepgram",
-  "wins": true,
-  "wer_by_model": {
-   "deepgram": 0.471,
-   "scribe": 0.471,
-   "gemini": 0.471,
-   "hf": 0.471,
-   "whisper": 0.471,
-   "seamless": 0.529
-  },
-  "reads": {
-   "deepgram": "البروفيسور أو كونكوفني عشر ألف دولار إلى مؤسسة بيرغستور روما فيلياو بليانر في التاسع من يوليو",
-   "scribe": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروست روما فيليوبيلاتا في التاسع من يوليو.",
-   "gemini": "تحول البروفيسور أوتونيكو 12 ألف دولار إلى مؤسسة بيروبستومما في ال 9 من يوليو.",
-   "hf": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروغستروم في اليوم ليانر في التاسع من يوليو",
-   "whisper": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروغستروم في اليوم ليانر في التاسع من يوليو",
-   "seamless": "حول البروفيسور أوتومكو 12 ألف دولار إلى مؤسسة بيروغستر روما في ليوبليانرا في 9 يوليو."
-  }
- },
- {
-  "lang": "ar",
-  "consensus": 0.333,
-  "best_single": 0.333,
-  "best_model": "deepgram",
-  "wins": true,
-  "wer_by_model": {
-   "deepgram": 0.333,
-   "scribe": 0.4,
-   "gemini": 0.467,
-   "hf": 0.667,
-   "whisper": 0.667,
-   "seamless": 0.467
-  },
-  "reads": {
-   "deepgram": "حجزت الآنسة تاكاهاشي 23 غرفة في فندق مراكش لو فدناكامورا في الخامس من يونيو",
-   "scribe": "حجزت الأنسة تاكاهاشي 23 غرفة في فندق مراكش لوفدن كامورا في الخامس من يونيو.",
-   "gemini": "حجزت الانسه تاكاهاشي 23 غرفة في فندق مراكش لو فدنا كامورا في الخامس من يونيو.",
-   "hf": "حجزت الآن ستوتا كهاشي 23 غرفة في كندق مراكش لو فدنا كمورا في الخامس من يونيو",
-   "whisper": "حجزت الآن ستوتا كهاشي 23 غرفة في كندق مراكش لو فدنا كمورا في الخامس من يونيو",
-   "seamless": "حجزت الآنسة توتاكاهاشي 23 غرفة في فندق مراكش لوفاد ناكامورا في 5 يونيو"
-  }
- },
- {
-  "lang": "ar",
-  "consensus": 0.062,
-  "best_single": 0.125,
-  "best_model": "scribe",
-  "wins": true,
-  "wer_by_model": {
-   "deepgram": 0.375,
-   "scribe": 0.125,
-   "gemini": 0.125,
-   "hf": 0.25,
-   "whisper": 0.25,
-   "seamless": 0.312
-  },
-  "reads": {
-   "deepgram": "أرسل السيد فرنان داز ثمانمائة صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسكا في الأول من إييترال.",
-   "scribe": "أرسل السيد فرناندز 800 صندوق من فالبارايسو إلى مستودع كوفالسكي في غدانسك في الأول من أيتار.",
-   "gemini": "أرسل السيد فرنانديز 800 صندوق من فالبرايسو إلى مستودع كوفالسكي في غدانسك في الأول من أغسطس",
-   "hf": "أرسل السيد فرناندز 800 صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسك في الأول من أياترل.",
-   "whisper": "أرسل السيد فرناندز 800 صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسك في الأول من أياترل.",
-   "seamless": "أرسل السيد فرنانديز 800 صندوق من فئ البارايسو إلى مستودع كوفالسيكي في غدانيسكا في الأول من إيتريل"
-  }
- },
- {
-  "lang": "de",
-  "consensus": 0.067,
-  "best_single": 0.067,
-  "best_model": "scribe",
-  "wins": true,
-  "wer_by_model": {
-   "deepgram": 0.133,
-   "scribe": 0.067,
-   "hf": 0.2,
-   "gemini": 0.133,
-   "whisper": 0.2,
-   "mms": 0.2,
-   "seamless": 0.267
-  },
-  "reads": {
-   "deepgram": "Doktor Noien sandte 47000 Euro an das Konto von in München am dritten März.",
-   "scribe": "Doktor Nguyen sandte siebenundvierzigtausend Euro an das Konto von Kagiso in München am dritten März. (Musik)",
-   "hf": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
-   "gemini": "Doktor Nuyen sandte 47.000 Euro an das Konto von Kagiso in München am 3. März.",
-   "whisper": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
-   "mms": "doktor nujen sandte siebenundvierzig nauleld euro an das konto von kagiso in münchen am dritten märz",
-   "seamless": "Dr. Noyen sandte 47.000 Euro an das Konto von KGISO in München am 3. März."
-  }
- },
- {
   "lang": "de",
   "consensus": 0.071,
   "best_single": 0.071,
@@ -139,7 +22,8 @@
    "whisper": "Professor Okonkwo überwies 12.000 Dollar an die Bergström Stiftung in Ljubljana am 9. Juli.",
    "mms": "professor okongwo überwies zwölfnaulld dollar an die bergströmstiftung in liobliana am un juli",
    "seamless": "Professor Okonkwo überwies 12.000 Dollar an die Bergström-Stiftung in Ljubljana am 9. Juli."
-  }
+  },
+  "clip": "fp_deb.json"
  },
  {
   "lang": "de",
@@ -158,7 +42,8 @@
    "scribe": "Fräulein Takahashi buchte 23 Zimmer im Hotel in Marrakesch für die Nakamura Delegation am fünften Juni.",
    "hf": "Fräulein Takahashi buchte 23 Zimmer im Hotel in Marrakesch für die Nakamura-Delegation am 5. Juni.",
    "gemini": "Fräulein Takahashi buchte 23 Zimmer im Hotel in Marrakesch für die Nakamura Delegation am 5. Juni."
-  }
+  },
+  "clip": "fp_dec.json"
  },
  {
   "lang": "de",
@@ -183,7 +68,8 @@
    "whisper": "Herr Fernandes verschickte 800 Kisten von Valparaiso zum Kowalski-Lager in Danzig am 1. April.",
    "mms": "herr fernandes verschickte achthundert kisten von waldpareiso zum kowalstilager in danzig am april",
    "seamless": "Herr Fernandez verschickte 800 Kisten von Walpareiso zum Kovalski Lager in Danzig am 1. April."
-  }
+  },
+  "clip": "fp_ded.json"
  },
  {
   "lang": "es",
@@ -208,7 +94,8 @@
    "whisper": "La doctora Wen envió 47.000 euros a la cuenta de Caciso en Guadalajara el 3 de marzo.",
    "mms": "la doctora gwen envió cuarenta y siete mero euros a la cuenta de caciso en guadalanjara al tres de mar zo",
    "seamless": "La Dra. Wen envió 47 mil euros a la cuenta de Caciso en Guadalajara el 3 de marzo."
-  }
+  },
+  "clip": "fp_es.json"
  },
  {
   "lang": "es",
@@ -233,7 +120,8 @@
    "whisper": "El profesor Okoko transfirió 12.000 dólares a la Fundación Bergstrom en Ljubljana el 9 de julio.",
    "mms": "el profesor okoto transfirió doce cero dólares a la fundación beelkstrom en lubliana el nueve de  julio",
    "seamless": "El profesor Otoko transfirió doce mil dólares a la Fundación Berxtrom en Ljubljana el 9 de julio."
-  }
+  },
+  "clip": "fp_esb.json"
  },
  {
   "lang": "es",
@@ -252,7 +140,8 @@
    "scribe": "La señorita Takazaki reservó veintitrés habitaciones en el hotel de Marrakech para la delegación Nakamura el cinco de junio. (Pausa de dos segundos)",
    "hf": "La señorita Takazaki reservó 23 habitaciones en el hotel de Marrakech para la delegación Nakamura el 5 de junio.",
    "gemini": "La señorita Takazaki reservó 23 habitaciones en el Hotel de Marrakech para la delegación Nakamura el 5 de junio."
-  }
+  },
+  "clip": "fp_esc.json"
  },
  {
   "lang": "es",
@@ -277,7 +166,8 @@
    "whisper": "El señor Fernández envió 800 cajas desde Valparaíso al almacén Cobalt Stiendansk el 1 de abril.",
    "mms": "el señor fernández envió ochocientas cajas desde valparaíso al almacen cobalstindansue el iero de abril",
    "seamless": "El señor Fernández envió 800 cajas desde Valparaíso al almacén Kovalsky en Danske el 1 de abril."
-  }
+  },
+  "clip": "fp_esd.json"
  },
  {
   "lang": "fr",
@@ -302,7 +192,8 @@
    "whisper": "Le Dr Nguyen a envoyé 47 000 euros vers le comte de Cagiso à Marseille le 3 mars.",
    "mms": "le docteur nugian a envoyé quarante-sept millo euros vers le compte de kagizo à marseille le mars",
    "seamless": "Le docteur Nguyen a envoyé 47 000 euros vers le compte de Cagiso à Marseille le 3 mars."
-  }
+  },
+  "clip": "fp_fr.json"
  },
  {
   "lang": "fr",
@@ -327,7 +218,8 @@
    "whisper": "Le professeur Okonkwo a transféré 12 000 $ à la fondation Bergstrom à Ljubljana le 9 juillet.",
    "mms": "le professeur reconcuant a transféré douze mille dollars à la fondation berkstrom à lubliana le juillet",
    "seamless": "Le professeur Okonkwo a transféré 12 000 dollars à la Fondation Bergstrom à Ljubljana le 9 juillet."
-  }
+  },
+  "clip": "fp_frb.json"
  },
  {
   "lang": "fr",
@@ -346,7 +238,8 @@
    "scribe": "Mademoiselle Takahashi a réservé vingt-trois chambres à l'hôtel de Marrakech pour la délégation Nakamura le 5 juin.",
    "hf": "Mademoiselle Takahashi a réservé 23 chambres à l'hôtel de Marrakech pour la délégation Nakamura le 5 juin.",
    "gemini": "Mademoiselle Takahashi a réservé 23 chambres à l'hôtel de Marrakech pour la délégation Nakamura le 5 juillet"
-  }
+  },
+  "clip": "fp_frc.json"
  },
  {
   "lang": "fr",
@@ -371,7 +264,8 @@
    "whisper": "Monsieur Fernandez a expédié 800 caisses de Valparaiso à l'entrepôt Kowalski à Gdansk le 1er avril.",
    "mms": "m fernandez a expédié huit cents caisses de valparezo à l'entrepôs kowalski à dansk le er avril",
    "seamless": "Monsieur Fernandez a expédié 800 caisses de Valparaiso à l'entrepôt Kowalski à Gdansk le 1er avril."
-  }
+  },
+  "clip": "fp_frd.json"
  },
  {
   "lang": "hi",
@@ -394,7 +288,8 @@
    "mms": "डॉक्टर नगुएन ने मार्जसेले में काकिसों के खाते में सेंटालीस   हजार यूरोप तीन मार्ज को भेजे",
    "whisper": "डॉक्टर नगुएन ने मार्चफिले में कागिसों के खाते में 47,000 यूरोपीन मार्च को भेजे।",
    "seamless": "Dr. Nagoyan sent 47,000 euros to the account of the papers in Marseille in March."
-  }
+  },
+  "clip": "fp_hi.json"
  },
  {
   "lang": "hi",
@@ -417,7 +312,8 @@
    "mms": "प्रोफ़ेसर ओकुमप्रभों ने नौक जूलाई को ल्यूबलियाना के बर्गस्त्रॉं फाउंडेशन को बारेह  हजार डॉलर भेजे",
    "whisper": "प्रोफेसर ओ को उनकबोने 9 जुलाई को लुगलियाना के बर्गस्ट्रॉम फाउंडेशन को 12,000 डॉलर भेजे।",
    "seamless": "Professor Okonjo-Iweala sent 12,000 dollars to the Burgas Foundation in Ljubljana on July 9"
-  }
+  },
+  "clip": "fp_hib.json"
  },
  {
   "lang": "hi",
@@ -442,7 +338,8 @@
    "mms": "सुश्वी ताकाहाशी ने पांच जून को मराकेश के होतेल में नाकामुरा प्रतिनिद्धिमं्दल के लिए तेज़ कमरे बुत किए",
    "whisper": "सुश्री ताकाहाशी ने 5 जून को मराकेश के होटेल में नाकामुरा प्रतिनिधी मंदल के लिए 23 कमरे बुद किये।",
    "seamless": "Sushri Takahashi booked a new room for Nakamura on 5th June at a hotel in Marrakech."
-  }
+  },
+  "clip": "fp_hic.json"
  },
  {
   "lang": "hi",
@@ -465,7 +362,8 @@
    "mms": "श्री खरनानडेज़ ने एक  अप्रेल कोरवाल पर आईस0ं से गोडांस के कोरवालस की घोडाम को 800 बक्षे भेजे",
    "whisper": "श्रीप हर्नान्देज ने एक अप्रेल को वाल पर आईसो सिग्धान्स के कोरवाल्स की गोडाम को आज सो बक्षे धेजे।",
    "seamless": "Mr. Fernandez sent 800 boxes to the warehouse of Kurwal from Walparais on 1st April"
-  }
+  },
+  "clip": "fp_hid.json"
  },
  {
   "lang": "ja",
@@ -488,7 +386,8 @@
    "hf": "ウェンニ氏はレイキャビクのカギソの口座に47,000ユーロを3月3日に送金しました。",
    "whisper": "ウェニ氏は、レイキャビクのカギソの口座に47,000ユーロを3月3日に送金しました。",
    "wav2vec2": "道師が生の下の小座に去南で夏線入戸を三ダツに日に上産しました"
-  }
+  },
+  "clip": "fp_ja.json"
  },
  {
   "lang": "ja",
@@ -511,7 +410,8 @@
    "hf": "オポンキト教授は7月9日にリューブラナのベルグストロム財団に1万2000ドルを送金しました。",
    "whisper": "オポンピト教授は7月9日にリューブラナのベルグストロム財団に1万2千ドルを送金しました。",
    "wav2vec2": "供礎王授が月<unk>館に遊ーズヤなのデルヴストロムサイ山務に１万にセンドルを動禁しました"
-  }
+  },
+  "clip": "fp_jab.json"
  },
  {
   "lang": "ja",
@@ -534,7 +434,8 @@
    "hf": "高橋さんは6月5日にマラケシュのホテルに中村代表団のために13室を予約しました。",
    "whisper": "高橋さんは6月5日にマラケシュのホテルに中村代表団のために13室を予約しました。",
    "wav2vec2": "博八さんは６雑日に魔田石田テルに中山小座女十産を溶約しました"
-  }
+  },
+  "clip": "fp_jac.json"
  },
  {
   "lang": "ja",
@@ -557,7 +458,8 @@
    "hf": "フェルナンデスさんは4月1日にバルパライソからルダニスクのコワルスキ倉庫へ800箱を発送しました。",
    "whisper": "フェルナンデスさんは、4月1日にバルパライソからルダニスクのコワルスキ倉庫へ800箱を発送しました。",
    "wav2vec2": "セルダンテさんは月日血にガルさ<unk>から小田ルスき走庫へ発百箱を発興をしました"
-  }
+  },
+  "clip": "fp_jad.json"
  },
  {
   "lang": "ko",
@@ -580,7 +482,8 @@
    "hf": "은후엔 박사가 레이캐비크에 있는 카기소 계좌로 47,000유로를 3월 3일에 보냈습니다.",
    "whisper": "은후엔 박사가 레이캐비크에 있는 카기소 계좌로 47,000유로를 3월 3일에 보냈습니다.",
    "mms": "음우연 박자가 레이길라비크에 있는 가기서 개주하로 3한 7천유로를 삼보활 삼밀에 권냈습니다"
-  }
+  },
+  "clip": "fp_ko.json"
  },
  {
   "lang": "ko",
@@ -603,7 +506,8 @@
    "hf": "오콘쿠어 교수는 7월 9일에 류글라나의 베리스트렘 재단으로 만 2천 갈러를 송금했습니다.",
    "whisper": "오콘쿠어 교수는 7월 9일에 류글라나의 베리스트렘 재단으로 만 2천 갈러를 송금했습니다.",
    "mms": "오혼구 교수는 7월 구위의 륙을야나의 베리스트름 제단으로만 이천0 달러를 성경했습니다"
-  }
+  },
+  "clip": "fp_kob.json"
  },
  {
   "lang": "ko",
@@ -624,7 +528,8 @@
    "hf": "다카아시 씨는 6월 5일에 마라케시 호텔에 나카무라 대표단을 위해 23개의 방을 예약했습니다.",
    "whisper": "다카아시 씨는 6월 5일에 마라케시 호텔에 나카무라 대표단을 위해 23개의 방을 예약했습니다.",
    "mms": "자타하시시는 유월 오의의 말아계시 호텔의 나한물아 베표단을 위해음을 쇠 계의 강을 예약했습니다"
-  }
+  },
+  "clip": "fp_koc.json"
  },
  {
   "lang": "ko",
@@ -645,7 +550,8 @@
    "hf": "테르난데스 씨는 4월 1일에 발파라이소에서 크단스크의 코발스키 창고로 800상자를 보냈습니다.",
    "whisper": "테르난데스 씨는 4월 1일에 발파라이소에서 크단스크의 코발스키 창고로 800상자를 보냈습니다.",
    "mms": "페를란데스 시는 사월 이입의 발팔라이 소에서 글단스크의 코발스히 창고로 팔백산자를 보냈습니다"
-  }
+  },
+  "clip": "fp_kod.json"
  },
  {
   "lang": "pt",
@@ -668,7 +574,8 @@
    "whisper": "A doutora Nguyen enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março.",
    "mms": "a door anuiel enviou quarenta e  sete mel euros para a contade cajizo em lisboa no dia três de março",
    "seamless": "A Dra. Anil enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março."
-  }
+  },
+  "clip": "fp_pt.json"
  },
  {
   "lang": "pt",
@@ -691,7 +598,8 @@
    "whisper": "O professor Okonko transferiu 12 mil dólares para a Fundação Bergstrom e Ljubljana no dia 9 de julho.",
    "mms": "o professor oconco transferiu doze mil dólares para a fundação  bergstrom eliublianna no dia  de júlho",
    "seamless": "Um professor, Okonkwo, transferiu 12 mil dólares para a Fundação Bergstrom e Liubliana no dia 9 de julho."
-  }
+  },
+  "clip": "fp_ptb.json"
  },
  {
   "lang": "pt",
@@ -714,7 +622,8 @@
    "whisper": "A senhorita Takahashi reservou 23 quartos no hotel de Marrakech para a delegação Nakamura no dia 5 de junho.",
    "mms": "a senhorita takasi reservou vinte e três quartos no hotel de ma raqueche para a delegação na camura no dia  de junho",
    "seamless": "A senhorita Takashi reservou 23 quartos no hotel de Marrakesh para a delegação Nakamura no dia 5 de junho."
-  }
+  },
+  "clip": "fp_ptc.json"
  },
  {
   "lang": "pt",
@@ -737,7 +646,8 @@
    "whisper": "O senhor Fernandes enviou 800 caixas de Valparaíso para o armazém Kowalski e Gdansky no 1º de abril.",
    "mms": "o sr fernandes enviou oitocentas caixas de valparaíso para o armazenicoosk de danski no  dea abril",
    "seamless": "(NAVARRO) O senhor Fernandes enviou 800 caixas de Valparaíso para o armazém Nikolski e Guidanski no 1o de abril."
-  }
+  },
+  "clip": "fp_ptd.json"
  },
  {
   "lang": "ru",
@@ -758,7 +668,8 @@
    "hf": "Доктор Нгуен отправил 47 тысяч евро на счет КГИСа в Новосибирске 3 марта.",
    "whisper": "Доктор Нгуен отправил 47 тысяч евро на счет Кагисов Новосибирске 3 марта.",
    "mms": "доктор нвуйн отправил сорок семь 00сяч евра на щёт кагисовного себирски 3реьего марта"
-  }
+  },
+  "clip": "fp_ru.json"
  },
  {
   "lang": "ru",
@@ -779,7 +690,8 @@
    "hf": "Профессор Аконква перевел 12 тысяч долларов фонд Бергстрема в Любляне 9 июля.",
    "whisper": "Профессор Аконква перевел 12 тысяч долларов в фонд Бергстрема в любляне 9 июля.",
    "mms": "профессор а конпова перевел двянадцать т0сяч долларов фондберг стрема в люблянии 9 июля"
-  }
+  },
+  "clip": "fp_rub.json"
  },
  {
   "lang": "ru",
@@ -800,7 +712,8 @@
    "hf": "Госпожа Токахаси забронировала 23 номера в отеле Марракеши для делегации на Камуры 5 июня.",
    "whisper": "Госпожа Токахаси забронировала 23 номера в отеле Марракеши для делегации на Камуры 5 июня.",
    "mms": "госпожа такахась изабронировала двадцат три номеров отели мадракеша для делегации на комуры 5 июня"
-  }
+  },
+  "clip": "fp_ruc.json"
  },
  {
   "lang": "ru",
@@ -821,7 +734,8 @@
    "hf": "Господин Фернандес отправил 800 ящиков из Вальпараиса на склад Ковальского в Гданьске 1 апреля.",
    "whisper": "Господин Фернандес отправил 800 ящиков из Вальпараиса на склад Ковальского в Гданьске 1 апреля.",
    "mms": "господин фернандыс отправил восемьсот ящиков из вольпарайса на склад кавальского в гданске 1 апреля"
-  }
+  },
+  "clip": "fp_rud.json"
  },
  {
   "lang": "tr",
@@ -842,7 +756,8 @@
    "hf": "Dr. Ziyan 3 Mart'ta Marsilya'daki Kagiso hesabına 47 bin euro gönderdi.",
    "whisper": "Dr. Ziyan 3 Mart'ta Marsilya'daki Kagiso hesabına 47 bin euro gönderdi.",
    "mms": "doktor guyeniç martta maclivyadaki kagison hesabına kırfı yedi bir nivro gönderdi"
-  }
+  },
+  "clip": "fp_tr.json"
  },
  {
   "lang": "tr",
@@ -863,7 +778,8 @@
    "hf": "Profesör Okontro 9 Temmuz'da Juvijana'daki Bergström Vakfı'na 12 bin dolar gönderdi.",
    "whisper": "Profesör O.Kontrol 9 Temmuz'da Juvijana'daki Bergström Vaktine 12.000 Dolar Gönderdi.",
    "mms": "professör lo kontrol dokuz temmuzlar ju dujanadaki bergistirorün vakıtına on ikivin dolar görndeldi"
-  }
+  },
+  "clip": "fp_trb.json"
  },
  {
   "lang": "tr",
@@ -884,7 +800,8 @@
    "hf": "Bayan Takahasi 5 Haziran'da Marrakeş'teki otelde Nakamura heyeti için 23 oda ayırttı.",
    "whisper": "Bayan Takahasi 5 Haziran'da Marrakeş'teki otelde Nakamura heyeti için 23 oda ayırttı.",
    "mms": "bayan taka haslihi beş hazilan damarakeşte eki olkejde nakamıra heyeti için yirmi üçü oda ayıltı"
-  }
+  },
+  "clip": "fp_trc.json"
  },
  {
   "lang": "tr",
@@ -905,7 +822,8 @@
    "hf": "Bay Fernandez 1 Nisan'da Valparaiso'dan Danstakikoyarski Dekosu'na 800 kasa gönderdi.",
    "whisper": "Bay Fernandez 1 Nisan'da Valparaiso'dan Danstakikorovski deposuna 800 kasa gönderdi.",
    "mms": "bay kaynandes bir nisanda val parayiso'dan dan takikoşaz ki dekosuna sekiz yüz kasa gönderdi"
-  }
+  },
+  "clip": "fp_trd.json"
  },
  {
   "lang": "uk",
@@ -924,7 +842,8 @@
    "scribe": "Лікар Нгуен надіслав сорок сім тисяч євро на рахунок Кагісу в Новосибірську третього березня.",
    "whisper": "Лікар Нгуєн надіслав 47 тисяч євро на рахунок КАГІСу в Новосибірську 3 березня.",
    "mms": "лікар нгуєн надіслав 47 000 євро на рахунок кагісов новосебірську 3о березня"
-  }
+  },
+  "clip": "fp_uk.json"
  },
  {
   "lang": "uk",
@@ -943,7 +862,8 @@
    "scribe": "Професор Окунго переказав дванадцять тисяч доларів фонду Бергстримааа в Любляні дев'ятого липня.",
    "whisper": "Професор Оконко переказав 12 тисяч доларів фонду Бергстрима в Любляні 9 липня.",
    "mms": "професор оконтво переказав дванадцять тисяч доларів фонду бергс  трема в люблянні 9ев'ятго липня"
-  }
+  },
+  "clip": "fp_ukb.json"
  },
  {
   "lang": "uk",
@@ -962,7 +882,8 @@
    "scribe": "Пані Такахасі забронювала двадцять три номери в готелі \"Марракеша\" для делегації на Камори п'ятого червня.",
    "whisper": "Пані Такахасі забронювала 23 номери в готелі Маракеша для делегації на Камори 5 червня.",
    "mms": "пані такахасі забронювала двадцять ти нмерів готелі марракеша для делегації на камори 5'го червня"
-  }
+  },
+  "clip": "fp_ukc.json"
  },
  {
   "lang": "uk",
@@ -981,7 +902,8 @@
    "scribe": "Жінка: Пан Фернандес відправив вісімсот ящиків з Вальпараїсо на склад Ковайського у Гданську першого квітня.",
    "whisper": "Пан Фернандес відправив 800 ящиків з вайпараїсу на склад Ковайського у Гданську 1 квітня.",
    "mms": "пан фернандес відправив 8і00т ящитів зваль параїсо на склад ковальського огденсько 1 квітня"
-  }
+  },
+  "clip": "fp_ukd.json"
  },
  {
   "lang": "vi",
@@ -1000,7 +922,8 @@
    "scribe": "Bác sĩ Nguyễn đã gửi bốn mươi bảy nghìn Euro vào tài khoản Cargill ở Marseille vào ngày 3 tháng Ba.",
    "phowhisper": "bác sĩ nguyễn đã gửi bốn mươi bảy nghìn euro vào tài khoản cash so ở mặt xe vào ngày ba tháng ba.",
    "whisper": "Bác sĩ Nguyễn đã gửi 47.000 euro vào tài khoản Gasso ở mạc xe vào ngày 3 tháng 3."
-  }
+  },
+  "clip": "fp_vi.json"
  },
  {
   "lang": "vi",
@@ -1019,7 +942,8 @@
    "scribe": "Giáo sư Okonkwo đã chuyển mười hai nghìn đô la cho Quỹ Mergers Chalmers ở Louisiana vào ngày 9 tháng Bảy.",
    "phowhisper": "giáo sư orton quen đã chuyển mười hai nghìn đô la cho quý bella stone ở lugansk vào ngày chín tháng bảy.",
    "whisper": "Giáo sư O'Connor đã chuyển 12.000 đô la cho quỹ Bethelstrom ở Louisiana vào ngày 9 tháng 7."
-  }
+  },
+  "clip": "fp_vib.json"
  },
  {
   "lang": "vi",
@@ -1038,7 +962,8 @@
    "scribe": "Kota Kahashi đã đặt hai mươi ba phòng tại khách sạn Marrakesh cho đoàn Nakamura vào ngày 5 tháng Sáu-",
    "phowhisper": "kotaka hashi đã đặt 23 phòng tại khách sạn marrakesh cho đoàn nakamura vào ngày năm tháng sáu.",
    "whisper": "Cô Takahashi đã đặt 23 phòng tại khách sạn Magrakesh cho đoàn Nakamura vào ngày 5 tháng 6."
-  }
+  },
+  "clip": "fp_vic.json"
  },
  {
   "lang": "vi",
@@ -1057,6 +982,1009 @@
    "scribe": "Ông Fernández đã gửi tám trăm thùng hàng từ Valcárcel đến kho Kowalski ở Greenup vào ngày 1 tháng Tư.",
    "phowhisper": "ông fernand leo đã gửi tám trăm thùng hàng từ falcao so đến kho kuala lumpur ở ghana vào ngày một tháng tư.",
    "whisper": "Ông Ferdinand Leu đã gửi 800 thùng hàng từ Valcaraíso đến kho Kuala Lumpur ở Granada vào ngày 1 tháng 4."
+  },
+  "clip": "fp_vid.json"
+ },
+ {
+  "clip": "fp_arb.json",
+  "lang": "ar",
+  "consensus": 0.412,
+  "best_single": 0.294,
+  "best_model": "gemini",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.471,
+   "scribe": 0.471,
+   "gemini": 0.294,
+   "hf": 0.471,
+   "wav2vec2": 0.529,
+   "whisper": 0.471,
+   "seamless": 0.529
+  },
+  "reads": {
+   "deepgram": "البروفيسور أو كونكوفني عشر ألف دولار إلى مؤسسة بيرغستور روما فيلياو بليانر في التاسع من يوليو",
+   "scribe": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروست روما فيليوبيلاتا في التاسع من يوليو.",
+   "gemini": "حول البروفيسور أوكوموكو ١٢ ألف دولار إلى مؤسسة بيرغستروما في ليوبليانا في التاسع من يوليو",
+   "hf": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروغستروم في اليوم ليانر في التاسع من يوليو",
+   "wav2vec2": "حول ألبروكسور أو كومكم ني عشر ألف دولار إلى مؤسسة ذي ربستعوم في ليوض ليانر في التاسع من يوليو",
+   "whisper": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروغستروم في اليوم ليانر في التاسع من يوليو",
+   "seamless": "حول البروفيسور أوتومكو 12 ألف دولار إلى مؤسسة بيروغستر روما في ليوبليانرا في 9 يوليو."
+  }
+ },
+ {
+  "clip": "fp_arc.json",
+  "lang": "ar",
+  "consensus": 0.333,
+  "best_single": 0.267,
+  "best_model": "gemini",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.333,
+   "scribe": 0.4,
+   "gemini": 0.267,
+   "hf": 0.667,
+   "wav2vec2": 0.533,
+   "whisper": 0.667,
+   "seamless": 0.467
+  },
+  "reads": {
+   "deepgram": "حجزت الآنسة تاكاهاشي 23 غرفة في فندق مراكش لو فدناكامورا في الخامس من يونيو",
+   "scribe": "حجزت الأنسة تاكاهاشي 23 غرفة في فندق مراكش لوفدن كامورا في الخامس من يونيو.",
+   "gemini": "حجزت الآنسة تاكاهاشي ثلاثًا وعشرين غرفة في فندق مراكش لوفادينا كامورا في الخامس من يونيو.",
+   "hf": "حجزت الآن ستوتا كهاشي 23 غرفة في كندق مراكش لو فدنا كمورا في الخامس من يونيو",
+   "wav2vec2": "حجزت الآمست يتاكاهاشي لا وعشرين غلفة في كندق مرافش لوفدنا كمود في الخامس من يونيو",
+   "whisper": "حجزت الآن ستوتا كهاشي 23 غرفة في كندق مراكش لو فدنا كمورا في الخامس من يونيو",
+   "seamless": "حجزت الآنسة توتاكاهاشي 23 غرفة في فندق مراكش لوفاد ناكامورا في 5 يونيو"
+  }
+ },
+ {
+  "clip": "fp_ard.json",
+  "lang": "ar",
+  "consensus": 0.062,
+  "best_single": 0.125,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.375,
+   "scribe": 0.125,
+   "gemini": 0.125,
+   "hf": 0.25,
+   "wav2vec2": 0.438,
+   "whisper": 0.25,
+   "seamless": 0.312
+  },
+  "reads": {
+   "deepgram": "أرسل السيد فرنان داز ثمانمائة صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسكا في الأول من إييترال.",
+   "scribe": "أرسل السيد فرناندز 800 صندوق من فالبارايسو إلى مستودع كوفالسكي في غدانسك في الأول من أيتار.",
+   "gemini": "أرسل السيد فرناندس ثمانمئة صندوق من فالبارايسو إلى مستودع كوفالسكي في غدانسك في الأول من أبريل",
+   "hf": "أرسل السيد فرناندز 800 صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسك في الأول من أياترل.",
+   "wav2vec2": "أرسل السيد فرنان دذتمان ماءة سندوق من ألبرايس إلى مستودع نفالسكي في غدانسك في الأول من قيترل",
+   "whisper": "أرسل السيد فرناندز 800 صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسك في الأول من أياترل.",
+   "seamless": "أرسل السيد فرنانديز 800 صندوق من فئ البارايسو إلى مستودع كوفالسيكي في غدانيسكا في الأول من إيتريل"
+  }
+ },
+ {
+  "clip": "fp_kog.json",
+  "lang": "ko",
+  "consensus": 0.044,
+  "best_single": 0.044,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.067,
+   "scribe": 0.044,
+   "gemini": 0.2,
+   "hf": 0.133,
+   "whisper": 0.133,
+   "mms": 0.4
+  },
+  "reads": {
+   "deepgram": "노바크 기사는 십 월 팔 일에 뒤예르 클룬드 회사를 위해 오악사카 공장 근처에 열 아홉 개의 터빈을 설치했습니다.",
+   "scribe": "노바크 기사는 10월 8일에 비에르 클룬드 회사를 위해 오악사카 공장 근처에 열아홉 개의 터빈을 설치했습니다.",
+   "gemini": "노바쿠키시알은 10월 8일에 비외르클룬드 회사를 위해 오악사카 공장 근처에 19개의 터빈을 설치했습니다.",
+   "hf": "노바크 기사는 10월 8일에 비웨르클론드 회사를 위해 오악사카 공장 근처에 17개의 터빈을 설치했습니다.",
+   "whisper": "노바크 기사는 10월 8일에 비웨르클론드 회사를 위해 오악사카 공장 근처에 17개의 터빈을 설치했습니다.",
+   "mms": "로박크 기사는 시월 파리에 비오회를 끌론는 회사를 위해 오학사카 공장 근처에 여라고게에 터인을 설취했습니다"
+  }
+ },
+ {
+  "clip": "fp_pte.json",
+  "lang": "pt",
+  "consensus": 0.056,
+  "best_single": 0.056,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.222,
+   "scribe": 0.056,
+   "hf": 0.167,
+   "gemini": 0.056,
+   "whisper": 0.167,
+   "mms": 0.333,
+   "seamless": 0.222
+  },
+  "reads": {
+   "deepgram": "O capitão Oadebaiu entregou 65 pacotes ao escritório Indiq Vistchê e Casablanca no dia 11 de agosto.",
+   "scribe": "O capitão Adebayo entregou sessenta e cinco pacotes ao escritório Lindqvist e Casablanca no dia onze de agosto.",
+   "hf": "O capitão Adebayo entregou 65 pacotes ao escritório Lindt-Vistier e Casablanca no dia 11 de agosto.",
+   "gemini": "O capitão Adebayo entregou 65 pacotes ao escritório Lindich em Casablanca no dia 11 de agosto.",
+   "whisper": "O capitão Adebayo entregou 65 pacotes ao escritório Lindt-Vistier e Casablanca no dia 11 de agosto.",
+   "mms": "capitão adebaio entregou sessenta as cinco pacotes ao escritório lindiie casablanca no dia o de agosto",
+   "seamless": "O capitão Adebayor entregou 65 pacotes ao escritório Indy Christie e Casablanca no dia 11 de agosto."
+  }
+ },
+ {
+  "clip": "fp_ptf.json",
+  "lang": "pt",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "hf",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.143,
+   "scribe": 0.143,
+   "hf": 0.0,
+   "gemini": 0.048,
+   "whisper": 0.0,
+   "mms": 0.429,
+   "seamless": 0.048
+  },
+  "reads": {
+   "deepgram": "A doutora P 3 Cool examinou 31 pacientes na clínica do Kilimanjaro com a enfermeira Yamamoto no dia 2 de maio.",
+   "scribe": "A doutora T3cu examinou trinta e um pacientes na clínica do Kilimanjaro com a enfermeira Yamamoto no dia 2 de maio.",
+   "hf": "A doutora Petrescu examinou 31 pacientes na clínica do Kilimanjaro com a enfermeira Yamamoto no dia 2 de maio.",
+   "gemini": "A doutora Petricu examinou 31 pacientes na clínica do Kilimanjaro com a enfermeira Yamamoto no dia 2 de maio.",
+   "whisper": "A doutora Petrescu examinou 31 pacientes na clínica do Kilimanjaro com a enfermeira Yamamoto no dia 2 de maio.",
+   "mms": "a doutora petreisco examinou trinta e um pacientes na clínica do que lhe manjaram com a inferneira e amamoto no dia dos de mai",
+   "seamless": "A Dra. Petrescu examinou 31 pacientes na clínica do Kilimanjaro com a enfermeira Yamamoto no dia 2 de maio."
+  }
+ },
+ {
+  "clip": "fp_ptg.json",
+  "lang": "pt",
+  "consensus": 0.15,
+  "best_single": 0.15,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.25,
+   "scribe": 0.15,
+   "hf": 0.2,
+   "gemini": 0.2,
+   "whisper": 0.2,
+   "mms": 0.35,
+   "seamless": 0.3
+  },
+  "reads": {
+   "deepgram": "O engenheiro Novak instalou 19 turbinas perto da fábrica de La Chaca para a empresa no dia 8 de outubro.",
+   "scribe": "O engenheiro Novak instalou dezenove turbinas perto da fábrica de Oaxaca para a empresa Bjorn Cloud no dia oito de outubro.",
+   "hf": "O engenheiro Novak instalou 19 turbinas perto da fábrica de Lashaka para a empresa Jornkund no dia 8 de outubro.",
+   "gemini": "O engenheiro novato instalou dezenove turbinas perto da fábrica de Osaka para a empresa Jean-Claude no dia oito de outubro.",
+   "whisper": "O engenheiro Novak instalou 19 turbinas perto da fábrica de Lashaka para a empresa Jornkund no dia 8 de outubro.",
+   "mms": "oengenheiro novaque instalou dezenove turbinas perto da fábrica de lachaca para a empresa jomculo de no dia i de outubro",
+   "seamless": "O engenheiro Novak instalou 19 turbinas perto da fábrica de La Chaca para a empresa Rujor Kundu no dia 8 de outubro."
+  }
+ },
+ {
+  "clip": "fp_rue.json",
+  "lang": "ru",
+  "consensus": 0.154,
+  "best_single": 0.077,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.462,
+   "scribe": 0.077,
+   "hf": 0.385,
+   "gemini": 0.154,
+   "whisper": 0.385,
+   "mms": 0.615
+  },
+  "reads": {
+   "deepgram": "Капитан Адибая доставил 65 посылок в офис лингвиста в Каса-Бланке 11-го августа.",
+   "scribe": "Капитан Адибая доставил шестьдесят пять посылок в офис Линдквиста в Касабланке одиннадцатого августа.",
+   "hf": "Капитан Адибая доставил 65 посылок в офис лентвистов Касабланки 11 августа.",
+   "gemini": "Капитан Надибая доставил 65 посылок в офис Линдквиста в Касабланке 11 августа.",
+   "whisper": "Капитан Адибая доставил 65 посылок в офис лентвистов Касабланки 11 августа.",
+   "mms": "капита надебай одоставил шестьдесят пять по сыладвофислин кристо в касабланке 11 августа"
+  }
+ },
+ {
+  "clip": "fp_ruf.json",
+  "lang": "ru",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.429,
+   "scribe": 0.0,
+   "hf": 0.571,
+   "gemini": 0.071,
+   "whisper": 0.571,
+   "mms": 0.643
+  },
+  "reads": {
+   "deepgram": "Доктор Петреско осмотрел 31 пациента в клинике Килиманджеро с медсестрой Имамото 2-го мая.",
+   "scribe": "Доктор Петреску осмотрел тридцать одного пациента в клинике Килиманджаро с медсестрой Ямамото второго мая.",
+   "hf": "Доктор Петреско осмотрел 31 пациента в клинике Килиман Джирас Медсестра и Мамото 2 мая.",
+   "gemini": "Доктор Петреску осмотрел тридцать одного пациента в клинике Килиманджаро с медсестрой Имамото второго мая.",
+   "whisper": "Доктор Петреско осмотрел 31 пациента в клинике Килиман Джирас Медсестра и Мамото 2 мая.",
+   "mms": "доктор петреску смотрел тридцати одного пациентов клиники килиманджера смедсестра имамота второго мая"
+  }
+ },
+ {
+  "clip": "fp_rug.json",
+  "lang": "ru",
+  "consensus": 0.071,
+  "best_single": 0.071,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.357,
+   "scribe": 0.071,
+   "hf": 0.214,
+   "gemini": 0.214,
+   "whisper": 0.214,
+   "mms": 0.5
+  },
+  "reads": {
+   "deepgram": "Инженер Новак установил 19 турбин возле завода Вайхаки для компании Бьоркленд 8-го октября.",
+   "scribe": "Инженер Новак установил девятнадцать турбин возле завода в Оахаке для компании \"Бьорклунд\" восьмого октября.",
+   "hf": "Инженер Новак установил 19 турбин возле завода в Охаке для компании Björklund 8 октября.",
+   "gemini": "Инженер Новак установил девятнадцать турбин возле завода Вахаки для компании Бьорклунд восьмого октября.",
+   "whisper": "Инженер Новак установил 19 турбин возле завода в Ахаке для компании Björklund 8 октября.",
+   "mms": "инженер новок установил девятнадцать турбин возиле заводого хаке для компании беорклунд 8 октября"
+  }
+ },
+ {
+  "clip": "fp_tre.json",
+  "lang": "tr",
+  "consensus": 0.231,
+  "best_single": 0.231,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.308,
+   "scribe": 0.231,
+   "hf": 0.462,
+   "gemini": 0.615,
+   "whisper": 0.462,
+   "mms": 0.769
+  },
+  "reads": {
+   "deepgram": "Kaptan Adaba'yı on bir Ağustos'ta Cazablanca'daki Winfriest ofisini altmış beş paket teslim etti.",
+   "scribe": "Kaptan Adebayo 11 Ağustos'ta Kazablanka'daki LinkList ofisine altmış beş paket teslim etti.",
+   "hf": "Kaptan Adebayo 11 Ağustos'ta Casablanca'daki Lindquist ofisine 65 paket teslim etti.",
+   "gemini": "Kaptan Adebayor 11 Ağustosta Kazablanka'daki Link Christ ofisine 65 paket teslim etti.",
+   "whisper": "Kaptan Adebayo 11 Ağustos'ta Casablanca'daki Lindquist ofisine 65 paket teslim etti.",
+   "mms": "kaptanadebayoron birarustosta kazablankadaki limplis tofisini altmış beşva ket teslim etti"
+  }
+ },
+ {
+  "clip": "fp_trf.json",
+  "lang": "tr",
+  "consensus": 0.071,
+  "best_single": 0.071,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.357,
+   "scribe": 0.071,
+   "hf": 0.286,
+   "gemini": 0.357,
+   "whisper": 0.357,
+   "mms": 0.857
+  },
+  "reads": {
+   "deepgram": "Doktor Petrescu iki Mayıs'ta Meng Shire-Yamanoto ile Kilimanjarokiliminde otuz bir hastayı muayene etti.",
+   "scribe": "Dr. Petrescu, 2 Mayıs'ta Hemşire Yamamoto ile Kilimanjaro kliniğinde otuz bir hastayı muayene etti.",
+   "hf": "Dr. Tetrescu 2 Mayıs'ta hemşire Yamamoto ile Kilimanjaro Kliniğinde 31 hastayı muayene etti.",
+   "gemini": "Doktor Petres Ju 2 Mayıs'ta hemşire Yamanoto ile Kilimanjaro kliniğinde 31 hastayı muayene etti.",
+   "whisper": "Dr. Tetrescu 2 Mayıs'ta hemşire Yamamoto ile Kilimanjaro Kliniğinde 31 hastayı müayene etti.",
+   "mms": "doktor petres cu iki mayısta hem şire yamanoto ilakiliman jaro pilim yiğinde otuz bir hastayımayene etti"
+  }
+ },
+ {
+  "clip": "fp_trg.json",
+  "lang": "tr",
+  "consensus": 0.643,
+  "best_single": 0.214,
+  "best_model": "deepgram",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.214,
+   "scribe": 0.643,
+   "hf": 0.286,
+   "gemini": 0.571,
+   "whisper": 0.429,
+   "mms": 0.571
+  },
+  "reads": {
+   "deepgram": "Mühendis Nov sekiz Ekim'de Jerklund şirketi için Novakssaca fabrikasının yakınına on dokuz türbin kurdu.",
+   "scribe": "1908 Ekim'de George Loom şirketi için Oak Sacca fabrikasının yakınına 19 türbin kurdu.",
+   "hf": "Mühendis Noh 8 Ekim'de Jörkl'ün şirketi için Oaxaca fabrikasının yakınına 19 türbin kurdu.",
+   "gemini": "1988 Ekim'de Berg'in şirketi için Ola Saca Fabrikasının yakınına 19 türbin kurdu.",
+   "whisper": "Mühendis Noh 8 Ekim'de Jörkl'ün şirketi için o Aksaca fabrikasının yakınına 19 türbin kurdu.",
+   "mms": "mürlengiz no seizekinde jörg lon şirketi için olaaksaca fabrikasının yakınına ondokuz türbin kurdu"
+  }
+ },
+ {
+  "clip": "fp_uke.json",
+  "lang": "uk",
+  "consensus": 0.077,
+  "best_single": 0.154,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.385,
+   "scribe": 0.154,
+   "whisper": 0.385,
+   "mms": 0.538
+  },
+  "reads": {
+   "deepgram": "Капітан на дебаю доставив 65 посилок до офісу Ліндквіста в Каса-бланці 11 серпня.",
+   "scribe": "Капітан Адибайо доставив шістдесят п'ять посилок до офісу Ліндкріста в Касабланці одинадцятого серпня.",
+   "whisper": "Капітан Надебаю доставив 65 посилок до офісу ліндквіставка Сабланці 11 серпня.",
+   "mms": "капітан на дибаю доставив 6істят 5ят посилок до охісу ліндквіста в касабланці 11 серпня"
+  }
+ },
+ {
+  "clip": "fp_ukf.json",
+  "lang": "uk",
+  "consensus": 0.071,
+  "best_single": 0.071,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.5,
+   "scribe": 0.071,
+   "whisper": 0.357,
+   "mms": 0.429
+  },
+  "reads": {
+   "deepgram": "Лікар Петрескологлянув 31 пацієнта в клініці Тіліман Джарозми з сестрою Ямамото 2 травня.",
+   "scribe": "Лікар Петреску розглянув тридцять одного пацієнта в клініці Кіліманджаро з медсестрою Ямамото другого травня.",
+   "whisper": "Лікар Петрес Кулоглянов 31 пацієнта в клініці Кіліманджару з медсестрою Ямамото 2 травня.",
+   "mms": "лікар петрескулоглянов тридцять одного пацієнта в клініці тілі манджару з мигсестрою ямамото дрогого травня"
+  }
+ },
+ {
+  "clip": "fp_ukg.json",
+  "lang": "uk",
+  "consensus": 0.143,
+  "best_single": 0.143,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.357,
+   "scribe": 0.143,
+   "whisper": 0.143,
+   "mms": 0.714
+  },
+  "reads": {
+   "deepgram": "Інженер Novak встановив 19 турбін біля заводу волахаці для компанії Borkland 8 жовтня.",
+   "scribe": "Інженер Новак встановив дев'ятнадцять турбін біля заводу в Оахакі для компанії Гортланд восьмого жовтня.",
+   "whisper": "Інженер Новак встановив 19 турбін біля заводу в Оахаці для компанії «Горпланд» 8 жовтня.",
+   "mms": "інженер новах установив дев'ятнад цять турбін біля заводу влахаці для компанії гортлонд 8 жов тня"
+  }
+ },
+ {
+  "clip": "fp_vie.json",
+  "lang": "vi",
+  "consensus": 0.091,
+  "best_single": 0.091,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.273,
+   "scribe": 0.091,
+   "gemini": 0.273,
+   "phowhisper": 0.136,
+   "whisper": 0.273
+  },
+  "reads": {
+   "deepgram": "Thuyền trưởng Aebayon đã giao sáu mươi lăm gói hàng đến văn phòng Linos ở Kasablanca vào ngày một trăm mười tám.",
+   "scribe": "Thuyền trưởng Aebios đã giao sáu mươi lăm gói hàng đến văn phòng Lindbergh ở Casablanca vào ngày 11 tháng Tám.",
+   "gemini": "Thuyền trưởng A E Byron đã giao 65 gói hàng đến văn phòng Line of Greth ở Casablanca vào ngày 11 tháng 8.",
+   "phowhisper": "thuyền trưởng abbott đã giao sáu mươi lăm gói hàng đến văn phòng lindsay hill ở casablanca vào ngày mười một tháng tám.",
+   "whisper": "Thuyền trưởng A.E. Bayer đã giao 65 gói hàng đến văn phòng Linovris ở Casa Blanca vào ngày 11 tháng 8."
+  }
+ },
+ {
+  "clip": "fp_vif.json",
+  "lang": "vi",
+  "consensus": 0.13,
+  "best_single": 0.174,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.348,
+   "scribe": 0.174,
+   "gemini": 0.391,
+   "phowhisper": 0.522,
+   "whisper": 0.261
+  },
+  "reads": {
+   "deepgram": "Bác sĩ The Tresku đã khám ba mươi mốt bệnh nhân tại phòng khám Kilimanalo cùng y giải tái ma mamo to vào ngày hai tháng năm.",
+   "scribe": "Bác sĩ Teche Spuda khám ba mươi mốt bệnh nhân tại phòng khám Kilimanjaro cùng y giải tán Yamamoto vào ngày hai tháng Năm-",
+   "gemini": "Maxi chét của Đa khoa 31 bệnh nhân tại phòng khám Kilimanro cùng y giải tái to vào ngày 2 tháng 5.",
+   "phowhisper": "bác sĩ tetescu đã khám thấy ba mươi mốt bệnh nhân tại phòng khám khi li maria ro cùng y giải tá ô ha ma mõ to vào ngày hai tháng năm.",
+   "whisper": "Bác sĩ Techescu đã khám 31 biện nhân tại phòng khám Kilimanjaro cùng y giải tài Oama Moto vào ngày 2 tháng 5."
+  }
+ },
+ {
+  "clip": "fp_vig.json",
+  "lang": "vi",
+  "consensus": 0.091,
+  "best_single": 0.091,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "scribe": 0.091,
+   "gemini": 0.364,
+   "phowhisper": 0.227,
+   "whisper": 0.182
+  },
+  "reads": {
+   "scribe": "Kỹ sư Novak đã lắp mười chín tua bin gần nhà máy Oaxaca cho công ty Bellalume vào ngày 8 tháng Mười.",
+   "gemini": "Kí số Novak đã lắp 19 tua bin gần nhà máy O A Kha Kha cho công ty Buerlun vào ngày 8 tháng 10.",
+   "phowhisper": "kỹ sư novak đã lắp 19 tua pin gần nhà máy oaks cho công ty blue luôn vào ngày tám tháng mười.",
+   "whisper": "Kỹ sư Novak đã lắp 19 thua binh gần nhà máy Oaxaca cho công ty Berlin vào ngày 8 tháng 10."
+  }
+ },
+ {
+  "clip": "fp_ar.json",
+  "lang": "ar",
+  "consensus": 0.375,
+  "best_single": 0.25,
+  "best_model": "whisper",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.375,
+   "scribe": 0.375,
+   "gemini": 0.5,
+   "hf": 0.312,
+   "whisper": 0.25,
+   "seamless": 0.375
+  },
+  "reads": {
+   "deepgram": "أرسل طبيب نجوم سبعة وأربعين ألف يورو لا حسابك غيسو في مارسيليا في الثالث من مارس",
+   "scribe": "أرسل الطبيب لجوين 47 ألف يورو لا حساب، كاغيث في مارسيليا في الثالث من مارس.",
+   "gemini": "أرسل طبيب نجويين 47 ألف يورو لحساب كغيسو في مارسيليا في الثالث من مارس.",
+   "hf": "أرسل طبيب نجوين 47 ألف يورو لا حساب كاغيسو في مارسيليا في الثالث من مارس",
+   "whisper": "أرسل طبيب نجوين 47 ألف يورو لا حساب كاغيسو في مرسيليا في الثالث من مارس",
+   "seamless": "أرسل طبيب نجومين 47 ألف يورو لا حساب كاغيزو في مرسيليا في الثالث من مارس"
+  }
+ },
+ {
+  "clip": "fp_are.json",
+  "lang": "ar",
+  "consensus": 0.556,
+  "best_single": 0.444,
+  "best_model": "deepgram",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.444,
+   "scribe": 0.556,
+   "gemini": 0.5,
+   "hf": 0.778,
+   "whisper": 0.5,
+   "seamless": 0.556
+  },
+  "reads": {
+   "deepgram": "سلِّم سلِّم الكعبتُ نَأديبا نيوي خمسة وستين طردا إلى مكتب ليندفّيست في الدار البيضاء في الحادي عشر من أغسطس",
+   "scribe": "سلم الكابتن أديب نيوي 65 طردا إلى مكتبه ليندفن في ست في الدار البيضاء في الحادي عشر من أغسطس.",
+   "gemini": "سلم الكعبه ادينا 65 طردا الى مكتب اليند في الدار البيضاء في الحادي عشر من اغسطس.",
+   "hf": "صُلِّمَ الكابةُنَ أديباً يُوِي خمسة وستينَ طَرَدَ إلى مكتبِ ليندفِّيسَتْ في الدارِ البيضاءِ في الحادي عشرَ من أغسطس",
+   "whisper": "صلم الكابتن أديبا نيوي 65 طرد إلى مكتب ليندفست في الدار البيضاء في 11 من أغسطس",
+   "seamless": "سُلِّمَ الكابتن أديب نيوي 65 طرد إلى مكتب ليند فيست في الدار البيضاء في 11 من أغسطس"
+  }
+ },
+ {
+  "clip": "fp_arf.json",
+  "lang": "ar",
+  "consensus": 0.5,
+  "best_single": 0.438,
+  "best_model": "gemini",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.625,
+   "scribe": 0.5,
+   "gemini": 0.438,
+   "hf": 0.5,
+   "wav2vec2": 0.688,
+   "whisper": 0.438,
+   "seamless": 0.562
+  },
+  "reads": {
+   "deepgram": "فحص الدكتور بيتريسكوا واحدًا وثلاثين مريضًا في عيادتا كليما نجارو مع الممرضة يا أمأموتو في الثاني من مايو",
+   "scribe": "فحص الدكتور بتريسكو 31 مريضا في عيادة كليما. النجار مع الممرضة أم موت في الثاني من مايو.",
+   "gemini": "فحص الدكتور بيترسكو وواحدا وثلاثين مريض في عيادة كوليم النجار مع الممربة اممووت في الثاني من مايو.",
+   "hf": "فحص الدكتور بيتاريسكوى 31 مريضا في عيادة كل يمن نجار مع الممرضة يامأموتو في الثاني من مايو",
+   "wav2vec2": "فحص اليبور بي تريستو واحدا ولاين مريضا في عيادة كلي من نجاروا مع الممربطي أمأموتوا في الاني من مغيو",
+   "whisper": "فحص الدكتور بيتاريسكوى 31 مريضا في عيادة كل يمن نجار مع الممرضة ياماموتو في الثاني من مايو",
+   "seamless": "فحص الدكتور بيتريسكووا 31 مريضاً في عيادة كليما النجارو مع الممرضة يا أم أموت في الثاني من مايو"
+  }
+ },
+ {
+  "clip": "fp_arg.json",
+  "lang": "ar",
+  "consensus": 0.312,
+  "best_single": 0.188,
+  "best_model": "deepgram",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.188,
+   "scribe": 0.438,
+   "gemini": 0.5,
+   "hf": 0.438,
+   "wav2vec2": 0.625,
+   "whisper": 0.438,
+   "seamless": 0.688
+  },
+  "reads": {
+   "deepgram": "ركّب المهندس نوفاتْ: تسعة عشر توربينا قرب مصنع وإكساكا لشركة بيوراكولوند في الثامن من أكتوبر",
+   "scribe": "ركب المهندس نوفاك 19 توربينة قرب مصنع وافساك لشركة بيوروكو الوندي في 8 من أكتوبر.",
+   "gemini": "ركب المهندس نيوفاد 19 توربينا قرب مصنع واكساكا لشركة بيورا كول واندي في الثامن من اكتوبر.",
+   "hf": "ركب المهندس نوفات 19 تورابين قرب مصنع وإكساكا لشركة بيورا كولوندي في الثامن من أكتوبر",
+   "wav2vec2": "ركب المهندس للفااتسعة عشر توربين قرب مصنع وإقساكا لشركة بيوركل وانبفي الامن من أوبا",
+   "whisper": "ركب المهندس نوفا 19 تورابين قرب مصنع وإكساكا لشركة بيورا كولوندي في الثامن من أكتوبر",
+   "seamless": "ركب المهندس نوفا 19 توربين بالقرب من مصنع وإبساكا لشركة بيورا كولوند في 8 أكتوبر."
+  }
+ },
+ {
+  "clip": "fp_dee.json",
+  "lang": "de",
+  "consensus": 0.143,
+  "best_single": 0.071,
+  "best_model": "deepgram",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.071,
+   "scribe": 0.214,
+   "hf": 0.143,
+   "gemini": 0.214,
+   "whisper": 0.143,
+   "mms": 0.429,
+   "seamless": 0.214
+  },
+  "reads": {
+   "deepgram": "Kapitän Adebayo lieferte 65 Pakete an das Lindtquist Büro in Casablanca am elften August.",
+   "scribe": "Capitän Adebayo lieferte fünfundsechzig Pakete an das Lindquist Büro in Casablanca am 11. August.",
+   "hf": "Kapitän Adebayo lieferte 65 Pakete an das Lindquist-Büro in Casablanca am 11. August.",
+   "gemini": "Kapitän Adabaio lieferte 65 Pakete an das Lindquist Büro in Casablanca am 11. August.",
+   "whisper": "Kapitän Adebayo lieferte 65 Pakete an das Lindquist-Büro in Casablanca am 11. August.",
+   "mms": "kapitäladebeiso lieferte fünfundsechzig pakete an das lind quistbürau in kasablanka am august",
+   "seamless": "Kapitän Adebayor lieferte 65 Pakete an das Lindquist-Büro in Casablanca am 11. August."
+  }
+ },
+ {
+  "clip": "fp_def.json",
+  "lang": "de",
+  "consensus": 0.0,
+  "best_single": 0.067,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.133,
+   "scribe": 0.067,
+   "hf": 0.133,
+   "gemini": 0.2,
+   "whisper": 0.133,
+   "mms": 0.4,
+   "seamless": 0.267
+  },
+  "reads": {
+   "deepgram": "Doktor Petresco untersuchte 31 Patienten in der Klinik mit Schwester Yamamoto am zweiten Mai.",
+   "scribe": "Doktor Petrisco untersuchte einunddreißig Patienten in der Kilimandscharo-Klinik mit Schwester Yamamoto am zweiten Mai.",
+   "hf": "Dr. Petrescu untersuchte 31 Patienten in der Kilimandscharo-Klinik mit Schwester Yamamoto am 2. Mai.",
+   "gemini": "Doktor Petrisko untersuchte 31 Patienten in der Kilimanjaro Klinik mit Schwester Yamamoto am 2. Mai.",
+   "whisper": "Dr. Petrescu untersuchte 31 Patienten in der Kilimandscharo-Klinik mit Schwester Yamamoto am 2. Mai.",
+   "mms": "doktor petrisku untersuchte einunddreißig patienten in der pili mancharo klinik mit schwester jamamoto am",
+   "seamless": "Dr. Petresco untersuchte 31 Patienten in der Kilimanjaro-Klinik mit Schwester Yamamoto am 2. Mai."
+  }
+ },
+ {
+  "clip": "fp_deg.json",
+  "lang": "de",
+  "consensus": 0.125,
+  "best_single": 0.188,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.312,
+   "scribe": 0.188,
+   "hf": 0.188,
+   "gemini": 0.375,
+   "whisper": 0.25,
+   "mms": 0.438,
+   "seamless": 0.375
+  },
+  "reads": {
+   "deepgram": "In Senior Nowak installierte 19 Turbinen nahe dem Werk für die Firma Bjorklound am achten Oktober.",
+   "scribe": "Insigneur Nowak installierte 19 Turbinen nahe dem Oaxaca-Berg für die Firma Björklund am achten Oktober.",
+   "hf": "In Senjörnobag installierte 19 Turbinen nahe dem Oaxaca-Werk für die Firma Björklund am 8. Oktober.",
+   "gemini": "dem Sinn. Novak installierte 19 Turbinen nahe dem Osa-Werk für die Firma Björkland am 8. Oktober.",
+   "whisper": "In Signeur-Novak installierte 19 Turbinen nahe dem Oaxaca-Werk für die Firma Björklund am 8. Oktober.",
+   "mms": "im senö nowak installierte neunzehn turbinen nahe dem ojaksakawer für die firma biorklund am ch oktober",
+   "seamless": "Im Juni installierte Novak 19 Turbinen nahe dem Ojak-Saka-Werk für die Firma Björklund am 8. Oktober."
+  }
+ },
+ {
+  "clip": "fp_ese.json",
+  "lang": "es",
+  "consensus": 0.056,
+  "best_single": 0.056,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.389,
+   "scribe": 0.056,
+   "hf": 0.111,
+   "gemini": 0.056,
+   "whisper": 0.111,
+   "mms": 0.5,
+   "seamless": 0.056
+  },
+  "reads": {
+   "deepgram": "El capitán A de Bayo entregó 65 paquetes a la oficina Lind Dist en Casa Blaca el 11 de agosto.",
+   "scribe": "El capitán Arévalo entregó sesenta y cinco paquetes a la oficina Lindqvist en Casablanca el 11 de agosto.",
+   "hf": "El capitán Adebayo entregó 65 paquetes a la oficina Lindgrist en Casablaca el 11 de agosto.",
+   "gemini": "El capitán Adebayo entregó 65 paquetes a la oficina Lindquist en Casablanca el 11 de agosto.",
+   "whisper": "El capitán Adebayo entregó 65 paquetes a la oficina Lindgrist en Casablaca el 11 de agosto.",
+   "mms": "el capitan a devalo entregó sesenta y cinco paqietes a la oficina lindnist en casa blaca el once de agos to",
+   "seamless": "El capitán Adebayo entregó sesenta y cinco paquetes a la oficina Lindrist en Casablanca el 11 de agosto."
+  }
+ },
+ {
+  "clip": "fp_esf.json",
+  "lang": "es",
+  "consensus": 0.048,
+  "best_single": 0.048,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.191,
+   "scribe": 0.048,
+   "hf": 0.095,
+   "gemini": 0.238,
+   "whisper": 0.095,
+   "mms": 0.381,
+   "seamless": 0.191
+  },
+  "reads": {
+   "deepgram": "La doctora Petrés Web examinó 31 pacientes en la clínica del Kilimazaro con la enfermera Yamamoto el 2 de mayo.",
+   "scribe": "La doctora Petrescu examinó treinta y un pacientes en la clínica del Kilimájaro con la enfermera Yamamoto el 2 de mayo.",
+   "hf": "La doctora Petrescu examinó 31 pacientes en la clínica del Kilimajaro con la enfermera Yamamoto el 2 de mayo.",
+   "gemini": "la doctora tres que examino treinta y un pacientes en la clínica del quilimazaro con la enfermera llamamoto el dos de mayo",
+   "whisper": "La doctora Petrescu examinó 31 pacientes en la clínica del Kilimajaro con la enfermera Yamamoto el 2 de mayo.",
+   "mms": "la doctora petresbot examinó cre intayun pacientes en la clínica del kilima caro con la enfermera diamanoto del dos de mayo",
+   "seamless": "La doctora Petrescu examinó a 31 pacientes en la clínica del Kilimazaro con la enfermera Yamamota el 2 de mayo."
+  }
+ },
+ {
+  "clip": "fp_esg.json",
+  "lang": "es",
+  "consensus": 0.2,
+  "best_single": 0.1,
+  "best_model": "hf",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.15,
+   "scribe": 0.2,
+   "hf": 0.1,
+   "whisper": 0.1,
+   "mms": 0.3,
+   "seamless": 0.2
+  },
+  "reads": {
+   "deepgram": "El ingeniero Novat instaló 19 turbinas cerca de la planta de Oaxaca para la empresa Porklund del 8 de octubre.",
+   "scribe": "El ingeniero Novaf instaló diecinueve turbinas cerca de la planta de Oaxaca para la empresa Ford Clum del 8 de octubre.",
+   "hf": "El ingeniero Novak instaló 19 turbinas cerca de la planta de Oaxaca para la empresa Forklund el 8 de octubre.",
+   "whisper": "El ingeniero Novak instaló 19 turbinas cerca de la planta de Oaxaca para la empresa Forklund  el 8 de octubre.",
+   "mms": "el ingeniero novaz instaló diecinueve turbinas cerca de la planta de basaca para la empresa forklun del ocho de oc tubre",
+   "seamless": "El ingeniero Novak instaló 19 turbinas cerca de la planta de Osaka para la empresa Port Klon el 8 de octubre."
+  }
+ },
+ {
+  "clip": "fp_fre.json",
+  "lang": "fr",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.125,
+   "scribe": 0.0,
+   "hf": 0.125,
+   "gemini": 0.062,
+   "whisper": 0.125,
+   "mms": 0.438,
+   "seamless": 0.188
+  },
+  "reads": {
+   "deepgram": "Le capitaine Adobeyo a livré 65 colis au bureau à Casablanca le 11 août.",
+   "scribe": "Le capitaine Adebayo a livré soixante-cinq colis au bureau Lindqvist à Casablanca le 11 août.",
+   "hf": "Le capitaine Adebayo a livré 65 colis au bureau Lindt-Bvist à Casablanca le 11 août.",
+   "gemini": "Le capitaine Adebayo a livré 65 colis au bureau Lingvist à Casablanca le 11 août.",
+   "whisper": "Le capitaine Adebayo a livré 65 colis au bureau Lindt-Bvist à Casablanca le 11 août.",
+   "mms": "le capitaine adebelo a livré soixante-cinq collies au bureau lindviste à kazevlanka leoû",
+   "seamless": "Le capitaine Adebayor a livré 65 colis au bureau Linde Vista à Casablanca le 11 août."
+  }
+ },
+ {
+  "clip": "fp_frf.json",
+  "lang": "fr",
+  "consensus": 0.05,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.1,
+   "scribe": 0.0,
+   "hf": 0.1,
+   "gemini": 0.05,
+   "whisper": 0.1,
+   "mms": 0.3,
+   "seamless": 0.1
+  },
+  "reads": {
+   "deepgram": "Le docteur Petrescu a examiné 31 patients à la clinique du Killiman-Jaro avec l'infirmière Yamamoto le 2 mai.",
+   "scribe": "Le docteur Petrescu a examiné trente-et-un patients à la clinique du Kilimandjaro avec l'infirmière Yamamoto le deux mai.",
+   "hf": "Le Dr Petrescu a examiné 31 patients à la clinique du Kilimanjaro avec l'infirmière Yamamoto le 2 mai.",
+   "gemini": "Le docteur Petrescu a examiné 31 patients à la clinique du Kilimanjaro avec l'infirmière Yamamoto le 2 mai.",
+   "whisper": "Le Dr Petrescu a examiné 31 patients à la clinique du Kilimanjaro avec l'infirmière Yamamoto le 2 mai.",
+   "mms": "le docteur petrescu a examiné trente et un patients à la clinique du kilimanjarou avec l'infirmière y à même tôt le mai",
+   "seamless": "Le docteur Pétrescu a examiné 31 patients à la clinique du Kilimanjaro avec l'infirmière Yamamoto le 2 mai."
+  }
+ },
+ {
+  "clip": "fp_frg.json",
+  "lang": "fr",
+  "consensus": 0.111,
+  "best_single": 0.111,
+  "best_model": "deepgram",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.111,
+   "scribe": 0.111,
+   "hf": 0.222,
+   "gemini": 0.167,
+   "whisper": 0.222,
+   "mms": 0.278,
+   "seamless": 0.222
+  },
+  "reads": {
+   "deepgram": "L'ingénieur Nova a installé 19 turbines près de l'usine d'Oaxaca pour la société le 8 octobre.",
+   "scribe": "L'ingénieur Nova a installé dix-neuf turbines près de l'usine d'Oaxaca pour la société Bjorklin le huit octobre.",
+   "hf": "L'ingénieur Nova a installé 19 turbines près de l'usine de Oaxaca pour la société Bjorklin le 8 octobre.",
+   "gemini": "l'ingénieur Nova a installé 10 9 turbines près de l'usine d'Oaxaca pour la société B-Jorklin le 8 octobre.",
+   "whisper": "L'ingénieur Nova a installé 19 turbines près de l'usine de Aksaka pour la société Bjorklin le 8 octobre.",
+   "mms": "l'ingénieur nova a installé dix neuf turbine près de l'usine deakaka pour la société bjorklin le octobre",
+   "seamless": "L'ingénieur Nova a installé 19 turbines près de l'usine de Oaxaca pour la société Jorklin le 8 octobre."
+  }
+ },
+ {
+  "clip": "fp_hie.json",
+  "lang": "hi",
+  "consensus": 0.243,
+  "best_single": 0.216,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.405,
+   "scribe": 0.216,
+   "gemini": 0.297,
+   "hf": 0.324,
+   "mms": 0.378,
+   "whisper": 0.324,
+   "seamless": 1.0
+  },
+  "reads": {
+   "deepgram": "कप्तान अगले भाइयों ने ग्यारह August को कासावलामका के लिंदकविष्ट कार्यालय में पैंसठ parcel पहुंचाई.",
+   "scribe": "कप्तान आदेबायो ने 11 अगस्त को कासाब्लांका के लिंडाक्विस्ट कार्यालय में पैंतीस पार्सल पहुंचाए।",
+   "gemini": "कप्तान अदिबायो ने 11 अगस्त को कासाबलामका की लिंडक्विज कार्यालय में 65 पार्सल पहुंचा",
+   "hf": "कप्तान अगेबायों ने 11 अगस्त को कासाबलामका की लिंडर्क्विस्ट कारियालय में 65 पार्शल पहुँचाए।",
+   "mms": "कफ्तान अदिवाईयों ने जारह अगस्त को का सावलामका की लिंदकविस् त कार्यालय में पेंसत पारशल पहुं चाए",
+   "whisper": "कप्तान अगेबायों ने 11 अगस्त को कासाबलामका की लिंडर्क्विस्ट कारियालय में 65 पार्शल पहुंचाए।",
+   "seamless": "Captain Adebayor delivered the fan parcel to Kasablamka's office on August 11"
+  }
+ },
+ {
+  "clip": "fp_hif.json",
+  "lang": "hi",
+  "consensus": 0.051,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.385,
+   "scribe": 0.0,
+   "gemini": 0.128,
+   "hf": 0.205,
+   "mms": 0.308,
+   "whisper": 0.179,
+   "seamless": 1.0
+  },
+  "reads": {
+   "deepgram": "Doctor पेट्रेसको ने दो May को nurse या मामूरतों के साथ किले मंजूर clinic में इकत्तीस मरीज़ों की जांच की.",
+   "scribe": "डॉक्टर पेत्रेस्कु ने दो मई को नर्स यामामोतो के साथ किलिमंजारो क्लिनिक में इकतीस मरीजों की जांच की।",
+   "gemini": "डॉकटर पेट्रीस्को ने दो मई को नर्स यामा मोतो के साथ किलिमंजारो क्लिनिक में 31 मरीजों की जांच की।",
+   "hf": "डॉक्टर पेट्रेस को ने 2 माई को नर्श यामा मोटो के साथ किले मंजारो क्लिनिक में 31 मरीजों की जाच की।",
+   "mms": "दॉक्टर पेत्रे स्कूनित दू मीकूम नर्श्वया मा मोलतों के साथ केलए मनजारू क्लिनिक में इक तीस मरीज़ों की जांच की",
+   "whisper": "डॉक्टर पेट्रेस को ने 2 माई को नर्श यामा मोतों के साथ किले मंजारो क्लिनिक में 31 मरीजों की जाच की।",
+   "seamless": "Dr. Petrescu examined 31 patients at the Kalamandjaro Clinic along with Nurse Yama Moto on May 2."
+  }
+ },
+ {
+  "clip": "fp_hig.json",
+  "lang": "hi",
+  "consensus": 0.385,
+  "best_single": 0.333,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.641,
+   "scribe": 0.333,
+   "gemini": 0.641,
+   "hf": 0.359,
+   "mms": 0.359,
+   "whisper": 0.359,
+   "seamless": 1.0
+  },
+  "reads": {
+   "deepgram": "ने आठ October को company के लिए के पास उन्नीस करवाएं लगाए.",
+   "scribe": "(पृष्ठभूमि में संगीत बजता है) इंजीनियर नोवाक ने आठ अक्टूबर को ब्योर्कलुंद कंपनी के लिए ओवाहाका संयंत्र के पास उन्नीस टरबाइन लगाए।",
+   "gemini": "In January New York ने 8 October को Girinath Company के लिए Ohaha का संयंत्र के पास 19 turbine लगा",
+   "hf": "इंजीनियर नुर्वात ने 8 अक्तूबर को ग्योर कलुंद कमपणी के लिए ओ आहा का संयंत्र के पास 19 टर्बाइन लगाए।",
+   "mms": "इंजीनियर नुर्वात ने आथ   अस्तूबर को ब्योडकलुन कंपनी के लिए ओवाहा का संयंत के पास उनीस दरबाईन लगाए",
+   "whisper": "इंजिनियर नुर्वात ने 8 अक्तूबर को ग्योर कलुंद कमपणी के लिए ओ आहा का संयंत्र के पास 19 टर्बाइन लगाए।",
+   "seamless": "Engineer Nurwat installed 19 turbines for the OHAK machine for the company on October 8"
+  }
+ },
+ {
+  "clip": "fp_jae.json",
+  "lang": "ja",
+  "consensus": 0.044,
+  "best_single": 0.044,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.067,
+   "scribe": 0.044,
+   "hf": 0.044,
+   "whisper": 0.044,
+   "wav2vec2": 0.667
+  },
+  "reads": {
+   "deepgram": "アデバヨ船長は8月11日にカサブランカのリンドクビスト事務所へ65個の荷物を届けまし",
+   "scribe": "アデバヨ船長は、 8月11日にカサブランカのリンドクビスト事務所へ 65個の荷物を届けました。",
+   "hf": "アデバヨ船長は8月11日にカサブランカのリンドクビスト事務所へ65個の荷物を届けました。",
+   "whisper": "アデバヨ船長は、8月11日にカサブランカのリンドクビスト事務所へ65個の荷物を届けました。",
+   "wav2vec2": "テガ予千町八月十一日に小団さノ2歳突書へ六十祖飲荷物を授てました"
+  }
+ },
+ {
+  "clip": "fp_jaf.json",
+  "lang": "ja",
+  "consensus": 0.068,
+  "best_single": 0.023,
+  "best_model": "hf",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.045,
+   "scribe": 0.068,
+   "gemini": 0.114,
+   "hf": 0.023,
+   "whisper": 0.023,
+   "wav2vec2": 0.5
+  },
+  "reads": {
+   "deepgram": "ペトレスク医師は、た月2日に山本看護師とキリマンジャロ診療所で31人の患者を診察しまし",
+   "scribe": "ペトレスク医師は二十日に山本看護師とキリマンジャロ診療所で三十一人の患者を診察しました。",
+   "gemini": "レトレス医師はさつき二日に山本看護師とキリマンジャロ診療所で三十一人の患者を診察しました。",
+   "hf": "ペトレスク医師は、2月2日に山本看護師とキリマンジャロ診療所で31人の患者を診察しました。",
+   "whisper": "ペトレスク医師は、2月2日に山本看護師とキリマンジャロ診療所で31人の患者を診察しました。",
+   "wav2vec2": "世トでス師は作木かに技のと山墓と切マ砂ロ新用所で3十一人の患者を新作しました"
+  }
+ },
+ {
+  "clip": "fp_jag.json",
+  "lang": "ja",
+  "consensus": 0.122,
+  "best_single": 0.082,
+  "best_model": "deepgram",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.082,
+   "scribe": 0.122,
+   "gemini": 0.98,
+   "hf": 0.122,
+   "whisper": 0.102,
+   "wav2vec2": 0.653
+  },
+  "reads": {
+   "deepgram": "ロバーク技師は10月8日にギョルクルンド社のためオアハカ工場の近くに19基のタービンを設置しました。",
+   "scribe": "ロバート技師は、十月八日にビョルツルンド社のためオアハカ工場の近くに 十九機のタービンを設置しました。",
+   "gemini": "Robert Gishi wa 10 gatsu yōka ni Gururun-do-sha no tame owahaka kōjō no chikaku ni jūkyūki no tābīn o setchi shimashita.",
+   "hf": "ノバークギ氏は10月8日にビョルプルンド社のためオアハカ工場の近くに19機のタービンを設置しました。",
+   "whisper": "ノバークギ氏は10月8日にビョルクルンド社のためオアハカ工場の近くに19機のタービンを設置しました。",
+   "wav2vec2": "ドザース実氏が1雑業下に遊ルするんド者のため弱技た鉱上の近くに従のサーセィンをテ付記しました"
+  }
+ },
+ {
+  "clip": "fp_koe.json",
+  "lang": "ko",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.136,
+   "scribe": 0.0,
+   "gemini": 0.091,
+   "hf": 0.114,
+   "whisper": 0.091,
+   "mms": 0.25
+  },
+  "reads": {
+   "deepgram": "아데가요 세 장은 팔 월 십 일 일에 카사블랑카의 린드크 비스트 사무소로 육 십 오 개의 소포를 배달했습니다",
+   "scribe": "아데바요 선장은 8월 11일에 카사블랑카의 린드크비스트 사무소로 예순다섯개의 소포를 배달했습니다.",
+   "gemini": "라데바요 상장은 8월 11일에 카사불랑카의 린드크 비스트 사무소로 예수 다섯 개의 소포를 배달했습니다.",
+   "hf": "아데바요 선장은 8월 11일에 카사블랑카의 린드크비스트 사무소로 65개의 소코를 배달했습니다.",
+   "whisper": "아데바요 선장은 8월 11일에 카사블랑카의 린드크비스트 사무소로 65개의 소포를 배달했습니다.",
+   "mms": "아데바요 선장은 팔루월 시일일에 카사흘랑카의 인들크깊스트 사으소로 예수 다섯스개에서포를 배달했습니다"
+  }
+ },
+ {
+  "clip": "fp_kof.json",
+  "lang": "ko",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.133,
+   "scribe": 0.0,
+   "gemini": 0.044,
+   "hf": 0.089,
+   "whisper": 0.089,
+   "mms": 0.378
+  },
+  "reads": {
+   "deepgram": "페트레스크 박사는 오 월 이 일에 야마모토 간호사와 킴미만자로 진료소에서 삼 십 일 명의 환자를 진찰했습니다.",
+   "scribe": "페트레스쿠 박사는 5월 2일에 야마모토 간호사와 킬리만자로 진료소에서 서른 한 명의 환자를 진찰했습니다.",
+   "gemini": "텍트레스쿠 박사는 5월 2일에 야마모토 간호사와 킬리만자로로 진료소에서 서른한 명의 환자를 진찰했습니다.",
+   "hf": "페트레스코 박사는 5월 2일에 야마모토 간호사와 킬리만자로 진료소에서 31명의 환자를 진찰했습니다.",
+   "whisper": "페트레스코 박사는 5월 2일에 야마모토 간호사와 킬리만자로 진료소에서 31명의 환자를 진찰했습니다.",
+   "mms": "백트의 스크 학사는 오월 이의 야만못터 가로사와 킬미만자로 진요소에서 설음한 명의 관자를 진차했습니다"
+  }
+ },
+ {
+  "clip": "fp_de.json",
+  "lang": "de",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.133,
+   "scribe": 0.0,
+   "hf": 0.2,
+   "gemini": 0.333,
+   "whisper": 0.2,
+   "mms": 0.2,
+   "seamless": 0.267
+  },
+  "reads": {
+   "deepgram": "Doktor Noien sandte 47000 Euro an das Konto von in München am dritten März.",
+   "scribe": "Doktor Nguyen sandte siebenundvierzigtausend Euro an das Konto von Kagiso in München am dritten März.",
+   "hf": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
+   "gemini": "Doktor Nujen sandte sie 47.000 € an das Konto von Kagi so in München am dritten März",
+   "whisper": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
+   "mms": "doktor nujen sandte siebenundvierzig nauleld euro an das konto von kagiso in münchen am dritten märz",
+   "seamless": "Dr. Noyen sandte 47.000 Euro an das Konto von KGISO in München am 3. März."
   }
  }
 ]

@@ -1,95 +1,101 @@
 {
  "ar": {
-  "deepgram": 0.611,
-  "scribe": 0.657,
-  "gemini": 0.656,
-  "hf": 0.575,
-  "whisper": 0.591,
-  "seamless": 0.579
+  "deepgram": 0.598,
+  "scribe": 0.591,
+  "gemini": 0.625,
+  "hf": 0.512,
+  "wav2vec2": 0.437,
+  "whisper": 0.569,
+  "seamless": 0.502
  },
  "de": {
-  "deepgram": 0.881,
-  "scribe": 0.897,
-  "hf": 0.867,
-  "gemini": 0.811,
-  "whisper": 0.843,
-  "mms": 0.679,
-  "seamless": 0.821
+  "deepgram": 0.858,
+  "scribe": 0.884,
+  "hf": 0.858,
+  "gemini": 0.751,
+  "whisper": 0.834,
+  "mms": 0.628,
+  "seamless": 0.768
  },
  "es": {
-  "deepgram": 0.791,
-  "scribe": 0.851,
-  "hf": 0.859,
-  "gemini": 0.876,
-  "whisper": 0.81,
-  "mms": 0.707,
-  "seamless": 0.813
+  "deepgram": 0.776,
+  "scribe": 0.871,
+  "hf": 0.876,
+  "gemini": 0.868,
+  "whisper": 0.854,
+  "mms": 0.657,
+  "seamless": 0.832
  },
  "fr": {
-  "deepgram": 0.871,
-  "scribe": 0.928,
-  "hf": 0.859,
-  "gemini": 0.844,
-  "whisper": 0.813,
-  "mms": 0.754,
-  "seamless": 0.867
+  "deepgram": 0.878,
+  "scribe": 0.943,
+  "hf": 0.856,
+  "gemini": 0.871,
+  "whisper": 0.832,
+  "mms": 0.708,
+  "seamless": 0.849
  },
  "hi": {
-  "deepgram": 0.571,
-  "scribe": 0.933,
-  "hf": 0.731,
-  "mms": 0.724,
-  "whisper": 0.704,
-  "seamless": 0.0
+  "deepgram": 0.55,
+  "scribe": 0.883,
+  "hf": 0.719,
+  "mms": 0.693,
+  "whisper": 0.707,
+  "seamless": 0.0,
+  "gemini": 0.683
  },
  "ja": {
-  "deepgram": 0.893,
-  "scribe": 0.983,
-  "gemini": 0.483,
-  "hf": 0.927,
-  "whisper": 0.921,
-  "wav2vec2": 0.391
+  "deepgram": 0.911,
+  "scribe": 0.957,
+  "gemini": 0.473,
+  "hf": 0.932,
+  "whisper": 0.931,
+  "wav2vec2": 0.392
  },
  "ko": {
-  "deepgram": 0.923,
-  "scribe": 0.981,
-  "gemini": 0.757,
-  "hf": 0.89,
-  "whisper": 0.89,
-  "mms": 0.64
+  "deepgram": 0.908,
+  "scribe": 0.983,
+  "gemini": 0.836,
+  "hf": 0.889,
+  "whisper": 0.892,
+  "mms": 0.648
  },
  "pt": {
-  "deepgram": 0.814,
-  "scribe": 0.948,
-  "hf": 0.851,
-  "whisper": 0.851,
-  "mms": 0.676,
-  "seamless": 0.801
+  "deepgram": 0.806,
+  "scribe": 0.92,
+  "hf": 0.862,
+  "whisper": 0.862,
+  "mms": 0.656,
+  "seamless": 0.805,
+  "gemini": 0.899
  },
  "ru": {
-  "deepgram": 0.651,
-  "scribe": 0.853,
-  "hf": 0.725,
-  "whisper": 0.727,
-  "mms": 0.341
+  "deepgram": 0.622,
+  "scribe": 0.895,
+  "hf": 0.676,
+  "whisper": 0.677,
+  "mms": 0.372,
+  "gemini": 0.854
  },
  "tr": {
-  "deepgram": 0.617,
-  "scribe": 0.691,
-  "hf": 0.611,
-  "whisper": 0.59,
-  "mms": 0.264
+  "deepgram": 0.656,
+  "scribe": 0.688,
+  "hf": 0.63,
+  "whisper": 0.587,
+  "mms": 0.266,
+  "gemini": 0.486
  },
  "uk": {
-  "deepgram": 0.723,
-  "scribe": 0.851,
-  "whisper": 0.777,
-  "mms": 0.482
+  "deepgram": 0.664,
+  "scribe": 0.862,
+  "whisper": 0.746,
+  "mms": 0.464
  },
  "vi": {
-  "deepgram": 0.789,
-  "scribe": 0.888,
-  "phowhisper": 0.765,
-  "whisper": 0.827
+  "deepgram": 0.756,
+  "scribe": 0.885,
+  "phowhisper": 0.739,
+  "whisper": 0.799,
+  "gemini": 0.657
  }
 }

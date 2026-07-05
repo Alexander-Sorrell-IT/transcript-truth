@@ -16,11 +16,9 @@ OUT = os.path.join(ROOT, "bench", "full_parity.json")
 BAT = os.path.join(ROOT, "bench", "battery")
 
 old = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else []
-# legacy rows have no 'clip' key — reconstruct from the sorted order they were run in
-legacy_clips = sorted(glob.glob(os.path.join(BAT, "fp_*.json")))[:len(old)] if old and "clip" not in old[0] else None
-if legacy_clips:
-    for r, p in zip(old, legacy_clips):
-        r["clip"] = os.path.basename(p)
+# refuse rows without a trustworthy clip label (guessing from glob order mislabeled rows once
+# when the battery grew mid-stream); a row also must be self-consistent (clip lang == lang).
+old = [r for r in old if r.get("clip", "")[3:5] == r["lang"]]
 done = {r["clip"] for r in old if r["lang"] not in FORCE_LANGS}
 keep = [r for r in old if r["clip"] in done]
 
