@@ -11,11 +11,24 @@ multilingual) + decision collocations (context fit: en/es/ru/uk/jp). For languag
 lexical signal (e.g. rare proper nouns absent from every dictionary) it returns low confidence, so
 the caller falls back to the vote — it helps where it has signal, stays silent where it doesn't.
 """
-import unicodedata
+import os, json, functools, unicodedata
 from . import lexicon
 from . import decision as _dec
 
 _STRIP = ".,!?;:'\"()[]«»„“”…-—"
+_DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+
+
+@functools.lru_cache(maxsize=1)
+def gazetteer():
+    """Multilingual NAME gazetteer (place/person/org surfaces in every language & script, from
+    GeoNames — build with bench/build_gazetteer.py). This is the data cell that gives EVERY language
+    the name signal Japanese gets from JMnedict, so the brain can tell a real name ('Marsilya',
+    'München', 'Мюнхен') from a mishearing in any language. Empty set if not built yet (graceful)."""
+    try:
+        return set(json.load(open(os.path.join(_DATA, "gazetteer.json"), encoding="utf-8")))
+    except Exception:
+        return set()
 
 
 def _clean(w):
@@ -39,14 +52,18 @@ def _is_known(word, lang):
     w = _clean(word)
     if not w:
         return False
+    raw = word.strip(_STRIP)
     if lang in ("ja", "jp"):
         try:
             from . import verdict
-            raw = word.strip(_STRIP)
             if verdict.gloss(raw) is not None or raw in verdict.name_index():
                 return True
         except Exception:
             pass
+    # multilingual NAME gazetteer — the data cell that gives every language JP-level name recognition
+    g = gazetteer()
+    if w in g or raw.lower() in g:
+        return True
     try:
         return bool(lexicon.is_known(w, lang))
     except Exception:
