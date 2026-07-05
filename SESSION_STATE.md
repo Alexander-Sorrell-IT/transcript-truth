@@ -22,6 +22,24 @@
 - **Still BEHIND:** tr (vote drops 'Nguyen'; deepgram is the lone good witness — needs per-language
   reliability weighting) and ar (ALL 4 witnesses bad 0.31-0.44 — needs a better Arabic roster).
 
+## Gap-close round 3 (2026-07-05, commit a947fcc) — idiom + trap-set cells for EVERYONE
+- **Idiom/colloquial cells built for all 13 non-JA languages** (`bench/build_colloquial_multilang.py`,
+  source kaikki.org = machine-readable Wiktionary, same authority class as JMdict; glosses + tags):
+  en 65k, de 9k, ru 8.8k, es 8.5k, fr 8k, pt 6k, uk 3.4k, vi 2.9k, tr 2.1k, ko 1.7k, hi 905,
+  ar 537, ur 382 (ar/ur thin = Wiktionary's real coverage, noted honestly). Generic layer in
+  colloquial.py (`slang_lookup_lang`/`known_colloquial`, lookup-not-scan like the JP cell).
+- **Slang wired into adjudicator validity** (`_is_word` falls through to the colloquial cell):
+  a slang word ('bagnole', 'kiffer') is NOT in spellcheckers and used to look like garble — now
+  it beats a mishearing at conf 1.0 (verified live).
+- **Homophone trap-sets for the 9 missing langs** (`bench/build_confirmed_multilang.py`) —
+  DETERMINISTIC, no model proposes: espeak-ng G2P groups same-pronunciation vocab (fr 5.6k sets —
+  the -er/-é + silent-plural traps; ko 152 real ones incl 갈게/갈께); Arabic-script langs use
+  orthographic normalization (hamza seats, taa marbuta, final ya: ar 1180, ur 1230); hi 415
+  (anusvara variants). tr=14 is honest linguistics (phonemic spelling = few true homophones).
+  Two G2P bugs found+fixed: ASCII loanword junk (native-script filter) and an ASCII-collapse
+  dedup that erased non-Latin sets entirely.
+- decision.py consumes the new <lang>_confirmed.json automatically. Suite 346 green.
+
 ## Gap-close round 2 (2026-07-05, commit 7b92e17) — 48-clip measured verdict
 - **Battery 4x'd:** `bench/make_full_parity_battery2.py` adds 3 clips/lang (different names/numbers)
   -> 48 hard clips. Full live bench re-run on all of them (bench/fp_run2.log, full_parity.json).

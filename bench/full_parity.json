@@ -1,40 +1,188 @@
 [
  {
   "lang": "ar",
-  "consensus": 0.438,
-  "best_single": 0.312,
-  "best_model": "gemini",
+  "consensus": 0.312,
+  "best_single": 0.25,
+  "best_model": "whisper",
   "wins": false,
   "wer_by_model": {
    "deepgram": 0.375,
    "scribe": 0.375,
    "gemini": 0.312,
+   "hf": 0.312,
+   "whisper": 0.25,
    "seamless": 0.375
   },
   "reads": {
    "deepgram": "أرسل طبيب نجوم سبعة وأربعين ألف يورو لا حسابك غيسو في مارسيليا في الثالث من مارس",
    "scribe": "أرسل الطبيب لجوين 47 ألف يورو لا حساب، كاغيث في مارسيليا في الثالث من مارس.",
-   "gemini": "أرسل الطبيب نجيب سبعة وأربعين ألف يورو لحساب كريس في مارسيليا في الثالث من مارس",
+   "gemini": "أرسل الطبيب نجيب سبعة وأربعين ألف يورو لحساب كغيسو في مارسيليا في الثالث من مارس",
+   "hf": "أرسل طبيب نجوين 47 ألف يورو لا حساب كاغيسو في مارسيليا في الثالث من مارس",
+   "whisper": "أرسل طبيب نجوين 47 ألف يورو لا حساب كاغيسو في مرسيليا في الثالث من مارس",
    "seamless": "أرسل طبيب نجومين 47 ألف يورو لا حساب كاغيزو في مرسيليا في الثالث من مارس"
+  }
+ },
+ {
+  "lang": "ar",
+  "consensus": 0.471,
+  "best_single": 0.471,
+  "best_model": "deepgram",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.471,
+   "scribe": 0.471,
+   "gemini": 0.471,
+   "hf": 0.471,
+   "whisper": 0.471,
+   "seamless": 0.529
+  },
+  "reads": {
+   "deepgram": "البروفيسور أو كونكوفني عشر ألف دولار إلى مؤسسة بيرغستور روما فيلياو بليانر في التاسع من يوليو",
+   "scribe": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروست روما فيليوبيلاتا في التاسع من يوليو.",
+   "gemini": "تحول البروفيسور أوتونيكو 12 ألف دولار إلى مؤسسة بيروبستومما في ال 9 من يوليو.",
+   "hf": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروغستروم في اليوم ليانر في التاسع من يوليو",
+   "whisper": "حول البروفيسور أو كونيكو 12 ألف دولار إلى مؤسسة بيروغستروم في اليوم ليانر في التاسع من يوليو",
+   "seamless": "حول البروفيسور أوتومكو 12 ألف دولار إلى مؤسسة بيروغستر روما في ليوبليانرا في 9 يوليو."
+  }
+ },
+ {
+  "lang": "ar",
+  "consensus": 0.333,
+  "best_single": 0.333,
+  "best_model": "deepgram",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.333,
+   "scribe": 0.4,
+   "gemini": 0.467,
+   "hf": 0.667,
+   "whisper": 0.667,
+   "seamless": 0.467
+  },
+  "reads": {
+   "deepgram": "حجزت الآنسة تاكاهاشي 23 غرفة في فندق مراكش لو فدناكامورا في الخامس من يونيو",
+   "scribe": "حجزت الأنسة تاكاهاشي 23 غرفة في فندق مراكش لوفدن كامورا في الخامس من يونيو.",
+   "gemini": "حجزت الانسه تاكاهاشي 23 غرفة في فندق مراكش لو فدنا كامورا في الخامس من يونيو.",
+   "hf": "حجزت الآن ستوتا كهاشي 23 غرفة في كندق مراكش لو فدنا كمورا في الخامس من يونيو",
+   "whisper": "حجزت الآن ستوتا كهاشي 23 غرفة في كندق مراكش لو فدنا كمورا في الخامس من يونيو",
+   "seamless": "حجزت الآنسة توتاكاهاشي 23 غرفة في فندق مراكش لوفاد ناكامورا في 5 يونيو"
+  }
+ },
+ {
+  "lang": "ar",
+  "consensus": 0.062,
+  "best_single": 0.125,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.375,
+   "scribe": 0.125,
+   "gemini": 0.125,
+   "hf": 0.25,
+   "whisper": 0.25,
+   "seamless": 0.312
+  },
+  "reads": {
+   "deepgram": "أرسل السيد فرنان داز ثمانمائة صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسكا في الأول من إييترال.",
+   "scribe": "أرسل السيد فرناندز 800 صندوق من فالبارايسو إلى مستودع كوفالسكي في غدانسك في الأول من أيتار.",
+   "gemini": "أرسل السيد فرنانديز 800 صندوق من فالبرايسو إلى مستودع كوفالسكي في غدانسك في الأول من أغسطس",
+   "hf": "أرسل السيد فرناندز 800 صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسك في الأول من أياترل.",
+   "whisper": "أرسل السيد فرناندز 800 صندوق من فألبارايس إلى مستودع كوفالسيكي في غدانسك في الأول من أياترل.",
+   "seamless": "أرسل السيد فرنانديز 800 صندوق من فئ البارايسو إلى مستودع كوفالسيكي في غدانيسكا في الأول من إيتريل"
+  }
+ },
+ {
+  "lang": "de",
+  "consensus": 0.067,
+  "best_single": 0.067,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.133,
+   "scribe": 0.067,
+   "hf": 0.2,
+   "gemini": 0.133,
+   "whisper": 0.2,
+   "mms": 0.2,
+   "seamless": 0.267
+  },
+  "reads": {
+   "deepgram": "Doktor Noien sandte 47000 Euro an das Konto von in München am dritten März.",
+   "scribe": "Doktor Nguyen sandte siebenundvierzigtausend Euro an das Konto von Kagiso in München am dritten März. (Musik)",
+   "hf": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
+   "gemini": "Doktor Nuyen sandte 47.000 Euro an das Konto von Kagiso in München am 3. März.",
+   "whisper": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
+   "mms": "doktor nujen sandte siebenundvierzig nauleld euro an das konto von kagiso in münchen am dritten märz",
+   "seamless": "Dr. Noyen sandte 47.000 Euro an das Konto von KGISO in München am 3. März."
+  }
+ },
+ {
+  "lang": "de",
+  "consensus": 0.071,
+  "best_single": 0.071,
+  "best_model": "hf",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.143,
+   "scribe": 0.143,
+   "hf": 0.071,
+   "gemini": 0.429,
+   "whisper": 0.071,
+   "mms": 0.429,
+   "seamless": 0.071
+  },
+  "reads": {
+   "deepgram": "Professor Okonquo überwies 12000 Dollar an die Bergström Stiftung in Niobliana am neunten Juli.",
+   "scribe": "Professor Okonquo überwies zwölftausend Dollar an die Bergström Stiftung in Ljubljana am 9. Juli.",
+   "hf": "Professor Okonkwo überwies 12.000 Dollar an die Bergström Stiftung in Ljubljana am 9. Juli.",
+   "gemini": "Professor O überwiest 12 000 $ an die Bergström Stiftung in Njubliana am 9. Juli.",
+   "whisper": "Professor Okonkwo überwies 12.000 Dollar an die Bergström Stiftung in Ljubljana am 9. Juli.",
+   "mms": "professor okongwo überwies zwölfnaulld dollar an die bergströmstiftung in liobliana am un juli",
+   "seamless": "Professor Okonkwo überwies 12.000 Dollar an die Bergström-Stiftung in Ljubljana am 9. Juli."
   }
  },
  {
   "lang": "de",
   "consensus": 0.0,
   "best_single": 0.0,
-  "best_model": "scribe",
+  "best_model": "deepgram",
   "wins": true,
   "wer_by_model": {
-   "deepgram": 0.133,
+   "deepgram": 0.0,
    "scribe": 0.0,
-   "hf": 0.2,
-   "gemini": 0.0
+   "hf": 0.062,
+   "gemini": 0.062
   },
   "reads": {
-   "deepgram": "Doktor Noien sandte 47000 Euro an das Konto von in München am dritten März.",
-   "scribe": "Doktor Nguyen sandte siebenundvierzigtausend Euro an das Konto von Kagiso in München am dritten März.",
-   "hf": "Dr. Nguyen sandte 47.000 Euro an das Konto von Cargiso in München am 3. März.",
-   "gemini": "Doktor Nguyen sandte siebenundvierzigtausend Euro an das Konto von Kagiso in München am dritten März."
+   "deepgram": "Fräulein Takahashi buchte 23 Zimmer im Hotel in Marrakesch für die Nakamura Delegation am fünften Juni.",
+   "scribe": "Fräulein Takahashi buchte 23 Zimmer im Hotel in Marrakesch für die Nakamura Delegation am fünften Juni.",
+   "hf": "Fräulein Takahashi buchte 23 Zimmer im Hotel in Marrakesch für die Nakamura-Delegation am 5. Juni.",
+   "gemini": "Fräulein Takahashi buchte 23 Zimmer im Hotel in Marrakesch für die Nakamura Delegation am 5. Juni."
+  }
+ },
+ {
+  "lang": "de",
+  "consensus": 0.2,
+  "best_single": 0.133,
+  "best_model": "gemini",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.2,
+   "scribe": 0.2,
+   "hf": 0.2,
+   "gemini": 0.133,
+   "whisper": 0.2,
+   "mms": 0.333,
+   "seamless": 0.2
+  },
+  "reads": {
+   "deepgram": "Herr Fernández verschickte 800 Kisten von Walparaizo zum Kowalsky Lager in Danzig am ersten April.",
+   "scribe": "Herr Fernandes verschickte achthundert Kisten von Valparaiso zum Kowalski-Lager in Danzig am 1. April.",
+   "hf": "Herr Fernandes verschickte 800 Kisten von Valparaiso zum Kowalski-Lager in Danzig am 1. April.",
+   "gemini": "Herr Fernandez verschickte 800 Kisten von Valparaíso zum Kobalski Lager in Danzig am 1. April.",
+   "whisper": "Herr Fernandes verschickte 800 Kisten von Valparaiso zum Kowalski-Lager in Danzig am 1. April.",
+   "mms": "herr fernandes verschickte achthundert kisten von waldpareiso zum kowalstilager in danzig am april",
+   "seamless": "Herr Fernandez verschickte 800 Kisten von Walpareiso zum Kovalski Lager in Danzig am 1. April."
   }
  },
  {
@@ -47,7 +195,7 @@
    "deepgram": 0.15,
    "scribe": 0.1,
    "hf": 0.1,
-   "gemini": 0.1,
+   "gemini": 0.15,
    "whisper": 0.1,
    "mms": 0.35,
    "seamless": 0.15
@@ -56,10 +204,79 @@
    "deepgram": "Doctora Wen envió 47000 euros a la cuenta de Caciso en Guadalajara el 3 de marzo.",
    "scribe": "La doctora Wen envió cuarenta y siete mil euros a la cuenta de CACISO en Guadalajara el 3 de marzo.",
    "hf": "La doctora Wen envió 47.000 euros a la cuenta de Caciso en Guadalajara el 3 de marzo.",
-   "gemini": "La doctora Owen envió 47.000 euros a la cuenta de Kacizo en Guadalajara el 3 de marzo.",
+   "gemini": "La doctora Gwen envió 47000 euros a la cuenta de Casison Guadalajara el 3 de marzo.",
    "whisper": "La doctora Wen envió 47.000 euros a la cuenta de Caciso en Guadalajara el 3 de marzo.",
    "mms": "la doctora gwen envió cuarenta y siete mero euros a la cuenta de caciso en guadalanjara al tres de mar zo",
    "seamless": "La Dra. Wen envió 47 mil euros a la cuenta de Caciso en Guadalajara el 3 de marzo."
+  }
+ },
+ {
+  "lang": "es",
+  "consensus": 0.176,
+  "best_single": 0.176,
+  "best_model": "deepgram",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.176,
+   "scribe": 0.176,
+   "hf": 0.235,
+   "gemini": 0.176,
+   "whisper": 0.176,
+   "mms": 0.235,
+   "seamless": 0.176
+  },
+  "reads": {
+   "deepgram": "El profesor Ococo transfirió 12000 dólares a la fundación Bergstrom, en Lieuliana, el 9 de julio.",
+   "scribe": "El profesor Otoko transfirió 12 000 dólares a la Fundación Bergstrom en Liubliana el 9 de julio.",
+   "hf": "El profesor Okoko transpirió 12.000 dólares a la Fundación Bergstrom en Ljubljana el 9 de julio.",
+   "gemini": "El profesor Koko transfirió 12 000 dólares a la Fundación Bergstrom en Liubliana el 9 de julio.",
+   "whisper": "El profesor Okoko transfirió 12.000 dólares a la Fundación Bergstrom en Ljubljana el 9 de julio.",
+   "mms": "el profesor okoto transfirió doce cero dólares a la fundación beelkstrom en lubliana el nueve de  julio",
+   "seamless": "El profesor Otoko transfirió doce mil dólares a la Fundación Berxtrom en Ljubljana el 9 de julio."
+  }
+ },
+ {
+  "lang": "es",
+  "consensus": 0.263,
+  "best_single": 0.053,
+  "best_model": "hf",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.158,
+   "scribe": 0.263,
+   "hf": 0.053,
+   "gemini": 0.053
+  },
+  "reads": {
+   "deepgram": "La señorita Takazaki reservó 23 habitaciones en el hotel de Marrachech para la delegación Nakanura el 5 de junio.",
+   "scribe": "La señorita Takazaki reservó veintitrés habitaciones en el hotel de Marrakech para la delegación Nakamura el cinco de junio. (Pausa de dos segundos)",
+   "hf": "La señorita Takazaki reservó 23 habitaciones en el hotel de Marrakech para la delegación Nakamura el 5 de junio.",
+   "gemini": "La señorita Takazaki reservó 23 habitaciones en el Hotel de Marrakech para la delegación Nakamura el 5 de junio."
+  }
+ },
+ {
+  "lang": "es",
+  "consensus": 0.059,
+  "best_single": 0.059,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.353,
+   "scribe": 0.059,
+   "hf": 0.176,
+   "gemini": 0.118,
+   "whisper": 0.294,
+   "mms": 0.294,
+   "seamless": 0.235
+  },
+  "reads": {
+   "deepgram": "El señor Fernández envió 800 cajas desde Valparaíso al almacén Cobalspiendans el 1º de abril.",
+   "scribe": "El señor Fernández envió ochocientas cajas desde Valparaíso al almacén Kowalski en Gdansk el 1 de abril.",
+   "hf": "El señor Fernández envió 800 cajas desde Valparaíso al almacén Kowalski en Dansk el 1 de abril.",
+   "gemini": "El señor Fernández envió 800 cajas desde Valparaíso al almacén Kowalski en Danzig el primero de abril.",
+   "whisper": "El señor Fernández envió 800 cajas desde Valparaíso al almacén Cobalt Stiendansk el 1 de abril.",
+   "mms": "el señor fernández envió ochocientas cajas desde valparaíso al almacen cobalstindansue el iero de abril",
+   "seamless": "El señor Fernández envió 800 cajas desde Valparaíso al almacén Kovalsky en Danske el 1 de abril."
   }
  },
  {
@@ -72,7 +289,7 @@
    "deepgram": 0.105,
    "scribe": 0.053,
    "hf": 0.21,
-   "gemini": 0.105,
+   "gemini": 0.158,
    "whisper": 0.21,
    "mms": 0.21,
    "seamless": 0.105
@@ -81,31 +298,173 @@
    "deepgram": "Le docteur Ndian a envoyé 47000 euros vers le compte de Cagiso à Marseille le 3 mars.",
    "scribe": "Le docteur Ndian a envoyé quarante-sept mille euros vers le compte de Kagiso à Marseille le trois mars.",
    "hf": "Le Dr Nguyen a envoyé 47 000 euros vers le comte de Cagiso à Marseille le 3 mars.",
-   "gemini": "Le docteur Nguyen a envoyé 47 000 euros vers le compte de Kajizo à Marseille le 3 mars.",
+   "gemini": "Le docteur Ndiaye a envoyé 47 000 euros vers le compte de Kajizo à Marseille le 3 mars.",
    "whisper": "Le Dr Nguyen a envoyé 47 000 euros vers le comte de Cagiso à Marseille le 3 mars.",
    "mms": "le docteur nugian a envoyé quarante-sept millo euros vers le compte de kagizo à marseille le mars",
    "seamless": "Le docteur Nguyen a envoyé 47 000 euros vers le compte de Cagiso à Marseille le 3 mars."
   }
  },
  {
+  "lang": "fr",
+  "consensus": 0.059,
+  "best_single": 0.059,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.176,
+   "scribe": 0.059,
+   "hf": 0.176,
+   "gemini": 0.235,
+   "whisper": 0.176,
+   "mms": 0.235,
+   "seamless": 0.118
+  },
+  "reads": {
+   "deepgram": "Le professeur a transféré 12000 dollars à la fondation Berkstrom à Liubliana le 9 juillet.",
+   "scribe": "Le professeur Okonkwo a transféré douze-mille dollars à la Fondation Berkstrom à Ljubljana le 9 juillet.",
+   "hf": "Le professeur Okonkwo a transféré 12 000 $ à la fondation Bergstrom à Ljubljana le 9 juillet.",
+   "gemini": "le professeur Rencontres a transféré 12 000 dollars à la fondation Bergstrom à Lubiana le 9 juillet",
+   "whisper": "Le professeur Okonkwo a transféré 12 000 $ à la fondation Bergstrom à Ljubljana le 9 juillet.",
+   "mms": "le professeur reconcuant a transféré douze mille dollars à la fondation berkstrom à lubliana le juillet",
+   "seamless": "Le professeur Okonkwo a transféré 12 000 dollars à la Fondation Bergstrom à Ljubljana le 9 juillet."
+  }
+ },
+ {
+  "lang": "fr",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "scribe": 0.0,
+   "hf": 0.0,
+   "gemini": 0.056
+  },
+  "reads": {
+   "deepgram": "Mademoiselle Takahashi a réservé 23 chambres à l'hôtel de Marrakech pour la délégation Nakamura le 5 juin.",
+   "scribe": "Mademoiselle Takahashi a réservé vingt-trois chambres à l'hôtel de Marrakech pour la délégation Nakamura le 5 juin.",
+   "hf": "Mademoiselle Takahashi a réservé 23 chambres à l'hôtel de Marrakech pour la délégation Nakamura le 5 juin.",
+   "gemini": "Mademoiselle Takahashi a réservé 23 chambres à l'hôtel de Marrakech pour la délégation Nakamura le 5 juillet"
+  }
+ },
+ {
+  "lang": "fr",
+  "consensus": 0.176,
+  "best_single": 0.176,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.235,
+   "scribe": 0.176,
+   "hf": 0.176,
+   "gemini": 0.176,
+   "whisper": 0.176,
+   "mms": 0.294,
+   "seamless": 0.176
+  },
+  "reads": {
+   "deepgram": "Monsieur Fernandez a expédié 800 caisses de Valparaiso à l'entrepôt Kowalski à Gansk le 1er avril.",
+   "scribe": "Monsieur Fernandez a expédié huit cents caisses de Valparaiso à l'entrepôt Kowalski à Gdansk le 1ᵉʳ avril.",
+   "hf": "Monsieur Fernandez a expédié 800 caisses de Valparaiso à l'entrepôt Kowalski à Gdansk le 1er avril.",
+   "gemini": "Monsieur Fernandez a expédié 800 caisses de Valparaiso à l'entrepôt Kowalsky à Dantz le premier avril.",
+   "whisper": "Monsieur Fernandez a expédié 800 caisses de Valparaiso à l'entrepôt Kowalski à Gdansk le 1er avril.",
+   "mms": "m fernandez a expédié huit cents caisses de valparezo à l'entrepôs kowalski à dansk le er avril",
+   "seamless": "Monsieur Fernandez a expédié 800 caisses de Valparaiso à l'entrepôt Kowalski à Gdansk le 1er avril."
+  }
+ },
+ {
   "lang": "hi",
-  "consensus": 0.086,
+  "consensus": 0.029,
   "best_single": 0.029,
   "best_model": "scribe",
-  "wins": false,
+  "wins": true,
   "wer_by_model": {
    "deepgram": 0.457,
    "scribe": 0.029,
-   "gemini": 0.286,
+   "hf": 0.286,
    "mms": 0.2,
+   "whisper": 0.286,
    "seamless": 1.0
   },
   "reads": {
    "deepgram": "Doctor Nagunn ने Marcele में काग़ज़ों के खाते में सैंतालीस हज़ार तीन March को भेजे.",
    "scribe": "डॉक्टर नगुयेन ने मार्सेले में कागिसो के खाते में सैंतालीस हज़ार यूरो तीन मार्च को भेजे।",
-   "gemini": "डॉक्टर नगुएन ने मार्सेल में कागिसो के खाते में 47,000 यूरो 3 मार्च को भेजे।",
+   "hf": "डॉक्टर नगुएन ने मार्चफिले में कागिसों के खाते में 47,000 यूरोपीन मार्च को भेजे।",
    "mms": "डॉक्टर नगुएन ने मार्जसेले में काकिसों के खाते में सेंटालीस   हजार यूरोप तीन मार्ज को भेजे",
+   "whisper": "डॉक्टर नगुएन ने मार्चफिले में कागिसों के खाते में 47,000 यूरोपीन मार्च को भेजे।",
    "seamless": "Dr. Nagoyan sent 47,000 euros to the account of the papers in Marseille in March."
+  }
+ },
+ {
+  "lang": "hi",
+  "consensus": 0.054,
+  "best_single": 0.081,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.649,
+   "scribe": 0.081,
+   "hf": 0.243,
+   "mms": 0.243,
+   "whisper": 0.297,
+   "seamless": 1.0
+  },
+  "reads": {
+   "deepgram": "नौ July को योगियाना के foundation को बारह हज़ार dollar भेजे.",
+   "scribe": "प्रोफेसर ओकोन्कवो ने नौ जुलाई को ल्यूब्लियाना के बर्गस्ट्रॉम फाउंडेशन को बारह हज़ार डॉलर भेजे।",
+   "hf": "प्रोफेसर ओको नकबोने 9 जुलाई को लुगलियाना के बर्गस्ट्रॉम फाउंडेशन को 12,000 डॉलर भेजे।",
+   "mms": "प्रोफ़ेसर ओकुमप्रभों ने नौक जूलाई को ल्यूबलियाना के बर्गस्त्रॉं फाउंडेशन को बारेह  हजार डॉलर भेजे",
+   "whisper": "प्रोफेसर ओ को उनकबोने 9 जुलाई को लुगलियाना के बर्गस्ट्रॉम फाउंडेशन को 12,000 डॉलर भेजे।",
+   "seamless": "Professor Okonjo-Iweala sent 12,000 dollars to the Burgas Foundation in Ljubljana on July 9"
+  }
+ },
+ {
+  "lang": "hi",
+  "consensus": 0.05,
+  "best_single": 0.05,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.15,
+   "scribe": 0.05,
+   "gemini": 0.2,
+   "hf": 0.225,
+   "mms": 0.175,
+   "whisper": 0.225,
+   "seamless": 1.0
+  },
+  "reads": {
+   "deepgram": "सुश्री काकाहाशी ने पांच जून को मराकेश के hotel में नाकामुरा प्रतिनिधिमंडल के लिए तेज़ कमरे book किए.",
+   "scribe": "सुश्री ताकाहाशी ने पाँच जून को मराकेश के होटल में नाकामुरा प्रतिनिधिमंडल के लिए फेक कमरे बुक किए।",
+   "gemini": "सुश्री ताकाहाशी ने 5 जून को मराकेश के होटल में नाकामपुरा प्रतिनिधि मंडल के लिए फेज़ कमरे बुत।",
+   "hf": "सुश्री ताकाहाशी ने 5 जून को मराकेश के होटेल में नाकामुरा प्रतिनिधी मंदल के लिए 23 कमरे बुद किये।",
+   "mms": "सुश्वी ताकाहाशी ने पांच जून को मराकेश के होतेल में नाकामुरा प्रतिनिद्धिमं्दल के लिए तेज़ कमरे बुत किए",
+   "whisper": "सुश्री ताकाहाशी ने 5 जून को मराकेश के होटेल में नाकामुरा प्रतिनिधी मंदल के लिए 23 कमरे बुद किये।",
+   "seamless": "Sushri Takahashi booked a new room for Nakamura on 5th June at a hotel in Marrakech."
+  }
+ },
+ {
+  "lang": "hi",
+  "consensus": 0.108,
+  "best_single": 0.108,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.46,
+   "scribe": 0.108,
+   "hf": 0.324,
+   "mms": 0.486,
+   "whisper": 0.378,
+   "seamless": 1.0
+  },
+  "reads": {
+   "deepgram": "श्री फिरननदेस ने एक April कोवाल पराईसों से के कोवाल की गोदाम को आठ सौ बचे भेजे.",
+   "scribe": "श्री फर्नांडेज ने 1 अप्रैल को वालपाराइसो से गुडान्स्क के कोवाल्स्की गोदाम को आठ सौ बक्से भेजे।",
+   "hf": "श्रीप हर्नान्देज ने एक अप्रेल को वाल पर आईसो से गुदान्स के कोरवाल्स की गोडाम को आठ सो बक्षे धेजे।",
+   "mms": "श्री खरनानडेज़ ने एक  अप्रेल कोरवाल पर आईस0ं से गोडांस के कोरवालस की घोडाम को 800 बक्षे भेजे",
+   "whisper": "श्रीप हर्नान्देज ने एक अप्रेल को वाल पर आईसो सिग्धान्स के कोरवाल्स की गोडाम को आज सो बक्षे धेजे।",
+   "seamless": "Mr. Fernandez sent 800 boxes to the warehouse of Kurwal from Walparais on 1st April"
   }
  },
  {
@@ -117,7 +476,7 @@
   "wer_by_model": {
    "deepgram": 0.154,
    "scribe": 0.0,
-   "gemini": 0.231,
+   "gemini": 0.949,
    "hf": 0.103,
    "whisper": 0.128,
    "wav2vec2": 0.692
@@ -125,10 +484,79 @@
   "reads": {
    "deepgram": "グエンギ氏はレイキャビクの鍵噌の口座に4万7千ユーロを3月3日に送金しまし",
    "scribe": "グエン医師はレイキャビクのカギソの口座に四万七千ユーロを三月三日に送金しました。",
-   "gemini": "ウェンニッシュはレイキャビクの彼の口座に4万7000ユーロを3月3日に送金しました。",
+   "gemini": "Pues Nishiwake Kakisuto no kozani 4 man 7 sen euro o sangatsu mikka ni soukin shimashita.",
    "hf": "ウェンニ氏はレイキャビクのカギソの口座に47,000ユーロを3月3日に送金しました。",
    "whisper": "ウェニ氏は、レイキャビクのカギソの口座に47,000ユーロを3月3日に送金しました。",
    "wav2vec2": "道師が生の下の小座に去南で夏線入戸を三ダツに日に上産しました"
+  }
+ },
+ {
+  "lang": "ja",
+  "consensus": 0.07,
+  "best_single": 0.07,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.093,
+   "scribe": 0.07,
+   "gemini": 0.163,
+   "hf": 0.14,
+   "whisper": 0.14,
+   "wav2vec2": 0.628
+  },
+  "reads": {
+   "deepgram": "オコンキト教授は7月9日にリュグリャナのベルグストロム財団に1万2000ドルを送金しまし",
+   "scribe": "オコンキト教授は 7月9日にリュブリャナのベルストロム財団に 1万2000ドルを送金しました。",
+   "gemini": "トントンキーと教授は7月9日にリュブリャナのベルブストロム財団に12,000ドルを送金しました。",
+   "hf": "オポンキト教授は7月9日にリューブラナのベルグストロム財団に1万2000ドルを送金しました。",
+   "whisper": "オポンピト教授は7月9日にリューブラナのベルグストロム財団に1万2千ドルを送金しました。",
+   "wav2vec2": "供礎王授が月<unk>館に遊ーズヤなのデルヴストロムサイ山務に１万にセンドルを動禁しました"
+  }
+ },
+ {
+  "lang": "ja",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.051,
+   "scribe": 0.0,
+   "gemini": 0.872,
+   "hf": 0.026,
+   "whisper": 0.026,
+   "wav2vec2": 0.564
+  },
+  "reads": {
+   "deepgram": "高橋さんは6月5日にマラケシュのホテルに中村代表団のために十三室を予約しまし",
+   "scribe": "高橋さんは、 6月5日にマラケシュのホテルに中村代表団のため二十三室を予約しました。",
+   "gemini": "Takahashi-san wa 6-gatsu 5-nichi ni Marrakesh no hoteru ni Nakamura daihyōdan no tame ni 23-shitsu o yoyaku shimashita.",
+   "hf": "高橋さんは6月5日にマラケシュのホテルに中村代表団のために13室を予約しました。",
+   "whisper": "高橋さんは6月5日にマラケシュのホテルに中村代表団のために13室を予約しました。",
+   "wav2vec2": "博八さんは６雑日に魔田石田テルに中山小座女十産を溶約しました"
+  }
+ },
+ {
+  "lang": "ja",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.128,
+   "scribe": 0.0,
+   "gemini": 0.085,
+   "hf": 0.021,
+   "whisper": 0.021,
+   "wav2vec2": 0.553
+  },
+  "reads": {
+   "deepgram": "ペルナンデスさんは4月1日にバルファライソからグガニスクのコバルスキ倉庫へ800箱を発送しました。",
+   "scribe": "フェルナンデスさんは 4月1日にバルパライソからグダニスクのコワルスキ倉庫へ 800箱を発送しました。",
+   "gemini": "フェルナンデスさんは4月1日にバルパライソからブダペストのコワルスキー倉庫へ800箱を発送しました。",
+   "hf": "フェルナンデスさんは4月1日にバルパライソからルダニスクのコワルスキ倉庫へ800箱を発送しました。",
+   "whisper": "フェルナンデスさんは、4月1日にバルパライソからルダニスクのコワルスキ倉庫へ800箱を発送しました。",
+   "wav2vec2": "セルダンテさんは月日血にガルさ<unk>から小田ルスき走庫へ発百箱を発興をしました"
   }
  },
  {
@@ -148,23 +576,87 @@
   "reads": {
    "deepgram": "영웅엔 박사가 레이캬비크에 있는 카기소 계좌로 사 만 칠 천 유로를 삼 월 삼 일에 보냈습니다.",
    "scribe": "응우옌 박사가 레이캬비크에 있는 카기소 계좌로 사만 칠천 유로를 삼 월 삼 일에 보냈습니다.",
-   "gemini": "왜냐하면 박사가 레이크비크에 있는 가기소 계좌로 37,000유로를 3월 3일에 보냈습니다.",
+   "gemini": "이후에 박사가 레이키비 그의 있는 가기소 계좌로 47,000유로를 3월 3일에 보냈습니다.",
    "hf": "은후엔 박사가 레이캐비크에 있는 카기소 계좌로 47,000유로를 3월 3일에 보냈습니다.",
    "whisper": "은후엔 박사가 레이캐비크에 있는 카기소 계좌로 47,000유로를 3월 3일에 보냈습니다.",
    "mms": "음우연 박자가 레이길라비크에 있는 가기서 개주하로 3한 7천유로를 삼보활 삼밀에 권냈습니다"
   }
  },
  {
+  "lang": "ko",
+  "consensus": 0.027,
+  "best_single": 0.027,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.054,
+   "scribe": 0.027,
+   "gemini": 0.297,
+   "hf": 0.162,
+   "whisper": 0.162,
+   "mms": 0.324
+  },
+  "reads": {
+   "deepgram": "오콘쿼 교수는 칠 월 구 일에 류블랴나의 대리스트행 재단으로 만 이 천 달러를 송금했습니다.",
+   "scribe": "오콘쿼 교수는 7월 9일에 류블랴나의 베리 스트램 재단으로 만 이천 달러를 송금했습니다.",
+   "gemini": "Wookonk Kwak教授는 7월 9일에 류불리아나의 데리스 트램 재단으로 12,000달러를 송금했습니다.",
+   "hf": "오콘쿠어 교수는 7월 9일에 류글라나의 베리스트렘 재단으로 만 2천 갈러를 송금했습니다.",
+   "whisper": "오콘쿠어 교수는 7월 9일에 류글라나의 베리스트렘 재단으로 만 2천 갈러를 송금했습니다.",
+   "mms": "오혼구 교수는 7월 구위의 륙을야나의 베리스트름 제단으로만 이천0 달러를 성경했습니다"
+  }
+ },
+ {
+  "lang": "ko",
+  "consensus": 0.049,
+  "best_single": 0.049,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.122,
+   "scribe": 0.049,
+   "hf": 0.122,
+   "whisper": 0.122,
+   "mms": 0.439
+  },
+  "reads": {
+   "deepgram": "다카하시 씨는 육 월 오 일에 마라케시 호텔의 나카무라 대표단을 위해 이 십 삼 개의 방을 예약했습니다.",
+   "scribe": "타카하시씨는 6월 5일에 마라케시 호텔에 나카무라 대표단을 위해 스물세 개의 방을 예약했습니다.",
+   "hf": "다카아시 씨는 6월 5일에 마라케시 호텔에 나카무라 대표단을 위해 23개의 방을 예약했습니다.",
+   "whisper": "다카아시 씨는 6월 5일에 마라케시 호텔에 나카무라 대표단을 위해 23개의 방을 예약했습니다.",
+   "mms": "자타하시시는 유월 오의의 말아계시 호텔의 나한물아 베표단을 위해음을 쇠 계의 강을 예약했습니다"
+  }
+ },
+ {
+  "lang": "ko",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.049,
+   "scribe": 0.0,
+   "hf": 0.049,
+   "whisper": 0.049,
+   "mms": 0.244
+  },
+  "reads": {
+   "deepgram": "페르난데스 씨는 사 월 일 일에 발파라이소에서 그단스크에 코발스키 창고로 팔 백 삼 자를 보냈습니다.",
+   "scribe": "페르난데스 씨는 사 월 일일에 발파라이소에서 그단스크의 코발스키 창고로 팔백 상자를 보냈습니다.",
+   "hf": "테르난데스 씨는 4월 1일에 발파라이소에서 크단스크의 코발스키 창고로 800상자를 보냈습니다.",
+   "whisper": "테르난데스 씨는 4월 1일에 발파라이소에서 크단스크의 코발스키 창고로 800상자를 보냈습니다.",
+   "mms": "페를란데스 시는 사월 이입의 발팔라이 소에서 글단스크의 코발스히 창고로 팔백산자를 보냈습니다"
+  }
+ },
+ {
   "lang": "pt",
-  "consensus": 0.095,
+  "consensus": 0.048,
   "best_single": 0.048,
   "best_model": "scribe",
-  "wins": false,
+  "wins": true,
   "wer_by_model": {
    "deepgram": 0.095,
    "scribe": 0.048,
    "hf": 0.048,
-   "gemini": 0.143,
    "whisper": 0.048,
    "mms": 0.286,
    "seamless": 0.143
@@ -173,33 +665,162 @@
    "deepgram": "A doutora Nuilene enviou 47000 euros para a conta de Kagizue em Lisboa no dia 3 de março.",
    "scribe": "A doutora Noémia enviou quarenta e sete mil euros para a conta de Kagiso em Lisboa, no dia 3 de março.",
    "hf": "A doutora Nguyen enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março.",
-   "gemini": "A doutora Nui En enviou 47.000 euros para a conta de Kajisu em Lisboa no dia 3 de março.",
    "whisper": "A doutora Nguyen enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março.",
    "mms": "a door anuiel enviou quarenta e  sete mel euros para a contade cajizo em lisboa no dia três de março",
    "seamless": "A Dra. Anil enviou 47 mil euros para a conta de Cajizo em Lisboa no dia 3 de março."
   }
  },
  {
+  "lang": "pt",
+  "consensus": 0.111,
+  "best_single": 0.056,
+  "best_model": "scribe",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.167,
+   "scribe": 0.056,
+   "hf": 0.222,
+   "whisper": 0.222,
+   "mms": 0.333,
+   "seamless": 0.167
+  },
+  "reads": {
+   "deepgram": "O professor Okonko transferiu 12000 dólares para a Fundação Obergstrom e Liubliana no dia 9 de julho.",
+   "scribe": "O professor Okonkwo transferiu doze mil dólares, para a Fundação Bergstrom em Liubliana no dia nove de julho.",
+   "hf": "O professor Okonko transferiu 12 mil dólares para a Fundação Bergstrom e Ljubljana no dia 9 de julho.",
+   "whisper": "O professor Okonko transferiu 12 mil dólares para a Fundação Bergstrom e Ljubljana no dia 9 de julho.",
+   "mms": "o professor oconco transferiu doze mil dólares para a fundação  bergstrom eliublianna no dia  de júlho",
+   "seamless": "Um professor, Okonkwo, transferiu 12 mil dólares para a Fundação Bergstrom e Liubliana no dia 9 de julho."
+  }
+ },
+ {
+  "lang": "pt",
+  "consensus": 0.048,
+  "best_single": 0.048,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.095,
+   "scribe": 0.048,
+   "hf": 0.048,
+   "whisper": 0.048,
+   "mms": 0.286,
+   "seamless": 0.095
+  },
+  "reads": {
+   "deepgram": "A senhorita Takahasi reservou 23 quartos no hotel de Mahakeshi para a delegação Nakamura no dia 5 de junho.",
+   "scribe": "A senhorita Takahashi reservou vinte e três quartos no hotel de Marrakesh para a delegação Nakamura, no dia 5 de junho.",
+   "hf": "A senhorita Takahashi reservou 23 quartos no hotel de Marrakech para a delegação Nakamura no dia 5 de junho.",
+   "whisper": "A senhorita Takahashi reservou 23 quartos no hotel de Marrakech para a delegação Nakamura no dia 5 de junho.",
+   "mms": "a senhorita takasi reservou vinte e três quartos no hotel de ma raqueche para a delegação na camura no dia  de junho",
+   "seamless": "A senhorita Takashi reservou 23 quartos no hotel de Marrakesh para a delegação Nakamura no dia 5 de junho."
+  }
+ },
+ {
+  "lang": "pt",
+  "consensus": 0.0,
+  "best_single": 0.056,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.389,
+   "scribe": 0.056,
+   "hf": 0.278,
+   "whisper": 0.278,
+   "mms": 0.389,
+   "seamless": 0.389
+  },
+  "reads": {
+   "deepgram": "O senhor Fernandes enviou 800 caixas de Val-Paraiso para o armazém Kloskey e Gdansk no 1º de abril.",
+   "scribe": "O senhor Fernandes enviou oitocentas caixas de Valparaíso para o armazém Kołobrzeski em Gdansk no primeiro de abril.",
+   "hf": "O senhor Fernandes enviou 800 caixas de Valparaíso para o armazém Kowalski e Gdansky no 1º de abril.",
+   "whisper": "O senhor Fernandes enviou 800 caixas de Valparaíso para o armazém Kowalski e Gdansky no 1º de abril.",
+   "mms": "o sr fernandes enviou oitocentas caixas de valparaíso para o armazenicoosk de danski no  dea abril",
+   "seamless": "(NAVARRO) O senhor Fernandes enviou 800 caixas de Valparaíso para o armazém Nikolski e Guidanski no 1o de abril."
+  }
+ },
+ {
   "lang": "ru",
-  "consensus": 0.214,
-  "best_single": 0.214,
+  "consensus": 0.143,
+  "best_single": 0.143,
   "best_model": "scribe",
   "wins": true,
   "wer_by_model": {
    "deepgram": 0.357,
-   "scribe": 0.214,
+   "scribe": 0.143,
    "hf": 0.214,
-   "gemini": 0.214,
    "whisper": 0.286,
    "mms": 0.643
   },
   "reads": {
    "deepgram": "Доктор Нгуйн отправил 47 1000 евро на счет Кагиса в Новосибирске 3-его марта.",
-   "scribe": "Доктор Нгуй отправил сорок семь тысяч евро на счет Кагиса в Новосибирске третьего марта.",
+   "scribe": "Доктор Нгуен отправил сорок семь тысяч евро на счет Кагиса в Новосибирске третьего марта.",
    "hf": "Доктор Нгуен отправил 47 тысяч евро на счет КГИСа в Новосибирске 3 марта.",
-   "gemini": "доктор ему отправил 47000 евро на счёт Кадисов Новосибирске третьего марта",
    "whisper": "Доктор Нгуен отправил 47 тысяч евро на счет Кагисов Новосибирске 3 марта.",
    "mms": "доктор нвуйн отправил сорок семь 00сяч евра на щёт кагисовного себирски 3реьего марта"
+  }
+ },
+ {
+  "lang": "ru",
+  "consensus": 0.231,
+  "best_single": 0.231,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.538,
+   "scribe": 0.231,
+   "hf": 0.385,
+   "whisper": 0.308,
+   "mms": 0.923
+  },
+  "reads": {
+   "deepgram": "Профессора Конква перевел 12 1000 долларов фонд Бергстрема в Любляйне 9 июля.",
+   "scribe": "Профессор Окконкво перевел двенадцать тысяч долларов в фонд Бергстрёма в Любляне 9 июля.",
+   "hf": "Профессор Аконква перевел 12 тысяч долларов фонд Бергстрема в Любляне 9 июля.",
+   "whisper": "Профессор Аконква перевел 12 тысяч долларов в фонд Бергстрема в любляне 9 июля.",
+   "mms": "профессор а конпова перевел двянадцать т0сяч долларов фондберг стрема в люблянии 9 июля"
+  }
+ },
+ {
+  "lang": "ru",
+  "consensus": 0.214,
+  "best_single": 0.214,
+  "best_model": "deepgram",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.214,
+   "scribe": 0.214,
+   "hf": 0.357,
+   "whisper": 0.357,
+   "mms": 0.714
+  },
+  "reads": {
+   "deepgram": "Госпожа Такахаси забронировала 23 номера в отеле Мэракеши для делегации Накамура 5 июня.",
+   "scribe": "Госпожа Такахаси забронировала двадцать три номера в отеле \"Марракеш\" для делегации Накамура 5 июня.",
+   "hf": "Госпожа Токахаси забронировала 23 номера в отеле Марракеши для делегации на Камуры 5 июня.",
+   "whisper": "Госпожа Токахаси забронировала 23 номера в отеле Марракеши для делегации на Камуры 5 июня.",
+   "mms": "госпожа такахась изабронировала двадцат три номеров отели мадракеша для делегации на комуры 5 июня"
+  }
+ },
+ {
+  "lang": "ru",
+  "consensus": 0.0,
+  "best_single": 0.0,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.286,
+   "scribe": 0.0,
+   "hf": 0.143,
+   "whisper": 0.143,
+   "mms": 0.357
+  },
+  "reads": {
+   "deepgram": "Господин Фернандес отправил 800 ящиков из Вальпарайса на склад Ковайского в Гданьске 1-го апреля.",
+   "scribe": "Господин Фернандес отправил восемьсот ящиков из Вальпараисо на склад Ковальского в Гданьске первого апреля.",
+   "hf": "Господин Фернандес отправил 800 ящиков из Вальпараиса на склад Ковальского в Гданьске 1 апреля.",
+   "whisper": "Господин Фернандес отправил 800 ящиков из Вальпараиса на склад Ковальского в Гданьске 1 апреля.",
+   "mms": "господин фернандыс отправил восемьсот ящиков из вольпарайса на склад кавальского в гданске 1 апреля"
   }
  },
  {
@@ -212,7 +833,6 @@
    "deepgram": 0.083,
    "scribe": 0.167,
    "hf": 0.333,
-   "gemini": 0.583,
    "whisper": 0.333,
    "mms": 0.667
   },
@@ -220,28 +840,147 @@
    "deepgram": "Doktor Zuyen üç Mart'ta Marsilya'daki KAGISO hesabına kırk yedi bin euro gönderdi.",
    "scribe": "Doktor, Lucy'in 3 Mart'ta Marsilya'daki kadınsı hesabına kırk yedi bin euro gönderdi.",
    "hf": "Dr. Ziyan 3 Mart'ta Marsilya'daki Kagiso hesabına 47 bin euro gönderdi.",
-   "gemini": "Doktor Duyanic Marta Marvilya'daki Kagiso hesabına 47.000 euro gönderdi.",
    "whisper": "Dr. Ziyan 3 Mart'ta Marsilya'daki Kagiso hesabına 47 bin euro gönderdi.",
    "mms": "doktor guyeniç martta maclivyadaki kagison hesabına kırfı yedi bir nivro gönderdi"
   }
  },
  {
+  "lang": "tr",
+  "consensus": 0.333,
+  "best_single": 0.333,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.417,
+   "scribe": 0.333,
+   "hf": 0.417,
+   "whisper": 0.583,
+   "mms": 0.917
+  },
+  "reads": {
+   "deepgram": "Prof. Rokonto dokuz Temmuz'da Judjana'daki Bellströn Vakfı'na on iki bin dolar gönderdi.",
+   "scribe": "Profesör Okon Pro 9 Temmuzda Ljubljana'daki Bergström Vakfı'na on iki bin dolar gönderdi.",
+   "hf": "Profesör Okontro 9 Temmuz'da Juvijana'daki Bergström Vakfı'na 12 bin dolar gönderdi.",
+   "whisper": "Profesör O.Kontrol 9 Temmuz'da Juvijana'daki Bergström Vaktine 12.000 Dolar Gönderdi.",
+   "mms": "professör lo kontrol dokuz temmuzlar ju dujanadaki bergistirorün vakıtına on ikivin dolar görndeldi"
+  }
+ },
+ {
+  "lang": "tr",
+  "consensus": 0.077,
+  "best_single": 0.154,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.615,
+   "scribe": 0.154,
+   "hf": 0.308,
+   "whisper": 0.308,
+   "mms": 0.692
+  },
+  "reads": {
+   "deepgram": "Bayan Takahas yirmi beş Haziran'da Marakeş'te iki otel de makamura heyeti için yirmi üç oda ayılttı.",
+   "scribe": "Bayan Takahasi beş Haziran'da Marakeş'teki otelde Nakamura meyyiti için yirmi üç oda ayırttı.",
+   "hf": "Bayan Takahasi 5 Haziran'da Marrakeş'teki otelde Nakamura heyeti için 23 oda ayırttı.",
+   "whisper": "Bayan Takahasi 5 Haziran'da Marrakeş'teki otelde Nakamura heyeti için 23 oda ayırttı.",
+   "mms": "bayan taka haslihi beş hazilan damarakeşte eki olkejde nakamıra heyeti için yirmi üçü oda ayıltı"
+  }
+ },
+ {
+  "lang": "tr",
+  "consensus": 0.583,
+  "best_single": 0.417,
+  "best_model": "deepgram",
+  "wins": false,
+  "wer_by_model": {
+   "deepgram": 0.417,
+   "scribe": 0.583,
+   "hf": 0.5,
+   "whisper": 0.417,
+   "mms": 0.667
+  },
+  "reads": {
+   "deepgram": "Waydernandez bir Nisan'da Valparayı Soganslands'taki Kohauski deposuna sekiz yüz kasa gönderdi.",
+   "scribe": "White Hernandez 1 Nisan'da Valparaíso'dan France'taki Kowalski deposuna 800 kasa gönderdi. (elektronik müzik)",
+   "hf": "Bay Fernandez 1 Nisan'da Valparaiso'dan Danstakikoyarski Dekosu'na 800 kasa gönderdi.",
+   "whisper": "Bay Fernandez 1 Nisan'da Valparaiso'dan Danstakikorovski deposuna 800 kasa gönderdi.",
+   "mms": "bay kaynandes bir nisanda val parayiso'dan dan takikoşaz ki dekosuna sekiz yüz kasa gönderdi"
+  }
+ },
+ {
   "lang": "uk",
   "consensus": 0.071,
-  "best_single": 0.071,
+  "best_single": 0.143,
   "best_model": "scribe",
   "wins": true,
   "wer_by_model": {
    "deepgram": 0.286,
-   "scribe": 0.071,
+   "scribe": 0.143,
    "whisper": 0.143,
    "mms": 0.357
   },
   "reads": {
    "deepgram": "Лікар Нгуєм надіслав 47 тисяч євро на рахунок Кагісу в Новособірську 3 березня.",
-   "scribe": "Лікар Нгуєн надіслав сорок сім тисяч євро на рахунок КАГІСу в Новосибірську третього березня.",
+   "scribe": "Лікар Нгуен надіслав сорок сім тисяч євро на рахунок Кагісу в Новосибірську третього березня.",
    "whisper": "Лікар Нгуєн надіслав 47 тисяч євро на рахунок КАГІСу в Новосибірську 3 березня.",
    "mms": "лікар нгуєн надіслав 47 000 євро на рахунок кагісов новосебірську 3о березня"
+  }
+ },
+ {
+  "lang": "uk",
+  "consensus": 0.167,
+  "best_single": 0.167,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.25,
+   "scribe": 0.167,
+   "whisper": 0.25,
+   "mms": 0.5
+  },
+  "reads": {
+   "deepgram": "Професор Контво переказав 12 тисяч доларів фонду Bergstrema в Любляні 9 липня.",
+   "scribe": "Професор Окунго переказав дванадцять тисяч доларів фонду Бергстримааа в Любляні дев'ятого липня.",
+   "whisper": "Професор Оконко переказав 12 тисяч доларів фонду Бергстрима в Любляні 9 липня.",
+   "mms": "професор оконтво переказав дванадцять тисяч доларів фонду бергс  трема в люблянні 9ев'ятго липня"
+  }
+ },
+ {
+  "lang": "uk",
+  "consensus": 0.143,
+  "best_single": 0.143,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.357,
+   "scribe": 0.143,
+   "whisper": 0.286,
+   "mms": 0.5
+  },
+  "reads": {
+   "deepgram": "Пані Какахасі забронювала 23 номери в готелі Маракеша для делегації на Камори 5 червня.",
+   "scribe": "Пані Такахасі забронювала двадцять три номери в готелі \"Марракеша\" для делегації на Камори п'ятого червня.",
+   "whisper": "Пані Такахасі забронювала 23 номери в готелі Маракеша для делегації на Камори 5 червня.",
+   "mms": "пані такахасі забронювала двадцять ти нмерів готелі марракеша для делегації на камори 5'го червня"
+  }
+ },
+ {
+  "lang": "uk",
+  "consensus": 0.143,
+  "best_single": 0.143,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.214,
+   "scribe": 0.143,
+   "whisper": 0.214,
+   "mms": 0.714
+  },
+  "reads": {
+   "deepgram": "Пан Фернандес відправив 800 ящиків з Вайпараїсо на склад Ковальського Огданського першого квітня.",
+   "scribe": "Жінка: Пан Фернандес відправив вісімсот ящиків з Вальпараїсо на склад Ковайського у Гданську першого квітня.",
+   "whisper": "Пан Фернандес відправив 800 ящиків з вайпараїсу на склад Ковайського у Гданську 1 квітня.",
+   "mms": "пан фернандес відправив 8і00т ящитів зваль параїсо на склад ковальського огденсько 1 квітня"
   }
  },
  {
@@ -253,16 +992,71 @@
   "wer_by_model": {
    "deepgram": 0.143,
    "scribe": 0.048,
-   "gemini": 0.191,
    "phowhisper": 0.191,
    "whisper": 0.143
   },
   "reads": {
    "deepgram": "Bác sĩ Nguyễn đã gửi bốn mươi bảy nghìn euro vào tài khoản Cazor ở Marc-Sei vào ngày ba tháng ba.",
    "scribe": "Bác sĩ Nguyễn đã gửi bốn mươi bảy nghìn Euro vào tài khoản Cargill ở Marseille vào ngày 3 tháng Ba.",
-   "gemini": "Bác sĩ Nguyễn đã gửi 407.000 Euro vào tài khoản kaso ở Marce vào ngày 3 tháng 3",
    "phowhisper": "bác sĩ nguyễn đã gửi bốn mươi bảy nghìn euro vào tài khoản cash so ở mặt xe vào ngày ba tháng ba.",
    "whisper": "Bác sĩ Nguyễn đã gửi 47.000 euro vào tài khoản Gasso ở mạc xe vào ngày 3 tháng 3."
+  }
+ },
+ {
+  "lang": "vi",
+  "consensus": 0.15,
+  "best_single": 0.15,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.2,
+   "scribe": 0.15,
+   "phowhisper": 0.3,
+   "whisper": 0.15
+  },
+  "reads": {
+   "deepgram": "Giáo sư Or Conco đã chuyển mười hai nghìn đô la cho Quỹ Petrus ở Louisiana vào ngày chín tháng bảy",
+   "scribe": "Giáo sư Okonkwo đã chuyển mười hai nghìn đô la cho Quỹ Mergers Chalmers ở Louisiana vào ngày 9 tháng Bảy.",
+   "phowhisper": "giáo sư orton quen đã chuyển mười hai nghìn đô la cho quý bella stone ở lugansk vào ngày chín tháng bảy.",
+   "whisper": "Giáo sư O'Connor đã chuyển 12.000 đô la cho quỹ Bethelstrom ở Louisiana vào ngày 9 tháng 7."
+  }
+ },
+ {
+  "lang": "vi",
+  "consensus": 0.05,
+  "best_single": 0.05,
+  "best_model": "whisper",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.15,
+   "scribe": 0.1,
+   "phowhisper": 0.1,
+   "whisper": 0.05
+  },
+  "reads": {
+   "deepgram": "Cô ta Kahasharsky đã đặt hai mươi ba phòng tại khách sạn Marakesh cho đoàn Nakamura vào ngày năm tháng sáu.",
+   "scribe": "Kota Kahashi đã đặt hai mươi ba phòng tại khách sạn Marrakesh cho đoàn Nakamura vào ngày 5 tháng Sáu-",
+   "phowhisper": "kotaka hashi đã đặt 23 phòng tại khách sạn marrakesh cho đoàn nakamura vào ngày năm tháng sáu.",
+   "whisper": "Cô Takahashi đã đặt 23 phòng tại khách sạn Magrakesh cho đoàn Nakamura vào ngày 5 tháng 6."
+  }
+ },
+ {
+  "lang": "vi",
+  "consensus": 0.15,
+  "best_single": 0.15,
+  "best_model": "scribe",
+  "wins": true,
+  "wer_by_model": {
+   "deepgram": 0.35,
+   "scribe": 0.15,
+   "phowhisper": 0.35,
+   "whisper": 0.35
+  },
+  "reads": {
+   "deepgram": "Ông Ferdinand Real đã gửi tám trăm thùng hàng từ Varlkaraiso đến Khokawalky ở Ranov vào ngày một tháng bốn.",
+   "scribe": "Ông Fernández đã gửi tám trăm thùng hàng từ Valcárcel đến kho Kowalski ở Greenup vào ngày 1 tháng Tư.",
+   "phowhisper": "ông fernand leo đã gửi tám trăm thùng hàng từ falcao so đến kho kuala lumpur ở ghana vào ngày một tháng tư.",
+   "whisper": "Ông Ferdinand Leu đã gửi 800 thùng hàng từ Valcaraíso đến kho Kuala Lumpur ở Granada vào ngày 1 tháng 4."
   }
  }
 ]
