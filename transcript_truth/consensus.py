@@ -546,10 +546,12 @@ def _anchor_name(nonempty, lang=None):
     def central(x):
         return -sum(1 - difflib.SequenceMatcher(a=_norm_ws(nonempty[x]), b=_norm_ws(nonempty[y])).ratio()
                     for y in nonempty if y != x)
-    # GLOBAL prior only for anchor choice — measured (48-clip bench): per-language reliability
-    # here flips anchors on sliver-sized differences (es scribe 0.851 vs gemini 0.876) and LOSES
-    # clips (41/48 vs 42/48). Per-language weights stay in _decide_word, where they are safe.
-    return max(nonempty, key=lambda n: (_reliability(n), central(n)))
+    # PER-LANGUAGE measured reliability picks the anchor. History: at 4 clips/lang the weights
+    # were too noisy and this LOST a clip (41/48); at 7 clips/lang it WINS +3 (66/84 vs 63/84,
+    # all in Arabic, no regressions) — the anchor stops being a hallucinating scribe read when
+    # the language's own measurements say another witness is stronger. Re-measure before trusting
+    # weight changes: N matters.
+    return max(nonempty, key=lambda n: (_reliability(n, lang), central(n)))
 
 
 # the deterministic judge overrides the vote only when its winner clears this margin over the
