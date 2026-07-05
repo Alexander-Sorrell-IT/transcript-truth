@@ -18,22 +18,22 @@ def test_all_agree_text_unchanged_no_spans():
 
 
 def test_reconstructs_transcript_no_single_model_got_right():
-    # each read is wrong on a DIFFERENT word; per-word family majority rebuilds the truth.
-    # deepgram wrong@pos2, gemini wrong@pos1, scribe wrong@pos0 -> majority = "alpha bravo charlie"
+    # each read is wrong on a DIFFERENT real word (garble elsewhere); per-word family majority
+    # rebuilds the truth "the quick brown fox" that no single read contains.
     r = consensus_tokens({
-        "deepgram": "alpha bravo zulu",
-        "gemini":   "alpha whiskey charlie",
-        "scribe":   "xray bravo charlie",
-    })
-    assert r["text"] == "alpha bravo charlie"      # no single input equals this
-    assert all(v != "alpha bravo charlie" for v in
-               ["alpha bravo zulu", "alpha whiskey charlie", "xray bravo charlie"])
+        "deepgram": "the quick brown zzqx",
+        "gemini":   "the quick wxvb fox",
+        "scribe":   "the kkjm brown fox",
+    }, "en")
+    assert r["text"] == "the quick brown fox"      # no single input equals this
+    assert all(v != "the quick brown fox" for v in
+               ["the quick brown zzqx", "the quick wxvb fox", "the kkjm brown fox"])
 
 
 def test_lone_outlier_cannot_flip_a_word():
-    # only scribe says 'bat'; 1 family < 2 -> backbone 'cat' is kept
-    r = consensus_tokens({"deepgram": "the cat sat", "gemini": "the cat sat",
-                          "scribe": "the bat sat"})
+    # the reliable anchor (scribe) + gemini agree on 'cat'; a lone non-anchor says 'bat' -> 'cat' stays
+    r = consensus_tokens({"scribe": "the cat sat", "gemini": "the cat sat",
+                          "deepgram": "the bat sat"}, "en")
     assert r["text"] == "the cat sat"
 
 

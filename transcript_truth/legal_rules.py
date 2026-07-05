@@ -361,10 +361,49 @@ def legal_grammar(t: Transcript) -> list[Flag]:
     return out
 
 
+# --- serial (Oxford) comma (guide p.20): a 3-item list "A, B and C" wants "A, B, and C".
+# Fires only on a MISSING serial comma ("B and C" with no comma) — correct "B, and C" won't match
+# (the comma after B breaks the \w+\s+and pattern). 'review' tier: a 2-item appositive
+# ("him, John and I") can look list-like, so surface for a human, never hard-grade.
+_OXFORD = re.compile(r"\b(\w+),\s+(\w+)\s+(and|or)\s+(\w+)\b")
+
+
+def legal_oxford_comma(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _OXFORD.finditer(_body(ln.text)):
+            a, b, conj, c = m.groups()
+            out.append(_flag("legal_oxford",
+                             f"Possible missing serial (Oxford) comma before '{conj}'", ln.n,
+                             m.group(0),
+                             f"CVL uses the Oxford comma: '{a}, {b}, {conj} {c}'. [p.20]", "review"))
+    return out
+
+
+# --- comma splice (guide p.21): two complete sentences joined by only a comma. Conservative —
+# fires only on ", this/that/these/those + finite verb", the clearest splice shape; keeps clear of
+# valid dependent clauses ("When I arrived, they left" — 'they' isn't a demonstrative). 'review' tier.
+_SPLICE = re.compile(r",\s+(this|that|these|those)\s+"
+                     r"(is|are|was|were|should|would|will|can|could|do|does|did|have|has|had)\b", re.I)
+
+
+def legal_comma_splice(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _SPLICE.finditer(_body(ln.text)):
+            out.append(_flag("legal_comma_splice",
+                             "Possible comma splice — two sentences joined by a comma", ln.n,
+                             m.group(0).strip(),
+                             "Split into two sentences or use a semicolon; don't join with a comma. [p.21]",
+                             "review"))
+    return out
+
+
 LEGAL_SCANNERS = [
     legal_spelling, legal_slang, legal_contractions, legal_fillers,
     legal_nonverbal, legal_titles, legal_numbers, legal_accents,
     legal_ampm, legal_tags, legal_spacing, legal_grammar,
+    legal_oxford_comma, legal_comma_splice,
 ]
 
 
