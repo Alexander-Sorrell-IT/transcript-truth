@@ -5,6 +5,7 @@ tiebreaker vote. No single model decides — agreement IS the verification.
 """
 import difflib
 import functools as _functools
+import re as _re
 import os
 import subprocess
 import tempfile
@@ -558,6 +559,10 @@ def _anchor_name(nonempty, lang=None):
 # runner-up (validity 1.0 = a real word vs a non-word). Conservative: weak signal -> defer to vote.
 _ADJ_STRONG = 1.0
 
+# audio-event annotations some witnesses emit ('(elektronik müzik)', '[music]'). They are witness
+# metadata, not heard words — inside the word vote they misalign every read that doesn't emit them.
+_ANNOT = _re.compile(r"[\(\[][^\)\]]{0,40}[\)\]]")
+
 
 def consensus_tokens(reads, lang=None):
     """Token-level (ROVER-style) consensus over the medoid backbone (MODEL_MAP.md Stage 1/B), with a
@@ -571,6 +576,7 @@ def consensus_tokens(reads, lang=None):
       3. else keep the backbone word (never stitch a disfluent Franken-transcript on a lone outlier).
     This is 'models propose, code decides' applied to word choice. Returns {text, uncertain_spans}."""
     from collections import defaultdict
+    reads = {k: (_ANNOT.sub(" ", v).strip() if v else v) for k, v in reads.items()}
     nonempty = {k: v for k, v in reads.items() if v}
     if not nonempty:
         return {"text": "", "uncertain_spans": []}

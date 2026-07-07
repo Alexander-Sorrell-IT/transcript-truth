@@ -218,7 +218,13 @@ def wer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: s
     r, h = _tokenize(reference), _tokenize(hypothesis)
     if not r:
         return 0.0 if not h else 1.0
-    # DP edit distance
+    return _edit_rate(r, h)
+
+
+def _edit_rate(r, h):
+    """Levenshtein edit distance over token lists, divided by reference length."""
+    if not r:
+        return 0.0 if not h else 1.0
     prev = list(range(len(h) + 1))
     for i in range(1, len(r) + 1):
         cur = [i] + [0] * len(h)
@@ -227,3 +233,24 @@ def wer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: s
             cur[j] = min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost)
         prev = cur
     return round(prev[len(h)] / len(r), 4)
+
+
+def cer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: str = "en"):
+    """Character Error Rate — the CROSS-LANGUAGE ruler. wer() tokenizes CJK by character and
+    everything else by word, so its numbers aren't comparable across scripts (a per-word ruler
+    reads ~2-4x higher than a per-character one on the same errors). cer() scores EVERY language
+    per character (spaces collapsed, same case/punct/number/script normalization as wer), so
+    'is Turkish as good as Japanese?' is finally one ruler. Use wer() within a language,
+    cer() to compare across languages."""
+    import re
+    if normalize_numbers:
+        reference = _canon_numbers_lang(_normalize_numbers(_fold_script(reference, lang)), lang)
+        hypothesis = _canon_numbers_lang(_normalize_numbers(_fold_script(hypothesis, lang)), lang)
+        reference, hypothesis = _fold_script(reference, lang), _fold_script(hypothesis, lang)
+
+    def _chars(s):
+        s = re.sub(r"[^\w']+", " ", s.lower())          # fold punct to space, like wer
+        s = re.sub(r"\s+", " ", s).strip()
+        return list(s)
+
+    return _edit_rate(_chars(reference), _chars(hypothesis))
