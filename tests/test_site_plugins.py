@@ -48,3 +48,31 @@ def test_conflicting_vendors_disagree_on_the_same_text():
     text = "JOHN:  I was going to--"
     assert "rev_punct" in rules(text, profile="en", site="rev")
     assert "rev_punct" not in rules(text, profile="en", site="dt")
+
+
+def test_allegis_catches_violations():
+    r = rules("Q: Were you gonna stop?\nA: [crosstalk] It was .5 miles — at 00:10:05.",
+              profile="en", site="allegis")
+    assert {"al_qa", "al_contraction", "al_tag", "al_number", "al_dash", "al_timestamp"} <= r
+
+
+def test_allegis_clean_passes():
+    r = rules("Q  Were you going to stop?\nA  [inaudible] It was 0.5 miles -- I think.",
+              profile="en", site="allegis")
+    assert not ({"al_qa", "al_contraction", "al_tag", "al_number", "al_dash", "al_timestamp"} & r)
+
+
+def test_quicktate_catches_violations():
+    r = rules("Speaker 1: call b-o-b at [indiscernible] tonight ***", profile="en", site="quicktate")
+    assert {"qt_speaker", "qt_spelled", "qt_unknown"} <= r
+
+
+def test_quicktate_inaudible_is_valid_for_word_groups():
+    # iDictate rule: [inaudible] for a GROUP of words is correct Quicktate style
+    r = rules("Next Speaker: they were [inaudible] before the meeting.", profile="en", site="quicktate")
+    assert "qt_unknown" not in r
+
+
+def test_all_nine_sites_registered():
+    assert {"allegis", "dt", "gotranscript", "quicktate", "rev",
+            "scribie", "transcribeme", "typeitup", "ubiqus"} <= set(site_names())

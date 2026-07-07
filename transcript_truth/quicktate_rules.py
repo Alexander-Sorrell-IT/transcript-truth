@@ -19,7 +19,9 @@ def _flag(rule, label, line, ev, fix, sev="moderate"):
 
 
 # --- unknown-word convention: **** only; other vendors' tags are wrong here
-_WRONG_UNKNOWN = re.compile(r"\[(inaudible|indiscernible|unintelligible|crosstalk)[^\]]*\]|____+", re.I)
+# [inaudible] IS Quicktate-valid for a GROUP of words (iDictate rule); **** is for a single
+# word. Only OTHER vendors' conventions are flat wrong here.
+_WRONG_UNKNOWN = re.compile(r"\[(indiscernible|unintelligible|crosstalk)[^\]]*\]|____+", re.I)
 _STARS_WRONG = re.compile(r"(?<!\*)(\*{1,3}|\*{5,})(?!\*)")
 
 

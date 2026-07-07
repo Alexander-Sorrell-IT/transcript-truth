@@ -263,7 +263,28 @@ register_site(
 from . import rev_rules as _rev      # noqa: F401
 from . import scribie_rules as _scr  # noqa: F401
 from . import quicktate_rules as _qt  # noqa: F401
+from . import allegis_rules as _al   # noqa: F401
 from . import dt_rules as _dt        # noqa: F401
+
+# Ubiqus: only the PUBLIC subset is verifiable (verbatim keeps ums; [inaudible] or " - - ";
+# [phonetic] after uncertain names) — their full house guide is onboarding-only. The plugin
+# holds the verified conventions; the rest lands as data the day he's inside.
+register_site(
+    "ubiqus",
+    scanners=(),
+    per_language={},   # verified subset is definitional (verbatim/clean modes), not scannable yet
+    description="Ubiqus/Acolad (VERIFIED SUBSET ONLY: [inaudible] / ' - - ' / [phonetic]; full guide is onboarding-gated)",
+)
+
+# 1-888-TYPE-IT-UP: style guide ships only with their paid entrance exam — nothing public to
+# encode. Slot registered so the vendor list is complete and the day the exam materials are
+# in hand the rules drop in as a layer.
+register_site(
+    "typeitup",
+    scanners=(),
+    per_language={},
+    description="1-888-TYPE-IT-UP (GATED: table-template format; guide ships with the paid exam — slot ready)",
+)
 
 # Auto-wire any per-language field/site layers present by convention (download a language/site pack →
 # its layers self-install). Runs AFTER the built-in field + site plugins are registered.
