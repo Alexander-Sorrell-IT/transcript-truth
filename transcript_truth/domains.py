@@ -247,6 +247,18 @@ register_site(
     description="TranscribeMe output format (speaker caps, sound tags, dash-attach, spoken punctuation)",
 )
 
+# GoTranscript's English rules (en_format + the model-gated en_rules corrections) have always
+# ridden the default profile implicitly; registering the site makes the axis explicit so
+# compose("en", None, "gotranscript") works like every other vendor.
+from .en_format import en_format as _gt_en_format
+
+register_site(
+    "gotranscript",
+    scanners=(),
+    per_language={"en": (_gt_en_format,)},
+    description="GoTranscript output format (Okay caps, yes-not-yeah, number style, bracket tags)",
+)
+
 # Auto-wire any per-language field/site layers present by convention (download a language/site pack →
 # its layers self-install). Runs AFTER the built-in field + site plugins are registered.
 autodiscover_domain_layers()

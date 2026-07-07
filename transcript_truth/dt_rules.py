@@ -157,3 +157,18 @@ DT_SCANNERS = [
     dt_header, dt_end_of_file, dt_timecodes, dt_speaker_labels, dt_tags, dt_verbatim_fillers,
     legal_dash_form, legal_repeated_words, legal_partial_words,   # shared mechanical checks
 ]
+
+
+# ---------------------------------------------------------------- SITE registration
+# DT is a SITE plugin (language x field x site): format rules (header, timecodes, labels,
+# tags, EOF marker, dash form) are language-NEUTRAL — they govern DT's Spanish files too.
+# Only the verbatim-filler heuristic is English-specific.
+from .domains import register_site
+
+register_site(
+    "dt",
+    scanners=(dt_header, dt_end_of_file, dt_timecodes, dt_speaker_labels, dt_tags,
+              legal_dash_form, legal_repeated_words, legal_partial_words),
+    per_language={"en": (dt_verbatim_fillers,)},
+    description="Daily Transcription house format (verbatim, timecoded, DT tag vocabulary)",
+)
