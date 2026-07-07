@@ -167,6 +167,12 @@ def _fold_script(s: str, lang: str) -> str:
     import unicodedata
     if any(ch.isdigit() and not ch.isascii() for ch in s):
         s = "".join(str(unicodedata.digit(ch)) if ch.isdigit() and not ch.isascii() else ch for ch in s)
+    if lang == "hi":
+        # chandrabindu vs anusvara (जाँच/जांच) and the nukta dot (मरीज़ों/मरीजों) are orthographic
+        # conventions, not different heard words
+        import re
+        s = s.replace("ँ", "ं")
+        s = unicodedata.normalize("NFC", re.sub("़", "", unicodedata.normalize("NFD", s)))
     if lang == "ar":
         s = s.translate(_AR_DIACRITICS).translate(_AR_FOLD)
         toks = []

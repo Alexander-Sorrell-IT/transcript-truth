@@ -563,6 +563,21 @@ _ADJ_STRONG = 1.0
 # metadata, not heard words — inside the word vote they misalign every read that doesn't emit them.
 _ANNOT = _re.compile(r"[\(\[][^\)\]]{0,40}[\)\]]")
 
+# native script per language, for the wrong-script candidate veto in _decide_word
+_LANG_SCRIPT = {"ur": "ARABIC", "ar": "ARABIC", "hi": "DEVANAGARI", "ru": "CYRILLIC", "uk": "CYRILLIC"}
+
+
+def _dominant_script(w):
+    """Unicode script family of the first letter (None if no letters)."""
+    import unicodedata
+    for ch in w:
+        if ch.isalpha():
+            try:
+                return unicodedata.name(ch).split()[0]
+            except ValueError:
+                pass
+    return None
+
 
 def consensus_tokens(reads, lang=None):
     """Token-level (ROVER-style) consensus over the medoid backbone (MODEL_MAP.md Stage 1/B), with a
@@ -639,6 +654,18 @@ def _decide_word(wl, cands, surf_i, fam_i, wit_i, atoks, i, lang):
 
     def relmax(c):
         return max(_reliability(n, lang) for n in wit_i[c])
+
+    # SCRIPT VETO: a candidate written in a foreign script can't win in a language that doesn't use
+    # it (scribe emits Devanagari for Urdu audio — right words, wrong alphabet; a wrong-script token
+    # in the output is wrong even when the hearing was right). Latin is always allowed (numbers,
+    # foreign names). Measured: ur 0.247->0.222, loses 17->16, no regressions.
+    want = _LANG_SCRIPT.get(lang)
+    if want:
+        right = [c for c in cands if _dominant_script(surf_i[c]) in (want, None, "LATIN")]
+        if right and len(right) < len(cands):
+            cands = right
+            if wl not in cands:                  # backbone itself is wrong-script
+                return max(cands, key=relmax)
     # dictionary WORDS only (not gazetteer names): the fat person-name gazetteer contains
     # surname-shaped strings ('Thier'), and a name must not shield a typo of a competing word.
     dict_c = [c for c in cands if _is_word(surf_i[c], lang)]
