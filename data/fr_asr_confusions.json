@@ -1,0 +1,276 @@
+{
+ "_meta": {
+  "clips": 7,
+  "pairs": 51
+ },
+ "confusions": {
+  "nguyen": [
+   [
+    "ndian",
+    2
+   ],
+   [
+    "ndiaye",
+    1
+   ],
+   [
+    "nugian",
+    1
+   ]
+  ],
+  "kagiso": [
+   [
+    "cagiso",
+    4
+   ],
+   [
+    "kajizo",
+    1
+   ],
+   [
+    "kagizo",
+    1
+   ]
+  ],
+  "trois": [
+   [
+    "3",
+    5
+   ]
+  ],
+  "docteur": [
+   [
+    "dr",
+    4
+   ]
+  ],
+  "compte": [
+   [
+    "comte",
+    2
+   ]
+  ],
+  "mille": [
+   [
+    "000",
+    2
+   ],
+   [
+    "millo",
+    1
+   ]
+  ],
+  "bergström": [
+   [
+    "bergstrom",
+    4
+   ],
+   [
+    "berkstrom",
+    3
+   ]
+  ],
+  "ljubljana": [
+   [
+    "liubliana",
+    1
+   ],
+   [
+    "lubiana",
+    1
+   ],
+   [
+    "lubliana",
+    1
+   ]
+  ],
+  "neuf": [
+   [
+    "9",
+    7
+   ]
+  ],
+  "okonkwo": [
+   [
+    "rencontres",
+    1
+   ],
+   [
+    "reconcuant",
+    1
+   ]
+  ],
+  "douze": [
+   [
+    "12",
+    2
+   ]
+  ],
+  "cinq": [
+   [
+    "5",
+    4
+   ]
+  ],
+  "juin": [
+   [
+    "juillet",
+    1
+   ]
+  ],
+  "valparaíso": [
+   [
+    "valparaiso",
+    6
+   ],
+   [
+    "valparezo",
+    1
+   ]
+  ],
+  "gdansk": [
+   [
+    "gansk",
+    1
+   ],
+   [
+    "dantz",
+    1
+   ],
+   [
+    "dansk",
+    1
+   ]
+  ],
+  "premier": [
+   [
+    "1er",
+    4
+   ],
+   [
+    "1ᵉʳ",
+    1
+   ],
+   [
+    "er",
+    1
+   ]
+  ],
+  "kowalski": [
+   [
+    "kowalsky",
+    1
+   ]
+  ],
+  "monsieur": [
+   [
+    "m",
+    1
+   ]
+  ],
+  "l'entrepôt": [
+   [
+    "l'entrepôs",
+    1
+   ]
+  ],
+  "adebayo": [
+   [
+    "adobeyo",
+    1
+   ],
+   [
+    "adebelo",
+    1
+   ],
+   [
+    "adebayor",
+    1
+   ]
+  ],
+  "onze": [
+   [
+    "11",
+    6
+   ]
+  ],
+  "lindqvist": [
+   [
+    "lingvist",
+    1
+   ],
+   [
+    "lindviste",
+    1
+   ]
+  ],
+  "colis": [
+   [
+    "collies",
+    1
+   ]
+  ],
+  "deux": [
+   [
+    "2",
+    5
+   ]
+  ],
+  "kilimandjaro": [
+   [
+    "kilimanjaro",
+    4
+   ],
+   [
+    "kilimanjarou",
+    1
+   ]
+  ],
+  "petrescu": [
+   [
+    "pétrescu",
+    1
+   ]
+  ],
+  "novák": [
+   [
+    "nova",
+    7
+   ]
+  ],
+  "huit": [
+   [
+    "8",
+    5
+   ]
+  ],
+  "björklund": [
+   [
+    "bjorklin",
+    4
+   ],
+   [
+    "jorklin",
+    1
+   ]
+  ],
+  "dix": [
+   [
+    "10",
+    1
+   ]
+  ],
+  "turbines": [
+   [
+    "turbine",
+    1
+   ]
+  ],
+  "d'oaxaca": [
+   [
+    "deakaka",
+    1
+   ]
+  ]
+ }
+}

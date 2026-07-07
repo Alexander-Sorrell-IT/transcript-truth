@@ -1,0 +1,306 @@
+{
+ "_meta": {
+  "clips": 7,
+  "pairs": 58
+ },
+ "confusions": {
+  "nguyen": [
+   [
+    "nuilene",
+    1
+   ],
+   [
+    "noémia",
+    1
+   ],
+   [
+    "anuiel",
+    1
+   ],
+   [
+    "anil",
+    1
+   ]
+  ],
+  "kagiso": [
+   [
+    "cajizo",
+    3
+   ],
+   [
+    "kagizue",
+    1
+   ]
+  ],
+  "três": [
+   [
+    "3",
+    5
+   ]
+  ],
+  "doutora": [
+   [
+    "dra",
+    2
+   ],
+   [
+    "door",
+    1
+   ]
+  ],
+  "mil": [
+   [
+    "mel",
+    1
+   ]
+  ],
+  "okonkwo": [
+   [
+    "okonko",
+    3
+   ],
+   [
+    "oconco",
+    1
+   ]
+  ],
+  "bergström": [
+   [
+    "bergstrom",
+    4
+   ],
+   [
+    "obergstrom",
+    1
+   ]
+  ],
+  "em": [
+   [
+    "e",
+    9
+   ]
+  ],
+  "nove": [
+   [
+    "9",
+    4
+   ]
+  ],
+  "doze": [
+   [
+    "12",
+    3
+   ]
+  ],
+  "liubliana": [
+   [
+    "ljubljana",
+    2
+   ]
+  ],
+  "julho": [
+   [
+    "júlho",
+    1
+   ]
+  ],
+  "o": [
+   [
+    "um",
+    1
+   ]
+  ],
+  "takahashi": [
+   [
+    "takahasi",
+    1
+   ],
+   [
+    "takasi",
+    1
+   ],
+   [
+    "takashi",
+    1
+   ]
+  ],
+  "marraquexe": [
+   [
+    "marrakesh",
+    2
+   ],
+   [
+    "marrakech",
+    2
+   ],
+   [
+    "mahakeshi",
+    1
+   ]
+  ],
+  "cinco": [
+   [
+    "5",
+    5
+   ]
+  ],
+  "oitocentas": [
+   [
+    "800",
+    4
+   ]
+  ],
+  "kowalski": [
+   [
+    "kloskey",
+    1
+   ],
+   [
+    "kołobrzeski",
+    1
+   ],
+   [
+    "nikolski",
+    1
+   ]
+  ],
+  "primeiro": [
+   [
+    "1º",
+    3
+   ],
+   [
+    "1o",
+    1
+   ]
+  ],
+  "gdansk": [
+   [
+    "gdansky",
+    2
+   ],
+   [
+    "guidanski",
+    1
+   ]
+  ],
+  "senhor": [
+   [
+    "sr",
+    1
+   ]
+  ],
+  "adebayo": [
+   [
+    "oadebaiu",
+    1
+   ],
+   [
+    "adebaio",
+    1
+   ],
+   [
+    "adebayor",
+    1
+   ]
+  ],
+  "onze": [
+   [
+    "11",
+    5
+   ],
+   [
+    "o",
+    1
+   ]
+  ],
+  "lindqvist": [
+   [
+    "lindich",
+    1
+   ]
+  ],
+  "e": [
+   [
+    "as",
+    1
+   ]
+  ],
+  "dois": [
+   [
+    "2",
+    6
+   ],
+   [
+    "dos",
+    1
+   ]
+  ],
+  "petrescu": [
+   [
+    "t3cu",
+    1
+   ],
+   [
+    "petricu",
+    1
+   ],
+   [
+    "petreisco",
+    1
+   ]
+  ],
+  "maio": [
+   [
+    "mai",
+    1
+   ]
+  ],
+  "novák": [
+   [
+    "novak",
+    5
+   ],
+   [
+    "novato",
+    1
+   ]
+  ],
+  "dezenove": [
+   [
+    "19",
+    4
+   ]
+  ],
+  "oito": [
+   [
+    "8",
+    4
+   ],
+   [
+    "i",
+    1
+   ]
+  ],
+  "oaxaca": [
+   [
+    "lashaka",
+    2
+   ],
+   [
+    "osaka",
+    1
+   ],
+   [
+    "lachaca",
+    1
+   ]
+  ],
+  "björklund": [
+   [
+    "jornkund",
+    2
+   ]
+  ]
+ }
+}

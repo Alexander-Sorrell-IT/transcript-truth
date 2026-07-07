@@ -1,0 +1,288 @@
+{
+ "_meta": {
+  "clips": 7,
+  "pairs": 54
+ },
+ "confusions": {
+  "kagiso": [
+   [
+    "cazor",
+    1
+   ],
+   [
+    "cargill",
+    1
+   ],
+   [
+    "gasso",
+    1
+   ]
+  ],
+  "ba": [
+   [
+    "3",
+    3
+   ]
+  ],
+  "bergström": [
+   [
+    "petrus",
+    1
+   ],
+   [
+    "bethelstrom",
+    1
+   ]
+  ],
+  "ljubljana": [
+   [
+    "louisiana",
+    3
+   ],
+   [
+    "lugansk",
+    1
+   ]
+  ],
+  "chín": [
+   [
+    "9",
+    2
+   ]
+  ],
+  "okonkwo": [
+   [
+    "o'connor",
+    1
+   ]
+  ],
+  "bảy": [
+   [
+    "7",
+    1
+   ]
+  ],
+  "marrakesh": [
+   [
+    "marakesh",
+    1
+   ],
+   [
+    "magrakesh",
+    1
+   ]
+  ],
+  "cô": [
+   [
+    "kota",
+    1
+   ],
+   [
+    "kotaka",
+    1
+   ]
+  ],
+  "takahashi": [
+   [
+    "kahashi",
+    1
+   ],
+   [
+    "hashi",
+    1
+   ]
+  ],
+  "năm": [
+   [
+    "5",
+    4
+   ]
+  ],
+  "sáu": [
+   [
+    "6",
+    1
+   ]
+  ],
+  "valparaíso": [
+   [
+    "varlkaraiso",
+    1
+   ],
+   [
+    "valcárcel",
+    1
+   ],
+   [
+    "valcaraíso",
+    1
+   ]
+  ],
+  "gdansk": [
+   [
+    "ranov",
+    1
+   ],
+   [
+    "greenup",
+    1
+   ],
+   [
+    "ghana",
+    1
+   ],
+   [
+    "granada",
+    1
+   ]
+  ],
+  "tư": [
+   [
+    "bốn",
+    1
+   ],
+   [
+    "4",
+    1
+   ]
+  ],
+  "fernandez": [
+   [
+    "fernández",
+    1
+   ]
+  ],
+  "một": [
+   [
+    "1",
+    2
+   ]
+  ],
+  "adebayo": [
+   [
+    "aebayon",
+    1
+   ],
+   [
+    "aebios",
+    1
+   ],
+   [
+    "abbott",
+    1
+   ]
+  ],
+  "lindqvist": [
+   [
+    "linos",
+    1
+   ],
+   [
+    "lindbergh",
+    1
+   ],
+   [
+    "linovris",
+    1
+   ]
+  ],
+  "casablanca": [
+   [
+    "kasablanca",
+    1
+   ]
+  ],
+  "tám": [
+   [
+    "8",
+    5
+   ]
+  ],
+  "kilimanjaro": [
+   [
+    "kilimanalo",
+    1
+   ],
+   [
+    "kilimanro",
+    1
+   ]
+  ],
+  "petrescu": [
+   [
+    "teche",
+    1
+   ],
+   [
+    "tetescu",
+    1
+   ],
+   [
+    "techescu",
+    1
+   ]
+  ],
+  "đã": [
+   [
+    "spuda",
+    1
+   ]
+  ],
+  "hai": [
+   [
+    "2",
+    2
+   ]
+  ],
+  "novák": [
+   [
+    "novak",
+    4
+   ]
+  ],
+  "björklund": [
+   [
+    "bellalume",
+    1
+   ],
+   [
+    "buerlun",
+    1
+   ],
+   [
+    "berlin",
+    1
+   ]
+  ],
+  "kỹ": [
+   [
+    "kí",
+    1
+   ]
+  ],
+  "sư": [
+   [
+    "số",
+    1
+   ]
+  ],
+  "mười": [
+   [
+    "10",
+    2
+   ]
+  ],
+  "bin": [
+   [
+    "pin",
+    1
+   ]
+  ],
+  "oaxaca": [
+   [
+    "oaks",
+    1
+   ]
+  ]
+ }
+}

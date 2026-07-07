@@ -1,0 +1,344 @@
+{
+ "_meta": {
+  "clips": 7,
+  "pairs": 66
+ },
+ "confusions": {
+  "nguyen": [
+   [
+    "wen",
+    5
+   ],
+   [
+    "gwen",
+    2
+   ]
+  ],
+  "kagiso": [
+   [
+    "caciso",
+    6
+   ]
+  ],
+  "tres": [
+   [
+    "3",
+    6
+   ]
+  ],
+  "mil": [
+   [
+    "000",
+    4
+   ],
+   [
+    "mero",
+    1
+   ],
+   [
+    "cero",
+    1
+   ]
+  ],
+  "guadalajara": [
+   [
+    "guadalanjara",
+    1
+   ]
+  ],
+  "el": [
+   [
+    "del",
+    3
+   ],
+   [
+    "al",
+    1
+   ]
+  ],
+  "doctora": [
+   [
+    "dra",
+    1
+   ]
+  ],
+  "okonkwo": [
+   [
+    "otoko",
+    2
+   ],
+   [
+    "okoko",
+    2
+   ],
+   [
+    "ococo",
+    1
+   ],
+   [
+    "koko",
+    1
+   ],
+   [
+    "okoto",
+    1
+   ]
+  ],
+  "bergström": [
+   [
+    "bergstrom",
+    5
+   ],
+   [
+    "beelkstrom",
+    1
+   ],
+   [
+    "berxtrom",
+    1
+   ]
+  ],
+  "liubliana": [
+   [
+    "ljubljana",
+    3
+   ],
+   [
+    "lieuliana",
+    1
+   ],
+   [
+    "lubliana",
+    1
+   ]
+  ],
+  "nueve": [
+   [
+    "9",
+    6
+   ]
+  ],
+  "doce": [
+   [
+    "12",
+    4
+   ]
+  ],
+  "transfirió": [
+   [
+    "transpirió",
+    1
+   ]
+  ],
+  "takahashi": [
+   [
+    "takazaki",
+    4
+   ]
+  ],
+  "veintitrés": [
+   [
+    "23",
+    3
+   ]
+  ],
+  "marrakech": [
+   [
+    "marrachech",
+    1
+   ]
+  ],
+  "nakamura": [
+   [
+    "nakanura",
+    1
+   ]
+  ],
+  "cinco": [
+   [
+    "5",
+    3
+   ]
+  ],
+  "ochocientas": [
+   [
+    "800",
+    5
+   ]
+  ],
+  "primero": [
+   [
+    "1",
+    4
+   ],
+   [
+    "1º",
+    1
+   ],
+   [
+    "iero",
+    1
+   ]
+  ],
+  "gdansk": [
+   [
+    "dansk",
+    1
+   ],
+   [
+    "danzig",
+    1
+   ],
+   [
+    "danske",
+    1
+   ]
+  ],
+  "kowalski": [
+   [
+    "kovalsky",
+    1
+   ]
+  ],
+  "once": [
+   [
+    "11",
+    6
+   ]
+  ],
+  "adebayo": [
+   [
+    "arévalo",
+    1
+   ]
+  ],
+  "lindqvist": [
+   [
+    "lindgrist",
+    2
+   ],
+   [
+    "lindquist",
+    1
+   ],
+   [
+    "lindnist",
+    1
+   ],
+   [
+    "lindrist",
+    1
+   ]
+  ],
+  "casablanca": [
+   [
+    "casablaca",
+    2
+   ]
+  ],
+  "paquetes": [
+   [
+    "paqietes",
+    1
+   ]
+  ],
+  "kilimanjaro": [
+   [
+    "kilimazaro",
+    2
+   ],
+   [
+    "kilimajaro",
+    2
+   ],
+   [
+    "kilimájaro",
+    1
+   ],
+   [
+    "quilimazaro",
+    1
+   ]
+  ],
+  "dos": [
+   [
+    "2",
+    5
+   ]
+  ],
+  "yamamoto": [
+   [
+    "llamamoto",
+    1
+   ],
+   [
+    "diamanoto",
+    1
+   ],
+   [
+    "yamamota",
+    1
+   ]
+  ],
+  "petrescu": [
+   [
+    "petresbot",
+    1
+   ]
+  ],
+  "novák": [
+   [
+    "novak",
+    3
+   ],
+   [
+    "novat",
+    1
+   ],
+   [
+    "novaf",
+    1
+   ],
+   [
+    "novaz",
+    1
+   ]
+  ],
+  "diecinueve": [
+   [
+    "19",
+    4
+   ]
+  ],
+  "björklund": [
+   [
+    "forklund",
+    2
+   ],
+   [
+    "porklund",
+    1
+   ],
+   [
+    "forklun",
+    1
+   ]
+  ],
+  "ocho": [
+   [
+    "8",
+    4
+   ]
+  ],
+  "oaxaca": [
+   [
+    "basaca",
+    1
+   ],
+   [
+    "osaka",
+    1
+   ]
+  ]
+ }
+}

@@ -1,0 +1,324 @@
+{
+ "_meta": {
+  "clips": 7,
+  "pairs": 59
+ },
+ "confusions": {
+  "nguyen": [
+   [
+    "ziyan",
+    2
+   ],
+   [
+    "zuyen",
+    1
+   ],
+   [
+    "lucy'in",
+    1
+   ]
+  ],
+  "üç": [
+   [
+    "3",
+    3
+   ],
+   [
+    "üçü",
+    1
+   ]
+  ],
+  "kagiso": [
+   [
+    "kadınsı",
+    1
+   ]
+  ],
+  "doktor": [
+   [
+    "dr",
+    5
+   ]
+  ],
+  "kırk": [
+   [
+    "kırfı",
+    1
+   ]
+  ],
+  "bin": [
+   [
+    "bir",
+    1
+   ]
+  ],
+  "euro": [
+   [
+    "nivro",
+    1
+   ]
+  ],
+  "profesör": [
+   [
+    "prof",
+    1
+   ]
+  ],
+  "okonkwo": [
+   [
+    "rokonto",
+    1
+   ],
+   [
+    "okontro",
+    1
+   ]
+  ],
+  "ljubljana'daki": [
+   [
+    "juvijana'daki",
+    2
+   ],
+   [
+    "judjana'daki",
+    1
+   ]
+  ],
+  "bergström": [
+   [
+    "bellströn",
+    1
+   ]
+  ],
+  "vakfına": [
+   [
+    "vakfı'na",
+    2
+   ]
+  ],
+  "dokuz": [
+   [
+    "9",
+    1
+   ]
+  ],
+  "gönderdi": [
+   [
+    "görndeldi",
+    1
+   ]
+  ],
+  "ayırttı": [
+   [
+    "ayılttı",
+    1
+   ],
+   [
+    "ayıltı",
+    1
+   ]
+  ],
+  "takahashi": [
+   [
+    "takahasi",
+    3
+   ]
+  ],
+  "heyeti": [
+   [
+    "meyyiti",
+    1
+   ]
+  ],
+  "beş": [
+   [
+    "5",
+    2
+   ],
+   [
+    "beşva",
+    1
+   ]
+  ],
+  "marakeş'teki": [
+   [
+    "marrakeş'teki",
+    2
+   ]
+  ],
+  "valparaíso'dan": [
+   [
+    "valparayı",
+    1
+   ]
+  ],
+  "gdansk'taki": [
+   [
+    "soganslands'taki",
+    1
+   ],
+   [
+    "france'taki",
+    1
+   ]
+  ],
+  "kowalski": [
+   [
+    "kohauski",
+    1
+   ]
+  ],
+  "bay": [
+   [
+    "white",
+    1
+   ]
+  ],
+  "fernandez": [
+   [
+    "hernandez",
+    1
+   ],
+   [
+    "kaynandes",
+    1
+   ]
+  ],
+  "bir": [
+   [
+    "1",
+    3
+   ]
+  ],
+  "adebayo": [
+   [
+    "adaba'yı",
+    1
+   ]
+  ],
+  "kazablanka'daki": [
+   [
+    "casablanca'daki",
+    2
+   ],
+   [
+    "cazablanca'daki",
+    1
+   ]
+  ],
+  "lindqvist": [
+   [
+    "lindquist",
+    2
+   ],
+   [
+    "winfriest",
+    1
+   ],
+   [
+    "linklist",
+    1
+   ]
+  ],
+  "ofisine": [
+   [
+    "ofisini",
+    1
+   ]
+  ],
+  "paket": [
+   [
+    "ket",
+    1
+   ]
+  ],
+  "iki": [
+   [
+    "2",
+    3
+   ]
+  ],
+  "petrescu": [
+   [
+    "tetrescu",
+    2
+   ]
+  ],
+  "yamamoto": [
+   [
+    "yamanoto",
+    1
+   ]
+  ],
+  "muayene": [
+   [
+    "müayene",
+    1
+   ]
+  ],
+  "novák": [
+   [
+    "noh",
+    2
+   ],
+   [
+    "nov",
+    1
+   ],
+   [
+    "no",
+    1
+   ]
+  ],
+  "björklund": [
+   [
+    "jörkl'ün",
+    2
+   ],
+   [
+    "jerklund",
+    1
+   ],
+   [
+    "berg'in",
+    1
+   ],
+   [
+    "lon",
+    1
+   ]
+  ],
+  "oaxaca": [
+   [
+    "novakssaca",
+    1
+   ],
+   [
+    "olaaksaca",
+    1
+   ]
+  ],
+  "sekiz": [
+   [
+    "8",
+    2
+   ],
+   [
+    "seizekinde",
+    1
+   ]
+  ],
+  "mühendis": [
+   [
+    "mürlengiz",
+    1
+   ]
+  ],
+  "ekim'de": [
+   [
+    "jörg",
+    1
+   ]
+  ]
+ }
+}

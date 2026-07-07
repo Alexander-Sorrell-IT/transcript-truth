@@ -31,6 +31,34 @@ def gazetteer():
         return set()
 
 
+@functools.lru_cache(maxsize=16)
+def _confusions(lang):
+    """EMPIRICAL per-language ASR-confusion table (data/<lang>_asr_confusions.json — mined by
+    bench/build_asr_confusions_multilang.py from real witness reads vs ground truth). Maps
+    heard-form -> {gold forms actually mis-heard as it}. {} if not built."""
+    try:
+        d = json.load(open(os.path.join(_DATA, f"{lang}_asr_confusions.json"), encoding="utf-8"))
+        rev = {}
+        for gold, heards in d.get("confusions", {}).items():
+            for h, _c in heards:
+                rev.setdefault(h, set()).add(gold)
+        return rev
+    except Exception:
+        return {}
+
+
+def known_confusion_gold(candidates, lang):
+    """If one candidate is a KNOWN mishearing of another candidate (measured, not guessed),
+    return the gold side; else None. Tie-break only — used when the vote would defer anyway."""
+    cl = {_clean(c): c for c in candidates}
+    rev = _confusions(lang)
+    for heard, golds in ((h, g) for h, g in rev.items() if h in cl):
+        for g in golds:
+            if g in cl and g != heard:
+                return cl[g]
+    return None
+
+
 @functools.lru_cache(maxsize=1)
 def _gazetteer_romanized():
     """Collapsed-romanization index of the gazetteer, for cross-script name lookup: Devanagari
@@ -212,4 +240,10 @@ def adjudicate(candidates, context, lang):
     above = [c for c in uniq if freq[c] >= _NAME_FLOOR]
     if len(above) == 1:
         return above[0], 1.0
+    # measured-confusion tie-break: if one candidate is a KNOWN mishearing of another
+    # (empirical per-language table mined from bench reads), the gold side wins. Only in
+    # this ambiguous-name path — never used to rewrite one valid dictionary word into another.
+    g = known_confusion_gold(uniq, lang)
+    if g is not None:
+        return g, 1.0
     return uniq[0], 0.0                            # ambiguous names / all unseen -> defer

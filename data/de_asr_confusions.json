@@ -1,0 +1,346 @@
+{
+ "_meta": {
+  "clips": 7,
+  "pairs": 66
+ },
+ "confusions": {
+  "okonkwo": [
+   [
+    "okonquo",
+    2
+   ],
+   [
+    "o",
+    1
+   ],
+   [
+    "okongwo",
+    1
+   ]
+  ],
+  "zwölftausend": [
+   [
+    "12000",
+    1
+   ],
+   [
+    "12",
+    1
+   ],
+   [
+    "zwölfnaulld",
+    1
+   ]
+  ],
+  "ljubljana": [
+   [
+    "niobliana",
+    1
+   ],
+   [
+    "njubliana",
+    1
+   ],
+   [
+    "liobliana",
+    1
+   ]
+  ],
+  "neunten": [
+   [
+    "9",
+    5
+   ],
+   [
+    "un",
+    1
+   ]
+  ],
+  "überwies": [
+   [
+    "überwiest",
+    1
+   ]
+  ],
+  "dollar": [
+   [
+    "000",
+    1
+   ]
+  ],
+  "dreiundzwanzig": [
+   [
+    "23",
+    4
+   ]
+  ],
+  "fünften": [
+   [
+    "5",
+    2
+   ]
+  ],
+  "fernandez": [
+   [
+    "fernandes",
+    4
+   ],
+   [
+    "fernández",
+    1
+   ]
+  ],
+  "achthundert": [
+   [
+    "800",
+    5
+   ]
+  ],
+  "valparaíso": [
+   [
+    "valparaiso",
+    3
+   ],
+   [
+    "walparaizo",
+    1
+   ],
+   [
+    "waldpareiso",
+    1
+   ],
+   [
+    "walpareiso",
+    1
+   ]
+  ],
+  "kowalski": [
+   [
+    "kowalsky",
+    1
+   ],
+   [
+    "kobalski",
+    1
+   ],
+   [
+    "kovalski",
+    1
+   ]
+  ],
+  "ersten": [
+   [
+    "1",
+    5
+   ]
+  ],
+  "fünfundsechzig": [
+   [
+    "65",
+    5
+   ]
+  ],
+  "lindqvist": [
+   [
+    "lindquist",
+    5
+   ],
+   [
+    "lindtquist",
+    1
+   ],
+   [
+    "lind",
+    1
+   ]
+  ],
+  "kapitän": [
+   [
+    "capitän",
+    1
+   ]
+  ],
+  "elften": [
+   [
+    "11",
+    5
+   ]
+  ],
+  "adebayo": [
+   [
+    "adabaio",
+    1
+   ],
+   [
+    "adebayor",
+    1
+   ]
+  ],
+  "büro": [
+   [
+    "quistbürau",
+    1
+   ]
+  ],
+  "casablanca": [
+   [
+    "kasablanka",
+    1
+   ]
+  ],
+  "petrescu": [
+   [
+    "petresco",
+    2
+   ],
+   [
+    "petrisco",
+    1
+   ],
+   [
+    "petrisko",
+    1
+   ],
+   [
+    "petrisku",
+    1
+   ]
+  ],
+  "einunddreißig": [
+   [
+    "31",
+    5
+   ]
+  ],
+  "doktor": [
+   [
+    "dr",
+    6
+   ]
+  ],
+  "zweiten": [
+   [
+    "2",
+    4
+   ]
+  ],
+  "kilimandscharo": [
+   [
+    "kilimanjaro",
+    2
+   ]
+  ],
+  "yamamoto": [
+   [
+    "jamamoto",
+    1
+   ]
+  ],
+  "neunzehn": [
+   [
+    "19",
+    5
+   ]
+  ],
+  "björklund": [
+   [
+    "bjorklound",
+    1
+   ],
+   [
+    "björkland",
+    1
+   ],
+   [
+    "biorklund",
+    1
+   ]
+  ],
+  "ingenieur": [
+   [
+    "insigneur",
+    1
+   ],
+   [
+    "in",
+    1
+   ],
+   [
+    "im",
+    1
+   ]
+  ],
+  "novák": [
+   [
+    "nowak",
+    1
+   ],
+   [
+    "senjörnobag",
+    1
+   ],
+   [
+    "juni",
+    1
+   ]
+  ],
+  "werk": [
+   [
+    "berg",
+    1
+   ]
+  ],
+  "achten": [
+   [
+    "8",
+    4
+   ],
+   [
+    "ch",
+    1
+   ]
+  ],
+  "oaxaca": [
+   [
+    "osa",
+    1
+   ]
+  ],
+  "nguyen": [
+   [
+    "nujen",
+    2
+   ],
+   [
+    "noien",
+    1
+   ],
+   [
+    "noyen",
+    1
+   ]
+  ],
+  "siebenundvierzigtausend": [
+   [
+    "47000",
+    1
+   ]
+  ],
+  "kagiso": [
+   [
+    "cargiso",
+    2
+   ],
+   [
+    "kgiso",
+    1
+   ]
+  ],
+  "dritten": [
+   [
+    "3",
+    3
+   ]
+  ]
+ }
+}

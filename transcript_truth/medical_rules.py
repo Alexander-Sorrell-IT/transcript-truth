@@ -31,15 +31,53 @@ _DO_NOT_USE = {
     "AS": ("left ear", "mistaken — spell out"), "AU": ("both ears", "mistaken — spell out"),
     "OD": ("right eye", "mistaken — spell out"), "OS": ("left eye", "mistaken — spell out"),
     "OU": ("both eyes", "mistaken — spell out"),
+    # audit 2026-07-07 additions (ISMP classes previously missing)
+    "QHS": ("nightly at bedtime", "mistaken for qhr (every hour)"),
+    "QN": ("nightly", "mistaken for qh (every hour)"),
+    "BT": ("bedtime", "mistaken for BID (twice daily)"),
+    "SS": ("sliding scale", "mistaken for 55 / SSRI"),
+    "UD": ("as directed", "mistaken for unit dose"),
+    "IN": ("intranasal", "mistaken for IM or IV"),
+    "IT": ("intrathecal", "mistaken for other routes"),
+    "OJ": ("orange juice", "mistaken for OD/OS (eye) — drug given in the eye"),
+    "HCTZ": ("hydrochlorothiazide", "drug-name abbreviation — misread"),
+    "MTX": ("methotrexate", "drug-name abbreviation — misread as mitoxantrone"),
+    "AZT": ("zidovudine", "drug-name abbreviation — misread as azathioprine"),
+    "CPZ": ("Compazine (prochlorperazine)", "misread as chlorpromazine"),
+    "HCT": ("hydrocortisone", "misread as hydrochlorothiazide"),
+    "TAC": ("triamcinolone", "misread as tacrolimus"),
+    "T3": ("Tylenol with codeine No. 3", "misread as liothyronine"),
+    "ZnSO4": ("zinc sulfate", "misread as morphine sulfate"),
+    "PER OS": ("by mouth / orally", "'os' is mistaken for left eye (OS)"),
 }
+# case-insensitive lookup companion: single/double-letter entries stay case-SENSITIVE
+# ('u'/'U', OD/AD ...) because lowercase collisions with real words are constant; longer
+# abbreviations (qhs, tiw, mso4, hctz) are flagged whatever the case.
+_DO_NOT_USE_CI = {k.upper(): v for k, v in _DO_NOT_USE.items() if len(k) >= 3}
 # Unicode-aware: a token starts with a letter and keeps accented letters whole (so "reçu" is ONE
 # token and the single-letter 'u' rule can't fire inside it).
 _TOKEN = re.compile(r"[^\W\d_][\w.µ/]*", re.UNICODE)
 # trailing zero after a decimal — but only 1–2 fractional digits ("1.0", "2.50"). A 3+-digit group
 # ("1.000") is a THOUSANDS separator in de/es/pt/etc. (= 1000), NOT a decimal; flagging it and
 # advising "1 mg" would be a 1000x underdose. Capping the fraction keeps this locale-safe.
-_TRAILING_ZERO = re.compile(r"\b(\d+\.\d?0)\s*(mg|ml|mcg|g|units?|l)\b", re.I)
-_NAKED_DECIMAL = re.compile(r"(?<![\d.])\.(\d+)\s*(mg|ml|mcg|g|units?|l)\b", re.I)
+# unit list covers ISMP-relevant units beyond the original 6 (IU, mEq, mmol, %, gtt).
+_UNITS = r"(mg|ml|mcg|g|units?|l|iu|meq|mmol|%|gtt)"
+_TRAILING_ZERO = re.compile(r"\b(\d+\.\d?0)\s*" + _UNITS + r"\b", re.I)
+_NAKED_DECIMAL = re.compile(r"(?<![\d.])\.(\d+)\s*" + _UNITS + r"\b", re.I)
+# COMMA-DECIMAL twins — de/fr/es/pt/tr/ru/uk/vi write "1,0 mg" / ",5 mg". The dot-only
+# regexes silently no-op there, which left 13 languages with a DEAD dosage check (audit
+# 2026-07-07). Same 1-2 fractional-digit cap: "1,500 mg" is a thousands separator in en,
+# but after a comma in comma-decimal locales 3 digits IS a decimal — we stay conservative
+# and cap at 2 digits, mirroring the dot rules exactly.
+_TRAILING_ZERO_C = re.compile(r"\b(\d+,\d?0)\s*" + _UNITS + r"\b", re.I)
+_NAKED_DECIMAL_C = re.compile(r"(?<![\d,]),(\d+)\s*" + _UNITS + r"\b", re.I)
+# other ISMP hazards, language-neutral: @ in dose context, x3d, huge unseparated doses,
+# unit/unit slash (25 units/10 units misread as 1), > < with clinical units
+_AT_DOSE = re.compile(r"\d\s*@\s*\d")
+_XDAYS = re.compile(r"\b[xX]\s?\d+\s?[dD]\b")
+_BIGDOSE = re.compile(r"\b\d{5,}\s*(units?|iu)\b", re.I)
+_SLASH_DOSE = re.compile(r"\d+\s*units?\s*/\s*\d+\s*units?\b", re.I)
+_GTLT_DOSE = re.compile(r"[<>]\s*\d+\s*(mg|kg|mmol|bpm|%)", re.I)
 
 
 def dangerous_abbreviations(t: Transcript) -> list[Flag]:
@@ -48,7 +86,8 @@ def dangerous_abbreviations(t: Transcript) -> list[Flag]:
         for m in _TOKEN.finditer(ln.text):
             w = m.group(0)
             # tolerate periods anywhere: trailing (QD.) and interior (q.d. -> qd)
-            info = _DO_NOT_USE.get(w) or _DO_NOT_USE.get(w.strip(".")) or _DO_NOT_USE.get(w.replace(".", ""))
+            info = (_DO_NOT_USE.get(w) or _DO_NOT_USE.get(w.strip(".")) or _DO_NOT_USE.get(w.replace(".", ""))
+                    or _DO_NOT_USE_CI.get(w.replace(".", "").upper()))
             if info:
                 w = next((c for c in (w, w.strip("."), w.replace(".", "")) if c in _DO_NOT_USE), w)
                 meaning, why = info
@@ -108,4 +147,24 @@ def dosage_hygiene(t: Transcript) -> list[Flag]:
                 rule="med_dosage", severity="moderate", line=ln.n, evidence=m.group(0).strip(),
                 label=f"Naked decimal '{m.group(0).strip()}' — add a leading zero",
                 fix=f"Write '0.{m.group(1)} {m.group(2)}' — always a leading zero before a decimal."))
+        for m in _TRAILING_ZERO_C.finditer(ln.text):
+            out.append(Flag(
+                rule="med_dosage", severity="moderate", line=ln.n, evidence=m.group(0).strip(),
+                label=f"Trailing zero '{m.group(0).strip()}' — drop it (a missed decimal = 10x overdose)",
+                fix=f"Write '{m.group(1).rstrip('0').rstrip(',')} {m.group(2)}' — never a trailing zero after a decimal."))
+        for m in _NAKED_DECIMAL_C.finditer(ln.text):
+            out.append(Flag(
+                rule="med_dosage", severity="moderate", line=ln.n, evidence=m.group(0).strip(),
+                label=f"Naked decimal '{m.group(0).strip()}' — add a leading zero",
+                fix=f"Write '0,{m.group(1)} {m.group(2)}' — always a leading zero before a decimal."))
+        for rx, lab, fx in (
+            (_AT_DOSE, "'@' in a dose/rate — mistaken for '2'", "Write 'at'."),
+            (_XDAYS, "'xNd' — 'for N days' vs 'N doses' ambiguity", "Write 'for N days' or 'N doses' in words."),
+            (_BIGDOSE, "large dose without separators — misread by a factor of 10", "Use commas: 100,000 units."),
+            (_SLASH_DOSE, "unit/unit slash — '/' is misread as '1'", "Write 'X units and Y units' (spell 'and')."),
+            (_GTLT_DOSE, "'>' or '<' with a clinical value — mistaken for 7/L", "Write 'greater than'/'less than'."),
+        ):
+            for m in rx.finditer(ln.text):
+                out.append(Flag(rule="med_dosage", severity="moderate", line=ln.n,
+                                evidence=m.group(0).strip(), label=lab, fix=fx))
     return out
