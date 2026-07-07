@@ -989,17 +989,17 @@
   "clip": "fp_arb.json",
   "lang": "ar",
   "consensus": 0.412,
-  "best_single": 0.294,
+  "best_single": 0.125,
   "best_model": "gemini",
   "wins": false,
   "wer_by_model": {
-   "deepgram": 0.471,
-   "scribe": 0.471,
-   "gemini": 0.294,
-   "hf": 0.471,
-   "wav2vec2": 0.529,
-   "whisper": 0.471,
-   "seamless": 0.529
+   "deepgram": 0.438,
+   "scribe": 0.312,
+   "gemini": 0.125,
+   "hf": 0.312,
+   "wav2vec2": 0.5,
+   "whisper": 0.312,
+   "seamless": 0.312
   },
   "reads": {
    "deepgram": "البروفيسور أو كونكوفني عشر ألف دولار إلى مؤسسة بيرغستور روما فيلياو بليانر في التاسع من يوليو",
@@ -1015,17 +1015,17 @@
   "clip": "fp_arc.json",
   "lang": "ar",
   "consensus": 0.333,
-  "best_single": 0.267,
+  "best_single": 0.133,
   "best_model": "gemini",
   "wins": false,
   "wer_by_model": {
-   "deepgram": 0.333,
-   "scribe": 0.4,
-   "gemini": 0.267,
-   "hf": 0.667,
+   "deepgram": 0.267,
+   "scribe": 0.267,
+   "gemini": 0.133,
+   "hf": 0.6,
    "wav2vec2": 0.533,
-   "whisper": 0.667,
-   "seamless": 0.467
+   "whisper": 0.6,
+   "seamless": 0.333
   },
   "reads": {
    "deepgram": "حجزت الآنسة تاكاهاشي 23 غرفة في فندق مراكش لو فدناكامورا في الخامس من يونيو",
@@ -1437,16 +1437,16 @@
   "clip": "fp_ar.json",
   "lang": "ar",
   "consensus": 0.375,
-  "best_single": 0.25,
+  "best_single": 0.188,
   "best_model": "whisper",
   "wins": false,
   "wer_by_model": {
    "deepgram": 0.375,
-   "scribe": 0.375,
-   "gemini": 0.5,
-   "hf": 0.312,
-   "whisper": 0.25,
-   "seamless": 0.375
+   "scribe": 0.312,
+   "gemini": 0.438,
+   "hf": 0.25,
+   "whisper": 0.188,
+   "seamless": 0.312
   },
   "reads": {
    "deepgram": "أرسل طبيب نجوم سبعة وأربعين ألف يورو لا حسابك غيسو في مارسيليا في الثالث من مارس",
@@ -1461,16 +1461,16 @@
   "clip": "fp_are.json",
   "lang": "ar",
   "consensus": 0.556,
-  "best_single": 0.444,
-  "best_model": "deepgram",
+  "best_single": 0.235,
+  "best_model": "gemini",
   "wins": false,
   "wer_by_model": {
-   "deepgram": 0.444,
-   "scribe": 0.556,
-   "gemini": 0.5,
-   "hf": 0.778,
-   "whisper": 0.5,
-   "seamless": 0.556
+   "deepgram": 0.294,
+   "scribe": 0.412,
+   "gemini": 0.235,
+   "hf": 0.353,
+   "whisper": 0.412,
+   "seamless": 0.412
   },
   "reads": {
    "deepgram": "سلِّم سلِّم الكعبتُ نَأديبا نيوي خمسة وستين طردا إلى مكتب ليندفّيست في الدار البيضاء في الحادي عشر من أغسطس",
@@ -1485,17 +1485,17 @@
   "clip": "fp_arf.json",
   "lang": "ar",
   "consensus": 0.5,
-  "best_single": 0.438,
-  "best_model": "gemini",
+  "best_single": 0.375,
+  "best_model": "deepgram",
   "wins": false,
   "wer_by_model": {
-   "deepgram": 0.625,
-   "scribe": 0.5,
+   "deepgram": 0.375,
+   "scribe": 0.438,
    "gemini": 0.438,
-   "hf": 0.5,
+   "hf": 0.375,
    "wav2vec2": 0.688,
-   "whisper": 0.438,
-   "seamless": 0.562
+   "whisper": 0.375,
+   "seamless": 0.5
   },
   "reads": {
    "deepgram": "فحص الدكتور بيتريسكوا واحدًا وثلاثين مريضًا في عيادتا كليما نجارو مع الممرضة يا أمأموتو في الثاني من مايو",
@@ -1511,17 +1511,17 @@
   "clip": "fp_arg.json",
   "lang": "ar",
   "consensus": 0.312,
-  "best_single": 0.188,
+  "best_single": 0.2,
   "best_model": "deepgram",
   "wins": false,
   "wer_by_model": {
-   "deepgram": 0.188,
-   "scribe": 0.438,
-   "gemini": 0.5,
-   "hf": 0.438,
-   "wav2vec2": 0.625,
-   "whisper": 0.438,
-   "seamless": 0.688
+   "deepgram": 0.2,
+   "scribe": 0.267,
+   "gemini": 0.333,
+   "hf": 0.333,
+   "wav2vec2": 0.533,
+   "whisper": 0.333,
+   "seamless": 0.533
   },
   "reads": {
    "deepgram": "ركّب المهندس نوفاتْ: تسعة عشر توربينا قرب مصنع وإكساكا لشركة بيوراكولوند في الثامن من أكتوبر",

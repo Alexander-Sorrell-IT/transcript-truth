@@ -1,12 +1,12 @@
 {
  "ar": {
-  "deepgram": 0.598,
-  "scribe": 0.591,
-  "gemini": 0.625,
-  "hf": 0.512,
-  "wav2vec2": 0.437,
-  "whisper": 0.569,
-  "seamless": 0.502
+  "deepgram": 0.668,
+  "scribe": 0.695,
+  "gemini": 0.739,
+  "hf": 0.647,
+  "wav2vec2": 0.462,
+  "whisper": 0.647,
+  "seamless": 0.612
  },
  "de": {
   "deepgram": 0.858,

@@ -142,6 +142,50 @@ def _canon_numbers_lang(s, lang):
     return re.sub(r"\d[\d.,]*", repl, s)
 
 
+# --- script folding: orthographic variants that are NOT hearing errors ---------------------
+# Arabic: diacritics (tashkeel) are optional pointing, hamza-seats on alef vary by convention,
+# alef-maqsura/ya and ta-marbuta/ha are interchangeable across ASR outputs. None of these mean
+# the model heard a different word, so the ruler must not count them.
+_AR_DIACRITICS = dict.fromkeys(list(range(0x064B, 0x0653)) + [0x0670, 0x0640])   # tashkeel + dagger alef + tatweel
+_AR_FOLD = str.maketrans({"أ": "ا", "إ": "ا", "آ": "ا", "ٱ": "ا", "ى": "ي", "ة": "ه"})
+
+# Arabic ordinal roots -> cardinal words, so "التاسع من يوليو" (the ninth of July) matches "9 يوليو",
+# plus case-inflection folds (اثني/اثنين are accusative/genitive of اثنا).
+_AR_ORD2CARD = {"اول": "واحد", "حادي": "واحد", "ثاني": "اثنا", "ثالث": "ثلاثه", "رابع": "اربعه",
+                "خامس": "خمسه", "سادس": "سته", "سابع": "سبعه", "ثامن": "ثمانيه", "تاسع": "تسعه",
+                "عاشر": "عشره", "اثني": "اثنا", "اثنين": "اثنا"}
+_AR_NUMWORDS = {"عشر", "عشرون", "عشرين", "ثلاثون", "ثلاثين", "اربعون", "اربعين", "خمسون", "خمسين",
+                "ستون", "ستين", "سبعون", "سبعين", "ثمانون", "ثمانين", "تسعون", "تسعين",
+                "مائه", "مايه", "الف", "مليون", "مليار"}
+
+
+def _fold_script(s: str, lang: str) -> str:
+    """Fold orthography that carries no acoustic information. Always: any Unicode decimal digit
+    (٠١٢, ०१२, …) -> ASCII so number canonicalization sees them. Arabic: strip diacritics, unify
+    hamza/alef, maqsura, ta-marbuta; detach the conjunction و and article ال when what remains is
+    a number word; fold ordinal roots and case-inflected number words to one cardinal form."""
+    import unicodedata
+    if any(ch.isdigit() and not ch.isascii() for ch in s):
+        s = "".join(str(unicodedata.digit(ch)) if ch.isdigit() and not ch.isascii() else ch for ch in s)
+    if lang == "ar":
+        s = s.translate(_AR_DIACRITICS).translate(_AR_FOLD)
+        toks = []
+        for t in s.split():
+            bare = t.strip(".,;:!?،؛؟")
+            for pre in ("وال", "ال", "و"):
+                rest = bare[len(pre):]
+                if bare.startswith(pre) and len(rest) > 1 and (rest in _AR_ORD2CARD
+                        or rest in _AR_ORD2CARD.values() or rest in _AR_NUMWORDS):
+                    bare = rest
+                    break
+            # -ون/-ين are the same tens word in different grammatical case
+            if bare in _AR_NUMWORDS and bare.endswith("ين"):
+                bare = bare[:-2] + "ون"
+            toks.append(_AR_ORD2CARD.get(bare, bare))
+        s = " ".join(toks)
+    return s
+
+
 def wer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: str = "en"):
     """Word Error Rate (Levenshtein over words) — the text-accuracy ruler. 0.0 = identical.
     Case/punctuation-insensitive. With normalize_numbers (default) it canonicalizes number/date/
@@ -151,8 +195,11 @@ def wer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: s
     normalize_numbers=False for raw formatting-sensitive WER."""
     import re
     if normalize_numbers:
-        reference = _canon_numbers_lang(_normalize_numbers(reference), lang)
-        hypothesis = _canon_numbers_lang(_normalize_numbers(hypothesis), lang)
+        reference = _canon_numbers_lang(_normalize_numbers(_fold_script(reference, lang)), lang)
+        hypothesis = _canon_numbers_lang(_normalize_numbers(_fold_script(hypothesis, lang)), lang)
+        # the canonical spelled forms num2words emits can themselves carry foldable orthography
+        # (hamza-alef in ألف, the loose "و" separator), so fold once more after canonicalization
+        reference, hypothesis = _fold_script(reference, lang), _fold_script(hypothesis, lang)
 
     def _tokenize(s):
         # Space-free scripts (CJK: Han, Hiragana, Katakana, Hangul) have no word boundaries, so
