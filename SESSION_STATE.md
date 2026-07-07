@@ -22,6 +22,18 @@
 - **Still BEHIND:** tr (vote drops 'Nguyen'; deepgram is the lone good witness — needs per-language
   reliability weighting) and ar (ALL 4 witnesses bad 0.31-0.44 — needs a better Arabic roster).
 
+## Finish push (2026-07-07) — languages/legal/medical closing
+- **Medical:** UMLS dx-trigger phrases 6 -> 15 languages; verb-final capture flip (ja/ko/hi/ur/tr:
+  term BEFORE trigger) — 9/9 live captures. UMLS lookup live 12/14 (hi/ur = NLM source limit).
+- **Legal:** FULL CVL guide (24pp) rule-extracted (~120 rules) + coverage matrix built by audit
+  agent: ~20 COVERED / 12 PARTIAL / 55 MISSING / rest N-A. Top-10 gaps implemented as scanners
+  (test_legal_coverage.py; 0 false positives on the clean sample). Remaining 45 = lower-value
+  matrix rows, in the agent output (session f6df99b8, tool-results).
+- **Urdu, honest verdict:** espeak-ng synthetic clips are UNINTELLIGIBLE to every ASR (scribe
+  returned '(Computerspeak talk)'; WER 0.6-3.4) — they measure the TTS, not the ASR. Purged from
+  the parity map (84 clean clips stand). Urdu needs REAL audio (Common Voice) to be measured.
+- Suite 357 green. All pushed.
+
 ## Gap-close round 4 (2026-07-05) — Arabic witness, GitHub LIVE, 84-clip verified map
 - **XLSR-arabic wired** (acoustic2 generalized per-language; tashkeel stripped — raw output is fully
   diacritized and scored WER 2.6-3.8 on formatting alone; stripped = 0.25 on clip-a, better than
