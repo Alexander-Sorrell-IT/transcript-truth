@@ -302,7 +302,12 @@ def test_umls_context_gating_multilingual():
     # built once → other languages work via their own phrase rows; a language with none no-ops
     assert _dx_regex("es").search("diagnosticado con neumonía") is not None
     assert _dx_regex("fr").search("antécédents de diabète") is not None
-    assert _dx_regex("ko") is None                                    # no phrases yet → safe no-op
+    # verb-final languages capture the TERM BEFORE the trigger (ko/ja/hi/ur/tr)
+    m = _dx_regex("ko").search("환자는 당뇨병 진단받았습니다.")
+    assert m and m.group(1) == "당뇨병"
+    m = _dx_regex("ja").search("患者は糖尿病と診断されました。")
+    assert m and m.group(1) == "糖尿病"
+    assert _dx_regex("xx") is None                                    # unknown language → safe no-op
 
 
 def test_umls_no_false_positive_on_common_words():

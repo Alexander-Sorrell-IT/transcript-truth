@@ -101,6 +101,21 @@ _DX_PHRASES = {
            "tratada para", "compatível com"),
     "it": ("diagnosticato con", "diagnosticata con", "storia di", "presenta", "soffre di",
            "trattato per", "trattata per", "compatibile con"),
+    # Tier-2/3 languages — same deterministic pattern; the UMLS lookup side is already
+    # multilingual (verified live 12/14; hi/ur have no UMLS source vocabulary — honest limit,
+    # the trigger still surfaces the term for human review via the graceful no-hit path).
+    "ru": ("диагноз", "диагностирован", "диагностирована", "страдает от", "жалуется на",
+           "в анамнезе", "лечится от", "признаки"),
+    "uk": ("діагноз", "діагностовано", "страждає на", "скаржиться на", "в анамнезі",
+           "лікується від", "ознаки"),
+    "tr": ("teşhisi kondu", "teşhis edildi", "öyküsü var", "şikayeti", "tedavi görüyor",
+           "bulguları"),
+    "ko": ("진단받았", "진단되었", "병력이 있", "호소하", "치료받고", "소견"),
+    "ja": ("と診断され", "の既往歴", "を訴え", "の治療中", "の所見"),
+    "vi": ("được chẩn đoán", "tiền sử", "than phiền", "đang điều trị", "triệu chứng của"),
+    "ar": ("تم تشخيصه", "تم تشخيصها", "يعاني من", "تعاني من", "تاريخ مرضي", "يشكو من", "تشكو من"),
+    "hi": ("का निदान", "से पीड़ित", "की शिकायत", "का इलाज", "के लक्षण"),
+    "ur": ("کی تشخیص", "میں مبتلا", "کی شکایت", "کا علاج", "کی علامات"),
 }
 # capture-boundary words (a mix across the covered languages) — only truncate the captured phrase;
 # the head-noun fallback is the real safety net, so over/under-capture never causes a false positive.
@@ -109,14 +124,27 @@ _BOUNDARY = (r"(?=[.,;:!?]|\s+(?:and|or|but|since|with|after|before|for|in|on|at
 _dx_cache = {}
 
 
+# verb-final languages: the diagnosed TERM precedes the trigger ("糖尿病と診断され",
+# "당뇨병 진단받았") — capture direction flips.
+_TERM_FIRST = {"ja", "ko", "hi", "ur", "tr"}   # tr: "diyabet teşhisi kondu"
+
+
 def _dx_regex(lang):
     """Per-language diagnosis-context regex (cached). None if we have no phrases for this language."""
     if lang not in _dx_cache:
         phrases = _DX_PHRASES.get(lang)
-        _dx_cache[lang] = re.compile(
-            r"(?:" + "|".join(re.escape(p) for p in phrases) + r")\s+"
-            r"(?:a |an |the |un |una |el |la |le |les |der |die |das |o |uma )?"
-            r"([^\s.,;:!?][^.,;:!?\n]{2,45}?)" + _BOUNDARY, re.I) if phrases else None
+        if not phrases:
+            _dx_cache[lang] = None
+        elif lang in _TERM_FIRST:
+            _dx_cache[lang] = re.compile(
+                r"([^\s.,;:!?、。はがをのにとも은는이가을를의]{2,30}?)\s*"
+                r"(?:은|는|이|가|을|를|의|に|を|が|は|と|का|की|के|को|کا|کی|کے|کو)?\s*"
+                r"(?:" + "|".join(re.escape(p) for p in phrases) + r")", re.I)
+        else:
+            _dx_cache[lang] = re.compile(
+                r"(?:" + "|".join(re.escape(p) for p in phrases) + r")\s+"
+                r"(?:a |an |the |un |una |el |la |le |les |der |die |das |o |uma )?"
+                r"([^\s.,;:!?][^.,;:!?\n]{2,45}?)" + _BOUNDARY, re.I)
     return _dx_cache[lang]
 
 
