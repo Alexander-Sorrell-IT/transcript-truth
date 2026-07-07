@@ -250,7 +250,8 @@ def cer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: s
 
     def _chars(s):
         s = re.sub(r"[^\w']+", " ", s.lower())          # fold punct to space, like wer
-        s = re.sub(r"\s+", " ", s).strip()
-        return list(s)
+        # spaces are dropped, not scored: word segmentation is orthography, not hearing —
+        # and CJK consensus output is space-joined per char while references aren't
+        return [c for c in s if not c.isspace()]
 
     return _edit_rate(_chars(reference), _chars(hypothesis))

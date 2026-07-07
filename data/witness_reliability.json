@@ -91,6 +91,12 @@
   "whisper": 0.746,
   "mms": 0.464
  },
+ "ur": {
+  "scribe": 0.0,
+  "gemini": 0.452,
+  "whisper": 0.658,
+  "seamless": 0.761
+ },
  "vi": {
   "deepgram": 0.756,
   "scribe": 0.885,

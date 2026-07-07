@@ -1989,141 +1989,141 @@
  },
  {
   "lang": "ur",
-  "consensus": 1.0,
-  "best_single": 1.0,
-  "best_model": "scribe",
-  "wins": true,
+  "consensus": 1.562,
+  "best_single": 0.188,
+  "best_model": "whisper",
+  "wins": false,
   "wer_by_model": {
-   "scribe": 1.0,
-   "gemini": 1.062,
-   "whisper": 1.0,
-   "seamless": 1.125
+   "scribe": 2.188,
+   "gemini": 0.25,
+   "whisper": 0.188,
+   "seamless": 0.188
   },
   "reads": {
-   "scribe": "(computer voice)",
-   "gemini": "tanto tiene más de las mejores que ha de ser analista de radio en marcha con viaje",
-   "whisper": "تک کرنے کے لیے مرسیل میں کا بیسو کے خاتے میں سے انتہا ریسٹ ہوں آج اور دین مارچ کو بیئے",
-   "seamless": "کہ کر نہ ملیں مرسیلوں میکاویزوں کے، کہ کھا تے ہیں اس سے لسٹوں کو، جو روٹیاں مارچ کو وی جی"
+   "scribe": "डॉक्टर नगवैन ने मार्सेल्स में कागेसू के खाते में सैंतालीस हजार यूरो तीन मार्च को भेजे।",
+   "gemini": "ڈاکٹر نغمین نے مارسیلز میں تاگیسو کے کھاتے میں 47 ہزار یورو 3 مارچ کو بھیجے۔",
+   "whisper": "ڈاکٹر نگوین نے مارسیلز میں کاغیسو کے خاتے میں سینتالیس ہزار یورو کی مارچ کو بھیجے",
+   "seamless": "ڈاکٹر نگوین نے مارسیلز میں کاگیسو کے اکاؤنٹ میں ساٹھ ہزار یورو کی مارچ کو بھیجے۔"
   },
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery/fp_ur.wav"
  },
  {
   "lang": "ur",
-  "consensus": 1.0,
-  "best_single": 0.938,
+  "consensus": 1.062,
+  "best_single": 0.188,
   "best_model": "seamless",
   "wins": false,
   "wer_by_model": {
-   "scribe": 1.0,
-   "gemini": 1.625,
-   "whisper": 1.0,
-   "seamless": 0.938
+   "scribe": 2.312,
+   "gemini": 0.312,
+   "whisper": 0.375,
+   "seamless": 0.188
   },
   "reads": {
-   "scribe": "Profesor otonak bone no dolaiko de obianak iberagasteron fa ondesan kobara azar talakuntak wilkie.",
-   "gemini": "Úgyis el kell tőle válni, nagyon jó dolga van nálunk, itt maradhatott volna, de hát de hát ő a saját maga sorsát akarja kikovácsolni, hát menjen.",
-   "whisper": "پروفیسر اوٹو ناکمو نینو دو لایکو لے اوڈیانا کی بردستروم پاہوں دیشن کو مارا پزار ڈالر ممپا کل کی ہے",
-   "seamless": "پروفیسر اوٹو ناٹ مو نے نو ذوالایتو ریحیانا کی مرشد روم فاؤنڈیشن سے مارے مارے لکھنؤ پر دل کیئے"
+   "scribe": "प्रोफेसर ओकविंकवो ने नौ जुलाई को ल्यूब्लियाना की बर्गसटुंग फाउंडेशन को बारह हज़ार डॉलर मेंतकर किए।",
+   "gemini": "پروفیسر اوکوینکو نے 9 جولائی کو لیوبلیانا کی برسچونگ فاؤنڈیشن کو 12 ہزار ڈالر منتقل کی۔",
+   "whisper": "پروفیسر اوکوینکو نے نو جولائی کو لیو بلیانا کی برک سٹروم فاؤنڈیشن کو بارہ ہزار ڈالر منتقل کی",
+   "seamless": "پروفیسر اوکوینکو نے نو جولائی کو لیوبلیانا کی برکسٹون فاؤنڈیشن کو بارہ ہزار ڈالر منتقل کی"
   },
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery/fp_urb.wav"
  },
  {
   "lang": "ur",
-  "consensus": 1.944,
-  "best_single": 0.667,
-  "best_model": "whisper",
+  "consensus": 1.5,
+  "best_single": 0.167,
+  "best_model": "gemini",
   "wins": false,
   "wer_by_model": {
-   "scribe": 1.944,
-   "gemini": 1.889,
-   "whisper": 0.667,
-   "seamless": 1.167
+   "scribe": 1.833,
+   "gemini": 0.167,
+   "whisper": 0.222,
+   "seamless": 0.278
   },
   "reads": {
-   "scribe": "मस्तक हाशि ने पंच झूठ को मारा की श्के होटल में नकामोरा माफिया के लिए पुलिस कमरे में रख लिए।",
-   "gemini": "मस्त आकाशीय पंच धूमकेतु आकाश के पोर्टल में नाकाम रहा वापस के लिए प्लीज कमबैक कीजिए।",
-   "whisper": "مستاقہ ہاشی نے پانچ جونٹوں مراکش کے پوتر میں ناکامورا مفت کے لیے بریس کام بے مک پی ہے",
-   "seamless": "اگر آپ کو کوئی مسئلہ ہو تو آپ کو اس کے بارے میں بتائیں کہ آپ کو اس کے بارے میں بتانے کی ضرورت ہے"
+   "scribe": "मिस ताकाहाशी ने 5 जून को मराकेश के होटल में नाकामुरा वफद के लिए तेईस कमरे बुक किए।",
+   "gemini": "مسٹر تاکاہاشی نے 5 جون کو مراکش کے ہوٹل میں ناکامورا وفد کے لیے 23 کمرے بک کیے۔",
+   "whisper": "مستا کہاشی نے پانچ جون کو مراکش کے ہوتل میں ناکامورا وفق کے لیے تئیس کمرے بک کیے",
+   "seamless": "مسز تقیحشی نے پانچ جون کو مراکش کے ہوٹل میں ناکام ہونے والے وفد کے لیے تئیس کمرے بک کیے۔"
   },
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery/fp_urc.wav"
  },
  {
   "lang": "ur",
-  "consensus": 1.0,
-  "best_single": 0.941,
-  "best_model": "whisper",
+  "consensus": 1.471,
+  "best_single": 0.235,
+  "best_model": "seamless",
   "wins": false,
   "wer_by_model": {
-   "scribe": 1.0,
-   "gemini": 1.0,
-   "whisper": 0.941,
-   "seamless": 0.941
+   "scribe": 2.235,
+   "gemini": 0.294,
+   "whisper": 0.353,
+   "seamless": 0.235
   },
   "reads": {
-   "scribe": "Mister Fernand Ștefan cu Matril Coval paraíso Segadansac Kekualaskidogdam Coatzocinhuacpiedi.",
-   "gemini": "dobitni devetog aprila ko parajsko se gornat skoli ko naci",
-   "whisper": "مسٹر فرنان بیزنے یا کوم اپریل کو مل پلای سو سے گودان سکتے کوالا سکی گودان کوات سوشن ڈوگ پیجے",
-   "seamless": "مسٹر فرنانڈ ویزنیر ٹو میپریل ٹو مالپارائی سو سیگا ڈانسٹ کے انتخاب کے لئے ڈانٹورٹ سوشل گٹ میگی"
+   "scribe": "मिस्टर फर्नांडेज ने यकुम अप्रैल को वालपाराइसो से गिदांसक के कवाल्स्की गोदाम को आठ सौ संदूक भेजे।",
+   "gemini": "مسٹر فرنانڈز نے یکم اپریل کو والپارائیسو سے گدانسک کے کووالز کی گودام کو 800 صندوق بھیجے۔",
+   "whisper": "مسٹر فرنانڈز نے یکم اپریل کو والپا رائیسوں سے گیدان سک کے کواسکی گودام کو آٹھ سو صندوق بھیجے",
+   "seamless": "مسٹر فرنانڈیز نے یکم اپریل کو والپا رائسو سے گیدانسک کے کوالسکی گودام کو آٹھ سو سندوک بھیجے"
   },
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery/fp_urd.wav"
  },
  {
   "lang": "ur",
-  "consensus": 1.429,
-  "best_single": 1.0,
-  "best_model": "gemini",
+  "consensus": 2.357,
+  "best_single": 0.5,
+  "best_model": "seamless",
   "wins": false,
   "wer_by_model": {
-   "scribe": 1.429,
-   "gemini": 1.0,
-   "whisper": 1.071,
-   "seamless": 1.286
+   "scribe": 2.357,
+   "gemini": 2.357,
+   "whisper": 0.571,
+   "seamless": 0.5
   },
   "reads": {
-   "scribe": "(automatische stem) Katana, die bij jou mee gaat, heeft juist in Casablanca op de kust wat meer geld voor je.",
-   "gemini": "További videómédia-anyagokat stúdiók, kategóriák, valamint filmek párbeszédpontjai alatt találsz a honlapunkon.",
-   "whisper": "کپتانہ دی بائیوں میگیا ریگست کو کاسا بلانکا کے لنڈ کو اس دے فرمے پینسٹ پارسل پہ پنچائے",
-   "seamless": "کہ تادب و واریو نئیں جارہا ہے، کہ توکھا سب لانکھا ہے، کہ لنگوٹوسٹ، کہ پفٹ میں پیسٹ، پارسل پپونچائی"
+   "scribe": "कप्तान आदिबायो ने 11 अगस्त को कासाब्लांका के लैंड कोस्ट दफ्तर में फैसल पार्सल पहुंचाई।",
+   "gemini": "कप्तान अदीबायो ने 11 अगस्त को कासाब्लांका के लैंड कोस्ट दफ्तर में पैंसठ पार्सल पहुँचाया।",
+   "whisper": "کپتان اڈی بائیو نے 11 اگست کو کاسابلانکا کے لنڈ کوسٹ دفتر میں 65 پارسل پہنچا ہے",
+   "seamless": "کپتان ادی بائیوں نے گیارہ اگست کو کاسابلانکا کے لینڈ کوسٹ دفتر میں فیسک پاسل پہنچا۔"
   },
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery/fp_ure.wav"
  },
  {
   "lang": "ur",
-  "consensus": 1.0,
-  "best_single": 0.556,
-  "best_model": "whisper",
+  "consensus": 1.333,
+  "best_single": 0.167,
+  "best_model": "seamless",
   "wins": false,
   "wer_by_model": {
-   "scribe": 1.0,
-   "gemini": 1.0,
-   "whisper": 0.556,
-   "seamless": 5.278
+   "scribe": 2.167,
+   "gemini": 0.222,
+   "whisper": 0.333,
+   "seamless": 0.167
   },
   "reads": {
-   "scribe": "(Computer voice)",
-   "gemini": "Dokter gigi spesialis prostodonsia mahkota dan jembatan klinik medik gigi spesialis RSUD Karanganyar",
-   "whisper": "ڈاکٹر پیٹریس کو نے دو مائی کو نرسیامہ موڈو کے ساتھ کلنجاڑو کلینک میں اکڈیز مرینو کا مانکیاں",
-   "seamless": "ڈاکٹر پیٹریس کو بھی میں نے یہ کہا کہ ہم موٹو کے ساتھ ساتھ ساتھ ساتھ مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر مل کر ملیں"
+   "scribe": "डॉक्टर पीट्रीसिको ने दो मई को नर्स अमा मुतो के साथ कलीमंजारू क्लिनिक में इकत्तिस मरीजों का मुआयना किया।",
+   "gemini": "ڈاکٹر پیچیسو نے 2 مئی کو نرس اماموٹو کے ساتھ کلیمنجارو کلینک میں 31 مریضوں کا معائنہ کیا۔",
+   "whisper": "ڈاکٹر پیٹری سکو نے دو مئی کو نرس آماموتو کے ساتھ کلیم نجارو کلینک میں اکتیس مریضوں کا معاینہ کیا",
+   "seamless": "ڈاکٹر پیٹریسکو نے دو مئی کو نرس عامامتو کے ساتھ کلیم جارو کلینک میں اکتیس مریضوں کا معائنہ کیا۔"
   },
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery/fp_urf.wav"
  },
  {
   "lang": "ur",
-  "consensus": 1.823,
-  "best_single": 0.706,
-  "best_model": "whisper",
+  "consensus": 1.353,
+  "best_single": 0.118,
+  "best_model": "seamless",
   "wins": false,
   "wer_by_model": {
-   "scribe": 1.823,
-   "gemini": 2.0,
-   "whisper": 0.706,
-   "seamless": 1.0
+   "scribe": 2.118,
+   "gemini": 0.235,
+   "whisper": 0.353,
+   "seamless": 0.118
   },
   "reads": {
-   "scribe": "दिल्ली में 28 अक्टूबर को भारत लैंड कंपनी के लिए महाकालांड के करीब हुई सर्जरी लगाई।",
-   "gemini": "इंडियन आर्मी ने 18 अक्टूबर को बॉर्डरलैंड कंपनी के लिए महाकपालन के करीब उन्हें स्ट्राइक लगाए।",
-   "whisper": "انگیزیار نام مقنیات اکتوبر کو بیورکلانڈ کمپنی کے لیے مہا کپلانڈ کے قریبوں میں استرمائی نے لگائے",
-   "seamless": "انجینئر نے کہا کہ ہم نے کام کر کے اوٹ لینڈ کمپنی کے لیے مہاکا پ لینڈ کی تعمیر شروع کی ہے"
+   "scribe": "इंजीनियर नोवाक में आठ अक्टूबर को बीवरक्लैंड कंपनी के लिए अवाइका प्लांट के करीब अनीस टरबाइनें लगाई।",
+   "gemini": "انجیئر نواک نے آٹھ اکتوبر کو بیورلینڈ کمپنی کے لیے اوائیڈ پلانٹ کے قریب انیس ٹربائنیں لگائیں۔",
+   "whisper": "انجینئر نوات نے آٹھ اکتوبر کو بیورٹلنڈ کمپنی کے لیے  آوائیکا پلانٹ کے قریب انیس تربائی میں لگائے",
+   "seamless": "انجینئر نوواک نے آٹھ اکتوبر کو بیورکلینڈ کمپنی کے لیے اوائکا پلانٹ کے قریب انیس ٹربائنیں لگائیں۔"
   },
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery/fp_urg.wav"
  }
