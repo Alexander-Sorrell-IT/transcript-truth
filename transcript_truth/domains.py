@@ -262,6 +262,7 @@ register_site(
 # Vendor site plugins self-register on import (rev, scribie; dt registers via dt_rules).
 from . import rev_rules as _rev      # noqa: F401
 from . import scribie_rules as _scr  # noqa: F401
+from . import quicktate_rules as _qt  # noqa: F401
 from . import dt_rules as _dt        # noqa: F401
 
 # Auto-wire any per-language field/site layers present by convention (download a language/site pack →
