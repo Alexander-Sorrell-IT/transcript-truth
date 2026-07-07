@@ -458,3 +458,178 @@ LEGAL_FIXERS = [
     (_THERE_NOUN, lambda m: ("Their" if m.group(0)[:1].isupper() else "their") + m.group(0)[len(m.group(1)):]),
     (_ITS_NOUN, lambda m: ("Its" if m.group(0)[:1].isupper() else "its") + m.group(0)[4:]),
 ]
+
+
+# ================================================================ coverage push (2026-07-07):
+# the 10 highest-value gaps from the full CVL guide coverage matrix (every rule p.1-24 mapped
+# to a scanner by an audit agent; ~55 were unenforced). Conservative: clear-cut shapes flag
+# 'moderate', anything a human should judge flags 'review'.
+
+# --- interruption / false-start dash FORM (p.10, p.14): CVL uses double dash "--" attached to
+# the word. A spaced single hyphen at a turn end, or an em/en dash anywhere, is the wrong form.
+_EMDASH = re.compile(r"[—–]")
+_TRAIL_HYPHEN = re.compile(r"\w\s+-\s*$")
+
+
+def legal_dash_form(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        body = _body(ln.text)
+        for m in _EMDASH.finditer(body):
+            out.append(_flag("legal_dash_form", "Em/en dash — CVL uses double dash '--'",
+                             ln.n, m.group(0), "Replace with '--' attached to the word. [p.10]"))
+        if _TRAIL_HYPHEN.search(body):
+            out.append(_flag("legal_dash_form", "Spaced single hyphen at turn end — use '--'",
+                             ln.n, body[-12:], "Interruptions end with '--' attached: 'around--'. [p.10]"))
+    return out
+
+
+# --- unintentional word repeats (p.12): "to go to go" must be marked "to go-- to go".
+# Intentional emphasis ("very, very") uses a comma and won't match (no comma in the pattern).
+# 'that that' / 'had had' are grammatical; excluded.
+_REPEAT = re.compile(r"\b(\w{2,}(?:\s+\w+)?)\s+\1\b", re.I)  # word OR 2-word phrase repeat
+_REPEAT_OK = {"that", "had", "very", "no", "really"}
+
+
+def legal_repeated_words(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _REPEAT.finditer(_body(ln.text)):
+            if m.group(1).lower() in _REPEAT_OK:
+                continue
+            out.append(_flag("legal_repeat", "Unintentional repeat — mark with double dash",
+                             ln.n, m.group(0),
+                             f"'{m.group(1)}-- {m.group(1)}' (or comma if intentional emphasis). [p.12]",
+                             "review"))
+    return out
+
+
+# --- partial words left in (p.8, p.10): "wha- what" — stutter fragments must be OMITTED.
+_PARTIAL = re.compile(r"\b([A-Za-z]{1,4})-\s+(?=\w)")
+
+
+def legal_partial_words(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _PARTIAL.finditer(_body(ln.text)):
+            out.append(_flag("legal_partial_word", "Stutter fragment left in — omit partial words",
+                             ln.n, m.group(0).strip(),
+                             "Remove the fragment; keep only full words. [p.8]", "review"))
+    return out
+
+
+# --- spelled-out money (p.14, p.17): money is ALWAYS numerals. "twenty dollars" -> $20.
+_NUMWORD = (r"(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|"
+            r"fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|"
+            r"sixty|seventy|eighty|ninety|hundred|thousand|million|billion)")
+_MONEY = re.compile(r"\b(" + _NUMWORD + r"(?:[ -]" + _NUMWORD + r")*)\s+(dollars?|euros?|pounds?)\b", re.I)
+
+
+def legal_money_numerals(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _MONEY.finditer(_body(ln.text)):
+            out.append(_flag("legal_money", "Money must be numerals",
+                             ln.n, m.group(0),
+                             "Use numerals (+ symbol only if $, £, € and said): 'twenty dollars' -> $20. [p.14]"))
+    return out
+
+
+# --- decade / plural apostrophes (p.16, p.23): '70s not 70's; TVs not TV's (possessive is fine
+# and common, so plural-apostrophe is review-tier; decade form is clear-cut).
+_DECADE_BAD = re.compile(r"\b(?:19|20)?\d0's\b")
+
+
+def legal_decade_apostrophe(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _DECADE_BAD.finditer(_body(ln.text)):
+            good = "'" + m.group(0).replace("'", "")[-3:] if len(m.group(0)) <= 4 else m.group(0).replace("'s", "s")
+            out.append(_flag("legal_decade", "Decade apostrophe goes BEFORE, plural s has none",
+                             ln.n, m.group(0), f"Write {good!r}-style: the '70s, the 1990s. [p.16]"))
+    return out
+
+
+# --- month-year comma (p.16): "June, 2020" -> "June 2020"; and a full date "May 8th, 2023 he..."
+# needs a comma after the year too.
+_MONTHS = (r"(?:January|February|March|April|May|June|July|August|September|October|November|December)")
+_MONTH_YEAR_COMMA = re.compile(r"\b" + _MONTHS + r",\s+(?:19|20)\d{2}\b")
+_FULLDATE_NO_COMMA = re.compile(r"\b" + _MONTHS + r"\s+\d{1,2}(?:st|nd|rd|th)?,\s+(?:19|20)\d{2}\s+[a-z]")
+
+
+def legal_date_commas(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        body = _body(ln.text)
+        for m in _MONTH_YEAR_COMMA.finditer(body):
+            out.append(_flag("legal_date_comma", "No comma between month and year alone",
+                             ln.n, m.group(0), "Write 'June 2000', not 'June, 2000'. [p.16]"))
+        for m in _FULLDATE_NO_COMMA.finditer(body):
+            out.append(_flag("legal_date_comma", "Full date needs a comma after the year",
+                             ln.n, m.group(0), "'It was on May 8th, 2023, that...'. [p.16]", "review"))
+    return out
+
+
+# --- comma after sentence-opening conjunction (p.21): "So, I went" -> "So I went".
+_CONJ_COMMA = re.compile(r"(?:^|[.!?]\s+)(So|And|But|Or),\s+(?![A-Z][a-z]+,)")
+
+
+def legal_conjunction_comma(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _CONJ_COMMA.finditer(_body(ln.text)):
+            out.append(_flag("legal_conj_comma", f"No comma after opening '{m.group(1)}'",
+                             ln.n, m.group(0).strip(),
+                             f"'{m.group(1)} I decided...' — comma only if a dependent clause follows. [p.21]",
+                             "review"))
+    return out
+
+
+# --- quote punctuation (p.22): sentence period/comma goes INSIDE closing quotes.
+_PUNCT_OUTSIDE = re.compile(r'"[.,]')
+
+
+def legal_quote_punct(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _PUNCT_OUTSIDE.finditer(_body(ln.text)):
+            out.append(_flag("legal_quote_punct", "Period/comma belongs inside the closing quote",
+                             ln.n, m.group(0), 'Write ...best coffee shop in the world." [p.22]'))
+    return out
+
+
+# --- spoken punctuation words left in (p.24): dictated "comma"/"period" must be applied, not typed.
+# CONSERVATIVE: only the unambiguous dictation shape — the word set off by commas or sentence end.
+_SPOKEN_PUNCT = re.compile(r",\s*(comma|semicolon|full stop|open quote|close quote|quote unquote)\b[,.]?", re.I)
+
+
+def legal_spoken_punct(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        for m in _SPOKEN_PUNCT.finditer(_body(ln.text)):
+            out.append(_flag("legal_spoken_punct", "Dictated punctuation word left in text",
+                             ln.n, m.group(0),
+                             "Apply the punctuation, omit the spoken word. [p.24]", "review"))
+    return out
+
+
+# --- speaker-ID form (p.3): colloquy IDs are ALL-CAPS roles/surnames (MR. SMITH, THE COURT);
+# a mixed-case "Mr. Smith:" speaker label is the wrong form. Checks the LABEL, not the body.
+_LABEL_MIXED = re.compile(r"^\s*((?:Mr|Ms|Mrs|Dr)\.\s+[A-Z][a-z]+|The\s+[A-Z][a-z]+):")
+
+
+def legal_speaker_ids(t: Transcript) -> list[Flag]:
+    out = []
+    for ln in t.lines:
+        m = _LABEL_MIXED.match(ln.text)
+        if m:
+            out.append(_flag("legal_speaker_id", "Speaker ID must be all caps (MR. SMITH, THE COURT)",
+                             ln.n, m.group(1) + ":", f"Write '{m.group(1).upper()}:'. [p.3]"))
+    return out
+
+
+LEGAL_SCANNERS += [
+    legal_dash_form, legal_repeated_words, legal_partial_words, legal_money_numerals,
+    legal_decade_apostrophe, legal_date_commas, legal_conjunction_comma, legal_quote_punct,
+    legal_spoken_punct, legal_speaker_ids,
+]
