@@ -323,7 +323,7 @@ def test_umls_no_false_positive_on_common_words():
 def test_medical_domain_core_plus_english_layer():
     from transcript_truth import audit_transcript
     from transcript_truth.domains import domain_languages
-    assert domain_languages("medical") == ["en"]                    # only en has the ISMP+RxNorm layer
+    assert domain_languages("medical") == ["en"]                    # only en has the RxNorm layer
     # universal core = dosage-number hygiene — works in ANY language:
     for lang in ("en", "fr", "ko"):
         assert any(x.rule == "med_dosage"
@@ -331,11 +331,19 @@ def test_medical_domain_core_plus_english_layer():
     # ...and is locale-safe: a thousands-separator period ("1.000 mg" = 1000) is NOT read as a decimal:
     assert not any(x.rule == "med_dosage"
                    for x in audit_transcript("1.000 mg", profile="de", domain="medical").flags)
-    # English/US-medical layer (ISMP abbrevs + RxNorm) is en-only — fires for en, never on native words:
-    assert any(x.rule == "med_dangerous_abbrev"
-               for x in audit_transcript("Give MS now", profile="en", domain="medical").flags)
+    # ISMP dangerous abbreviations are UNIVERSAL core (Latin medical shorthand is dangerous in every
+    # language's chart): 'MTX' fires in German and Japanese exactly as in English…
+    for lang, txt in (("en", "Give MS now"),
+                      ("de", "Der Patient erhielt 2,5 mg MTX."),
+                      ("ja", "患者はMTX 2.5 mgを投与された。")):
+        assert any(x.rule == "med_dangerous_abbrev"
+                   for x in audit_transcript(txt, profile=lang, domain="medical").flags), lang
+    # …but SHORT abbreviations need dose context, so real native words never false-positive
+    # ('u' = tumor in Vietnamese), while '10 U' still fires:
     assert not any(x.rule.startswith("med_dangerous") or x.rule == "med_drug_name"
                    for x in audit_transcript("khối u ác tính", profile="vi", domain="medical").flags)
+    assert any(x.rule == "med_dangerous_abbrev"
+               for x in audit_transcript("tiêm 10 U insulin", profile="vi", domain="medical").flags)
 
 
 # --- Phase 2: language routing (pure, no API) ---

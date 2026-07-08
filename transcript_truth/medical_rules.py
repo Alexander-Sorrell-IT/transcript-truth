@@ -57,6 +57,12 @@ _DO_NOT_USE_CI = {k.upper(): v for k, v in _DO_NOT_USE.items() if len(k) >= 3}
 # Unicode-aware: a token starts with a letter and keeps accented letters whole (so "reçu" is ONE
 # token and the single-letter 'u' rule can't fire inside it).
 _TOKEN = re.compile(r"[^\W\d_][\w.µ/]*", re.UNICODE)
+# Latin-only runs for the abbreviation lookup: in CJK/Arabic/Devanagari text a Latin abbreviation
+# sits flush against native script ("患者はMTX"), so _TOKEN glues them into one unmatchable token.
+# ISMP abbreviations are Latin-script by definition — extract the Latin run and look THAT up.
+# Accented letters (ç, é, ü…) are included so "reçu" stays one run and 'u' can't fire inside it;
+# digits continue a run (MSO4, T3) but can't start one.
+_LATIN_RUN = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿµ][A-Za-zÀ-ÖØ-öø-ÿµ0-9./]*")
 # trailing zero after a decimal — but only 1–2 fractional digits ("1.0", "2.50"). A 3+-digit group
 # ("1.000") is a THOUSANDS separator in de/es/pt/etc. (= 1000), NOT a decimal; flagging it and
 # advising "1 mg" would be a 1000x underdose. Capping the fraction keeps this locale-safe.
@@ -83,12 +89,21 @@ _GTLT_DOSE = re.compile(r"[<>]\s*\d+\s*(mg|kg|mmol|bpm|%)", re.I)
 def dangerous_abbreviations(t: Transcript) -> list[Flag]:
     out: list[Flag] = []
     for ln in t.lines:
-        for m in _TOKEN.finditer(ln.text):
+        for m in _LATIN_RUN.finditer(ln.text):
             w = m.group(0)
             # tolerate periods anywhere: trailing (QD.) and interior (q.d. -> qd)
             info = (_DO_NOT_USE.get(w) or _DO_NOT_USE.get(w.strip(".")) or _DO_NOT_USE.get(w.replace(".", ""))
                     or _DO_NOT_USE_CI.get(w.replace(".", "").upper()))
             if info:
+                # short abbreviations (u, cc, OD…) collide with real words in other languages
+                # ('u' = tumor in Vietnamese) — outside English they're only trusted in dose
+                # context (a digit within ~8 chars: "10 U", "tiêm 10 U insulin"). English keeps
+                # firing without context ("Give MS now" is classic dangerous dictation). 3+ letter
+                # abbrevs (qhs, MTX, MSO4) are unambiguous shorthand and fire in every language.
+                if len(w.replace(".", "")) <= 2 and t.lang != "en":
+                    ctx = ln.text[max(0, m.start() - 8):m.end() + 8]
+                    if not any(ch.isdigit() for ch in ctx):
+                        continue
                 w = next((c for c in (w, w.strip("."), w.replace(".", "")) if c in _DO_NOT_USE), w)
                 meaning, why = info
                 out.append(Flag(

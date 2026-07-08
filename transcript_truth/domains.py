@@ -208,15 +208,17 @@ from .medical_rules import dangerous_abbreviations, dosage_hygiene, drug_name_ch
 from .umls import umls_term_check  # noqa: E402
 register_domain(
     "medical",
-    # UNIVERSAL core (every language): dosage-number hygiene (locale-safe) + UMLS terminology.
-    # umls_term_check is multilingual — UMLS resolves native terms in every language it covers, and
-    # the check verifies in the transcript's OWN language (reusing that language plugin). Built ONCE,
-    # works across languages — no per-language medical build. Graceful: no key/offline → no-ops.
-    scanners=(dosage_hygiene, umls_term_check),
-    # English/US-medical layer: ISMP abbreviations (u, cc, MS…) are the US list, and the RxNorm
-    # drug-name check uses English drug data — genuinely US/English-specific, so English-only.
-    per_language={"en": (dangerous_abbreviations, drug_name_check)},
-    description="Medical — dosage + multilingual UMLS terminology (all languages) + ISMP & RxNorm (en)",
+    # UNIVERSAL core (every language): dosage-number hygiene (locale-safe) + UMLS terminology +
+    # ISMP dangerous abbreviations. The ISMP list is Latin-script medical shorthand (qd, qhs, U,
+    # MTX…) used in charts and dictation worldwide — 'MTX' is misread the same way in a German or
+    # Japanese transcript as in an English one, and the scanner only matches Latin tokens, so it
+    # cannot false-positive on native-script words. umls_term_check is multilingual — UMLS resolves
+    # native terms in every language it covers. Built ONCE, works across languages. Graceful:
+    # no key/offline → no-ops.
+    scanners=(dosage_hygiene, umls_term_check, dangerous_abbreviations),
+    # English layer: the RxNorm drug-name check uses English drug data — genuinely English-specific.
+    per_language={"en": (drug_name_check,)},
+    description="Medical — dosage + UMLS terms + ISMP dangerous abbreviations (all languages) + RxNorm (en)",
 )
 
 # Legal as a composable FIELD (subject). Now SITE-NEUTRAL: the TranscribeMe-specific FORMAT (the tm_*
