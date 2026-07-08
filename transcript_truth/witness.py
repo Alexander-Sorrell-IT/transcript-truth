@@ -98,9 +98,11 @@ def elevenlabs_diarize(audio_path, language=None):  # pragma: no cover
     return [{**t, "text": t["text"].strip()} for t in turns if t["text"].strip()]
 
 
-def gemini_read(audio_path, language=None):  # pragma: no cover
+def gemini_read(audio_path, language=None, context=None):  # pragma: no cover
     """Gemini (multimodal LLM) — a 4th independent witness, different family again.
-    Strong on accented/bilingual speech because it reasons over context, not just acoustics."""
+    Strong on accented/bilingual speech because it reasons over context, not just acoustics.
+    `context`: optional priming for a focused re-listen (candidate words, neighbor words, domain
+    vocabulary) — the model PROPOSES with better context; the deterministic vote still decides."""
     import base64, mimetypes
     audio = base64.b64encode(open(audio_path, "rb").read()).decode()
     ctype = mimetypes.guess_type(audio_path)[0] or "audio/mpeg"
@@ -110,6 +112,9 @@ def gemini_read(audio_path, language=None):  # pragma: no cover
     else:
         instr = ("Transcribe this audio verbatim, exactly as spoken. Keep Japanese in Japanese "
                  "and English in English (do not translate). Output only the transcript text.")
+    if context:
+        instr += (" Context that may help you hear correctly (do NOT copy it blindly; "
+                  "write only what the audio actually says): " + context)
     body = json.dumps({"contents": [{"parts": [
         {"text": instr}, {"inline_data": {"mime_type": ctype, "data": audio}}]}]}).encode()
     key = _key("GEMINI_API_KEY")
