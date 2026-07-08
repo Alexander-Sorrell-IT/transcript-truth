@@ -41,14 +41,24 @@ the consensus already wins (accent_noise 0.0).
   (300M XLSR 0.623 solo; whisper-turbo-finetune 0.380 solo AND zero vote effect).
 
 ## Phase III — TASK-ROUTED MODELS (⬅ CURRENT — "the right model for each job")
-The verdict layer is at its measured local optimum; the next accuracy lives in HOW models are used.
+CORRECTION (2026-07-08, he called it): the verdict layer is NOT "at peak" — that claim was
+disproven one commit later when the re-ask loop (a new DETERMINISTIC stage) beat it. The accurate
+statement: WORD-VOTE RULE TWEAKS can no longer be verified on 91 TTS clips (the noise floor eats
+±3-case changes). Deterministic headroom that remains — verifiable once Phase IV's big battery
+exists — lives in Phase VII below. Meanwhile the cheapest verified gains are in HOW models are used.
 Principle applied recursively: generic ears find the questions, specialist attention answers them,
 code grades the answers. Verdict stays deterministic — untouchable. The role map:
 first-pass = per-language measured roster (done) · diarization = Deepgram+Scribe cross-vote (done) ·
 contested spans = focused re-ask (III.1) · proper nouns = primed propose + gazetteer verify (III.2) ·
 numbers/dosage/format/verdict = pure code, never a model (done, locked).
 
-### III.1 Contested-span re-ask loop (highest value, build first)
+### III.1 Contested-span re-ask loop ✅ SHIPPED (2026-07-07, live-measured)
+Cut just the uncertain-span seconds; two fresh independent ears must agree; adoption guards
+(plausible / never-downgrade-known-name / no-fragment) each exist because their absence measurably
+failed. tr/ar/ur hard clips: 0.238 -> 0.231 WER, 0 regressions ('White' -> 'Bay'). TIER 3 in
+consensus.transcribe. Gemini free tier 429s often — fallback chain covers it; a paid key steadies it.
+
+#### Original spec
 The engine already knows its uncertain spans. New stage: cut those seconds of audio (word
 timestamps exist from Deepgram/Scribe), re-send ONLY that slice to (a) the strongest witness for
 the language and (b) context-primed Gemini ("candidates: 'Kowalski/Kohauski'; Polish surname
@@ -62,7 +72,12 @@ surfaces candidate names, the re-read receives them as candidates. Models propos
 still decides. **Done when:** proper-noun WER (the measured frontier in every language) improves
 on the fp_* battery.
 
-### III.3 Witness audition harness (make model-shopping cheap)
+### III.3 Witness audition harness ✅ SHIPPED (2026-07-07)
+`bench/audition_witness.py <model> <lang>` — battery WER vs roster, ROSTER-WORTHY/VOTE-FODDER/REJECT,
+refuses to --commit a REJECT. Family-dedup enforcement still TODO (roster slots holding same-base
+duplicates: hf + local whisper).
+
+#### Original spec
 `bench/audition_witness.py <model-ref> <lang>`: runs the battery, prints WER vs current roster,
 writes the reliability row ONLY if it wins, auto-registers family. Turns a session of specialist
 hunting into 10 minutes. Also enforces: roster slots require DISTINCT families (hf + local
@@ -96,6 +111,29 @@ just report a number. Turns the 90–95% honest-uncertainty philosophy into a me
 - `new_language.py` / `new_site.py` scaffolds that REFUSE to register without a battery score
   (Urdu sat wired-but-unvalidated for a week; make the plugin system self-enforcing).
 
-Order: III.1 → III.3 → III.4 → IV → III.2 → V → VI.
-(III.1 first: it moves accuracy with today's witnesses. III.3/III.4 next: cheap once the harness
-exists. IV before fine-tuning anything else: real audio re-grounds every number.)
+## Phase VII — Determinism headroom (NOT peaked; verifiable only after Phase IV's battery)
+Concrete deterministic mechanisms NOT yet built — parked because the 91-clip battery can't
+verify ±3-case changes, not because the ideas are exhausted:
+- **Adjudicator confidence dial**: _ADJ_STRONG=1.0 is maximally conservative; the collocation/
+  validity judge overrides the vote only on a full-point margin. Sweep it on the big battery.
+- **Phonetic-distance voting**: word candidates scored by SOUND distance (metaphone/epitran
+  per-language), not surface edit distance — 'Kohauski/Kowalski' are phonetically near-identical,
+  'kadınsı/Kagiso' aren't. Fixes the name knife-edges the surface vote can't split.
+- **Cross-file name consistency**: the same speaker's name must resolve to ONE spelling across
+  the whole transcript — a second appearance of 'Kowalski' heard clean should overwrite the
+  first appearance's garble. Pure code, zero API.
+- **Clean gazetteer**: frequency-floored name list (junk surname surfaces killed name
+  reconstruction twice AND poisoned the reask downgrade guard — 'White' blocked as a "name").
+  Then re-audition char-level name reconstruction (code in git history, PoC recovered
+  Kowalski/Kagiso/Ljubljana).
+- **Number cross-check stage**: digits are the highest-stakes tokens; a dedicated numeric-
+  agreement pass (all witnesses' numbers canonicalized and diffed) with mandatory flag on any
+  disagreement — cheap, deterministic, catches the '12 thousand' vs '2 thousand' class.
+- **Punctuation/casing consensus**: currently backbone-inherited; vendors grade on it (DT test
+  feedback was 'missing/incorrect dialogue' — formatting counts). Vote it like words.
+
+Order: III.4 → IV → VII (re-tune on real data) → III.2 → V → VI.
+(III.4 next: ten-minute auditions with the shipped harness. IV before any rule tuning: real audio
+re-grounds every number and unlocks Phase VII verification. Then V/VI are days, not weeks —
+and the endgame is ('en','legal','transcribeme') + ('en','medical','quicktate'), engine-audited
+before submission.)
