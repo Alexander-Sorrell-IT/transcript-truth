@@ -1,0 +1,743 @@
+[
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ara.wav",
+  "stem": "rl_ara",
+  "lang": "ar",
+  "transcript": "تشكلت في المحيط الاطلسي اليوم عاشر عاصفه مسماه لموسم الاعاصير الأطلسية. العاصفه شبه الاستوائية جيري.",
+  "text": "The Atlantic Ocean today formed the tenth storm of the Atlantic hurricane season, Tropical Storm Jerry.",
+  "alt": "Formed in the Atlantic Ocean today, the tenth named storm for the Atlantic hurricane season. Subtropical Storm Jerry.",
+  "agreement": 0.647,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_arb.wav",
+  "stem": "rl_arb",
+  "lang": "ar",
+  "transcript": "تغادر الحافلات المحطة الداخلية بين المناطق عبر النهر في خلال اليوم على الرغم من أن معظمها وخاصة المتجه منها إلى الشرق وجاكارا بومثانج تغادر بين 6:30 و7:30",
+  "text": "Buses depart the inter-district terminal across the river throughout the day, although most of them, especially those heading to the east and Jakar, Bumthang, depart between 6:30 and 7:30.",
+  "alt": "Domestic buses leave the areas across the river during the day, although most of them, especially those heading east, and Jakarta Puthang leave between 6 and 7.",
+  "agreement": 0.607,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 4,
+   "total": 4
+  },
+  "checks_alt": {
+   "ok": false,
+   "missing_numbers": [
+    "30",
+    "30"
+   ],
+   "missing_names": [],
+   "passed": 2,
+   "total": 4
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_arc.wav",
+  "stem": "rl_arc",
+  "lang": "ar",
+  "transcript": "نصنع بيوتنا وملابسنا من النباتات. معظم الطعام الذي نتناوله من النباتات كذلك. بدون النباتات لا يمكن للحيوانات البقاء.",
+  "text": "We make our homes and clothes from plants. Most of the food we eat is from plants as well. Without plants, animals cannot survive.",
+  "alt": "We make our homes and our clothes from plants, and most of the food we eat from plants is also from plants, and without plants, animals cannot survive.",
+  "agreement": 0.769,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ard.wav",
+  "stem": "rl_ard",
+  "lang": "ar",
+  "transcript": "إن العرض الصوتي والضوء الهرمي واحدا من أمتع الأشياء الموجودة بالمنطقة للأطفال",
+  "text": "The sound and pyramidal lighting is one of the most enjoyable things in the area for children.",
+  "alt": "Indeed, the pyramids sound and light show is one of the most enjoyable things in the area for children.",
+  "agreement": 0.833,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_are.wav",
+  "stem": "rl_are",
+  "lang": "ar",
+  "transcript": "تذكر انه على الرغم من أن الموسيقى في المنصات الرئيسية قد تكون انتهت إلا أن هناك أقسام من المهرجان قد تستمر في تشغيل الموسيقى حتى وقت متأخر من الليل.",
+  "text": "Remember that although the music on the main stages may have ended, there are sections of the festival that may continue to play music until late at night.",
+  "alt": "Remember that although the music on the main platforms may be over, there are sections of the festival that may continue to play music late into the night.",
+  "agreement": 0.821,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_hia.wav",
+  "stem": "rl_hia",
+  "lang": "hi",
+  "transcript": "कुछ अणुओं में अस्थिर केंद्र होता है, जिसका मतलब यह कि उनमें थोड़े या बिना किसी झटके से टूटने की प्रवृत्ति होती है।",
+  "text": "Some molecules have an unstable center, which means that they tend to break down slightly or not at all.",
+  "alt": "Some molecules have an unstable center, which means that they have a tendency to break with little or no shock.",
+  "agreement": 0.667,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_hib.wav",
+  "stem": "rl_hib",
+  "lang": "hi",
+  "transcript": "ग्रीनलैंड को बहुत कम जगह बसाया गया था। नोर्स सगा में वे कहते हैं की एरिक रीड हत्या के लिए आइसलैंड से निर्वासित किया गया था और आगे पश्चिम की यात्रा करते समय ग्रीनलैंड मिला, जिसे ग्रीनलैंड नाम दिया गया।",
+  "text": "Greenland was sparsely populated in the North Sea, and they say that Eric Reid was exiled from Iceland for murder, and then he traveled west to find Greenland, which was named Greenland.",
+  "alt": "Greenland was settled in very few places. In the Norse sagas they say that Erik the Red was exiled from Iceland for murder and, while traveling further west, found Greenland, which was named Greenland.",
+  "agreement": 0.515,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_hic.wav",
+  "stem": "rl_hic",
+  "lang": "hi",
+  "transcript": "ऐसी कोई वैश्विक परिभाषा नहीं है जिसके लिए निर्मित सामान antique होते हैं। कुछ कर एजेंसियां सौ साल से पुराने सामान को antique के तौर पर परिभाषित करती है।",
+  "text": "There is no such global definition for which manufactured goods are antique. Some tax agencies define goods older than a hundred years as antique.",
+  "alt": "There is no such thing as a \"biological\" definition of what antiques are, and some agencies define antiques as items that are hundreds of years old.",
+  "agreement": 0.36,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_hid.wav",
+  "stem": "rl_hid",
+  "lang": "hi",
+  "transcript": "टेलीविज़न रिपोर्टों में प्लांट से निकलने वाला सफेद धुआं दिखाया गया है।",
+  "text": "Television reports show white smoke rising from the plant",
+  "alt": "Television reports showed white smoke coming out of the plant.",
+  "agreement": 0.526,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_hie.wav",
+  "stem": "rl_hie",
+  "lang": "hi",
+  "transcript": "इंटरनेट पर यह खोज शत्रुतापूर्ण पर्यावरण पाठ्यक्रम के लिए अक्सर आपको एक स्थानीय कंपनी का पता प्रदान करेगी।",
+  "text": "This search on the internet will often give you the address of a local company for a hostile environmental course.",
+  "alt": "This search on the internet for a hostile environment course will often provide you with the address of a local company.",
+  "agreement": 0.634,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_tra.wav",
+  "stem": "rl_tra",
+  "lang": "tr",
+  "transcript": "Aynı ay başka bir yolcu uçağı meşetteki bir pisti aşarak bir duvara çarptı ve on yedi kişinin ölümüne neden oldu.",
+  "text": "In the same month, another passenger plane crashed into a wall across a runway in Mashhad, killing 17 people.",
+  "alt": "In the same month, another passenger plane overshot a runway in Meşhet, crashed into a wall, and caused the death of seventeen people.",
+  "agreement": 0.524,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_trb.wav",
+  "stem": "rl_trb",
+  "lang": "tr",
+  "transcript": "Romantizm Goethe, Pihte ve Schlegel gibi yazarlardan geçen geniş bir kültürel determinizm özelliği taşıyordu.",
+  "text": "Romanticism had a broad cultural determinism, passed down from writers such as Goethe, Pichte and Schlegel.",
+  "alt": "Romanticism bore the characteristic of a broad cultural determinism passing through writers like Goethe, Pihte, and Schlegel.",
+  "agreement": 0.485,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 2,
+   "total": 2
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 2,
+   "total": 2
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_trc.wav",
+  "stem": "rl_trc",
+  "lang": "tr",
+  "transcript": "Japonya'nın Nükleer ajansına göre tesiste radyoaktif sezyum ve iyodin tespit edildi.",
+  "text": "According to Japan's nuclear agency, radioactive cesium and iodine were detected at the facility.",
+  "alt": "According to Japan's Nuclear Agency, radioactive cesium and iodine were detected at the facility.",
+  "agreement": 1.0,
+  "flagged": true,
+  "checks": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Japonya"
+   ],
+   "passed": 0,
+   "total": 1
+  },
+  "checks_alt": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Japonya"
+   ],
+   "passed": 0,
+   "total": 1
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_trd.wav",
+  "stem": "rl_trd",
+  "lang": "tr",
+  "transcript": "Güreşçi arkadaşları da Luna'ya saygılarını sundular.",
+  "text": "The wrestlers also paid their respects to Luna.",
+  "alt": "Her wrestler friends also paid their respects to Luna.",
+  "agreement": 0.706,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 1,
+   "total": 1
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 1,
+   "total": 1
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_tre.wav",
+  "stem": "rl_tre",
+  "lang": "tr",
+  "transcript": "Apia, Samoa'nın başkentidir. Şehir Upul Adası'ndadır ve kırk binin biraz altında bir nüfusa sahiptir.",
+  "text": "Apia is the capital of Samoa. The city is on Upul Island and has a population of slightly under forty thousand.",
+  "alt": "Apia is the capital of Samoa. The city is on the island of Upolu and has a population of just under 40,000.",
+  "agreement": 0.791,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 3,
+   "total": 3
+  },
+  "checks_alt": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Upul"
+   ],
+   "passed": 2,
+   "total": 3
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ura.wav",
+  "stem": "rl_ura",
+  "lang": "ur",
+  "transcript": "ان کے دور میں ہلکا تولوص ایسا مسئلہ نہیں تھا جیسا کہ وہ آج ہے ان کی سکونت ایسے شہروں یا حوتات میں ہے جہاں تک باآسانی پہنچا جاسکتا ہے بنسبت ان مقامات کے جو ماڈرن زمانے میں تعمیر کئے گئے",
+  "text": "In their day, light pollution wasn't as much of a problem as it is today, and their settlements are in cities or towns that are easily accessible compared to the modern-day settlements.",
+  "alt": "In their era, light pollution was not such an issue as it is today; their residence is in such cities or villages that can be easily reached compared to those places which were built in modern times.",
+  "agreement": 0.435,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_urb.wav",
+  "stem": "rl_urb",
+  "lang": "ur",
+  "transcript": "فلپائنی فوٹوگرافروں کے ساتھ چھ اغوا شدگان کو جلد رہا کردیا گیا تھا جن میں بچے اور بوڑھے شامل تھے",
+  "text": "Six kidnapped men, including children and elderly people, were released along with Filipino photographers.",
+  "alt": "Along with the Filipino photographers, six abductees, including children and the elderly, were soon released.",
+  "agreement": 0.345,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_urc.wav",
+  "stem": "rl_urc",
+  "lang": "ur",
+  "transcript": "اس کے لمبے جھنڈوں میں ستر سے زائد استرے تیز دانت جڑے تھے اور اس کے ساتھ اس کے منہ کے تالے میں دانتوں کی ایک مزید لڑی تھی اس کے معنی یہ ہے کہ اس کے راستے میں آنے والا کوئی شے اس سے بھاگ نہیں سکتی",
+  "text": "His long beaks had more than seventy sharp teeth, and with him was another row of teeth in the socket of his mouth, which meant that no one who came in his way could escape him.",
+  "alt": "In its long jaws, more than seventy razor-sharp teeth were embedded, and along with this, there was another row of teeth in the roof of its mouth; this means that nothing coming in its path could escape from it.",
+  "agreement": 0.48,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_urd.wav",
+  "stem": "rl_urd",
+  "lang": "ur",
+  "transcript": "اکتوبر میں شروع ہونے والے حکومت مخالف مظاہروں پر مارٹلی کا ردعمل کمیشن تھا",
+  "text": "Martelly's response to the anti-government protests that began in October was a commission",
+  "alt": "Martelly's response to the anti-government protests starting in October was the commission.",
+  "agreement": 0.72,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ure.wav",
+  "stem": "rl_ure",
+  "lang": "ur",
+  "transcript": "ہسپتال نے انفیکشن پر قابو پانے کیلئے پروٹوکول کی تقلید کی ہے جس میں مریض کو دیگر سے علیحدہ کرنا شامل ہے تاکہ دیگر افراد کے ممکنہ انفیکشن سے بچا جاسکے",
+  "text": "Hospitals have developed protocols to control infections, including isolating patients from others to avoid possible infection in others.",
+  "alt": "The hospital has followed the protocol for infection control, which includes isolating the patient from others so that potential infection of other people can be avoided.",
+  "agreement": 0.182,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_via.wav",
+  "stem": "rl_via",
+  "lang": "vi",
+  "transcript": "Văn hóa và bộ lạc cổ xưa đã bắt đầu giữ những con vật này để dễ lấy sữa, tóc, thịt và da.",
+  "text": "Ancient cultures and tribes began keeping these animals for milk, hair, meat, and skin.",
+  "alt": "Ancient cultures and tribes started keeping these animals to easily get milk, hair, meat, and skin.",
+  "agreement": 0.8,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_vib.wav",
+  "stem": "rl_vib",
+  "lang": "vi",
+  "transcript": "Đối với Spring Book, trận này đã giúp đội tuyển kết thúc chui thua 5 trận liền.",
+  "text": "For Spring Book, this match helped the team end a losing streak of 5 consecutive matches.",
+  "alt": "For Springbok, this game helped the team end a five-game losing streak.",
+  "agreement": 0.571,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 3,
+   "total": 3
+  },
+  "checks_alt": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Book"
+   ],
+   "passed": 2,
+   "total": 3
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_vic.wav",
+  "stem": "rl_vic",
+  "lang": "vi",
+  "transcript": "Nó cũng tấn công mọi thứ trong nước Ngay cả khủng long khổng lồ như tí bếp Cũng không phải là đối thủ với nó",
+  "text": "It also attacks everything in the country, even giant dinosaurs like Tibet are not its opponents.",
+  "alt": "It also attacks everything in the water. Even giant dinosaurs like a tiny kitchen are not a match for it.",
+  "agreement": 0.667,
+  "flagged": true,
+  "checks": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Ngay"
+   ],
+   "passed": 0,
+   "total": 1
+  },
+  "checks_alt": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Ngay"
+   ],
+   "passed": 0,
+   "total": 1
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_vid.wav",
+  "stem": "rl_vid",
+  "lang": "vi",
+  "transcript": "Số người có mặt quá lớn nên việc mọi người tới được nơi tổ chức lễ tang tại Quảng trường thánh Peter là không thể",
+  "text": "The crowd was so large that it was impossible for anyone to get to the funeral at St. Peter's Square.",
+  "alt": "The number of people present was too large, so it was impossible for everyone to reach the place where the funeral service was held at St. Peter's Square.",
+  "agreement": 0.583,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 1,
+   "total": 1
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 1,
+   "total": 1
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_vie.wav",
+  "stem": "rl_vie",
+  "lang": "vi",
+  "transcript": "Châu Âu là lục địa tương đối nhỏ nhưng có nhiều quốc gia độc lập. Thông thường, việc đi qua nhiều quốc gia đồng nghĩa với việc phải xin thị thực và xét hộ chiếu nhiều lần.",
+  "text": "Europe is a relatively small continent, but with many independent countries, passing through many countries usually means applying for a visa and checking your passport several times.",
+  "alt": "Europe is a relatively small continent but has many independent countries. Typically, traveling through many countries means having to apply for visas and undergo passport checks multiple times.",
+  "agreement": 0.582,
+  "flagged": true,
+  "checks": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Châu",
+    "Thông"
+   ],
+   "passed": 0,
+   "total": 2
+  },
+  "checks_alt": {
+   "ok": false,
+   "missing_numbers": [],
+   "missing_names": [
+    "Châu",
+    "Thông"
+   ],
+   "passed": 0,
+   "total": 2
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jaa.wav",
+  "stem": "rl_jaa",
+  "lang": "ja",
+  "transcript": "イ ン タ ー ネ ッ ト で 敵 対 的 環 境 構 成 に つ い て 検 索 す る と お そ ら く 現 地 企 業 の 住 所 が 出 て く る で し ょ う",
+  "text": "If you search the Internet for a targeted environmental course, you'll probably find the addresses of local businesses.",
+  "alt": "If you search on the internet about hostile environment configuration, the address of a local company will probably come up.",
+  "agreement": 0.421,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jab.wav",
+  "stem": "rl_jab",
+  "lang": "ja",
+  "transcript": "ま た 北 側 に 行 く な ら 世 界 的 に 有 名 な マ リ ア 像 の 聖 地 で あ る フ ァ テ ィ マ の 聖 母 の 聖 域 神 社 を 訪 れ ま し ょ う",
+  "text": "If you go to the north, you'll see the world-famous shrine of the Virgin Mary, the shrine of the Virgin Mary.",
+  "alt": "Also, if you go to the north side, let's visit the world-famous holy site of the Statue of Mary, the Sanctuary of Our Lady of Fatima.",
+  "agreement": 0.511,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jac.wav",
+  "stem": "rl_jac",
+  "lang": "ja",
+  "transcript": "バ ル セ ア ナ の 公 用 語 は カ タ ル ー ネ 語 と ス ペ イ ン 語 で す 約 半 数 が カ タ ル ー ネ 語 を 好 み 大 多 数 が カ タ ル ー ネ 語 を 理 解 し ほ ぼ 全 員 が ス ペ イ ン 語 を 知 っ て い ま す",
+  "text": "The official languages of Barcelona are Catalan and Spanish. Approximately half prefer Catalan, the vast majority understand Catalan, and almost everyone knows Spanish.",
+  "alt": "The official languages of Barcelona are Catalan and Spanish, with about half of the population speaking Catalan, and the majority of the population speaking Catalan, and almost all of them speaking Spanish.",
+  "agreement": 0.582,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jad.wav",
+  "stem": "rl_jad",
+  "lang": "ja",
+  "transcript": "そ の 長 い 顎 に は 70 本 以 上 の 鋭 い 歯 が 並 び 口 外 に は 別 の 歯 列 が あ り つ ま り こ こ を 通 っ た ら 逃 げ 道 は な い と い う こ と に な り ま す",
+  "text": "There are more than 70 Suede waves in the long tunnel, and there's another private road outside the tunnel, so there's no way to get through here.",
+  "alt": "Its long jaw is lined with over 70 sharp teeth, and outside its mouth, there is another row of teeth, meaning that if you pass through here, there will be no escape route.",
+  "agreement": 0.133,
+  "flagged": true,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 1,
+   "total": 1
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 1,
+   "total": 1
+  }
+ },
+ {
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jae.wav",
+  "stem": "rl_jae",
+  "lang": "ja",
+  "transcript": "ロ ス B 数 が 小 さ い ほ ど 時 期 判 定 に 関 し て 星 の 活 性 が 低 下 す る わ け で す",
+  "text": "The smaller the number of rays, the lower the activity of the stars in terms of the timing.",
+  "alt": "The smaller the Loss B number, the lower the activity of the stars regarding the timing determination.",
+  "agreement": 0.629,
+  "flagged": false,
+  "checks": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  },
+  "checks_alt": {
+   "ok": true,
+   "missing_numbers": [],
+   "missing_names": [],
+   "passed": 0,
+   "total": 0
+  }
+ }
+]
