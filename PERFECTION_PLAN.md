@@ -132,8 +132,47 @@ verify ±3-case changes, not because the ideas are exhausted:
 - **Punctuation/casing consensus**: currently backbone-inherited; vendors grade on it (DT test
   feedback was 'missing/incorrect dialogue' — formatting counts). Vote it like words.
 
-Order: III.4 → IV → VII (re-tune on real data) → III.2 → V → VI.
-(III.4 next: ten-minute auditions with the shipped harness. IV before any rule tuning: real audio
-re-grounds every number and unlocks Phase VII verification. Then V/VI are days, not weeks —
-and the endgame is ('en','legal','transcribeme') + ('en','medical','quicktate'), engine-audited
-before submission.)
+---
+
+# THE FINISH PLAN (2026-07-11) — from here to test-day, checklist form
+
+Phase IV landed its first result and REWROTE the target list: on REAL speech (FLEURS) ar=99.3%,
+tr=98.5%, vi=97.1%, ur=95.5% char-accurate — the "trailing five" were mostly a torture-test
+artifact. The genuine remaining problems are NARROW: hi (91.7%), ja (92.7% — real speech is
+harder for it than TTS), and Urdu word-segmentation (WER .189 vs CER .045 = boundaries, not ears).
+
+## Session A — close the engine work
+- [ ] **A1. Finish the real map** (rest of Phase IV): pull + bench fr/de/pt/ru/uk/es/ko real
+      clips (`make_real_battery.py 10 fr de pt ru uk es ko` → `live_bench_real.py …`).
+      Mostly unattended. Done when: all 13 languages in real_audio.json.
+- [ ] **A2. Urdu segmentation fold** (hours, pure code): fold clitic/space variants in the
+      ruler + profile so ur WER measures words, not orthographic joining. Done when: ur real
+      WER drops toward its CER without the CER moving.
+- [ ] **A3. hi + ja witness audition** (harness is one command per candidate):
+      hi — ARTPARK vaani-hindi, Oriserve Hindi2Hinglish, Deepgram hi boost;
+      ja — diagnose first (read the real-clip reads: conversational style? then audition
+      ReazonSpeech/kotoba-whisper). Keep measured winners only.
+      Done when: hi/ja real-CER improve or documented no-better-exists.
+- [ ] **A4. Phase V hard gate** (half-session): consensus agreement < threshold →
+      Receipt refuses to ship (status='review', text withheld from the clean path),
+      pinned by test. Done when: a low-agreement transcript cannot exit ungated.
+
+## Session B — armor + the tests
+- [ ] **B1. Phase VI legal migration**: portable CVL content (titles/numbers/spacing already
+      domain-side) — move the language-neutral remainder; en-specific half stays en. Done when:
+      compose('en','legal','transcribeme') carries the full CVL ruleset and tests pin it.
+- [ ] **B2. Registration scaffolds**: new_language.py / new_site.py refuse to register without
+      a battery score (the Urdu lesson, made mechanical).
+- [ ] **B3. Dry run**: one full legal-style audio → engine → transcribeme-format audit → fix
+      flags → A-grade receipt. Same for a medical voicemail → quicktate format. TIMED (the DT
+      lesson: clock-first, submit solid, verify delivery).
+- [ ] **B4. TAKE THE TESTS**: TranscribeMe (legal) + Quicktate AI-Editor-Part-2 path (medical),
+      engine-audited before submission, delivery verified early.
+
+## After money (optional polish)
+- Phase VII determinism items, verified against the full real battery.
+- Phase III.2 primed reads (needs steady Gemini quota — paid key).
+- Remaining fp_* torture-test gap-closing (it's the worst-case bound, not the product claim).
+
+The product claim, already banked: **measured on real human speech: 95.5–99.3% character
+accuracy (5/7 languages benched so far), every uncertain word flagged, deterministic verdict.**
