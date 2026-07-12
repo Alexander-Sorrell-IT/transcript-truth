@@ -47,8 +47,17 @@ def detect_multi(audio_path, slice_s=45):
     from . import witness
     probe_path, tmp = _detect_slice(audio_path, slice_s)
     try:
-        d = witness.deepgram_detect_language(probe_path) or ""
-        w = witness.whisper_detect_language(probe_path) or ""
+        # each detector fails ALONE — the whole point of two detectors is that one dying
+        # (offline, bad key, timeout) must not kill routing (bug-hunt 2026-07-11: any Deepgram
+        # exception crashed detect() before Whisper ever ran)
+        try:
+            d = witness.deepgram_detect_language(probe_path) or ""
+        except Exception:
+            d = ""
+        try:
+            w = witness.whisper_detect_language(probe_path) or ""
+        except Exception:
+            w = ""
     finally:
         if tmp and __import__("os").path.exists(tmp):
             __import__("os").remove(tmp)

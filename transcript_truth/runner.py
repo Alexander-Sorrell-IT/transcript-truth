@@ -21,7 +21,9 @@ _CJK_SPACE = re.compile(r"(?<=[^\x00-\x7f])\s+(?=[^\x00-\x7f])")
 def _clean(text: str, lang: str) -> str:
     return _CJK_SPACE.sub("", text) if lang == "ja" else text
 
-LANG_PROFILE = {"ja": "default", "ru": "ru", "uk": "uk", "es": "es", "en": "en"}
+# SINGLE routing source of truth: language.PROFILE_FOR (bug-hunt 2026-07-11: a stale 5-entry
+# duplicate here silently routed de/fr/pt/tr/vi/ko/ar/hi/ur to 'default' in the product path)
+from .language import PROFILE_FOR as LANG_PROFILE
 _CHUNK_OVER_S = 660  # chunk files longer than ~11 min
 
 
@@ -29,12 +31,22 @@ def _ts(s: float) -> str:
     return f"[{int(s // 60):02d}:{int(s % 60):02d}]"
 
 
-def _utterances(audio_path: str, lang: str):
+def _utterances(audio_path: str, lang: str, _window_s: int = 600, _overlap_s: int = 5):
     dur, _ = chunking.probe(audio_path)
     if dur > _CHUNK_OVER_S and chunking.have_ffmpeg():
         out = []
-        for _, off, cp in chunking.split_audio(audio_path):
+        for idx, off, cp in chunking.split_audio(audio_path, window_s=_window_s,
+                                                 overlap_s=_overlap_s):
             for u in witness.deepgram_structured(cp, lang):
+                # seam ownership (bug-hunt 2026-07-11: blind concat double-transcribed every
+                # overlap): each chunk owns [0, window); the tail past the window is the next
+                # chunk's territory. A non-first chunk also drops utterances starting AT the cut
+                # (<0.5s) — those are mid-utterance continuations the previous chunk already
+                # emitted in full via its overlap tail.
+                if u["start"] >= _window_s:
+                    continue
+                if idx > 0 and u["start"] < 0.5:
+                    continue
                 u["start"] += off; u["end"] += off
                 out.append(u)
         return out

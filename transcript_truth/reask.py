@@ -149,6 +149,10 @@ def reask_contested(audio_path: str, reads: dict, lang: str | None, result: dict
             for fb in chain:
                 if len(proposals) >= 2:
                     break
+                # two fresh ears must be DIFFERENT families — hf + local whisper are the same
+                # base weights, one brain confirming itself (bug-hunt 2026-07-11)
+                if any(C._family(fb) == C._family(src) for _, src in proposals):
+                    continue
                 try:
                     w = _slot_word(C._witness_call(fb, clip, lang) or "", toks, i)
                     if w:

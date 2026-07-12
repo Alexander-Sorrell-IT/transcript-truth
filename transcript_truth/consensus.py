@@ -491,14 +491,15 @@ _CJK_RE = None
 
 
 def _wtok(s):
-    """Word-tokenize for consensus alignment. Space-free scripts (CJK: Han/Kana/Hangul) have no word
-    boundaries, so `.split()` yields ONE giant token and the word-level merge can't work (it replaces
-    the whole sentence on a single disagreement). Tokenize CJK by CHARACTER, Latin/Cyrillic by word —
-    mirrors metrics.wer so the thing we optimize matches the thing we measure."""
+    """Word-tokenize for consensus alignment. SPACE-FREE scripts (Han/Kana — ja/zh have no word
+    boundaries) tokenize by CHARACTER so the word-level merge can work. Korean is NOT in that
+    class: Hangul text uses real spaces, and per-char tokenizing + the space-join of the output
+    irreversibly destroyed Korean word boundaries (bug-hunt 2026-07-11) — ko now tokenizes by
+    word like Latin/Cyrillic."""
     global _CJK_RE
     if _CJK_RE is None:
         import re
-        _CJK_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿가-힣]")
+        _CJK_RE = re.compile(r"[぀-ヿ㐀-䶿一-鿿]")
     if not _CJK_RE.search(s):
         return s.split()
     toks, buf = [], ""
@@ -663,9 +664,13 @@ def _decide_word(wl, cands, surf_i, fam_i, wit_i, atoks, i, lang):
     if want:
         right = [c for c in cands if _dominant_script(surf_i[c]) in (want, None, "LATIN")]
         if right and len(right) < len(cands):
+            # filter and FALL THROUGH (bug-hunt 2026-07-11: early-returning max-reliability here
+            # bypassed garbage pruning and family majority — a lone garble from a reliable
+            # witness beat a 2-family real word). The normal flow below already handles a
+            # backbone that got vetoed (wl not in survivors -> must replace).
             cands = right
-            if wl not in cands:                  # backbone itself is wrong-script
-                return max(cands, key=relmax)
+            if wl not in cands and len(cands) == 1:
+                return cands[0]
     # dictionary WORDS only (not gazetteer names): the fat person-name gazetteer contains
     # surname-shaped strings ('Thier'), and a name must not shield a typo of a competing word.
     dict_c = [c for c in cands if _is_word(surf_i[c], lang)]

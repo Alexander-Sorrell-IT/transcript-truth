@@ -157,9 +157,23 @@ def _spelled_values(text: str, lang: str) -> list[float]:
 
     # number-word "bits" in reading order; None = flush marker (a non-number word/char)
     bits: list[str | None] = []
-    toks = [_fold(t) for t in re.findall(r"[^\s,.;:!?()\[\]«»\"]+", text)]
+    # digit-bearing tokens stay intact ('2.5', '12.000') and are parsed by the locale rules,
+    # then flow through the SAME accumulator so mixed forms combine ('40 bin' = 40000, not
+    # {40, 1000} — bug-hunt 2026-07-11)
+    toks = [_fold(t) for t in re.findall(r"[\d][\d.,]*|[^\s,.;:!?()\[\]«»\"]+", text)]
     i = 0
     while i < len(toks):
+        if toks[i] and toks[i][0].isdigit():
+            vals = _digit_values(toks[i], lang)
+            if len(vals) == 1:
+                bits.append(("#", vals[0]))
+            else:
+                bits.append(None)
+                for v in vals:
+                    bits.append(("#", v))
+                    bits.append(None)
+            i += 1
+            continue
         # 1) longest multi-token join (space-stripped keys hold 'سبعة عشر' as 'سبعةعشر')
         matched = False
         for k in range(min(4, len(toks) - i), 1, -1):
@@ -219,6 +233,13 @@ def _spelled_values(text: str, lang: str) -> list[float]:
                 cur = total = 0
                 in_num = False
             continue
+        if isinstance(b, tuple):                  # ('#', value) — a parsed digit token
+            if cur != 0:                          # two number literals in a row = two numbers
+                out.append(total + cur)
+                cur, total = 0, 0
+            cur = b[1]
+            in_num = True
+            continue
         if b in scales:
             s = scales[b]
             if s == 100:
@@ -250,6 +271,9 @@ def _spelled_values(text: str, lang: str) -> list[float]:
 
 def values(text: str, lang: str = "en") -> Counter:
     """All numeric values in `text` (digits + spelled), as a multiset. The cross-language
-    comparable representation: values('on yedi kişi','tr') == values('17 people','en')."""
+    comparable representation: values('on yedi kişi','tr') == values('17 people','en').
+    Digits and spelled forms combine through one accumulator ('40 bin' == 40000)."""
     lang = (lang or "en").split("-")[0]
-    return Counter(_digit_values(text, lang)) + Counter(_spelled_values(text, lang))
+    if not spelled_support(lang):                 # hi/ur: digits are still fully parseable
+        return Counter(_digit_values(text, lang))
+    return Counter(_spelled_values(text, lang))

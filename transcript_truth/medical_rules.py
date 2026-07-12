@@ -60,9 +60,12 @@ _TOKEN = re.compile(r"[^\W\d_][\w.µ/]*", re.UNICODE)
 # Latin-only runs for the abbreviation lookup: in CJK/Arabic/Devanagari text a Latin abbreviation
 # sits flush against native script ("患者はMTX"), so _TOKEN glues them into one unmatchable token.
 # ISMP abbreviations are Latin-script by definition — extract the Latin run and look THAT up.
-# Accented letters (ç, é, ü…) are included so "reçu" stays one run and 'u' can't fire inside it;
-# digits continue a run (MSO4, T3) but can't start one.
-_LATIN_RUN = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿµ][A-Za-zÀ-ÖØ-öø-ÿµ0-9./]*")
+# LETTERS-ONLY runs (bug-hunt 2026-07-11: '/' and digits continuing the run glued 'U/day' and
+# 'MTX10mg' into unmatchable tokens — flagship hazards silently missed); interior periods stay
+# (q.d.), and the class extends through Latin Extended so Vietnamese 'ưa' is ONE run and lone 'u'
+# can't fire inside it. Digit-suffixed entries (MSO4, T3) are matched via _ext lookup below.
+_LATIN_RUN = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿĀ-ỿµ][A-Za-zÀ-ÖØ-öø-ÿĀ-ỿµ.]*")
+_DIGIT_EXT = re.compile(r"\d+")
 # trailing zero after a decimal — but only 1–2 fractional digits ("1.0", "2.50"). A 3+-digit group
 # ("1.000") is a THOUSANDS separator in de/es/pt/etc. (= 1000), NOT a decimal; flagging it and
 # advising "1 mg" would be a 1000x underdose. Capping the fraction keeps this locale-safe.
@@ -91,9 +94,19 @@ def dangerous_abbreviations(t: Transcript) -> list[Flag]:
     for ln in t.lines:
         for m in _LATIN_RUN.finditer(ln.text):
             w = m.group(0)
+            # digit-suffixed entries (MSO4, T3, AZT…): letters-only runs stop before the digit,
+            # so try the digit-extended form first, then the plain run
+            dm = _DIGIT_EXT.match(ln.text, m.end())
+            w_ext = (w + dm.group(0)) if dm else None
+            info = None
+            if w_ext:
+                info = (_DO_NOT_USE.get(w_ext)
+                        or _DO_NOT_USE_CI.get(w_ext.replace(".", "").upper()))
+                if info:
+                    w = w_ext
             # tolerate periods anywhere: trailing (QD.) and interior (q.d. -> qd)
-            info = (_DO_NOT_USE.get(w) or _DO_NOT_USE.get(w.strip(".")) or _DO_NOT_USE.get(w.replace(".", ""))
-                    or _DO_NOT_USE_CI.get(w.replace(".", "").upper()))
+            info = info or (_DO_NOT_USE.get(w) or _DO_NOT_USE.get(w.strip(".")) or _DO_NOT_USE.get(w.replace(".", ""))
+                            or _DO_NOT_USE_CI.get(w.replace(".", "").upper()))
             if info:
                 # short abbreviations (u, cc, OD…) collide with real words in other languages
                 # ('u' = tumor in Vietnamese) — outside English they're only trusted in dose

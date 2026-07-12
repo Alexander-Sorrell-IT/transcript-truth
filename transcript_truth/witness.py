@@ -240,10 +240,18 @@ def _load_wav16(path):
 _MMS = {}
 
 
+# MMS uses ITS OWN code convention, not Seamless's (bug-hunt 2026-07-11: the shared _ISO3 map
+# sent MMS 'arb'/'urd', which mms-1b-all rejects — so the Arabic and Urdu rosters silently ran
+# one witness short on exactly the languages that needed the extra ear; MMS wants 'ara' and
+# script-qualified 'urd-script_arabic', verified against the model's vocab.json)
+_MMS_LANG = {"ar": "ara", "ur": "urd-script_arabic"}
+
+
 def mms_local(audio_path, language=None):  # pragma: no cover
     """Meta MMS (facebook/mms-1b-all) — free local ASR for 1000+ languages; strongest value on the
     hard/thin-roster languages (ar/hi/ur). Loads the per-language adapter. Returns '' on any failure."""
-    lang3 = _ISO3.get((language or "en").split("-")[0], "eng")
+    base = (language or "en").split("-")[0]
+    lang3 = _MMS_LANG.get(base) or _ISO3.get(base, "eng")
     try:
         import torch
         from transformers import Wav2Vec2ForCTC, AutoProcessor
