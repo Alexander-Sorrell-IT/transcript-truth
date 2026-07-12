@@ -31,10 +31,16 @@ _SCALES = (100, 1000, 10_000, 100_000, 1_000_000, 10_000_000, 100_000_000, 1_000
 
 def _fold(s: str) -> str:
     """Case/diacritic/separator fold for spelled-number matching (Turkish 'kırk' vs 'Kırk',
-    hyphenated French 'dix-sept'). Keeps non-Latin scripts intact."""
-    s = s.lower().replace("-", "").replace("­", "")
+    hyphenated French 'dix-sept', Ukrainian "п'ять" apostrophe). Keeps non-Latin scripts intact."""
+    s = s.lower().replace("-", "").replace("­", "").replace("'", "").replace("’", "")
     s = unicodedata.normalize("NFC", s)
     return s
+
+
+# gendered small-number forms num2words doesn't emit but speech does (Slavic feminine two/one —
+# 'дві тисячі' is how Ukrainian actually says 2000), and Arabic case-suffixed scale endings
+_UNIT_SUPPLEMENT = {"ru": {"две": 2, "одна": 1}, "uk": {"дві": 2, "одна": 1}}
+_AR_SCALE_SUFFIXES = ("ا", "ان", "ين")
 
 
 @functools.lru_cache(maxsize=32)
@@ -71,6 +77,32 @@ def _tables(lang: str):
             bare = w[len(one):].strip().replace(" ", "")
             if bare:
                 scales[bare] = s
+        # PLURAL/DECLINED scale forms (bug-hunt 2026-07-11: 'dos millones', 'zweitausend',
+        # 'пять тысяч' were unparseable — the singular-only table failed round-trip on
+        # num2words' OWN output in 9 languages). Derive them from multiples: num2words(2*s)
+        # minus num2words(2) leaves the scale word in that language's plural/dual/genitive
+        # form. mult 2 and 5 cover Romance/Germanic plurals and Slavic dual vs genitive-plural.
+        for mult in (2, 5):
+            try:
+                mw = _fold(num2words(mult * s, lang=lang))
+                uw = _fold(num2words(mult, lang=lang))
+            except Exception:
+                continue
+            if " " in mw:                        # spaced: the scale is the last token(s)
+                last = mw.split()[-1]
+                if last not in units:
+                    scales.setdefault(last, s)
+            if mw.replace(" ", "").startswith(uw.replace(" ", "")):   # joined: strip the unit
+                bare = mw.replace(" ", "")[len(uw.replace(" ", "")):]
+                if bare and bare not in units:
+                    scales.setdefault(bare, s)
+    for w, v in _UNIT_SUPPLEMENT.get(lang, {}).items():
+        units.setdefault(_fold(w), v)
+    if lang == "ar":
+        # accusative/dual case endings on scale words ('ألفا', 'مليونا' are ألف/مليون + case)
+        for w, s in list(scales.items()):
+            for suf in _AR_SCALE_SUFFIXES:
+                scales.setdefault(w + suf, s)
     return units, scales, True
 
 
@@ -125,7 +157,7 @@ def _spelled_values(text: str, lang: str) -> list[float]:
 
     # number-word "bits" in reading order; None = flush marker (a non-number word/char)
     bits: list[str | None] = []
-    toks = [_fold(t) for t in re.findall(r"[^\s,.;:!?()\[\]«»\"']+", text)]
+    toks = [_fold(t) for t in re.findall(r"[^\s,.;:!?()\[\]«»\"]+", text)]
     i = 0
     while i < len(toks):
         # 1) longest multi-token join (space-stripped keys hold 'سبعة عشر' as 'سبعةعشر')

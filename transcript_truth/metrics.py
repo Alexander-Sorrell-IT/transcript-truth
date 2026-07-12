@@ -82,7 +82,11 @@ def _normalize_numbers(text):
     import re
     s = text.lower()
     s = s.replace("%", " percent ").replace("$", " ")
-    s = re.sub(r"(\d),(\d)", r"\1\2", s)                       # 47,000,000 -> 47000000
+    # thousands grouping only: every comma group must be exactly 3 digits ('47,000,000' ->
+    # 47000000). A bare digit-comma-digit ('2,5' — a decimal in most of the world, or a list)
+    # must NOT collapse: 2,5 == 25 hid 10x dosage errors from the ruler (bug-hunt 2026-07-11).
+    s = re.sub(r"\b(\d{1,3})((?:,\d{3})+)\b",
+               lambda m: m.group(1) + m.group(2).replace(",", ""), s)
     s = re.sub(r"\b(\d+)(st|nd|rd|th)\b", r"\1", s)            # 3rd -> 3
     s = re.sub(r"(?<=[a-z])-(?=[a-z])", " ", s)                # WORD-word hyphen -> space (compounds only)
     toks = s.split()
@@ -132,11 +136,20 @@ def _canon_numbers_lang(s, lang):
         return s
 
     def repl(m):
-        digits = m.group(0).replace(",", "").replace(".", "")
-        if not digits.isdigit():
+        # locale-aware VALUE parse (numparse): '2.5' stays 2.5, '12.000' (de) is 12000,
+        # '47,000,000' is 47000000 — separators were previously stripped blind, which made
+        # '2.5' == '25' and hid 10x numeric errors from the ruler (bug-hunt 2026-07-11)
+        from .numparse import _digit_values
+        vals = _digit_values(m.group(0), lang)
+        if len(vals) != 1:
             return m.group(0)
+        v = vals[0]
         try:
-            return " " + num2words(int(digits), lang=lang) + " "
+            if v == int(v):
+                return " " + num2words(int(v), lang=lang) + " "
+            # fractional: keep the canonical VALUE string — both sides render identically,
+            # and it can never collide with the integer ('2.5' != 'twenty-five')
+            return f" {v} "
         except Exception:
             return m.group(0)
     return re.sub(r"\d[\d.,]*", repl, s)
