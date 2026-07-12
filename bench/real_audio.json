@@ -1826,15 +1826,984 @@
   "best_model": "deepgram",
   "wer_by_model": {
    "deepgram": 0.0,
+   "gemini": 0.0
+  },
+  "reads": {
+   "deepgram": "L'accident a eu lieu en terrain montagneux et il semblerait que cela ait été causé par un incendie malveillant.",
+   "gemini": "L'accident a eu lieu en terrain montagneux, et il semblerait que cela ait été causé par un incendie malveillant."
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_frb.wav",
+  "consensus": 0.269,
+  "cer": 0.036,
+  "best_single": 0.231,
+  "best_model": "gemini",
+  "wer_by_model": {
+   "deepgram": 0.308,
+   "gemini": 0.231,
+   "whisper": 0.231,
+   "mms": 0.269,
+   "seamless": 0.308
+  },
+  "reads": {
+   "deepgram": "Il a ajouté qu'on ne devrait cependant pas leur demander d'assumer des obligations qui dépassent leurs stades de développement, leurs responsabilités et leurs capacités.",
+   "gemini": "Il a ajouté qu'on ne devrait cependant pas leur demander d'assumer des obligations qui dépassent leur stade de développement, leur responsabilité et leur capacité.",
+   "whisper": "Il a ajouté qu'on ne devrait cependant pas leur demander d'assumer des obligations qui dépassent leur stade de développement, leurs responsabilités et leurs capacités.",
+   "mms": "il ajoutait qu'on ne devrait cependant pas leur demander d'assumer des obligations qui dépassent leur stade de développement leur responsabilité et leur capacités",
+   "seamless": "Il ajoutait qu'on ne devrait cependant pas leur demander d'assumer des obligations qui dépassent leur stade de développement, leurs responsabilités et leurs capacités."
+  },
+  "reask_fires": 1
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_frc.wav",
+  "consensus": 0.077,
+  "cer": 0.033,
+  "best_single": 0.077,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.077,
+   "whisper": 0.269,
+   "mms": 0.308,
+   "seamless": 0.115
+  },
+  "reads": {
+   "deepgram": "Le rugissement du tigre ne ressemble pas au rugissement en plus du lion, mais plutôt à une phrase dont les mots seraient des cris et des grondements.",
+   "whisper": "L'enregistrement du tigre ne ressemble pas à un enregistrement en plurian, mais plutôt à une phrase dont les mots seraient des cris et des grondements.",
+   "mms": "le regissement du tigue ne ressemble pas au regissement en plus du liant mais plutôt à une phrase dant les mots seraient des crits et des grondements",
+   "seamless": "Le rugissement du tigre ne ressemble pas au rugissement en pleurion, mais plutôt à une phrase dont les mots seraient des cris et des grondements."
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_frd.wav",
+  "consensus": 0.115,
+  "cer": 0.061,
+  "best_single": 0.077,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.077,
+   "whisper": 0.077,
+   "mms": 0.154,
+   "seamless": 0.077
+  },
+  "reads": {
+   "deepgram": "Le même mois, un autre avion de ligne a fait une sortie de piste à Machade et heurté un mur, tuant ainsi 17 personnes.",
+   "whisper": "Le même mois, un autre avion de ligne a fait une sortie de piste à Machade et heurté un mur, tuant ainsi 17 personnes.",
+   "mms": "le même moi un autre avion de ligne a fait une sortie de piste à machade et heurter un mur tuant ainsi dix-sept personnes",
+   "seamless": "le même mois un autre avion de ligne a fait une sortie de piste à machade et heurté un mur tuant ainsi dix-sept personnes"
+  },
+  "reask_fires": 1
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_fre.wav",
+  "consensus": 0.056,
+  "cer": 0.036,
+  "best_single": 0.056,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.056,
+   "gemini": 0.167,
+   "whisper": 0.167,
+   "mms": 0.167,
+   "seamless": 0.056
+  },
+  "reads": {
+   "deepgram": "Giancarlo Ficella a perdu le contrôle de sa voiture et a terminé la course peu après le démarrage.",
+   "gemini": "Jean-Carlos Fittigella a perdu le contrôle de sa voiture et a terminé la course peu après le démarrage.",
+   "whisper": "Jean-Carlo Fichella a perdu le contrôle de sa voiture et a terminé la course peu après le démarrage.",
+   "mms": "jean carlos ficcella a perdu le contrôle de sa voiture et a terminé la course peu après le démarrage",
+   "seamless": "giancarlo ficcella a perdu le contrôle de sa voiture et a terminé la course peu après le démarrage"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_frf.wav",
+  "consensus": 0.179,
+  "cer": 0.159,
+  "best_single": 0.036,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.25,
+   "whisper": 0.036,
+   "mms": 0.357,
+   "seamless": 0.107
+  },
+  "reads": {
+   "deepgram": "Malgré le net avantage de pendant le 2e set, il a fallu passer par un 1 fois que le score a atteint 6 6.",
+   "whisper": "Malgré le net avantage de Del Potro pendant le deuxième set, il a fallu passer par un tie-break une fois que le score atteint 6-6.",
+   "mms": "malgré le net avantage de delpotro pendant le deue sept il a fallu passer par un taille brek une fois que le scot ar atteint six-six",
+   "seamless": "Malgré le net avantage de Del Potro pendant le deuxième set, il a fallu passer par un tie-break une fois que le score atteint six-six."
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_frg.wav",
+  "consensus": 0.167,
+  "cer": 0.046,
+  "best_single": 0.167,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.167,
+   "whisper": 0.25,
+   "mms": 0.25,
+   "seamless": 0.167
+  },
+  "reads": {
+   "deepgram": "Malheureusement, il est difficile d'étudier le flux de circulation, car les comportements des conducteurs ne peuvent être prédits avec 100 pour 100 de certitude.",
+   "whisper": "Malheureusement, il est difficile d'étudier le flux de circulation car les comportements  des conducteurs ne peuvent être prédits avec 100% de certitude.",
+   "mms": "malheureusement il est difficile d'étudier le flux de circulation car les comportements des conducteurs ne peuvent être prédits avec 100 pr de certitude",
+   "seamless": "Malheureusement, il est difficile d'étudier le flux de circulation car les comportements des conducteurs ne peuvent être prédits avec cent pour cent de certitude."
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_frh.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.043,
+   "seamless": 0.0
+  },
+  "reads": {
+   "deepgram": "Les 2 composés réagissent l'un avec l'autre pour former des cristaux qui peuvent bloquer la fonction rénale ont déclaré des chercheurs de l'université.",
+   "whisper": "Les deux composés réagissent l'un avec l'autre pour former des cristaux qui peuvent bloquer la fonction rénale, ont déclaré des chercheurs de l'université.",
+   "mms": "les deux composés réagissent l'un avec l'autre pour former des cristaux qui peuvent bloquer la fonction rênale ont déclaré des chercheurs de l'université",
+   "seamless": "Les deux composés réagissent l'un avec l'autre pour former des cristaux qui peuvent bloquer la fonction rénale, ont déclaré des chercheurs de l'université."
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_fri.wav",
+  "consensus": 0.022,
+  "cer": 0.009,
+  "best_single": 0.0,
+  "best_model": "seamless",
+  "wer_by_model": {
+   "deepgram": 0.022,
+   "whisper": 0.044,
+   "mms": 0.067,
+   "seamless": 0.0
+  },
+  "reads": {
+   "deepgram": "Par exemple, des étudiants de l'école bénet en Caroline du Nord, conçoivent chaque année un site web consacré à leur visite de la capitale de l'État. Chaque année, le site est remis à jour, mais les anciennes versions sont conservées en ligne pour servir d'album.",
+   "whisper": "Par exemple, des étudiants de l'école Bénet en Caroline du Nord conçoivent chaque année un site web consacré à leur visite de la capitale de l'État.  Chaque année, le site est remis à jour et les anciennes versions sont conservées en ligne pour servir d'album.",
+   "mms": "par exemple des étudiants de l'écone béné en caroline du nord conçoivent chaque année un site web consacré à leur visite de la capitale de l'état chaque année le site est remis un jour mais les anciennes versions sont conservées en ligne pour servir d'album",
+   "seamless": "par exemple des étudiants de l'école bennet en caroline du nord conçoivent chaque année un site web consacré à leur visite de la capitale de l'état chaque année le site est remis à jour mais les anciennes versions sont conservées en ligne pour servir d'album"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "fr",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_frj.wav",
+  "consensus": 0.125,
+  "cer": 0.107,
+  "best_single": 0.031,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.125,
+   "whisper": 0.031,
+   "mms": 0.094,
+   "seamless": 0.219
+  },
+  "reads": {
+   "deepgram": "Exemple, format de photographie le plus courant du monde est le 35 millimètres. C'était le format de pellicule le plus répandu à la fin de l'ère des films analogiques.",
+   "whisper": "Par exemple, le format de photographie le plus courant du monde est le 35 mm.  C'était le format de pellicule le plus répandu à la fin de l'ère des films analogiques.",
+   "mms": "par exemple le format de photographie le plus courant du monde est le 35 mm c'était le format de pellicule le plus répandu à la fin de l'air des filmes analogiques",
+   "seamless": "Par exemple, le format de photographie le plus courant du monde est le trente-cinq millimètres, cétait le format de pellicule le plus répandu à la fin de lère du film analogique."
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_koa.wav",
+  "consensus": 0.019,
+  "cer": 0.019,
+  "best_single": 0.019,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.019,
+   "whisper": 0.094,
+   "mms": 0.189
+  },
+  "reads": {
+   "deepgram": "다리 및 수직 간격은 십 오 미터이며 공사는 이 천 십 일 년 팔 월에 마무리되었으며 해당 다리의 통행 금지는 이 천 십 칠 년 삼 월까지이다.",
+   "whisper": "다리 및 수직 간격은 15m이며 공사는 2011년 8월에 마무리되었으며 해당 다리의 통행금지는 2017년 3월까지이다.",
+   "mms": "다림이 수직강격은 15m터이며 공사는 2011년 8월에 마무이 되었으며 해당 다리의 통행 금지는 207년 3월까지 이다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_kob.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.024,
+   "mms": 0.171
+  },
+  "reads": {
+   "deepgram": "델 포트로가 이 세트에서 먼저 어드밴티지를 얻었지만 육 대 육 이 된 후 다시 타이 브레이크가 필요했다",
+   "whisper": "델 포트로가 2세트에서 먼저 어드밴티즈를 얻었지만 6대6이 된 후 다시 타이브레이크가 필요했다.",
+   "mms": "텔포트로가 2새트에서 먼저 어두웨티질를 얻었지만 육대 6기된후후 다시 타이 브레이크가 필요했다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_koc.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.121
+  },
+  "reads": {
+   "deepgram": "염소 사육은 대략 일 만 년 전에 이란의 자그로스 산맥에서 시작한 것으로 보입니다.",
+   "whisper": "염소사육은 대략 1만 년 전에 이란의 자그로스 산맥에서 시작한 것으로 보입니다.",
+   "mms": "염소 사육은 대략 일만 년전에 일란의 자으로 스삼명에서 시작한 것으로 보입니다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_kod.wav",
+  "consensus": 0.02,
+  "cer": 0.02,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.02,
+   "whisper": 0.0,
+   "mms": 0.2
+  },
+  "reads": {
+   "deepgram": "겨울에 북발트해를 건넬 경우에는 빙판을 통과하면서 꽤 끔찍한 소음이 발생하기 때문에 객실의 위치를 확인하는 것이 좋다.",
+   "whisper": "겨울에 북 발트해를 건널 경우에는 빙판을 통과하면서 꽤 끔찍한 소음이 발생하기 때문에 객실의 위치를 확인하는 것이 좋다.",
+   "mms": "저울의 북 발트의 건널 경우에는 빙판의 통과하면서 꾀 금직한 소움이 발생하기 때문에 객실의 위치를 확인하는 것이 조다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_koe.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.154
+  },
+  "reads": {
+   "deepgram": "홍콩의 스카이 라인을 이루는 빌딩 행렬은 빅토리아 항구의 수면에 선명히 비치는 모습 때문에 반짝이는 막대그래프에 비유된다",
+   "whisper": "홍콩의 스카이라인을 이루는 빌딩 행렬은 빅토리아 항구의 수면에 선명히 비치는 모습 때문에 반짝이는 막대 그래프에 비유된다.",
+   "mms": "홍공의 스카이라인을 이르는 빌딩행렬은 비토리아 한구의 수면의 선명이 비치는 모습 때문에 반짝이는 막대그을 프해 비유된다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_kof.wav",
+  "consensus": 0.025,
+  "cer": 0.025,
+  "best_single": 0.025,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.025,
+   "whisper": 0.05,
+   "mms": 0.125
+  },
+  "reads": {
+   "deepgram": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+   "whisper": "합금은 기본적으로 금속 2개 이상의 혼합물이다  주기율표상의 원소가 많이 있다는 것을 잊지 마라",
+   "mms": "합금은 기본적으로 금속 두개 이상의 혼합물이다 주기울 표상의 원소가 많이 있다는 것을 이지 말하"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_kog.wav",
+  "consensus": 0.026,
+  "cer": 0.026,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.026,
+   "whisper": 0.0,
+   "mms": 0.128
+  },
+  "reads": {
+   "deepgram": "천 구 백 사 십 년 팔 월 십 오 일 연합군은 프랑스 남부를 침략했고 이 침략은 드레군 작전이라 불렸다",
+   "whisper": "1940년 8월 15일 연합군은 프랑스 남부를 침략했고 이 침략은 드래군 작전이라 불렸다.",
+   "mms": "1940년 8월 15일 연합군는 프랑스 남브를 침약했고 이 침약은 드레군 작전이라 불렸다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_koh.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.282
+  },
+  "reads": {
+   "deepgram": "그래도 관계자의 조언을 듣고 모든 표지판을 지키고 안전 경고에 세심한 주의를 기울여야 합니다.",
+   "whisper": "그래도 관계자의 조언을 듣고 모든 표지판을 지키고 안전경고에 세심한 주의를 기울여야 합니다.",
+   "mms": "그래도 광계자의 좋원에 듣고 모든 표집판을 시키고 안정 경고에 세0한 주일의 기울려야 합니다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_koi.wav",
+  "consensus": 0.04,
+  "cer": 0.04,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.04,
+   "whisper": 0.0,
+   "mms": 0.2
+  },
+  "reads": {
+   "deepgram": "교전이 발발한 직후 영국은 독일에 대한 회상 봉쇄를 시작한다",
+   "whisper": "교전이 발발한 직후 영국은 독일에 대한 해상봉쇄를 시작한다.",
+   "mms": "교전히 발발한 직고 영곡은 독일에 대한 회상 봉세를 시작한다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ko",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_koj.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.1
+  },
+  "reads": {
+   "deepgram": "겨우 이 주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다.",
+   "whisper": "겨우 2주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다.",
+   "mms": "겨우 이즈만에 미군과 자유 프랑스군는 프랑스 남부을 해방시키고 독길로 진격 방향을 틀고 있었다"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_pta.wav",
+  "consensus": 0.042,
+  "cer": 0.008,
+  "best_single": 0.042,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.083,
+   "whisper": 0.042,
+   "mms": 0.125,
+   "seamless": 0.167
+  },
+  "reads": {
+   "deepgram": "Construída pelos egípcios no século 3 a.C, a Grande Pirâmide é 1 das muitas grandes estruturas da pirâmide construídas para honrar faraós mortos.",
+   "whisper": "construída pelos egípcios no século 3 a.C.  a grande pirâmide é uma das muitas grandes estruturas da pirâmide  construídas para honrar faraós mortos",
+   "mms": "construída pelos egípcios no século 3 ac a grande pirâmide é uma das muitas grandes estruturas da pirâmide construídas para honrar faraós mortos",
+   "seamless": "construída pelos egípcios no século três antes de cristo a grande pirâmide é uma das muitas grandes estruturas da pirâmide construídas para honrar faraós mortos"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ptb.wav",
+  "consensus": 0.133,
+  "cer": 0.028,
+  "best_single": 0.0,
+  "best_model": "seamless",
+  "wer_by_model": {
+   "deepgram": 0.133,
+   "whisper": 0.133,
+   "mms": 0.467,
+   "seamless": 0.0
+  },
+  "reads": {
+   "deepgram": "Chencario Fisiquela perdeu o controle do carro e acabou a corrida logo após a largada.",
+   "whisper": "Jean-Carlo Fisichella perdeu o controle do carro e acabou a corrida logo após a largada.",
+   "mms": "jankarlo vizquella perdeu o controle do caro e acabou acorrida logo após alargada",
+   "seamless": "Giancarlo Fisichella perdeu o controle do carro e acabou a corrida logo após a largada"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ptc.wav",
+  "consensus": 0.118,
+  "cer": 0.081,
+  "best_single": 0.059,
+  "best_model": "seamless",
+  "wer_by_model": {
+   "deepgram": 0.176,
+   "whisper": 0.118,
+   "mms": 0.176,
+   "seamless": 0.059
+  },
+  "reads": {
+   "deepgram": "O romantismo tinha 1 grande elemento de determinismo cultural, extraído de escritores como Goult, Fist e Skelegial.",
+   "whisper": "O romantismo tinha um grande elemento de determinismo cultural,  extraído de escritores como Golt, Fichte e Skellige.",
+   "mms": "o romantismo tinha um grande elemento de determinismo cultural extraído de escritores como golt fist e scallegel",
+   "seamless": "o romantismo tinha um grande elemento de determinismo cultural extraído de escritores como Goethe, Fichte e"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ptd.wav",
+  "consensus": 0.03,
+  "cer": 0.025,
+  "best_single": 0.03,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.091,
+   "whisper": 0.03,
+   "mms": 0.182,
+   "seamless": 0.03
+  },
+  "reads": {
+   "deepgram": "O scaffolding não é 1 método de aprendizado, mas sim 1 ajuda para alunos que estão passando por 1 nova experiência de aprendizado, como usar 1 computador ou começar 1 novo projeto.",
+   "whisper": "O scaffolding não é um método de aprendizado, mas sim uma ajuda para alunos que estão passando por uma nova experiência de aprendizado, como usar um computador ou começar um novo projeto.",
+   "mms": "o scaffolding não é um método de aprendizado mas sem uma ajuda para lunos que estão passando por uma nova experiência de aprendizado como usaraum computador ou começer um novo projeto",
+   "seamless": "o scaffolding não é um método de aprendizado mas sim uma ajuda para alunos que estão passando por uma nova experiência de aprendizado como usar um computador ou começar um novo projeto"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_pte.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.065,
+   "seamless": 0.0
+  },
+  "reads": {
+   "deepgram": "Suas longas mandíbulas eram cravejadas com mais de 70 dentes afiados, junto com 1 conjunto extra no céu da boca, o que mostra que nada que cruzasse seu caminho poderia escapar.",
+   "whisper": "Suas longas mandíbulas eram cravejadas com mais de 70 dentes afiados, junto com um conjunto  extra no céu da boca, o que mostra que nada que cruzasse seu caminho poderia escapar.",
+   "mms": "suas longas mandíbulas eram cravejadas com mais de setet dentes afiados junto com o conjunto extra no céu da boca o que mostra que nada que cruzasse seu caminho poderia escapar",
+   "seamless": "suas longas mandíbulas eram cravejadas com mais de setenta dentes afiados junto com um conjunto extra no céu da boca o que mostra que nada que cruzasse seu caminho poderia escapar"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ptf.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.105,
    "whisper": 0.0,
    "mms": 0.0,
    "seamless": 0.0
   },
   "reads": {
-   "deepgram": "L'accident a eu lieu en terrain montagneux et il semblerait que cela ait été causé par un incendie malveillant.",
-   "whisper": "L'accident a eu lieu en terrain montagneux et il semblerait que cela ait été causé par un incendie malveillant.",
-   "mms": "l'accident a eu lieu en terrain montagneux et il semblerait que cela ait été causé par un incendie malveillant",
-   "seamless": "L'accident a eu lieu en terrain montagneux, et il semblerait que cela ait été causé par un incendie malveillant."
+   "deepgram": "O acidente ocorreu em grande altitude no terreno montanhoso e acreditase que tenha sido causado por fogo inimigo.",
+   "whisper": "O acidente ocorreu em grande altitude no terreno montanhoso e acredita-se que tenha sido causado por fogo inimigo.",
+   "mms": "o acidente ocorreu em grande altitude no terreno montanhoso e acredita-se que tenha sido causado por fogo inimigo",
+   "seamless": "o acidente ocorreu em grande altitude no terreno montanhoso e acredita-se que tenha sido causado por fogo inimigo"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ptg.wav",
+  "consensus": 0.1,
+  "cer": 0.048,
+  "best_single": 0.1,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.2,
+   "whisper": 0.1,
+   "mms": 0.2,
+   "seamless": 0.15
+  },
+  "reads": {
+   "deepgram": "Consequentemente, 2 espécies de peixe entraram em extinção, e 2 outras passaram a correr risco, como a espécie Gillasifa.",
+   "whisper": "consequentemente duas espécies de peixe entraram em extinção e duas outras  passaram a correr risco como espécie gila sifa",
+   "mms": "consequentemente duas espécies de peixe entraram em extinção e duas outras passaram a correr risco comoma espécie gilacifa",
+   "seamless": "consequentemente duas espécies de peixe entraram em extinção e duas outras passaram a correr risco como espécie"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_pth.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.0,
+   "seamless": 0.0
+  },
+  "reads": {
+   "deepgram": "Os 2 compostos reagem 1 com o outro para formar cristais, que podem bloquear a função renal, afirmaram os pesquisadores da universidade.",
+   "whisper": "Os dois compostos reagem um com o outro para formar cristais, que podem bloquear a função renal, afirmaram os pesquisadores da universidade.",
+   "mms": "os dois compostos reagem um com o outro para formar cristais que podem bloquear a função renal afirmaram os pesquisadores da universidade",
+   "seamless": "os dois compostos reagem um com o outro para formar cristais que podem bloquear a função renal afirmaram os pesquisadores da universidade"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_pti.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.035,
+   "whisper": 0.0,
+   "mms": 0.0,
+   "seamless": 0.138
+  },
+  "reads": {
+   "deepgram": "O Congresso começou a financiar a iniciativa de obsanidade no ano fiscal de 2005 e especificou que o FBI deve dedicar 10 agentes à pornografia adulta.",
+   "whisper": "O Congresso começou a financiar a iniciativa de obscenidade no ano fiscal de 2005  e especificou que o FBI deve dedicar 10 agentes à pornografia adulta.",
+   "mms": "o congresso começou a financiar a iniciativa de obscenidade no ano fiscal de 2005 e especificou que o fbi deve dedicar dez agentes à pornografia adulta",
+   "seamless": "o congresso começou a financiar a iniciativa de obscenidade no ano fiscal de e especificou que o fbi deve dedicar dez agentes à pornografia adulta"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "pt",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ptj.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.053,
+   "seamless": 0.0
+  },
+  "reads": {
+   "deepgram": "As pessoas não imaginam que paciência e compreensão também são fundamentais para os viajantes que estão voltando para casa.",
+   "whisper": "As pessoas não imaginam que paciência e compreensão também são fundamentais para os viajantes que estão voltando para casa.",
+   "mms": "as pessoas não imaginam que paciência e compreensão também são fundamentais para os viajantes que estão voltando para a casa",
+   "seamless": "As pessoas não imaginam que paciência e compreensão também são fundamentais para os viajantes que estão voltando para casa."
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_rua.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.071
+  },
+  "reads": {
+   "deepgram": "Мадагаскар намного больше других и является самобытным континентом в том, что касается дикой природы.",
+   "whisper": "Мадагаскар намного больше других и является самобытным континентом в том, что касается дикой природы.",
+   "mms": "мадагаскар намного больше других и является самобытным континентом в том что касается дикой природо"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_rub.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.1
+  },
+  "reads": {
+   "deepgram": "Во всех научных вопросах, включая психологию, были приняты взгляды Аристотеля.",
+   "whisper": "Во всех научных вопросах, включая психологию, были приняты взгляды Аристотеля.",
+   "mms": "во всех научных вопросах включая психологию были приняты взгляды арестотеля"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ruc.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.0
+  },
+  "reads": {
+   "deepgram": "В различных местах Рима были установлены большие телевизионные экраны, с помощью которых люди могли наблюдать за церемонией.",
+   "whisper": "В различных местах Рима были установлены большие телевизионные экраны, с помощью которых люди могли наблюдать за церемонией.",
+   "mms": "в различных местах рима были установлены большие телевизионные экраны с помощью которых люди могли наблюдать за церемонией"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_rud.wav",
+  "consensus": 0.087,
+  "cer": 0.016,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.087,
+   "mms": 0.478
+  },
+  "reads": {
+   "deepgram": "В 1990 году он был добавлен в Список всемирного наследия, находящегося под угрозой из-за опасности со стороны песков пустыни.",
+   "whisper": "В 1990 году он был добавлен в список всемирного наследия, находящегося под угрозой из-за опасности со стороны песков в пустыне.",
+   "mms": "в 199 году он был добавлен всписок всемирного наследия находящегося под угроза и-за опасности со стороны писку в пустыне"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_rue.wav",
+  "consensus": 0.083,
+  "cer": 0.013,
+  "best_single": 0.083,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.25,
+   "whisper": 0.083,
+   "mms": 0.333
+  },
+  "reads": {
+   "deepgram": "Согласно ядерному управлению Японией, на заводе были обнаружены радиоактивные цезий и ют.",
+   "whisper": "Согласно ядерному управлению Японии, на заводе были обнаружены радиоактивные цезий и йод.",
+   "mms": "согласно ядерному управлению японии на заводе были обнаружены радиоактивной цезей ийот"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ruf.wav",
+  "consensus": 0.08,
+  "cer": 0.016,
+  "best_single": 0.04,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.04,
+   "whisper": 0.08,
+   "mms": 0.2
+  },
+  "reads": {
+   "deepgram": "Только мутации в клетках зародышевой линии могут передаваться далее детям, в то время как мутации где-то еще могут привести к гибели клеток или раку.",
+   "whisper": "Только мутации в клетках зародышевой линии могут передаваться далее детям,  в то время как мутация где-то еще могут привести к гибели клеток или раку.",
+   "mms": "только мутации в клетках за родошевой линии могут передаваться далее детям в то время как мутация где-то ещё могут привести к гибеле клеток или рагу"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_rug.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.182
+  },
+  "reads": {
+   "deepgram": "Не оскверняйте это место нанося или выцарапывая граффити на объекты вокруг.",
+   "whisper": "Не оскверняйте это место, нанося или выцарапывая граффити на объекты вокруг.",
+   "mms": "не оскверняйте это место нанося или воцераповоя граффике на объекты вокруг"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ruh.wav",
+  "consensus": 0.091,
+  "cer": 0.013,
+  "best_single": 0.091,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.091,
+   "whisper": 0.091,
+   "mms": 0.545
+  },
+  "reads": {
+   "deepgram": "Переносчиками являются свиньи от которых через комаров болезнь затем передается человеку.",
+   "whisper": "Переносчиками являются свиньи, от которых через комаров болезнь затем передается человеку.",
+   "mms": "перенощиками является свини от которых через коморов болесь затем передается человеку"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_rui.wav",
+  "consensus": 0.176,
+  "cer": 0.101,
+  "best_single": 0.118,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.118,
+   "whisper": 0.176,
+   "mms": 0.353
+  },
+  "reads": {
+   "deepgram": "Также может быть выгодно купить WILDCARD, которая позволяет посещать национальные парки ЮАР либо выборочно, либо все.",
+   "whisper": "Также может быть выгодно купить вилдкарт, который позволяет посещать национальные парки ЮАР либо выборочно, либо все.",
+   "mms": "также может быт выгодно укупить уiлд карт которая позволяет посещать национальные парки юаr либо выброчну либо все"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ru",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ruj.wav",
+  "consensus": 0.04,
+  "cer": 0.008,
+  "best_single": 0.04,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.08,
+   "whisper": 0.04,
+   "mms": 0.12
+  },
+  "reads": {
+   "deepgram": "Только мутации в клетках зародышевой линии могут передаваться далее детям. В то время мутации где-то еще могут привести к гибели клеток или раку.",
+   "whisper": "Только мутации в клетках зародышевой линии могут передаваться далее детям,  в то время как мутации где-то еще могут привести к гибели клеток или раку.",
+   "mms": "только мутации в клетках зародышевой линии могут передаваться далее детям в то время как мутация где-то ещё могут привести гибелье клеток или раку"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_uka.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.0
+  },
+  "reads": {
+   "deepgram": "Жінки усім подорожнім жінкам радять казати, що вони заміжні, незалежно від справжнього сімейного стану.",
+   "whisper": "Жінки усім подорожнім жінкам радять казати, що вони заміжні, незалежно від справжнього сімейного стану.",
+   "mms": "жінки усім подорожнім жінкам радять казати що вони заміжні незалежно від справжнього сімейного стану"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ukb.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.1,
+   "mms": 0.1
+  },
+  "reads": {
+   "deepgram": "Такі батьки можуть вирішити створити для своєї дитини план всиновлення.",
+   "whisper": "Такі батьки можуть вирішити створити для своєї дитини план всиновування.",
+   "mms": "такі батьки можуть вирішити створити для своєї дитини план всиновування"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ukc.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.105,
+   "whisper": 0.0,
+   "mms": 0.158
+  },
+  "reads": {
+   "deepgram": "Місячна кора становить приблизно сімдесят кілометрів у товщину на ближній стороні та сто кілометрів у товщину на дальній стороні.",
+   "whisper": "Місячна кора становить приблизно 70 км у товщину на ближній стороні та 100 км у товщину на дальній стороні.",
+   "mms": "місяч на кора становить приблизно 70 км у товщину на ближній стороні та 100 кмі у товщину на дальній стороні"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ukd.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "mms": 0.059
+  },
+  "reads": {
+   "deepgram": "Рослини продукують кисень, яким дихає людина, і поглинають вуглекислий газ, який людина виводить з організму, тобто видихає.",
+   "whisper": "Рослини продукують кисень, яким дихає людина, і поглинають вуглекислий газ, який людина виводить з організму, тобто видихає.",
+   "mms": "рослини продукують кисень яким дихає людина і поглиднають вуглекислий газ який людина виводить з організму тобто видихає"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_uke.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.059,
+   "whisper": 0.0,
+   "mms": 0.059
+  },
+  "reads": {
+   "deepgram": "Такі елементи, як кальцій калій, вважаються металами. Звичайно, також є такі метали, як срібло та золото.",
+   "whisper": "Такі елементи, як кальцій і калій, вважаються металами.  Звичайно, також є такі метали, як срібло та золото.",
+   "mms": "такі елементи як кальці і калій вважаються металами звичайно також є такі метали як срібло та золото"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ukf.wav",
+  "consensus": 0.056,
+  "cer": 0.011,
+  "best_single": 0.056,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.056,
+   "whisper": 0.056,
+   "mms": 0.111
+  },
+  "reads": {
+   "deepgram": "Науковці змогли зробити висновок, що темна матерія впливає на іншу темну матерію, таким самим чином, як і звичайно.",
+   "whisper": "Науковці змогли зробити висновок, що темна матерія впливає на іншу темну матерію таким самим чином, як і звичайно.",
+   "mms": "науковці змогли зробити виснавок що темна матерія впливає на іншу темну матерію таким самим чином як і звичайно"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ukg.wav",
+  "consensus": 0.08,
+  "cer": 0.045,
+  "best_single": 0.08,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.08,
+   "whisper": 0.12,
+   "mms": 0.16
+  },
+  "reads": {
+   "deepgram": "Це володіння автомобілями також призводить до збільшення числа ДТП на дорогах, що призводить до винаходу нових методів галузі охорони здоров'я для лікування тілесних ушкоджень.",
+   "whisper": "Володіння автомобілями також призводить до збільшення числа ДТП на дорогах, що призводить до виноходу нових методів галузі охорони здоров'я для лікування тілесних ушкоджень.",
+   "mms": "ласеве володінні автомобілями також призводить до збільшення числа дтп на дорогах що призводить до винаходу нових методів галузі охороне здоров'я для лікування тілесних ушкоджень"
+  },
+  "reask_fires": 1
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ukh.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.118,
+   "whisper": 0.0,
+   "mms": 0.235
+  },
+  "reads": {
+   "deepgram": "Цей гарячий шоколад задовольняє вимогам бельгійських стандартів, а фруктові соки коштують зовсім недешево, але вони прекрасні.",
+   "whisper": "Цей гарячий шоколад задовольняє вимогам бельгійських стандартів.  А фруктові соки коштують зовсім не дешево, але вони прекрасні.",
+   "mms": "цей гарячий шоколат задовольняє вимогам бельгійських стандартів а фруктові сокі коштують зовсім не дешело але вони прикрасні"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_uki.wav",
+  "consensus": 0.222,
+  "cer": 0.067,
+  "best_single": 0.278,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.333,
+   "whisper": 0.278,
+   "mms": 0.278
+  },
+  "reads": {
+   "deepgram": "Архіпелах лежить 120 кілометрів на північ від півострова, найбільший острів Кінг-Джорж із поселенням Вільямлас-Естрельєс.",
+   "whisper": "Архипелаг лежить 120 км на північ від півострова. Найбільший остров – Кінг-Дзорш із поселенням Вілля-Лас-Естреллєс.",
+   "mms": "архіпелаг лежить 120 кмів на північ від півострова найбільший остров кінгджорж із поселенням вілья лас естреліяс"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "uk",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_ukj.wav",
+  "consensus": 0.062,
+  "cer": 0.009,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.062,
+   "mms": 0.062
+  },
+  "reads": {
+   "deepgram": "Сьогодні в Атлантичному океані сформувався субтропічний ураган Джеррі десятий ураган сезону атлантичних ураганів, який отримав назву.",
+   "whisper": "Сьогодні в Атлантичному океані сформувався субтропічний ураган Джері – десятий ураган сезону атлантичних ураганів, який отримав назву.",
+   "mms": "сьогодні в атлантичному океані сформувався субтропічний ураган джері десятий ураган сезону атлантичних ураганів який отримав назву"
   },
   "reask_fires": 0
  }
