@@ -227,15 +227,26 @@ register_domain(
 # and the site supplies the platform's output format. `compose("en","legal","transcribeme")` == the
 # old full CVL (== the standalone `legal` profile). Other languages get the timestamp core today.
 from .legal_rules import LEGAL_SCANNERS, LEGAL_FIXERS  # noqa: E402 — CVL scanners + Redline autofixers
+from .legal_rules import (legal_repeated_words, legal_partial_words, legal_spacing,  # noqa: E402
+                          legal_dash_form, legal_speaker_ids, legal_tags)
 from .scanners import timestamps as _timestamps  # noqa: E402
 from .legal_terms import legal_terms  # noqa: E402
 from .tm_legal import tm_sound_tags, tm_lowercase_terms, tm_speaker_caps, tm_double_dash, tm_spoken_punct  # noqa: E402
+
+# STRUCTURAL CVL scanners are language-neutral (pure format: doubled words, stutter fragments,
+# double spaces, dash form, speaker-label shape, bracket-tag shape — verified zero false
+# positives on non-English prose, real catches on es 2026-07-12). They ride the domain CORE so
+# a Spanish deposition gets them; the English-language half (spelling/slang/grammar/contractions/
+# number style) stays on the en layer — per-language legal style data is the growth path.
+_LEGAL_STRUCTURAL = (legal_repeated_words, legal_partial_words, legal_spacing,
+                     legal_dash_form, legal_speaker_ids, legal_tags)
+_LEGAL_EN_ONLY = tuple(s for s in LEGAL_SCANNERS if s not in _LEGAL_STRUCTURAL)
 register_domain(
     "legal",
-    scanners=(_timestamps,),                    # universal core: timestamp format
-    per_language={"en": (*LEGAL_SCANNERS, legal_terms)},
+    scanners=(_timestamps, *_LEGAL_STRUCTURAL),   # universal core: timestamps + structure
+    per_language={"en": (*_LEGAL_EN_ONLY, legal_terms)},
     per_language_fixers={"en": LEGAL_FIXERS},   # the CVL Redline autofix set travels with the plug
-    description="Legal — timestamp core (all languages) + American-English CVL content (en)",
+    description="Legal — timestamps + structural CVL (all languages) + American-English CVL content (en)",
 )
 
 # --- SITE axis: per-website OUTPUT FORMAT plugins (language × field × SITE) ---
