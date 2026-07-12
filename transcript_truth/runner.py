@@ -93,19 +93,34 @@ def transcribe(audio_path: str, lang: str, profile: str | None = None,
     utts = _utterances(audio_path, lang)              # Deepgram structural backbone
     for u in utts:
         u["text"] = _clean(u["text"], lang)
+    gate = None
     if multi_model and utts:
         if consensus_fn is None:
             from . import consensus
-            consensus_fn = lambda: (consensus.transcribe(audio_path, lang) or {}).get("text", "")
+            _cres = {}
+            def consensus_fn():
+                _cres.update(consensus.transcribe(audio_path, lang) or {})
+                return _cres.get("text", "")
+        else:
+            _cres = None
         ctext = _clean(consensus_fn() or "", lang)
         if ctext:
             utts = _redistribute(utts, ctext)         # consensus words, Deepgram timing/speakers
+        if _cres is not None:
+            gate = _cres.get("gate")
+        if not ctext:
+            # HARD GATE (Phase V): a multi-model job whose consensus came back empty is running
+            # single-model — it may ship, but never as confident output
+            gate = {"status": "review", "reasons": ["consensus empty — single-model fallback"],
+                    "contested_ratio": None, "families": 1}
     formatted = "\n".join(f"{_ts(u['start'])} Speaker {u['speaker'] + 1}: {u['text']}" for u in utts)
     content = "\n".join(u["text"] for u in utts)
     receipt = audit_transcript(content, mode=mode, profile=profile)
     return {"transcript": formatted, "content": content, "receipt": receipt,
             "lang": lang, "profile": profile, "n_utterances": len(utts),
-            "multi_model": bool(multi_model)}
+            "multi_model": bool(multi_model),
+            "gate": gate or {"status": "review", "reasons": ["no consensus gate available"],
+                             "contested_ratio": None, "families": None}}
 
 
 # Term-accuracy rules where a mis-transcription is high-stakes (drug names, dosages, dangerous

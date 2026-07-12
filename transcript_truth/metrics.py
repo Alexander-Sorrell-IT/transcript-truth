@@ -186,6 +186,11 @@ def _fold_script(s: str, lang: str) -> str:
         import re
         s = s.replace("ँ", "ं")
         s = unicodedata.normalize("NFC", re.sub("़", "", unicodedata.normalize("NFD", s)))
+    if lang == "ur":
+        # Urdu is Arabic-script: same optional diacritics (جِن/جن, بچّے/بچے) — and ASR mixes
+        # Arabic vs Urdu codepoints for the same letters (ي/ی, ك/ک, ه/ہ). None are hearing errors.
+        s = s.translate(_AR_DIACRITICS)
+        s = s.translate(str.maketrans({"ي": "ی", "ك": "ک", "ه": "ہ", "أ": "ا", "إ": "ا", "آ": "ا"}))
     if lang == "ar":
         s = s.translate(_AR_DIACRITICS).translate(_AR_FOLD)
         toks = []
@@ -235,9 +240,29 @@ def wer(reference: str, hypothesis: str, normalize_numbers: bool = True, lang: s
         return toks
 
     r, h = _tokenize(reference), _tokenize(hypothesis)
+    if lang in ("ur", "ar"):
+        # segmentation equalization: Urdu/Arabic clitic and compound-verb spacing is an
+        # orthographic CONVENTION ('کر دیا' == 'کردیا', 'بہ نسبت' == 'بنسبت') — a replace-span
+        # whose concatenation is IDENTICAL is not a hearing error. Only concatenation-equal
+        # spans fold; 'a nice man' vs 'an ice man' style boundary errors still count in
+        # languages where spacing is meaningful (this fold is scoped to ur/ar only).
+        h = _equalize_segmentation(r, h)
     if not r:
         return 0.0 if not h else 1.0
     return _edit_rate(r, h)
+
+
+def _equalize_segmentation(r, h):
+    """Rewrite hypothesis spans to the reference's segmentation when their concatenations are
+    identical — spacing variants stop counting as word errors."""
+    import difflib
+    out = []
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(a=r, b=h, autojunk=False).get_opcodes():
+        if op in ("replace", "delete", "insert") and "".join(r[i1:i2]) == "".join(h[j1:j2]):
+            out.extend(r[i1:i2])
+        else:
+            out.extend(h[j1:j2])
+    return out
 
 
 def _edit_rate(r, h):

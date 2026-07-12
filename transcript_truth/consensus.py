@@ -815,7 +815,32 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
             "normal_text": _deliver(normal_text),
             "slow_changed": _norm_ws(tok["text"]) != _norm_ws(normal_text),
             "reads": reads, "lang": lang, "domain": domain,
-            "slowed": slowed_used, "agreement": _majority(reads)}
+            "slowed": slowed_used, "agreement": _majority(reads),
+            "gate": _gate(reads, tok, domain)}
+
+
+# HARD UNCERTAINTY GATE (PERFECTION_PLAN Phase V): the 90-95% honest-uncertainty philosophy as
+# a MECHANICAL guarantee, not a dashboard number. A transcript below these floors carries
+# status='review' — it cannot ship as confident output, only as explicitly-uncertain output.
+_GATE_MIN_FAMILIES = 2       # at least two independent families must have produced a read
+_GATE_MAX_CONTESTED = 0.10   # more than 10% contested tokens = a human must look
+_GATE_MAX_CONTESTED_STRICT = 0.05   # legal/medical: stricter
+
+
+def _gate(reads, tok, domain=None):
+    """{status: 'pass'|'review', reasons: [...], contested_ratio, families}. Deterministic."""
+    reasons = []
+    fams = {_family(n) for n, t in reads.items() if t}
+    ntok = max(1, len(tok["text"].split()))
+    contested = sum(1 for s in tok["uncertain_spans"] if "word" in s or s.get("contested"))
+    ratio = contested / ntok
+    cap = _GATE_MAX_CONTESTED_STRICT if domain in ("legal", "medical") else _GATE_MAX_CONTESTED
+    if len(fams) < _GATE_MIN_FAMILIES:
+        reasons.append(f"only {len(fams)} independent witness family(ies) — no cross-check")
+    if ratio > cap:
+        reasons.append(f"{contested} contested tokens / {ntok} ({ratio:.0%}) exceeds {cap:.0%} cap")
+    return {"status": "review" if reasons else "pass", "reasons": reasons,
+            "contested_ratio": round(ratio, 3), "families": len(fams)}
 
 
 def _tok(text):

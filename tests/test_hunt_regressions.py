@@ -91,3 +91,22 @@ def test_mixed_digit_scale_numbers():
     assert dict(values("5 million dollars", "en")) == {5000000: 1}
     assert dict(values("dos millones", "es")) == {2000000: 1}
     assert dict(values("zweitausend Euro", "de")) == {2000: 1}
+
+
+def test_hard_gate_pass_and_review():
+    """Phase V: below-floor output carries status='review' mechanically — never silent."""
+    agree = {"deepgram": "hello world today", "scribe": "hello world today",
+             "gemini": "hello world today"}
+    tok = C.consensus_tokens(agree, "en")
+    assert C._gate(agree, tok)["status"] == "pass"
+    one_family = {"hf": "hello world today", "whisper": "hello world today"}
+    assert C._gate(one_family, C.consensus_tokens(one_family, "en"))["status"] == "review"
+    chaos = {"deepgram": "aaa bbb ccc", "scribe": "xxx yyy zzz", "gemini": "qqq rrr sss"}
+    assert C._gate(chaos, C.consensus_tokens(chaos, "en"))["status"] == "review"
+
+
+def test_urdu_segmentation_not_word_errors():
+    """Clitic spacing is orthography ('کر دیا' == 'کردیا'); real mishearings still count."""
+    assert M.wer("کر دیا گیا", "کردیا گیا", lang="ur") == 0.0
+    assert M.wer("بچّے بُوڑھے", "بچے بوڑھے", lang="ur") == 0.0
+    assert M.wer("حوزات ملی", "حوتات ملی", lang="ur") > 0
