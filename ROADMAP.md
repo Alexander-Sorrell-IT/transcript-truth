@@ -23,7 +23,7 @@ Legend: ✅ done · 🟡 partial/proven-but-not-wired · ⬜ planned · ⭐ pre-
 - ✅ Language auto-detect → route to roster/profile (`language.detect`/`route`/`profile_for`, `runner.transcribe_auto`); detects on a slice, graceful fallback to `default` for unbuilt languages; verified en+ja live
 - ⬜ Code-switching (2 speakers, 2 languages) — per-turn language-ID
 - ✅ New languages: **fr, de, pt, tr, ko, vi, ar, hi, ur** all battery-validated live (ur via neural-TTS clips 2026-07-07; scribe emits Devanagari for Urdu → reliability 0.0 there, gemini/whisper/seamless carry it) · not Chinese
-- ✅ ONE cross-language ruler: `metrics.cer` (per-character, space-free, same normalization as wer) — wer's CJK-per-char vs word tokenization made ja/ko incomparable to the rest. Parity map 2026-07-07: ko 0.017 · fr/pt/uk/de/ru/ja/es 0.031-0.045 · ar 0.076 · tr 0.081 · hi 0.091 · vi 0.102 · ur 0.117
+- ✅ ONE cross-language ruler: `metrics.cer` (per-character, space-free, same normalization as wer) — wer's CJK-per-char vs word tokenization made ja/ko incomparable to the rest. Parity map (recomputed from bench/full_parity.json, 2026-07-12): ko 0.017 · fr/pt/uk/de/ru/ja/es 0.031-0.045 · ar 0.076 · tr 0.081 · hi 0.084 · ur 0.097 · vi 0.102
 - ⬜ Specialized witness models per hard language
 - ⬜ Adversarial gap-finding agents (worst-case battery)
 - ⬜ Translation (EN→X) with mechanical QA + surface-for-review faithfulness

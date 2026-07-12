@@ -6,7 +6,7 @@ in every language — it beats any single model — proven on real hard audio, w
 
 Every phase ships with unit tests AND a bench measurement. A phase is DONE only when the number moves
 the right way (or is proven neutral). Baseline to beat (English hard clips, WER, lower better):
-single-Deepgram 0.291 · whole-vote 0.240 · token-brain 0.172 · **best single model (Scribe) 0.150**.
+single-Deepgram 0.291 · whole-vote 0.240 · token-brain 0.172 · **best single model (Scribe) 0.068 mean** (0.150 was Scribe's single worst clip, propernouns — bug-hunt 2026-07-12 doc audit).
 
 **Operating principle (proven 2026-07-07, 4-for-4):** every "impossible" so far was an unfound bug
 (broken Arabic ruler, unintelligible Urdu TTS, missing reliability row, CER-vs-WER unit mismatch).
@@ -22,6 +22,12 @@ the consensus already wins (accent_noise 0.0).
   crosstalk 0.0, propernouns 0.15. Mechanism: reliability-anchored backbone (`_anchor_name`: start from
   the most-accurate witness, refine word-by-word) + prune-garbage-then-reliability word decision
   (`_decide_word`). Note: RELIABILITY priors are English-bench-derived (global) — Phase II calibrates per language.
+
+**Phase I regression + restoration (2026-07-12):** the 2.6M-name gazetteer (97b04a4) silently
+broke the flagship — `_decide_word`'s keep-backbone guard used `_is_known` (dict OR gazetteer), so
+junk name-surfaces ('Shevon') shielded backbone garbles from the family majority; HEAD measured
+consensus == scribe (0.0842). Fixed to `_is_word` (dictionary only): consensus 0.0667 < scribe
+0.0842 on the current (stricter) ruler — the flagship claim is TRUE again and now pinned by test.
 
 ## Phase II — Measure every language ✅ DONE (2026-07-07) — one ruler, 13 languages
 - `metrics.cer` = the cross-language ruler (space-free per-char, same normalization as wer);
@@ -55,7 +61,7 @@ numbers/dosage/format/verdict = pure code, never a model (done, locked).
 ### III.1 Contested-span re-ask loop ✅ SHIPPED (2026-07-07, live-measured)
 Cut just the uncertain-span seconds; two fresh independent ears must agree; adoption guards
 (plausible / never-downgrade-known-name / no-fragment) each exist because their absence measurably
-failed. tr/ar/ur hard clips: 0.238 -> 0.231 WER, 0 regressions ('White' -> 'Bay'). TIER 3 in
+failed. tr/ar/ur hard clips, FINAL guarded config: 0.2383 -> 0.2313 WER, 2 improved, 0 regressed ('White'->'Bay'). (An intermediate un-guarded run measured 0.227/3-improved — superseded; the guarded number is canonical. Doc audit 2026-07-12.) TIER 3 in
 consensus.transcribe. Gemini free tier 429s often — fallback chain covers it; a paid key steadies it.
 
 #### Original spec

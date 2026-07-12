@@ -154,6 +154,18 @@ _CHOP_WINDOW_S = 110
 _CHOP_OVERLAP_S = 20
 
 
+def _join_cjk(toks):
+    """Rejoin per-character CJK tokens space-free, keeping a real space between two adjacent
+    Latin/ASCII tokens ('Nakamura san' stays two words; '患者' rejoins seamlessly)."""
+    out = ""
+    for t in toks:
+        if out and out[-1].isascii() and out[-1].isalnum() and t[:1].isascii() and t[:1].isalnum():
+            out += " " + t
+        else:
+            out += t
+    return out
+
+
 def _splice(a, b, win=80, min_anchor=4):
     """Stitch chunk-read b onto a by removing the duplicated overlap at the seam.
 
@@ -165,8 +177,16 @@ def _splice(a, b, win=80, min_anchor=4):
     Primary: find the exact suffix-of-A == prefix-of-B overlap (immune to internal repeats) and
     drop that many words from B. Fallback: if ASR variance breaks the exact match, trim B's
     duplicated head only when the fuzzy match starts B's head; otherwise keep ALL of A and ALL of
-    B and flag the seam (seam_ok=False) for re-listen. Words are never silently lost."""
-    aw, bw = a.split(), b.split()
+    B and flag the seam (seam_ok=False) for re-listen. Words are never silently lost.
+
+    Space-free scripts tokenize per CHARACTER via _wtok (bug-hunt 2026-07-12: .split() made
+    unspaced Japanese ONE token per side, so no seam could EVER splice — every long-audio seam
+    kept the full ~20s overlap duplicated, and it survived into final output whenever the
+    chopped witness anchored the vote). The join is space-free again for those scripts."""
+    atoks, btoks = _wtok(a), _wtok(b)
+    cjk = len(atoks) > len(a.split()) or len(btoks) > len(b.split())
+    aw, bw = (atoks, btoks) if cjk else (a.split(), b.split())
+    join = _join_cjk if cjk else " ".join
     if not aw:
         return b, True
     if not bw:
@@ -177,17 +197,17 @@ def _splice(a, b, win=80, min_anchor=4):
     cap = min(len(al), len(bl))
     for k in range(cap, min_anchor - 1, -1):
         if al[-k:] == bl[:k]:
-            return " ".join(aw + bw[k:]), True       # trim B's duplicated prefix; A untouched
+            return join(aw + bw[k:]), True            # trim B's duplicated prefix; A untouched
     # fuzzy fallback (ASR variance): trim B's head only if the match IS B's head; never cut A
     sm = difflib.SequenceMatcher(None, al, bl)
     m = sm.find_longest_match(0, len(al), 0, len(bl))
     if m.size >= min_anchor and m.b == 0:
-        return " ".join(aw + bw[m.size:]), True       # drop only B's duplicated head
+        return join(aw + bw[m.size:]), True           # drop only B's duplicated head
     # Reaching here means the overlap was NOT cleanly at B's head (leading ASR artifact, m.b>0) or
     # no anchor at all. We keep everything (never lose words), but the seam is NOT clean — the
     # overlap is still duplicated in B. Return False so the seam is counted bad AND routed to the
     # bridge repair, instead of certifying duplicated text as clean.
-    return " ".join(aw + bw), False
+    return join(aw + bw), False
 
 
 def _relisten(name, cp, lang):
@@ -696,7 +716,12 @@ def _decide_word(wl, cands, surf_i, fam_i, wit_i, atoks, i, lang):
     # numbers, 'siebenundvierzigtausend' vs '47.000' — same value; number FORMAT is a downstream
     # style/site decision, not the vote's job). Genuine homophone-among-valid-words is left to the
     # review-tier scanners, never silently changed here.
-    if _is_known(surf_i[wl], lang):
+    # DICTIONARY WORDS ONLY (bug-hunt 2026-07-12): this guard used _is_known, whose 2.6M-name
+    # gazetteer contains a surface for almost any garble ('Shevon') — backbone name-garbles got
+    # dictionary-word protection and the independent-family majority ('Siobhan' x2 families)
+    # was never consulted. That single check silently regressed the flagship consensus-beats-
+    # best-single result (0.050 -> 0.084 == scribe). Names fall through to the majority below.
+    if _is_word(surf_i[wl], lang):
         return wl
     # backbone is NOT a dictionary word (a NAME, or uncertain): a real independent-family majority
     # of a DIFFERENT plausible word overrides; else a more-reliable plausible candidate wins.
@@ -781,8 +806,13 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
         tok = reask_contested(audio_path, reads, lang, tok)
     except Exception:
         pass
-    return {"text": tok["text"], "uncertain_spans": tok["uncertain_spans"],
-            "normal_text": normal_text,
+    # DELIVERY GLUE (bug-hunt 2026-07-12): the vote's internal per-char CJK tokens are space-
+    # joined; runner._clean repaired ja only on ITS path, while translate/CCSL consumed this
+    # text raw and shipped '彼 は 三 月'. Glue here so every consumer gets real orthography.
+    def _deliver(t):
+        return _join_cjk(_wtok(t)) if t and len(_wtok(t)) > len(t.split()) else t
+    return {"text": _deliver(tok["text"]), "uncertain_spans": tok["uncertain_spans"],
+            "normal_text": _deliver(normal_text),
             "slow_changed": _norm_ws(tok["text"]) != _norm_ws(normal_text),
             "reads": reads, "lang": lang, "domain": domain,
             "slowed": slowed_used, "agreement": _majority(reads)}
