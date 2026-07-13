@@ -299,6 +299,33 @@ def phowhisper_local(audio_path, language=None):  # pragma: no cover
         return ""
 
 
+_VAANI = None
+
+
+def vaani_local(audio_path, language=None):  # pragma: no cover
+    """Vaani-Hindi (ARTPARK-IISc/whisper-large-v3-vaani-hindi) — Hindi-specialized Whisper
+    fine-tuned on Indian speech. AUDITIONED 2026-07-12 on 10 real FLEURS clips: solo CER 0.029
+    vs the full roster consensus 0.084 (3x better, 6 perfect clips) — the first specialist to
+    WIN an audition. Free, local (~3GB). Returns '' on any failure."""
+    global _VAANI
+    try:
+        from transformers import pipeline
+    except Exception:
+        return ""
+    if _VAANI is None:
+        try:
+            _VAANI = pipeline("automatic-speech-recognition",
+                              model="ARTPARK-IISc/whisper-large-v3-vaani-hindi",
+                              chunk_length_s=30)
+        except Exception:
+            return ""
+    try:
+        r = _VAANI(audio_path, generate_kwargs={"language": "hi"})
+        return (r.get("text", "") if isinstance(r, dict) else str(r)).strip()
+    except Exception:
+        return ""
+
+
 _SEAMLESS = {}
 
 

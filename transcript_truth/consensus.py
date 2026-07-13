@@ -30,7 +30,7 @@ ROSTER = {
     "ko": ["deepgram", "scribe", "gemini", "hf"],   # Tier-2: Korean, all read it
     "vi": ["deepgram", "scribe", "gemini", "phowhisper"],   # Tier-2: + Vietnamese-specialized PhoWhisper
     "ar": ["deepgram", "scribe", "gemini", "hf", "wav2vec2", "mms"],  # Tier-3: + Whisper-large-v3 + XLSR-arabic (independent CTC family; every cloud witness measured bad 0.31-0.44)
-    "hi": ["deepgram", "scribe", "gemini", "hf", "mms"],    # Tier-3: + Whisper + MMS
+    "hi": ["vaani", "deepgram", "scribe", "gemini", "hf", "mms"],  # vaani: AUDITION WINNER 2026-07-12 (solo 0.029 vs consensus 0.084 on real speech) — hi anchor
     "ur": ["scribe", "gemini", "hf", "mms"],                # Tier-3: + Whisper + MMS (Deepgram ur weaker)
     # add "uk" extras (parakeet-uk/nemotron) here once the NIM function-id is wired
 }
@@ -44,6 +44,7 @@ FAMILY = {
     "hf": "whisper", "whisper": "whisper",          # same base — never double-count
     "mms": "mms", "seamless": "seamless",
     "phowhisper": "phowhisper", "wav2vec2": "wav2vec2",   # specialized -> own family
+    "vaani": "vaani",                                      # hi-specialized fine-tune -> own family
 }
 
 # Free LOCAL witnesses folded in ON-DEMAND (only when the cloud roster doesn't reach an
@@ -122,6 +123,9 @@ def _witness_call(name, audio_path, lang):
     if name == "phowhisper": return witness_pho(audio_path, lang)
     if name == "seamless":  return witness_seamless(audio_path, lang)
     if name == "wav2vec2":  return witness_wav2vec2(audio_path, lang)
+    if name == "vaani":
+        from .witness import vaani_local
+        return vaani_local(audio_path, language=lang)
     return ""
 
 

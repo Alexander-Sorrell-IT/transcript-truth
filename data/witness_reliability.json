@@ -42,7 +42,8 @@
   "mms": 0.693,
   "whisper": 0.707,
   "seamless": 0.0,
-  "gemini": 0.683
+  "gemini": 0.683,
+  "vaani": 0.971
  },
  "ja": {
   "deepgram": 0.911,
