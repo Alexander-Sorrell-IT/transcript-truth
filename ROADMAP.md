@@ -26,7 +26,7 @@ Legend: ✅ done · 🟡 partial/proven-but-not-wired · ⬜ planned · ⭐ pre-
 - ✅ ONE cross-language ruler: `metrics.cer` (per-character, space-free, same normalization as wer) — wer's CJK-per-char vs word tokenization made ja/ko incomparable to the rest. Parity map (recomputed from bench/full_parity.json, 2026-07-12): ko 0.017 · fr/pt/uk/de/ru/ja/es 0.031-0.045 · ar 0.076 · tr 0.081 · hi 0.084 · ur 0.097 · vi 0.102
 - ⬜ Specialized witness models per hard language
 - ⬜ Adversarial gap-finding agents (worst-case battery)
-- ⬜ Translation (EN→X) with mechanical QA + surface-for-review faithfulness
+- 🟡 Translation (X→EN) — core BUILT + adversarially hardened + 30 clips run; NOT yet scored vs refs (Phase 8 task 1)
 
 ## Architecture: TWO orthogonal axes — language × domain
 A transcript is audited with a **language** plugin (en/fr/ja… — lexicon + language rules + roster)
@@ -124,11 +124,57 @@ Diarize → **per-turn language-ID** (Phase 2 hook) → route each turn to its l
 **Goal:** hunt every worst case, make it bulletproof.
 Multi-agent harness: each agent probes one failure mode against the Phase-1 battery, finds gaps, reports; loop-until-dry. Gaps → prioritized fixes back into profiles/rosters. *(Multi-agent = real token cost; run with explicit opt-in.)*
 
-## Phase 8 — Translation (EN → X)  *(parallel track)*
-**Goal:** the inverse — translation, with the same verdict philosophy.
-1. **Translation-QA profile** = mechanical deterministic checks: numbers/names preserved, no untranslated segments, terminology-glossary adherence, length sanity.
-2. Per-language translation profile.
-3. Semantic faithfulness = **surface-for-review** (model proposes, bilingual/human verifies) — never in the verdict path.
+## Phase 8 — Translation (X → EN)  🟡 CORE BUILT, NOT YET PROVEN  *(parallel track)*
+**Goal:** the inverse — translation, with the same verdict philosophy (models propose, deterministic
+code owns the verdict, uncertainty is surfaced).
+
+**Already built (2026-07-11, was mislabeled ⬜):** `translate.py` v1.1 — TWO independent witnesses
+(SeamlessM4T S2TT straight from audio + Gemini over the measured consensus transcript); deterministic
+survival checks (number VALUES + Latin-script proper names, both-direction, unverifiable-never-passes);
+cross-witness agreement as the honest-uncertainty signal (`_AGREE_FLOOR=0.55`); deterministic primary
+pick with truncation guard. Adversarially hardened (14-defect review), 14 tests green, 30 clips run
+through `bench/translation_bench.py`. So this is **finish + wire + measure**, not build.
+
+### The gap map (sequenced — do in order)
+1. ✅ **SCORE the bench (the gate — DONE 2026-07-17).** Recovered the missing English references via
+   FLoRes IDs (`bench/fleurs_en_refs.py`, 60 refs: tr/ar/hi/ur/vi/ja ×10) and scored the 30-clip bench
+   (`bench/translation_score.py` → `translation_scorecard.json`). **Ruler finding:** WER over-penalizes
+   valid translation (a faithful paraphrase scored WER 0.54), so added **chrF** (MT-standard char-n-gram
+   F, paraphrase-tolerant) as the honest ruler; WER kept as a strictness signal.
+   **Honest result: overall chrF 0.618** — ar 0.74 · hi 0.72 · tr 0.66 · ur 0.57 · vi 0.55 · ja 0.48
+   (same difficulty ordering as the transcription map). **The uncertainty flag WORKS:** confident clips
+   chrF 0.656 vs flagged 0.580. Weak spots = ja/vi/ur + unflagged Latin-name errors ("Spring Book" for
+   "Springboks") → the exact target of tasks 3–4 below.
+2. ✅ **Wire `translate` into the CLI** (DONE 2026-07-17) — `--translate=<tgt>` (and bare `--translate`)
+   in `cli.py`: audio → `translate()` → `_print_translation_receipt` surfacing the text, the FLAGGED
+   status, the failed/unverifiable checks, and the review surface. Receipt is honest — when checks were
+   UNVERIFIABLE it says "cleared by cross-witness agreement (some checks unverifiable)", never "passed".
+   Tests: `tests/test_translate_cli.py` (offline, translate() monkeypatched).
+3. 🟡 **Non-Latin-script name survival** — MACHINE BUILT (`translit.py` + `survival_checks` non-Latin
+   branch + surface-for-review `review` key in `translate()`), honestly reports `names_verifiable=False`
+   where no reliable romanizer exists. **NOT yet unlocked:** needs `pykakasi` (ja), `indic_transliteration`
+   (hi), and a fuzzy consonant-skeleton matcher for `camel_tools` (ar/ur, which romanizes vowel-less —
+   محمد→mHmd — so exact match would mass-FP). Until installed+verified-zero-FP, the cross-witness control
+   carries name errors (it already does: confident chrF 0.656 vs flagged 0.580). The FP risk is real —
+   unlock only behind an adversarial FP check.
+4. ✅ **Per-language translation-QA layer** (DONE 2026-07-17) — `translation_qa.py`: `run_qa(source,
+   translation, src, tgt)` with source-script-leak (parenthetical-citation-aware), same-script
+   untranslated-passthrough (closes the es→en silent-green), word-boundary glossary
+   (`register_translation_layer`), and length-ratio sanity (wide dense-script bands). Deterministic,
+   unverifiable-never-fake-passes. Guarded-merged into `translate()`'s review surface. Tests:
+   `tests/test_translation_qa.py` (16, incl. 4 regression pins for verifier-found defects).
+5. ✅ **Surface-for-review** (DONE 2026-07-17) — `translate()` returns a structured `review` list naming
+   the exact reasons a clip is flagged (dropped/introduced numbers, missing names, unverifiable checks,
+   low agreement, QA flags). Semantic faithfulness stays OUT of the verdict path — this only surfaces
+   what a bilingual reviewer should check.
+6. 🟡 Tests shipped with each piece (49/49 translation tests green; full suite 438 pass). Battery
+   scenario for translation lives in `bench/translation_bench.py` + `translation_score.py` (chrF gate).
+
+**Built via an ultracode workflow (2026-07-17):** design → 3 parallel builders (disjoint files) →
+adversarial verify; every verifier finding reconciled + regression-tested. Remaining real work = the
+task-3 translit-lib unlock (behind an FP gate) + the ja/vi/ur specialized-witness path (like transcription
+Phase 5). **Honest sequencing:** English transcription is the exam + income; translation is the parallel
+track — now PROVEN (chrF 0.618) and CLI-usable, not just built.
 
 ---
 

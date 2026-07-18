@@ -96,3 +96,45 @@ def test_primary_tie_goes_to_transcript_witness_not_shorter():
     primary, _, alt, _ = _pick_primary("The meeting on Tuesday covered the budget in detail",
                                        c_full, "The meeting", c_trunc)
     assert primary.startswith("The meeting on Tuesday")
+
+
+# ----------------------------------------------- QA layer drives the HEADLINE verdict, not just review
+# (advisor-caught seam: a run_qa hard flag must set flagged=True, else the QA layer is decorative.)
+import transcript_truth.translate as _T
+
+
+def _patch_witnesses(monkeypatch, gem, sml):
+    monkeypatch.setattr(_T, "gemini_translate", lambda *a, **k: gem)
+    monkeypatch.setattr(_T, "seamless_translate", lambda *a, **k: sml)
+
+
+def test_translate_flags_same_script_passthrough_at_headline(monkeypatch):
+    """es->en verbatim passthrough: numbers/names trivially survive and witnesses AGREE, so the
+    old survival+agreement policy would ship flagged=False. The QA passthrough control must flip it."""
+    src = "El comité revisó las propuestas durante la reunión de la mañana en la ciudad."
+    _patch_witnesses(monkeypatch, src, src)          # both witnesses echo the untranslated source
+    r = _T.translate("x.wav", "es", "en", transcript=src)
+    assert r["flagged"] is True
+    assert any(x["check"] == "untranslated_passthrough" for x in r["review"])
+
+
+def test_translate_flags_source_script_leak_at_headline(monkeypatch):
+    """A translation with an untranslated native-script run must flag at the headline, even if the
+    two witnesses happen to agree on the leaked output."""
+    src = "قال المتحدث الرسمي إن الاجتماع سيعقد غدا لمناقشة الاتفاق الجديد بين الدول."
+    leaked = "The spokesman said the الاجتماع will be held tomorrow to discuss the agreement."
+    _patch_witnesses(monkeypatch, leaked, leaked)
+    r = _T.translate("x.wav", "ar", "en", transcript=src)
+    assert r["flagged"] is True
+    assert any(x["check"] == "source_script_leak" for x in r["review"])
+
+
+def test_translate_clean_translation_not_flagged_by_qa(monkeypatch):
+    """A genuine, well-sized es->en translation must NOT be false-flagged by the QA layer."""
+    src = "El comité revisó las propuestas durante la reunión de la mañana."
+    good = "The committee reviewed the proposals during the morning meeting."
+    _patch_witnesses(monkeypatch, good, good)
+    r = _T.translate("x.wav", "es", "en", transcript=src)
+    assert not any(x["check"] in ("untranslated_passthrough", "source_script_leak")
+                   for x in r["review"])
+    assert r["flagged"] is False

@@ -92,13 +92,26 @@ def survival_checks(source_text: str, translation: str,
     nums_verifiable = spelled_support(src_lang) and spelled_support(tgt_lang)
 
     latin_source = bool(_HAS_LATIN.search(source_text))
-    src_names = _latin_names(source_text, src_lang) if latin_source else set()
-    missing_names = sorted(n for n in src_names if not _name_survives(n, translation))
+    if latin_source:
+        # Latin source: reliable capitalized-gazetteer extraction, exact diacritic-folded survival.
+        src_names = _latin_names(source_text, src_lang)
+        missing_names = sorted(n for n in src_names if not _name_survives(n, translation))
+        names_verifiable = True
+    else:
+        # Non-Latin source (ar/hi/ur/ja): romanize source names and fuzzy-match by consonant
+        # skeleton (translit.name_survival_translit owns the never-fake-pass gate). names_verifiable
+        # is True ONLY when a faithful romanizer + trustworthy identifier exist for the language;
+        # otherwise it stays False and src_names is empty (no drift to passed/total).
+        from .translit import name_survival_translit
+        _tr = name_survival_translit(source_text, translation, src_lang, tgt_lang)
+        src_names = set(_tr["checked"])
+        missing_names = _tr["missing_names"]
+        names_verifiable = _tr["verifiable"]
 
     total = sum(src_nums.values()) + len(src_names)
     passed = total - len(missing_nums) - len(missing_names)
     return {"ok": not missing_nums and not introduced and not missing_names,
-            "numbers_verifiable": nums_verifiable, "names_verifiable": latin_source,
+            "numbers_verifiable": nums_verifiable, "names_verifiable": names_verifiable,
             "missing_numbers": missing_nums, "introduced_numbers": introduced,
             "missing_names": missing_names, "passed": passed, "total": total}
 
@@ -123,6 +136,85 @@ def agreement(a: str, b: str, lang: str = "en") -> float:
 # below this cross-witness agreement, the translation ships FLAGGED for review — same 90-95%
 # honest-uncertainty philosophy as transcription (never silently guess)
 _AGREE_FLOOR = 0.55
+
+
+def _build_review(checks: dict | None, agree: float, have_both: bool) -> list[dict]:
+    """SURFACE-FOR-REVIEW (Phase 8 task 5): a structured, human-readable list of the SPECIFIC
+    reasons a bilingual reviewer should look at this clip. This is NOT the verdict path — it only
+    explains what the deterministic checks found or could not check; semantic faithfulness never
+    enters here. Each item: {check, severity (critical|moderate|minor|review), evidence, detail}."""
+    review: list[dict] = []
+    if checks is None:
+        review.append({"check": "no_output", "severity": "critical", "evidence": "",
+                       "detail": "no witness produced a translation — nothing to verify"})
+        return review
+    for n in checks.get("missing_numbers", []):
+        review.append({"check": "missing_number", "severity": "critical", "evidence": str(n),
+                       "detail": f"number {n} in the source is absent from the translation"})
+    for n in checks.get("introduced_numbers", []):
+        review.append({"check": "introduced_number", "severity": "critical", "evidence": str(n),
+                       "detail": f"number {n} appears in the translation but not the source"})
+    for nm in checks.get("missing_names", []):
+        review.append({"check": "missing_name", "severity": "moderate", "evidence": str(nm),
+                       "detail": f"proper name {nm!r} did not survive into the translation"})
+    if checks.get("numbers_verifiable") is False:
+        review.append({"check": "numbers_unverifiable", "severity": "review", "evidence": "",
+                       "detail": "spelled-number support missing for this language pair — number "
+                                 "survival could not be mechanically checked"})
+    if checks.get("names_verifiable") is False:
+        review.append({"check": "names_unverifiable", "severity": "review", "evidence": "",
+                       "detail": "no reliable transliterator/identifier for this non-Latin source "
+                                 "— name survival could not be mechanically checked"})
+    if have_both and agree < _AGREE_FLOOR:
+        review.append({"check": "low_agreement", "severity": "moderate", "evidence": str(agree),
+                       "detail": f"the two independent witnesses agree only {agree} (< {_AGREE_FLOOR})"})
+    if not have_both:
+        review.append({"check": "lone_witness", "severity": "review", "evidence": "",
+                       "detail": "only one witness produced output — no cross-witness control"})
+    return review
+
+
+# run_qa flag kinds that are CONFIDENT positives — a real, mechanically-detected defect in the
+# primary translation. These drive the headline `flagged` verdict, not just the review surface.
+_QA_HARD_KINDS = {"source_script_leak", "untranslated_passthrough", "glossary", "length_ratio"}
+_QA_SEVERITY = {"source_script_leak": "critical", "untranslated_passthrough": "critical",
+                "glossary": "moderate", "length_ratio": "review"}
+
+
+def _run_qa_safe(source_text: str, translation: str, src_lang: str, tgt_lang: str):
+    """GUARDED optional call to the parallel translation_qa.run_qa module (builder B). Its absence
+    or failure must NEVER break translate() — returns None then. Otherwise the run_qa dict."""
+    try:
+        from .translation_qa import run_qa
+    except Exception:
+        return None
+    try:
+        return run_qa(source_text, translation, src_lang, tgt_lang)
+    except Exception:
+        return None
+
+
+def _qa_has_hard_flag(qa) -> bool:
+    """True when run_qa found a confident defect in the PRIMARY translation (leak / untranslated
+    passthrough / glossary miss / gross length anomaly) — this must flip the headline verdict, so
+    the QA layer is a real control, not a decorative review line."""
+    return bool(qa and any(f.get("kind") in _QA_HARD_KINDS for f in qa.get("flags", [])))
+
+
+def _merge_qa_flags(review: list[dict], qa) -> None:
+    """Fold an already-computed run_qa result into the review surface (dedup on check+evidence).
+    run_qa emits {kind, evidence, note}; map onto the review shape {check, severity, evidence, detail}."""
+    if not qa:
+        return
+    seen = {(r.get("check"), r.get("evidence")) for r in review}
+    for fl in qa.get("flags", []):
+        kind = fl.get("kind", "qa")
+        key = (kind, fl.get("evidence"))
+        if key in seen:
+            continue
+        seen.add(key)
+        review.append({"check": kind, "severity": _QA_SEVERITY.get(kind, "review"),
+                       "evidence": fl.get("evidence", ""), "detail": fl.get("note", "")})
 
 
 def seamless_translate(audio_path: str, tgt_lang: str = "en") -> str:
@@ -187,8 +279,8 @@ def translate(audio_path: str, src_lang: str, tgt_lang: str = "en",
     both = [t for t in (t_gem, t_sml) if t]
     if not both:
         return {"text": "", "alt": "", "agreement": 0.0, "flagged": True,
-                "checks": None, "checks_alt": None, "transcript": transcript,
-                "src_lang": src_lang, "tgt_lang": tgt_lang}
+                "checks": None, "checks_alt": None, "review": _build_review(None, 0.0, False),
+                "transcript": transcript, "src_lang": src_lang, "tgt_lang": tgt_lang}
 
     c_gem = survival_checks(transcript, t_gem, src_lang, tgt_lang) if t_gem else None
     c_sml = survival_checks(transcript, t_sml, src_lang, tgt_lang) if t_sml else None
@@ -206,8 +298,21 @@ def translate(audio_path: str, src_lang: str, tgt_lang: str = "en",
     # (unverifiable AND lone-witness/low-agreement) flags.
     have_both = bool(t_gem and t_sml)
     checkable = checks["numbers_verifiable"] and checks["names_verifiable"]
+
+    # translation-QA on the PRIMARY (source-script leak, untranslated passthrough, glossary,
+    # length anomaly). A confident QA defect is its OWN control — it drives the headline verdict,
+    # not just the review surface (else an es->en verbatim passthrough, where numbers/names
+    # trivially "survive" and the witnesses agree, would ship a silent green).
+    qa = _run_qa_safe(transcript, primary, src_lang, tgt_lang)
+    qa_flagged = _qa_has_hard_flag(qa)
+
     flagged = (not checks["ok"]) or (have_both and agree < _AGREE_FLOOR) \
-        or not have_both or (not checkable and not have_both)
+        or not have_both or (not checkable and not have_both) or qa_flagged
+
+    # SURFACE-FOR-REVIEW: structured reasons a bilingual reviewer should check (additive to the
+    # verdict). Fold in the already-computed run_qa flags (guarded — module absence never breaks).
+    review = _build_review(checks, agree, have_both)
+    _merge_qa_flags(review, qa)
     return {"text": primary, "alt": alt, "agreement": agree, "flagged": flagged,
-            "checks": checks, "checks_alt": checks_alt, "transcript": transcript,
-            "src_lang": src_lang, "tgt_lang": tgt_lang}
+            "checks": checks, "checks_alt": checks_alt, "review": review,
+            "transcript": transcript, "src_lang": src_lang, "tgt_lang": tgt_lang}
