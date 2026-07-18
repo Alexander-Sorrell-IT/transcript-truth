@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+"""check — dead-simple QA on a finished transcript before you submit it.
+
+    check mytranscript.txt
+
+Auto-detects the language (Japanese vs English) and runs the GoTranscript format check, printing
+every fixable mistake. It does NOT change or write your transcript — it only reads it and points at
+problems. Add `--fix` to also write a cleaned copy (<file>.thoth.txt) with the deterministic fixes.
+"""
+import os
+import re
+import sys
+
+REPO = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, REPO)
+
+_JP = re.compile(r"[぀-ゟ゠-ヿ一-鿿々ー]")
+
+
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    files = [a for a in argv if not a.startswith("-")]
+    passthru = [a for a in argv if a.startswith("-")]
+    if not files:
+        print("usage: check <transcript.txt> [--fix]")
+        return 2
+    path = files[0]
+    if not os.path.exists(path):
+        print(f"no such file: {path}")
+        return 2
+
+    text = open(path, encoding="utf-8").read()
+    jp = len(_JP.findall(text))
+    profile, lang = ("ja", "Japanese") if jp >= 3 else ("default", "English")
+    print(f"  [check] {lang} transcript — running GoTranscript QA "
+          f"(profile={profile}, site=gotranscript)\n")
+
+    from transcript_truth.cli import main as cli_main
+    return cli_main([path, f"--profile={profile}", "--site=gotranscript", *passthru])
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
