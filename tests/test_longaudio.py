@@ -349,7 +349,7 @@ def test_medical_domain_core_plus_english_layer():
 # --- Phase 2: language routing (pure, no API) ---
 def test_profile_for_maps_languages():
     from transcript_truth import language as L
-    assert L.profile_for("ja") == "default" and L.profile_for("en") == "en"
+    assert L.profile_for("ja") == "ja" and L.profile_for("en") == "en"   # ja is now first-class
     assert L.profile_for("ko") == "ko" and L.profile_for("fr") == "fr"
     assert L.profile_for("en-US") == "en"                  # locale stripped
     assert L.profile_for("zz") == "default"                # unknown -> default
@@ -366,7 +366,7 @@ def test_every_language_with_a_roster_has_a_profile():
     from transcript_truth import language as L
     from transcript_truth.consensus import ROSTER
     for lang in ROSTER:
-        assert L.profile_for(lang) != "default" or lang == "ja", f"{lang} routes nowhere"
+        assert L.profile_for(lang) != "default", f"{lang} routes nowhere"   # ja now included
 
 
 if __name__ == "__main__":

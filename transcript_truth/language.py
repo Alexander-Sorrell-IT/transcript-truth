@@ -14,7 +14,7 @@ _DEVA = re.compile(r"[ऀ-ॿ]")       # Devanagari (Hindi)
 
 # lang code -> the deterministic profile that audits it (see transcript_truth.profiles).
 # New languages auto-route here the moment their profile is registered.
-PROFILE_FOR = {"ja": "default", "en": "en", "es": "es", "ru": "ru", "uk": "uk",
+PROFILE_FOR = {"ja": "ja", "en": "en", "es": "es", "ru": "ru", "uk": "uk",
                "de": "de", "fr": "fr", "pt": "pt", "tr": "tr", "vi": "vi",
                "ko": "ko", "ar": "ar", "hi": "hi", "ur": "ur"}
 

@@ -56,7 +56,7 @@ def domain_languages(domain_name: str) -> list:
 
 
 # --- Part 1: multi-language auto-extend — coverage map + scaffolder ---
-# Meta/style profiles that are NOT reusable language plugs. (Japanese currently rides `default`.)
+# Meta/style profiles that are NOT reusable language plugs. (Japanese is now a first-class `ja` plug.)
 _NON_LANGUAGE_PROFILES = {"default", "legal", "ccsl", "me", "agent"}
 
 
