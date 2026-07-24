@@ -1,0 +1,15 @@
+# Core runtime — everything the QA engine + test suite need. Heavy ASR/diarization model
+# packages live in requirements-models.txt (install via setup.sh --models); every model import
+# in the engine is lazy + graceful, so the core works without them (cloud witnesses only).
+sudachipy>=0.6
+sudachidict_core
+wordfreq[cjk]>=3.0
+pyspellchecker>=0.8
+num2words>=0.5
+word2number>=1.1
+unidecode>=1.3
+pymorphy3>=2.0
+pymorphy3-dicts-uk
+soundfile>=0.12
+kiwipiepy>=0.18
+pytest>=8.0

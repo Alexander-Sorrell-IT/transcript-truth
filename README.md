@@ -9,6 +9,20 @@ Full system map + model list: **[ARCHITECTURE.md](ARCHITECTURE.md)**.
 
 ---
 
+## Install on a new machine
+
+```bash
+git clone https://github.com/Alexander-Sorrell-IT/transcript-truth.git
+cd transcript-truth
+bash setup.sh --models     # deps + bundled data + free local models + full self-test
+# then paste your API keys into .env (cloud witnesses; optional — local models need none)
+```
+
+Works CPU-only (no GPU required): local Whisper auto-selects **faster-whisper int8** on plain
+CPUs (16GB+ RAM fine) and **mlx-whisper** (Metal) on Apple Silicon. Windows: use WSL.
+Japanese data (JMdict-common + JMnedict names + collocations + pitch accent, © EDRDG CC BY-SA)
+ships in the repo; `setup.sh` fetches the optional full JMdict for max coverage.
+
 ## The two halves
 
 **1. Transcription core** — audio → accurate text.

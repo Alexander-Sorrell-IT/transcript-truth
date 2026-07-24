@@ -1,0 +1,17 @@
+# Local model tier — the free witnesses that run on YOUR machine (no API, no credits).
+# CPU-only boxes (e.g. the 64GB HP): faster-whisper int8 is the local Whisper backend — no GPU
+# needed, RAM is the only real requirement. Apple Silicon gets mlx-whisper instead (Metal GPU);
+# the engine auto-picks: mlx first, faster-whisper fallback (witness.whisper_local).
+faster-whisper>=1.0
+mlx-whisper; sys_platform == "darwin" and platform_machine == "arm64"
+silero-vad>=5.0
+soundfile
+torch
+transformers
+sentencepiece
+huggingface_hub
+pyannote.audio>=3.1
+stanza
+pykakasi
+camel-tools
+zeyrek

@@ -11,12 +11,10 @@ __pycache__/
 # Backups
 *.bak
 
-# Large downloadable reference data (JMdict + derived catalogs; re-obtainable, kept on disk only)
+# Full JMdict (117MB) is fetch-on-demand (scripts/fetch_data.py); the common slice + the derived
+# ja catalogs (name surfaces / collocations / pitch accent) are BUNDLED so a fresh clone does
+# Japanese with zero fetches — they have no in-repo builder, losing them = losing ja.
 data/jmdict-eng-3.6.2.json
-data/jmdict-eng-common-3.6.2.json
-data/jp_name_surfaces.json
-data/jp_pitch_accent.json
-data/jp_collocations.json
 *.thoth.txt
 
 # multilang build artifacts (large/raw/scratch)
