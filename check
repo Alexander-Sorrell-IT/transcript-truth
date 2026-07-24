@@ -2,10 +2,17 @@
 """check — dead-simple QA on a finished transcript before you submit it.
 
     check mytranscript.txt
+    check mytranscript.txt --ship [audio]
+    check --ears[=<lang>]          (default ja — dial every roster ear BEFORE taking a job)
 
 Auto-detects the language (Japanese vs English) and runs the GoTranscript format check, printing
 every fixable mistake. It does NOT change or write your transcript — it only reads it and points at
 problems. Add `--fix` to also write a cleaned copy (<file>.thoth.txt) with the deterministic fixes.
+
+--ship runs the SHIP GATE first (transcript_truth.ship): while any draft uncertainty marker is
+unresolved (⚠ span, ?speaker label, DRAFT/verify header, "u" ear entry) it prints every blocker
+and exits 3 WITHOUT a grade — nothing ships until zero flags. The optional [audio] arg is the
+file to ear-verify against; the gate itself never listens (deterministic), it only refuses.
 """
 import os
 import re
@@ -21,8 +28,17 @@ def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     files = [a for a in argv if not a.startswith("-")]
     passthru = [a for a in argv if a.startswith("-")]
+
+    # --ears: pre-job witness liveness preflight — no transcript involved, so it runs
+    # BEFORE the file requirement. Dial every roster ear against a real speech sample;
+    # exit 1 if any ear is dead (the hf-402 lesson: never accept a paid job deaf).
+    ears = next((a for a in passthru if a == "--ears" or a.startswith("--ears=")), None)
+    if ears:
+        from transcript_truth.cli import main as cli_main
+        return cli_main([ears])
+
     if not files:
-        print("usage: check <transcript.txt> [--fix]")
+        print("usage: check <transcript.txt> [--fix]  |  check --ears[=<lang>]")
         return 2
     path = files[0]
     if not os.path.exists(path):
@@ -30,6 +46,29 @@ def main(argv=None):
         return 2
 
     text = open(path, encoding="utf-8").read()
+
+    if "--ship" in passthru:
+        # SHIP GATE runs FIRST, before any banner or QA output. T4791286 shipped because a
+        # visible-but-toothless draft got a grade printed under it and the grade read as
+        # permission — so on refusal we print the blockers ONLY: no grade, no QA receipt,
+        # exit 3 (distinct from 2 = usage error). files[1], when given, is the audio to
+        # ear-verify against; the gate never opens it (deterministic — it only refuses).
+        from transcript_truth.ship import load_ear, ship_check
+        gate = ship_check(text, load_ear(path))
+        if not gate["ok"]:
+            n = len(gate["blockers"])
+            print(f"\n  ✗ SHIP GATE — NOT SUBMITTABLE — {n} unresolved")
+            print("  " + "=" * 60)
+            for b in gate["blockers"]:
+                print(f"  L{b['line']:<4} [{b['kind']}] {b['evidence']}")
+            print("  " + "=" * 60)
+            print(f"  NOT SUBMITTABLE — {n} unresolved. No grade is printed for an")
+            print("  unshippable file. Ear-verify every ⚠ (log k/e in <file>.ear.json),")
+            print("  confirm every ?speaker, strip draft headers — then re-run.\n")
+            return 3
+        print("  [ship] gate clear — 0 unresolved markers; proceeding to QA\n")
+        passthru = [a for a in passthru if a != "--ship"]
+
     jp = len(_JP.findall(text))
     profile, lang = ("ja", "Japanese") if jp >= 3 else ("default", "English")
     print(f"  [check] {lang} transcript — running GoTranscript QA "

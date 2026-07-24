@@ -7,7 +7,58 @@ _SEV = {"critical": "CRIT", "moderate": "WARN", "minor": "minor", "review": "che
 
 _USAGE = ("usage: python -m transcript_truth.cli <file.txt> [--profile=legal] [--full] [--thoth]\n"
           "       python -m transcript_truth.cli --list-profiles\n"
+          "       python -m transcript_truth.cli --ears[=<lang>]   (pre-job witness liveness check)\n"
           "  --thoth   apply deterministic auto-fixes -> writes <file>.thoth.txt")
+
+
+def _ears_preflight(lang="ja"):
+    """Pre-job witness liveness check — run this BEFORE accepting any paid job.
+
+    The incident this exists to prevent: the hf key went 402 (credits depleted) and every
+    call quietly returned "" — Japanese jobs ran 3 ears instead of 4 for weeks and nothing
+    said so. This dials every witness in the language's roster (plus local whisper as an
+    extra ear) against a short REAL speech sample and prints ALIVE / EMPTY / DEAD-with-
+    reason per ear. A real voice is required: an empty read on silence is indistinguishable
+    from a dead witness. Exit 0 only when the WHOLE roster is alive — a short-handed
+    machine must not take paid work."""
+    import os
+    from . import consensus, witness
+    roster = list(consensus.ROSTER.get(lang, []))
+    if not roster:
+        print(f"no witness roster for language {lang!r} — known: "
+              f"{', '.join(sorted(consensus.ROSTER))}")
+        return 2
+    names = roster + ([] if "whisper" in roster else ["whisper"])
+    sample = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                          "bench", "battery_real", "rl_ena.wav")
+    if not os.path.exists(sample):
+        print(f"missing speech sample: {sample}")
+        return 2
+    witness.health_reset()
+    # the preflight IS the health registry: run each ear once, then read what it recorded
+    # (_run_witnesses catches leaks and records them too — nothing dies silently here)
+    reads = consensus._run_witnesses(names, sample, lang, long=False, seams=None)
+    print(f"\n  ears preflight — lang={lang}    sample: {os.path.basename(sample)}")
+    print("  " + "=" * 60)
+    alive = 0
+    for n in names:
+        txt = reads.get(n) or ""
+        # local specialists degrade to "" without recording — synthesize from the read
+        h = witness.HEALTH.get(n) or {"status": "ok" if txt else "empty", "reason": ""}
+        extra = "" if n in roster else "   (extra ear — not counted)"
+        if h["status"] == "ok" and txt:
+            print(f"  {n:<12} ALIVE ({len(txt)} chars){extra}")
+            alive += (n in roster)
+        elif h["status"] == "error":
+            print(f"  {n:<12} DEAD  ({h.get('reason') or 'unknown'}){extra}")
+        else:
+            print(f"  {n:<12} EMPTY (no text on real speech — treat as dead){extra}")
+    print("  " + "=" * 60)
+    whole = alive == len(roster)
+    print(f"  {alive}/{len(roster)} roster ears alive"
+          + ("" if whole else " — roster NOT whole; do not accept a paid job"))
+    print()
+    return 0 if whole else 1
 
 
 def _print_translation_receipt(path, r) -> None:
@@ -102,6 +153,9 @@ def main(argv=None) -> int:
             c = config.load()["update"]
             print(f"frequency={c['frequency']} source={c['source']} last_check={c['last_check']} due={config.update_due()}")
             return 0
+        elif a == "--ears" or a.startswith("--ears="):
+            # pre-job liveness preflight: no transcript involved, returns immediately
+            return _ears_preflight((a.split("=", 1)[1] or "ja") if "=" in a else "ja")
         elif a.startswith("--domain="):
             domain = a.split("=", 1)[1]
         elif a.startswith("--site="):

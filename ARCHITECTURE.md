@@ -112,7 +112,8 @@ deterministic; RxNorm/UMLS/wordfreq are data/API lookups, not models).
 | Languages | Witnesses |
 |---|---|
 | en, fr, de, pt, tr, es | Deepgram · Scribe · Whisper(HF) · Gemini |
-| ja, ko, ru | Deepgram · Scribe · Gemini · Whisper(HF) |
+| ja | Deepgram · Scribe · Gemini · **Whisper (local)** · Whisper(HF)  (local always-on after HF 402-outage — one family, one vote) |
+| ko, ru | Deepgram · Scribe · Gemini · Whisper(HF) |
 | uk | Deepgram · Scribe |
 | vi | Deepgram · Scribe · Gemini · **PhoWhisper** (VN specialist) |
 | ar, hi | Deepgram · Scribe · Gemini · **MMS** (Meta) |

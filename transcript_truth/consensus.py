@@ -18,7 +18,7 @@ from .verdict import _toks
 # can't poison the vote. Rosters are ordered by measured reliability.
 # ----------------------------------------------------------------------------
 ROSTER = {
-    "ja": ["deepgram", "scribe", "gemini", "hf"],   # JP: all four read it; Deepgram strongest backbone
+    "ja": ["deepgram", "scribe", "gemini", "whisper", "hf"],  # JP: Deepgram strongest backbone; local whisper ALWAYS-ON since T4791286 (hf 402-depleted -> "" quietly thinned the panel to 3 live ears); hf kept — degrades gracefully, may regain credits, and shares whisper's family so it can never double-count
     "ru": ["deepgram", "scribe", "hf", "gemini"],   # all usable; Deepgram strongest
     "uk": ["deepgram", "scribe"],                     # only these stay in Ukrainian; others drift
     "es": ["deepgram", "scribe", "hf", "gemini"],   # well-supported by all witnesses
@@ -465,8 +465,15 @@ def _run_witnesses(names, audio_path, lang, long, seams):
         for f in concurrent.futures.as_completed(futs):
             try:
                 reads[futs[f]] = f.result()
-            except Exception:
+            except Exception as e:
                 reads[futs[f]] = ""
+                # HONESTY: anything that leaks past the witness's own health recording
+                # (local-witness crash, chunker bug) still lands in HEALTH under the
+                # roster name — but never clobber a more specific classification the
+                # witness already wrote ('HTTP 402 OUT OF CREDITS' beats a bare repr).
+                from . import witness as _w
+                if _w.HEALTH.get(futs[f], {}).get("status") != "error":
+                    _w._health(futs[f], "error", repr(e)[:120])
     return {n: reads.get(n, "") for n in names}
 
 
@@ -785,6 +792,8 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
     domain in ('legal','medical') the slow tier ALWAYS runs the full ladder, even when normal is
     already confident, so we double-check. Slowed reads are keyed `model@0.65x` (visible/auditable).
     Returns the normal-tier text too, plus whether the slow tier CHANGED the result (compare)."""
+    from . import witness as _witness
+    _witness.health_reset()          # per-run health — every ear's fate is recorded fresh
     reads = roster_panel(audio_path, lang)
     normal_text = consensus_tokens(reads, lang)["text"]
     slowed_used = []
@@ -805,6 +814,12 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
             if not always_slow and _majority(reads) >= 2:
                 break
     tok = consensus_tokens(reads, lang)
+    # PANEL-phase health, frozen BEFORE the re-ask tier (verifier-found 2026-07-24): HEALTH is
+    # last-write-wins and reask re-dials ears on tiny clips — a success there would overwrite a
+    # panel-read error (gate silently passes a short-handed panel), and a transient reask 429
+    # would brand a panel-whole ear "DEAD". The gate judges the panel that built the transcript,
+    # so it judges THIS snapshot; reask's own fate stays visible in the live registry.
+    panel_health = _witness.health_snapshot()
     # TIER 3 (re-ask, PERFECTION_PLAN III.1): the vote knows exactly where it's uncertain — cut
     # just those seconds and re-ask two fresh independent ears. Measured on tr/ar/ur hard clips:
     # 0.238 -> 0.227 WER, 3 clips improved, 0 regressed. Graceful: any failure leaves spans flagged.
@@ -823,7 +838,9 @@ def transcribe(audio_path, lang, slow_rates=(0.65, 0.5), domain=None):
             "slow_changed": _norm_ws(tok["text"]) != _norm_ws(normal_text),
             "reads": reads, "lang": lang, "domain": domain,
             "slowed": slowed_used, "agreement": _majority(reads),
-            "gate": _gate(reads, tok, domain)}
+            # per-witness fate (ok/empty/error + WHY) — the anti-silent-death receipt
+            "witness_health": panel_health,
+            "gate": _gate(reads, tok, domain, lang, health=panel_health)}
 
 
 # HARD UNCERTAINTY GATE (PERFECTION_PLAN Phase V): the 90-95% honest-uncertainty philosophy as
@@ -834,9 +851,23 @@ _GATE_MAX_CONTESTED = 0.10   # more than 10% contested tokens = a human must loo
 _GATE_MAX_CONTESTED_STRICT = 0.05   # legal/medical: stricter
 
 
-def _gate(reads, tok, domain=None):
+def _gate(reads, tok, domain=None, lang=None, health=None):
     """{status: 'pass'|'review', reasons: [...], contested_ratio, families}. Deterministic."""
     reasons = []
+    # DEAD-EAR CHECK (the hf-402 incident): a rostered witness that ERRORED means the
+    # panel ran short-handed — a short-handed machine must never present as confident,
+    # even when the survivors happen to agree. Named + reasoned so the operator knows
+    # exactly which ear died and why (fix the key / buy credits / wait), not just "review".
+    # `health` = the PANEL-phase snapshot (transcribe passes it); falling back to the live
+    # registry is only for direct callers — post-panel re-dials may have rewritten it.
+    if lang:
+        if health is None:
+            from . import witness as _w
+            health = _w.HEALTH
+        for n in ROSTER.get(lang, []):
+            h = health.get(n)
+            if h and h.get("status") == "error":
+                reasons.append(f"witness {n} DEAD ({h.get('reason') or 'unknown'}) — roster not whole")
     fams = {_family(n) for n, t in reads.items() if t}
     ntok = max(1, len(tok["text"].split()))
     contested = sum(1 for s in tok["uncertain_spans"] if "word" in s or s.get("contested"))

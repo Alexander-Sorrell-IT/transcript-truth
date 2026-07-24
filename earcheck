@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+"""earcheck — verify every ⚠ span of a draft BY EAR before you submit it.
+
+    earcheck T4791286_draft.md interview.mp3
+
+Steps through each engine-uncertain span (⚠ notes and **?Speaker:** labels), plays
+~12s of the audio around it (located via the **[MM:SS]** markers), and records your
+one-keypress verdict: k=correct-as-written  e=edit  u=unresolved  r=replay  q=save+quit.
+Verdicts land in <draft>.ear.json after every keypress; re-running resumes where you
+left off. It never edits the draft itself — it only writes the verdict file.
+"""
+import os
+import sys
+
+REPO = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, REPO)
+
+
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    files = [a for a in argv if not a.startswith("-")]
+    if len(files) != 2:
+        print("usage: earcheck <draft.md> <audio-file>")
+        return 2
+    draft, audio = files
+    for p in (draft, audio):
+        if not os.path.exists(p):
+            print(f"no such file: {p}")
+            return 2
+
+    from transcript_truth.earcheck import run
+    return run(draft, audio)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

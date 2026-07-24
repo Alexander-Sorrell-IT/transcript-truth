@@ -5,7 +5,7 @@ human ear. Two strong, differently-built models don't make the identical mistake
 their disagreement surfaces the correlated errors a single model can't self-detect.
 Keys live in the gitignored .env.
 """
-import os, json, urllib.request
+import functools, os, json, threading, urllib.request
 
 _DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,6 +20,88 @@ def _key(name):
     raise RuntimeError(f"{name} not found")
 
 
+# ----------------------------------------------------------------------------
+# Per-run witness HEALTH — the honesty layer for dead ears.
+#
+# The incident this exists to prevent: the hf key went 402 (credits depleted) and every
+# hf call quietly became "" — Japanese jobs ran 3 ears instead of 4 for WEEKS and nothing
+# anywhere said so; a job shipped bad on the thinned panel. "If we have no credits the
+# machine should not just not work and LIE to us." So every cloud witness now records
+# ok / empty / WHY-dead into this side channel; consensus embeds it in every result and
+# the gate refuses confidence when a rostered ear is dead; `--ears` reads it pre-job.
+# Panel ears record under their ROSTER names (scribe/deepgram/gemini/hf/whisper) — the
+# vocabulary the gate and preflight read. The structural adapters (deepgram_structured,
+# deepgram_detect_language) record under their function names: visible in the snapshot
+# for the operator, deliberately OUTSIDE the roster gate (they aren't voting ears; their
+# death shows up as empty utterances/failed detect on its own paths). Lock: witnesses
+# run in a ThreadPoolExecutor fan-out, so dict writes are serialized.
+# ----------------------------------------------------------------------------
+HEALTH = {}
+_HEALTH_LOCK = threading.Lock()
+
+
+def health_reset():
+    """Start a fresh per-run record (called at the top of consensus.transcribe / --ears)."""
+    with _HEALTH_LOCK:
+        HEALTH.clear()
+
+
+def _health(name, status, reason=""):
+    """Record one witness outcome. status: 'ok' | 'empty' | 'error'. Last write wins —
+    on chunked witnesses that's the freshest evidence, and a witness that errors is
+    re-recorded as error by every failing call, so a dead ear can't hide behind one
+    lucky chunk recorded earlier."""
+    with _HEALTH_LOCK:
+        HEALTH[name] = {"status": status, "reason": reason}
+
+
+def health_snapshot():
+    """Copy of the registry, safe to embed in a returned result dict (inner dicts are
+    replaced whole by _health, never mutated, so a shallow-per-entry copy is race-free)."""
+    with _HEALTH_LOCK:
+        return {k: dict(v) for k, v in HEALTH.items()}
+
+
+def _fail_reason(e):
+    """One honest human line for WHY a cloud witness died. The classic HTTP codes get a
+    word because the operator must act differently on each: 401 = fix the key, 402 = BUY
+    CREDITS (the hf-incident class), 429 = wait/slow down. urlopen wraps transport
+    failures in URLError (timeouts included) -> 'network'. _key raises '<NAME> not found'
+    (or FileNotFoundError on a missing .env) -> 'no API key'. Anything else keeps its
+    repr so the record is never an uninformative 'error'."""
+    import ssl, urllib.error
+    if isinstance(e, urllib.error.HTTPError):          # before URLError — it's a subclass
+        word = {401: " bad key", 402: " OUT OF CREDITS", 429: " rate-limited"}.get(e.code, "")
+        return f"HTTP {e.code}{word}"
+    if isinstance(e, (urllib.error.URLError, TimeoutError, ssl.SSLError)):
+        return "network"
+    if isinstance(e, RuntimeError) and str(e).endswith("not found"):
+        return "no API key"
+    if isinstance(e, FileNotFoundError) and ".env" in str(e):
+        return "no API key"                            # no .env file at all
+    return repr(e)[:120]
+
+
+def _observed(name):
+    """Wrap a CLOUD witness so its outcome is RECORDED, not just returned. Behavior is
+    untouched — same returns, same raises (consensus._run_witnesses still owns the
+    catch-and-degrade to "") — but the side channel now says ok / empty / WHY-dead, so a
+    credit-depleted ear can never again be indistinguishable from silence."""
+    def deco(fn):
+        @functools.wraps(fn)
+        def wrapped(*a, **k):
+            try:
+                out = fn(*a, **k)
+            except Exception as e:
+                _health(name, "error", _fail_reason(e))
+                raise
+            _health(name, "ok" if out else "empty")
+            return out
+        return wrapped
+    return deco
+
+
+@_observed("scribe")
 def elevenlabs_read(audio_path, language=None):  # pragma: no cover
     """ElevenLabs Scribe — the strong second read (different family than Whisper)."""
     import mimetypes
@@ -98,6 +180,7 @@ def elevenlabs_diarize(audio_path, language=None):  # pragma: no cover
     return [{**t, "text": t["text"].strip()} for t in turns if t["text"].strip()]
 
 
+@_observed("gemini")
 def gemini_read(audio_path, language=None, context=None):  # pragma: no cover
     """Gemini (multimodal LLM) — a 4th independent witness, different family again.
     Strong on accented/bilingual speech because it reasons over context, not just acoustics.
@@ -136,6 +219,7 @@ def gemini_read(audio_path, language=None, context=None):  # pragma: no cover
     raise last
 
 
+@_observed("hf")
 def hf_read(audio_path, language=None, model="openai/whisper-large-v3", retries=4):  # pragma: no cover
     """Whisper-large-v3 via Hugging Face Inference Providers (free tier; multilingual,
     auto-detects language). A 5th witness — adds the Whisper family to the consensus.
@@ -165,6 +249,7 @@ def hf_read(audio_path, language=None, model="openai/whisper-large-v3", retries=
     return ""
 
 
+@_observed("deepgram_structured")
 def deepgram_structured(audio_path, language="en"):  # pragma: no cover
     """Deepgram with diarization + utterances + timestamps — the structured backbone for
     the transcription runner. Returns [{start, end, speaker, text}]. (Scribe/Gemini stay
@@ -229,17 +314,27 @@ def whisper_local(audio_path, language=None, model_size="large-v3"):  # pragma: 
     # for other witnesses, so we run it alone and read its stdout. Any failure ⇒ '' ⇒ graceful.
     txt = _mlx_whisper_subprocess(audio_path, language)
     if txt is not None:
+        _health("whisper", "ok" if txt else "empty")
         return txt
     # 2) fallback: faster-whisper (CPU) — used off Apple Silicon
     global _WHISPER_LOCAL
     try:
         from faster_whisper import WhisperModel
     except Exception:
+        # NO working backend: that's a DEAD ear, not a quiet room — record it so the
+        # preflight/gate can say so instead of the panel silently running one short.
+        # Distinguish "mlx exists but its run failed" (crash/timeout — the subprocess
+        # returns None for those too) from "nothing installed": the fixes differ.
+        _health("whisper", "error",
+                "mlx run failed (crash/timeout)" if _have_mlx()
+                else "backend not installed (mlx_whisper/faster_whisper)")
         return ""
     if _WHISPER_LOCAL is None:
         _WHISPER_LOCAL = WhisperModel(model_size, device="cpu", compute_type="int8")
     segs, _ = _WHISPER_LOCAL.transcribe(audio_path, language=language or None, beam_size=1)
-    return " ".join(s.text for s in segs).strip()
+    out = " ".join(s.text for s in segs).strip()
+    _health("whisper", "ok" if out else "empty")
+    return out
 
 
 def whisper_detect_language(audio_path):  # pragma: no cover
@@ -440,6 +535,7 @@ def pyannote_diarize(audio_path, language=None):  # pragma: no cover
             for seg, _, spk in ann.itertracks(yield_label=True)]
 
 
+@_observed("deepgram_detect_language")
 def deepgram_detect_language(audio_path):  # pragma: no cover
     """Deepgram language auto-detection — returns the detected language code (e.g. 'en', 'ja',
     'ru') or '' if undetermined. Cheap front-end so the router can pick the right roster/profile
@@ -457,6 +553,7 @@ def deepgram_detect_language(audio_path):  # pragma: no cover
     return lang.split("-")[0].lower() if lang else ""    # 'en-US' -> 'en'
 
 
+@_observed("deepgram")
 def deepgram_read(audio_path, language="ja"):  # pragma: no cover
     """Deepgram Nova — backup witness (weaker on bilingual audio; use for clean speech)."""
     url = f"https://api.deepgram.com/v1/listen?model=nova-3&language={language}&smart_format=true"
