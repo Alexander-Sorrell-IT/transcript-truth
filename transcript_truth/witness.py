@@ -182,12 +182,55 @@ def deepgram_structured(audio_path, language="en"):  # pragma: no cover
 
 
 _WHISPER_LOCAL = None
+_MLX_WHISPER_REPO = "mlx-community/whisper-large-v3-mlx"
+_MLX_AVAILABLE = None
+
+
+def _have_mlx():
+    global _MLX_AVAILABLE
+    if _MLX_AVAILABLE is None:
+        try:
+            import importlib.util
+            _MLX_AVAILABLE = importlib.util.find_spec("mlx_whisper") is not None
+        except Exception:
+            _MLX_AVAILABLE = False
+    return _MLX_AVAILABLE
+
+
+def _mlx_whisper_subprocess(audio_path, language, timeout=900):
+    """Run mlx-whisper in its own process (isolation from torch). Returns text, or None if mlx
+    isn't installed / the run failed (so the caller can fall back to faster-whisper)."""
+    if not _have_mlx():
+        return None
+    import subprocess, sys, json as _json
+    try:
+        proc = subprocess.run(
+            [sys.executable, "-m", "transcript_truth._mlx_whisper_proc",
+             audio_path, language or ""],
+            capture_output=True, text=True, timeout=timeout,
+            cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        )
+        if proc.returncode != 0 or not proc.stdout.strip():
+            return None
+        return (_json.loads(proc.stdout).get("text") or "").strip()
+    except Exception:
+        return None
 
 
 def whisper_local(audio_path, language=None, model_size="large-v3"):  # pragma: no cover
-    """Local Whisper via faster-whisper — a FREE, unlimited, all-language witness that runs on the
-    M1 (no API, no credits, no rate limits). Replaces the HF Whisper witness that hit the 402 credit
-    wall. Model is loaded once and cached. Returns '' if faster-whisper isn't installed."""
+    """Local Whisper — a FREE, unlimited, all-language witness (no API, no credits, no rate limits).
+
+    Prefers **mlx-whisper** (Apple-Silicon / Metal GPU) because the faster-whisper/ctranslate2 CPU
+    path SEGFAULTS on this 16GB M1 at inference (verified 2026-07-24; crashed even on the small
+    model). mlx runs on the GPU and does not crash. Falls back to faster-whisper on non-Apple
+    hardware or if mlx isn't installed. Returns '' only if neither backend is available."""
+    # 1) mlx-whisper (Apple Silicon) in an ISOLATED SUBPROCESS — the crash-free path.
+    # mlx segfaults when it shares a process with the torch/transformers stack the engine loads
+    # for other witnesses, so we run it alone and read its stdout. Any failure ⇒ '' ⇒ graceful.
+    txt = _mlx_whisper_subprocess(audio_path, language)
+    if txt is not None:
+        return txt
+    # 2) fallback: faster-whisper (CPU) — used off Apple Silicon
     global _WHISPER_LOCAL
     try:
         from faster_whisper import WhisperModel
@@ -202,6 +245,18 @@ def whisper_local(audio_path, language=None, model_size="large-v3"):  # pragma: 
 def whisper_detect_language(audio_path):  # pragma: no cover
     """Free local-Whisper language id — the second detector that cross-checks Deepgram's, so one
     detector can't misroute the whole job. Returns an ISO-639-1 code, or '' if unavailable."""
+    # mlx-whisper (Apple Silicon) first — crash-free (isolated subprocess)
+    if _have_mlx():
+        import subprocess, sys, json as _json
+        try:
+            proc = subprocess.run(
+                [sys.executable, "-m", "transcript_truth._mlx_whisper_proc", audio_path, ""],
+                capture_output=True, text=True, timeout=900,
+                cwd=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+            if proc.returncode == 0 and proc.stdout.strip():
+                return _json.loads(proc.stdout).get("language") or ""
+        except Exception:
+            pass
     global _WHISPER_LOCAL
     try:
         from faster_whisper import WhisperModel

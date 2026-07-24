@@ -176,9 +176,10 @@ def _build_review(checks: dict | None, agree: float, have_both: bool) -> list[di
 
 # run_qa flag kinds that are CONFIDENT positives — a real, mechanically-detected defect in the
 # primary translation. These drive the headline `flagged` verdict, not just the review surface.
-_QA_HARD_KINDS = {"source_script_leak", "untranslated_passthrough", "glossary", "length_ratio"}
+_QA_HARD_KINDS = {"source_script_leak", "untranslated_passthrough", "glossary", "length_ratio",
+                  "placeholder"}
 _QA_SEVERITY = {"source_script_leak": "critical", "untranslated_passthrough": "critical",
-                "glossary": "moderate", "length_ratio": "review"}
+                "placeholder": "critical", "glossary": "moderate", "length_ratio": "review"}
 
 
 def _run_qa_safe(source_text: str, translation: str, src_lang: str, tgt_lang: str):

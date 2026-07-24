@@ -183,3 +183,34 @@ def test_parenthetical_citation_of_original_is_not_a_leak():
     tgt = "The newspaper Pravda (Газета Правда) published the report."
     r = run_qa(src, tgt, "ru", "en")
     assert not any(f["kind"] == "source_script_leak" for f in r["flags"])
+
+
+# ------------------------------------------------------ placeholder / tag survival (CAT / MTPE non-negotiable)
+def test_missing_placeholder_flags():
+    r = run_qa("Hello {name}, your order %s ships on [1].",
+               "Hola, tu pedido se envía.", "en", "es")
+    kinds = [f["kind"] for f in r["flags"]]
+    assert kinds.count("placeholder") >= 2         # {name}, %s (and [1]) dropped
+    assert r["ok"] is False
+
+
+def test_placeholders_preserved_no_flag():
+    r = run_qa("Hello {name}, your order %s ships on [1].",
+               "Hola {name}, tu pedido %s se envía el [1].", "en", "es")
+    assert not any(f["kind"] == "placeholder" for f in r["flags"])
+
+
+def test_introduced_placeholder_flags():
+    r = run_qa("Hello there.", "Hola {name}.", "en", "es")
+    assert any(f["kind"] == "placeholder" for f in r["flags"])
+
+
+def test_placeholder_no_false_positive_on_prose():
+    for s in ["50% of users agreed", "if a < b then stop", "I love it <3", "the rate is 3.5%"]:
+        r = run_qa(s, s + " (translated)", "en", "es")
+        assert not any(f["kind"] == "placeholder" for f in r["flags"]), f"FP on: {s}"
+
+
+def test_xml_tag_survival():
+    r = run_qa("Click <g id=\"1\">here</g> now.", "Haz clic aquí ahora.", "en", "es")
+    assert any(f["kind"] == "placeholder" for f in r["flags"])

@@ -54,7 +54,7 @@ LOCAL_TIER = {
     "en": ["whisper", "mms", "seamless"], "es": ["whisper", "mms", "seamless"],
     "fr": ["whisper", "mms", "seamless"], "de": ["whisper", "mms", "seamless"],
     "pt": ["whisper", "mms", "seamless"], "tr": ["whisper", "mms"],
-    "ja": ["whisper", "wav2vec2"], "ru": ["whisper", "mms"], "ko": ["whisper", "mms"],
+    "ja": ["whisper"], "ru": ["whisper", "mms"], "ko": ["whisper", "mms"],
     "vi": ["whisper"], "ar": ["whisper", "seamless"], "hi": ["whisper", "seamless"],
     "uk": ["whisper", "mms"], "ur": ["whisper", "seamless"],
 }
@@ -497,7 +497,10 @@ def _local_available(name):
     """Is the local witness's backend importable? (keeps a missing optional dep from erroring)."""
     try:
         if name == "whisper":
-            import faster_whisper  # noqa: F401
+            try:
+                import mlx_whisper  # noqa: F401  (Apple-Silicon backend, preferred)
+            except Exception:
+                import faster_whisper  # noqa: F401  (CPU fallback)
         elif name == "wav2vec2":
             import torch, transformers  # noqa: F401
         # mms / seamless are checked inside their witness (graceful "" on absence)

@@ -24,6 +24,23 @@ from __future__ import annotations
 
 import re
 import unicodedata
+from collections import Counter
+
+# Placeholders / inline tags that a CAT-tool / MTPE job (Smartcat, Unbabel, agency TMs) requires to
+# survive translation VERBATIM — the #1 reason MTPE work is rejected. Conservative patterns chosen to
+# not false-fire on prose: "50% of" / "a < b" / "<3" never match (a format letter or tag-name must
+# follow immediately).
+_PLACEHOLDER = re.compile(
+    r"\{\{?\s*[\w.$-]+\s*\}?\}"                  # {name} {{count}} {order.id} { x }
+    r"|%\(\w+\)[sdf]"                            # %(name)s  (python named)
+    r"|%(?:\d+\$)?[sdf]"                         # %s %d %f %1$s  (printf, tight)
+    r"|\[\d+\]"                                  # [1]  numbered CAT tag
+    r"|</?[a-zA-Z][\w:-]*(?:\s[^<>]*?)?/?>"      # <g id="1"> </g> <x/>  (well-formed tags only)
+)
+
+
+def _placeholders(text: str) -> Counter:
+    return Counter(m.group(0) for m in _PLACEHOLDER.finditer(text or ""))
 
 # --------------------------------------------------------------------------------------------
 # script / language classification
@@ -252,6 +269,19 @@ def run_qa(source_text: str, translation: str,
                 "note": (f"source term {src_term!r} requires rendering {tgt_term!r}, "
                          f"which is absent from the translation"),
             })
+
+    # (4) PLACEHOLDER / TAG SURVIVAL — the CAT-tool / MTPE non-negotiable. Every {var}, %s, [1], or
+    # <tag> in the source must appear verbatim in the translation; an introduced one breaks rendering
+    # too. Language-neutral, so this is a confident flag in EITHER direction regardless of script.
+    src_ph, tgt_ph = _placeholders(source_text), _placeholders(translation)
+    for ph in sorted((src_ph - tgt_ph).elements()):
+        flags.append({"kind": "placeholder", "evidence": ph,
+                      "note": f"placeholder/tag {ph!r} in the source is MISSING from the translation "
+                              f"— CAT/MTPE jobs (Smartcat, Unbabel, agency TMs) reject this"})
+    for ph in sorted((tgt_ph - src_ph).elements()):
+        flags.append({"kind": "placeholder", "evidence": ph,
+                      "note": f"placeholder/tag {ph!r} was INTRODUCED in the translation but is not "
+                              f"in the source"})
 
     # (1) LENGTH-RATIO sanity — gross truncation/padding. Only a KNOWN band fires; the dense-script
     # bands (ja/han/hangul/thai) are deliberately WIDE so a terse-but-faithful translation is not

@@ -299,6 +299,18 @@ register_site(
     description="1-888-TYPE-IT-UP (GATED: table-template format; guide ships with the paid exam — slot ready)",
 )
 
+# --- TRANSLATION platforms (different axis from transcription): these are marketplaces/CAT tools
+# where the relevant QA is the TRANSLATION pipeline (translation_qa.run_qa: number + name survival,
+# source-script leak, untranslated passthrough, and PLACEHOLDER/TAG survival — the CAT/MTPE
+# non-negotiable), NOT a transcription output format. Registered so the platform appears in the
+# system + coverage grid; the transcription-side scanners are intentionally empty.
+register_site("smartcat", scanners=(), per_language={},
+              description="Smartcat (CAT-tool marketplace, MTPE) — QA via translation_qa: placeholder/tag + number/name survival")
+register_site("unbabel", scanners=(), per_language={},
+              description="Unbabel (machine-translation post-editing) — QA via translation_qa: placeholder/tag + number/name survival")
+register_site("proz", scanners=(), per_language={},
+              description="ProZ.com (translator marketplace, direct clients) — QA via translation_qa")
+
 # Auto-wire any per-language field/site layers present by convention (download a language/site pack →
 # its layers self-install). Runs AFTER the built-in field + site plugins are registered.
 autodiscover_domain_layers()
