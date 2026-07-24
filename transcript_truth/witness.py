@@ -72,6 +72,15 @@ def _fail_reason(e):
     import ssl, urllib.error
     if isinstance(e, urllib.error.HTTPError):          # before URLError — it's a subclass
         word = {401: " bad key", 402: " OUT OF CREDITS", 429: " rate-limited"}.get(e.code, "")
+        # ElevenLabs abuses 401 for QUOTA EXHAUSTION (body: "quota_exceeded") — verified live
+        # 2026-07-24 on a valid-but-depleted key. "bad key" would send the operator to rotate a
+        # key that works; read the body so the reason names the real fix (buy credits).
+        try:
+            body = e.read(2048).decode("utf-8", "replace") if hasattr(e, "read") else ""
+            if "quota" in body.lower() or "credit" in body.lower():
+                word = " OUT OF CREDITS (quota exceeded)"
+        except Exception:
+            pass
         return f"HTTP {e.code}{word}"
     if isinstance(e, (urllib.error.URLError, TimeoutError, ssl.SSLError)):
         return "network"

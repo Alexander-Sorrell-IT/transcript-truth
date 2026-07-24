@@ -29,8 +29,14 @@ def _ears_preflight(lang="ja"):
               f"{', '.join(sorted(consensus.ROSTER))}")
         return 2
     names = roster + ([] if "whisper" in roster else ["whisper"])
-    sample = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                          "bench", "battery_real", "rl_ena.wav")
+    # Dial the ears with speech IN THE ROSTER'S LANGUAGE when the battery has it (live-caught
+    # 2026-07-24: probing the ja roster with English speech made Deepgram — which obeys the
+    # language hint strictly — read empty and get falsely branded dead). English fallback.
+    import glob as _glob
+    bat = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                       "bench", "battery_real")
+    own = sorted(_glob.glob(os.path.join(bat, f"rl_{lang}*.wav")))
+    sample = own[0] if own else os.path.join(bat, "rl_ena.wav")
     if not os.path.exists(sample):
         print(f"missing speech sample: {sample}")
         return 2

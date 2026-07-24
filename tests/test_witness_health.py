@@ -282,3 +282,17 @@ def test_gate_judges_panel_snapshot_not_live_registry():
     g2 = _gate(reads, tok, lang="ja", health={"gemini": {"status": "ok", "reason": ""}})
     assert not any("DEAD" in r for r in g2["reasons"])
     W.health_reset()
+
+
+def test_elevenlabs_401_quota_body_reads_as_credits_not_bad_key():
+    # ElevenLabs returns HTTP 401 for QUOTA EXHAUSTION (live-verified 2026-07-24 on a
+    # valid-but-depleted key). "bad key" would be a lying diagnosis — the operator would
+    # rotate a working key instead of buying credits. The body names the truth.
+    import io, urllib.error
+    from transcript_truth.witness import _fail_reason
+    e = urllib.error.HTTPError("u", 401, "Unauthorized", {},
+                               io.BytesIO(b'{"detail":{"status":"quota_exceeded"}}'))
+    r = _fail_reason(e)
+    assert "OUT OF CREDITS" in r and "bad key" not in r
+    e2 = urllib.error.HTTPError("u", 401, "Unauthorized", {}, io.BytesIO(b'{"detail":"invalid api key"}'))
+    assert "bad key" in _fail_reason(e2)

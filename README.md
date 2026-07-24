@@ -117,3 +117,32 @@ tests/              128 passing tests
 > **Legal-exam note:** the TranscribeMe Legal Prequalification Exam is **no-AI, taken solo** — the
 > style guide, research, and spell-checkers are the *permitted* tools. The engine is a **study /
 > self-check aid** for the guide and your **own practice transcripts**. Know your own risk on the live exam.
+
+## tt — talk to the engine
+
+```
+./tt "chek this japnse file for gotranscipt" job.txt     one-shot
+./tt                                                     REPL (q quits)
+```
+
+Say what you want in whatever spelling comes out ("er check it agianst the audio", "shp it",
+"ar eth ears alive ja") and `tt` maps it onto the engine's real commands — check / ship /
+earcheck / ears / translate / coverage / list-profiles. The law is the house law:
+
+- **the model proposes** — a small LOCAL LLM (never a cloud call) turns the utterance into a
+  JSON config proposal; with no model installed, a deterministic fuzzy-keyword matcher does
+  the same job. The model never executes and never grades.
+- **the code decides** — `transcript_truth/intent.py` validates EVERY field against the live
+  registries (profiles, sites, domains, witness roster), so a value that doesn't exist is
+  echoed back as `couldn't place: …` — never guessed silently, never run. The vocabulary is
+  read from the registries at call time, so a new plugin appears in `tt` automatically.
+- **one-key confirm** — the resolved command is printed first (`check job.txt --profile=ja
+  --site=gotranscript`) and NOTHING runs until you press `y`. One raw keypress, no Enter —
+  same reader as `earcheck`.
+
+Local models, tried in order (each optional — the feature works with none):
+1. **mlx_lm** on Apple Silicon — `mlx-community/Qwen2.5-1.5B-Instruct-4bit` (~10s cold load,
+   ~2s a parse on an M1 Air)
+2. **llama-cpp-python** on CPU boxes — point `TT_INTENT_MODEL` at a local `.gguf`
+3. neither — the fuzzy-keyword fallback (difflib over the registry vocabulary + his real
+   typo-forms) carries the whole feature, fully offline and deterministic

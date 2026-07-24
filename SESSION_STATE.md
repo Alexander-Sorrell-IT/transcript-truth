@@ -1,4 +1,35 @@
-# transcript-truth — session state (2026-07-05)
+# transcript-truth — session state (2026-07-24)
+
+## The T4791286 post-mortem build (2026-07-24) — never again, mechanically
+**The incident:** job T4791286 (GoTranscript ja, 10 min) shipped as an unverified AI draft with ~30
+⚠ spans unresolved — rated 1/5 "way too many mishears", Japanese rights revoked (min rating 3.2).
+Root causes, each now closed by a mechanism, all adversarially verified (4 builders + verifiers;
+2 criticals caught pre-merge — earcheck↔ship ledger-schema seam, panel-health overwrite by reask):
+- **hf witness had been 402-dead for WEEKS, silently** → witness-health layer: every ear records
+  ok/empty/DEAD-with-reason (401 bad key / 402 OUT OF CREDITS / 429 / network); panel-phase
+  snapshot drives the gate (reask can't overwrite it); a dead ROSTER ear forces status=review;
+  `--ears[=lang]` preflight (native-language sample!) exits 1 if the roster isn't whole.
+  First live preflight run found: scribe 401 BAD KEY (re-mint at ElevenLabs), hf 402, gemini 429.
+- **no stop between flagged draft and submission** → SHIP GATE (`ship.py`, `check --ship`): exits 3
+  while ANY ⚠ / **?Name:** / unresolved-ear / draft-header remains; grade withheld on refusal.
+  The real failed draft refuses with 38 blockers; ja sentence ？ can never false-block.
+- **no way to ear-verify at 3AM** → `./earcheck draft.md audio`: plays JUST each flagged span's
+  seconds, one-raw-keypress verdicts (k/e/u/r/q), per-verdict save, resume; ledger unlocks the gate.
+- **ja roster ran 3 ears** → ROSTER['ja'] += local whisper (mlx on Apple Silicon / faster-whisper
+  int8 on CPU boxes — the M1 ctranslate2 segfault is machine-specific, plain CPUs are fine).
+- **`tt`** — talk-to-the-engine CLI: garbled NL → command via LOCAL Qwen2.5-1.5B (mlx_lm; llama_cpp
+  via $TT_INTENT_MODEL on CPU; deterministic difflib fallback with neither). Model PROPOSES,
+  registry-validation is the wall, one-keypress confirm; live smoke 2.3s warm parse.
+- **Portability** → requirements.txt (fresh-venv-proven) + requirements-models.txt + setup.sh +
+  .env.example + scripts/fetch_data.py; ja data (JMdict-common/JMnedict-surfaces/collocations/
+  pitch-accent) now BUNDLED (fresh clone used to CRASH on ja). Clone-and-go incl. 64GB CPU-only HP.
+- **Measured (live re-bench, ja FLEURS ×10):** CER 0.0729→0.0666 (92.7→93.3% char-acc), 1W/9T/0L —
+  achieved with scribe+hf+gemini dead; deepgram+local-whisper alone held the canonical line
+  (rl_jad: whisper SOLO tied the old 3-ear consensus). Old canonical map itself had run with
+  2 dead ears, silently — the disease had poisoned the ruler too. bench/real_audio.json updated
+  (pre-4ear backup kept). Suite 455 → 546. HARD RULE (memory): no live paid jobs until he
+  declares the program ready; zero flags before ship; mid-job tooling work is BANNED.
+
 
 ## REAL parity push (2026-07-05) — measure, then fill the JA-gap with DATA, not hand-tuning
 - **Live full-parity bench re-run:** honest map was 8/12 WIN/tie (BEHIND: ar 0.438/0.312, hi 0.143/0.029,

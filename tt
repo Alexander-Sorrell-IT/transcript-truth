@@ -1,0 +1,106 @@
+#!/usr/bin/env python3
+"""tt — talk to the engine.
+
+    tt "chek this japnse file for gotranscipt" job.txt     one-shot
+    tt                                                     REPL (q quits)
+
+Say what you want in whatever spelling comes out. A SMALL LOCAL model (mlx_lm on
+Apple Silicon, llama_cpp + $TT_INTENT_MODEL elsewhere — or the deterministic
+keyword matcher when neither exists) PROPOSES a command; the registry VALIDATES
+every field; the resolved command is PRINTED; and NOTHING runs until you confirm
+with one raw keypress (y). Words that could not be placed are echoed back
+("couldn't place: …") — tt asks, it never guesses silently. The model never
+executes anything and never grades anything: it only fills in a form that
+transcript_truth/intent.py checks against what actually exists.
+"""
+import os
+import sys
+
+REPO = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, REPO)
+
+from transcript_truth import intent
+# earcheck's raw-keypress reader IS the confirm key here: termios one-char reads
+# on a tty, line-reads on pipes, EOF -> "q" (never hangs a script).
+from transcript_truth.earcheck import _getch
+
+
+def dispatch(action, argv):
+    """Route the CONFIRMED argv to the real entry point — tt only routes, the
+    engine owns every verdict. ship goes through the ./check wrapper subprocess
+    because the ship gate (exit 3, blockers, no grade) lives there; earcheck to
+    its own run(); everything else is a cli.main flag set already."""
+    if action == "ship":
+        import subprocess
+        return subprocess.call([sys.executable, os.path.join(REPO, "check"), *argv])
+    if action == "earcheck":
+        from transcript_truth.earcheck import run
+        return run(argv[0], argv[1])
+    from transcript_truth.cli import main as cli_main
+    return cli_main(argv)
+
+
+def confirm_and_run(resolved):
+    """Show what was understood, ask with ONE keypress, then (only then) run.
+    -> (ran, rc). Unplaceable words are echoed FIRST so the operator sees what
+    got dropped before he approves; a missing required file refuses outright —
+    a placeholder argv must never execute."""
+    if resolved["unrecognized"]:
+        print("  couldn't place: "
+              + ", ".join(repr(str(u)) for u in resolved["unrecognized"]))
+    action = resolved["action"]
+    if not action:
+        print("  no action recognized — try: " + ", ".join(intent.ACTIONS))
+        return False, 2
+    argv, display = intent.render_command(resolved)
+    print(f"  -> {display}")
+    missing = [k for k in intent.REQUIRED.get(action, ())
+               if not resolved["args"].get(k)]
+    if missing:
+        print("  need: " + ", ".join(f"<{m}>" for m in missing)
+              + '  — say it again with the file, or:  tt "…" <file>')
+        return False, 2
+    print("  run? (y/n) ", end="", flush=True)
+    key = _getch().lower()
+    print(key if key.isprintable() else "")
+    if key != "y":
+        print("  not run.")
+        return False, 0
+    return True, dispatch(action, argv)
+
+
+def one_shot(utterance, files):
+    _, rc = confirm_and_run(intent.parse_intent(utterance, files=files))
+    return rc
+
+
+def repl():
+    """Bare `tt`: keep listening. The only typing is the utterance itself; every
+    execution still takes exactly one keypress of consent. q quits."""
+    print("tt — talk to the engine  (q quits; e.g.: chek this japnse file for gotranscipt)")
+    while True:
+        try:
+            line = input("tt> ").strip()
+        except EOFError:
+            return 0
+        except KeyboardInterrupt:
+            print()
+            return 0
+        if not line:
+            continue
+        if line.lower() in ("q", "quit", "exit"):
+            return 0
+        confirm_and_run(intent.parse_intent(line))
+
+
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    if not argv:
+        return repl()
+    # argv[0] is the utterance (quoted); anything after it is an explicit file
+    utterance, files = argv[0], [a for a in argv[1:] if not a.startswith("-")]
+    return one_shot(utterance, files)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1224,6 +1224,196 @@
   "reask_fires": 0
  },
  {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jaa.wav",
+  "consensus": 0.067,
+  "cer": 0.067,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.067,
+   "wav2vec2": 0.289
+  },
+  "reads": {
+   "deepgram": "インターネットで敵対的環境コースについて検索すると、おそらく現地企業の住所が出てくるでしょう。",
+   "whisper": "インターネットで敵対的環境構成について検索すると おそらく現地企業の住所が出てくるでしょう",
+   "wav2vec2": "ウィンターネットで敵体的環境構線付いて検作するとおそらく現地企ー業の住所がででくんでしょう"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jab.wav",
+  "consensus": 0.0,
+  "cer": 0.0,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.0,
+   "wav2vec2": 0.174
+  },
+  "reads": {
+   "deepgram": "また北側に行くなら世界的に有名なマリア像の聖地であるファティマの聖母の聖域、神社を訪れましょう。",
+   "whisper": "また北側に行くなら世界的に有名なマリア像の聖地である ファティマの聖母の聖域神社を訪れましょう",
+   "wav2vec2": "また北がわり行くなら世界的に有名なマリア造の聖地であるファティマの制後歳域神社を訪れましょう"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jac.wav",
+  "consensus": 0.099,
+  "cer": 0.099,
+  "best_single": 0.085,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.085,
+   "whisper": 0.099,
+   "wav2vec2": 0.366
+  },
+  "reads": {
+   "deepgram": "バルセロナの公用語はカタルーネ語とスペイン語です。約半数がカタルーネ語を好み、大多数がカタルーネ語を理解し、ほぼ全員がスペイン語を知っています。",
+   "whisper": "バルセアナの公用語はカタルーネ語とスペイン語です 約半数がカタルーネ語を好み 大多数がカタルーネ語を理解し ほぼ全員がスペイン語を知っています",
+   "wav2vec2": "バルセナの公夜場はカタル猫トスペイン五です約半数がカタル上が起み大田数がカタルウゴをり返しほぼ税円ガスペイングを知っています"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jad.wav",
+  "consensus": 0.018,
+  "cer": 0.018,
+  "best_single": 0.018,
+  "best_model": "whisper",
+  "wer_by_model": {
+   "deepgram": 0.054,
+   "whisper": 0.018,
+   "wav2vec2": 0.214
+  },
+  "reads": {
+   "deepgram": "その長い顎には七十本以上の鋭い歯が並び、郊外には別の歯列があり、つまりここを通ったら逃げ道はないというこになります。",
+   "whisper": "その長い顎には70本以上の鋭い歯が並び 口外には別の歯列があり つまりここを通ったら逃げ道はないということになります",
+   "wav2vec2": "その長いアゴには７十本以上の数台墓が並び公外には別の知りがありつまりここを通たら脱道はないということになります"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jae.wav",
+  "consensus": 0.188,
+  "cer": 0.188,
+  "best_single": 0.062,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.062,
+   "whisper": 0.938,
+   "wav2vec2": 0.219
+  },
+  "reads": {
+   "deepgram": "ロスビー数が小さいほど磁気判定に関して星の活性が低下するわけです。",
+   "whisper": "ロスB数が小さいほど時期判定に関して星の活性が低下するわけです",
+   "wav2vec2": "ロスビー数が小さいほど直恵反定に関して星の合生が生がするわけです"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jaf.wav",
+  "consensus": 0.095,
+  "cer": 0.095,
+  "best_single": 0.0,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.0,
+   "whisper": 0.095,
+   "wav2vec2": 0.095
+  },
+  "reads": {
+   "deepgram": "群島や湖では必ずしもヨットは必要ありません。",
+   "whisper": "軍刀や湖では必ずしもヨットは必要ありません。",
+   "wav2vec2": "軍筒や湖では必ずしもヨットは必要ありません"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jag.wav",
+  "consensus": 0.1,
+  "cer": 0.1,
+  "best_single": 0.033,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.033,
+   "whisper": 0.1,
+   "wav2vec2": 0.3
+  },
+  "reads": {
+   "deepgram": "パリジャンは自己中心的な横柄で失礼な人が多いと言われています。",
+   "whisper": "パリジャンは自己中心的な、 王兵で失礼な人が多いと言われています",
+   "wav2vec2": "アリジャンは事故中心的な王へでスれの人が多いと言われています"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jah.wav",
+  "consensus": 0.031,
+  "cer": 0.031,
+  "best_single": 0.031,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.031,
+   "whisper": 0.031,
+   "wav2vec2": 0.061
+  },
+  "reads": {
+   "deepgram": "メインステージの音楽が終わってもフェスティバルには喜ぶ遅くまで演奏を流し続けるセクションがあるかもしれないことを覚えておいてください",
+   "whisper": "メインステージの音楽が終わってもフェスティバルには夜ごそくまで演奏を流し続けるセクションがあるかもしれないことを覚えておいてください",
+   "wav2vec2": "メインステージの音楽を終わってもフスティバルに喜遅くまで演奏を流し続けるセクションがあるかもしれないことを覚えておいてください"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jai.wav",
+  "consensus": 0.026,
+  "cer": 0.026,
+  "best_single": 0.026,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.026,
+   "whisper": 0.026,
+   "wav2vec2": 0.385
+  },
+  "reads": {
+   "deepgram": "参列者の数が多すぎて、全員がサンピエトル広場での葬儀に参加することは不可能でした。",
+   "whisper": "参列者の数が多すぎて全員がサンピエトル広場での葬儀に参加することは不可能でした",
+   "wav2vec2": "散力者の数語を過ぎて全員だ三ピトル広までの装具に参加することはふか能でした"
+  },
+  "reask_fires": 0
+ },
+ {
+  "lang": "ja",
+  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jaj.wav",
+  "consensus": 0.105,
+  "cer": 0.105,
+  "best_single": 0.105,
+  "best_model": "deepgram",
+  "wer_by_model": {
+   "deepgram": 0.105,
+   "whisper": 0.105,
+   "wav2vec2": 0.21
+  },
+  "reads": {
+   "deepgram": "香港の最高の景色を見るには島から出てクーロンのウォーターフロントに向かいましょう",
+   "whisper": "香港の最高の景色を見るには、島から出てクーロンのウォーターフロントに向かいましょう。",
+   "wav2vec2": "本港の最高の景色を見るには島から出てクーロの防ーダーフロンドに向かいましょう"
+  },
+  "reask_fires": 0
+ },
+ {
   "lang": "de",
   "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_dea.wav",
   "consensus": 0.0,
@@ -2614,192 +2804,6 @@
    "deepgram": "Сьогодні в Атлантичному океані сформувався субтропічний ураган Джеррі десятий ураган сезону атлантичних ураганів, який отримав назву.",
    "whisper": "Сьогодні в Атлантичному океані сформувався субтропічний ураган Джері – десятий ураган сезону атлантичних ураганів, який отримав назву.",
    "mms": "сьогодні в атлантичному океані сформувався субтропічний ураган джері десятий ураган сезону атлантичних ураганів який отримав назву"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jaa.wav",
-  "consensus": 0.067,
-  "cer": 0.067,
-  "best_single": 0.0,
-  "best_model": "deepgram",
-  "wer_by_model": {
-   "deepgram": 0.0,
-   "gemini": 0.0,
-   "whisper": 0.067
-  },
-  "reads": {
-   "deepgram": "インターネットで敵対的環境コースについて検索すると、おそらく現地企業の住所が出てくるでしょう。",
-   "gemini": "インターネットで敵対的環境コースについて検索すると、おそらく現地企業の住所が出てくるでしょう。",
-   "whisper": "インターネットで敵対的環境構成について検索するとおそらく現地企業の住所が出てくるでしょう"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jab.wav",
-  "consensus": 0.0,
-  "cer": 0.0,
-  "best_single": 0.0,
-  "best_model": "deepgram",
-  "wer_by_model": {
-   "deepgram": 0.0,
-   "gemini": 0.022,
-   "whisper": 0.0
-  },
-  "reads": {
-   "deepgram": "また北側に行くなら世界的に有名なマリア像の聖地であるファティマの聖母の聖域、神社を訪れましょう。",
-   "gemini": "また、北側に行くなら、世界的に有名なマリア像の聖地である、ファティマの聖母の聖域、神殿を訪れましょう。",
-   "whisper": "また北側に行くなら世界的に有名なマリア像の聖地であるファティマの聖母の聖域神社を訪れましょう"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jac.wav",
-  "consensus": 0.099,
-  "cer": 0.099,
-  "best_single": 0.0,
-  "best_model": "gemini",
-  "wer_by_model": {
-   "deepgram": 0.085,
-   "gemini": 0.0,
-   "whisper": 0.099
-  },
-  "reads": {
-   "deepgram": "バルセロナの公用語はカタルーネ語とスペイン語です。約半数がカタルーネ語を好み、大多数がカタルーネ語を理解し、ほぼ全員がスペイン語を知っています。",
-   "gemini": "バルセロナの公用語はカタルーニャ語とスペイン語です。約半数がカタルーニャ語を好み、大多数がカタルーニャ語を理解し、ほぼ全員がスペイン語を知っています。",
-   "whisper": "バルセアナの公用語はカタルーネ語とスペイン語です約半数がカタルーネ語を好み大多数がカタルーネ語を理解しほぼ全員がスペイン語を知っています"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jad.wav",
-  "consensus": 0.018,
-  "cer": 0.018,
-  "best_single": 0.018,
-  "best_model": "whisper",
-  "wer_by_model": {
-   "whisper": 0.018
-  },
-  "reads": {
-   "whisper": "その長い顎には70本以上の鋭い歯が並び口外には別の歯列がありつまりここを通ったら逃げ道はないということになります"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jae.wav",
-  "consensus": 0.125,
-  "cer": 0.125,
-  "best_single": 0.062,
-  "best_model": "deepgram",
-  "wer_by_model": {
-   "deepgram": 0.062,
-   "gemini": 0.688,
-   "whisper": 0.125
-  },
-  "reads": {
-   "deepgram": "ロスビー数が小さいほど磁気判定に関して星の活性が低下するわけです。",
-   "gemini": "ロスビスが小さいほど、時決定に<bos>.00:06",
-   "whisper": "ロスビー数が小さいほど時期判定に関して星の活性が低下するわけです"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jaf.wav",
-  "consensus": 0.095,
-  "cer": 0.095,
-  "best_single": 0.0,
-  "best_model": "deepgram",
-  "wer_by_model": {
-   "deepgram": 0.0,
-   "gemini": 0.191,
-   "whisper": 0.095
-  },
-  "reads": {
-   "deepgram": "群島や湖では必ずしもヨットは必要ありません。",
-   "gemini": "軍都や水墨では必ずしもヨットは必要ありません",
-   "whisper": "軍刀や湖では必ずしもヨットは必要ありません。"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jag.wav",
-  "consensus": 0.1,
-  "cer": 0.1,
-  "best_single": 0.033,
-  "best_model": "deepgram",
-  "wer_by_model": {
-   "deepgram": 0.033,
-   "gemini": 0.033,
-   "whisper": 0.1
-  },
-  "reads": {
-   "deepgram": "パリジャンは自己中心的な横柄で失礼な人が多いと言われています。",
-   "gemini": "パリジャンは自己中心的で大柄で失礼な人が多いと言われています。",
-   "whisper": "パリジャンは自己中心的な、 王兵で失礼な人が多いと言われています"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jah.wav",
-  "consensus": 0.031,
-  "cer": 0.031,
-  "best_single": 0.0,
-  "best_model": "gemini",
-  "wer_by_model": {
-   "deepgram": 0.031,
-   "gemini": 0.0,
-   "whisper": 0.031
-  },
-  "reads": {
-   "deepgram": "メインステージの音楽が終わってもフェスティバルには喜ぶ遅くまで演奏を流し続けるセクションがあるかもしれないことを覚えておいてください",
-   "gemini": "メインステージの音楽が終わっても、フェスティバルには夜遅くまで演奏を流し続けるセクションがあるかもしれないことを覚えておいてください。",
-   "whisper": "メインステージの音楽が終わってもフェスティバルには夜ごそくまで演奏を流し続けるセクションがあるかもしれないことを覚えておいてください"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jai.wav",
-  "consensus": 0.026,
-  "cer": 0.026,
-  "best_single": 0.026,
-  "best_model": "deepgram",
-  "wer_by_model": {
-   "deepgram": 0.026,
-   "gemini": 0.051,
-   "whisper": 0.026
-  },
-  "reads": {
-   "deepgram": "参列者の数が多すぎて、全員がサンピエトル広場での葬儀に参加することは不可能でした。",
-   "gemini": "3列車の数が多すぎて全員がサンピエトロ広場での葬儀に参加することは不可能でした。",
-   "whisper": "参列者の数が多すぎて全員がサンピエトル広場での葬儀に参加することは不可能でした"
-  },
-  "reask_fires": 0
- },
- {
-  "lang": "ja",
-  "clip": "/Users/broodierchip-m1air/Desktop/transcript-truth/bench/battery_real/rl_jaj.wav",
-  "consensus": 0.105,
-  "cer": 0.105,
-  "best_single": 0.079,
-  "best_model": "gemini",
-  "wer_by_model": {
-   "deepgram": 0.105,
-   "gemini": 0.079,
-   "whisper": 0.105
-  },
-  "reads": {
-   "deepgram": "香港の最高の景色を見るには島から出てクーロンのウォーターフロントに向かいましょう",
-   "gemini": "香港の最高の景色を見るには島から出て九龍のウォーターフロントに参りましょう。",
-   "whisper": "香港の最高の景色を見るには、島から出てクーロンのウォーターフロントに向かいましょう。"
   },
   "reask_fires": 0
  }
