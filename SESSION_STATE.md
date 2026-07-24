@@ -1,5 +1,19 @@
 # transcript-truth — session state (2026-07-24)
 
+## NEXT (two real bugs, found by the T4791286 proof rerun — full-file, all cloud ears dead)
+1. **Big-upload transport retry for deepgram/gemini reads**: both died "network" on the full
+   10-min file while passing the 10s preflight minutes earlier — the documented flaky-large-
+   upload class (fix = RETRY like hf/diarize already do, not chunking). Until fixed, long files
+   can go local-only even when clouds are healthy.
+2. **ja delivery-glue misfire on the solo-read path**: whisper-alone consensus delivered
+   'よ ろ し く' space-per-char (Desktop/T4791286_rerun.json). `_deliver`'s
+   `len(_wtok(t)) > len(t.split())` heuristic is false for a fully space-separated char stream —
+   glue must fire on looks-like-spaced-CJK regardless. (runner._clean masks it on ITS path;
+   translate/CCSL consumers would ship spaced text.)
+   Proof-run verdict itself: gate=review naming all 4 dead ears (deepgram/gemini network,
+   scribe 401, hf 402), contested 2.9%, local whisper carried 10 min alone in 94.9 min
+   (3 speeds). Last night this exact situation shipped silently; now it refuses.
+
 ## The T4791286 post-mortem build (2026-07-24) — never again, mechanically
 **The incident:** job T4791286 (GoTranscript ja, 10 min) shipped as an unverified AI draft with ~30
 ⚠ spans unresolved — rated 1/5 "way too many mishears", Japanese rights revoked (min rating 3.2).
